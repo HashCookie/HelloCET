@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/ListeningComprehension.module.css";
+import styles from '../../styles/ListeningComprehension.module.css';
 
 const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
   return (

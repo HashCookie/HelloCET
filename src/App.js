@@ -1,5 +1,5 @@
 import Writing from './Component/Writing/Writing';
-import ListeningComprehension from "./Component/ListeningComprehension";
+import ListeningComprehension from "./Component/ListeningComprehension/ListeningComprehension";
 
 function App() {
   return (

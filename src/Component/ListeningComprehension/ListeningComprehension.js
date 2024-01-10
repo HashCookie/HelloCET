@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/ListeningComprehension.module.css";
+import styles from '../../styles/ListeningComprehension.module.css';
 import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
