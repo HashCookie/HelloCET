@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/WritingTestPage.module.css";
+import styles from '../../styles/Writing.module.css';
 
 const WritingTestPage = () => {
   const [essay, setEssay] = useState("");

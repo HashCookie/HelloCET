@@ -1,10 +1,10 @@
-import WritingTestPage from "./Component/Writing";
+import Writing from './Component/Writing/Writing';
 import ListeningComprehension from "./Component/ListeningComprehension";
 
 function App() {
   return (
     <>
-      <WritingTestPage />
+      <Writing />
       <ListeningComprehension />
     </>
   );
