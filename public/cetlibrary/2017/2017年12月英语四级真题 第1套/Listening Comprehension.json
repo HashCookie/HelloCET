@@ -1,0 +1,283 @@
+{
+    "section_A": {
+      "directions": "In this section, you will hear three news reports. At the end of each news report, you will hear two or three questions. Both the news report and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C), and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+      "news_reports": [
+        {
+          "report_description": "Questions 1 and 2 are based on the news report you have just heard.",
+          "questions": [
+            {
+              "number": 1,
+              "options": {
+                "A": "It tries to entertain its audience.",
+                "B": "It tries to look into the distance.",
+                "C": "It has got one of its limbs injured.",
+                "D": "It wants to catch people’s attention."
+              }
+            },
+            {
+              "number": 2,
+              "options": {
+                "A": "Its picture won a photography prize.",
+                "B": "Its videos were posted on social media.",
+                "C": "It was filmed by a local television reporter.",
+                "D": "It was spotted by animal protection officials."
+              }
+            }
+          ]
+        },
+        {
+          "report_description": "Questions 3 and 4 are based on the news report you have just heard.",
+          "questions": [
+            {
+              "number": 3,
+              "options": {
+                "A": "The spending on gas.",
+                "B": "The distance travelled.",
+                "C": "The incidence of road accidents.",
+                "D": "The number of people travelling."
+              }
+            },
+            {
+              "number": 4,
+              "options": {
+                "A": "Gas consumption is soaring.",
+                "B": "Job growth is slowing down.",
+                "C": "Fewer people are commuting.",
+                "D": "Rush-hour traffic is worsening."
+              }
+            }
+          ]
+        },
+        {
+          "report_description": "Questions 5 to 7 are based on the news report you have just heard.",
+          "questions": [
+            {
+              "number": 5,
+              "options": {
+                "A": "He told a stranger the sad story about himself.",
+                "B": "He went up to a stranger and pulled at his sleeves.",
+                "C": "He helped a stranger to carry groceries to his car.",
+                "D": "He washed a stranger’s car in return for some food."
+              }
+            },
+            {
+              "number": 6,
+              "options": {
+                "A": "He ordered a lot of food for his family.",
+                "B": "He gave him a job at his own company.",
+                "C": "He offered him a scholarship for college.",
+                "D": "He raised a large sum of money for him."
+              }
+            },
+            {
+              "number": 7,
+              "options": {
+                "A": "He is an excellent student at school.",
+                "B": "He has been disabled since boyhood.",
+                "C": "He is very good at making up stories.",
+                "D": "He works hard to support his family."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "section_B": {
+      "directions": "In this section, you will hear two long conversations. At the end of each conversation, you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C), and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+      "conversations": [
+        {
+          "conversation_description": "Questions 8 to 11 are based on the conversation you have just heard.",
+          "questions": [
+            {
+              "number": 8,
+              "options": {
+                "A": "Had a drink at Queen Victoria.",
+                "B": "Had dinner at a new restaurant.",
+                "C": "Attended an economics lecture.",
+                "D": "Taken a walk on Charles Street."
+              }
+            },
+            {
+              "number": 9,
+              "options": {
+                "A": "Visit some of his high school friends.",
+                "B": "Attend his brother’s birthday party.",
+                "C": "Make preparations for a seminar.",
+                "D": "Treat a college friend to dinner."
+              }
+            },
+            {
+              "number": 10,
+              "options": {
+                "A": "Join him in his brother’s birthday celebration.",
+                "B": "Meet with Jonathan’s friends on the weekend.",
+                "C": "Throw a surprise birthday party.",
+                "D": "Gather statistics for his lecture."
+              }
+            },
+            {
+              "number": 11,
+              "options": {
+                "A": "By car.",
+                "B": "By bus.",
+                "C": "By taxi.",
+                "D": "By train."
+              }
+            }
+          ]
+        },
+        {
+          "conversation_description": "Questions 12 to 15 are based on the conversation you have just heard.",
+          "questions": [
+            {
+              "number": 12,
+              "options": {
+                "A": "Taking a vacation abroad.",
+                "B": "Reviewing for his last exam.",
+                "C": "Finding a better way to earn money.",
+                "D": "Saving enough money for a rainy day."
+              }
+            },
+            {
+              "number": 13,
+              "options": {
+                "A": "Preparing for his final exams.",
+                "B": "Working part time as a waiter.",
+                "C": "Helping the woman with her courses.",
+                "D": "Negotiating with his boss for a raise."
+              }
+            },
+            {
+              "number": 14,
+              "options": {
+                "A": "Save enough money.",
+                "B": "Finish her term paper.",
+                "C": "Learn a little bit of Spanish.",
+                "D": "Ask her parents’ permission."
+              }
+            },
+            {
+              "number": 15,
+              "options": {
+                "A": "He speaks Spanish fluently.",
+                "B": "He is easy to get along with.",
+                "C": "He is also eager to go to Spain.",
+                "D": "He has rich sailing experience."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "section_C": {
+      "directions": "In this section, you will hear three passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C), and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+      "passages": [
+        {
+          "passage_description": "Questions 16 to 18 are based on the passage you have just heard.",
+          "questions": [
+            {
+              "number": 16,
+              "options": {
+                "A": "She was also a Nobel Prize winner.",
+                "B": "She won the Nobel Prize two times.",
+                "C": "She worked as a nurse in the First World War.",
+                "D": "She went to the same university as her mother."
+              }
+            },
+            {
+              "number": 17,
+              "options": {
+                "A": "She helped to set up several military hospitals.",
+                "B": "She made donations to save wounded soldiers.",
+                "C": "She fought bravely in a series of military operations.",
+                "D": "She developed X-ray facilities for military hospitals."
+              }
+            },
+            {
+              "number": 18,
+              "options": {
+                "A": "Both won military medals.",
+                "B": "Both died of blood cancer.",
+                "C": "Both fought in World War I.",
+                "D": "Both married their assistants."
+              }
+            }
+          ]
+        },
+        {
+          "passage_description": "Questions 19 to 21 are based on the passage you have just heard.",
+          "questions": [
+            {
+              "number": 19,
+              "options": {
+                "A": "They settled on a small island north of England.",
+                "B": "They discovered Iceland in the ninth century.",
+                "C": "They were the conquerors of Norway.",
+                "D": "They were the first settlers in Europe."
+              }
+            },
+            {
+              "number": 20,
+              "options": {
+                "A": "It was covered with green most time of the year.",
+                "B": "It was the Vikings’ most important discovery.",
+                "C": "It was a rocky mass of land covered with ice.",
+                "D": "It was some five hundred miles west of Norway."
+              }
+            },
+            {
+              "number": 21,
+              "options": {
+                "A": "The Vikings’ everyday life.",
+                "B": "The Vikings’ ocean explorations.",
+                "C": "The making of European nations.",
+                "D": "The Europeans’ Arctic discoveries."
+              }
+            }
+          ]
+        },
+        {
+          "passage_description": "Questions 22 to 25 are based on the passage you have just heard.",
+          "questions": [
+            {
+              "number": 22,
+              "options": {
+                "A": "Dream about the future.",
+                "B": "Save against a rainy day.",
+                "C": "Work hard for a better life.",
+                "D": "Make mistakes now and then."
+              }
+            },
+            {
+              "number": 23,
+              "options": {
+                "A": "Dwell on the dreams he had dreamed when young.",
+                "B": "Exchange his two-story house for a beach cottage.",
+                "C": "Change what he has for his past imaginary world.",
+                "D": "Teach foreign languages for the rest of his life."
+              }
+            },
+            {
+              "number": 24,
+              "options": {
+                "A": "Criminal law.",
+                "B": "City planning.",
+                "C": "International business.",
+                "D": "Oriental architecture."
+              }
+            },
+            {
+              "number": 25,
+              "options": {
+                "A": "Take things easy in life.",
+                "B": "Dream and make plans.",
+                "C": "Enjoy whatever you are doing.",
+                "D": "Be content with what you have."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,386 @@
+[
+  {
+    "Section": "A",
+    "Directions": "In this section, there is a passage with ten blanks. You are required to select one word for each blank from a list of choices given in a word bank following the passage. Read the passage through carefully before making your choices. Each choice in the bank is identified by a letter. Please mark the corresponding letter for each item on Answer Sheet 2 with a single line through the centre. You may not use any of the words in the bank more than once.",
+    "Passage": "“Science and everyday life cannot and should not be separated.” Those were the words uttered by pioneering British scientist Rosalind Franklin, who firmly believed that the pursuit of science should be 26 to all. As a woman working in the first half of the 20th century, Franklin’s contributions to some of the greatest scientific discoveries of our time—including the structure of DNA—were sadly 27 in her lifetime. More than 60 years after Franklin’s death, we are 28 living in a different world, where women play an important part in every echelon (阶层) of our society—not least in science, innovation, higher education and research. UK universities are world leaders when it comes to advancing and 29 gender equality. In the past decade, we have seen a 30 increase in England in the number of women accepted on to full-time undergraduate degrees in science, technology, engineering and maths (Stem subjects) . And in the last academic year, women 31 for more than half of all Stem postgraduates at UK universities. Data shows us the 32 to success gets harder for women to climb the further up they go. Although women make up the majority of undergraduates in our universities, just under half of academic staff are female. At 33 levels, only a quarter of professors are women, and black women make up less than 2% of all female academic staff. There are also stark differences in pay across grades. The gender pay gap based on median salaries across the sector in 2016-2017 was 13.7%, 34 there is still some way to go to ensure women are rising through the ranks to higher grade positions and being paid 35 .",
+    "WordBank": [
+      "A) accessible",
+      "B) accounted",
+      "C) adaptation",
+      "D) appropriately",
+      "E) considerable",
+      "F) effective",
+      "G) ladder",
+      "H) misread",
+      "I) nomination",
+      "J) overlooked",
+      "K) promoting",
+      "L) senior",
+      "M) submission",
+      "N) suggesting",
+      "O) thankfully"
+    ]
+  },
+  {
+    "Section": "B",
+    "SectionDirections": "In this section, you are going to read a passage with ten statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter. Answer the questions by marking the corresponding letter on Answer Sheet 2.",
+    "Passage": {
+      "title": "Research suggests they may study more broadly for the unexpected rather than search for answers.",
+      "paragraphs": {
+        "A": "I have always been a poor test-taker. So it may seem rather strange that I have returned to college to finish the degree I left undone some four decades ago. I am making my way through Columbia University, surrounded by students who quickly supply the verbal answer while I am still processing the question.",
+        "B": "Since there is no way for me to avoid exams, I am currently questioning what kind are the most taxing and ultimately beneficial. I have already sweated through numerous in-class midterms and finals, and now I have a professor who issues take-home ones. I was excited when I learned this, figuring I had a full week to do the research, read the texts, and write it all up. In fact, I was still rewriting my midterm the morning it was due. To say I had lost the thread is putting it mildly.",
+        "C": "As I was suffering through my week of anxiety, overthinking the material and guessing my grasp of it, I did some of my own polling among students and professors. David Eisenbach, who teaches a popular class on U.S. presidents at Columbia, prefers the in-class variety. He believes students ultimately learn more and encourages them to form study groups. “That way they socialize over history outside the class, which wouldn’t happen without the pressure of an in-class exam,” he explained. “Furthermore, in-class exams force students to learn how to perform under pressure, an essential work skill.”",
+        "D": "He also says there is less chance of cheating with the in-class variety. In 2012, 125 students at Harvard were caught up in a scandal when it was discovered they had cheated on a take-home exam for a class entitled “Introduction To Congress.” Some colleges have what they call an “honor code,” though if you are smart enough to get into these schools, you are either smart enough to get around any codes or hopefully, too ethical to consider doing so. As I sat blocked and clueless for two solid days, I momentarily wondered if I couldn’t just call an expert on the subject matter which I was tackling, or someone who took the class previously, to get me going.",
+        "E": "Following the Harvard scandal, Mary Miller, the former dean of students at Yale, made an impassioned appeal to her school’s professors to refrain from take-home exams. “Students risk health and well being, as well as performance in other end-of-term work, when faculty offers take-home exams without clear, time-limited boundaries,” she told me. “Research now shows that regular quizzes, short essays, and other assignments over the course of a term better enhance learning and retention.”",
+        "F": "Most college professors agree the kind of exam they choose largely depends on the subject. A quantitative-based one, for example, is unlikely to be sent home, where one could ask their older brothers and sisters to help. Vocational-type classes, such as computer science or journalism, on the other hand, are often more research-oriented and lend themselves to take-home testing. Chris Koch, who teaches “History of Broadcast Journalism” at Montgomery Community College in Rockville, Maryland, points out that reporting is about investigation rather than the memorization of minute details. “In my field, it’s not what you know—it’s what you know how to find out,” says Koch. “There is way too much information, and more coming all the time, for anyone to remember. I want my students to search out the answers to questions by using all the resources available to them.”",
+        "G": "Students’ test-form preferences vary, too, often depending on the subject and course difficulty. “I prefer take-home essays because it is then really about the writing, so you have time to edit and do more research,” says Elizabeth Dresser, a junior at Barnard. Then there is the stress factor. Francesca Haass, a senior at Middlebury, says, “I find the in-class ones are more stressful in the short term, but there is immediate relief as you swallow information like mad, and then you get to forget it all. Take-homes require thoughtful engagement which can lead to longer term stress as there is never a moment when the time is up.” Meanwhile, Olivia Rubin, a sophomore at Emory, says she hardly even considers take-homes true exams. “If you understand the material and have the ability to articulate (说出) your thoughts, they should be a breeze.”",
+        "H": "How students ultimately handle tests may depend on their personal test-taking abilities. There are people who always wait until the last minute, and make it much harder than it needs to be. And then there are those who, not knowing what questions are coming at them, and having no resources to refer to, can freeze. And then there are we rare folks who fit both those descriptions.",
+        "I": "Yes, my advanced age must factor into the equation (等式) , in part because of my inability to access the information as quickly. As another returning student at Columbia, Kate Marber, told me, “We are learning not only all this information, but essentially how to learn again. Our fellow students have just come out of high school. A lot has changed since we were last in school.”",
+        "J": "If nothing else, the situation has given my college son and me something to share. When I asked his opinion on this matter, he responded, “I like in-class exams because the time is already reserved, as opposed to using my free time at home to work on a test.” It seems to me that a compromise would be receiving the exam questions a day or two in advance, and then doing the actual test in class with the ticking clock overhead.",
+        "K": "Better yet, how about what one Hunter College professor reportedly did recently for her final exam:She encouraged the class not to stress or even study, promising that, “It is going to be a piece of cake.” When the students came in, sharpened pencils in hand, there was not a blue book in sight. Rather, they saw a large chocolate cake and they each were given a slice."
+      }
+    },
+    "Questions": [
+      {
+        "Number": 36,
+        "Statement": "Elderly students find it hard to keep up with the rapid changes in education.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 37,
+        "Statement": "Some believe take-home exams may affect students’ performance in other courses.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 38,
+        "Statement": "Certain professors believe in-class exams are ultimately more helpful to students.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 39,
+        "Statement": "In-class exams are believed to discourage cheating in exams.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 40,
+        "Statement": "The author was happy to learn she could do some exams at home.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 41,
+        "Statement": "Students who put off their work until the last moment often find the exams more difficult than they actually are.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 42,
+        "Statement": "Different students may prefer different types of exams.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 43,
+        "Statement": "Most professors agree whether to give an in-class or a take-home exam depends on the type of course being taught.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 44,
+        "Statement": "The author dropped out of college some forty years ago.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "Number": 45,
+        "Statement": "Some students think take-home exams will eat up their free time.",
+        "Options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "Section": "C",
+    "Directions": "There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A) , B) , C) and D) . You should decide on the best choice and mark the corresponding letter on Answer Sheet 2 with a single line through the centre.",
+    "Passages": [
+      {
+        "Title": "Passage One",
+        "Introduction": "Questions 46 to 50 are based on the following passage.",
+        "Content": "The wallt is heading for extinction. As a day-to-day essential, it will die off with the generation who read print newspapers. The kind of shopping-where you hand over notes and count out change in return-now happens only in the most minor of our retail encounters, like buying a bar of chocolate or a pint of milk, from a corner shop. At the shops where you spend any real money, that money is increasingly abstracted. And this is more and more true, the higher up the scale you go. At the most cutting-edge retil stores--Victoria Beckham on Dover Street, for instance-youdon't go and stand at any kind of cash register, when you dcide to pay. The staff are equipped with iPads to take your payment while you relax on a sofa.Which is nothing more or less than excellent service, if you have the money. But across society, the abstraction of the idea of cash makes me uneasy. Maybe I'm just old-fashioned. But earning money isn't quick or easy for most of us. Isn't itabit weird that spending it should happen in half a blink (眨眼)of an eye? Doesn't a wallet-that time-honoured Friday-night feeling of pleasing, promising fatness-represent something that matters?But I'll leave the economics to the experts. What bothers me about the death of the wallet is the change it represents in our physical environment. Everything about the look and feel of a wallet-the way the fastenings and materials wear and tear and loosen with age, the plastic and paper and gold and silver, and handwritten phone numbers and printed cinema tickets-is the very opposite of what our world is becoming The opposite of a wallet is a smartphone or an iPad. The rounded edges, coo glass, smooth and unknowable as a pebble (鹅卵石).Instead of digging through pieces of paper and peering into corners, we move our fingers left and right. No more counting out coins. Show your wallet, if you still have one. It may not be here much longer.46.What is happening to the wallet?A) It is disappearing.B) It is being fattened.C) It is becoming costly.D) It is changing in style.47.How are business transactions done in big modern stores?A) Individually.B) In the abstract.C) Electronically.D) Via a cash register.48.What makes the author feel uncomfortable nowadays?A) Saving money is becoming a thing of the past.B) The pleasing Friday-night feeling is fading.C) Earning money is getting more difficult.D) Spending money is so fast and easy.49.Why does the author choose to write about what's happening to the wallet?A) It represents a change in the modern world.B) It has something to do with everybody's life.C) It marks the end of a time-honoured tradition.D) It is the concern of contemporary economists.50.What can we infer from the passage about the author?A) He is resistant to social changes.B) He is against technological progress.C) He feels reluctant to part with the traditional wallet.D) He feels insecure in the ever-changing modern world.",
+        "Questions": [
+          {
+            "Number": 46,
+            "Question": "What is happening to the wallet?",
+            "Options": [
+              "A) It is disappearing.",
+              "B) It is being fattened.",
+              "C) It is becoming costly.",
+              "D) It is changing in style."
+            ]
+          },
+          {
+            "Number": 47,
+            "Question": "How are business transactions done in big modern stores?",
+            "Options": [
+              "A) Individually.",
+              "B) In the abstract.",
+              "C) Electronically.",
+              "D) Via a cash register."
+            ]
+          },
+          {
+            "Number": 48,
+            "Question": "What makes the author feel uncomfortable nowadays?",
+            "Options": [
+              "A) Saving money is becoming a thing of the past.",
+              "B) The pleasing Friday-night feeling is fading.",
+              "C) Earning money is getting more difficult.",
+              "D) Spending money is so fast and easy."
+            ]
+          },
+          {
+            "Number": 49,
+            "Question": "Why does the author choose to write about what's happening to the wallet?",
+            "Options": [
+              "A) It represents a change in the modern world.",
+              "B) It has something to do with everybody's life.",
+              "C) It marks the end of a time-honoured tradition.",
+              "D) It is the concern of contemporary economists."
+            ]
+          },
+          {
+            "Number": 50,
+            "Question": "What can we infer from the passage about the author?",
+            "Options": [
+              "A) He is resistant to social changes.",
+              "B) He is against technological progress.",
+              "C) He feels reluctant to part with the traditional wallet.",
+              "D) He feels insecure in the ever-changing modern world."
+            ]
+          }
+        ]
+      },
+      {
+        "Title": "Passage Two",
+        "Introduction": "Questions 51 to 55 are based on the following passage.",
+        "Content": "It’s late in the evening:time to close the book and turn off the computer. You’re done for the day. What you may not realize, however, is that the learning process actually continues—in your dreams.It might sound like science fiction, but researchers are increasingly focusing on the relationship between the knowledge and skills our brains absorb during the day and the fragmented, often bizarre imaginings they generate at night. Scientists have found that dreaming about a task we’ve learned is associated with improved performance in that activity (suggesting that there’s some truth to the popular notion that we’re “getting” a foreign language once we begin dreaming in it) . What’s more, researchers are coming to recognize that dreaming is an essential part of understanding, organizing and retaining what we learn.While we sleep, research indicates, the brain replays the patterns of activity it experienced during waking hours, allowing us to enter what one psychologist calls a neural (神经的) virtual reality. A vivid example of such replay can be seen in a video researchers made recently about sleep disorders. They taught a series of dance moves to a group of patients with conditions like sleepwalking, in which the sleeper engages in the kind of physical movement that does not normally occur during sleep. They then videotaped the subjects as they slept. Lying in bed, eyes closed, one female patient on the tape performs the dance moves she learned earlier.This shows that while our bodies are at rest, our brains are drawing what’s important from the information and events we’ve recently encountered, then integrating that data into the vast store of what we already know. In a 2010 study, researchers at Harvard Medical School reported that college students who dreamed about a computer maze (迷宫) task they had learned showed a 10-fold improvement in their ability to find their way through the maze compared with participants who did not dream about the task.Robert Stickgold, one of the Harvard researchers, suggests that studying right before bedtime or taking a nap following a study session in the afternoon might increase the odds of dreaming about the material. Think about that as your head hits the pillow tonight.51.What is scientists’ finding about dreaming?A) It involves disconnected, weird images.B) It resembles fragments of science fiction.C) Dreaming about a learned task betters its performance.D) Dreaming about things being learned disturbs one’s sleep.52.What happens when one enters a dream state?A) The body continues to act as if the sleeper were awake.B) The neural activity of the brain will become intensified.C) The brain behaves as if it were playing a virtual reality video game.D) The brain once again experiences the learning activities of the day.53.What does the brain do while we are sleeping?A) It systematizes all the data collected during the day.B) It substitutes old information with new data.C) It processes and absorbs newly acquired data.D) It classifies information and places it in different files.54.What does Robert Stickgold suggest about enhancing learning?A) Having a little sleep after studying in the day.B) Staying up late before going to bed.C) Having a dream about anything.D) Thinking about the odds of dreaming about the material.55.What can be inferred about dreaming from the passage?A) We may enhance our learning through dreaming.B) Dreaming improves your language ability.C) All sleepwalkers perform dance moves when they are sleeping.D) Taking a nap after learning can help you find the way through the maze.",
+        "Questions": [
+          {
+            "Number": 51,
+            "Question": "What is scientists’ finding about dreaming?",
+            "Options": [
+              "A) It involves disconnected, weird images.",
+              "B) It resembles fragments of science fiction.",
+              "C) Dreaming about a learned task betters its performance.",
+              "D) Dreaming about things being learned disturbs one’s sleep."
+            ]
+          },
+          {
+            "Number": 52,
+            "Question": "What happens when one enters a dream state?",
+            "Options": [
+              "A) The body continues to act as if the sleeper were awake.",
+              "B) The neural activity of the brain will become intensified.",
+              "C) The brain behaves as if it were playing a virtual reality video game.",
+              "D) The brain once again experiences the learning activities of the day."
+            ]
+          },
+          {
+            "Number": 53,
+            "Question": "What does the brain do while we are sleeping?",
+            "Options": [
+              "A) It systematizes all the data collected during the day.",
+              "B) It substitutes old information with new data.",
+              "C) It processes and absorbs newly acquired data.",
+              "D) It classifies information and places it in different files."
+            ]
+          },
+          {
+            "Number": 54,
+            "Question": "What does Robert Stickgold suggest about enhancing learning?",
+            "Options": [
+              "A) Having a little sleep after studying in the day.",
+              "B) Staying up late before going to bed.",
+              "C) Having a dream about anything.",
+              "D) Thinking about the odds of dreaming about the material."
+            ]
+          },
+          {
+            "Number": 55,
+            "Question": "What can be inferred about dreaming from the passage?",
+            "Options": [
+              "A) We may enhance our learning through dreaming.",
+              "B) Dreaming improves your language ability.",
+              "C) All sleepwalkers perform dance moves when they are sleeping.",
+              "D) Taking a nap after learning can help you find the way through the maze."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

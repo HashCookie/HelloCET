@@ -1,0 +1,243 @@
+{
+    "Section_A": {
+        "directions": "In this section,you will hear three news reports. At the end of each news report,you will hear tmo or three questions. Both the news report and the questions will be spoken only once. After you hear a question,you must choose the best answer from the four choices marked A）,B）,C） and D）. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+        "questions": [
+            {
+                "number": 1,
+                "options": {
+                    "A": "Part of its dam wall collapsed.",
+                    "B": "It released a lot of harmful gases.",
+                    "C": "It was destroyed by an earthquake.",
+                    "D": "Some miners were trapped underground."
+                }
+            },
+            {
+                "number": 2,
+                "options": {
+                    "A": "It posed a safety threat to the miners.",
+                    "B": "It brought the mine's operations to a halt.",
+                    "C": "It caused damage too heavy to assess.",
+                    "D": "It was followed by two more earthquakes."
+                }
+            },
+            {
+                "number": 3,
+                "options": {
+                    "A": "It prepared beds for all the six new citizens.",
+                    "B": "It assigned a team of doctors for each expected baby.",
+                    "C": "It made ample preparations for various possibilities.",
+                    "D": "It brought in the most advanced instruments."
+                }
+            },
+            {
+                "number": 4,
+                "options": {
+                    "A": "They had to undergo 2-3 physical checkups.",
+                    "B": "They were all of normal size except the sixth.",
+                    "C": "They could go home together with their mother a day later.",
+                    "D": "They needed to stay in the hospital for a couple of months."
+                }
+            },
+            {
+                "number": 5,
+                "options": {
+                    "A": "It is owned by the local government.",
+                    "B": "It has been turned into a public park.",
+                    "C": "It has been bought by an American.",
+                    "D": "It is a perfect tourist destination."
+                }
+            },
+            {
+                "number": 6,
+                "options": {
+                    "A": "Its seafood.",
+                    "B": "Its unusual coastline.",
+                    "C": "Its unspoiled bcaches.",
+                    "D": "Its architecture."
+                }
+            },
+            {
+                "number": 7,
+                "options": {
+                    "A": "It has an unmatched location.",
+                    "B": "It is worth over 18 million euros.",
+                    "C": "It has beautiful weather all year round.",
+                    "D": "It is an ideal place to meet famous stars."
+                }
+            }
+        ]
+    },
+    "Section_B": {
+      "directions": "In this section,you will hear two long conversations. At the end of each conversation,you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question,you must choose the best answer from the four choices marked A）,B）,C） and D）. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+      "questions": [
+        {
+          "number": 8,
+          "options": {
+            "A": "She has been attending some group classes.",
+            "B": "She has registered for two new gym classes.",
+            "C": "She became a member of the gym two months ago.",
+            "D": "She is entitled to a discount on all the gym exercises."
+          }
+        },
+        {
+          "number": 9,
+          "options": {
+            "A": "Considering the promotion of its regular classes.",
+            "B": "Taking measures to expand its exercise programs.",
+            "C": "Recruiting coaches for hot yoga and advanced spinning.",
+            "D": "Offering existing members a discount off two new classcs."
+          }
+        },
+        {
+          "number": 10,
+          "options": {
+            "A": "She missed the deadline for the 10-week course.",
+            "B": "She missed out on the gym's general discount.",
+            "C": "She didn't sign up for membership in time.",
+            "D": "She wasn't so much interested in hot yoga."
+          }
+        },
+        {
+          "number": 11,
+          "options": {
+            "A": "She doesn't want to reveal her card details over the phone.",
+            "B": "She doesn't think it wise to pay before attending any class.",
+            "C": "She might have to cancel her registration any minute.",
+            "D": "She prefers to have the fee added to her monthly bill."
+          }
+        },
+        {
+          "number": 12,
+          "options": {
+            "A": "To make investments.",
+            "B": "To research new markets.",
+            "C": "To sign a business contract.",
+            "D": "To open a new office."
+          }
+        },
+        {
+          "number": 13,
+          "options": {
+            "A": "Dubai.",
+            "B": "Beijing.",
+            "C": "Amsterdam.",
+            "D": "Earl's Court."
+          }
+        },
+        {
+          "number": 14,
+          "options": {
+            "A": "Rent a bike for him to get around the town.",
+            "B": "Help him prepare his presentation.",
+            "C": "Reserve a meeting room in the head office.",
+            "D": "Send him a map of the hotel area."
+          }
+        },
+        {
+          "number": 15,
+          "options": {
+            "A": "Bring his projector.",
+            "B": "Submit his claims form.",
+            "C": "Keep all his receipts.",
+            "D": "Pay with his credit card."
+          }
+        }
+      ]
+    },
+    "Section_C": {
+      "directions": "In this section,you will hear three passages. At the end of each passage,you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question,you must choose the best ansver from the four choices marked A）,B）,C） and D）. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+      "questions": [
+        {
+          "number": 16,
+          "options": {
+            "A": "Whether a country's educational level is linked to womcn's rights.",
+            "B": "Whether women's rights are making good progress around the world.",
+            "C": "Whether a country's protection of women's rights is related to its public hcalth.",
+            "D": "Whether women's rights are more often overlooked in less-developed countries."
+          }
+        },
+        {
+          "number": 17,
+          "options": {
+            "A": "Their pcople still have better health if women's rights are respected.",
+            "B": "They must make efforts to increase women's access to health carc.",
+            "C": "Their people tend to attach importance to women's rights.",
+            "D": "They need to invest more in hospital staff and facilities."
+          }
+        },
+        {
+          "number": 18,
+          "options": {
+            "A": "Their link with a country's public health.",
+            "B": "Their potential impact on social progress.",
+            "C": "Their value to a country's intcrnational image.",
+            "D": "Their positive effect on economic devclopment."
+          }
+        },
+        {
+          "number": 19,
+          "options": {
+            "A": "It creates a wonderful setting for dating.",
+            "B": "It may cause strangc physical reactions.",
+            "C": "It turns parks into picnic sites.",
+            "D": "It may result in a crowded beach."
+          }
+        },
+        {
+          "number": 20,
+          "options": {
+            "A": "Breathing difficulty.",
+            "B": "Bad breath.",
+            "C": "Excessive swcating.",
+            "D": "High blood pressure."
+          }
+        },
+        {
+          "number": 21,
+          "options": {
+            "A": "It protects people against bacteria.",
+            "B": "It cnables people to build up endurance.",
+            "C": "It accelerates people's blood circulation.",
+            "D": "It provides people with extra cncrgy."
+          }
+        },
+        {
+          "number": 22,
+          "options": {
+            "A": "They are more likely to win in combat sports.",
+            "B": "They are in the minority among the population.",
+            "C": "They have a higher chance of joining sports teams.",
+            "D": "They have more disadvantages in getting ahead."
+          }
+        },
+        {
+          "number": 23,
+          "options": {
+            "A": "Their brain is more powerful than that of right-handed people.",
+            "B": "The Ieft side of their brain is more powerful than its right side.",
+            "C": "They tend to be a lot more aggressive than right-handed people.",
+            "D": "Their brain has a stronger connection betwcen its two sides."
+          }
+        },
+        {
+          "number": 24,
+          "options": {
+            "A": "They have a larger brain.",
+            "B": "It still remains unknown.",
+            "C": "It is related to their genes.",
+            "D": "They are better at reasoning."
+          }
+        },
+        {
+          "number": 25,
+          "options": {
+            "A": "Teach them how to perform tasks with their right hand.",
+            "B": "Help them fully develop their mathematical abilities.",
+            "C": "Encourage them to play fast-paced interactive sports.",
+            "D": "Advise them to choose jobs that require quick reactions."
+          }
+        }
+      ]
+    }
+  }
+  
