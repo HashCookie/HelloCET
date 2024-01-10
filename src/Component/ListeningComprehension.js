@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/ListeningComprehension.module.css";
 import AudioPlayer from "./AudioPlayer";
+import QuestionList from "./QuestionList";
 
 const ListeningComprehension = () => {
   const [selectedAnswer, setSelectedAnswer] = useState({});
@@ -272,32 +273,16 @@ const ListeningComprehension = () => {
           marked A), B), C) and D). Then mark the corresponding letter on Answer
           Sheet 1 with a single line through the centre.
         </p>
-        <AudioPlayer src="path-to-your-audio-file" />
       </section>
-      <div className={styles["questions"]}>
-        {questions.map((question) => (
-          <div className={styles["question"]} key={question.number}>
-            <p>{question.number}.</p>
-            <ul>
-              {Object.entries(question.options).map(([key, text]) => (
-                <li key={key}>
-                  <input
-                    type="radio"
-                    id={`q${question.number}-${key}`}
-                    name={`q${question.number}`}
-                    value={key}
-                    checked={selectedAnswer[`q${question.number}`] === key}
-                    onChange={() => handleOptionChange(question.number, key)}
-                  />
-                  <label htmlFor={`q${question.number}-${key}`}>
-                    {key}) {text}
-                  </label>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+      
+      <AudioPlayer src="path-to-your-audio-file" />
+      <p>Questions 1 and 2 are based on the news report you have just heard.</p>
+      <QuestionList
+        questions={questions.slice(0,2)}
+        selectedAnswer={selectedAnswer}
+        onAnswerChange={handleOptionChange}
+      />
+
     </div>
   );
 };
