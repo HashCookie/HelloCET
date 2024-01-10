@@ -1,4 +1,4 @@
-import WritingTestPage from "./Component/WritingTestPage";
+import WritingTestPage from "./Component/Writing";
 import ListeningComprehension from "./Component/ListeningComprehension";
 
 function App() {
