@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/ListeningComprehension.module.css";
-import AudioPlayer from "./AudioPlayer";
-import QuestionList from "./QuestionList";
+import SectionA from "./SectionA";
+import SectionB from "./SectionB";
+import SectionC from "./SectionC";
 
 const ListeningComprehension = () => {
   const [selectedAnswer, setSelectedAnswer] = useState({});
@@ -264,122 +265,21 @@ const ListeningComprehension = () => {
     <>
       <div className={styles["listening-comprehension-container"]}>
         <h2>Part2 Listening Comprehension</h2>
-        <section>
-          <h3>Section A</h3>
-          <p>
-            Directions: In this section, you will hear three news reports. At
-            the end of each news report, you will hear two or three questions.
-            Both the news report and the questions will be spoken only once.
-            After you hear a question, you must choose the best answer from the
-            four choices marked A), B), C) and D). Then mark the corresponding
-            letter on Answer Sheet 1 with a single line through the centre.
-          </p>
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 1 and 2 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(0, 2)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 3 and 4 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(2, 4)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 5 and 7 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(4, 7)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-        </section>
-
-        <section>
-          <h3>Section B</h3>
-          <p>
-            Directions: In this section, you will hear two long conversations.
-            At the end of each conversation, you will hear four questions. Both
-            the conversation and the questions will be spoken only once. After
-            you hear a question, you must choose the best answer from the four
-            choices marked A), B), C) and D). Then mark the corresponding letter
-            on Answer Sheet 1 with a single line through the centre.
-          </p>
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 8 and 11 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(7, 11)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 12 and 15 are based on the news report you have just
-            heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(10, 15)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-        </section>
-
-        <section>
-          <h3>Section C</h3>
-          <p>
-            Directions: In this section, you will hear three passages. At the
-            end of each passage, you will hear three or four questions. Both the
-            passage and the questions will be spoken only once. After you hear a
-            question, you must choose the best answer from the four choices
-            marked A), B), C) and D). Then mark the corresponding letter on
-            Answer Sheet 1 with a single line through the centre.
-          </p>
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 16 and 18 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(15, 18)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 19 and 21 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(18, 21)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-
-          <AudioPlayer src="path-to-your-audio-file" />
-          <p>
-            Questions 22 and 25 are based on the news report you have just heard.
-          </p>
-          <QuestionList
-            questions={questions.slice(21, 25)}
-            selectedAnswer={selectedAnswer}
-            onAnswerChange={handleOptionChange}
-          />
-        </section>
+        <SectionA
+          questions={questions}
+          selectedAnswer={selectedAnswer}
+          onAnswerChange={handleOptionChange}
+        />
+        <SectionB
+          questions={questions}
+          selectedAnswer={selectedAnswer}
+          onAnswerChange={handleOptionChange}
+        />
+        <SectionC
+          questions={questions}
+          selectedAnswer={selectedAnswer}
+          onAnswerChange={handleOptionChange}
+        />
       </div>
     </>
   );
