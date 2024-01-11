@@ -476,6 +476,254 @@ const ReadingComprehension = () => {
     },
   ];
 
+  const PassageOne = [
+    "Three children in every classroom have a diagnosable mental health condition. Half of these are behavioural disorders, while one third are emotional disorders such as stress, anxiety and depression, which often become outwardly apparent through self-harm. There was an astonishing 52 per cent jump in hospital admissions for children and young people who had harmed themselves between 2009 and 2015.",
+    "Schools and teachers have consistently reported the scale of the problem since 2009. Last year, over half of teachers reported that more of their pupils experience mental health problems than in the past. But teachers also consistently report how ill-equipped they feel to meet pupils' mental health needs, and often cite a lack of training, expertise and support from the National Health Service (英国国家医疗服务体系).",
+    "Part of the reason for the increased pressure on schools is that there are now fewer ‘early intervention (干预)’ and low-level mental health services based in the community. Cuts to local authority budgets since 2010 have resulted in a significant decline of these services, despite strong evidence of their effectiveness in preventing crises further down the line.The only way to break the pressures on both mental health services and schools is to reinvest in early intervention services inside schools.",
+    "There are strong arguments for why schools are best placed to provide mental health services. Schools see young people more than any other service, which gives them a unique ability to get to hard-to-reach children and young people and build meaningful relationships with them over time. Recent studies have shown that children and young people largely prefer to see a counsellor in school rather than in an outside environment. Young people have reported that for low-level conditions such as stress and anxiety, a clinical setting can sometimes be daunting (令人却步的).",
+    "There are already examples of innovative schools which combine mental health and wellbeing provision with a strong academic curriculum. This will, though, require a huge cultural shift. Politicians, policymakers, commissioners and school leaders must be brave enough to make the leap towards reimagining schools as providers of health as well as education services.",
+  ];
+
+  const questionsOne = [
+    {
+      Number: 46,
+      Statement: "What are teachers complaining about?",
+      Options: [
+        {
+          key: "A",
+          text: "There are too many students requiring special attention.",
+        },
+        {
+          key: "B",
+          text: "They are under too much stress counselling needy students.",
+        },
+        {
+          key: "C",
+          text: "Schools are inadequately equipped to implement any intervention.",
+        },
+        {
+          key: "D",
+          text: "They lack the necessary resources to address pupils' mental problems.",
+        },
+      ],
+    },
+    {
+      Number: 47,
+      Statement:
+        "What do we learn from the passage about community health services in Britain?",
+      Options: [
+        {
+          key: "A",
+          text: "They have deteriorated due to budget cuts.",
+        },
+        {
+          key: "B",
+          text: "They facilitate local residents' everyday lives.",
+        },
+        {
+          key: "C",
+          text: "They prove ineffective in helping mental patients.",
+        },
+        {
+          key: "D",
+          text: "They cover preventative care for the local residents.",
+        },
+      ],
+    },
+    {
+      Number: 48,
+      Statement:
+        "Where does the author suggest mental health services be placed?",
+      Options: [
+        {
+          key: "A",
+          text: "At home.",
+        },
+        {
+          key: "B",
+          text: "At school.",
+        },
+        {
+          key: "C",
+          text: "In hospitals.",
+        },
+        {
+          key: "D",
+          text: "In communities.",
+        },
+      ],
+    },
+    {
+      Number: 49,
+      Statement: "What do we learn from the recent studies?",
+      Options: [
+        {
+          key: "A",
+          text: "Students prefer to rely on peers to relieve stress and anxiety.",
+        },
+        {
+          key: "B",
+          text: "Young people are keen on building meaningful relationships.",
+        },
+        {
+          key: "C",
+          text: "Students are more comfortable seeking counselling in school.",
+        },
+        {
+          key: "D",
+          text: "Young people benefit from various kinds of outdoor activities.",
+        },
+      ],
+    },
+    {
+      Number: 50,
+      Statement:
+        "What does the author mean by a cultural shift (Line 2, Para. 6)?",
+      Options: [
+        {
+          key: "A",
+          text: "Simplification of schools' academic curriculums.",
+        },
+        {
+          key: "B",
+          text: "Parents' involvement in schools' policy-making.",
+        },
+        {
+          key: "C",
+          text: "A change in teachers' attitudes to mental health.",
+        },
+        {
+          key: "D",
+          text: "A change in the conception of what schools are.",
+        },
+      ],
+    },
+  ];
+
+  const passageTwo = [
+    "Picture this: You're at a movie theater food stand loading up on snacks. You have a choice of a small, medium or large soda. The small is $3.50 and the large is $5.50. It's a tough decision: The small size may not last you through the whole movie, but $5.50 for some sugary drink seems ridiculous. But there's a third option, a medium soda for $5.25. Medium may be the perfect amount of soda for you, but the large is only a quarter more. If you're like most people, you end up buying the large (and taking a bathroom break midshow).",
+    "If you're wondering who would buy the medium soda, the answer is almost no one. In fact, there's a good chance the marketing department purposely priced the medium soda as a decoy (诱饵), making you more likely to buy the large soda rather than the small.",
+    "I have written about this peculiarity in human nature before with my friend Dan Ariely, who studied this phenomenon extensively after noticing pricing for subscriptions (订阅) to The Economist. The digital subscription was $59, the print subscription was $125, and the print plus digital subscription was also $125. No one in their right mind would buy the print subscription when you could get digital as well for the same price, so why was it even an option? Ariely ran an experiment and found that when only the two “real” choices were offered, more people chose the less-expensive digital subscription. But the addition of the bad option made people much more likely to choose the more expensive print plus digital option.",
+    "Brain scientists call this effect “asymmetric dominance” and it means that people gravitate toward the choice nearest a clearly inferior option. Marketing professors call it the decoy effect, which is certainly easier to remember. Lucky for consumers, almost no one in the business community understands it.",
+    "The decoy effect works because of the way our brains assign value when making choices. Value is almost never absolute; rather, we decide an object's value relative to our other choices. If more options are introduced, the value equation changes.",
+  ];
+
+  const questionsTwo = [
+    {
+      Number: 51,
+      Statement: "Why does the author ask us to imagine buying food in the movie theater?",
+      Options: [
+        {
+          key: "A",
+          text: "To illustrate people's peculiar shopping behavior.",
+        },
+        {
+          key: "B",
+          text: "To illustrate the increasing variety of snacks there.",
+        },
+        {
+          key: "C",
+          text: "To show how hard it can be to choose a drink there.",
+        },
+        {
+          key: "D",
+          text: "To show how popular snacks are among movie fans.",
+        },
+      ],
+    },
+    {
+      Number: 52,
+      Statement:
+        "Why is the medium soda priced the way it is?",
+      Options: [
+        {
+          key: "A",
+          text: "To attract more customers to buy it.",
+        },
+        {
+          key: "B",
+          text: "To show the price matches the amount.",
+        },
+        {
+          key: "C",
+          text: "To ensure customers drink the right amount of soda.",
+        },
+        {
+          key: "D",
+          text: "To make customers believe they are getting a bargain.",
+        },
+      ],
+    },
+    {
+      Number: 53,
+      Statement:
+        "What do we learn from Dan Ariely's experiment?",
+      Options: [
+        {
+          key: "A",
+          text: "Lower-priced goods attract more customers.",
+        },
+        {
+          key: "B",
+          text: "The Economist's promotional strategy works.",
+        },
+        {
+          key: "C",
+          text: "The Economist's print edition turns out to sell the best.",
+        },
+        {
+          key: "D",
+          text: "More readers choose the digital over the print edition.",
+        },
+      ],
+    },
+    {
+      Number: 54,
+      Statement: "For what purpose is “the bad option” (Line 6, Para.3) added?",
+      Options: [
+        {
+          key: "A",
+          text: "To cater to the peculiar needs of some customers.",
+        },
+        {
+          key: "B",
+          text: "To help customers to make more rational choices.",
+        },
+        {
+          key: "C",
+          text: "To trap customers into buying the more pricey item.",
+        },
+        {
+          key: "D",
+          text: "To provide customers with a greater variety of goods.",
+        },
+      ],
+    },
+    {
+      Number: 55,
+      Statement:
+        "How do we assess the value of a commodity, according to the passage?",
+      Options: [
+        {
+          key: "A",
+          text: "By considering its usefulness.",
+        },
+        {
+          key: "B",
+          text: "By comparing it with other choices.",
+        },
+        {
+          key: "C",
+          text: "By taking its quality into account.",
+        },
+        {
+          key: "D",
+          text: "By examining its value equation.",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className={styles.comprehensionContainer}>
       {/* Section A */}
@@ -515,12 +763,80 @@ const ReadingComprehension = () => {
         {questionsB.map((question) => (
           <div key={question.Number} className={styles.questionContainer}>
             {/* 渲染问题描述 */}
-            <p className={styles.questionTitle}>{question.Number}: {question.Statement}</p>
+            <p className={styles.questionTitle}>
+              {question.Number}: {question.Statement}
+            </p>
             <div className={styles.optionsContainer}>
               {/* 只渲染选项的标识符 */}
               {question.Options.map((optionKey) => (
                 <button key={optionKey} className={styles.optionButton}>
                   {optionKey}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      {/* Section C */}
+      <section className={styles.section}>
+        <h2>Section C</h2>
+        <p>
+          <b>Directions:</b>There are 2 passages in this section. Each passage
+          is followed by some questions or unfinished statements. For each of
+          them there are four choices marked A), B), C) and D). You should
+          decide on the best choice and mark the corresponding letter on Answer
+          Sheet 2 with a single line through the centre.
+        </p>
+
+        {/* Passage One */}
+        <b>Passage One</b>
+        <br />
+        <b>Questions 46 to 50 are based on the following passage.</b>
+        {PassageOne.map((paragraph, index) => (
+          <p key={index} className={styles.paragraph}>
+            {paragraph}
+          </p>
+        ))}
+        {questionsOne.map((question) => (
+          <div key={question.Number} className={styles.questionContainer}>
+            <p className={styles.questionTitle}>
+              {question.Number}: {question.Statement}
+            </p>
+            <div className={styles.optionsContainer}>
+              {question.Options.map((option) => (
+                <button key={option.key} className={styles.optionButton}>
+                  {option.key}) {option.text}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        {/* Passage Two */}
+        <b>Passage Two</b>
+        <br />
+        <b>Questions 51 to 55 are based on the following passage.</b>
+        {passageTwo.map((paragraph, index) => (
+          <p key={`passageTwo-${index}`} className={styles.paragraph}>
+            {paragraph}
+          </p>
+        ))}
+        {questionsTwo.map((question) => (
+          <div
+            key={`questionD-${question.Number}`}
+            className={styles.questionContainer}
+          >
+            <p className={styles.questionTitle}>
+              {question.Number}: {question.Statement}
+            </p>
+            <div className={styles.optionsContainer}>
+              {question.Options.map((option) => (
+                <button
+                  key={`optionD-${option.key}`}
+                  className={styles.optionButton}
+                >
+                  {option.key}) {option.text}
                 </button>
               ))}
             </div>
