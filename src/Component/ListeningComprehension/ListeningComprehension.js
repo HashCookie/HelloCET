@@ -263,7 +263,7 @@ const ListeningComprehension = () => {
 
   return (
     <>
-      <div className={styles["listening-comprehension-container"]}>
+      <div className={styles["listeningComprehensionContainer"]}>
         <h2>Part2 Listening Comprehension</h2>
         <SectionA
           questions={questions}

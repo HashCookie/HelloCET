@@ -1,26 +1,26 @@
-.listening-comprehension-container {
-    font-family: Arial, sans-serif;
-  }
-  
-  .listening-comprehension-container h2,
-  .listening-comprehension-container h3 {
-    color: #333;
-  }
-  
-  .questions {
-    margin-top: 20px;
-  }
-  
-  .question ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .question li {
-    margin-bottom: 10px;
-  }
-  
-  .question input[type="radio"] {
-    margin-right: 10px;
-  }
-  
+.listeningComprehensionContainer {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.listeningComprehensionContainer h2,
+.listeningComprehensionContainer h3 {
+  color: #333;
+}
+
+.questions {
+  margin-top: 20px;
+}
+
+.question ul {
+  list-style: none;
+  padding: 0;
+}
+
+.question li {
+  margin-bottom: 10px;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+}
