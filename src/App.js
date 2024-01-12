@@ -1,7 +1,7 @@
-import Writing from './Component/Writing/Writing';
-import ListeningComprehension from "./Component/ListeningComprehension/ListeningComprehension";
-import ReadingComprehension from "./Component/ReadingComprehension/ReadingComprehension";
-import Translation from "./Component/Translation/Translation";
+import Writing from './components/Writing/Writing';
+import ListeningComprehension from "./components/ListeningComprehension/ListeningComprehension";
+import ReadingComprehension from "./components/ReadingComprehension/ReadingComprehension";
+import Translation from "./components/Translation/Translation";
 
 function App() {
   return (
