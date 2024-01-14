@@ -1,243 +1,229 @@
 {
-    "Section_A": {
-      "directions": "In this section, you will hear three news reports. At the end of each news report, you will hear two or three questions. Both the news report and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C), and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 1,
-          "options": {
-            "A": "Her friend Erika.",
-            "B": "Her little brother.",
-            "C": "Her grandfather.",
-            "D": "Her grandmother."
-          }
-        },
-        {
-          "number": 2,
-          "options": {
-            "A": "By taking pictures for passers-by.",
-            "B": "By working part-time at a hospital.",
-            "C": "By selling lemonade and pictures.",
-            "D": "By asking for help on social media."
-          }
-        },
-        {
-          "number": 3,
-          "options": {
-            "A": "Finding cheaper ways of highway construction.",
-            "B": "Generating electric power for passing vehicles.",
-            "C": "Providing clean energy to five million people.",
-            "D": "Testing the efficiency of the new solar panel."
-          }
-        },
-        {
-          "number": 4,
-          "options": {
-            "A": "They can stand the wear and tear of natural elements.",
-            "B": "They can be laid right on top of existing highways.",
-            "C": "They are only about half an inch thick.",
-            "D": "They are made from cheap materials."
-          }
-        },
-        {
-          "number": 5,
-          "options": {
-            "A": "Endless fighting in the region.",
-            "B": "The hazards from the desert.",
-            "C": "Inadequate funding for research.",
-            "D": "The lack of clues about the species."
-          }
-        },
-        {
-          "number": 6,
-          "options": {
-            "A": "To observe the wildlife in the two national parks.",
-            "B": "To identify the reasons for the lions’ disappearance.",
-            "C": "To study the habitat of lions in Sudan and Ethiopia.",
-            "D": "To find evidence of the existence of the “lost lions”."
-          }
-        },
-        {
-          "number": 7,
-          "options": {
-            "A": "Lions walking.",
-            "B": "Lions’ tracks.",
-            "C": "Some camping facilities.",
-            "D": "Traps set by local hunters."
-          }
-        }
-      ]
+  "questions": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Her friend Erika.",
+        "B": "Her little brother.",
+        "C": "Her grandfather.",
+        "D": "Her grandmother."
+      }
     },
-    "Section_B": {
-      "directions": "In this section, you will hear two long conversations. At the end of each conversation, you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C), and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 8,
-          "options": {
-            "A": "Her ‘lucky birthday’.",
-            "B": "A call from her dad.",
-            "C": "Her wedding anniversary.",
-            "D": "A special gift from the man."
-          }
-        },
-        {
-          "number": 9,
-          "options": {
-            "A": "Gave her a big model plane.",
-            "B": "Bought her a gold necklace.",
-            "C": "Took her on a trip overseas.",
-            "D": "Threw her a surprise party."
-          }
-        },
-        {
-          "number": 10,
-          "options": {
-            "A": "The gift her husband has bought.",
-            "B": "The trip her husband has planned.",
-            "C": "What has been troubling her husband.",
-            "D": "What her husband and the man are up to."
-          }
-        },
-        {
-          "number": 11,
-          "options": {
-            "A": "He will be glad to be a guide for the couple’s holiday trip.",
-            "B": "He will tell the woman the secret if her husband agrees.",
-            "C": "He is eager to learn how the couple’s holiday turns out.",
-            "D": "He wants to find out about the couple’s holiday plan."
-          }
-        },
-        {
-          "number": 12,
-          "options": {
-            "A": "They are sensitive to the dynamics of a negotiation.",
-            "B": "They see the importance of making compromises.",
-            "C": "They know when to adopt a tough attitude.",
-            "D": "They take the rival’s attitude into account."
-          }
-        },
-        {
-          "number": 13,
-          "options": {
-            "A": "They know how to adapt.",
-            "B": "They know when to stop.",
-            "C": "They know when to make compromises.",
-            "D": "They know how to control their emotion."
-          }
-        },
-        {
-          "number": 14,
-          "options": {
-            "A": "They are patient.",
-            "B": "They are good at expression.",
-            "C": "They learn quickly.",
-            "D": "They uphold their principles."
-          }
-        },
-        {
-          "number": 15,
-          "options": {
-            "A": "Make clear one’s intentions.",
-            "B": "Clarify items of negotiation.",
-            "C": "Formulate one’s strategy.",
-            "D": "Get to know the other side."
-          }
-        }
-      ]
+    {
+      "number": 2,
+      "options": {
+        "A": "By taking pictures for passers-by.",
+        "B": "By working part-time at a hospital.",
+        "C": "By selling lemonade and pictures.",
+        "D": "By asking for help on social media."
+      }
     },
-    "Section_C": {
-      "directions": "In this section, you will hear three passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C), and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 16,
-          "options": {
-            "A": "When America’s earliest space program started.",
-            "B": "When the International Space Station was built.",
-            "C": "How many space shuttle missions there will be.",
-            "D": "How space research benefits people on Earth."
-          }
-        },
-        {
-          "number": 17,
-          "options": {
-            "A": "They accurately calculated the speed of the orbiting shuttles.",
-            "B": "They developed objects for astronauts to use in outer space.",
-            "C": "They tried to meet astronauts’ specific requirements.",
-            "D": "They tried to make best use of the latest technology."
-          }
-        },
-        {
-          "number": 18,
-          "options": {
-            "A": "They are extremely accurate.",
-            "B": "They are expensive to make.",
-            "C": "They were first made in space.",
-            "D": "They were invented in the 1970s."
-          }
-        },
-        {
-          "number": 19,
-          "options": {
-            "A": "It was when her ancestors came to America.",
-            "B": "People had plenty of land to cultivate then.",
-            "C": "It marked the beginning of something new.",
-            "D": "Everything was natural and genuine then."
-          }
-        },
-        {
-          "number": 20,
-          "options": {
-            "A": "They believed in working for goals.",
-            "B": "They enjoyed living a life of ease.",
-            "C": "They had all kinds of entertainment.",
-            "D": "They were known to be creative."
-          }
-        },
-        {
-          "number": 21,
-          "options": {
-            "A": "Chatting with her ancestors.",
-            "B": "Furnishing her country house.",
-            "C": "Polishing all the silver work.",
-            "D": "Doing needlework by the fire."
-          }
-        },
-        {
-          "number": 22,
-          "options": {
-            "A": "Use a map to identify your location.",
-            "B": "Call your family or friends for help.",
-            "C": "Sit down and try to calm yourself.",
-            "D": "Try to follow your footprints back."
-          }
-        },
-        {
-          "number": 23,
-          "options": {
-            "A": "You may find a way out without your knowing it.",
-            "B": "You may expose yourself to unexpected dangers.",
-            "C": "You may get drowned in a sudden flood.",
-            "D": "You may end up entering a wonderland."
-          }
-        },
-        {
-          "number": 24,
-          "options": {
-            "A": "Look for food.",
-            "B": "Wait patiently.",
-            "C": "Start a fire.",
-            "D": "Walk uphill."
-          }
-        },
-        {
-          "number": 25,
-          "options": {
-            "A": "Inform somebody of your plan.",
-            "B": "Prepare enough food and drink.",
-            "C": "Check the local weather.",
-            "D": "Find a map and a compass."
-          }
-        }
-      ]
+    {
+      "number": 3,
+      "options": {
+        "A": "Finding cheaper ways of highway construction.",
+        "B": "Generating electric power for passing vehicles.",
+        "C": "Providing clean energy to five million people.",
+        "D": "Testing the efficiency of the new solar panel."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "They can stand the wear and tear of natural elements.",
+        "B": "They can be laid right on top of existing highways.",
+        "C": "They are only about half an inch thick.",
+        "D": "They are made from cheap materials."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "Endless fighting in the region.",
+        "B": "The hazards from the desert.",
+        "C": "Inadequate funding for research.",
+        "D": "The lack of clues about the species."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "To observe the wildlife in the two national parks.",
+        "B": "To identify the reasons for the lions’ disappearance.",
+        "C": "To study the habitat of lions in Sudan and Ethiopia.",
+        "D": "To find evidence of the existence of the “lost lions”."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "Lions walking.",
+        "B": "Lions’ tracks.",
+        "C": "Some camping facilities.",
+        "D": "Traps set by local hunters."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "Her ‘lucky birthday’.",
+        "B": "A call from her dad.",
+        "C": "Her wedding anniversary.",
+        "D": "A special gift from the man."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "Gave her a big model plane.",
+        "B": "Bought her a gold necklace.",
+        "C": "Took her on a trip overseas.",
+        "D": "Threw her a surprise party."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "The gift her husband has bought.",
+        "B": "The trip her husband has planned.",
+        "C": "What has been troubling her husband.",
+        "D": "What her husband and the man are up to."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "He will be glad to be a guide for the couple’s holiday trip.",
+        "B": "He will tell the woman the secret if her husband agrees.",
+        "C": "He is eager to learn how the couple’s holiday turns out.",
+        "D": "He wants to find out about the couple’s holiday plan."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "They are sensitive to the dynamics of a negotiation.",
+        "B": "They see the importance of making compromises.",
+        "C": "They know when to adopt a tough attitude.",
+        "D": "They take the rival’s attitude into account."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "They know how to adapt.",
+        "B": "They know when to stop.",
+        "C": "They know when to make compromises.",
+        "D": "They know how to control their emotion."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "They are patient.",
+        "B": "They are good at expression.",
+        "C": "They learn quickly.",
+        "D": "They uphold their principles."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "Make clear one’s intentions.",
+        "B": "Clarify items of negotiation.",
+        "C": "Formulate one’s strategy.",
+        "D": "Get to know the other side."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "When America’s earliest space program started.",
+        "B": "When the International Space Station was built.",
+        "C": "How many space shuttle missions there will be.",
+        "D": "How space research benefits people on Earth."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "They accurately calculated the speed of the orbiting shuttles.",
+        "B": "They developed objects for astronauts to use in outer space.",
+        "C": "They tried to meet astronauts’ specific requirements.",
+        "D": "They tried to make best use of the latest technology."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "They are extremely accurate.",
+        "B": "They are expensive to make.",
+        "C": "They were first made in space.",
+        "D": "They were invented in the 1970s."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "It was when her ancestors came to America.",
+        "B": "People had plenty of land to cultivate then.",
+        "C": "It marked the beginning of something new.",
+        "D": "Everything was natural and genuine then."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "They believed in working for goals.",
+        "B": "They enjoyed living a life of ease.",
+        "C": "They had all kinds of entertainment.",
+        "D": "They were known to be creative."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "Chatting with her ancestors.",
+        "B": "Furnishing her country house.",
+        "C": "Polishing all the silver work.",
+        "D": "Doing needlework by the fire."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "Use a map to identify your location.",
+        "B": "Call your family or friends for help.",
+        "C": "Sit down and try to calm yourself.",
+        "D": "Try to follow your footprints back."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "You may find a way out without your knowing it.",
+        "B": "You may expose yourself to unexpected dangers.",
+        "C": "You may get drowned in a sudden flood.",
+        "D": "You may end up entering a wonderland."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "Look for food.",
+        "B": "Wait patiently.",
+        "C": "Start a fire.",
+        "D": "Walk uphill."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "Inform somebody of your plan.",
+        "B": "Prepare enough food and drink.",
+        "C": "Check the local weather.",
+        "D": "Find a map and a compass."
+      }
     }
-  }
-  
+  ]
+}
