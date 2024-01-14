@@ -1,242 +1,229 @@
 {
-    "Section_A": {
-      "directions": "In this section, you will hear three news reports. At the end of each news report, you will hear two or three questions. Both the news report and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 1,
-          "options": {
-            "A": "It found a pet dog on board a plane to a city in Texas.",
-            "B": "It has one of its cargo planes landing at a wrong airport.",
-            "C": "It sent two dogs to the wrong destinations.",
-            "D": "It had two of its domestic flights mixed up."
-          }
-        },
-        {
-          "number": 2,
-          "options": {
-            "A": "Correct their mistake as soon as possible.",
-            "B": "Give two pets a physical checkup.",
-            "C": "Hire a charter jet to bring the pets back.",
-            "D": "Send another plane to continue the flight."
-          }
-        },
-        {
-          "number": 3,
-          "options": {
-            "A": "She weighs 130 kilograms.",
-            "B": "She has had babies before.",
-            "C": "She was brought from Africa.",
-            "D": "She has a big family of six."
-          }
-        },
-        {
-          "number": 4,
-          "options": {
-            "A": "It took 22 hours.",
-            "B": "It had some complications.",
-            "C": "It was smooth.",
-            "D": "It was monitored by Dr. Sue Tygielski."
-          }
-        },
-        {
-          "number": 5,
-          "options": {
-            "A": "It enjoyed great popularity.",
-            "B": "It started business three years ago.",
-            "C": "It was frequented by newly-weds.",
-            "D": "It was built above the sea water."
-          }
-        },
-        {
-          "number": 6,
-          "options": {
-            "A": "Expand his business on the beach.",
-            "B": "Replace the restaurant's wooden deck.",
-            "C": "Post a picture of his restaurant online.",
-            "D": "Celebrate his silver wedding anniversary."
-          }
-        },
-        {
-          "number": 7,
-          "options": {
-            "A": "She sold it for 2,000 dollars.",
-            "B": "She took it to the restaurant manager.",
-            "C": "She posted its picture on Facebook.",
-            "D": "She returned it to its owner right away."
-          }
-        }
-      ]
+  "questions": [
+    {
+      "number": 1,
+      "options": {
+        "A": "It found a pet dog on board a plane to a city in Texas.",
+        "B": "It has one of its cargo planes landing at a wrong airport.",
+        "C": "It sent two dogs to the wrong destinations.",
+        "D": "It had two of its domestic flights mixed up."
+      }
     },
-    "Section_B": {
-      "directions": "In this section, you will hear two long conversations. At the end of each conversation, you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 8,
-          "options": {
-            "A": "The number of ducks has declined sharply in recent years.",
-            "B": "Climate change has little effect on the lives of wild ducks.",
-            "C": "Duck meat is not eaten in Australia, Canada and the U.S.",
-            "D": "Duck hunting remains legal in many parts of the world."
-          }
-        },
-        {
-          "number": 9,
-          "options": {
-            "A": "Droughts.",
-            "B": "Bushfires.",
-            "C": "Farming.",
-            "D": "Hunting."
-          }
-        },
-        {
-          "number": 10,
-          "options": {
-            "A": "They are not easy to domesticate.",
-            "B": "Their meat is not that popular.",
-            "C": "It is not environmentally friendly.",
-            "D": "It is not considered cost-effective."
-          }
-        },
-        {
-          "number": 11,
-          "options": {
-            "A": "They hunted ducks as a traditional sport.",
-            "B": "They killed wild ducks and geese for food.",
-            "C": "They raised ducks and geese for their eggs.",
-            "D": "They poisoned wild ducks in large numbers."
-          }
-        },
-        {
-          "number": 12,
-          "options": {
-            "A": "Have her house repainted.",
-            "B": "Replace some of her old furniture.",
-            "C": "Move into a newly-painted house.",
-            "D": "Calculate the cost of the paint job."
-          }
-        },
-        {
-          "number": 13,
-          "options": {
-            "A": "How long the work will take.",
-            "B": "How much the work will cost.",
-            "C": "How the paint job is to be done.",
-            "D": "How many workers are needed."
-          }
-        },
-        {
-          "number": 14,
-          "options": {
-            "A": "Cover up her furniture.",
-            "B": "Ask some friends for help.",
-            "C": "Stay somewhere else.",
-            "D": "Oversee the work herself."
-          }
-        },
-        {
-          "number": 15,
-          "options": {
-            "A": "She could have asked a friend for help with the paint job.",
-            "B": "Painting a house involves more trouble than she thought.",
-            "C": "She should have repainted her house much earlier.",
-            "D": "Moving her furniture is harder than the paint job."
-          }
-        }
-      ]
+    {
+      "number": 2,
+      "options": {
+        "A": "Correct their mistake as soon as possible.",
+        "B": "Give two pets a physical checkup.",
+        "C": "Hire a charter jet to bring the pets back.",
+        "D": "Send another plane to continue the flight."
+      }
     },
-    "Section_C": {
-      "directions": "In this section, you will hear three passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 16,
-          "options": {
-            "A": "To cultivate good habits.",
-            "B": "To prepare for secondary school.",
-            "C": "To review what is learned in class.",
-            "D": "To stimulate interest in learning."
-          }
-        },
-        {
-          "number": 17,
-          "options": {
-            "A": "Discuss their academic achievements with them.",
-            "B": "Create an ideal study environment for them.",
-            "C": "Allow them to learn independently.",
-            "D": "Check their homework promptly."
-          }
-        },
-        {
-          "number": 18,
-          "options": {
-            "A": "Finish them before they get tired.",
-            "B": "Tackle the most difficult task first.",
-            "C": "Start with something they enjoy.",
-            "D": "Focus on the most important ones."
-          }
-        },
-        {
-          "number": 19,
-          "options": {
-            "A": "Workers who meet its body weight standards.",
-            "B": "Workers who can lose 30 pounds in a year.",
-            "C": "Workers who try the hardest to lose weight.",
-            "D": "Workers who are in the top 10% of the slimmest."
-          }
-        },
-        {
-          "number": 20,
-          "options": {
-            "A": "Impractical.",
-            "B": "Inconsistent.",
-            "C": "Unmanageable.",
-            "D": "Unfair."
-          }
-        },
-        {
-          "number": 21,
-          "options": {
-            "A": "Offer them much fatter bonuses.",
-            "B": "Improve working environment.",
-            "C": "Encourage healthy behaviors.",
-            "D": "Provide free lunch and snacks."
-          }
-        },
-        {
-          "number": 22,
-          "options": {
-            "A": "It has not done enough to help left-handed children.",
-            "B": "It has treated left-handed children as being disabled.",
-            "C": "It has not built facilities specially for the left-handed.",
-            "D": "It has ignored campaigns on behalf of the left-handed."
-          }
-        },
-        {
-          "number": 23,
-          "options": {
-            "A": "They are as intelligent as other children.",
-            "B": "They have a distinctive style of handwriting.",
-            "C": "They sometimes have psychological problems.",
-            "D": "They tend to have more difficulties in learning."
-          }
-        },
-        {
-          "number": 24,
-          "options": {
-            "A": "Punish teachers discriminating against left-handed students.",
-            "B": "Lay more emphasis on improving children's mental health.",
-            "C": "Encourage students to develop various professional skills.",
-            "D": "Keep track of left-handed children's school perfor-mance."
-          }
-        },
-        {
-          "number": 25,
-          "options": {
-            "A": "How they can be reduced in number.",
-            "B": "Why their numbers are so high.",
-            "C": "What percentage they account for.",
-            "D": "If their percentage keeps increasing."
-          }
-        }
-      ]
+    {
+      "number": 3,
+      "options": {
+        "A": "She weighs 130 kilograms.",
+        "B": "She has had babies before.",
+        "C": "She was brought from Africa.",
+        "D": "She has a big family of six."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "It took 22 hours.",
+        "B": "It had some complications.",
+        "C": "It was smooth.",
+        "D": "It was monitored by Dr. Sue Tygielski."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "It enjoyed great popularity.",
+        "B": "It started business three years ago.",
+        "C": "It was frequented by newly-weds.",
+        "D": "It was built above the sea water."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "Expand his business on the beach.",
+        "B": "Replace the restaurant's wooden deck.",
+        "C": "Post a picture of his restaurant online.",
+        "D": "Celebrate his silver wedding anniversary."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "She sold it for 2,000 dollars.",
+        "B": "She took it to the restaurant manager.",
+        "C": "She posted its picture on Facebook.",
+        "D": "She returned it to its owner right away."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "The number of ducks has declined sharply in recent years.",
+        "B": "Climate change has little effect on the lives of wild ducks.",
+        "C": "Duck meat is not eaten in Australia, Canada and the U.S.",
+        "D": "Duck hunting remains legal in many parts of the world."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "Droughts.",
+        "B": "Bushfires.",
+        "C": "Farming.",
+        "D": "Hunting."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "They are not easy to domesticate.",
+        "B": "Their meat is not that popular.",
+        "C": "It is not environmentally friendly.",
+        "D": "It is not considered cost-effective."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "They hunted ducks as a traditional sport.",
+        "B": "They killed wild ducks and geese for food.",
+        "C": "They raised ducks and geese for their eggs.",
+        "D": "They poisoned wild ducks in large numbers."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "Have her house repainted.",
+        "B": "Replace some of her old furniture.",
+        "C": "Move into a newly-painted house.",
+        "D": "Calculate the cost of the paint job."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "How long the work will take.",
+        "B": "How much the work will cost.",
+        "C": "How the paint job is to be done.",
+        "D": "How many workers are needed."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "Cover up her furniture.",
+        "B": "Ask some friends for help.",
+        "C": "Stay somewhere else.",
+        "D": "Oversee the work herself."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "She could have asked a friend for help with the paint job.",
+        "B": "Painting a house involves more trouble than she thought.",
+        "C": "She should have repainted her house much earlier.",
+        "D": "Moving her furniture is harder than the paint job."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "To cultivate good habits.",
+        "B": "To prepare for secondary school.",
+        "C": "To review what is learned in class.",
+        "D": "To stimulate interest in learning."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "Discuss their academic achievements with them.",
+        "B": "Create an ideal study environment for them.",
+        "C": "Allow them to learn independently.",
+        "D": "Check their homework promptly."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "Finish them before they get tired.",
+        "B": "Tackle the most difficult task first.",
+        "C": "Start with something they enjoy.",
+        "D": "Focus on the most important ones."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "Workers who meet its body weight standards.",
+        "B": "Workers who can lose 30 pounds in a year.",
+        "C": "Workers who try the hardest to lose weight.",
+        "D": "Workers who are in the top 10% of the slimmest."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "Impractical.",
+        "B": "Inconsistent.",
+        "C": "Unmanageable.",
+        "D": "Unfair."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "Offer them much fatter bonuses.",
+        "B": "Improve working environment.",
+        "C": "Encourage healthy behaviors.",
+        "D": "Provide free lunch and snacks."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "It has not done enough to help left-handed children.",
+        "B": "It has treated left-handed children as being disabled.",
+        "C": "It has not built facilities specially for the left-handed.",
+        "D": "It has ignored campaigns on behalf of the left-handed."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "They are as intelligent as other children.",
+        "B": "They have a distinctive style of handwriting.",
+        "C": "They sometimes have psychological problems.",
+        "D": "They tend to have more difficulties in learning."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "Punish teachers discriminating against left-handed students.",
+        "B": "Lay more emphasis on improving children's mental health.",
+        "C": "Encourage students to develop various professional skills.",
+        "D": "Keep track of left-handed children's school perfor-mance."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "How they can be reduced in number.",
+        "B": "Why their numbers are so high.",
+        "C": "What percentage they account for.",
+        "D": "If their percentage keeps increasing."
+      }
     }
-  }
+  ]
+}

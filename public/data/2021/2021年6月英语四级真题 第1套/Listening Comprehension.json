@@ -1,147 +1,139 @@
 {
-    "Section_A": {
-      "directions": "In this section, you will hear three news reports. At the end of each news report, you will hear two or three questions. Both the news report and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 1,
-          "options": {
-            "A": "Enrol him in a Newcastle football club.",
-            "B": "Send him to an after-school art class.",
-            "C": "Forbid him to draw in his workbook.",
-            "D": "Help him post his drawings online."
-          }
-        },
-        {
-          "number": 2,
-          "options": {
-            "A": "Contacted Joe to decorate its dining-room.",
-            "B": "Hired Joe to paint all the walls of its buildings.",
-            "C": "Renovated its kitchen and all the dining-rooms.",
-            "D": "Asked Joe for permission to use his online drawings."
-          }
-        },
-        {
-          "number": 3,
-          "options": {
-            "A": "Get her pet dog back.",
-            "B": "Beg for help from the police.",
-            "C": "Identify the suspect on the security video.",
-            "D": "Post pictures of her pet dog on social media."
-          }
-        },
-        {
-          "number": 4,
-          "options": {
-            "A": "It is suffering a great deal from the incident.",
-            "B": "It is helping the police with the investigation.",
-            "C": "It is bringing the case to the local district court.",
-            "D": "It is offering a big reward to anyone who helps."
-          }
-        },
-        {
-          "number": 5,
-          "options": {
-            "A": "Provide free meals to the local poor.",
-            "B": "Help people connect with each other.",
-            "C": "Help eliminate class difference in his area.",
-            "D": "Provide customers with first-class service."
-          }
-        },
-        {
-          "number": 6,
-          "options": {
-            "A": "It does not supervise its employees.",
-            "B": "It does not use volunteers.",
-            "C": "It donates regularly to a local charity.",
-            "D": "It is open round the clock."
-          }
-        },
-        {
-          "number": 7,
-          "options": {
-            "A": "They will realise the importance of communication.",
-            "B": "They will come to the café even more frequently.",
-            "C": "They will care less about their own background.",
-            "D": "They will find they have something in common."
-          }
-        }
-      ]
+  "questions": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Enrol him in a Newcastle football club.",
+        "B": "Send him to an after-school art class.",
+        "C": "Forbid him to draw in his workbook.",
+        "D": "Help him post his drawings online."
+      }
     },
-    "Section_B": {
-      "directions": "In this section, you will hear two long conversations. At the end of each conversation, you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 8,
-          "options": {
-            "A": "A surprise party for Paul’s birthday.",
-            "B": "Travel plans for the coming weekend.",
-            "C": "Preparations for Saturday’s get-together.",
-            "D": "The new market on the other side of town."
-          }
-        },
-        {
-          "number": 9,
-          "options": {
-            "A": "It makes the hostess’s job a whole lot easier.",
-            "B": "It enables guests to walk ground and chat freely.",
-            "C": "It saves considerable time and labor.",
-            "D": "It requires fewer tables and chairs."
-          }
-        },
-        {
-          "number": 10,
-          "options": {
-            "A": "It offers some big discounts.",
-            "B": "It is quite close to her house.",
-            "C": "It is more spacious and less crowded.",
-            "D": "It sells local wines and soft drinks."
-          }
-        },
-        {
-          "number": 11,
-          "options": {
-            "A": "Cook a dish for the party.",
-            "B": "Arrive 10 minutes earlier.",
-            "C": "Prepare a few opening remarks.",
-            "D": "Bring his computer and speakers."
-          }
-        },
-        {
-          "number": 12,
-          "options": {
-            "A": "For commuting to work.",
-            "B": "For long-distance travel.",
-            "C": "For getting around in Miami.",
-            "D": "For convenience at weekends."
-          }
-        },
-        {
-          "number": 13,
-          "options": {
-            "A": "They are reliable.",
-            "B": "They are compact.",
-            "C": "They are spacious.",
-            "D": "They are easy to drive."
-          }
-        },
-        {
-          "number": 14,
-          "options": {
-            "A": "Buy a second-hand car.",
-            "B": "Trust her own judgment.",
-            "C": "Seek advice from his friend.",
-            "D": "Look around before deciding."
-          }
-        },
-        {
-          "number": 15,
-          "options": {
-            "A": "He sells new cars.",
-            "B": "He can be trusted.",
-            "C": "He is starting a business.",
-            "D": "He is a successful car dealer."
-          }
-        }
-      ]
+    {
+      "number": 2,
+      "options": {
+        "A": "Contacted Joe to decorate its dining-room.",
+        "B": "Hired Joe to paint all the walls of its buildings.",
+        "C": "Renovated its kitchen and all the dining-rooms.",
+        "D": "Asked Joe for permission to use his online drawings."
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "Get her pet dog back.",
+        "B": "Beg for help from the police.",
+        "C": "Identify the suspect on the security video.",
+        "D": "Post pictures of her pet dog on social media."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "It is suffering a great deal from the incident.",
+        "B": "It is helping the police with the investigation.",
+        "C": "It is bringing the case to the local district court.",
+        "D": "It is offering a big reward to anyone who helps."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "Provide free meals to the local poor.",
+        "B": "Help people connect with each other.",
+        "C": "Help eliminate class difference in his area.",
+        "D": "Provide customers with first-class service."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "It does not supervise its employees.",
+        "B": "It does not use volunteers.",
+        "C": "It donates regularly to a local charity.",
+        "D": "It is open round the clock."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "They will realise the importance of communication.",
+        "B": "They will come to the café even more frequently.",
+        "C": "They will care less about their own background.",
+        "D": "They will find they have something in common."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "A surprise party for Paul’s birthday.",
+        "B": "Travel plans for the coming weekend.",
+        "C": "Preparations for Saturday’s get-together.",
+        "D": "The new market on the other side of town."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "It makes the hostess’s job a whole lot easier.",
+        "B": "It enables guests to walk ground and chat freely.",
+        "C": "It saves considerable time and labor.",
+        "D": "It requires fewer tables and chairs."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "It offers some big discounts.",
+        "B": "It is quite close to her house.",
+        "C": "It is more spacious and less crowded.",
+        "D": "It sells local wines and soft drinks."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Cook a dish for the party.",
+        "B": "Arrive 10 minutes earlier.",
+        "C": "Prepare a few opening remarks.",
+        "D": "Bring his computer and speakers."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "For commuting to work.",
+        "B": "For long-distance travel.",
+        "C": "For getting around in Miami.",
+        "D": "For convenience at weekends."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "They are reliable.",
+        "B": "They are compact.",
+        "C": "They are spacious.",
+        "D": "They are easy to drive."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "Buy a second-hand car.",
+        "B": "Trust her own judgment.",
+        "C": "Seek advice from his friend.",
+        "D": "Look around before deciding."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "He sells new cars.",
+        "B": "He can be trusted.",
+        "C": "He is starting a business.",
+        "D": "He is a successful car dealer."
+      }
     }
-  }
+  ]
+}
