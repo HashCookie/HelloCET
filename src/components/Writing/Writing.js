@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from "react";
 import styles from '../../styles/Writing.module.css';
 
-const WritingTestPage = () => {
+const WritingTestPage = ({ basePath }) => {  // 这里添加了 basePath 作为 prop
   const [essay, setEssay] = useState("");
-  const [instructions, setInstructions] = useState("");
+  const [Directions, setDirections] = useState("");
 
   useEffect(() => {
-    // 模拟从外部加载 JSON 数据
-    const mockData = {
-      instructions:
-        "Directions: For this part, you are allowed 30 minutes to write on the topic Changes in the Way of Education. You should write at least 120 words but no more than 180 words.",
-      // 您可以在这里添加更多的数据
-    };
-
-    // 设置说明文本
-    setInstructions(mockData.instructions);
-  }, []);
+    if (basePath) {
+      fetch(`${basePath}Writing.json`)
+        .then(response => response.json())
+        .then(data => {
+          setDirections(data.Directions);
+        })
+        .catch(error => console.error('Error loading data:', error));
+    }
+  }, [basePath]);  // 这里使用 basePath 作为依赖
 
   const handleInputChange = (e) => {
     setEssay(e.target.value);
@@ -24,7 +23,7 @@ const WritingTestPage = () => {
   return (
     <div className={styles["writing-test-container"]}>
       <h1>Part1 Writing (30 minutes)</h1>
-      <p>{instructions}</p>
+      <p>{Directions}</p>
       <textarea
         value={essay}
         onChange={handleInputChange}

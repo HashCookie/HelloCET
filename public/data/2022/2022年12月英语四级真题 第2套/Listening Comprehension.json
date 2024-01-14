@@ -1,0 +1,242 @@
+{
+    "Section_A": {
+        "directions": "In this section,you will hear three news reports. At the end of each news report,you will hear tmo or three questions. Both the news report and the questions.will be spoken only once. After you hear a question,you must choose the best answer from the four choices marked A）,B）,C）and D）.Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+        "questions": [
+            {
+                "number": 1,
+                "options": {
+                    "A": "A free car show.",
+                    "B": "A yearly concert.",
+                    "C": "A sports competition.",
+                    "D": "A pipe band contest."
+                }
+            },
+            {
+                "number": 2,
+                "options": {
+                    "A": "Improve the image of Glasgow city.",
+                    "B": "Enrich the local culture of Glasgow.",
+                    "C": "Contribute a lot to the local economy.",
+                    "D": "Entertain people in local communities."
+                }
+            },
+            {
+                "number": 3,
+                "options": {
+                    "A": "Surprising rise in global sea levels.",
+                    "B": "Dangerous ice melts in Greenland.",
+                    "C": "Changing weather patterns in summer.",
+                    "D": "Record growth of Greenland's ice sheets."
+                }
+            },
+            {
+                "number": 4,
+                "options": {
+                    "A": "It began in late May.",
+                    "B": "It lasted three months.",
+                    "C": "It started a month earlier than usual.",
+                    "D": "It ended a month earlier than before."
+                }
+            },
+            {
+                "number": 5,
+                "options": {
+                    "A": "Bundles of £ 20 notes kept turning up.",
+                    "B": "A villager was searching for his lost cash.",
+                    "C": "Local policemen came across bundles of £ 20 notes.",
+                    "D": "A bundle containing thousands of pounds got stolen."
+                }
+            },
+            {
+                "number": 6,
+                "options": {
+                    "A": "They give it to charity.",
+                    "B": "They return it to the finder.",
+                    "C": "They hand it over to the local government.",
+                    "D": "They place a notice in The Northern Echo."
+                }
+            },
+            {
+                "number": 7,
+                "options": {
+                    "A": "They cooperated well with the police.",
+                    "B": "They enjoyed a fairly affluent life.",
+                    "C": "They were puzzled by the mystery.",
+                    "D": "They had a strong community spirit."
+                }
+            }
+        ]
+    },
+    "Section_B": {
+        "directions": "In this section,you will hear two long conversations. At the end of each conversation,you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question,you must choose the best answer from the four choices marked A）,B）,C） and D）. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+        "questions": [
+            {
+                "number": 8,
+                "options": {
+                    "A": "Excited.",
+                    "B": "Indifferent.",
+                    "C": "Delighted.",
+                    "D": "Strange."
+                }
+            },
+            {
+                "number": 9,
+                "options": {
+                    "A": "Search for the meaning of their life.",
+                    "B": "Call on their relatives and friends.",
+                    "C": "Look back on their years at school.",
+                    "D": "Talk about future plans with friends."
+                }
+            },
+            {
+                "number": 10,
+                "options": {
+                    "A": "He prefers to have them shown on social media.",
+                    "B": "He loves them but does not want to make a fuss.",
+                    "C": "He enjoys celebrating others' birthdays rather than his own.",
+                    "D": "He looks forward to receiving presents from his close friends."
+                }
+            },
+            {
+                "number": 11,
+                "options": {
+                    "A": "Hold it on a modest scale to remove birthday anxieties.",
+                    "B": "View it as a chance for people to socialize and have fun.",
+                    "C": "Extend invitation to those he trusts most.",
+                    "D": "Make it an occasion to collect donations."
+                }
+            },
+            {
+                "number": 12,
+                "options": {
+                    "A": "It was absolutely exhausting.",
+                    "B": "There was too long a delay.",
+                    "C": "There was a terrible smell.",
+                    "D": "She got off at the wrong station."
+                }
+            },
+            {
+                "number": 13,
+                "options": {
+                    "A": "She hasn't saved enough money.",
+                    "B": "She hasn't passed the driving test yet.",
+                    "C": "She is worried about traffic jams.",
+                    "D": "She is used to taking public transport."
+                }
+            },
+            {
+                "number": 14,
+                "options": {
+                    "A": "They are popular.",
+                    "B": "They are a bit expensive for her.",
+                    "C": "They are dangerous.",
+                    "D": "They are environmentally friendly."
+                }
+            },
+            {
+                "number": 15,
+                "options": {
+                    "A": "By bus.",
+                    "B": "By renting a bike.",
+                    "C": "By jogging.",
+                    "D": "By sharing a ride."
+                }
+            }
+        ]
+    },
+    "Section_C": {
+        "directions": "In this section,you will hear three passages. At the end of each passage,you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question,you must choose the best ansver from the four choices marked A）,B）,C） and D）. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
+        "questions": [
+            {
+                "number": 16,
+                "options": {
+                    "A": "He is a sign language interpreter.",
+                    "B": "He is a deaf person working in IT.",
+                    "C": "He doesn't like speaking at meetings.",
+                    "D": "He doesn't use email or text messages."
+                }
+            },
+            {
+                "number": 17,
+                "options": {
+                    "A": "Improved communication skills.",
+                    "B": "Speech recognition technology.",
+                    "C": "Big advances in sign language.",
+                    "D": "Transformation in the IT industry."
+                }
+            },
+            {
+                "number": 18,
+                "options": {
+                    "A": "He can avoid being mistaken.",
+                    "B": "He can take notes on the spot.",
+                    "C": "He can understand with ease.",
+                    "D": "He can see the speakers' images."
+                }
+            },
+            {
+                "number": 19,
+                "options": {
+                    "A": "To find pure white walls shining.",
+                    "B": "To enter a house well looked after.",
+                    "C": "To get a hug from family members.",
+                    "D": "To see cheerful colours all around."
+                }
+            },
+            {
+                "number": 20,
+                "options": {
+                    "A": "Choosing a colour because it is fashionable.",
+                    "B": "Painting the interior of their cupboards.",
+                    "C": "Doing the painting job all by themselves.",
+                    "D": "Designing all window frames the same way."
+                }
+            },
+            {
+                "number": 21,
+                "options": {
+                    "A": "Fit most of the cupboards into walls.",
+                    "B": "Hang landscape paintings all around.",
+                    "C": "Match the room's ceiling with all the furniture in colour.",
+                    "D": "Paint the wooden frameworks and walls the same colour."
+                }
+            },
+            {
+                "number": 22,
+                "options": {
+                    "A": "Children must read at least 3 times a week.",
+                    "B": "Reading is a habit every child can develop.",
+                    "C": "Reading to their children is important.",
+                    "D": "Children should start reading at age 3."
+                }
+            },
+            {
+                "number": 23,
+                "options": {
+                    "A": "The number of books they have read by age four.",
+                    "B": "The speed of their brain development in infancy.",
+                    "C": "The number and quality of books parents read to them in infancy.",
+                    "D": "The quality and quantity of time parents spend playing with them."
+                }
+            },
+            {
+                "number": 24,
+                "options": {
+                    "A": "Books with specifically labeled images.",
+                    "B": "Books with pictures of dolls and toys.",
+                    "C": "Books describing the lives of animals.",
+                    "D": "Books telling very interesting stories."
+                }
+            },
+            {
+                "number": 25,
+                "options": {
+                    "A": "Read as many books as possible to their children.",
+                    "B": "Choose carefully what to read to their children.",
+                    "C": "Share experience with other parents.",
+                    "D": "Create picture books for their children."
+                }
+            }
+        ]
+    }
+}
