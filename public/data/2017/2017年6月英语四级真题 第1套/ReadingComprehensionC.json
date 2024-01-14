@@ -1,0 +1,225 @@
+{
+  "title": "Section C",
+  "passages": [
+    "Three children in every classroom have a diagnosable mental health condition...",
+    "Picture this: You're at a movie theater food stand loading up on snacks..."
+  ],
+  "questions": [
+    {
+      "Number": 46,
+      "Statement": "What are teachers complaining about?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 47,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 48,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 49,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 50,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 51,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 52,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 53,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 54,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    },
+    {
+      "Number": 55,
+      "Statement": "What is the main idea of the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There are too many students requiring special attention."
+        },
+        {
+          "key": "B",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        }
+      ]
+    }
+  ]
+}

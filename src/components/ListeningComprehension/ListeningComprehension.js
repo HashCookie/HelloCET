@@ -10,7 +10,7 @@ const ListeningComprehension = ({ basePath }) => {
 
   useEffect(() => {
     if (basePath) {
-      fetch(`${basePath}/listeningComprehensionQuestions.json`)
+      fetch(`${basePath}/ListeningComprehension.json`)
         .then(response => response.json())
         .then(data => {
           setQuestions(data.questions);
