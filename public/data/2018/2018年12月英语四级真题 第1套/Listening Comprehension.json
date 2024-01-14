@@ -1,242 +1,229 @@
 {
-    "Section_A": {
-      "directions": "In this section, you will hear three news reports. At the end of each news report, you will hear two or three questions. Both the news report and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 1,
-          "options": {
-            "A": "Land a space vehicle on the moon in 2019.",
-            "B": "Design a new generation of mobile phones.",
-            "C": "Set up a mobile phone network on the moon.",
-            "D": "Gather data from the moon with a tiny device."
-          }
-        },
-        {
-          "number": 2,
-          "options": {
-            "A": "It is stable.",
-            "B": "It is durable.",
-            "C": "It is inexpensive.",
-            "D": "It is sophisticated."
-          }
-        },
-        {
-          "number": 3,
-          "options": {
-            "A": "It lasted more than six hours.",
-            "B": "No injuries were yet reported.",
-            "C": "Nobody was in the building when it broke out.",
-            "D": "It had burned for 45 minutes by the time firefighters arrived."
-          }
-        },
-        {
-          "number": 4,
-          "options": {
-            "A": "Recruit and train more firefighters.",
-            "B": "Pull down the deserted shopping mall.",
-            "C": "Turn the shopping mall into an amusement park.",
-            "D": "Find money to renovate the local neighborhood."
-          }
-        },
-        {
-          "number": 5,
-          "options": {
-            "A": "Shrinking potato farming.",
-            "B": "Heavy reliance on import.",
-            "C": "Widespread plant disease.",
-            "D": "Insufficient potato supply."
-          }
-        },
-        {
-          "number": 6,
-          "options": {
-            "A": "It intends to keep its traditional diet.",
-            "B": "It wants to expand its own farming.",
-            "C": "It is afraid of the spread of disease.",
-            "D": "It is worried about unfair competition."
-          }
-        },
-        {
-          "number": 7,
-          "options": {
-            "A": "Global warming.",
-            "B": "Ever-rising prices.",
-            "C": "Government regulation.",
-            "D": "Diminishing investment."
-          }
-        }
-      ]
+  "questions": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Land a space vehicle on the moon in 2019.",
+        "B": "Design a new generation of mobile phones.",
+        "C": "Set up a mobile phone network on the moon.",
+        "D": "Gather data from the moon with a tiny device."
+      }
     },
-    "Section_B": {
-      "directions": "In this section, you will hear two long conversations. At the end of each conversation, you will hear four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 8,
-          "options": {
-            "A": "Informative.",
-            "B": "Inspiring.",
-            "C": "Dull.",
-            "D": "Shallow."
-          }
-        },
-        {
-          "number": 9,
-          "options": {
-            "A": "She types on a keyboard.",
-            "B": "She does recording.",
-            "C": "She takes photos.",
-            "D": "She takes notes."
-          }
-        },
-        {
-          "number": 10,
-          "options": {
-            "A": "It keeps her mind active.",
-            "B": "It makes her stay awake.",
-            "C": "It enables her to think hard.",
-            "D": "It helps her kill time."
-          }
-        },
-        {
-          "number": 11,
-          "options": {
-            "A": "It enables her to improve her pronunciation.",
-            "B": "It helps her better remember what she learns.",
-            "C": "It turns out to be an enjoyable way of learning.",
-            "D": "It proves to be far more effective than writing."
-          }
-        },
-        {
-          "number": 12,
-          "options": {
-            "A": "To spend her honeymoon.",
-            "B": "To try authentic Indian food.",
-            "C": "To take photos of the Taj Mahal.",
-            "D": "To trace the origin of a love story."
-          }
-        },
-        {
-          "number": 13,
-          "options": {
-            "A": "In memory of a princess.",
-            "B": "In honor of a great emperor.",
-            "C": "To mark the death of an emperor of the 1600s.",
-            "D": "To celebrate the birth of a princess’s 14th child."
-          }
-        },
-        {
-          "number": 14,
-          "options": {
-            "A": "It looks older than expected.",
-            "B": "It is built of wood and bricks.",
-            "C": "It stores lots of priceless antiques.",
-            "D": "It has walls decorated with jewels."
-          }
-        },
-        {
-          "number": 15,
-          "options": {
-            "A": "Their streets are narrow.",
-            "B": "Each one has a unique character.",
-            "C": "They are mostly crowded.",
-            "D": "Life can be tedious in some places."
-          }
-        }
-      ]
+    {
+      "number": 2,
+      "options": {
+        "A": "It is stable.",
+        "B": "It is durable.",
+        "C": "It is inexpensive.",
+        "D": "It is sophisticated."
+      }
     },
-    "Section_C": {
-      "directions": "In this section, you will hear three passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices marked A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.",
-      "questions": [
-        {
-          "number": 16,
-          "options": {
-            "A": "They help spread the latest technology.",
-            "B": "They greatly enrich people’s leisure life.",
-            "C": "They provide residents with the resources they need.",
-            "D": "They allow free access to digital books and videos."
-          }
-        },
-        {
-          "number": 17,
-          "options": {
-            "A": "By helping them find jobs.",
-            "B": "By keeping them off the streets.",
-            "C": "By inspiring their creativity.",
-            "D": "By providing a place of relaxation."
-          }
-        },
-        {
-          "number": 18,
-          "options": {
-            "A": "Their interaction with teenagers proved fruitful.",
-            "B": "They used libraries less often than teenagers.",
-            "C": "They tended to visit libraries regularly.",
-            "D": "Their number increased modestly."
-          }
-        },
-        {
-          "number": 19,
-          "options": {
-            "A": "It is the cleverest cat in the world.",
-            "B": "It is an unusual cross breed.",
-            "C": "It is the largest cat in Africa.",
-            "D": "It is a large-sized wild cat."
-          }
-        },
-        {
-          "number": 20,
-          "options": {
-            "A": "They are as loyal as dogs.",
-            "B": "They are fond of sleeping in cabinets.",
-            "C": "They have unusually long tails.",
-            "D": "They know how to please their owners."
-          }
-        },
-        {
-          "number": 21,
-          "options": {
-            "A": "They shake their front paws.",
-            "B": "They shower with them.",
-            "C": "They teach them to dive.",
-            "D": "They shout at them."
-          }
-        },
-        {
-          "number": 22,
-          "options": {
-            "A": "Contented and relieved.",
-            "B": "Anxious and depressed.",
-            "C": "Proud but a bit nervous.",
-            "D": "Excited but somewhat sad."
-          }
-        },
-        {
-          "number": 23,
-          "options": {
-            "A": "It starts the moment they are born.",
-            "B": "It depends on their parents for success.",
-            "C": "It is gaining increasing public attention.",
-            "D": "It is becoming parents’ biggest concern."
-          }
-        },
-        {
-          "number": 24,
-          "options": {
-            "A": "Choose the right school for them.",
-            "B": "Help them to learn by themselves.",
-            "C": "Read books and magazines to them.",
-            "D": "Set a good example for them to follow."
-          }
-        },
-        {
-          "number": 25,
-          "options": {
-            "A": "Their intelligence.",
-            "B": "Their home life.",
-            "C": "The quality of their school.",
-            "D": "The effort they put in learning."
-          }
-        }
-      ]
+    {
+      "number": 3,
+      "options": {
+        "A": "It lasted more than six hours.",
+        "B": "No injuries were yet reported.",
+        "C": "Nobody was in the building when it broke out.",
+        "D": "It had burned for 45 minutes by the time firefighters arrived."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "Recruit and train more firefighters.",
+        "B": "Pull down the deserted shopping mall.",
+        "C": "Turn the shopping mall into an amusement park.",
+        "D": "Find money to renovate the local neighborhood."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "Shrinking potato farming.",
+        "B": "Heavy reliance on import.",
+        "C": "Widespread plant disease.",
+        "D": "Insufficient potato supply."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "It intends to keep its traditional diet.",
+        "B": "It wants to expand its own farming.",
+        "C": "It is afraid of the spread of disease.",
+        "D": "It is worried about unfair competition."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "Global warming.",
+        "B": "Ever-rising prices.",
+        "C": "Government regulation.",
+        "D": "Diminishing investment."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "Informative.",
+        "B": "Inspiring.",
+        "C": "Dull.",
+        "D": "Shallow."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "She types on a keyboard.",
+        "B": "She does recording.",
+        "C": "She takes photos.",
+        "D": "She takes notes."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "It keeps her mind active.",
+        "B": "It makes her stay awake.",
+        "C": "It enables her to think hard.",
+        "D": "It helps her kill time."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "It enables her to improve her pronunciation.",
+        "B": "It helps her better remember what she learns.",
+        "C": "It turns out to be an enjoyable way of learning.",
+        "D": "It proves to be far more effective than writing."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "To spend her honeymoon.",
+        "B": "To try authentic Indian food.",
+        "C": "To take photos of the Taj Mahal.",
+        "D": "To trace the origin of a love story."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "In memory of a princess.",
+        "B": "In honor of a great emperor.",
+        "C": "To mark the death of an emperor of the 1600s.",
+        "D": "To celebrate the birth of a princess’s 14th child."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "It looks older than expected.",
+        "B": "It is built of wood and bricks.",
+        "C": "It stores lots of priceless antiques.",
+        "D": "It has walls decorated with jewels."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "Their streets are narrow.",
+        "B": "Each one has a unique character.",
+        "C": "They are mostly crowded.",
+        "D": "Life can be tedious in some places."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "They help spread the latest technology.",
+        "B": "They greatly enrich people’s leisure life.",
+        "C": "They provide residents with the resources they need.",
+        "D": "They allow free access to digital books and videos."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "By helping them find jobs.",
+        "B": "By keeping them off the streets.",
+        "C": "By inspiring their creativity.",
+        "D": "By providing a place of relaxation."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "Their interaction with teenagers proved fruitful.",
+        "B": "They used libraries less often than teenagers.",
+        "C": "They tended to visit libraries regularly.",
+        "D": "Their number increased modestly."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "It is the cleverest cat in the world.",
+        "B": "It is an unusual cross breed.",
+        "C": "It is the largest cat in Africa.",
+        "D": "It is a large-sized wild cat."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "They are as loyal as dogs.",
+        "B": "They are fond of sleeping in cabinets.",
+        "C": "They have unusually long tails.",
+        "D": "They know how to please their owners."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "They shake their front paws.",
+        "B": "They shower with them.",
+        "C": "They teach them to dive.",
+        "D": "They shout at them."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "Contented and relieved.",
+        "B": "Anxious and depressed.",
+        "C": "Proud but a bit nervous.",
+        "D": "Excited but somewhat sad."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "It starts the moment they are born.",
+        "B": "It depends on their parents for success.",
+        "C": "It is gaining increasing public attention.",
+        "D": "It is becoming parents’ biggest concern."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "Choose the right school for them.",
+        "B": "Help them to learn by themselves.",
+        "C": "Read books and magazines to them.",
+        "D": "Set a good example for them to follow."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "Their intelligence.",
+        "B": "Their home life.",
+        "C": "The quality of their school.",
+        "D": "The effort they put in learning."
+      }
     }
-  }
+  ]
+}
