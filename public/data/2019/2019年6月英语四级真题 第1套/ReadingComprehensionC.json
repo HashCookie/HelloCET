@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What can we learn about marriage vows from the passage?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They may not guarantee a lasting marriage."
+                },
+                {
+                    "key": "B",
+                    "text": "They are as binding as they used to be."
+                },
+                {
+                    "key": "C",
+                    "text": "They are not taken seriously any more."
+                },
+                {
+                    "key": "D",
+                    "text": "They may help couples tide over hard times."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What did Karraker and co-author Kenzie Latham find about elderly husbands?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are generally not good at taking care of themselves."
+                },
+                {
+                    "key": "B",
+                    "text": "They can become increasingly vulnerable to serious illnesses."
+                },
+                {
+                    "key": "C",
+                    "text": "They can develop different kinds of illnesses just like their wives."
+                },
+                {
+                    "key": "D",
+                    "text": "They are more likely to contract serious illnesses than their wives."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What does Karraker say about women who fall ill?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are more likely to be widowed."
+                },
+                {
+                    "key": "B",
+                    "text": "They are more likely to get divorced."
+                },
+                {
+                    "key": "C",
+                    "text": "They are less likely to receive good care."
+                },
+                {
+                    "key": "D",
+                    "text": "They are less likely to bother their spouses."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "Why is it more difficult for men to take care of their sick spouses according to Karraker?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are more accustomed to receiving care."
+                },
+                {
+                    "key": "B",
+                    "text": "They find it more important to make money for the family."
+                },
+                {
+                    "key": "C",
+                    "text": "They think it more urgent to fulfill their social obligations."
+                },
+                {
+                    "key": "D",
+                    "text": "They expect society to do more of the job."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What does Karraker think is also important?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Reducing marital stress on wives."
+                },
+                {
+                    "key": "B",
+                    "text": "Stabilizing old couples’ relations."
+                },
+                {
+                    "key": "C",
+                    "text": "Providing extra care for divorced women."
+                },
+                {
+                    "key": "D",
+                    "text": "Making men pay for their wives’ health costs."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "How might people often feel when they were misnamed?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Unwanted."
+                },
+                {
+                    "key": "B",
+                    "text": "Unhappy."
+                },
+                {
+                    "key": "C",
+                    "text": "Confused."
+                },
+                {
+                    "key": "D",
+                    "text": "Indifferent."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What did David Rubin’s research find about mis-naming?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It is related to the way our memories work."
+                },
+                {
+                    "key": "B",
+                    "text": "It is a possible indicator of a faulty memory."
+                },
+                {
+                    "key": "C",
+                    "text": "It occurs mostly between kids and their friends."
+                },
+                {
+                    "key": "D",
+                    "text": "It often causes misunderstandings among people."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What is most likely the cause of misnaming?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Similar personality traits."
+                },
+                {
+                    "key": "B",
+                    "text": "Similar spellings of names."
+                },
+                {
+                    "key": "C",
+                    "text": "Similar physical appearance."
+                },
+                {
+                    "key": "D",
+                    "text": "Similar pronunciation of names."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What did the surveys of more than 1,700 subjects find about misnaming?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It more often than not hurts relationships."
+                },
+                {
+                    "key": "B",
+                    "text": "It hardly occurs across gender boundaries."
+                },
+                {
+                    "key": "C",
+                    "text": "It is most frequently found in extended families."
+                },
+                {
+                    "key": "D",
+                    "text": "It most often occurs within a relationship group."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "Why do mothers misname their children more often than fathers?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They suffer more frustrations."
+                },
+                {
+                    "key": "B",
+                    "text": "They become worn out more often."
+                },
+                {
+                    "key": "C",
+                    "text": "They communicate more with their children."
+                },
+                {
+                    "key": "D",
+                    "text": "They generally take on more work at home."
+                }
+            ]
+        }
+    ]
+}

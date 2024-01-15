@@ -1,0 +1,188 @@
+{
+    "title": "Section B",
+    "passages": [
+        "A) Along with old classics like “carrots give you night vision” and “Santa doesn't bring toys to misbehaving children”, one of the most well-worn phrases of tired parents everywhere is that breakfast is the most important meal of the day. Many of us grow up believing that skipping breakfast is a serious mistake, even if only two thirds of adults in the UK eat breakfast regularly, according to the British Dietetic Association, and around three-quarters of Americans.",
+        "B) “The body uses a lot of energy stores for growth and repair through the night,” explains diet specialist Sarah Elder. “Eating a balanced breakfast helps to up our energy, as well as make up for protein and calcium used throughout the night.” But there's widespread disagreement over whether breakfast should keep its top spot in the hierarchy (等级) of meals. There have been concerns around the sugar content of cereal and the food industry's involvement in pro-breakfast research—and even one claim from an academic that breakfast is “dangerous”.",
+        "C) What's the reality? Is breakfast a necessary start to the day or a marketing tactic by cereal companies? The most researched aspect of breakfast (and breakfast-skipping) has been its links to obesity. Scientists have different theories as to why there's a relationship between the two. In one US study that analysed the health data of 50,000 people over seven years, researchers found that those who made breakfast the largest meal of the day were more likely to have a lower body mass index (BMI) than those who ate a large lunch or dinner. The researchers argued that breakfast helps reduce daily calorie intake and improve the quality of our diet— since breakfast foods are often higher in fibre and nutrients.",
+        "D) But as with any study of this kind, it was unclear if that was the cause—or if breakfast-skippers were just more likely to be overweight to begin with. To find out, researchers designed a study in which 52 obese women took part in a 12-week weight loss programme. All had the same number of calories over the day, but half had breakfast, while the other half did not. What they found was that it wasn't breakfast itself that caused the participants to lose weight: it was changing their normal routine.",
+        "E) If breakfast alone isn't a guarantee of weight loss, why is there a link between obesity and breakfast-skipping? Alexandra Johnstone, professor of appetite research at the University of Aberdeen, argues that it may simply be because breakfast-skippers have been found to be less knowledgeable about nutrition and health. “There are a lot of studies on the relationship between breakfast eating and possible health outcomes, but this may be because those who eat breakfast choose to habitually have health-enhancing behaviours such as regular exercise and not smoking,” she says.",
+        "F) A 2016 review of 10 studies looking into the relationship between breakfast and weight management concluded there is “limited evidence” supporting or refuting (反驳) the argument that breakfast influences weight or food intake, and more evidence is required before breakfast recommendations can be used to help prevent obesity.",
+        "G) Researchers from the University of Surrey and University of Aberdeen are halfway through research looking into the mechanisms behind how the time we eat influences body weight. Early findings suggest that a bigger breakfast is beneficial to weight control. Breakfast has been found to affect more than just weight. Skipping breakfast has been associated with a 27% increased risk of heart disease, a 21% higher risk of type 2 diabetes in men, and a 20% higher risk of type 2 diabetes in women. One reason may be breakfast's nutritional value—partly because cereal is fortified (增加营养价值) with vitamins. In one study on the breakfast habits of 1,600 young people in the UK, researchers found that the fibre and micronutrient intake was better in those who had breakfast regularly. There have been similar findings in Australia, Brazil, Canada and the US.",
+        "H) Breakfast is also associated with improved brain function, including concentration and language use. A review of 54 studies found that eating breakfast can improve memory, though the effects on other brain functions were inconclusive. However, one of the review's researchers, Mary Beth Spitznagel, says there is “reasonable” evidence breakfast does improve concentration—there just needs to be more research. “Looking at studies that tested concentration, the number of studies showing a benefit was exactly the same as the number that found no benefit,” she says. “And no studies found that eating breakfast was bad for concentration.”",
+        "I) What's most important, some argue, is what we eat for breakfast. High-protein breakfasts have been found particularly effective in reducing the longing for food and consumption later in the day, according to research by the Australian Commonwealth Scientific and Industrial Research Organisation. While cereal remains a firm favorite among breakfast consumers in the UK and US, a recent investigation into the sugar content of ‘adult’ breakfast cereals found that some cereals contain more than three-quarters of the recommended daily amount of free sugars in each portion, and sugar was the second or third highest ingredient in cereals.",
+        "J) But some research suggests if we're going to eat sugary foods, it's best to do it early. One study recruited 200 obese adults to take part in a 16-week-long diet, where half added dessert to their breakfast, and half didn't. Those who added dessert lost an average of 40 pounds more—however, the study was unable to show the long-term effects. A review of 54 studies found that there is no consensus yet on what type of breakfast is healthier, and concluded that the type of breakfast doesn't matter as much as simply eating something.",
+        "K) While there's no conclusive evidence on exactly what we should be eating and when, the consensus is that we should listen to our own bodies and eat when we're hungry. “Breakfast is most important for people who are hungry when they wake up,” Johnstone says. “Each body starts the day differently—and those individual differences need to be researched more closely,” Spitznagel says. “A balanced breakfast is really helpful, but getting regular meals throughout the day is more important to leave blood sugar stable through the day, which helps control weight and hunger levels,” says Elder. “Breakfast isn't the only meal we should be getting right.”"
+    ],
+    "questions": [
+        {
+            "Number": 36,
+            "Statement": "According to one professor, obesity is related to a lack of basic awareness of nutrition and health.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 37,
+            "Statement": "Some scientists claim that people should consume the right kind of food at breakfast.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 38,
+            "Statement": "Opinions differ as to whether breakfast is the most important meal of the day.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 39,
+            "Statement": "It has been found that not eating breakfast is related to the incidence of certain diseases in some countries.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 40,
+            "Statement": "Researchers found it was a change in eating habits rather than breakfast itself that induced weight loss.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 41,
+            "Statement": "To keep oneself healthy, eating breakfast is more important than choosing what to eat.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 42,
+            "Statement": "It is widely considered wrong not to eat breakfast.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 43,
+            "Statement": "More research is needed to prove that breakfast is related to weight loss or food intake.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 44,
+            "Statement": "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 45,
+            "Statement": "Many studies reveal that eating breakfast helps people memorise and concentrate.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        }
+    ]
+}

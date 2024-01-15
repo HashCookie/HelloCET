@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What does the passage say about the newly-approved soda tax in Philadelphia?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It will change the lifestyle of many consumers."
+                },
+                {
+                    "key": "B",
+                    "text": "It may encourage other US cities to follow suit."
+                },
+                {
+                    "key": "C",
+                    "text": "It will cut soda consumption among low-income communities."
+                },
+                {
+                    "key": "D",
+                    "text": "It may influence the marketing strategies of the soda business."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What will the opponents probably do to respond to the soda tax proposal?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Bargain with the city council."
+                },
+                {
+                    "key": "B",
+                    "text": "Refuse to pay additional tax."
+                },
+                {
+                    "key": "C",
+                    "text": "Take legal action against it."
+                },
+                {
+                    "key": "D",
+                    "text": "Try to win public support."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What did the industry-backed anti-tax campaign do about the soda tax proposal?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It tried to arouse hostile feelings among consumers."
+                },
+                {
+                    "key": "B",
+                    "text": "It tried to win grocers' support against the measure."
+                },
+                {
+                    "key": "C",
+                    "text": "It kept sending letters of protest to the media."
+                },
+                {
+                    "key": "D",
+                    "text": "It criticized the measure through advertising."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What did public health groups think the soda tax would do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Alert people to the risk of sugar-induced diseases."
+                },
+                {
+                    "key": "B",
+                    "text": "Help people to fix certain long-time health issues."
+                },
+                {
+                    "key": "C",
+                    "text": "Add to the fund for their research on disease."
+                },
+                {
+                    "key": "D",
+                    "text": "Benefit low-income people across the country."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What do we learn about similar measures concerning the soda tax in some other cities?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are becoming rather sensitive issues."
+                },
+                {
+                    "key": "B",
+                    "text": "They are spreading panic in the soda industry."
+                },
+                {
+                    "key": "C",
+                    "text": "They are reducing the incidence of sugar-induced diseases."
+                },
+                {
+                    "key": "D",
+                    "text": "They are taking away a lot of profit from the soda industry."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What is the finding of the new study?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Quick-cooking microwave ovens have become more popular."
+                },
+                {
+                    "key": "B",
+                    "text": "The frequent use of microwaves may do harm to our health."
+                },
+                {
+                    "key": "C",
+                    "text": "CO2 emissions constitute a major threat to the environment."
+                },
+                {
+                    "key": "D",
+                    "text": "The use of microwaves emits more CO2 than people think."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "Why are the sales of microwaves expected to rise?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are becoming more affordable."
+                },
+                {
+                    "key": "B",
+                    "text": "They have a shorter life cycle than other appliances."
+                },
+                {
+                    "key": "C",
+                    "text": "They are getting much easier to operate."
+                },
+                {
+                    "key": "D",
+                    "text": "They take less time to cook than other appliances."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What recommendation does the study by the University of Manchester make?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Cooking food of different varieties."
+                },
+                {
+                    "key": "B",
+                    "text": "Improving microwave users' habits."
+                },
+                {
+                    "key": "C",
+                    "text": "Eating less to cut energy consumption."
+                },
+                {
+                    "key": "D",
+                    "text": "Using microwave ovens less frequently."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What does Professor David Reay try to argue?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "There are far more emissions from cars than from microwaves."
+                },
+                {
+                    "key": "B",
+                    "text": "People should be persuaded into using passenger cars less often."
+                },
+                {
+                    "key": "C",
+                    "text": "The UK produces less CO2 than many other countries in the EU."
+                },
+                {
+                    "key": "D",
+                    "text": "More data are needed to show whether microwaves are harmful."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What does Professor David Reay think of the use of microwaves?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It will become less popular in the coming decades."
+                },
+                {
+                    "key": "B",
+                    "text": "It makes everyday cooking much more convenient."
+                },
+                {
+                    "key": "C",
+                    "text": "It plays a positive role in environmental protection."
+                },
+                {
+                    "key": "D",
+                    "text": "It consumes more power than conventional cooking."
+                }
+            ]
+        }
+    ]
+}

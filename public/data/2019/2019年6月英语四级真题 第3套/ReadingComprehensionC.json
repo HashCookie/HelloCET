@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What does the project Writing On It All invite people to do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Unlearn their training in drawing."
+                },
+                {
+                    "key": "B",
+                    "text": "Participate in a state graffiti show."
+                },
+                {
+                    "key": "C",
+                    "text": "Cover the walls of an old house with graffiti."
+                },
+                {
+                    "key": "D",
+                    "text": "Exhibit their artistic creations in an old house."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What do we learn about the participants in the project?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are just culture addicts."
+                },
+                {
+                    "key": "B",
+                    "text": "They are graffiti enthusiasts."
+                },
+                {
+                    "key": "C",
+                    "text": "They are writers and artists."
+                },
+                {
+                    "key": "D",
+                    "text": "They are mostly passers-by."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What did the project participants do during the 2016 season?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They were free to scribble on the walls whatever came to their mind."
+                },
+                {
+                    "key": "B",
+                    "text": "They expressed their thoughts in graffiti on the theme of each session."
+                },
+                {
+                    "key": "C",
+                    "text": "They learned the techniques of collaborative writing."
+                },
+                {
+                    "key": "D",
+                    "text": "They were required to cooperate with other creators."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What kind of place is Governor’s Island?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It is a historic site that attracts tourists and artists."
+                },
+                {
+                    "key": "B",
+                    "text": "It is an area now accessible only to tourist vehicles."
+                },
+                {
+                    "key": "C",
+                    "text": "It is a place in Upper New York Bay formerly used for exiles."
+                },
+                {
+                    "key": "D",
+                    "text": "It is an open area for tourists to enjoy themselves year round."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What does Chasin say about the project?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It just focused on the sufferings of black females."
+                },
+                {
+                    "key": "B",
+                    "text": "It helped expand the influence of graffiti art."
+                },
+                {
+                    "key": "C",
+                    "text": "It has started the career of many creative artists."
+                },
+                {
+                    "key": "D",
+                    "text": "It has created some meaningful artistic works."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What does the recent study say about online CBT programs?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Patients may not be able to carry them through for effective cure."
+                },
+                {
+                    "key": "B",
+                    "text": "Patients cannot engage with them without the use of a computer."
+                },
+                {
+                    "key": "C",
+                    "text": "They can save patients trouble visiting physicians."
+                },
+                {
+                    "key": "D",
+                    "text": "They have been well received by a lot of patients."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What has made online CBT programs increasingly popular?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Their effectiveness in combating depression."
+                },
+                {
+                    "key": "B",
+                    "text": "The low efficiency of traditional talk therapy."
+                },
+                {
+                    "key": "C",
+                    "text": "Their easy and inexpensive access by patients."
+                },
+                {
+                    "key": "D",
+                    "text": "The recommendation by primary care doctors."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What is the major finding by researchers at the University of York?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Online CBT programs are no more effective than regular care from physicians."
+                },
+                {
+                    "key": "B",
+                    "text": "The process of treating depression is often more complicated than anticipated."
+                },
+                {
+                    "key": "C",
+                    "text": "The combination of traditional CBT and computerized CBT is most effective."
+                },
+                {
+                    "key": "D",
+                    "text": "Depression is a mental condition which is to be treated with extreme caution."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What is Professor Dowrick’s advice concerning online CBT programs?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They should not be neglected in primary care."
+                },
+                {
+                    "key": "B",
+                    "text": "Their effectiveness should not be overestimated."
+                },
+                {
+                    "key": "C",
+                    "text": "They should be used by strictly following instructions."
+                },
+                {
+                    "key": "D",
+                    "text": "Their use should be encouraged by doctors and therapists."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What is more important to an emotionally vulnerable person?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "A positive state of mind."
+                },
+                {
+                    "key": "B",
+                    "text": "Appropriate medication."
+                },
+                {
+                    "key": "C",
+                    "text": "Timely encouragement."
+                },
+                {
+                    "key": "D",
+                    "text": "Human interaction."
+                }
+            ]
+        }
+    ]
+}

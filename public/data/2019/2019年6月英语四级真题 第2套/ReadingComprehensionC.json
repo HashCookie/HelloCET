@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do most Americans think of women leaders according to a new Pew Research Center survey?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They have to do more to distinguish themselves."
+                },
+                {
+                    "key": "B",
+                    "text": "They have to strive harder to win their positions."
+                },
+                {
+                    "key": "C",
+                    "text": "They are stronger than men in terms of willpower."
+                },
+                {
+                    "key": "D",
+                    "text": "They are just as intelligent and innovative as men."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What do we learn from previous survey findings about women seeking leadership roles?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They have unconquerable difficulties on their way to success."
+                },
+                {
+                    "key": "B",
+                    "text": "They are lacking in confidence when competing with men."
+                },
+                {
+                    "key": "C",
+                    "text": "Their failures may have something to do with family duties."
+                },
+                {
+                    "key": "D",
+                    "text": "Relatively few are hindered in their career advancement."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What is the primary factor keeping women from taking top leadership positions according to the recent survey?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Personality traits."
+                },
+                {
+                    "key": "B",
+                    "text": "Gender bias."
+                },
+                {
+                    "key": "C",
+                    "text": "Family responsibilities."
+                },
+                {
+                    "key": "D",
+                    "text": "Lack of vacancies."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What does the passage say about corporate America in the near future?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "More and more women will sit in the boardroom."
+                },
+                {
+                    "key": "B",
+                    "text": "Gender imbalance in leadership is likely to change."
+                },
+                {
+                    "key": "C",
+                    "text": "The public is undecided about whether women will make good leaders."
+                },
+                {
+                    "key": "D",
+                    "text": "People have opposing opinions as to whether it will have more women leaders."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What do most Americans expect to see soon on America’s political stage?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "A woman in the highest position of government."
+                },
+                {
+                    "key": "B",
+                    "text": "More and more women actively engaged in politics."
+                },
+                {
+                    "key": "C",
+                    "text": "A majority of women voting for a female president."
+                },
+                {
+                    "key": "D",
+                    "text": "As many women in top government positions as men."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What does the global study tell us about people’s height in the last hundred years?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "There is a remarkable difference across continents."
+                },
+                {
+                    "key": "B",
+                    "text": "There has been a marked increase in most countries."
+                },
+                {
+                    "key": "C",
+                    "text": "The increase in people’s height has been quickening."
+                },
+                {
+                    "key": "D",
+                    "text": "The increase in women’s height is bigger than in men’s."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What does James Bentham say about genetics in the increase of people’s height?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It counts less than generally thought."
+                },
+                {
+                    "key": "B",
+                    "text": "It outweighs nutrition and healthcare."
+                },
+                {
+                    "key": "C",
+                    "text": "It impacts more on an individual than on a population."
+                },
+                {
+                    "key": "D",
+                    "text": "It plays a more significant role in females than in males."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What does Elio Riboli say about taller people?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They tend to live longer."
+                },
+                {
+                    "key": "B",
+                    "text": "They enjoy an easier life."
+                },
+                {
+                    "key": "C",
+                    "text": "They generally risk fewer fatal diseases."
+                },
+                {
+                    "key": "D",
+                    "text": "They have greater expectations in life."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What do we learn about 18-year-olds in Uganda and Niger?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They grow up slower than their peers in other countries."
+                },
+                {
+                    "key": "B",
+                    "text": "They are actually shorter than their earlier generations."
+                },
+                {
+                    "key": "C",
+                    "text": "They find it hard to bring their potential into full play."
+                },
+                {
+                    "key": "D",
+                    "text": "They have experienced many changes of government."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What does James Bentham suggest we do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Watch closely the global trend in children’s development."
+                },
+                {
+                    "key": "B",
+                    "text": "Make sure that our children grow up to their full height."
+                },
+                {
+                    "key": "C",
+                    "text": "Try every means possible to improve our environment."
+                },
+                {
+                    "key": "D",
+                    "text": "Ensure our children grow up in an ideal environment."
+                }
+            ]
+        }
+    ]
+}

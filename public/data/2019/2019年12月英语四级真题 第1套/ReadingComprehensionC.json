@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do we learn about Knowledge-Based Artificial Intelligence?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It is a robot that can answer students' questions."
+                },
+                {
+                    "key": "B",
+                    "text": "It is a course designed for students to learn online."
+                },
+                {
+                    "key": "C",
+                    "text": "It is a high-tech device that revolutionizes teaching."
+                },
+                {
+                    "key": "D",
+                    "text": "It is a computer program that aids student learning."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What problem did Professor Goel meet with?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "His students were unsatisfied with the assistants."
+                },
+                {
+                    "key": "B",
+                    "text": "His course was too difficult for the students."
+                },
+                {
+                    "key": "C",
+                    "text": "Students' questions were too many to handle."
+                },
+                {
+                    "key": "D",
+                    "text": "Too many students dropped out of his course."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What do we learn about Jill Watson?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "She turned out to be a great success."
+                },
+                {
+                    "key": "B",
+                    "text": "She got along pretty well with students."
+                },
+                {
+                    "key": "C",
+                    "text": "She was unwelcome to students at first."
+                },
+                {
+                    "key": "D",
+                    "text": "She was released online as an experiment."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "How did the students feel about Jill Watson?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They thought she was a bit too artificial."
+                },
+                {
+                    "key": "B",
+                    "text": "They found her not as capable as expected."
+                },
+                {
+                    "key": "C",
+                    "text": "They could not but admire her knowledge."
+                },
+                {
+                    "key": "D",
+                    "text": "They could not tell her from a real person."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What does Professor Goel plan to do next with Jill Watson?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Launch different versions of her online."
+                },
+                {
+                    "key": "B",
+                    "text": "Feed her with new questions and answers."
+                },
+                {
+                    "key": "C",
+                    "text": "Assign her to answer more of students' questions."
+                },
+                {
+                    "key": "D",
+                    "text": "Encourage students to interact with her more freely."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What do we learn about the scientists trying to raise money online for their projects?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They did not raise much due to modest targets."
+                },
+                {
+                    "key": "B",
+                    "text": "They made use of mixed fundraising strategies."
+                },
+                {
+                    "key": "C",
+                    "text": "Not all of them achieved their anticipated goals."
+                },
+                {
+                    "key": "D",
+                    "text": "Most of them put movies online for the purpose."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What is the purpose of Mike Schäfer's research of recent crowdfunding campaigns?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To create attractive content for science websites."
+                },
+                {
+                    "key": "B",
+                    "text": "To identify reasons for their different outcomes."
+                },
+                {
+                    "key": "C",
+                    "text": "To help scientists to launch innovative projects."
+                },
+                {
+                    "key": "D",
+                    "text": "To separate science projects from general ones."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What trait contributes to the success of a crowd-funding campaign?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The potential benefit to future generations."
+                },
+                {
+                    "key": "B",
+                    "text": "Its interaction with prospective donors."
+                },
+                {
+                    "key": "C",
+                    "text": "Its originality in addressing financial issues."
+                },
+                {
+                    "key": "D",
+                    "text": "The value of the proposed project."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What did the researchers think of the financial targets of crowdfunding projects?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They should be small to be successful."
+                },
+                {
+                    "key": "B",
+                    "text": "They should be based on actual needs."
+                },
+                {
+                    "key": "C",
+                    "text": "They should be assessed with great care."
+                },
+                {
+                    "key": "D",
+                    "text": "They should be ambitious to gain notice."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What motivates people to donate in a crowdfunding campaign?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The ease of access to the content of the webpage."
+                },
+                {
+                    "key": "B",
+                    "text": "Their desire to contribute to the cause of science."
+                },
+                {
+                    "key": "C",
+                    "text": "The significance and influence of the project itself."
+                },
+                {
+                    "key": "D",
+                    "text": "Their feeling of connection to the scientists themselves."
+                }
+            ]
+        }
+    ]
+}

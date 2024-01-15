@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What does the passage say about open educational resources?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They contribute to teaching as much as to learning."
+                },
+                {
+                    "key": "B",
+                    "text": "They don't profit as much as traditional textbooks do."
+                },
+                {
+                    "key": "C",
+                    "text": "They can't connect professors and students as textbooks do."
+                },
+                {
+                    "key": "D",
+                    "text": "They compete fiercely for customers with textbook producers."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What is the main cause of the publishers' losses?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Failure to meet student need."
+                },
+                {
+                    "key": "B",
+                    "text": "Industry restructuring."
+                },
+                {
+                    "key": "C",
+                    "text": "Emergence of e-books."
+                },
+                {
+                    "key": "D",
+                    "text": "Falling sales."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What does the textbook industry need to do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Reform its structures."
+                },
+                {
+                    "key": "B",
+                    "text": "Cut its retail prices."
+                },
+                {
+                    "key": "C",
+                    "text": "Find replacements for printed textbooks."
+                },
+                {
+                    "key": "D",
+                    "text": "Change its business strategy periodically."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What are students expected to do in the learning process?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Think carefully before answering each question."
+                },
+                {
+                    "key": "B",
+                    "text": "Ask questions based on their own understanding."
+                },
+                {
+                    "key": "C",
+                    "text": "Answer questions using their personal experience."
+                },
+                {
+                    "key": "D",
+                    "text": "Give answers showing their respective personality."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What do experts say about students using textbooks?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They can digitalize the prints easily."
+                },
+                {
+                    "key": "B",
+                    "text": "They can learn in an interactive way."
+                },
+                {
+                    "key": "C",
+                    "text": "They can purchase customized versions."
+                },
+                {
+                    "key": "D",
+                    "text": "They can adapt the material themselves."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What is the distinctive feature of a sea slug?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It looks like both a plant and an animal."
+                },
+                {
+                    "key": "B",
+                    "text": "It converts some sea animals into plants."
+                },
+                {
+                    "key": "C",
+                    "text": "It lives half on animals and half on plants."
+                },
+                {
+                    "key": "D",
+                    "text": "It gets energy from both food and sunlight."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What enables the sea slug to live like a plant?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The genes it captures from the sea plant algae."
+                },
+                {
+                    "key": "B",
+                    "text": "The mechanism by which it conserves energy."
+                },
+                {
+                    "key": "C",
+                    "text": "The nutrients it hijacks from other species."
+                },
+                {
+                    "key": "D",
+                    "text": "The green pigment it inherits from its ancestors."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What does the author say about baby sea slugs?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They can live without sunlight for a long time."
+                },
+                {
+                    "key": "B",
+                    "text": "They can absorb sunlight right after their birth."
+                },
+                {
+                    "key": "C",
+                    "text": "They can survive without algae for quite some time."
+                },
+                {
+                    "key": "D",
+                    "text": "They can produce chlorophyll on their own."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What does Sidney Pierce say about genes from an alga?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are stolen from animals like the sea slug."
+                },
+                {
+                    "key": "B",
+                    "text": "They can't function unless exposed to sunlight."
+                },
+                {
+                    "key": "C",
+                    "text": "They don't usually function inside animal cells."
+                },
+                {
+                    "key": "D",
+                    "text": "They can readily be converted to sea slug genes."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What do we learn about sea slugs from the passage?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They behave the way most plant species do."
+                },
+                {
+                    "key": "B",
+                    "text": "They can survive for months without eating."
+                },
+                {
+                    "key": "C",
+                    "text": "They will turn into plants when they mature."
+                },
+                {
+                    "key": "D",
+                    "text": "They will starve to death without sunlight."
+                }
+            ]
+        }
+    ]
+}
