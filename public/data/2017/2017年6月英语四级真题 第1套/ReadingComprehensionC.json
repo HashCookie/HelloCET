@@ -1,10 +1,10 @@
 {
   "title": "Section C",
-  "passages": [
-    "Three children in every classroom have a diagnosable mental health condition...",
-    "Picture this: You're at a movie theater food stand loading up on snacks..."
+
+  "passagesOne": [
+    "Three children in every classroom have a diagnosable mental health condition..."
   ],
-  "questions": [
+  "questionsOne": [
     {
       "Number": 46,
       "Statement": "What are teachers complaining about?",
@@ -114,7 +114,12 @@
           "text": "There are too many students who are not interested in learning."
         }
       ]
-    },
+    }
+  ],
+  "passagesTwo": [
+    "Three children in every classroom have a diagnosable mental health condition..."
+  ],
+  "questionsTwo": [
     {
       "Number": 51,
       "Statement": "What is the main idea of the passage?",
@@ -217,6 +222,10 @@
         },
         {
           "key": "C",
+          "text": "There are too many students who are not interested in learning."
+        },
+        {
+          "key": "D",
           "text": "There are too many students who are not interested in learning."
         }
       ]
