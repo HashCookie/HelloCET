@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do we learn from the passage about ebikes?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Their health benefits and fun values outweigh their cost."
+                },
+                {
+                    "key": "B",
+                    "text": "They did not catch public attention in the United States until the 1990s."
+                },
+                {
+                    "key": "C",
+                    "text": "They did not become popular until the emergence of improved batteries."
+                },
+                {
+                    "key": "D",
+                    "text": "Their widespread use is attributable to people's environmental awareness."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What brought about the boost in ebike sales in Europe at the beginning of the century?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Updated technology of bike manufacture."
+                },
+                {
+                    "key": "B",
+                    "text": "The falling prices of ebike batteries."
+                },
+                {
+                    "key": "C",
+                    "text": "Changed fashion in short-distance travel."
+                },
+                {
+                    "key": "D",
+                    "text": "The rising costs for making electric cars."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What is the prospect of the bike industry according to Ryan Rzepecki?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "More will be invested in bike battery research."
+                },
+                {
+                    "key": "B",
+                    "text": "The sales of ebikes will increase."
+                },
+                {
+                    "key": "C",
+                    "text": "It will profit from ebike sharing."
+                },
+                {
+                    "key": "D",
+                    "text": "It will make a difference in people's daily lives."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What prevented Chris Cocalis from developing ebikes sooner?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Retailers' refusal to deal in ebikes."
+                },
+                {
+                    "key": "B",
+                    "text": "High profits from conventional bikes."
+                },
+                {
+                    "key": "C",
+                    "text": "Users' concern about risks of ebike riding."
+                },
+                {
+                    "key": "D",
+                    "text": "His focus on selling costly mountain bikes."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What makes Chris Cocalis believe there is a greater opportunity for ebike sales?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The further lowering of ebike prices."
+                },
+                {
+                    "key": "B",
+                    "text": "The public's concern for their health."
+                },
+                {
+                    "key": "C",
+                    "text": "The increasing interest in mountain climbing."
+                },
+                {
+                    "key": "D",
+                    "text": "The younger generation's pursuit of comfortable riding."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "Why did politicians use the two terms “global warming” and “climate change”?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To sway public opinion of the impact of human activities on Earth."
+                },
+                {
+                    "key": "B",
+                    "text": "To more accurately describe the consequences of human activities."
+                },
+                {
+                    "key": "C",
+                    "text": "To win more popular votes in their campaign activities."
+                },
+                {
+                    "key": "D",
+                    "text": "To assure the public of the safety of existing industries."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "As used in a National Academy of Sciences report, the term “climate change” differs from “global warming” in that ______.",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "it sounds less vague"
+                },
+                {
+                    "key": "B",
+                    "text": "it looks more scientific"
+                },
+                {
+                    "key": "C",
+                    "text": "it covers more phenomena"
+                },
+                {
+                    "key": "D",
+                    "text": "it is much closer to reality"
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What did industrialists of the late 20th century resort to in order to mislead Americans?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Made-up survey results."
+                },
+                {
+                    "key": "B",
+                    "text": "Hired climate experts."
+                },
+                {
+                    "key": "C",
+                    "text": "False research findings."
+                },
+                {
+                    "key": "D",
+                    "text": "Deliberate choice of words."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "Why did NASA choose the term “climate change”?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To obtain more funds."
+                },
+                {
+                    "key": "B",
+                    "text": "For greater precision."
+                },
+                {
+                    "key": "C",
+                    "text": "For political needs."
+                },
+                {
+                    "key": "D",
+                    "text": "To avoid debate."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What is the author's final conclusion?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Global warming is the more accurate term."
+                },
+                {
+                    "key": "B",
+                    "text": "Accuracy of terminology matters in science."
+                },
+                {
+                    "key": "C",
+                    "text": "Human activities have serious effects on Earth."
+                },
+                {
+                    "key": "D",
+                    "text": "Politics interferes with serious scientific debate."
+                }
+            ]
+        }
+    ]
+}

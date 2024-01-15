@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What is happening to the wallet?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It is disappearing."
+                },
+                {
+                    "key": "B",
+                    "text": "It is being fattened."
+                },
+                {
+                    "key": "C",
+                    "text": "It is becoming costly."
+                },
+                {
+                    "key": "D",
+                    "text": "It is changing in style."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "How are business transactions done in big modern stores?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Individually."
+                },
+                {
+                    "key": "B",
+                    "text": "In the abstract."
+                },
+                {
+                    "key": "C",
+                    "text": "Electronically."
+                },
+                {
+                    "key": "D",
+                    "text": "Via a cash register."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What makes the author feel uncomfortable nowadays?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Saving money is becoming a thing of the past."
+                },
+                {
+                    "key": "B",
+                    "text": "The pleasing Friday-night feeling is fading."
+                },
+                {
+                    "key": "C",
+                    "text": "Earning money is getting more difficult."
+                },
+                {
+                    "key": "D",
+                    "text": "Spending money is so fast and easy."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "Why does the author choose to write about what's happening to the wallet?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It represents a change in the modern world."
+                },
+                {
+                    "key": "B",
+                    "text": "It has something to do with everybody's life."
+                },
+                {
+                    "key": "C",
+                    "text": "It marks the end of a time-honoured tradition."
+                },
+                {
+                    "key": "D",
+                    "text": "It is the concern of contemporary economists."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What can we infer from the passage about the author?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "He is resistant to social changes."
+                },
+                {
+                    "key": "B",
+                    "text": "He is against technological progress."
+                },
+                {
+                    "key": "C",
+                    "text": "He feels reluctant to part with the traditional wallet."
+                },
+                {
+                    "key": "D",
+                    "text": "He feels insecure in the ever-changing modern world."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What is scientists’ finding about dreaming?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It involves disconnected, weird images."
+                },
+                {
+                    "key": "B",
+                    "text": "It resembles fragments of science fiction."
+                },
+                {
+                    "key": "C",
+                    "text": "Dreaming about a learned task betters its performance."
+                },
+                {
+                    "key": "D",
+                    "text": "Dreaming about things being learned disturbs one’s sleep."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What happens when one enters a dream state?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The body continues to act as if the sleeper were awake."
+                },
+                {
+                    "key": "B",
+                    "text": "The neural activity of the brain will become intensified."
+                },
+                {
+                    "key": "C",
+                    "text": "The brain behaves as if it were playing a virtual reality video game."
+                },
+                {
+                    "key": "D",
+                    "text": "The brain once again experiences the learning activities of the day."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What does the brain do while we are sleeping?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It systematizes all the data collected during the day."
+                },
+                {
+                    "key": "B",
+                    "text": "It substitutes old information with new data."
+                },
+                {
+                    "key": "C",
+                    "text": "It processes and absorbs newly acquired data."
+                },
+                {
+                    "key": "D",
+                    "text": "It classifies information and places it in different files."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What does Robert Stickgold suggest about enhancing learning?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Having a little sleep after studying in the day."
+                },
+                {
+                    "key": "B",
+                    "text": "Staying up late before going to bed."
+                },
+                {
+                    "key": "C",
+                    "text": "Having a dream about anything."
+                },
+                {
+                    "key": "D",
+                    "text": "Thinking about the odds of dreaming about the material."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What can be inferred about dreaming from the passage?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "We may enhance our learning through dreaming."
+                },
+                {
+                    "key": "B",
+                    "text": "Dreaming improves your language ability."
+                },
+                {
+                    "key": "C",
+                    "text": "All sleepwalkers perform dance moves when they are sleeping."
+                },
+                {
+                    "key": "D",
+                    "text": "Taking a nap after learning can help you find the way through the maze."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "When are people likely to experience boredom, according to an accepted psychological definition?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "When they don't have the chance to do what they want."
+                },
+                {
+                    "key": "B",
+                    "text": "When they don't enjoy the materials they are studying."
+                },
+                {
+                    "key": "C",
+                    "text": "When they experience something unpleasant."
+                },
+                {
+                    "key": "D",
+                    "text": "When they engage in some routine activities."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What does the author say boredom can lead to?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Determination."
+                },
+                {
+                    "key": "B",
+                    "text": "Concentration"
+                },
+                {
+                    "key": "C",
+                    "text": "Mental deterioration."
+                },
+                {
+                    "key": "D",
+                    "text": "Harmful conduct."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What is the finding of one team of psychologists in their experiment?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Volunteers prefer watching a boring movie to sitting alone deliberating."
+                },
+                {
+                    "key": "B",
+                    "text": "Many volunteers choose to hurt themselves rather than endure boredom."
+                },
+                {
+                    "key": "C",
+                    "text": "Male volunteers are more immune to the effects of boredom than females."
+                },
+                {
+                    "key": "D",
+                    "text": "Many volunteers are unable to resist boredom longer than fifteen minutes."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "Why does the author say boredom isn't all bad?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It stimulates memorization."
+                },
+                {
+                    "key": "B",
+                    "text": "It allows time for relaxation."
+                },
+                {
+                    "key": "C",
+                    "text": "It may promote creative thinking."
+                },
+                {
+                    "key": "D",
+                    "text": "It may facilitate independent learning."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What does the author suggest one do when faced with a challenging problem?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Stop idling and think big."
+                },
+                {
+                    "key": "B",
+                    "text": "Unlock one's smartphone."
+                },
+                {
+                    "key": "C",
+                    "text": "Look around oneself for stimulation."
+                },
+                {
+                    "key": "D",
+                    "text": "Allow oneself some time to be bored."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What is catching environmentalists' attention nowadays?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Rich countries are stripping poor ones of their resources."
+                },
+                {
+                    "key": "B",
+                    "text": "Forests are fast shrinking in many developing countries."
+                },
+                {
+                    "key": "C",
+                    "text": "Forests are eating away the fertile farmland worldwide."
+                },
+                {
+                    "key": "D",
+                    "text": "Rich countries are doing little to address deforestation."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "Which countries have the fastest forest growth?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Those that have newly achieved independence."
+                },
+                {
+                    "key": "B",
+                    "text": "Those that have the greatest demand for timber."
+                },
+                {
+                    "key": "C",
+                    "text": "Those that used to have the lowest forest coverage."
+                },
+                {
+                    "key": "D",
+                    "text": "Those that provide enormous government subsidies."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What has encouraged forest growth historically?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The government's advocacy."
+                },
+                {
+                    "key": "B",
+                    "text": "The use of wood for fuel."
+                },
+                {
+                    "key": "C",
+                    "text": "The favourable climate."
+                },
+                {
+                    "key": "D",
+                    "text": "The green movement."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What accounts for our increasing desire for forests?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Their unique scenic beauty."
+                },
+                {
+                    "key": "B",
+                    "text": "Their use as fruit plantations."
+                },
+                {
+                    "key": "C",
+                    "text": "Their capability of improving air quality."
+                },
+                {
+                    "key": "D",
+                    "text": "Their stable supply of building materials."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What does the author conclude about the prospects of forestation?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Deserts in sub-Saharan Africa will diminish gradually."
+                },
+                {
+                    "key": "B",
+                    "text": "It will play a more and more important role in people's lives."
+                },
+                {
+                    "key": "C",
+                    "text": "Forest destruction in the developing world will quickly slow down."
+                },
+                {
+                    "key": "D",
+                    "text": "Developed and developing countries are moving in opposite directions."
+                }
+            ]
+        }
+    ]
+}

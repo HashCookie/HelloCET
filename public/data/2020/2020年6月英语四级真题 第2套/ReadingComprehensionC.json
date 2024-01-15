@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do we learn from the passage about reverse graffiti?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It uses paint to create anti-pollution images."
+                },
+                {
+                    "key": "B",
+                    "text": "It creates a lot of trouble for local residents."
+                },
+                {
+                    "key": "C",
+                    "text": "It causes lots of distraction to drivers."
+                },
+                {
+                    "key": "D",
+                    "text": "It turns dirty walls into artistic works."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What do reverse graffiti artists try to do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Publicise their artistic pursuit."
+                },
+                {
+                    "key": "B",
+                    "text": "Beautify the city environment."
+                },
+                {
+                    "key": "C",
+                    "text": "Raise public awareness of environmental pollution."
+                },
+                {
+                    "key": "D",
+                    "text": "Express their dissatisfaction with local govern-ments."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What do we learn about Brazilian artist Alexandre Orion?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "He was good at painting white skulls."
+                },
+                {
+                    "key": "B",
+                    "text": "He chose tunnels to do his graffiti art."
+                },
+                {
+                    "key": "C",
+                    "text": "He suggested banning all polluting cars."
+                },
+                {
+                    "key": "D",
+                    "text": "He was fond of doing creative artworks."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What does the author imply about Leeds City Council's decision?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It is simply absurd."
+                },
+                {
+                    "key": "B",
+                    "text": "It is well-informed."
+                },
+                {
+                    "key": "C",
+                    "text": "It is rather unexpected."
+                },
+                {
+                    "key": "D",
+                    "text": "It is quite sensible."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "How did Sao Paulo city officials handle Alexandre Orion's reverse graffiti?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They made him clean all the tunnels in Sao Paulo."
+                },
+                {
+                    "key": "B",
+                    "text": "They took drastic action to ban all reverse graffiti."
+                },
+                {
+                    "key": "C",
+                    "text": "They charged him with polluting tunnels in the city."
+                },
+                {
+                    "key": "D",
+                    "text": "They made it impossible for him to practice his art."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What do some experts think about paying children for doing chores?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It may benefit children in more ways than one."
+                },
+                {
+                    "key": "B",
+                    "text": "It may help children learn the worth of labor."
+                },
+                {
+                    "key": "C",
+                    "text": "It may not turn out to be the best thing to do."
+                },
+                {
+                    "key": "D",
+                    "text": "It may not be accepted by low-income parents."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "According to Suniya Luthar, doing chores will help children learn to ______________.",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "share family responsibilities"
+                },
+                {
+                    "key": "B",
+                    "text": "appreciate the value of work"
+                },
+                {
+                    "key": "C",
+                    "text": "cultivate the spirit of independence"
+                },
+                {
+                    "key": "D",
+                    "text": "manage domestic affairs themselves"
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What does Ron Lieber think should be the goal of giving children allowances?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To help to strengthen family ties."
+                },
+                {
+                    "key": "B",
+                    "text": "To teach them how to manage money."
+                },
+                {
+                    "key": "C",
+                    "text": "To motivate them to do more housework."
+                },
+                {
+                    "key": "D",
+                    "text": "To show parents' appreciation of their help."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What does David Lancy say about 18-month-olds?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They have a natural instinct to help around the house."
+                },
+                {
+                    "key": "B",
+                    "text": "They are too young to request money for what they do."
+                },
+                {
+                    "key": "C",
+                    "text": "They should learn to understand family responsibilities."
+                },
+                {
+                    "key": "D",
+                    "text": "They need a little incentive to get involved in housework."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What does David Lancy advise American parents to do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Set a good example for children in doing housework."
+                },
+                {
+                    "key": "B",
+                    "text": "Make children do housework without compensation."
+                },
+                {
+                    "key": "C",
+                    "text": "Teach children how to do housework."
+                },
+                {
+                    "key": "D",
+                    "text": "Accept children's early bids to help."
+                }
+            ]
+        }
+    ]
+}

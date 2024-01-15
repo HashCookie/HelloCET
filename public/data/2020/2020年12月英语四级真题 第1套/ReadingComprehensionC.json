@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What are teachers complaining about?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "There are too many students requiring special attention."
+                },
+                {
+                    "key": "B",
+                    "text": "They are under too much stress counselling needy students."
+                },
+                {
+                    "key": "C",
+                    "text": "Schools are inadequately equipped to implement any intervention."
+                },
+                {
+                    "key": "D",
+                    "text": "They lack the necessary resources to address pupils' mental problems."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What do we learn from the passage about community health services in Britain?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They have deteriorated due to budget cuts."
+                },
+                {
+                    "key": "B",
+                    "text": "They facilitate local residents' everyday lives."
+                },
+                {
+                    "key": "C",
+                    "text": "They prove ineffective in helping mental patients."
+                },
+                {
+                    "key": "D",
+                    "text": "They cover preventative care for the local residents."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "Where does the author suggest mental health services be placed?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "At home."
+                },
+                {
+                    "key": "B",
+                    "text": "At school."
+                },
+                {
+                    "key": "C",
+                    "text": "In hospitals."
+                },
+                {
+                    "key": "D",
+                    "text": "In communities."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What do we learn from the recent studies?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Students prefer to rely on peers to relieve stress and anxiety."
+                },
+                {
+                    "key": "B",
+                    "text": "Young people are keen on building meaningful relationships."
+                },
+                {
+                    "key": "C",
+                    "text": "Students are more comfortable seeking counselling in school."
+                },
+                {
+                    "key": "D",
+                    "text": "Young people benefit from various kinds of outdoor activities."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What does the author mean by a cultural shift (Line 2, Para. 6)?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Simplification of schools' academic curriculums."
+                },
+                {
+                    "key": "B",
+                    "text": "Parents' involvement in schools' policy-making."
+                },
+                {
+                    "key": "C",
+                    "text": "A change in teachers' attitudes to mental health."
+                },
+                {
+                    "key": "D",
+                    "text": "A change in the conception of what schools are."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "Why does the author ask us to imagine buying food in the movie theater?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To illustrate people's peculiar shopping behavior."
+                },
+                {
+                    "key": "B",
+                    "text": "To illustrate the increasing variety of snacks there."
+                },
+                {
+                    "key": "C",
+                    "text": "To show how hard it can be to choose a drink there."
+                },
+                {
+                    "key": "D",
+                    "text": "To show how popular snacks are among movie fans."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "Why is the medium soda priced the way it is?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To attract more customers to buy it."
+                },
+                {
+                    "key": "B",
+                    "text": "To show the price matches the amount."
+                },
+                {
+                    "key": "C",
+                    "text": "To ensure customers drink the right amount of soda."
+                },
+                {
+                    "key": "D",
+                    "text": "To make customers believe they are getting a bargain."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What do we learn from Dan Ariely's experiment?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Lower-priced goods attract more customers."
+                },
+                {
+                    "key": "B",
+                    "text": "The Economist's promotional strategy works."
+                },
+                {
+                    "key": "C",
+                    "text": "The Economist's print edition turns out to sell the best."
+                },
+                {
+                    "key": "D",
+                    "text": "More readers choose the digital over the print edition."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "For what purpose is “the bad option” (Line 6, Para.3) added?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To cater to the peculiar needs of some customers."
+                },
+                {
+                    "key": "B",
+                    "text": "To help customers to make more rational choices."
+                },
+                {
+                    "key": "C",
+                    "text": "To trap customers into buying the more pricey item."
+                },
+                {
+                    "key": "D",
+                    "text": "To provide customers with a greater variety of goods."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "How do we assess the value of a commodity, according to the passage?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "By considering its usefulness."
+                },
+                {
+                    "key": "B",
+                    "text": "By comparing it with other choices."
+                },
+                {
+                    "key": "C",
+                    "text": "By taking its quality into account."
+                },
+                {
+                    "key": "D",
+                    "text": "By examining its value equation."
+                }
+            ]
+        }
+    ]
+}
