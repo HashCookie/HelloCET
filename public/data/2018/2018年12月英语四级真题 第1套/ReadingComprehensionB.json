@@ -1,0 +1,188 @@
+{
+    "title": "Section B",
+    "passages": [
+        "A) Several times a month, you can find a doctor in the aisles of Ralph’s market in Huntington Beach, California, wearing a white coat and helping people learn about food. On one recent day, this doctor was Daniel Nadeau, wandering the cereal aisle with Allison Scott, giving her some ideas on how to feed kids who persistently avoid anything that is healthy. “Have you thought about trying fresh juices in the morning?” he asks her. “The frozen oranges and apples are a little cheaper, and fruits are really good for the brain. Juices are quick and easy to prepare, you can take the frozen fruit out the night before and have it ready the next morning.”",
+        "B) Scott is delighted to get food advice from a physician who is program director of the nearby Mary and Dick Allen Diabetes Center, part of the St. Joseph Hoag Health alliance. The center’s ‘Shop with Your Doc’ program sends doctors to the grocery store to meet with any patients who sign up for the service, plus any other shoppers who happen to be around with questions.",
+        "C) Nadeau notices the pre-made macaroni (通心粉) -and-cheese boxes in Scott’s shopping cart and suggests she switch to whole grain macaroni and real cheese. “So I’d have to make it?” she asks, her enthusiasm fading at the thought of how long that might take, just to have her kids reject it. “I’m not sure they’d eat it. They just won’t eat it.”",
+        "D) Nadeau says sugar and processed foods are big contributors to the rising diabetes rates among children. “In America, over 50 percent of our food is processed food,” Nadeau tells her. “And only 5 percent of our food is plant-based food. I think we should try to reverse that.” Scott agrees to try more fruit juices for the kids and to make real macaroni and cheese. Score one point for the doctor, zero for diabetes.",
+        "E) Nadeau is part of a small revolution developing across California. The food-as-medicine movement has been around for decades, but it’s making progress as physicians and medical institutions make food a formal part of treatment, rather than relying solely on medications (药物) . By prescribing nutritional changes or launching programs such as ‘Shop with Your Doc’, they are trying to prevent, limit or even reverse disease by changing what patients eat. “There’s no question people can take things a long way toward reversing diabetes, reversing high blood pressure, even preventing cancer by food choices,” Nadeau says.",
+        "F) In the big picture, says Dr. Richard Afable, CEO and president of St. Joseph Hoag Health, medical institutions across the state are starting to make a philosophical switch to becoming a health organization, not just a health care organization. That feeling echoes the beliefs of the Therapeutic Food Pantry program at Zuckerberg San Francisco General Hospital, which completed its pilot phase and is about to expand on an ongoing basis to five clinic sites throughout the city. The program will offer patients several bags of food prescribed for their condition, along with intensive training in how to cook it. “We really want to link food and medicine, and not just give away food,” says Dr. Rita Nguyen, the hospital’s medical director of Healthy Food Initiatives. “We want people to understand what they’re eating, how to prepare it, the role food plays in their lives.”",
+        "G) In Southern California, Loma Linda University School of Medicine is offering specialized training for its resident physicians in Lifestyle Medicine—that is a formal specialty in using food to treat disease. Research findings increasingly show the power of food to treat or reverse diseases, but that does not mean that diet alone is always the solution, or that every illness can benefit substantially from dietary changes. Nonetheless, physicians say that they look at the collective data and a clear picture emerges: that the salt, sugar, fat and processed foods in the American diet contribute to the nation’s high rates of obesity, diabetes and heart disease. According to the World Health Organization, 80 percent of deaths from heart disease and stroke are caused by high blood pressure, tobacco use, elevated cholesterol and low consumption of fruits and vegetables.",
+        "H) “It’s a different paradigm (范式) of how to treat disease,” says Dr. Brenda Rea, who helps run the family and preventive medicine residency program at Loma Linda University School of Medicine. The lifestyle medicine specialty is designed to train doctors in how to prevent and treat disease, in part, by changing patients’ nutritional habits. The medical center and school at Loma Linda also has a food cupboard and kitchen for patients. This way, patients not only learn about which foods to buy, but also how to prepare them at home.",
+        "I) Many people don’t know how to cook, Rea says, and they only know how to heat things up. That means depending on packaged food with high salt and sugar content. So teaching people about which foods are healthy and how to prepare them, she says, can actually transform a patient’s life. And beyond that, it might transform the health and lives of that patient’s family. “What people eat can be medicine or poison,” Rea says. “As a physician, nutrition is one of the most powerful things you can change to reverse the effects of long-term disease.”",
+        "J) Studies have explored evidence that dietary changes can slow inflammation (炎症) , for example, or make the body inhospitable to cancer cells. In general, many lifestyle medicine physicians recommend a plant-based diet—particularly for people with diabetes or other inflammatory conditions.",
+        "K) “As what happened with tobacco, this will require a cultural shift, but that can happen,” says Nguyen. “In the same way physicians used to smoke, and then stopped smoking and were able to talk to patients about it, I think physicians can have a bigger voice in it.”"
+    ],
+    "questions": [
+        {
+            "Number": 36,
+            "Statement": "More than half of the food Americans eat is factory-produced.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 37,
+            "Statement": "There is a special program that assigns doctors to give advice to shoppers in food stores.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 38,
+            "Statement": "There is growing evidence from research that food helps patients recover from various illnesses.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 39,
+            "Statement": "A healthy breakfast can be prepared quickly and easily.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 40,
+            "Statement": "Training a patient to prepare healthy food can change their life.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 41,
+            "Statement": "One food-as-medicine program not only prescribes food for treatment but teaches patients how to cook it.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 42,
+            "Statement": "Scott is not keen on cooking food herself, thinking it would simply be a waste of time.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 43,
+            "Statement": "Diabetes patients are advised to eat more plant-based food.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 44,
+            "Statement": "Using food as medicine is no novel idea, but the movement is making headway these days.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        },
+        {
+            "Number": 45,
+            "Statement": "Americans’ high rates of various illnesses result from the way they eat.",
+            "Options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K"
+            ]
+        }
+    ]
+}

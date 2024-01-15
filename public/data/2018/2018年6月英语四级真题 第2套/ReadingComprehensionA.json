@@ -1,0 +1,225 @@
+{
+    "title": "Section A",
+    "passages": [
+        "Since the 1940s, southern California has had a reputation for smog. Things are not as bad as they once were but, according to the American Lung Association, Los Angeles is still the worst city in the United States for levels of26 . Gazing down on the city from the Getty Center, an art museum in the Santa Monica Mountains, one would find the view of the Pacific Ocean blurred by the haze (霾). Nor is the state’s bad air27 to its south. Fresno, in the central valley, comes top of the list in America for year-round pollution. Residents’ hearts and lungs are affected as a28 . All of which, combined with California’s reputation as the home of technological29 , makes the place ideal for developing and testing systems designed to monitor pollution in30 . And that is just what Aclima, a new firm in San Francisco, has been doing over the past few months. It has been trying out monitoring stations that are31 to yield minute-to-minute maps of32 air pollution. Such stations will also be able to keep an eye on what is happening inside buildings, including offices. To this end, Aclima has been33 with Google’s Street View system. Davida Herzl, Aclima’s boss, says they have revealed pollution highs on days when San Francisco’s transit workers went on strike and the city’s34 were forced to use their cars. Conversely, “cycle to work”days have done their job by35 pollution lows."
+    ],
+    "options": {
+        "A": "assisted",
+        "B": "collaborating",
+        "C": "consequence",
+        "D": "consumers",
+        "E": "creating",
+        "F": "detail",
+        "G": "domestic",
+        "H": "frequently",
+        "I": "inhabitants",
+        "J": "innovation",
+        "K": "intended",
+        "L": "outdoor",
+        "M": "pollutants",
+        "N": "restricted",
+        "O": "sum"
+    },
+    "questions": [
+        {
+            "number": 26,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 27,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 28,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 29,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 30,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 31,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 32,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 33,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 34,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        },
+        {
+            "number": 35,
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O"
+            ]
+        }
+    ]
+}

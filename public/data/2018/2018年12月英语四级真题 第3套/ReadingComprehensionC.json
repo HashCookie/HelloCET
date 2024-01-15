@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do we learn from a newly published study about cats?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They can be trained to understand the physical world."
+                },
+                {
+                    "key": "B",
+                    "text": "They know what kind of prey might be easier to hunt."
+                },
+                {
+                    "key": "C",
+                    "text": "They have a natural ability to locate animals they hunt."
+                },
+                {
+                    "key": "D",
+                    "text": "They are capable of telling which way their prey flees."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What may account for the cats’ response to the noise from the containers?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Their inborn sensitivity to noise."
+                },
+                {
+                    "key": "B",
+                    "text": "Their unusual sense of direction."
+                },
+                {
+                    "key": "C",
+                    "text": "Their special ability to perceive."
+                },
+                {
+                    "key": "D",
+                    "text": "Their mastery of cause and effect."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What is characteristic of the way cats hunt, according to the Japanese researchers?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They depend on their instincts."
+                },
+                {
+                    "key": "B",
+                    "text": "They rely mainly on their hearing."
+                },
+                {
+                    "key": "C",
+                    "text": "They wait some time before attack."
+                },
+                {
+                    "key": "D",
+                    "text": "They use both their ears and eyes."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "In what way do babies behave like cats?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They focus on what appears odd."
+                },
+                {
+                    "key": "B",
+                    "text": "They view the world as normal."
+                },
+                {
+                    "key": "C",
+                    "text": "They do what they prefer to do."
+                },
+                {
+                    "key": "D",
+                    "text": "They are curious about everything."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What can we conclude about cats from the passage?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They have higher intelligence than many other animals."
+                },
+                {
+                    "key": "B",
+                    "text": "They interact with the physical world much like humans."
+                },
+                {
+                    "key": "C",
+                    "text": "They display extraordinarily high intelligence in hunting."
+                },
+                {
+                    "key": "D",
+                    "text": "They can aid physics professors in their research work."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What would be the impact of the extensive use of driverless cars?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "People would be driving in a more civilized way."
+                },
+                {
+                    "key": "B",
+                    "text": "It would save local governments a lot of money."
+                },
+                {
+                    "key": "C",
+                    "text": "More policemen would be patrolling the streets."
+                },
+                {
+                    "key": "D",
+                    "text": "Traffic regulations would be a thing of the past."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "How would the elderly and the disabled benefit from driverless cars?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They could enjoy greater mobility."
+                },
+                {
+                    "key": "B",
+                    "text": "They would suffer no road accidents."
+                },
+                {
+                    "key": "C",
+                    "text": "They would have no trouble driving."
+                },
+                {
+                    "key": "D",
+                    "text": "They could go anywhere they want."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What would be the negative impact of driverless cars?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The conflict between labor and management would intensify."
+                },
+                {
+                    "key": "B",
+                    "text": "The gap between various sectors of society would be widened."
+                },
+                {
+                    "key": "C",
+                    "text": "Professional drivers would have a hard time adapting to new road conditions."
+                },
+                {
+                    "key": "D",
+                    "text": "Numerous professional drivers would have to find new ways of earning a living."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What is the result of the introduction of new technologies in energy industries?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Political dissatisfaction."
+                },
+                {
+                    "key": "B",
+                    "text": "Retraining of employees."
+                },
+                {
+                    "key": "C",
+                    "text": "Fossil fuel conservation."
+                },
+                {
+                    "key": "D",
+                    "text": "Business restructuring."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What does the author suggest businesses and the government do?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Keep pace with technological developments."
+                },
+                {
+                    "key": "B",
+                    "text": "Make new technologies affordable to everyone."
+                },
+                {
+                    "key": "C",
+                    "text": "Enable everyone to benefit from new technologies."
+                },
+                {
+                    "key": "D",
+                    "text": "Popularize the use of new technologies and devices."
+                }
+            ]
+        }
+    ]
+}
