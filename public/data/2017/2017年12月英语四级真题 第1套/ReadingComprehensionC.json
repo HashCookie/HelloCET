@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Questions 46 to 50 are based on the following passage."
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What did researchers find puzzling about the first-night effect?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To what extent it can trouble people."
+                },
+                {
+                    "key": "B",
+                    "text": "What role it has played in evolution."
+                },
+                {
+                    "key": "C",
+                    "text": "What circumstances may trigger it."
+                },
+                {
+                    "key": "D",
+                    "text": "In what way it can be beneficial."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What do we learn about Dr. Yuka Sasaki doing her research?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "She found birds and dolphins remain alert while asleep."
+                },
+                {
+                    "key": "B",
+                    "text": "She found birds and dolphins sleep in much the same way."
+                },
+                {
+                    "key": "C",
+                    "text": "She got some idea from previous studies on birds and dolphins."
+                },
+                {
+                    "key": "D",
+                    "text": "She conducted studies on birds’ and dolphins’ sleeping patterns."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What did Dr. Sasaki do when she first did her experiment?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "She monitored the brain activity of participants sleeping in a new environment."
+                },
+                {
+                    "key": "B",
+                    "text": "She recruited 35 participants from her Department of Psychological Sciences."
+                },
+                {
+                    "key": "C",
+                    "text": "She studied the differences between the two sides of participants’ brains."
+                },
+                {
+                    "key": "D",
+                    "text": "She tested her findings about birds and dolphins on human subjects."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What did Dr. Sasaki do when re-running her experiment?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "She analyzed the negative effect of irregular tones on brains."
+                },
+                {
+                    "key": "B",
+                    "text": "She recorded participants’ adaptation to changed environment."
+                },
+                {
+                    "key": "C",
+                    "text": "She exposed her participants to two different stimuli."
+                },
+                {
+                    "key": "D",
+                    "text": "She compared the responses of different participants."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What did Dr. Sasaki find about the participants in her experiment?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They tended to enjoy certain tones more than others."
+                },
+                {
+                    "key": "B",
+                    "text": "They tended to perceive irregular beeps as a threat."
+                },
+                {
+                    "key": "C",
+                    "text": "They felt sleepy when exposed to regular beeps."
+                },
+                {
+                    "key": "D",
+                    "text": "They differed in their tolerance of irregular tones."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Questions 51 to 55 are based on the following passage."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What does the author say is the problem with women?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are often unclear about the career goals to reach."
+                },
+                {
+                    "key": "B",
+                    "text": "They are usually more committed at home than on the job."
+                },
+                {
+                    "key": "C",
+                    "text": "They tend to be over-optimistic about how far they could go."
+                },
+                {
+                    "key": "D",
+                    "text": "They tend to push themselves beyond the limits of their ability."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "Why do working women of child-bearing age tend to feel drained of energy?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They struggle to satisfy the demands of both work and home."
+                },
+                {
+                    "key": "B",
+                    "text": "They are too devoted to work and unable to relax as a result."
+                },
+                {
+                    "key": "C",
+                    "text": "They do their best to cooperate with their workmates."
+                },
+                {
+                    "key": "D",
+                    "text": "They are obliged to take up too many responsibilities."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What may hinder the future prospects of career women?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Their unwillingness to say “no”."
+                },
+                {
+                    "key": "B",
+                    "text": "Their desire to be considered powerful."
+                },
+                {
+                    "key": "C",
+                    "text": "An underestimate of their own ability."
+                },
+                {
+                    "key": "D",
+                    "text": "A lack of courage to face challenges."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "Men and women differ in their approach to resolving workplace conflicts in that _____.",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "women tend to be easily satisfied"
+                },
+                {
+                    "key": "B",
+                    "text": "men are generally more persuasive"
+                },
+                {
+                    "key": "C",
+                    "text": "men tend to put their personal interests first"
+                },
+                {
+                    "key": "D",
+                    "text": "women are much more ready to compromise"
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What is important to a good leader?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "A dominant personality."
+                },
+                {
+                    "key": "B",
+                    "text": "The ability to delegate."
+                },
+                {
+                    "key": "C",
+                    "text": "The courage to admit failure."
+                },
+                {
+                    "key": "D",
+                    "text": "A strong sense of responsibility."
+                }
+            ]
+        }
+    ]
+}

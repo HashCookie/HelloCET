@@ -1,0 +1,233 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "Aging happens to all of us, and is generally thought of as a natural part of life. It would seem silly to call such a thing a “disease.” On the other hand, scientists are increasingly learning that aging and biological age are two different things, and that the former is a key risk factor for conditions such as heart disease, cancer and many more. In that light, aging itself might be seen as something treatable, the way you would treat high blood pressure or a vitamin deficiency. Biophysicist Alex Zhavoronkov believes that aging should be considered a disease. He said that describing aging as a disease creates incentives to develop treatments. “It unties the hands of the pharmaceutical (制药的) industry so that they can begin treating the disease and not just the side effects,”he said. “Right now, people think of aging as natural and something you can’t control,”he said. “In academic circles, people take aging research as just an interest area where they can try to develop interventions. The medical community also takes aging for granted, and can do nothing about it except keep people within a certain health range.” But if aging were recognized as a disease, he said, “It would attract funding and change the way we do health care. What matters is understanding that aging is curable.” “It was always known that the body accumulates damage,”he added. “The only way to cure aging is to find ways to repair that damage. I think of it as preventive medicine for age-related conditions.” Leonard Hayflick, a professor at the University of California, San Francisco, said the idea that aging can be cured implies the human lifespan can be increased, which some researchers suggest is possible. Hayflick is not among them. “There’re many people who recover from cancer, stroke or heart disease. But they continue to age, because aging is separate from their disease,”Hayflick said. “Even if those causes of death were eliminated, life expectancy would still not go much beyond 92 years.”"
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do people generally believe about aging?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It should cause no alarm whatsoever."
+                },
+                {
+                    "key": "B",
+                    "text": "They just cannot do anything about it."
+                },
+                {
+                    "key": "C",
+                    "text": "It should be regarded as a kind of disease."
+                },
+                {
+                    "key": "D",
+                    "text": "They can delay it with advances in science."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "How do many scientists view aging now?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It might be prevented and treated."
+                },
+                {
+                    "key": "B",
+                    "text": "It results from a vitamin deficiency."
+                },
+                {
+                    "key": "C",
+                    "text": "It can be as risky as heart disease."
+                },
+                {
+                    "key": "D",
+                    "text": "It is an irreversible biological process."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What does Alex Zhavoronkov think of “describing aging as a disease”?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "It will prompt people to take aging more seriously."
+                },
+                {
+                    "key": "B",
+                    "text": "It will greatly help reduce the side effects of aging."
+                },
+                {
+                    "key": "C",
+                    "text": "It will free pharmacists from the conventional beliefs about aging."
+                },
+                {
+                    "key": "D",
+                    "text": "It will motivate doctors and pharmacists to find ways to treat aging."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What do we learn about the medical community?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They now have a strong interest in research on aging."
+                },
+                {
+                    "key": "B",
+                    "text": "They differ from the academic circles in their view on aging."
+                },
+                {
+                    "key": "C",
+                    "text": "They can contribute to people’s health only to a limited extent."
+                },
+                {
+                    "key": "D",
+                    "text": "They have ways to intervene in people’s aging process."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What does professor Leonard Hayflick believe?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The human lifespan cannot be prolonged."
+                },
+                {
+                    "key": "B",
+                    "text": "Aging is hardly separable from disease."
+                },
+                {
+                    "key": "C",
+                    "text": "Few people can live up to the age of 92."
+                },
+                {
+                    "key": "D",
+                    "text": "Heart disease is the major cause of aging."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "Female applicants to postdoctoral positions in geosciences were nearly half as likely to receive excellent letters of recommendation, compared with their male counterparts. Christopher Intagliata reports. As in many other fields, gender bias is widespread in the sciences. Men score higher starting salaries, have more mentoring (指导) , and have better odds of being hired. Studies show they’re also perceived as more competent than women in STEM (Science, Technology, Engineering, and Mathematics) fields. And new research reveals that men are more likely to receive excellent letters of recommendation, too. “Say, you know, this is the best student I’ve ever had,”says Kuheli Dutt, a social scientist and diversity officer at Columbia University’s Lamont campus. “Compare those excellent letters with a merely good letter: ‘The candidate was productive, or intelligent, or a solid scientist or something that’s clearly solid praise,’ but nothing that singles out the candidate as exceptional or one of a kind.” Dutt and her colleagues studied more than 1,200 letters of recommendation for postdoctoral positions in geoscience. They were all edited for gender and other identifying information, so Dutt and her team could assign them a score without knowing the gender of the student. They found that female applicants were only half as likely to get outstanding letters, compared with their male counterparts. That includes letters of recommendation from all over the world, and written by, yes, men and women. The findings are in the journal Nature Geoscience. Dutt says they were not able to evaluate the actual scientific qualifications of the applicants using the data in the files. But she says the results still suggest women in geoscience are at a potential disadvantage from the very beginning of their careers starting with those less than outstanding letters of recommendation. “We’re not trying to assign blame or criticize anyone or call anyone consciously sexist. Rather, the point is to use the results of this study to open up meaningful dialogues on implicit gender bias, be it at a departmental level or an institutional level or even a discipline level.” Which may lead to some recommendations for the letter writers themselves."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "What do we learn about applicants to postdoctoral positions in geosciences?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "There are many more men applying than women."
+                },
+                {
+                    "key": "B",
+                    "text": "Chances for women to get the positions are scarce."
+                },
+                {
+                    "key": "C",
+                    "text": "More males than females are likely to get outstanding letters of recommendation."
+                },
+                {
+                    "key": "D",
+                    "text": "Male applicants have more interest in these positions than their female counterparts."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "What do studies about men and women in scientific research show?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Women engaged in postdoctoral work are quickly catching up."
+                },
+                {
+                    "key": "B",
+                    "text": "Fewer women are applying for postdoctoral positions due to gender bias."
+                },
+                {
+                    "key": "C",
+                    "text": "Men are believed to be better able to excel in STEM disciplines."
+                },
+                {
+                    "key": "D",
+                    "text": "Women who are keenly interested in STEM fields are often exceptional."
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What do the studies find about the recommendation letters for women applicants?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They are hardly ever supported by concrete examples."
+                },
+                {
+                    "key": "B",
+                    "text": "They contain nothing that distinguishes the applicants."
+                },
+                {
+                    "key": "C",
+                    "text": "They provide objective information without exaggeration."
+                },
+                {
+                    "key": "D",
+                    "text": "They are often filled with praise for exceptional applicants."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "What did Dutt and her colleagues do with the more than 1,200 letters of recommendation?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "They asked unbiased scholars to evaluate them."
+                },
+                {
+                    "key": "B",
+                    "text": "They invited women professionals to edit them."
+                },
+                {
+                    "key": "C",
+                    "text": "They assigned them randomly to reviewers."
+                },
+                {
+                    "key": "D",
+                    "text": "They deleted all information about gender."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What does Dutt aim to do with her study?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Raise recommendation writers’ awareness of gender bias in their letters."
+                },
+                {
+                    "key": "B",
+                    "text": "Open up fresh avenues for women post-doctors to join in research work."
+                },
+                {
+                    "key": "C",
+                    "text": "Alert women researchers to all types of gender bias in the STEM disciplines."
+                },
+                {
+                    "key": "D",
+                    "text": "Start a public discussion on how to raise women’s status in academic circles."
+                }
+            ]
+        }
+    ]
+}

@@ -1,225 +1,233 @@
 {
   "title": "Section C",
-  "passages": [
-    "Three children in every classroom have a diagnosable mental health condition...",
-    "Picture this: You're at a movie theater food stand loading up on snacks..."
+  "passagesOne": [
+      "Questions 46 to 50 are based on the following passage."
   ],
-  "questions": [
-    {
-      "Number": 46,
-      "Statement": "What are teachers complaining about?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 47,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 48,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 49,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 50,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 51,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 52,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 53,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 54,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "D",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    },
-    {
-      "Number": 55,
-      "Statement": "What is the main idea of the passage?",
-      "Options": [
-        {
-          "key": "A",
-          "text": "There are too many students requiring special attention."
-        },
-        {
-          "key": "B",
-          "text": "There are too many students who are not interested in learning."
-        },
-        {
-          "key": "C",
-          "text": "There are too many students who are not interested in learning."
-        }
-      ]
-    }
+  "questionsOne": [
+      {
+          "Number": 46,
+          "Statement": "The market sales of toilet paper have decreased because _____.",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Britons have cut their spending on it"
+              },
+              {
+                  "key": "B",
+                  "text": "its prices have gone up over the years"
+              },
+              {
+                  "key": "C",
+                  "text": "its quality has seen marked improvement"
+              },
+              {
+                  "key": "D",
+                  "text": "Britons have developed the habit of saving"
+              }
+          ]
+      },
+      {
+          "Number": 47,
+          "Statement": "What does the author think of the tissue paper market in the UK?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "It will expand in time."
+              },
+              {
+                  "key": "B",
+                  "text": "It will remain gloomy."
+              },
+              {
+                  "key": "C",
+                  "text": "It will experience ups and downs."
+              },
+              {
+                  "key": "D",
+                  "text": "It will recover as population grows."
+              }
+          ]
+      },
+      {
+          "Number": 48,
+          "Statement": "What does Jack Duckett say about toilet paper?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Special offers would promote its sales."
+              },
+              {
+                  "key": "B",
+                  "text": "Consumers are loyal to certain brands."
+              },
+              {
+                  "key": "C",
+                  "text": "Luxurious features add much to the price."
+              },
+              {
+                  "key": "D",
+                  "text": "Consumers have a variety to choose from."
+              }
+          ]
+      },
+      {
+          "Number": 49,
+          "Statement": "What do we learn about Britons concerning toilet paper?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They are particular about the quality of toilet paper."
+              },
+              {
+                  "key": "B",
+                  "text": "They emphasize the strength of toilet paper the most."
+              },
+              {
+                  "key": "C",
+                  "text": "They prefer cheap toilet paper to recycled toilet paper."
+              },
+              {
+                  "key": "D",
+                  "text": "They reject using toilet paper with unnecessary features."
+              }
+          ]
+      },
+      {
+          "Number": 50,
+          "Statement": "What can we infer from the last paragraph?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "More and more Britons buy recycled toilet paper to protect the environment."
+              },
+              {
+                  "key": "B",
+                  "text": "Toilet paper manufacturers are facing a great challenge in promoting its sales."
+              },
+              {
+                  "key": "C",
+                  "text": "Toilet paper manufacturers compete with one another to improve product quality."
+              },
+              {
+                  "key": "D",
+                  "text": "Environmental protection is not much of a concern when Britons buy toilet paper."
+              }
+          ]
+      }
+  ],
+  "passagesTwo": [
+      "Questions 51 to 55 are based on the following passage."
+  ],
+  "questionsTwo": [
+      {
+          "Number": 51,
+          "Statement": "What does Lindson-Hawley say about her mother?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "She quit smoking with her daughter's help."
+              },
+              {
+                  "key": "B",
+                  "text": "She succeeded in quitting smoking abruptly."
+              },
+              {
+                  "key": "C",
+                  "text": "She was also a researcher of tobacco and health."
+              },
+              {
+                  "key": "D",
+                  "text": "She studied the smoking patterns of adult smokers."
+              }
+          ]
+      },
+      {
+          "Number": 52,
+          "Statement": "What kind of support did smokers receive to quit smoking in Lindson-Hawley's study?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They were given physical training."
+              },
+              {
+                  "key": "B",
+                  "text": "They were looked after by physicians."
+              },
+              {
+                  "key": "C",
+                  "text": "They were encouraged by psychologists."
+              },
+              {
+                  "key": "D",
+                  "text": "They were offered nicotine replacements."
+              }
+          ]
+      },
+      {
+          "Number": 53,
+          "Statement": "How does Dr. Gabriela Ferreira view the result of Lindson-Hawley's experiment?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "It is idealized."
+              },
+              {
+                  "key": "B",
+                  "text": "It is unexpected."
+              },
+              {
+                  "key": "C",
+                  "text": "It is encouraging."
+              },
+              {
+                  "key": "D",
+                  "text": "It is misleading."
+              }
+          ]
+      },
+      {
+          "Number": 54,
+          "Statement": "The idea of “a marathon” （Line 2, Para. 5） illustrates the popular belief that quitting smoking_____.",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "is something few can accomplish"
+              },
+              {
+                  "key": "B",
+                  "text": "needs some practice first"
+              },
+              {
+                  "key": "C",
+                  "text": "requires a lot of patience"
+              },
+              {
+                  "key": "D",
+                  "text": "is a challenge at the beginning"
+              }
+          ]
+      },
+      {
+          "Number": 55,
+          "Statement": "What happens when people try to quit smoking gradually?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They find it even more difficult."
+              },
+              {
+                  "key": "B",
+                  "text": "They are simply unable to make it."
+              },
+              {
+                  "key": "C",
+                  "text": "They show fewer withdrawal symptoms."
+              },
+              {
+                  "key": "D",
+                  "text": "They feel much less pain in the process."
+              }
+          ]
+      }
   ]
 }
