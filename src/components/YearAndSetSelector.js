@@ -5,7 +5,7 @@ const YearAndSetSelector = ({ onSelect }) => {
   const [month, setMonth] = useState('');
   const [set, setSet] = useState('');
 
-  const years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022'];
+  const years = ['2017', '2018', '2019', '2020', '2021', '2022'];
   const months = ['6月', '12月'];
   const sets = ['第1套', '第2套', '第3套'];
 
