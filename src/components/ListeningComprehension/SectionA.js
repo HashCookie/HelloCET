@@ -7,7 +7,7 @@ const SectionA = ({ questions, selectedAnswer, onAnswerChange }) => {
     <section>
       <h3>Section A</h3>
       <p>
-        Directions: In this section, you will hear three news reports. At the
+        <b>Directions:</b>In this section, you will hear three news reports. At the
         end of each news report, you will hear two or three questions. Both the
         news report and the questions will be spoken only once. After you hear a
         question, you must choose the best answer from the four choices marked
@@ -16,7 +16,7 @@ const SectionA = ({ questions, selectedAnswer, onAnswerChange }) => {
       </p>
 
       <AudioPlayer src="path-to-your-audio-file" />
-      <p>Questions 1 and 2 are based on the news report you have just heard.</p>
+      <b>Questions 1 and 2 are based on the news report you have just heard.</b>
       <QuestionList
         questions={questions.slice(0, 2)}
         selectedAnswer={selectedAnswer}
@@ -24,7 +24,7 @@ const SectionA = ({ questions, selectedAnswer, onAnswerChange }) => {
       />
 
       <AudioPlayer src="path-to-your-audio-file" />
-      <p>Questions 3 and 4 are based on the news report you have just heard.</p>
+      <b>Questions 3 and 4 are based on the news report you have just heard.</b>
       <QuestionList
         questions={questions.slice(2, 4)}
         selectedAnswer={selectedAnswer}
@@ -32,7 +32,7 @@ const SectionA = ({ questions, selectedAnswer, onAnswerChange }) => {
       />
 
       <AudioPlayer src="path-to-your-audio-file" />
-      <p>Questions 5 and 7 are based on the news report you have just heard.</p>
+      <b>Questions 5 and 7 are based on the news report you have just heard.</b>
       <QuestionList
         questions={questions.slice(4, 7)}
         selectedAnswer={selectedAnswer}
