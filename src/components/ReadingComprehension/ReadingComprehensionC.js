@@ -25,23 +25,35 @@ const ReadingComprehensionC = ({ data }) => {
   return (
     <div className={styles.comprehensionContainer}>
       <h2>{data.title}</h2>
+      <p>
+        <b>Directions:</b>There are 2 passages in this section.Each passage is followed
+        by some questions or unfinished statements.For each of them there are
+        four choices marked A), B), C) and D). You should decide on the best
+        choice and mark the corresponding letter on Answer Sheet 2 with a single
+        line through the centre.
+      </p>
 
       <div className={styles.passageContainer}>
         <h3>Passage One</h3>
+        <h4>Questions 46 to 50 are based on the following passage.</h4>
         {data.passagesOne.map((passage, index) => (
-          <p key={index} className={styles.paragraph}>{passage}</p>
+          <p key={index} className={styles.paragraph}>
+            {passage}
+          </p>
         ))}
         {renderQuestions(data.questionsOne)}
       </div>
 
       <div className={styles.passageContainer}>
         <h3>Passage Two</h3>
+        <h4>Questions 51 to 55 are based on the following passage.</h4>
         {data.passagesTwo.map((passage, index) => (
-          <p key={index} className={styles.paragraph}>{passage}</p>
+          <p key={index} className={styles.paragraph}>
+            {passage}
+          </p>
         ))}
         {renderQuestions(data.questionsTwo)}
       </div>
-
     </div>
   );
 };
