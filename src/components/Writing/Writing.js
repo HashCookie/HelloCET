@@ -23,7 +23,7 @@ const WritingTestPage = ({ basePath }) => {
 
   return (
     <div className={styles["writing-test-container"]}>
-      <h1>Part1 Writing (30 minutes)</h1>
+      <h1>Part1 Writing</h1>
       <p
         dangerouslySetInnerHTML={{
           __html: Directions.replace(/(Directions:)/, "<strong>$1</strong>"),
