@@ -17,6 +17,7 @@ const ReadingComprehensionB = ({ data }) => {
         paragraph is marked with a letter.Answer the questions by marking the
         corresponding letter on Answer Sheet 2.
       </p>
+      <b>{data.passageTitle}</b>
       {data.passages.map((paragraph, index) => (
         <p
           key={index}
