@@ -1,7 +1,10 @@
 {
     "title": "Section C",
     "passagesOne": [
-        "Questions 46 to 50 are based on the following passage."
+        "Professor Ashok Goel of Georgia Tech developed an artificially intelligent teaching assistant to help handle the enormous number of student questions in the online class, Knowledge-Based Artificial Intelligence. This online course is a core requirement of Georgia Tech's online Master of Science in Computer Science program. Professor Goel already had eight teaching assistants, but that wasn't enough to deal with the overwhelming number of daily questions from students.",
+        "Many students drop out of online courses because of the lack of teaching support. When students feel isolated or confused and reach out with questions that go unanswered, their motivation to continue begins to fade. Professor Goel decided to do something to remedy this situation and his solution was to create a virtual assistant named Jill Watson, which is based on the IBM Watson platform.",
+        "Goel and his team developed several versions of Jill Watson before releasing her to the online forums. At first, the virtual assistant wasn't too great. But Goel and his team sourced the online discussion forum to find all the 40,000 questions that had ever been asked since the class was launched. Then they began to feed Jill with the questions and answers. After some adjustment and sufficient time, Jill was able to answer the students' questions correctly 97% of the time. The virtual assistant became so advanced and realistic that the students didn't know she was a computer. The students, who were studying artificial intelligence, were interacting with the virtual assistant and couldn't tell it apart from a real human being. Goel didn't inform them about Jill's true identity until April 26. The students were actually very positive about the experience.",
+        "The goal of Professor Goel's virtual assistant next year is to take over answering 40% of all the questions posed by students on the online forum. The name Jill Watson will, of course, change to something else next semester. Professor Goel has a much rosier outlook on the future of artificial intelligence than, say, Elon Musk, Stephen Hawking, Bill Gates or Steve Wozniak."
     ],
     "questionsOne": [
         {
@@ -116,7 +119,11 @@
         }
     ],
     "passagesTwo": [
-        "Questions 51 to 55 are based on the following passage."
+        "Thinking small, being engaging, and having a sense of humor don't hurt. Those are a few of the traits of successful science crowdfunding efforts that emerge from a recent study that examined nearly 400 campaigns. But having a large network and some promotional skills may be more crucial.",
+        "Crowdfunding, raising money for a project through online appeals, has taken off in recent years for everything from making movies to producing water-saving gadgets. Scientists have tried to tap Internet donors, too, with mixed success. Some raised more than twice their goals, but others have fallen short of reaching even modest targets.",
+        "To determine what separates science crowdfunding triumphs from failures, a team led by science communications scholar Mike Schäfer of the University of Zurich examined the content of the webpages for 371 recent campaigns.",
+        "Four traits stood out for those that achieved their goals, the researchers report in Public Understanding of Science. For one, they use a crowdfunding platform that specializes in raising money for science, and not just any kind of project. Although sites like Kickstarter take all comers, platforms such as Experiment.com and Petridish.org only present scientific projects. For another, they present the project with a funny video because good visuals and a sense of humor improved success. Most of them engage with potential donors, since projects that answered questions from interested donors fared better. And they target a small amount of money. The projects included in the study raised $4000 on average, with 30% receiving less than $1000. The more money a project sought, the lower the chance it reached its goal, the researchers found.",
+        "Other factors may also significantly influence a project's success, most notably, the size of a scientist's personal and professional networks, and how much a researcher promotes a project on their own. Those two factors are by far more critical than the content on the page. Crowdfunding can be part of researchers' efforts to reach the public, and people give because “they feel a connection to the person” who is doing the fundraising—not necessarily to the science."
     ],
     "questionsTwo": [
         {
