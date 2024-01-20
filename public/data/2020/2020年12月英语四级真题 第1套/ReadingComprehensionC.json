@@ -1,7 +1,12 @@
 {
     "title": "Section C",
     "passagesOne": [
-        "Questions 46 to 50 are based on the following passage."
+        "Three children in every classroom have a diagnosable mental health condition. Half of these are behavioural disorders, while one third are emotional disorders such as stress, anxiety and depression, which often become outwardly apparent through self-harm. There was an astonishing 52 per cent jump in hospital admissions for children and young people who had harmed themselves between 2009 and 2015.",
+        "Schools and teachers have consistently reported the scale of the problem since 2009. Last year, over half of teachers reported that more of their pupils experience mental health problems than in the past. But teachers also consistently report how ill-equipped they feel to meet pupils' mental health needs, and often cite a lack of training, expertise and support from the National Health Service (英国国家医疗服务体系).",
+        "Part of the reason for the increased pressure on schools is that there are now fewer ‘early intervention (干预)’ and low-level mental health services based in the community. Cuts to local authority budgets since 2010 have resulted in a significant decline of these services, despite strong evidence of their effectiveness in preventing crises further down the line.",
+        "The only way to break the pressures on both mental health services and schools is to reinvest in early intervention services inside schools.",
+        "There are strong arguments for why schools are best placed to provide mental health services. Schools see young people more than any other service, which gives them a unique ability to get to hard-to-reach children and young people and build meaningful relationships with them over time. Recent studies have shown that children and young people largely prefer to see a counsellor in school rather than in an outside environment. Young people have reported that for low-level conditions such as stress and anxiety, a clinical setting can sometimes be daunting (令人却步的).",
+        "There are already examples of innovative schools which combine mental health and wellbeing provision with a strong academic curriculum. This will, though, require a huge cultural shift. Politicians, policymakers, commissioners and school leaders must be brave enough to make the leap towards reimagining schools as providers of health as well as education services."
     ],
     "questionsOne": [
         {
@@ -116,7 +121,11 @@
         }
     ],
     "passagesTwo": [
-        "Questions 51 to 55 are based on the following passage."
+        "Picture this: You're at a movie theater food stand loading up on snacks. You have a choice of a small, medium or large soda. The small is $3.50 and the large is $5.50. It's a tough decision: The small size may not last you through the whole movie, but $5.50 for some sugary drink seems ridiculous. But there's a third option, a medium soda for $5.25. Medium may be the perfect amount of soda for you, but the large is only a quarter more. If you're like most people, you end up buying the large (and taking a bathroom break midshow).",
+        "If you're wondering who would buy the medium soda, the answer is almost no one. In fact, there's a good chance the marketing department purposely priced the medium soda as a decoy (诱饵), making you more likely to buy the large soda rather than the small.",
+        "I have written about this peculiarity in human nature before with my friend Dan Ariely, who studied this phenomenon extensively after noticing pricing for subscriptions (订阅) to The Economist. The digital subscription was $59, the print subscription was $125, and the print plus digital subscription was also $125. No one in their right mind would buy the print subscription when you could get digital as well for the same price, so why was it even an option? Ariely ran an experiment and found that when only the two “real” choices were offered, more people chose the less-expensive digital subscription. But the addition of the bad option made people much more likely to choose the more expensive print plus digital option.",
+        "Brain scientists call this effect “asymmetric dominance” and it means that people gravitate toward the choice nearest a clearly inferior option. Marketing professors call it the decoy effect, which is certainly easier to remember. Lucky for consumers, almost no one in the business community understands it.",
+        "The decoy effect works because of the way our brains assign value when making choices. Value is almost never absolute; rather, we decide an object's value relative to our other choices. If more options are introduced, the value equation changes."
     ],
     "questionsTwo": [
         {
