@@ -18,23 +18,23 @@ const YearAndSetSelector = ({ onSelect }) => {
   useEffect(() => {
     if (year) {
       const selectedYearData = data.find(item => item.year === year);
-      setMonths(Object.keys(selectedYearData.monthsAndSets || {}));
+      setMonths(Object.keys(selectedYearData?.monthsAndSets || {}));
     } else {
       setMonths([]);
     }
     setMonth('');
     setSet('');
-  }, [year, data]);
-
+  }, [year, data]); // 包含 year 作为依赖项
+  
   useEffect(() => {
     if (month && year) {
       const selectedYearData = data.find(item => item.year === year);
-      setSets(selectedYearData.monthsAndSets[month] || []);
+      setSets(selectedYearData?.monthsAndSets[month] || []);
     } else {
       setSets([]);
     }
     setSet('');
-  }, [month, data]);
+  }, [month, year, data]); // 包含 month 和 year 作为依赖项
 
   const handleYearChange = (e) => {
     setYear(e.target.value);
