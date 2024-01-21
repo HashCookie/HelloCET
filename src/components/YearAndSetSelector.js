@@ -1,20 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const YearAndSetSelector = ({ onSelect }) => {
   const [year, setYear] = useState('');
   const [month, setMonth] = useState('');
   const [set, setSet] = useState('');
+  const [data, setData] = useState([]);
 
-  const years = ['2017', '2018', '2019', '2020', '2021', '2022'];
-  const months = ['6月', '12月'];
-  const sets = ['第1套', '第2套', '第3套'];
+  useEffect(() => {
+    fetch('/data.json')
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error('Error loading data:', error));
+  }, []);
 
   const handleYearChange = (e) => {
     setYear(e.target.value);
+    setMonth('');
+    setSet('');
   };
 
   const handleMonthChange = (e) => {
     setMonth(e.target.value);
+    setSet('');
   };
 
   const handleSetChange = (e) => {
@@ -22,9 +29,13 @@ const YearAndSetSelector = ({ onSelect }) => {
   };
 
   const handleSubmit = () => {
-    const basePath = `/data/${year}/${year}年${month}英语四级真题 ${set}/`;
+    const basePath = `/data/${year}/${year}年${month}英语四级真题_${set}/`;
     onSelect(basePath);
   };
+
+  const years = data.map(item => item.year);
+  const months = year ? data.find(item => item.year === year).monthsAndSets : [];
+  const sets = month ? months[month] : [];
 
   return (
     <div>
@@ -35,7 +46,7 @@ const YearAndSetSelector = ({ onSelect }) => {
 
       <select value={month} onChange={handleMonthChange}>
         <option value="">选择月份</option>
-        {months.map(m => <option key={m} value={m}>{m}</option>)}
+        {Object.keys(months).map(m => <option key={m} value={m}>{m}</option>)}
       </select>
 
       <select value={set} onChange={handleSetChange}>
