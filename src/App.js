@@ -11,11 +11,10 @@ function App() {
   const handleSelect = (path) => {
     setBasePath(path);
   };
-
   return (
     <>
       <YearAndSetSelector onSelect={handleSelect} />
-      {basePath && (
+      {basePath && ( 
         <>
           <Writing basePath={basePath} />
           <ListeningComprehension basePath={basePath} />
