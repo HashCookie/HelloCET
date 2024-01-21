@@ -1,231 +1,240 @@
 {
   "title": "Section C",
   "passagesOne": [
-    "Social media can be a powerful communication tool for employees, helping them to collaborate, share ideas and solve problems. Research has shown that 82% of employees think social media can improve work relationships and 60% believe it can support decision-making processes. These beliefs contribute to a majority of workers connecting with colleagues on social media, even during work hours.Employers typically worry that social media is a productivity killer; more than half of U.S. employers reportedly block access to social media at work. In my research with 277 employees of a healthcare organization I found these concerns to be misguided. Social media doesn’t reduce productivity nearly as much as it kills employee retention.In the first part of the study I surveyed the employees about why and how they used platforms like Facebook, Twitter, or LinkedIn. Respondents were then asked about their work behaviors, including whether they felt motivated in their jobs and showed initiative at work. I found employees who engage in online social interactions with co-workers through social media blogs tend to be more motivated and come up with innovative ideas. But when employees interact with individuals outside the organization, they are less motivated and show less initiative.In the second part of the study I found 76% of employees using social media for work took an interest in other organizations they found on social media. When I examined how respondents expressed openness to new careers and employers, I found that they engaged in some key activities including researching new organizations and making new work connections.These findings present a dilemma for managers: employees using social media at work are more engaged and more productive, but they are also more likely to leave your company. Managers should implement solutions that neutralize the retention risk caused by social media.They can create social media groups in which employees will be more likely to collaborate and less likely to share withdrawal intentions or discussions about external job opportunities. Managers can also use social media to directly reduce turnover(跳槽)intentions,by recognizing employees’ accomplishments and giving visibility to employees’ success stories.46.What does previous research about social media reveal?A) Most employees think positively of it.B) It improves employees’ work efficiency.C) It enables employees to form connections.D) Employees spend much of their work time on it.47.What did the author’s own research find about social media?A) It influences employees’ work negatively.B) It does much harm to employee loyalty.C) It kills employees’ motivation for work.D) It affects employers’ decision-making.48.What did the author find in his study about the effect of online social interactions?A) It differs from employee to employee.B) It tends to vary with the platform used.C) It has much to do with whom employees interact with.D) It is hard to measure when employees interact with outsiders.49.What did the author find in his study about the effect of online social interactions?A) It differs from employee to employee.B) It tends to vary with the platform used.C) It has much to do with whom employees interact with.D) It is hard to measure when employees interact with outsiders.50.What does the author suggest managers do to neutralize the retention risk?A) Give promotions to employees for their accomplishments.B) Create opportunities for employees to share success stories.C) Acknowledge employees’ achievements through social media.D) Encourage employees to increase their visibility on social media."
+    "To write his 2010 book,The 5-Factor World Diet, nutritionist Harley Pasternak traveled to the healthiest countries around the world to learn more about what made their meals extra nourishing.",
+    "He noted that Japanese people ate a wonderful variety of seaweeds, and that Chinese people tried to include at least five different colors in every meal. Pasternak also came away with some valuable observations about how different the North American way of life was, compared with many other countries.",
+    "For starters, Americans eat much bigger portions than people in other countries. \"We don't prioritize eating seasonally or locally, and we also add lots of salt, sugar and thickening agents to our foods,\" explained Pasternak. Contrast that to the healthy Mediterranean, Nordic and Okinawan diets listed in Pasternak's book. They all seem to stick to the ethos（特质）of regional, seasonal produce.",
+    "For example, a traditional Mediterranean diet includes fruits, vegetables, whole grains, nuts and olive oil as the main components of nutritional intake. Fish, chicken and red wine make moderate appearances, while red meat, salt and sugar are used much less often. The benefits of a traditional Mediterranean diet have been studied since the 1970s, and researchers have found that living that olive oil life can help people lose weight, lower their heart disease risk and reverse diabetes.",
+    "Most other healthy eating cultures also make meals an event-say,multiple courses around the family table, or a glass or two of red wine at a long lunch-as opposed to hastily wolfing down handfuls of cereal above the kitchen sink and calling it dinner.",
+    "Each of the healthy eating cultures has its own unique feature. But Pasternak did take note of one uniting factor in all of the healthy societies he observed. \"The only overlapping feature in most of these healthy countries is that they all walk way more than the average American,\" said Pasternak. \"So really, regardless of what you're eating, if someone's walking four miles more than you each day, they're going to be a lot thinner and live a lot longer than you.\""
   ],
   "questionsOne": [
     {
       "Number": 46,
-      "Statement": "What does previous research about social media reveal?",
+      "Statement": "What characterizes Japanese and Chinese foods?",
       "Options": [
         {
           "key": "A",
-          "text": "Most employees think positively of it."
+          "text": "Variety."
         },
         {
           "key": "B",
-          "text": "It improves employees’ work efficiency."
+          "text": "Flavor."
         },
         {
           "key": "C",
-          "text": "It enables employees to form connections."
+          "text": "Color."
         },
         {
           "key": "D",
-          "text": "Employees spend much of their work time on it."
+          "text": "Naturalness."
         }
       ]
     },
     {
       "Number": 47,
-      "Statement": "What did the author’s own research find about social media?",
+      "Statement": "What is typical of Americans in the way of eating?",
       "Options": [
         {
           "key": "A",
-          "text": "It influences employees’ work negatively."
+          "text": "They emphasize nutrition."
         },
         {
           "key": "B",
-          "text": "It does much harm to employee loyalty."
+          "text": "They tend to eat quite a lot."
         },
         {
           "key": "C",
-          "text": "It kills employees’ motivation for work."
+          "text": "They prioritize convenience."
         },
         {
           "key": "D",
-          "text": "It affects employers’ decision-making."
+          "text": "They care about flavors."
         }
       ]
     },
     {
       "Number": 48,
-      "Statement": "What did the author find in his study about the effect of online social interactions?",
+      "Statement": "What features in Mediterranean, Nordic and Okinawan diets?",
       "Options": [
         {
           "key": "A",
-          "text": "It differs from employee to employee."
+          "text": "Fruits and vegetables."
         },
         {
           "key": "B",
-          "text": "It tends to vary with the platform used."
+          "text": "Olive oil and red wine."
         },
         {
           "key": "C",
-          "text": "It has much to do with whom employees interact with."
+          "text": "Seasonal local produce."
         },
         {
           "key": "D",
-          "text": "It is hard to measure when employees interact with outsiders."
+          "text": "Unprocessed ingredients."
         }
       ]
     },
     {
       "Number": 49,
-      "Statement": "What did the author find in his study about the effect of online social interactions?",
+      "Statement": "What do people in most healthy eating cultures have in common?",
       "Options": [
         {
           "key": "A",
-          "text": "It differs from employee to employee."
+          "text": "They get the whole family to eat at a table."
         },
         {
           "key": "B",
-          "text": "It tends to vary with the platform used."
+          "text": "They eat their meals regularly and punctually."
         },
         {
           "key": "C",
-          "text": "It has much to do with whom employees interact with."
+          "text": "They consume plenty of cereal for breakfast."
         },
         {
           "key": "D",
-          "text": "It is hard to measure when employees interact with outsiders."
+          "text": "They attach great importance to their meals."
         }
       ]
     },
     {
       "Number": 50,
-      "Statement": "What does the author suggest managers do to neutralize the retention risk?",
+      "Statement": "Compared with the average American,people in healthy societies______",
       "Options": [
         {
           "key": "A",
-          "text": "Give promotions to employees for their accomplishments."
+          "text": "walk at least 4 miles a day"
         },
         {
           "key": "B",
-          "text": "Create opportunities for employees to share success stories."
+          "text": "do considerably more walking"
         },
         {
           "key": "C",
-          "text": "Acknowledge employees’ achievements through social media."
+          "text": "pay more attention to body shape"
         },
         {
           "key": "D",
-          "text": "Encourage employees to increase their visibility on social media."
+          "text": "consume a lot more organic food"
         }
       ]
     }
   ],
   "passagesTwo": [
-    "In the coming era of budget cuts to education, distance learning could become the norm.The temptation for those in charge of education budgets to trade teachers for technology could be so strong that they ignore the disadvantages of distance learning. School facilities are expensive to build and maintain, and teachers are expensive to employ. Online classes do not require buildings and each class can host hundreds of people simultaneously, resulting in greater savings, thus increasing the temptation of distance education for those concerned more about budgets than learning. But moving away from a traditional classroom in which a living, breathing human being teaches and interacts with students daily would be a disaster. Physically attending school has hidden benefits: getting up every morning, interacting with peers, and building relationships with teachers are essential skills to cultivate in young people. Moreover, schools should be more than simple institutions of traditional learning. They are now places that provide meals. They are places where students receive counseling and other support.Those policy-makers are often fascinated by the latest technology in education and its potential to “transform” education overnight. But online education does not allow a teacher to keep a struggling student after class and offer help. Educational videos may deliver academic content, but they are unable to make eye contact or assess a student’s level of engagement. Distance education will never match the personal teaching in a traditional classroom. In their first 18 years of life, American children spend only 9% of their time in school. Yet teachers are expected to prepare them to be responsible citizens, cultivate their social skills, encourage successful time management, and enhance their capacity to flourish in an increasingly harsh labor market. Given these expectations, schools should not become permanently “remote”.The power of the classroom is rooted in the humanity of the people gathered in the same place, at the same time. Personal teaching is about teachers showing students a higher path, and about young people going through the process together. Technology, no matter how advanced, should simply be a tool of a good teacher.51.What mainly accounts for the possibility that distance learning could become the norm?A) Advances in education technology.B) Shrinking financial resources.C) Shortage of school facilities.D) Lack of qualified teachers.52.What does the author say is one possible benefit of students attending school physically?A) Developing the habit of getting up early.B) Eating nutritionally well-balanced meals.C) Growing into living and breathing human beings.D) Cultivating relationships with peers and teachers.53.What does the author think of the latest technology in education?A) It may have potential disadvantages.B) It may render many teachers jobless.C) It may add to students’ financial burden.D) It may revolutionize classroom teaching.54.What does the author say teachers are expected to do?A) Enhance students’ leadership capacity.B) Elevate students to managerial positions.C) Enable students to adapt to the changes in life.D) Prepare students to be competitive in the future.55.Why couldn’t technology replace a good teacher?A) It lacks humanity.B) It is still immature.C) It cannot track students’ growth.D) It cannot cater to personal needs."
+    "Recognizing when a friend or colleague feels sad, angry or surprised is key to getting along with others. But a new study suggests that being sensitive to people's feelings may sometimes come with an extra dose of stress. This and other research challenge the prevailing view that emotional inteligence is uniformly beneficial to its bearer.",
+    "In a study,psychologist Myriam Bechtoldt of the Frankfurt School of Finance and Management in Germany asked 166 male university students a series of questions to measure their emotional intelligence. For example,they showed the students photographs of people's faces and asked them to what extent feelings such as happiness or disgust were being expressed. The students then had to give job talks in front of judges who displayed serious facial expressions. The scientists measured concentrations of stress hormones in the students'saliva（唾液）before and after the talk.",
+    "In students who were rated more emotionally intelligent, the stress measures increased more during the experiment and took longer to go back to baseline. The findings suggest that some people may be too emotionally clever for their own good, says Bechtoldt. \"Sometimes you can be so good at something that it causes trouble,\" she notes.",
+    "Indeed, the study adds to previous research hinting at a dark side of emotional intelligence. A study published in 2002 in Personality and Individual Differences suggested that emotionally perceptive people might be particularly influenced by feelings of depression and hopelessness. Furthermore,several studies have implied that emotional intelligence can be used to maninulate others for personal gains.",
+    "More research is needed to see how exactly the relation between emotional intelligence and stress would play out in women and in people of different ages and education levels. Nevertheless,emotional intelligence is a useful skill to have, as long as you learn to also properly cope with emotions一both others' and your own, says Bechtoldt. For example, some sensitive individuals may assume responsibility for other people's sadness or anger, which ultimately stresses them out. Remembet, as Bechtoldt says, \"you are not responsible for how other people feel.\""
   ],
   "questionsTwo": [
     {
       "Number": 51,
-      "Statement": "What mainly accounts for the possibility that distance learning could become the norm?",
+      "Statement": "What is the finding of the new study?",
       "Options": [
         {
           "key": "A",
-          "text": "Advances in education technology."
+          "text": "Emotional intelligence helps people get along with others."
         },
         {
           "key": "B",
-          "text": "Shrinking financial resources."
+          "text": "Emotional intelligence is generally beneficial to its bearer."
         },
         {
           "key": "C",
-          "text": "Shortage of school facilities."
+          "text": "People who are aware of others' feelings may experience more stress."
         },
         {
           "key": "D",
-          "text": "Lack of qualified teachers."
+          "text": "People who are emotionally stressed may have trouble making friends."
         }
       ]
     },
     {
       "Number": 52,
-      "Statement": "What does the author say is one possible benefit of students attending school physically?",
+      "Statement": "What was the purpose of psychologist Myriam Bechtoldt's experiment?",
       "Options": [
         {
           "key": "A",
-          "text": "Developing the habit of getting up early."
+          "text": "To define different types of human feelings."
         },
         {
           "key": "B",
-          "text": "Eating nutritionally well-balanced meals."
+          "text": "To assess the impacts of being emotionally clever."
         },
         {
           "key": "C",
-          "text": "Growing into living and breathing human beings."
+          "text": "To demonstrate how to distinguish different feelings."
         },
         {
           "key": "D",
-          "text": "Cultivating relationships with peers and teachers."
+          "text": "To identify gender differences in emotional intelligence."
         }
       ]
     },
     {
       "Number": 53,
-      "Statement": "What does the author think of the latest technology in education?",
+      "Statement": "What does the finding of Myriam Bechtoldt's study indicate?",
       "Options": [
         {
           "key": "A",
-          "text": "It may have potential disadvantages."
+          "text": "Greater emotional cleverness means less trouble in one's life."
         },
         {
           "key": "B",
-          "text": "It may render many teachers jobless."
+          "text": "Emotional intelligence helps people succeed in job interviews."
         },
         {
           "key": "C",
-          "text": "It may add to students’ financial burden."
+          "text": "People's psychological wellbeing is related to various factors."
         },
         {
           "key": "D",
-          "text": "It may revolutionize classroom teaching."
+          "text": "People may suffer from having a high emotional intelligence."
         }
       ]
     },
     {
       "Number": 54,
-      "Statement": "What does the author say teachers are expected to do?",
+      "Statement": "What do we learn about emotional intelligence from a number of studies?",
       "Options": [
         {
           "key": "A",
-          "text": "Enhance students’ leadership capacity."
+          "text": "People suffering from depression are emotionally immature."
         },
         {
           "key": "B",
-          "text": "Elevate students to managerial positions."
+          "text": "People who look at the dark side of life often feel depressed."
         },
         {
           "key": "C",
-          "text": "Enable students to adapt to the changes in life."
+          "text": "Some people may take advantage of it and benefit themselves."
         },
         {
           "key": "D",
-          "text": "Prepare students to be competitive in the future."
+          "text": "Some people may lack it and are easily manipulated by others."
         }
       ]
     },
     {
       "Number": 55,
-      "Statement": "Why couldn’t technology replace a good teacher?",
+      "Statement": "What does the author suggest sensitive individuals do?",
       "Options": [
         {
           "key": "A",
-          "text": "It lacks humanity."
+          "text": "Avoid burdening themselves with others' feelings."
         },
         {
           "key": "B",
-          "text": "It is still immature."
+          "text": "Rid themselves of worries over worldly affairs."
         },
         {
           "key": "C",
-          "text": "It cannot track students’ growth."
+          "text": "Learn to cope with people's negative feelings."
         },
         {
           "key": "D",
-          "text": "It cannot cater to personal needs."
+          "text": "Help people to deal with their troubles in life."
         }
       ]
     }
