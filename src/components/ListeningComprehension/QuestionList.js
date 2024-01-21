@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../../styles/ListeningComprehension.module.css';
+import styles from "../../styles/ListeningComprehension.module.css";
 
 const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
   return (
@@ -15,7 +15,7 @@ const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
                   id={`q${question.number}-${key}`}
                   name={`q${question.number}`}
                   value={key}
-                  checked={selectedAnswer[`q${question.number}`] === key}
+                  checked={selectedAnswer[question.number] === key}
                   onChange={() => onAnswerChange(question.number, key)}
                 />
                 <label htmlFor={`q${question.number}-${key}`}>
