@@ -6,10 +6,10 @@ const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
     <div className={styles["questions"]}>
       {questions.map((question) => (
         <div className={styles["question"]} key={question.number}>
-          <p>{question.number}.</p>
-          <ul>
+          <p className="font-semibold">{question.number}.</p>
+          <ul className="list-inside list-decimal">
             {Object.entries(question.options).map(([key, text]) => (
-              <li key={key}>
+              <li key={key} className="ml-4">
                 <input
                   type="radio"
                   id={`q${question.number}-${key}`}
@@ -17,8 +17,9 @@ const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
                   value={key}
                   checked={selectedAnswer[question.number] === key}
                   onChange={() => onAnswerChange(question.number, key)}
+                  className="mr-2"
                 />
-                <label htmlFor={`q${question.number}-${key}`}>
+                <label htmlFor={`q${question.number}-${key}`} className="cursor-pointer">
                   {key}) {text}
                 </label>
               </li>

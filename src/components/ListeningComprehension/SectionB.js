@@ -5,7 +5,7 @@ import AudioPlayer from "./AudioPlayer";
 const SectionB = ({ questions, selectedAnswer, onAnswerChange }) => {
   return (
     <section>
-      <h3>Section B</h3>
+      <h3 className="font-bold">Section B</h3>
       <p>
         <b>Directions:</b>In this section, you will hear two long conversations. At
         the end of each conversation, you will hear four questions. Both the

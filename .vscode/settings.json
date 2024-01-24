@@ -3,5 +3,6 @@
     "authProvider": "github-enterprise"
   },
   "github-enterprise.uri": "http://AB464CB0E9BE4D3593E26972B7510855@152.136.138.142:28443",
-  "cSpell.words": ["centeredbiomedicine"]
+  "cSpell.words": ["centeredbiomedicine"],
+  "css.lint.unknownAtRules": "ignore"   // 忽略未知的@规则
 }

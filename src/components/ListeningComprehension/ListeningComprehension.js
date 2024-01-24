@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styles from '../../styles/ListeningComprehension.module.css';
 import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
@@ -60,12 +59,12 @@ const ListeningComprehension = ({ basePath }) => {
   
 
   if (questions.length === 0) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center h-screen">Loading...</div>;
   }
 
   return (
-    <div className={styles["listeningComprehensionContainer"]}>
-      <h2>Part2 Listening Comprehension</h2>
+    <div className="container mx-auto px-20">
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">Part2 Listening Comprehension</h1>
       <SectionA
         questions={questions}
         selectedAnswer={selectedAnswer}
@@ -81,7 +80,9 @@ const ListeningComprehension = ({ basePath }) => {
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
       />
-      <button onClick={handleSubmit}>提交答案</button>
+      <div className="flex items-center justify-center">
+      <button onClick={handleSubmit} className="px-6 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">提交答案</button>
+      </div>
     </div>
   );
 };

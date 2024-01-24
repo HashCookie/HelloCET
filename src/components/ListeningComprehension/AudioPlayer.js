@@ -14,9 +14,11 @@ const AudioPlayer = ({ src }) => {
   };
 
   return (
-    <div className="audio-player">
-      <audio ref={audioRef} src={src} />
-      <button onClick={handlePlayPause}>Play/Pause</button>
+    <div className="flex flex-col items-center justify-center">
+      <audio ref={audioRef} src={src} className="w-full mb-4" />
+      <button onClick={handlePlayPause} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Play/Pause
+      </button>
     </div>
   );
 };
