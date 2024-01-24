@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../../styles/ReadingComprehension.module.css";
 
 const ReadingComprehensionA = ({ data }) => {
   // 用于存储每个问题选中的选项
