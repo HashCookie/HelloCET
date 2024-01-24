@@ -33,7 +33,7 @@ const ReadingComprehension = ({ basePath }) => {
 
   return (
     <div className={styles.comprehensionContainer}>
-      <h1>Part3 Reading Comprehension</h1>
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">Part3 Reading Comprehension</h1>
       <ReadingComprehensionA data={sectionAData} />
       <ReadingComprehensionB data={sectionBData} />
       <ReadingComprehensionC data={sectionCData} />
