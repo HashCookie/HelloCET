@@ -1,33 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+
 const ReadingComprehensionC = ({ data }) => {
-  if (!data) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        Loading...
-      </div>
-    );
-  }
+  const [selectedAnswers, setSelectedAnswers] = useState({});
+
+  const handleAnswerChange = (questionNumber, selectedOption) => {
+    setSelectedAnswers((prevSelectedAnswers) => ({
+      ...prevSelectedAnswers,
+      [questionNumber]: selectedOption,
+    }));
+  };
 
   const renderQuestions = (questions) =>
-  questions.map((question, index) => (
-    <div key={index} className="mb-6">
-      <p className="font-bold text-lg mb-4">
-        Question {question.Number}: {question.Statement}
-      </p>
-      <div className="grid grid-cols-2 gap-4">
-        {question.Options.map((option, oIndex) => (
-          <button
-            key={oIndex}
-            className="px-4 py-2 mt-2 rounded-lg text-black border border-gray-300 hover:bg-gray-100"
-          >
-            {option.key}) {option.text}
-          </button>
-        ))}
+    questions.map((question, index) => (
+      <div key={index} className="mb-6">
+        <p className="font-bold text-lg mb-4">
+          Question {question.Number}: {question.Statement}
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          {question.Options.map((option, oIndex) => {
+            const isSelected = selectedAnswers[question.Number] === option.key;
+            const buttonStyle = isSelected
+              ? "bg-blue-500 text-white" // 选中时的样式
+              : "bg-white text-black hover:bg-blue-100"; // 未选中时的样式
+            return (
+              <button
+                key={oIndex}
+                className={`px-4 py-2 mt-2 text-left whitespace-normal rounded-lg border border-gray-300 ${buttonStyle}`}
+                onClick={() => handleAnswerChange(question.Number, option.key)}
+              >
+                {option.key}) {option.text}
+              </button>
+            );
+          })}
+        </div>
       </div>
-    </div>
-  ));
-
-
+    ));
 
   return (
     <div className="container mx-auto px-1">
