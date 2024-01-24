@@ -1,0 +1,188 @@
+{
+  "title": "Section B",
+  "passageTitle":"Team spirit",
+  "passages": [
+      "A) Teams have become the basic building blocks of organisations. Recruitment advertisements routinely call for 'team players'. Business schools grade their students in part on their performance in group projects. Office managers knock down walls to encourage team building. Teams are as old as civilisation, of course: even Jesus had 12 co-workers. But a new report by Deloitte, 'Global Human Capital Trends', based on a survey of more than 7,000 executives in over 130 countries, suggests that the fashion for teamwork has reached a new high. Almost half of those surveyed said their companies were either in the middle of restructuring or about to embark on it; and for the most part, restructuring meant putting more emphasis on teams.",
+      "B) Companies are abandoning conventional functional departments and organising employees into cross-disciplinary teams that focus on particular products, problems or customers. These teams are gaining more power to run their own affairs. They are also spending more time working with each other rather than reporting upwards. Deloitte argues that a new organisational form is on the rise: a network of teams is replacing the conventional hierarchy.",
+      "C) The fashion for teams is driven by a sense that the old way of organising people is too rigid for both the modern marketplace and the expectations of employees. Technological innovation places greater value on agility. John Chambers, chairman of Cisco Systems Inc., a worldwide leader in electronics products, says that 'we compete against market transitions, not competitors. Product transitions used to take five or seven years; now they take one or two.' Digital technology also makes it easier for people to co-ordinate their activities without resorting to hierarchy. The 'millennials' who will soon make up half the workforce in rich countries were raised from nursery school onwards to work in groups.",
+      "D) The fashion for teams is also spreading from the usual corporate suspects (such as GE and IBM) to some more unusual ones. The Cleveland Clinic, a hospital operator, has reorganised its medical staff into teams to focus on particular treatment areas; consultants, nurses and others collaborate closely instead of being separated by speciality and rank. The US Army has gone the same way. In his book, Team of Teams, General Stanley McChrystal describes how the army's hierarchical structure hindered its operations during the early stages of the Iraq war. His solution was to learn something from the rebels it was fighting: decentralising authority to self-organising teams.",
+      "E) A good rule of thumb is that as soon as generals and hospital administrators jump on a management bandwagon, it is time to ask questions. Leigh Thompson of Kellogg School of Management in Illinois warns that, 'Teams are not always the answer—teams may provide insight, creativity and knowledge in a way that a person working independently cannot; but teamwork may also lead to confusion, delay and poor decision-making.' The late Richard Hackman of Harvard University once argued, 'I have no question that when you have a team, the possibility exists that it will generate magic, producing something extraordinary… But don't count on it.'",
+      "F) Hackman (who died in 2013) noted that teams are hindered by problems of co-ordination and motivation that chip away at the benefits of collaboration. High-flyers who are forced to work in teams may be undervalued and free-riders empowered. Group-think may be unavoidable. In a study of 120 teams of senior executives, he discovered that less than 10% of their supposed members agreed on who exactly was on the team. If it is hard enough to define a team's membership, agreeing on its purpose is harder still.",
+      "G) Profound changes in the workforce are making teams trickier to manage. Teams work best if their members have a strong common culture. This is hard to achieve when, as is now the case in many big firms, a large proportion of staff are temporary contractors. Teamwork improves with time: America's National Transportation Safety Board found that 73% of the incidents in its civil-aviation database occurred on a crew's first day of flying together. However, as Amy Edmondson of Harvard points out, organisations increasingly use 'team' as a verb rather than a noun: they form teams for specific purposes and then quickly disband them.",
+      "H) The least that can be concluded from this research is that companies need to think harder about managing teams. They need to rid their minds of sentimentalism: the most successful teams have leaders who are able to set an overall direction and take immediate action. They need to keep teams small and focused: giving in to pressure to be more 'inclusive' is a guarantee of dysfunction. Jeff Bezos, Amazon's boss, says that 'If I see more than two pizzas for lunch, the team is too big.' They need to immunise teams against group-think: Hackman argued that the best ones contain 'deviants' who are willing to do something that may be upsetting to others.",
+      "I) A new study of 12,000 workers in 17 countries by Steelcase, a furniture-maker which also does consulting, finds that the best way to ensure employees are 'engaged' is to give them more control over where and how they do their work—which may mean liberating them from having to do everything in collaboration with others.",
+      "J) However, organisations need to learn something bigger than how to manage teams better: they need to be in the habit of asking themselves whether teams are the best tools for the job. Team building skills are in short supply: Deloitte reports that only 12% of the executives they contacted feel they understand the way people work together in networks and only 21% feel confident in their ability to build cross-functional teams. Loosely managed teams can become hotbeds of distraction—employees routinely complain that they can't get their work done because they are forced to spend too much time in meetings or compelled to work in noisy offices. Even in the age of open-plan offices and social networks some work is best left to the individual."
+  ],
+  "questions": [
+      {
+          "Number": 36,
+          "Statement": "Successful team leaders know exactly where the team should go and are able to take prompt action.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 37,
+          "Statement": "Decentralisation of authority was also found to be more effective in military operations.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 38,
+          "Statement": "In many companies, the conventional form of organisation is giving way to a network of teams.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 39,
+          "Statement": "Members of poorly managed teams are easily distracted from their work.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 40,
+          "Statement": "Teamwork is most effective when team members share the same culture.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 41,
+          "Statement": "According to a report by Deloitte, teamwork is becoming increasingly popular among companies.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 42,
+          "Statement": "Some team members find it hard to agree on questions like membership and the team's purpose.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 43,
+          "Statement": "Some scholars think teamwork may not always be reliable, despite its potential to work wonders.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 44,
+          "Statement": "To ensure employees’ commitment, it is advisable to give them more flexibility as to where and how they work.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      },
+      {
+          "Number": 45,
+          "Statement": "Product transitions take much less time now than in the past.",
+          "Options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K"
+          ]
+      }
+  ]
+}
