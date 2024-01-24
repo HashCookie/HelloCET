@@ -23,17 +23,18 @@ const ListeningComprehension = ({ basePath }) => {
           setSelectedAnswer(initialAnswers);
         })
         .catch(error => console.error('Error loading data:', error));
-  
-      // 加载答案
-      fetch(`/answers/2017年6月英语四级真题_第1套.json`) // 更新为正确的路径
-        .then(response => response.json())
-        .then(data => {
-          setCorrectAnswers(data.ListeningComprehension); // 确保答案结构与此一致
-        })
-        .catch(error => console.error('Error loading answers:', error));
     }
-    console.log("Loaded correct answers:", correctAnswers);
-  }, [basePath]);
+  }, [basePath]); // 只在 basePath 改变时运行
+  
+  useEffect(() => {
+    // 加载答案
+    fetch(`/answers/2017年6月英语四级真题_第1套.json`) // 更新为正确的路径
+      .then(response => response.json())
+      .then(data => {
+        setCorrectAnswers(data.ListeningComprehension); // 确保答案结构与此一致
+      })
+      .catch(error => console.error('Error loading answers:', error));
+  }, []); // 只在组件挂载时运行
   
 
   const handleOptionChange = (questionNumber, option) => {
