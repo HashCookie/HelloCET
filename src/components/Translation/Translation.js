@@ -24,7 +24,7 @@ const Translation = ({ basePath }) => {
       <p className="mb-4 text-base text-justify">{Directions}</p>
       <p className="mb-4 text-base text-justify">{ChinesePassage}</p>
       <textarea
-        className="w-full p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="block p-2.5 w-full text-sm h-32 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Enter your translation here."
       />
     </div>

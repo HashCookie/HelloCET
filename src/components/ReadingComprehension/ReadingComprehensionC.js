@@ -10,6 +10,14 @@ const ReadingComprehensionC = ({ data }) => {
     }));
   };
 
+  if (!data) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        Loading...
+      </div>
+    );
+  }
+
   const renderQuestions = (questions) =>
     questions.map((question, index) => (
       <div key={index} className="mb-6">
