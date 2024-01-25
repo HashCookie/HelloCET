@@ -25,7 +25,6 @@ const ListeningComprehension = ({ basePath }) => {
           // 提取试卷名称
           const paperName = basePath.split("/").slice(-2, -1)[0];
           const answerPath = `/answers/${paperName}.json`;
-          console.log(answerPath);
 
           // 加载答案
           fetch(answerPath)
