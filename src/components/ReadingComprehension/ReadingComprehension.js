@@ -13,31 +13,46 @@ const ReadingComprehension = ({ basePath }) => {
 
   useEffect(() => {
     if (basePath) {
-      fetch(`${basePath}/ReadingComprehensionA.json`)
-        .then((response) => response.json())
-        .then((data) => setSectionAData(data))
-        .catch((error) =>
-          console.error("Error loading Section A data:", error)
-        );
+      const paperName = basePath.split("/").slice(-2, -1)[0];
+      const answerPath = `/answers/${paperName}.json`;
 
-      fetch(`${basePath}/ReadingComprehensionB.json`)
-        .then((response) => response.json())
-        .then((data) => setSectionBData(data))
-        .catch((error) =>
-          console.error("Error loading Section B data:", error)
-        );
+      const loadData = async () => {
+        try {
+          const [dataAResponse, dataBResponse, dataCResponse, answersResponse] =
+            await Promise.all([
+              fetch(`${basePath}/ReadingComprehensionA.json`),
+              fetch(`${basePath}/ReadingComprehensionB.json`),
+              fetch(`${basePath}/ReadingComprehensionC.json`),
+              fetch(answerPath),
+            ]);
 
-      fetch(`${basePath}/ReadingComprehensionC.json`)
-        .then((response) => response.json())
-        .then((data) => setSectionCData(data))
-        .catch((error) =>
-          console.error("Error loading Section C data:", error)
-        );
+          const [dataA, dataB, dataC, answers] = await Promise.all([
+            dataAResponse.json(),
+            dataBResponse.json(),
+            dataCResponse.json(),
+            answersResponse.json(),
+          ]);
 
-      fetch(`/answers/2017年6月英语四级真题_第1套.json`) // 假设答案的路径
-        .then((response) => response.json())
-        .then((data) => setCorrectAnswers(data))
-        .catch((error) => console.error("Error loading answers:", error));
+          setSectionAData(dataA);
+          setSectionBData(dataB);
+          setSectionCData(dataC);
+          setCorrectAnswers(answers.ReadingComprehension);
+
+          const initialAnswers = {};
+          [
+            ...(dataA.questions || []),
+            ...(dataB.questions || []),
+            ...(dataC.questions || []),
+          ].forEach((question) => {
+            initialAnswers[question.number] = "";
+          });
+          setSelectedAnswer(initialAnswers);
+        } catch (error) {
+          console.error("Error loading data:", error);
+        }
+      };
+
+      loadData();
     }
   }, [basePath]);
 
@@ -50,20 +65,11 @@ const ReadingComprehension = ({ basePath }) => {
 
   const handleSubmit = () => {
     let score = 0;
-    console.log("Selected Answers:", selectedAnswer);
-    console.log("Correct Answers:", correctAnswers);
-
     Object.keys(selectedAnswer).forEach((questionNumber) => {
-      const userAnswer = selectedAnswer[questionNumber];
-      const correctAnswer = correctAnswers.ReadingComprehension[questionNumber];
-
-      console.log("User Answer:", userAnswer, "Correct Answer:", correctAnswer);
-
-      if (userAnswer === correctAnswer) {
+      if (selectedAnswer[questionNumber] === correctAnswers[questionNumber]) {
         score += 1;
       }
     });
-
     console.log("得分:", score);
   };
 
@@ -85,7 +91,6 @@ const ReadingComprehension = ({ basePath }) => {
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
       />
-
       <ReadingComprehensionB
         data={sectionBData}
         selectedAnswer={selectedAnswer}
@@ -96,7 +101,6 @@ const ReadingComprehension = ({ basePath }) => {
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
       />
-
       <div className="flex items-center justify-center mt-4">
         <button
           onClick={handleSubmit}
