@@ -18,31 +18,27 @@ const ReadingComprehension = ({ basePath }) => {
 
       const loadData = async () => {
         try {
-          const [dataAResponse, dataBResponse, dataCResponse, answersResponse] =
-            await Promise.all([
-              fetch(`${basePath}/ReadingComprehensionA.json`),
-              fetch(`${basePath}/ReadingComprehensionB.json`),
-              fetch(`${basePath}/ReadingComprehensionC.json`),
-              fetch(answerPath),
-            ]);
-
-          const [dataA, dataB, dataC, answers] = await Promise.all([
-            dataAResponse.json(),
-            dataBResponse.json(),
-            dataCResponse.json(),
-            answersResponse.json(),
+          const responses = await Promise.all([
+            fetch(`${basePath}/ReadingComprehensionA.json`),
+            fetch(`${basePath}/ReadingComprehensionB.json`),
+            fetch(`${basePath}/ReadingComprehensionC.json`),
+            fetch(answerPath),
           ]);
+          const [dataA, dataB, dataC, answers] = await Promise.all(
+            responses.map((res) => res.json())
+          );
 
           setSectionAData(dataA);
           setSectionBData(dataB);
           setSectionCData(dataC);
           setCorrectAnswers(answers.ReadingComprehension);
 
+          // 初始化用户答案
           const initialAnswers = {};
           [
-            ...(dataA.questions || []),
-            ...(dataB.questions || []),
-            ...(dataC.questions || []),
+            ...(dataA?.questions || []),
+            ...(dataB?.questions || []),
+            ...(dataC?.questions || []),
           ].forEach((question) => {
             initialAnswers[question.number] = "";
           });
