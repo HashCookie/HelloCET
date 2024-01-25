@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ReadingComprehensionC = ({ data }) => {
+const ReadingComprehensionC = ({ data, onAnswerChange }) => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
   const handleAnswerChange = (questionNumber, selectedOption) => {
@@ -8,6 +8,11 @@ const ReadingComprehensionC = ({ data }) => {
       ...prevSelectedAnswers,
       [questionNumber]: selectedOption,
     }));
+
+    // 调用父组件的回调函数来更新父组件的状态
+    if (onAnswerChange) {
+      onAnswerChange(questionNumber, selectedOption);
+    }
   };
 
   if (!data) {

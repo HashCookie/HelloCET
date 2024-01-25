@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ReadingComprehensionA = ({ data }) => {
+const ReadingComprehensionA = ({ data, onAnswerChange }) => {
   // 用于存储每个问题选中的选项
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
@@ -10,10 +10,18 @@ const ReadingComprehensionA = ({ data }) => {
       ...prevSelectedAnswers,
       [questionNumber]: optionKey,
     }));
+    // 调用父组件的回调函数来更新父组件的状态
+    if (onAnswerChange) {
+      onAnswerChange(questionNumber, optionKey);
+    }
   };
 
   if (!data) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        Loading...
+      </div>
+    );
   }
 
   return (
@@ -40,13 +48,15 @@ const ReadingComprehensionA = ({ data }) => {
               "<strong>$1</strong>"
             ),
           }}
-        >
-        </p>
+        ></p>
       ))}
 
       <div className="mb-6">
         {Object.entries(data.options).map(([key, value]) => (
-          <p key={key} className="inline-block mr-3 mb-1 px-4 py-2 rounded-lg border">
+          <p
+            key={key}
+            className="inline-block mr-3 mb-1 px-4 py-2 rounded-lg border"
+          >
             {key}) {value}
           </p>
         ))}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ReadingComprehensionB = ({ data }) => {
+const ReadingComprehensionB = ({ data, onAnswerChange }) => {
   // 储存每个问题的选中答案
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
@@ -10,6 +10,11 @@ const ReadingComprehensionB = ({ data }) => {
       ...prevSelectedAnswers,
       [questionNumber]: option,
     }));
+
+    // 调用父组件的回调函数来更新父组件的状态
+    if (onAnswerChange) {
+      onAnswerChange(questionNumber, option);
+    }
   };
 
   if (!data) {
