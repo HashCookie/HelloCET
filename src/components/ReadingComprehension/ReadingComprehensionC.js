@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
-const ReadingComprehensionC = ({ data }) => {
-  const [selectedAnswers, setSelectedAnswers] = useState({});
-
+const ReadingComprehensionC = ({ data, selectedAnswer, onAnswerChange }) => {
   const handleAnswerChange = (questionNumber, selectedOption) => {
-    setSelectedAnswers((prevSelectedAnswers) => ({
-      ...prevSelectedAnswers,
-      [questionNumber]: selectedOption,
-    }));
+    // 调用父组件的回调函数来更新父组件的状态
+    if (onAnswerChange) {
+      onAnswerChange(questionNumber, selectedOption);
+    }
   };
 
   if (!data) {
@@ -26,7 +24,7 @@ const ReadingComprehensionC = ({ data }) => {
         </p>
         <div className="grid grid-cols-2 gap-4">
           {question.Options.map((option, oIndex) => {
-            const isSelected = selectedAnswers[question.Number] === option.key;
+            const isSelected = selectedAnswer[question.Number] === option.key;
             const buttonStyle = isSelected
               ? "bg-blue-500 text-white" // 选中时的样式
               : "bg-white text-black hover:bg-blue-100"; // 未选中时的样式
@@ -48,11 +46,11 @@ const ReadingComprehensionC = ({ data }) => {
     <div className="container mx-auto px-1">
       <h2 className="text-xl font-bold text-center mb-6">{data.title}</h2>
       <p>
-        <b>Directions:</b>There are 2 passages in this section.Each passage is
-        followed by some questions or unfinished statements.For each of them
-        there are four choices marked A), B), C) and D). You should decide on
+        <b>Directions:</b> There are 2 passages in this section. Each passage is
+        followed by some questions or unfinished statements. For each of them,
+        there are four choices marked A), B), C), and D). You should decide on
         the best choice and mark the corresponding letter on Answer Sheet 2 with
-        a single line through the centre.
+        a single line through the center.
       </p>
 
       <div className="mb-6">

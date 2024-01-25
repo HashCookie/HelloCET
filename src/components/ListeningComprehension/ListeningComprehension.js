@@ -12,8 +12,8 @@ const ListeningComprehension = ({ basePath }) => {
     if (basePath) {
       // 加载试题
       fetch(`${basePath}/ListeningComprehension.json`)
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
           setQuestions(data.questions);
           // 初始化用户答案
           const initialAnswers = data.questions.reduce((acc, question) => {
@@ -21,33 +21,38 @@ const ListeningComprehension = ({ basePath }) => {
             return acc;
           }, {});
           setSelectedAnswer(initialAnswers);
+
+          // 提取试卷名称
+          const paperName = basePath.split("/").slice(-2, -1)[0];
+          const answerPath = `/answers/${paperName}.json`;
+
+          // 加载答案
+          fetch(answerPath)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then((data) => {
+              setCorrectAnswers(data.ListeningComprehension);
+            })
+            .catch((error) => console.error("Error loading answers:", error));
         })
-        .catch(error => console.error('Error loading data:', error));
+        .catch((error) => console.error("Error loading data:", error));
     }
   }, [basePath]); // 只在 basePath 改变时运行
-  
-  useEffect(() => {
-    // 加载答案
-    fetch(`/answers/2017年6月英语四级真题_第1套.json`) // 更新为正确的路径
-      .then(response => response.json())
-      .then(data => {
-        setCorrectAnswers(data.ListeningComprehension); // 确保答案结构与此一致
-      })
-      .catch(error => console.error('Error loading answers:', error));
-  }, []); // 只在组件挂载时运行
-  
 
   const handleOptionChange = (questionNumber, option) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
-      [questionNumber]: option,  // 直接使用 questionNumber 作为键
+      [questionNumber]: option, // 直接使用 questionNumber 作为键
     }));
-  };  
-  
+  };
 
   const handleSubmit = () => {
     let score = 0;
-    Object.keys(selectedAnswer).forEach(questionNumber => {
+    Object.keys(selectedAnswer).forEach((questionNumber) => {
       const userAnswer = selectedAnswer[questionNumber];
       const correctAnswer = correctAnswers[questionNumber]; // 直接使用 questionNumber 作为键
       if (userAnswer === correctAnswer) {
@@ -56,16 +61,20 @@ const ListeningComprehension = ({ basePath }) => {
     });
     console.log("得分:", score);
   };
-  
-  
 
   if (questions.length === 0) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        Loading...
+      </div>
+    );
   }
 
   return (
     <div className="container mx-auto px-20">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">Part2 Listening Comprehension</h1>
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
+        Part2 Listening Comprehension
+      </h1>
       <SectionA
         questions={questions}
         selectedAnswer={selectedAnswer}
@@ -82,7 +91,12 @@ const ListeningComprehension = ({ basePath }) => {
         onAnswerChange={handleOptionChange}
       />
       <div className="flex items-center justify-center">
-      <button onClick={handleSubmit} className="px-6 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">提交答案</button>
+        <button
+          onClick={handleSubmit}
+          className="px-6 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+        >
+          提交答案
+        </button>
       </div>
     </div>
   );
