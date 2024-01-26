@@ -1,9 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 const AudioPlayer = ({ src }) => {
   const audioRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    // 当 src 变化时，重置加载和错误状态
+    setLoading(false);
+    setError("");
+  }, [src]); // 依赖于 src，当 src 变化时运行
 
   const handlePlayPause = () => {
     if (audioRef.current) {
