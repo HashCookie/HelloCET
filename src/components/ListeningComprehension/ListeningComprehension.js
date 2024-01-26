@@ -7,6 +7,11 @@ const ListeningComprehension = ({ basePath }) => {
   const [selectedAnswer, setSelectedAnswer] = useState({});
   const [questions, setQuestions] = useState([]);
   const [correctAnswers, setCorrectAnswers] = useState({});
+  // 新增两个状态来保存年份和试卷编号
+  const [year, setYear] = useState("");
+  const [paperNumber, setPaperNumber] = useState("");
+  // 新增一个状态来保存月份
+  const [month, setMonth] = useState("");
 
   useEffect(() => {
     if (basePath) {
@@ -43,6 +48,18 @@ const ListeningComprehension = ({ basePath }) => {
     }
   }, [basePath]); // 只在 basePath 改变时运行
 
+  // 当basePath变化时，解析年份、月份和试卷编号
+  useEffect(() => {
+    if (basePath) {
+      const matches = basePath.match(/(\d{4})年(\d+)月英语四级真题_第(\d+)套/);
+      if (matches) {
+        setYear(matches[1]);
+        setMonth(matches[2]); // 使用第二个捕获组来获取月份
+        setPaperNumber(matches[3]); // 使用第三个捕获组来获取试卷编号
+      }
+    }
+  }, [basePath]);
+
   const handleOptionChange = (questionNumber, option) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
@@ -76,16 +93,25 @@ const ListeningComprehension = ({ basePath }) => {
         Part2 Listening Comprehension
       </h1>
       <SectionA
+        year={year}
+        month={month}
+        paperNumber={paperNumber}
         questions={questions}
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
       />
       <SectionB
+        year={year}
+        month={month}
+        paperNumber={paperNumber}
         questions={questions}
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
       />
       <SectionC
+        year={year}
+        month={month}
+        paperNumber={paperNumber}
         questions={questions}
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
