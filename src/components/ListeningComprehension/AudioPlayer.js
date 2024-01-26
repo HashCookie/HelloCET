@@ -3,31 +3,41 @@ import React, { useRef, useState, useEffect } from "react";
 const AudioPlayer = ({ src, playingAudio, onAudioPlay, audioId }) => {
   const audioRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false); // 新增状态
   const [error, setError] = useState("");
 
   useEffect(() => {
-    // 当 src 变化时，重置加载和错误状态
     setLoading(false);
     setError("");
-  }, [src]); // 依赖于 src，当 src 变化时运行
+    setIsPlaying(false); // 当 src 改变时，重置播放状态
+  }, [src]);
 
   useEffect(() => {
-    // 监听是否有其他音频播放
-    if (playingAudio !== audioId && !audioRef.current.paused) {
+    if (playingAudio !== audioId && isPlaying) {
       audioRef.current.pause();
+      setIsPlaying(false); // 如果播放其他音频，停止并重置播放状态
     }
-  }, [playingAudio, audioId]);
+  }, [playingAudio, audioId, isPlaying]);
 
   const handlePlayPause = () => {
     if (audioRef.current) {
+      setLoading(true);
       if (audioRef.current.paused) {
-        audioRef.current.play().catch((e) => {
-          setError("音频加载失败");
-        });
-        onAudioPlay(audioId); // 播放时更新正在播放的音频ID
+        audioRef.current
+          .play()
+          .then(() => {
+            setIsPlaying(true); // 开始播放时设置为 true
+            onAudioPlay(audioId); // 通知父组件
+          })
+          .catch((e) => {
+            setError("音频加载失败");
+            setLoading(false);
+          });
       } else {
         audioRef.current.pause();
-        onAudioPlay(null); // 暂停时清除正在播放的音频ID
+        setIsPlaying(false); // 暂停时设置为 false
+        onAudioPlay(null); // 通知父组件
+        setLoading(false);
       }
     }
   };
@@ -41,17 +51,19 @@ const AudioPlayer = ({ src, playingAudio, onAudioPlay, audioId }) => {
       <audio
         ref={audioRef}
         src={src}
-        className="w-full mb-4"
         onLoadedData={handleOnLoadedData}
         onError={() => setError("音频加载失败")}
+        onPlay={() => setLoading(false)} // 当音频实际开始播放时停止加载
+        onPause={() => setIsPlaying(false)} // 当音频暂停时更新状态
       />
       {loading && <p>正在加载...</p>}
+      {isPlaying && <p>正在播放...</p>}
       {error && <p className="text-red-500">{error}</p>}
       <button
         onClick={handlePlayPause}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
-        Play/Pause
+        {isPlaying ? "Pause" : "Play"}
       </button>
     </div>
   );
