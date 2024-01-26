@@ -12,6 +12,7 @@ const ListeningComprehension = ({ basePath }) => {
   const [paperNumber, setPaperNumber] = useState("");
   // 新增一个状态来保存月份
   const [month, setMonth] = useState("");
+  const [playingAudio, setPlayingAudio] = useState(null);
 
   useEffect(() => {
     if (basePath) {
@@ -60,6 +61,11 @@ const ListeningComprehension = ({ basePath }) => {
     }
   }, [basePath]);
 
+  // 在回调函数中设置当前播放的音频ID
+  const handleAudioPlay = (audioId) => {
+    setPlayingAudio(audioId);
+  };
+
   const handleOptionChange = (questionNumber, option) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
@@ -99,6 +105,8 @@ const ListeningComprehension = ({ basePath }) => {
         questions={questions}
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
+        playingAudio={playingAudio}
+        onAudioPlay={handleAudioPlay}
       />
       <SectionB
         year={year}
@@ -107,6 +115,8 @@ const ListeningComprehension = ({ basePath }) => {
         questions={questions}
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
+        playingAudio={playingAudio}
+        onAudioPlay={handleAudioPlay}
       />
       <SectionC
         year={year}
@@ -115,6 +125,8 @@ const ListeningComprehension = ({ basePath }) => {
         questions={questions}
         selectedAnswer={selectedAnswer}
         onAnswerChange={handleOptionChange}
+        playingAudio={playingAudio}
+        onAudioPlay={handleAudioPlay}
       />
       <div className="flex items-center justify-center">
         <button

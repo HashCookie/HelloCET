@@ -9,6 +9,8 @@ const SectionB = ({
   questions,
   selectedAnswer,
   onAnswerChange,
+  playingAudio,
+  onAudioPlay,
 }) => {
   const audioPathBase = `${process.env.PUBLIC_URL}/listeninglibrary/${year}年${month}月英语四级真题_第${paperNumber}套/`;
 
@@ -36,7 +38,12 @@ const SectionB = ({
 
         return (
           <React.Fragment key={index}>
-            <AudioPlayer src={audioPathBase + audioFile} />
+            <AudioPlayer
+              src={audioPathBase + audioFile}
+              playingAudio={playingAudio}
+              onAudioPlay={onAudioPlay} // 确保这里传递了正确的 prop
+              audioId={`section-a-${audioFile}`} // audioId 应该是唯一的标识符
+            />
             <b>
               Questions {start + 1} to {end + 1} are based on the conversation
               you have just heard.

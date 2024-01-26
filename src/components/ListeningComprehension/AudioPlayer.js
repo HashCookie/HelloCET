@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 
-const AudioPlayer = ({ src }) => {
+const AudioPlayer = ({ src, playingAudio, onAudioPlay, audioId }) => {
   const audioRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -11,17 +11,23 @@ const AudioPlayer = ({ src }) => {
     setError("");
   }, [src]); // 依赖于 src，当 src 变化时运行
 
+  useEffect(() => {
+    // 监听是否有其他音频播放
+    if (playingAudio !== audioId && !audioRef.current.paused) {
+      audioRef.current.pause();
+    }
+  }, [playingAudio, audioId]);
+
   const handlePlayPause = () => {
     if (audioRef.current) {
-      setLoading(true);
       if (audioRef.current.paused) {
         audioRef.current.play().catch((e) => {
           setError("音频加载失败");
-          setLoading(false);
         });
+        onAudioPlay(audioId); // 播放时更新正在播放的音频ID
       } else {
         audioRef.current.pause();
-        setLoading(false);
+        onAudioPlay(null); // 暂停时清除正在播放的音频ID
       }
     }
   };
