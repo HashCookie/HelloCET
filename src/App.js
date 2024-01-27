@@ -4,6 +4,7 @@ import ListeningComprehension from "./components/ListeningComprehension/Listenin
 import ReadingComprehension from "./components/ReadingComprehension/ReadingComprehension";
 import Translation from "./components/Translation/Translation";
 import YearAndSetSelector from "./components/YearAndSetSelector";
+// import ContactForm from "./pages/ContactForm";
 
 function App() {
   const [basePath, setBasePath] = useState("");
@@ -13,6 +14,7 @@ function App() {
   };
   return (
     <>
+    {/* <ContactForm /> */}
       <YearAndSetSelector onSelect={handleSelect} />
       {basePath && (
         <>
