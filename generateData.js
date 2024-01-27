@@ -7,40 +7,85 @@
 // 7. 使用 formatJson 函数将 data 数组转换为格式化的 JSON 字符串，存储到变量 formattedJson 中
 // 8. 使用 fs.writeFileSync 方法将 formattedJson 写入到指定文件路径中
 
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const dataDir = path.join(__dirname, 'public/data');
-const years = fs.readdirSync(dataDir);
+const dataDir = path.join(__dirname, "public/data");
+const years = fs.readdirSync(dataDir).filter((item) => {
+  const itemPath = path.join(dataDir, item);
+  return fs.statSync(itemPath).isDirectory();
+});
 
 const formatJson = (data) => {
-  return '[\n' + data.map(item => {
-    const monthsAndSetsStr = Object.entries(item.monthsAndSets).map(([month, sets]) => {
-      return `      "${month}": ["${sets.join('", "')}"]`;
-    }).join(',\n');
+  return (
+    "[\n" +
+    data
+      .map((item) => {
+        const monthsAndSetsStr = Object.entries(item.monthsAndSets)
+          .map(([month, sets]) => {
+            return `      "${month}": ["${sets.join('", "')}"]`;
+          })
+          .join(",\n");
 
-    return `  {\n    "year": "${item.year}",\n    "monthsAndSets": {\n${monthsAndSetsStr}\n    }\n  }`;
-  }).join(',\n') + '\n]';
+        return `  {\n    "year": "${item.year}",\n    "monthsAndSets": {\n${monthsAndSetsStr}\n    }\n  }`;
+      })
+      .join(",\n") +
+    "\n]"
+  );
 };
 
-const data = years.map(year => {
+const data = years.map((year) => {
   const monthsAndSets = {};
   const yearPath = path.join(dataDir, year);
   const testSets = fs.readdirSync(yearPath);
 
-  testSets.forEach(testSet => {
-    const parts = testSet.split('英语四级真题');
-    const month = parts[0].slice(5); // "2017年12月" 中的 "12月"
-    const set = parts[1].split('_')[1]; // "_第1套" 中的 "第1套"
+  testSets.forEach((testSet) => {
+    // 确保文件名包含 '英语四级真题'
+    if (testSet.includes("英语四级真题")) {
+      const parts = testSet.split("英语四级真题");
+      if (parts.length === 2) {
+        const month = parts[0].slice(5); // "2017年12月" 中的 "12月"
+        const set = parts[1].split("_")[1]; // "_第1套" 中的 "第1套"
 
-    if (!monthsAndSets[month]) {
-      monthsAndSets[month] = [];
+        if (!monthsAndSets[month]) {
+          monthsAndSets[month] = [];
+        }
+        if (set) {
+          monthsAndSets[month].push(set);
+        }
+      }
     }
-    monthsAndSets[month].push(set);
   });
 
-  return { year, monthsAndSets };
+  // 对月份进行排序的函数
+  const sortMonths = (months) => {
+    const monthOrder = [
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月",
+    ];
+    return Object.keys(months).sort(
+      (a, b) => monthOrder.indexOf(a) - monthOrder.indexOf(b)
+    );
+  };
+
+  const sortedMonths = sortMonths(monthsAndSets);
+  const sortedMonthsAndSets = {};
+  sortedMonths.forEach((month) => {
+    sortedMonthsAndSets[month] = monthsAndSets[month];
+  });
+
+  return { year, monthsAndSets: sortedMonthsAndSets };
 });
 
 const formattedJson = formatJson(data);
-fs.writeFileSync(path.join(__dirname, 'public/data.json'), formattedJson);
+fs.writeFileSync(path.join(__dirname, "public/data.json"), formattedJson);
