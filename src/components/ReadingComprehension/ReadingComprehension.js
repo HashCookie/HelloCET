@@ -13,25 +13,48 @@ const ReadingComprehension = ({ basePath }) => {
 
   useEffect(() => {
     if (basePath) {
+      // 在开始加载新数据前，重置状态
+      setSectionAData(null);
+      setSectionBData(null);
+      setSectionCData(null);
+      setCorrectAnswers({});
+      setSelectedAnswer({});
       const paperName = basePath.split("/").slice(-2, -1)[0];
       const answerPath = `/answers/${paperName}.json`;
 
       const loadData = async () => {
         try {
-          const responses = await Promise.all([
+          // 分别加载题目和答案数据
+          const questionResponses = await Promise.all([
             fetch(`${basePath}/ReadingComprehensionA.json`),
             fetch(`${basePath}/ReadingComprehensionB.json`),
             fetch(`${basePath}/ReadingComprehensionC.json`),
-            fetch(answerPath),
           ]);
-          const [dataA, dataB, dataC, answers] = await Promise.all(
-            responses.map((res) => res.json())
+
+          questionResponses.forEach((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+          });
+
+          const [dataA, dataB, dataC] = await Promise.all(
+            questionResponses.map((res) => res.json())
           );
 
           setSectionAData(dataA);
           setSectionBData(dataB);
           setSectionCData(dataC);
-          setCorrectAnswers(answers.ReadingComprehension);
+
+          // 尝试加载答案，如果失败则继续而不抛出错误
+          try {
+            const answerResponse = await fetch(answerPath);
+            if (answerResponse.ok) {
+              const answers = await answerResponse.json();
+              setCorrectAnswers(answers.ReadingComprehension);
+            }
+          } catch (error) {
+            // 答案加载失败，可能是文件不存在，不处理错误
+          }
 
           // 初始化用户答案
           const initialAnswers = {};
