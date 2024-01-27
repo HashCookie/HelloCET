@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Writing from './components/Writing/Writing';
-import ListeningComprehension from './components/ListeningComprehension/ListeningComprehension';
-import ReadingComprehension from './components/ReadingComprehension/ReadingComprehension';
-import Translation from './components/Translation/Translation';
-import YearAndSetSelector from './components/YearAndSetSelector';
+import React, { useState } from "react";
+import Writing from "./components/Writing/Writing";
+import ListeningComprehension from "./components/ListeningComprehension/ListeningComprehension";
+import ReadingComprehension from "./components/ReadingComprehension/ReadingComprehension";
+import Translation from "./components/Translation/Translation";
+import YearAndSetSelector from "./components/YearAndSetSelector";
 
 function App() {
-  const [basePath, setBasePath] = useState('');
+  const [basePath, setBasePath] = useState("");
 
   const handleSelect = (path) => {
     setBasePath(path);
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <YearAndSetSelector onSelect={handleSelect} />
-      {basePath && ( 
+      {basePath && (
         <>
           <Writing basePath={basePath} />
           <ListeningComprehension basePath={basePath} />
