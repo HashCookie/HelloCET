@@ -74,15 +74,32 @@ const ListeningComprehension = ({ basePath }) => {
   };
 
   const handleSubmit = () => {
-    let score = 0;
+    // 各题型每题的分数
+    const scorePerShortNewsQuestion = 7.1;
+    const scorePerLongConversationQuestion = 7.1;
+    const scorePerPassageQuestion = 14.2;
+
+    // 计算原始听力分数
+    let rawListeningScore = 0;
     Object.keys(selectedAnswer).forEach((questionNumber) => {
+      const questionIndex = parseInt(questionNumber.slice(1)); // 去掉'q'，转换为数字
       const userAnswer = selectedAnswer[questionNumber];
-      const correctAnswer = correctAnswers[questionNumber]; // 直接使用 questionNumber 作为键
+      const correctAnswer = correctAnswers[questionNumber];
+
       if (userAnswer === correctAnswer) {
-        score += 1;
+        // 判断题型并计算分数
+        if (questionIndex <= 7) {
+          rawListeningScore += scorePerShortNewsQuestion;
+        } else if (questionIndex <= 15) {
+          rawListeningScore += scorePerLongConversationQuestion;
+        } else {
+          rawListeningScore += scorePerPassageQuestion;
+        }
       }
     });
-    console.log("得分:", score);
+
+    // 由于没有常模转换数据，直接输出原始分数
+    console.log("听力成绩:", rawListeningScore);
   };
 
   if (questions.length === 0) {
