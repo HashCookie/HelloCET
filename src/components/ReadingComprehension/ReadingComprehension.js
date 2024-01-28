@@ -83,13 +83,31 @@ const ReadingComprehension = ({ basePath }) => {
   };
 
   const handleSubmit = () => {
-    let score = 0;
+    // 各题型每题的分数
+    const scorePerBlankFillingQuestion = 3.55; // 选词填空每题分数
+    const scorePerParagraphMatchingQuestion = 7.1; // 段落匹配每题分数
+    const scorePerCarefulReadingQuestion = 14.2; // 仔细阅读每题分数
+
+    // 计算原始阅读分数
+    let rawReadingScore = 0;
     Object.keys(selectedAnswer).forEach((questionNumber) => {
-      if (selectedAnswer[questionNumber] === correctAnswers[questionNumber]) {
-        score += 1;
+      const questionIndex = parseInt(questionNumber); // 直接转换为数字
+      const userAnswer = selectedAnswer[questionNumber];
+      const correctAnswer = correctAnswers[questionNumber];
+
+      if (userAnswer === correctAnswer) {
+        // 判断题型并计算分数
+        if (questionIndex >= 26 && questionIndex <= 35) {
+          rawReadingScore += scorePerBlankFillingQuestion;
+        } else if (questionIndex >= 36 && questionIndex <= 45) {
+          rawReadingScore += scorePerParagraphMatchingQuestion;
+        } else if (questionIndex >= 46 && questionIndex <= 55) {
+          rawReadingScore += scorePerCarefulReadingQuestion;
+        }
       }
     });
-    console.log("得分:", score);
+
+    console.log("阅读成绩:", rawReadingScore);
   };
 
   if (!sectionAData || !sectionBData || !sectionCData) {
