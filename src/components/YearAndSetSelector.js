@@ -49,7 +49,7 @@ const YearAndSetSelector = ({ onSelect }) => {
   };
 
   const handleSubmit = () => {
-    const basePath = `/data/${year}/${year}年${month}英语四级真题_${set}/`;
+    const basePath = `/data/CET4/${year}/${year}年${month}英语四级真题_${set}/`;  // 生成 basePath
     onSelect(basePath);
   };
 
