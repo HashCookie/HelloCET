@@ -1,0 +1,229 @@
+{
+  "questions": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Doing enjoyable work.",
+        "B": "Having friendly colleagues.",
+        "C": "Earning a competitive salary.",
+        "D": "Working for supportive bosses."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "20%",
+        "B": "25%",
+        "C": "31%",
+        "D": "73%"
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "Those full of skilled workers.",
+        "B": "Those run by women.",
+        "C": "Those that are well managed.",
+        "D": "Those of a small size."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "They can win recognition of their work.",
+        "B": "They can better balance their work and life.",
+        "C": "They can hop from job to job easily.",
+        "D": "They can take on more than one job."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "It was a collection of photos.",
+        "B": "It is an introduction to music.",
+        "C": "It is about the city of Bruges.",
+        "D": "It is a book of European history."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "When writing about Belgium's coastal regions.",
+        "B": "When taking pictures for a concert catalogue.",
+        "C": "When vacationing in an Italian coastal city.",
+        "D": "When painting the concert hall of Bruges."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "The rich heritage of Europe will be lost completely.",
+        "B": "The seawater of Europe will be seriously polluted.",
+        "C": "The entire European coastline will be submerged.",
+        "D": "The major European scenic spots will disappear."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "Tourists use wooden paths to reach their hotels in the morning.",
+        "B": "It attracts large numbers of tourists from home and abroad.",
+        "C": "People cannot get around without using boats.",
+        "D": "Its waterways are being increasingly polluted."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "They try hard to avoid getting off on the wrong foot.",
+        "B": "They spend too much time anticipating their defeat.",
+        "C": "They take too many irrelevant factors into account.",
+        "D": "They make careful preparations beforehand."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "Mental images often interfere with athletes' performance.",
+        "B": "Golfers usually have positive mental images of themselves.",
+        "C": "Thinking has the same effect on the nervous system as doing.",
+        "D": "A person's nervous system is more complicated than imagined."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Anticipate possible problems.",
+        "B": "Make a list of do's and don'ts.",
+        "C": "Try to appear more professional.",
+        "D": "Picture themselves succeeding."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "She won her first jury trial.",
+        "B": "She won a designer dress.",
+        "C": "She presented moving pictures.",
+        "D": "She did not speak loud enough."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "It enables patients with diabetes to recover sooner.",
+        "B": "Its health benefits have been overestimated.",
+        "C": "Its long-term effects are yet to be proved.",
+        "D": "It helps people to avoid developing breast cancer."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "It tracked their eating habits since their adolescence.",
+        "B": "It focused on their difference from men in fiber intake.",
+        "C": "It tracked their change in food preferences for 20 years.",
+        "D": "It focused on their ways of life during young adulthood."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "Fiber may bring more benefits to women than men.",
+        "B": "Fiber may improve the function of heart muscles.",
+        "C": "Fiber may make blood circulation more smooth.",
+        "D": "Fiber may help to reduce hormones in the body."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "Investigating the impact of media on government.",
+        "B": "Studying the hazards of young people drinking.",
+        "C": "Conducting research on consumer behaviour.",
+        "D": "Observing the changes in marketing."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "It is a chief concern of parents.",
+        "B": "It is an act of socialising.",
+        "C": "It is the cause of many street riots.",
+        "D": "It is getting worse year by year."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "They researched the impact of mobile phones on young people.",
+        "B": "They spent a week studying their own purchasing behaviour.",
+        "C": "They conducted a thorough research on advertising.",
+        "D": "They analysed their family budgets over the years."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "It is likely to give up paper money in the near future.",
+        "B": "It is the first country to use credit cards in the world.",
+        "C": "It is trying hard to do away with dirty money.",
+        "D": "It is helping its banks to improve efficiency."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "Whether it is possible to travel without carrying any physical currency.",
+        "B": "Whether it is possible to predict how much money one is going to spend.",
+        "C": "Whether the absence of physical currency is going to affect everyday life.",
+        "D": "Whether the absence of physical currency causes a person to spend more."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "The cash in her handbag was missing.",
+        "B": "The service on the train was not good.",
+        "C": "The restaurant car accepted cash only.",
+        "D": "There was no food service on the train."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "By drawing money week by week.",
+        "B": "By putting money into envelopes.",
+        "C": "By limiting their day-to-day spending.",
+        "D": "By refusing to buy anything on credit."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "Population explosion.",
+        "B": "Extinction of rare species.",
+        "C": "Chronic hunger.",
+        "D": "Environmental deterioration."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "About half of them are unintended.",
+        "B": "They contribute to overpopulation.",
+        "C": "They have been brought under control.",
+        "D": "The majority of them tend to end halfway."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "It is beginning to attract postgraduates' attention.",
+        "B": "It is neglected in many of the developing countries.",
+        "C": "It is becoming a subject of interdisciplinary research.",
+        "D": "It is essential to the wellbeing of all species on earth."
+      }
+    }
+  ]
+}
