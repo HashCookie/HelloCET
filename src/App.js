@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./pages/Header";
+import YearAndSetSelector from "./components/YearAndSetSelector";
 import Writing from "./components/Writing/Writing";
 import ListeningComprehension from "./components/ListeningComprehension/ListeningComprehension";
 import ReadingComprehension from "./components/ReadingComprehension/ReadingComprehension";
 import Translation from "./components/Translation/Translation";
-import YearAndSetSelector from "./components/YearAndSetSelector";
-// import ContactForm from "./pages/ContactForm";
-// import Countdown from "./components/Countdown";
 
 function App() {
   const [basePath, setBasePath] = useState("");
@@ -13,11 +13,18 @@ function App() {
   const handleSelect = (path) => {
     setBasePath(path);
   };
+
   return (
-    <>
-    {/* <Countdown targetDate="2024-12-10" /> */}
-    {/* <ContactForm /> */}
-      <YearAndSetSelector onSelect={handleSelect} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route
+          path="/cet4"
+          element={<YearAndSetSelector onSelect={handleSelect} />}
+        />
+        {/* 在这里可以添加更多路由 */}
+      </Routes>
+      {/* 当basePath被设置后，显示以下组件 */}
       {basePath && (
         <>
           <Writing basePath={basePath} />
@@ -26,7 +33,7 @@ function App() {
           <Translation basePath={basePath} />
         </>
       )}
-    </>
+    </BrowserRouter>
   );
 }
 
