@@ -3,15 +3,20 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPracticeMenuOpen, setIsPracticeMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const togglePracticeMenu = () => {
+    setIsPracticeMenuOpen(!isPracticeMenuOpen);
+  };
+
   return (
     <header className="border-b py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
       <div className="flex flex-wrap items-center gap-x-2 max-lg:gap-y-6">
-          <img src="/CET.svg" alt="logo" className="w-12" />
+        <img src="/CET.svg" alt="logo" className="w-12" />
         <button id="toggle" className="lg:hidden ml-auto" onClick={toggleMenu}>
           <svg
             className="w-7 h-7"
@@ -48,13 +53,41 @@ const Header = () => {
               CET6
             </Link>
           </li>
-          <li className="max-lg:border-b max-lg:py-2 px-3">
-            <Link
-              to="/practice"
+          <li className="max-lg:border-b max-lg:py-2 px-3 relative">
+            <button
+              onClick={togglePracticeMenu}
               className="text-gray-500 block font-semibold text-[15px]"
             >
               专项练习
-            </Link>
+            </button>
+            {isPracticeMenuOpen && (
+              <div className="absolute left-0 mt-2 bg-white shadow-md">
+                <Link
+                  to="/practice/writing"
+                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                >
+                  写作
+                </Link>
+                <Link
+                  to="/practice/listening"
+                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                >
+                  听力
+                </Link>
+                <Link
+                  to="/practice/ReadingComprehension"
+                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                >
+                  阅读理解
+                </Link>
+                <Link
+                  to="/practice/Translation"
+                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                >
+                  翻译
+                </Link>
+              </div>
+            )}
           </li>
           <li className="max-lg:border-b max-lg:py-2 px-3">
             <Link
