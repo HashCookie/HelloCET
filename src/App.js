@@ -6,6 +6,7 @@ import Writing from "./components/Writing/Writing";
 import ListeningComprehension from "./components/ListeningComprehension/ListeningComprehension";
 import ReadingComprehension from "./components/ReadingComprehension/ReadingComprehension";
 import Translation from "./components/Translation/Translation";
+import ContactForm from "./pages/ContactForm";
 
 function App() {
   const [basePath, setBasePath] = useState("");
@@ -31,6 +32,7 @@ function App() {
             <YearAndSetSelector onSelect={handleSelect} testType="CET6" />
           }
         />
+        <Route path="/feedback" element={<ContactForm />} />
       </Routes>
       {basePath && (
         <>
