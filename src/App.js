@@ -11,6 +11,7 @@ function App() {
   const [basePath, setBasePath] = useState("");
 
   const handleSelect = (path) => {
+    console.log('Selected basePath:', path);
     setBasePath(path);
   };
 
@@ -20,11 +21,17 @@ function App() {
         <Route path="/" element={<Header />} />
         <Route
           path="/cet4"
-          element={<YearAndSetSelector onSelect={handleSelect} />}
+          element={
+            <YearAndSetSelector onSelect={handleSelect} testType="CET4" />
+          }
         />
-        {/* 在这里可以添加更多路由 */}
+        <Route
+          path="/cet6"
+          element={
+            <YearAndSetSelector onSelect={handleSelect} testType="CET6" />
+          }
+        />
       </Routes>
-      {/* 当basePath被设置后，显示以下组件 */}
       {basePath && (
         <>
           <Writing basePath={basePath} />

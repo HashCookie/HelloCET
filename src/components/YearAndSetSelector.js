@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const YearAndSetSelector = ({ onSelect }) => {
+const YearAndSetSelector = ({ onSelect, testType }) => {
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
   const [set, setSet] = useState("");
@@ -11,9 +11,13 @@ const YearAndSetSelector = ({ onSelect }) => {
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
-      .then((data) => setData(data))
+      .then((allData) => {
+        const testData = allData[testType]; // 选择 CET4 或 CET6 的数据
+        console.log("Loaded data for", testType, testData);
+        setData(testData);
+      })
       .catch((error) => console.error("Error loading data:", error));
-  }, []);
+  }, [testType]); // 添加 testType 作为依赖项
 
   useEffect(() => {
     if (year) {
@@ -49,7 +53,9 @@ const YearAndSetSelector = ({ onSelect }) => {
   };
 
   const handleSubmit = () => {
-    const basePath = `/data/CET4/${year}/${year}年${month}英语四级真题_${set}/`;  // 生成 basePath
+    const basePath = `/data/${testType}/${year}/${year}年${month}英语${
+      testType === "CET4" ? "四" : "六"
+    }级真题_${set}/`;
     onSelect(basePath);
   };
 
