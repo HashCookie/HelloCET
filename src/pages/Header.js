@@ -11,9 +11,7 @@ const Header = () => {
   return (
     <header className="border-b py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
       <div className="flex flex-wrap items-center gap-x-2 max-lg:gap-y-6">
-        <a href="#!">
           <img src="/CET.svg" alt="logo" className="w-12" />
-        </a>
         <button id="toggle" className="lg:hidden ml-auto" onClick={toggleMenu}>
           <svg
             className="w-7 h-7"
