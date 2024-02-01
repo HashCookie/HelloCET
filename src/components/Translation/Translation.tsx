@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-const Translation = ({ basePath }) => {
+interface TranslationProps {
+  basePath: string;
+}
+
+const Translation: React.FC<TranslationProps> = ({ basePath }) => {
   const [Directions, setDirections] = useState("");
   const [ChinesePassage, setChinesePassage] = useState("");
 

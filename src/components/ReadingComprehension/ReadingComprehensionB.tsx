@@ -1,9 +1,31 @@
 import React from "react";
 
-const ReadingComprehensionB = ({ data, selectedAnswer, onAnswerChange }) => {
+interface Question {
+  Number: number;
+  Statement: string;
+  Options: string[]; // 直接使用字符串数组
+}
+
+interface Data {
+  title: string;
+  passageTitle: string;
+  passages: string[];
+  questions: Question[];
+}
+
+interface ReadingComprehensionBProps {
+  data: Data;
+  selectedAnswer: { [key: number]: string };
+  onAnswerChange: (questionNumber: number, option: string) => void;
+}
+
+const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
+  data,
+  selectedAnswer,
+  onAnswerChange,
+}) => {
   // 处理选项选择的函数
-  const handleOptionSelect = (questionNumber, option) => {
-    // 调用父组件的回调函数来更新父组件的状态
+  const handleOptionSelect = (questionNumber: number, option: string) => {
     if (onAnswerChange) {
       onAnswerChange(questionNumber, option);
     }

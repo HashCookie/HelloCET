@@ -2,7 +2,23 @@ import React from "react";
 import QuestionList from "./QuestionList";
 import AudioPlayer from "./AudioPlayer";
 
-const SectionA = ({
+interface Question {
+  number: number;
+  options: { [key: string]: string };
+}
+
+interface SectionAProps {
+  year: string;
+  month: string;
+  paperNumber: string;
+  questions: Question[];
+  selectedAnswer: { [key: number]: string };
+  onAnswerChange: (questionNumber: number, option: string) => void;
+  playingAudio: string | null;
+  onAudioPlay: (audioId: string | null) => void;
+}
+
+const SectionA: React.FC<SectionAProps> = ({
   year,
   month,
   paperNumber,
@@ -21,6 +37,7 @@ const SectionA = ({
     "4-6": "0507.mp3",
     // 根据需要添加更多映射
   };
+
 
   return (
     <section>

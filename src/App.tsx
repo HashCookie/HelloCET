@@ -11,8 +11,8 @@ import ContactForm from "./pages/ContactForm";
 function App() {
   const [basePath, setBasePath] = useState("");
 
-  const handleSelect = (path) => {
-    console.log('Selected basePath:', path);
+  const handleSelect = (path: string) => {
+    console.log("Selected basePath:", path);
     setBasePath(path);
   };
 

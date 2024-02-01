@@ -1,12 +1,25 @@
 import React, { useState, useEffect } from "react";
 
-const YearAndSetSelector = ({ onSelect, testType }) => {
+interface YearAndSetSelectorProps {
+  onSelect: (basePath: string) => void;
+  testType: string;
+}
+
+interface YearData {
+  year: string;
+  monthsAndSets: { [month: string]: string[] };
+}
+
+const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
+  onSelect,
+  testType,
+}) => {
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
   const [set, setSet] = useState("");
-  const [data, setData] = useState([]);
-  const [months, setMonths] = useState([]);
-  const [sets, setSets] = useState([]);
+  const [data, setData] = useState<YearData[]>([]);
+  const [months, setMonths] = useState<string[]>([]);
+  const [sets, setSets] = useState<string[]>([]);
 
   useEffect(() => {
     fetch("/data.json")
@@ -40,15 +53,15 @@ const YearAndSetSelector = ({ onSelect, testType }) => {
     setSet("");
   }, [month, year, data]); // 包含 month 和 year 作为依赖项
 
-  const handleYearChange = (e) => {
+  const handleYearChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setYear(e.target.value);
   };
 
-  const handleMonthChange = (e) => {
+  const handleMonthChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setMonth(e.target.value);
   };
 
-  const handleSetChange = (e) => {
+  const handleSetChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSet(e.target.value);
   };
 

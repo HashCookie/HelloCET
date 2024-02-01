@@ -2,7 +2,23 @@ import React from "react";
 import QuestionList from "./QuestionList";
 import AudioPlayer from "./AudioPlayer";
 
-const SectionC = ({
+interface Question {
+  number: number;
+  options: { [key: string]: string };
+}
+
+interface SectionBProps {
+  year: string;
+  month: string;
+  paperNumber: string;
+  questions: Question[];
+  selectedAnswer: { [key: number]: string };
+  onAnswerChange: (questionNumber: number, option: string) => void;
+  playingAudio: string | null;
+  onAudioPlay: (audioId: string | null) => void;
+}
+
+const SectionB: React.FC<SectionBProps> = ({
   year,
   month,
   paperNumber,
@@ -16,19 +32,18 @@ const SectionC = ({
 
   // 题目范围到音频文件名的映射
   const audioFiles = {
-    "15-17": "1618.mp3", // 假设第一段对应第16题到第18题
-    "18-20": "1921.mp3", // 假设第二段对应第19题到第21题
-    "21-24": "2225.mp3", // 假设第三段对应第22题到第25题
+    "7-10": "0811.mp3", // 假设第一段长对话对应第8题到第11题
+    "11-14": "1215.mp3", // 假设第二段长对话对应第12题到第15题
   };
 
   return (
     <section>
-      <h3 className="font-bold">Section C</h3>
+      <h3 className="font-bold">Section B</h3>
       <p>
-        <b>Directions:</b>In this section, you will hear three passages. At the
-        end of each passage, you will hear three or four questions. Both the
-        passage and the questions will be spoken only once. After you hear a
-        question, you must choose the best answer from the four choices marked
+        <b>Directions:</b>In this section, you will hear two long conversations.
+        At the end of each conversation, you will hear four questions. Both the
+        conversation and the questions will be spoken only once. After you hear
+        a question, you must choose the best answer from the four choices marked
         A), B), C) and D). Then mark the corresponding letter on Answer Sheet 1
         with a single line through the centre.
       </p>
@@ -46,8 +61,8 @@ const SectionC = ({
               audioId={`section-a-${audioFile}`} // audioId 应该是唯一的标识符
             />
             <b>
-              Questions {start + 1} to {end + 1} are based on the passage you
-              have just heard.
+              Questions {start + 1} to {end + 1} are based on the conversation
+              you have just heard.
             </b>
             <QuestionList
               questions={questionSubset}
@@ -61,4 +76,4 @@ const SectionC = ({
   );
 };
 
-export default SectionC;
+export default SectionB;
