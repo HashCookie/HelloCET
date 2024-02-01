@@ -1,0 +1,245 @@
+{
+  "title": "Section C",
+  "passagesOne": [
+      "In the beginning of the movie I, Robot, a robot has to decide whom to save after two cars plunge into the water—Del Spooner or a child. Even though Spooner screams “Save her! Save her! ” the robot rescues him because it calculates that he has a 45 percent chance of survival compared to Sarah's 11 percent. The robot's decision and its calculated approach raise an important question: would humans make the same choice? And which choice would we want our robotic counterparts to make?",
+      "Isaac Asimov evaded the whole notion of morality in devising his three laws of robotics, which hold that 1. Robots cannot harm humans or allow humans to come to harm; 2. Robots must obey humans, except where the order would conflict with law 1; and 3. Robots must act in self-preservation, unless doing so conflicts with laws 1 or 2. These laws are programmed into Asimov's robots—they don't have to think, judge, or value. They don't have to like humans or believe that hurting them is wrong or bad. They simply don't do it.",
+      "The robot who rescues Spooner's life in I, Robot follows Asimov's zeroth law: robots cannot harm humanity (as opposed to individual humans) or allow humanity to come to harm—an expansion of the first law that allows robots to determine what's in the greater good. Under the first law, a robot could not harm a dangerous gunman, but under the zeroth law, a robot could kill the gunman to save others.",
+      "Whether it's possible to program a robot with safeguards such as Asimov's laws is debatable. A word such as “harm” is vague (what about emotional harm? Is replacing a human employee harm?), and abstract concepts present coding problems. The robots in Asimov's fiction expose complications and loopholes in the three laws, and even when the laws work, robots still have to assess situations.",
+      "Assessing situations can be complicated. A robot has to identify the players, conditions, and possible outcomes for various scenarios. It's doubtful that a computer program can do that—at least, not without some undesirable results. A roboticist at the Bristol Robotics Laboratory programmed a robot to save human proxies（替身） called “H-bots” from danger. When one H-bot headed for danger, the robot successfully pushed it out of the way. But when two H-bots became imperiled, the robot choked 42 percent of the time, unable to decide which to save and letting them both “die.” The experiment highlights the importance of morality: without it, how can a robot decide whom to save or what's best for humanity, especially if it can't calculate survival odds?"
+  ],
+  "questionsOne": [
+      {
+          "Number": 46,
+          "Statement": "What question does the example in the movie raise?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Whether robots can reach better decisions."
+              },
+              {
+                  "key": "B",
+                  "text": "Whether robots follow Asimov's zeroth law."
+              },
+              {
+                  "key": "C",
+                  "text": "How robots may make bad judgments."
+              },
+              {
+                  "key": "D",
+                  "text": "How robots should be programmed."
+              }
+          ]
+      },
+      {
+          "Number": 47,
+          "Statement": "What does the author think of Asimov's three laws of robotics?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They are apparently divorced from reality."
+              },
+              {
+                  "key": "B",
+                  "text": "They did not follow the coding system of robotics."
+              },
+              {
+                  "key": "C",
+                  "text": "They laid a solid foundation for robotics."
+              },
+              {
+                  "key": "D",
+                  "text": "They did not take moral issues into consideration."
+              }
+          ]
+      },
+      {
+          "Number": 48,
+          "Statement": "What does the author say about Asimov's robots?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They know what is good or bad for human beings."
+              },
+              {
+                  "key": "B",
+                  "text": "They are programmed not to hurt human beings."
+              },
+              {
+                  "key": "C",
+                  "text": "They perform duties in their owners' best interest."
+              },
+              {
+                  "key": "D",
+                  "text": "They stop working when a moral issue is involved."
+              }
+          ]
+      },
+      {
+          "Number": 49,
+          "Statement": "What does the author want to say by mentioning the word “harm” in Asimov's laws?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Abstract concepts are hard to program."
+              },
+              {
+                  "key": "B",
+                  "text": "It is hard for robots to make decisions."
+              },
+              {
+                  "key": "C",
+                  "text": "Robots may do harm in certain situations."
+              },
+              {
+                  "key": "D",
+                  "text": "Asimov's laws use too many vague terms."
+              }
+          ]
+      },
+      {
+          "Number": 50,
+          "Statement": "What has the roboticist at the Bristol Robotics Laboratory found in his experiment?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Robots can be made as intelligent as human beings some day."
+              },
+              {
+                  "key": "B",
+                  "text": "Robots can have moral issues encoded into their programs."
+              },
+              {
+                  "key": "C",
+                  "text": "Robots can have trouble making decisions in complex scenarios."
+              },
+              {
+                  "key": "D",
+                  "text": "Robots can be programmed to perceive potential perils."
+              }
+          ]
+      }
+  ],
+  "passagesTwo": [
+      "Our world now moves so fast that we seldom stop to see just how far we have come in just a few years. The latest iPhone 6s, for example, has a dual-core processor and fits nicely into your pocket. By comparison, you would expect to find a technological specification like this on your standard laptop in an office anywhere in the world.",
+      "It's no wonder that new applications for the Internet of Things are moving ahead fast when almost every new device we buy has a plug on the end of it or a wireless connection to the internet. Soon, our current smartphone lifestyle will expand to create our own smart home lifestyle too.",
+      "All researches agree that close to 25 billion devices, things and sensors will be connected by 2020 which incidentally is also the moment that Millennials（千禧一代） are expected to make up 75 percent of our overall workforce, and the fully connected home will become a reality for large numbers of people worldwide.",
+      "However, this is just the tip of the proverbial iceberg as smart buildings and even cities increasingly become the norm as leaders and business owners begin to wake up to the massive savings that technology can deliver through connected sensors and new forms of automation coupled with intelligent energy and facilities management.",
+      "Online security cameras, intelligent lighting and a wealth of sensors that control both temperature and air quality are offering an unprecedented level of control, efficiency, and improvements to what were once classed necessary costs when running a business or managing a large building.",
+      "We can expect that the ever-growing list of devices, systems and environments remain connected, always online and talking to each other. The big benefit will not only be in the housing of this enormous and rapidly growing amount of data, but will also be in the ability to run real time data analytics to extract actionable and ongoing knowledge.",
+      "The biggest and most exciting challenge of this technology is how to creatively leverage this ever-growing amount of data to deliver cost savings, improvements and tangible benefits to both businesses and citizens of these smart cities.",
+      "The good news is that most of this technology is already invented. Let's face it, it wasn't too long ago that the idea of working from anywhere and at anytime was some form of a distant utopian（乌托邦式的） dream, and yet now we can perform almost any office-based task from any location in the world as long as we have access to the internet.",
+      "It's time to wake up to the fact that making smart buildings, cities and homes will dramatically improve our quality of life in the years ahead."
+  ],
+  "questionsTwo": [
+      {
+          "Number": 51,
+          "Statement": "What does the example of iPhone 6s serve to show?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "The huge capacity of the smartphones people now use."
+              },
+              {
+                  "key": "B",
+                  "text": "The widespread use of smartphones all over the world."
+              },
+              {
+                  "key": "C",
+                  "text": "The huge impact of new technology on people's everyday life."
+              },
+              {
+                  "key": "D",
+                  "text": "The rapid technological progress in a very short period of time."
+              }
+          ]
+      },
+      {
+          "Number": 52,
+          "Statement": "What can we expect to see by the year 2020?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Apps for the Internet of Things."
+              },
+              {
+                  "key": "B",
+                  "text": "The popularization of smart homes."
+              },
+              {
+                  "key": "C",
+                  "text": "The emergence of Millennials."
+              },
+              {
+                  "key": "D",
+                  "text": "Total globalization of the world."
+              }
+          ]
+      },
+      {
+          "Number": 53,
+          "Statement": "What will business owners do when they become aware of the benefits of the Internet of Things?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Employ fewer workers in their operations."
+              },
+              {
+                  "key": "B",
+                  "text": "Gain automatic control of their businesses."
+              },
+              {
+                  "key": "C",
+                  "text": "Invest in more smart buildings and cities."
+              },
+              {
+                  "key": "D",
+                  "text": "Embrace whatever new technology there is."
+              }
+          ]
+      },
+      {
+          "Number": 54,
+          "Statement": "What is the most exciting challenge when we possess more and more data?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "How to turn it to profitable use."
+              },
+              {
+                  "key": "B",
+                  "text": "How to do real time data analysis."
+              },
+              {
+                  "key": "C",
+                  "text": "How to link the actionable systems."
+              },
+              {
+                  "key": "D",
+                  "text": "How to devise new ways to store it."
+              }
+          ]
+      },
+      {
+          "Number": 55,
+          "Statement": "What does the author think about working from anywhere and at anytime?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "It is feasible with a connection to the internet."
+              },
+              {
+                  "key": "B",
+                  "text": "It will thrive in smart buildings, cities and homes."
+              },
+              {
+                  "key": "C",
+                  "text": "It is still a distant utopian dream for ordinary workers."
+              },
+              {
+                  "key": "D",
+                  "text": "It will deliver tangible benefits to both boss and worker."
+              }
+          ]
+      }
+  ]
+}
