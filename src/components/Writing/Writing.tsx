@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Writing.module.css";
 
-const WritingTestPage = ({ basePath }) => {
+interface WritingTestPageProps {
+  basePath: string;
+}
+
+const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
   // 这里添加了 basePath 作为 prop
   const [essay, setEssay] = useState("");
   const [Directions, setDirections] = useState("");
@@ -17,7 +21,7 @@ const WritingTestPage = ({ basePath }) => {
     }
   }, [basePath]); // 这里使用 basePath 作为依赖
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setEssay(e.target.value);
   };
 

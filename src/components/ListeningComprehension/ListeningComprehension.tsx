@@ -3,16 +3,29 @@ import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
 
-const ListeningComprehension = ({ basePath }) => {
-  const [selectedAnswer, setSelectedAnswer] = useState({});
-  const [questions, setQuestions] = useState([]);
-  const [correctAnswers, setCorrectAnswers] = useState({});
-  // 新增两个状态来保存年份和试卷编号
+interface ListeningComprehensionProps {
+  basePath: string;
+}
+
+interface Question {
+  number: number;
+  // 如果还有其他属性，请在这里添加
+}
+
+interface Answers {
+  [key: string]: string;
+}
+
+const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
+  basePath,
+}) => {
+  const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
+  const [questions, setQuestions] = useState<any[]>([]); // 如果您知道问题的具体类型，可以替换 any
+  const [correctAnswers, setCorrectAnswers] = useState<Answers>({});
   const [year, setYear] = useState("");
   const [paperNumber, setPaperNumber] = useState("");
-  // 新增一个状态来保存月份
   const [month, setMonth] = useState("");
-  const [playingAudio, setPlayingAudio] = useState(null);
+  const [playingAudio, setPlayingAudio] = useState<string | null>(null);
 
   useEffect(() => {
     if (basePath) {
@@ -20,12 +33,15 @@ const ListeningComprehension = ({ basePath }) => {
       fetch(`${basePath}/ListeningComprehension.json`)
         .then((response) => response.json())
         .then((data) => {
-          setQuestions(data.questions);
+          setQuestions(data.questions as Question[]); // 假设data.questions是Question类型的数组
           // 初始化用户答案
-          const initialAnswers = data.questions.reduce((acc, question) => {
-            acc[`q${question.number}`] = "";
-            return acc;
-          }, {});
+          const initialAnswers = data.questions.reduce(
+            (acc: Answers, question: Question) => {
+              acc[`q${question.number}`] = "";
+              return acc;
+            },
+            {}
+          );
           setSelectedAnswer(initialAnswers);
 
           // 提取试卷名称
@@ -62,14 +78,14 @@ const ListeningComprehension = ({ basePath }) => {
   }, [basePath]);
 
   // 在回调函数中设置当前播放的音频ID
-  const handleAudioPlay = (audioId) => {
+  const handleAudioPlay = (audioId: string | null) => {
     setPlayingAudio(audioId);
   };
 
-  const handleOptionChange = (questionNumber, option) => {
+  const handleOptionChange = (questionNumber: number, option: string) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
-      [questionNumber]: option, // 直接使用 questionNumber 作为键
+      [`q${questionNumber}`]: option,
     }));
   };
 

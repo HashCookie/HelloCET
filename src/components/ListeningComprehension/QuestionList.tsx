@@ -1,7 +1,24 @@
 import React from "react";
 import styles from "../../styles/ListeningComprehension.module.css";
 
-const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
+// 定义问题的接口
+interface Question {
+  number: number;
+  options: { [key: string]: string };
+}
+
+// 定义QuestionList组件的props的接口
+interface QuestionListProps {
+  questions: Question[];
+  selectedAnswer: { [key: number]: string };
+  onAnswerChange: (questionNumber: number, option: string) => void;
+}
+
+const QuestionList: React.FC<QuestionListProps> = ({
+  questions,
+  selectedAnswer,
+  onAnswerChange,
+}) => {
   return (
     <div className={styles["questions"]}>
       {questions.map((question) => (
@@ -19,7 +36,10 @@ const QuestionList = ({ questions, selectedAnswer, onAnswerChange }) => {
                   onChange={() => onAnswerChange(question.number, key)}
                   className="mr-2"
                 />
-                <label htmlFor={`q${question.number}-${key}`} className="cursor-pointer">
+                <label
+                  htmlFor={`q${question.number}-${key}`}
+                  className="cursor-pointer"
+                >
                   {key}) {text}
                 </label>
               </li>

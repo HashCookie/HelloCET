@@ -1,9 +1,22 @@
 import React, { useRef, useState, useEffect } from "react";
 
-const AudioPlayer = ({ src, playingAudio, onAudioPlay, audioId }) => {
-  const audioRef = useRef(null);
+// 定义组件props的接口
+interface AudioPlayerProps {
+  src: string;
+  playingAudio: string | null; // 允许 null 值
+  onAudioPlay: (audioId: string | null) => void;
+  audioId: string;
+}
+
+const AudioPlayer: React.FC<AudioPlayerProps> = ({
+  src,
+  playingAudio,
+  onAudioPlay,
+  audioId,
+}) => {
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [loading, setLoading] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false); // 新增状态
+  const [isPlaying, setIsPlaying] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -14,27 +27,28 @@ const AudioPlayer = ({ src, playingAudio, onAudioPlay, audioId }) => {
 
   useEffect(() => {
     if (playingAudio !== audioId && isPlaying) {
-      audioRef.current.pause();
+      audioRef.current?.pause();
       setIsPlaying(false); // 如果播放其他音频，停止并重置播放状态
     }
   }, [playingAudio, audioId, isPlaying]);
 
   const handlePlayPause = () => {
-    if (audioRef.current) {
+    const audio = audioRef.current;
+    if (audio) {
       setLoading(true);
-      if (audioRef.current.paused) {
-        audioRef.current
+      if (audio.paused) {
+        audio
           .play()
           .then(() => {
             setIsPlaying(true); // 开始播放时设置为 true
             onAudioPlay(audioId); // 通知父组件
           })
-          .catch((e) => {
+          .catch(() => {
             setError("音频加载失败");
             setLoading(false);
           });
       } else {
-        audioRef.current.pause();
+        audio.pause();
         setIsPlaying(false); // 暂停时设置为 false
         onAudioPlay(null); // 通知父组件
         setLoading(false);

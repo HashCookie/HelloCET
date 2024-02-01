@@ -1,7 +1,18 @@
 import React, { useState, useEffect } from "react";
 
-const Countdown = ({ targetDate }) => {
-  const calculateTimeLeft = () => {
+interface CountdownProps {
+  targetDate: string;
+}
+
+interface TimeLeft {
+  天?: number;
+  小时?: number;
+  分钟?: number;
+  秒?: number;
+}
+
+const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
+  const calculateTimeLeft = (): TimeLeft => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
 
@@ -17,27 +28,29 @@ const Countdown = ({ targetDate }) => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
   });
 
-  const timerComponents = [];
+  const timerComponents: JSX.Element[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
+    const key = interval as keyof TimeLeft;
+    const value = timeLeft[key];
+
+    if (!value) {
       return;
     }
 
     timerComponents.push(
-      <span className="text-lg font-semibold">
-        {timeLeft[interval]} {interval}{" "}
+      <span className="text-lg font-semibold" key={key}>
+        {value} {key}{" "}
       </span>
     );
   });

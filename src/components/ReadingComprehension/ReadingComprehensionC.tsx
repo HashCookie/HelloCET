@@ -1,8 +1,39 @@
 import React from "react";
 
-const ReadingComprehensionC = ({ data, selectedAnswer, onAnswerChange }) => {
-  const handleAnswerChange = (questionNumber, selectedOption) => {
-    // 调用父组件的回调函数来更新父组件的状态
+interface Option {
+  key: string;
+  text: string;
+}
+
+interface Question {
+  Number: number;
+  Statement: string;
+  Options: Option[];
+}
+
+interface Data {
+  title: string;
+  passagesOne: string[];
+  questionsOne: Question[];
+  passagesTwo: string[];
+  questionsTwo: Question[];
+}
+
+interface ReadingComprehensionCProps {
+  data: Data;
+  selectedAnswer: { [key: number]: string };
+  onAnswerChange: (questionNumber: number, selectedOption: string) => void;
+}
+
+const ReadingComprehensionC: React.FC<ReadingComprehensionCProps> = ({
+  data,
+  selectedAnswer,
+  onAnswerChange,
+}) => {
+  const handleAnswerChange = (
+    questionNumber: number,
+    selectedOption: string
+  ) => {
     if (onAnswerChange) {
       onAnswerChange(questionNumber, selectedOption);
     }
@@ -16,7 +47,7 @@ const ReadingComprehensionC = ({ data, selectedAnswer, onAnswerChange }) => {
     );
   }
 
-  const renderQuestions = (questions) =>
+  const renderQuestions = (questions: Question[]) =>
     questions.map((question, index) => (
       <div key={index} className="mb-6">
         <p className="font-bold text-lg mb-4">

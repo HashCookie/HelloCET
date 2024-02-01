@@ -4,12 +4,21 @@ import ReadingComprehensionB from "./ReadingComprehensionB";
 import ReadingComprehensionC from "./ReadingComprehensionC";
 import styles from "../../styles/ReadingComprehension.module.css";
 
-const ReadingComprehension = ({ basePath }) => {
-  const [selectedAnswer, setSelectedAnswer] = useState({});
+interface ReadingComprehensionProps {
+  basePath: string;
+}
+interface Answers {
+  [key: string]: string;
+}
+
+const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
+  basePath,
+}) => {
+  const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
   const [sectionAData, setSectionAData] = useState(null);
   const [sectionBData, setSectionBData] = useState(null);
   const [sectionCData, setSectionCData] = useState(null);
-  const [correctAnswers, setCorrectAnswers] = useState({});
+  const [correctAnswers, setCorrectAnswers] = useState<Answers>({});
 
   useEffect(() => {
     if (basePath) {
@@ -57,13 +66,13 @@ const ReadingComprehension = ({ basePath }) => {
           }
 
           // 初始化用户答案
-          const initialAnswers = {};
+          const initialAnswers: Answers = {};
           [
             ...(dataA?.questions || []),
             ...(dataB?.questions || []),
             ...(dataC?.questions || []),
           ].forEach((question) => {
-            initialAnswers[question.number] = "";
+            initialAnswers[question.number.toString()] = "";
           });
           setSelectedAnswer(initialAnswers);
         } catch (error) {
@@ -75,7 +84,7 @@ const ReadingComprehension = ({ basePath }) => {
     }
   }, [basePath]);
 
-  const handleOptionChange = (questionNumber, option) => {
+  const handleOptionChange = (questionNumber: number, option: string) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
       [questionNumber]: option,
@@ -92,8 +101,8 @@ const ReadingComprehension = ({ basePath }) => {
     let rawReadingScore = 0;
     Object.keys(selectedAnswer).forEach((questionNumber) => {
       const questionIndex = parseInt(questionNumber); // 直接转换为数字
-      const userAnswer = selectedAnswer[questionNumber];
-      const correctAnswer = correctAnswers[questionNumber];
+      const userAnswer = selectedAnswer[questionNumber.toString()];
+      const correctAnswer = correctAnswers[questionNumber.toString()];
 
       if (userAnswer === correctAnswer) {
         // 判断题型并计算分数
