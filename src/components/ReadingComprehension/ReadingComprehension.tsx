@@ -116,7 +116,9 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
       }
     });
 
-    console.log("阅读成绩:", rawReadingScore);
+    // 使用 Math.round 方法四舍五入到小数点后一位
+    const roundedScore = Math.round(rawReadingScore * 10) / 10;
+    console.log("阅读成绩:", roundedScore);
   };
 
   if (!sectionAData || !sectionBData || !sectionCData) {

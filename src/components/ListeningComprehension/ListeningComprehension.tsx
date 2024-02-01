@@ -98,7 +98,8 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
     // 计算原始听力分数
     let rawListeningScore = 0;
     Object.keys(selectedAnswer).forEach((questionNumber) => {
-      const questionIndex = parseInt(questionNumber.slice(1)); // 去掉'q'，转换为数字
+      // 因为现在questionNumber是直接从selectedAnswer的键获取的，所以不需要去掉'q'
+      const questionIndex = parseInt(questionNumber); // 直接转换为数字
       const userAnswer = selectedAnswer[questionNumber];
       const correctAnswer = correctAnswers[questionNumber];
 
@@ -114,8 +115,9 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       }
     });
 
-    // 由于没有常模转换数据，直接输出原始分数
-    console.log("听力成绩:", rawListeningScore);
+    // 四舍五入到小数点后一位
+    const roundedScore = Math.round(rawListeningScore * 10) / 10;
+    console.log("听力成绩:", roundedScore);
   };
 
   if (questions.length === 0) {
