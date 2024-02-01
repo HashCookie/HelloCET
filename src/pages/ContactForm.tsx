@@ -1,5 +1,3 @@
-import React from "react";
-
 function ContactForm() {
   return (
     <div className="grid px-10 sm:grid-cols-2 items-center gap-16 my-6 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
