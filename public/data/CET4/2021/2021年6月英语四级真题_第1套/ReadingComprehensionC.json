@@ -1,0 +1,241 @@
+{
+  "title": "Section C",
+  "passagesOne": [
+    "Educators and business leaders have more in common than it may seem. Teachers want to prepare students for a successful future. Technology companies have an interest in developing a workforce with the STEM （science, technology, engineering and math）skills needed to grow the company and advance the industry. How can they work together to achieve these goals? Play may be the answer.",
+    "Focusing on STEM skills is important, but the reality is that STEM skills are enhanced and more relevant when combined with traditional, hands-on creative activities. This combination is proving to be the best way to prepare today’s children to be the makers and builders of tomorrow. That is why technology companies are partnering with educators to bring back good, old-fashioned play.",
+    "In fact many experts argue that the most important 2lst-century skills aren’t related to specific technologies or subject matter, but to creativity; skills like imagination, problem-finding and problem-solving, teamwork, optimism, patience and the ability to experiment and take risks. These are skills acquired when kids tinker（鼓捣小玩意）. High-tech industries such as NASA’s Jet Propulsion Laboratory have found that their best overall problem solvers were master tinkerers in their youth.",
+    "There are cognitive（认知的） benefits of doing things the way we did as children—building something, tearing it down, then building it up again. Research shows that given 15 minutes of free play, four- and five-year-olds will spend a third of this time engaged in spatial, mathematical, and architectural activities. This type of play—especially with building blocks—helps children discover and develop key principles in math and geometry.",
+    "If play and building are critical to 21st-century skill development, that’s really good news for two reasons:Children are born builders, makers, and creators, so fostering（培养） 21st-century skills may be as simple as giving kids room to play, tinker and try things out, even as they grow older. Secondly, it doesn’t take 21st-century technology to foster 21st-century skills. This is especially important for under-resourced schools and communities. Taking whatever materials are handy and tinkering with them is a simple way to engage those important “maker” skills. And anyone, anywhere, can do it."
+  ],
+  "questionsOne": [
+    {
+      "Number": 46,
+      "Statement": "What does the author say about educators?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They seek advice from technology companies to achieve teaching goals."
+        },
+        {
+          "key": "B",
+          "text": "They have been successful in preparing the workforce for companies."
+        },
+        {
+          "key": "C",
+          "text": "They help students acquire the skills needed for their future success."
+        },
+        {
+          "key": "D",
+          "text": "They partner with technology companies to enhance teaching efficiency."
+        }
+      ]
+    },
+    {
+      "Number": 47,
+      "Statement": "How can educators better develop students’ STEM skills, according to the author?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "By blending them with traditional, stimulating activities."
+        },
+        {
+          "key": "B",
+          "text": "By inviting business leaders to help design curriculums."
+        },
+        {
+          "key": "C",
+          "text": "By enhancing students’ ability to think in a critical way."
+        },
+        {
+          "key": "D",
+          "text": "By showing students the best way to learn is through play."
+        }
+      ]
+    },
+    {
+      "Number": 48,
+      "Statement": "How do children acquire the skills needed for the 2lst century?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "By engaging in activities involving specific technologies."
+        },
+        {
+          "key": "B",
+          "text": "By playing with things to solve problems on their own."
+        },
+        {
+          "key": "C",
+          "text": "By familiarizing themselves with high-tech gadgets."
+        },
+        {
+          "key": "D",
+          "text": "By mastering basic principles through teamwork."
+        }
+      ]
+    },
+    {
+      "Number": 49,
+      "Statement": "What can we do to help children learn the basics of math and geometry?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Stimulate their interest as early as possible."
+        },
+        {
+          "key": "B",
+          "text": "Spend more time playing games with them."
+        },
+        {
+          "key": "C",
+          "text": "Encourage them to make things with hands."
+        },
+        {
+          "key": "D",
+          "text": "Allow them to tinker freely with calculators."
+        }
+      ]
+    },
+    {
+      "Number": 50,
+      "Statement": "What does the author advise disadvantaged schools and communities to do?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Train students to be makers to meet future market demands."
+        },
+        {
+          "key": "B",
+          "text": "Develop students’ creative skills with the resources available."
+        },
+        {
+          "key": "C",
+          "text": "Engage students with challenging tasks to foster their creativity."
+        },
+        {
+          "key": "D",
+          "text": "Work together with companies to improve their teaching facilities."
+        }
+      ]
+    }
+  ],
+  "passagesTwo": [
+    "Being an information technology, or IT, worker is not a job I envy. They are the ones who, right in the middle of a critical meeting, are expected to instantly fix the projector that’s no longer working. They have to tolerate the bad tempers of colleagues frustrated at the number of times they’ve had to call the help desk for the same issue. They are also the ones who know there are systems that are more powerful, reliable and faster, but their employer simply will not put up the funds to buy them.",
+    "According to a recent survey, employees who have a job reliant on IT support consider IT a major source of job dissatisfaction. Through no fault of their own, they can suddenly find their productivity deteriorating or quality control non-existent. And there’s little they can do about it.",
+    "The experience of using IT penetrates almost the entire work field. It has become a crucial part of employees’ overall work experience. When IT is operating as it should, employee self-confidence swells. Their job satisfaction, too, can surge when well-functioning machines relieve them of dull tasks or repetitive processes. But if there’s one thing that triggers widespread employee frustration, it’s an IT transformation project gone wrong, where swollen expectations have been popped and a long list of promised efficiencies have been reversed. This occurs when business leaders implement IT initiatives with little consideration of how those changes will impact the end user.",
+    "Which is why managers should appreciate just how influential the IT user experience is to their employees, and exert substantial effort in ensuring their IT team eliminates programming errors and application crashes. Adequate and timely IT support should also be available to enable users to cope with technological issues at work. More importantly, IT practitioners need to understand what employees experience mentally when they use IT.",
+    "Therefore, businesses need to set up their IT infrastructure so that it is designed to fit in with their employees’ work, rather than adjust their work to fit in with the company’s IT limitations."
+  ],
+  "questionsTwo": [
+    {
+      "Number": 51,
+      "Statement": "What does the author say about working in IT?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "It is envied by many."
+        },
+        {
+          "key": "B",
+          "text": "It does not appeal to him."
+        },
+        {
+          "key": "C",
+          "text": "It is financially rewarding."
+        },
+        {
+          "key": "D",
+          "text": "It does not match his abilities."
+        }
+      ]
+    },
+    {
+      "Number": 52,
+      "Statement": "What is the finding of a recent survey on employees who have a job reliant on IT support?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "IT helps boost productivity."
+        },
+        {
+          "key": "B",
+          "text": "IT helps improve quality control."
+        },
+        {
+          "key": "C",
+          "text": "Many employees are deeply frustrated by IT."
+        },
+        {
+          "key": "D",
+          "text": "Most employees rely heavily on IT in their work."
+        }
+      ]
+    },
+    {
+      "Number": 53,
+      "Statement": "What is said to happen when IT is functioning properly?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "There is a big boost in employees’ work efficiency."
+        },
+        {
+          "key": "B",
+          "text": "Employees become more dependent on machines."
+        },
+        {
+          "key": "C",
+          "text": "There are no longer any boring or repetitive tasks."
+        },
+        {
+          "key": "D",
+          "text": "Employees become more confident in their work."
+        }
+      ]
+    },
+    {
+      "Number": 54,
+      "Statement": "What should business leaders do before implementing new IT initiatives?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Consider the various expectations of their customers."
+        },
+        {
+          "key": "B",
+          "text": "Draw up a list of the efficiencies to be promised."
+        },
+        {
+          "key": "C",
+          "text": "Assess the swollen cost of training the employees."
+        },
+        {
+          "key": "D",
+          "text": "Think about the possible effects on their employees."
+        }
+      ]
+    },
+    {
+      "Number": 55,
+      "Statement": "How can a business help improve its employees’ experience in using IT?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "By designing systems that suit their needs."
+        },
+        {
+          "key": "B",
+          "text": "By ensuring that their mental health is sound."
+        },
+        {
+          "key": "C",
+          "text": "By adjusting their work to suit the IT system."
+        },
+        {
+          "key": "D",
+          "text": "By offering them regular in-service training."
+        }
+      ]
+    }
+  ]
+}
