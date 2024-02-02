@@ -1,0 +1,242 @@
+{
+  "title": "Section C",
+  "passagesOne": [
+    "Online classes began to be popularized just a few decades ago. They are advertised as a way for adults to finish their education and students to learn the material at their own pace—it is far more compatible for people with busy schedules.",
+    "But after being enrolled in an online course last fall semester, I came to realize online classes were merely a means to fulfil course requirements.",
+    "First of all, students lack the desire to learn, and they simply complete their assignments to receive credit for a passing grade rather than genuinely engage with the course material. As online courses tend to have more than 100 students, most of the assignments are short and simple. They are not designed for students to interact with the material in depth but designed to be graded easily to accommodate such a large number of students.",
+    "Perhaps the biggest disadvantage of taking an online class is the absence of face-to-face interaction between the teacher and their students. Live sessions are infrequent and are often scheduled during the middle of the day when students have to attend other classes or work. The office hours of the professor may also be during inconvenient times for many students as well. Most interaction with the professor has to be through email which is often impersonal. It is nearly impossible for students to build a relationship with their professor.",
+    "There is also little interaction amongst students. It can be harder for students to create study groups and form relationships with their peers.",
+    "Online classes also require either a computer or laptop and a reliable internet connection. Not all students have access to these types of resources, whether it is for financial or other reasons, and some students can be put at a disadvantage.",
+    "Offering online classes certainly helps students who would otherwise not be able to attend classroom sessions. However, they fail to provide a genuine education with an emphasis on convenience rather than critical thinking. We need restructured online classes in which students can have a learning experience that will actually provide quality education."
+  ],
+  "questionsOne": [
+    {
+      "Number": 46,
+      "Statement": "What does the author say about students enrolled in online classes?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They can access course materials easily."
+        },
+        {
+          "key": "B",
+          "text": "They are unmotivated to learn."
+        },
+        {
+          "key": "C",
+          "text": "They can learn at their own pace."
+        },
+        {
+          "key": "D",
+          "text": "They rarely fulfil the course requirements."
+        }
+      ]
+    },
+    {
+      "Number": 47,
+      "Statement": "What does the author think of online course assignments?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They are made convenient to mark."
+        },
+        {
+          "key": "B",
+          "text": "They are meant to facilitate interaction."
+        },
+        {
+          "key": "C",
+          "text": "They are based on easily accessible material."
+        },
+        {
+          "key": "D",
+          "text": "They are given to accommodate students’ needs."
+        }
+      ]
+    },
+    {
+      "Number": 48,
+      "Statement": "What does the author say is one disadvantage of online classes?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They are frequently scheduled at irregular times."
+        },
+        {
+          "key": "B",
+          "text": "They make professors’ offices much less accessible."
+        },
+        {
+          "key": "C",
+          "text": "They tend to increase professors’ burden of responding to students’ emails."
+        },
+        {
+          "key": "D",
+          "text": "They provide little chance for students to build relationships with each other."
+        }
+      ]
+    },
+    {
+      "Number": 49,
+      "Statement": "What problem may arise if classes go online?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "More students may find it easy to be absent from them."
+        },
+        {
+          "key": "B",
+          "text": "Teachers will worry about poor internet connections."
+        },
+        {
+          "key": "C",
+          "text": "Some students may have difficulty attending them."
+        },
+        {
+          "key": "D",
+          "text": "Schools with limited resources will be at a disadvantage."
+        }
+      ]
+    },
+    {
+      "Number": 50,
+      "Statement": "What does the author think constitutes a key part of genuine education?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Acquisition of useful knowledge."
+        },
+        {
+          "key": "B",
+          "text": "Training of real-life skills on campus."
+        },
+        {
+          "key": "C",
+          "text": "Development of students’ personalities."
+        },
+        {
+          "key": "D",
+          "text": "Cultivation of analytical thinking ability."
+        }
+      ]
+    }
+  ],
+  "passagesTwo": [
+    "In the age of the internet, there’s no such thing as a private debate. But is that bad for science? Some scientists have had concerns. When debates in any sector move beyond the halls of universities and government agencies, there’s potential for information to be used incorrectly, leading to public confusion; yet, open debate can also promote communication between the scientific community and the public. Recent open debates on scientific research, health, and policy have aroused greater public attention and encouraged more diverse voices. If this trend spurs scientists to agree more quickly about the best solutions to our problems—and at the same time helps the public observe the process of scientific discourse more clearly—then this is good for everyone, including scientists.",
+    "A recent debate published in The New York Times discussed the question of how quickly medicine should be developed and produced. Issues such as safety of the product and perception of the public were examined and considered. But some experts worried that such public speculation might lead people to believe that disagreement about the details meant a lack of adequate scientific consensus over the safety and efficiency of modern-day medicine.",
+    "The anxiety seems misplaced. Gone are the days of going to a conference and debating scientific issues, and that’s good because those gatherings were not diverse enough and excluded many important voices. These days, the public can access debates about science regardless of where they take place.",
+    "For many scientists, public debate is a new frontier and it may feel like a place with few restraints or rules, but rather than avoiding such conversations, let the debates be transparent and vigorous, wherever they are held. If the public is to understand that science is an honorably self-correcting process, the idea that science is a fixed set of facts in a textbook needs to be dismissed. With the validity of science coming under attack, there’s a need for scientific debates to be perceived as open and true to life. Let everyone see the noisy, messy deliberations that advance science and lead to decisions that benefit us all."
+  ],
+  "questionsTwo": [
+    {
+      "Number": 51,
+      "Statement": "What does the author think open debate can do?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Help the public to better understand science."
+        },
+        {
+          "key": "B",
+          "text": "Clear up confusion in the scientific community."
+        },
+        {
+          "key": "C",
+          "text": "Settle disputes between universities and government agencies."
+        },
+        {
+          "key": "D",
+          "text": "Prevent information from being used incorrectly by the public."
+        }
+      ]
+    },
+    {
+      "Number": 52,
+      "Statement": "Why did a recent debate published in The New York Times arouse concerns among experts?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "It might hinder the progress in medical research."
+        },
+        {
+          "key": "B",
+          "text": "It might breed public distrust in modern medicine."
+        },
+        {
+          "key": "C",
+          "text": "It might add to the difficulty of getting research funds."
+        },
+        {
+          "key": "D",
+          "text": "It might prevent medical scientists reaching consensus."
+        }
+      ]
+    },
+    {
+      "Number": 53,
+      "Statement": "Why does the author say some experts’ anxiety seems misplaced?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Debating scientific issues at a conference is now old-fashioned."
+        },
+        {
+          "key": "B",
+          "text": "Diverse topics can be debated by both scientists and the public."
+        },
+        {
+          "key": "C",
+          "text": "Debates about science are accessible to the public anyway."
+        },
+        {
+          "key": "D",
+          "text": "Scientists can voice their opinions whatever way they like."
+        }
+      ]
+    },
+    {
+      "Number": 54,
+      "Statement": "What does the author suggest scientists do about public debate?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Have more discussions about it."
+        },
+        {
+          "key": "B",
+          "text": "Embrace it with open arms."
+        },
+        {
+          "key": "C",
+          "text": "Formulate new rules for it."
+        },
+        {
+          "key": "D",
+          "text": "Restrain it to a rational degree."
+        }
+      ]
+    },
+    {
+      "Number": 55,
+      "Statement": "What does the author say about science in the last paragraph?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "It is transmitted through textbooks."
+        },
+        {
+          "key": "B",
+          "text": "It is what proves valid and true to life."
+        },
+        {
+          "key": "C",
+          "text": "It is a dynamic and self-improving process."
+        },
+        {
+          "key": "D",
+          "text": "It is a collection of facts and established rules."
+        }
+      ]
+    }
+  ]
+}

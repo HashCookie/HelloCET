@@ -1,0 +1,69 @@
+{
+  "title": "Section B",
+  "passageTitle":"Fake holiday villa websites prompt warning",
+  "passages": [
+    "A) During the British winter, the thought of two weeks in a coastal villa（别墅）with soul-stirring views of the sea and a huge pool to enjoy is enough to offset（抵消）the labor until the holidays start. For a growing number of people, however, their yearly break is turning into a nightmare as they find that the property they have paid thousands for does not exist and the website through which they booked it has disappeared.",
+    "B) Consumers have been warned to be aware of the potential for deception in this market, which is far from uncommon. In 2017 there were 1,632 cases of reported 'villa fraud（诈骗）', with victims losing an average of £ 2,052, according to Action Fraud, the national center for reporting such frauds. 'Millions of pounds are lost each year by defrauded holiday makers,' says Sean Tipton of the Association of British Travel Agents （ABTA）.",
+    "C) The problem has ballooned in the last 10 years, with frauds becoming more and more sophisticated. The fake websites have authentic-sounding names involving a mix of key words, typically including the place name,'summer', 'villas' or 'rentals'. Details of legitimate（合法的）villas are often stolen from other sites. 'When the fraudsters first started it was unsophisticated—the websites looked amateur and there wasn't a lot of effort,' says Tipton. 'Now they are clever. They extensively rip off legitimate websites and use a different website name. They '1l have pictures of a sales team and it might be a poor actor in New York that is down as their head of sales.'",
+    "D) Fraudsters target popular seaside destinations for British tourists visiting Spain where prices can soar if demand exceeds supply. Prices are kept within reasonable ranges to avoid arousing suspicion. 'A villa might cost £ 5,000 elsewhere and they will offer it at say £ 3,500. But a bit of a giveaway is that the villa will be cheaper than on other websites and there's unlimited availability,' says Tipton. Fraudsters also invest in pay-per-click advertising to feature at the top of search engines when people type in phrases such as 'Spanish seaside villas'.",
+    "E) With such a degree of professionalism, how can consumers find out if the website they're looking to book with is trustworthy? 'When people book holiday villas they are doing so through rose-colored glasses,' says Tony Neate, chief executive of Get Safe Online, 'They should be Googling the property, and looking on websites like Google Maps and StreetView to see if it's there. Also, speak to the person you're booking the villa with on a landline phone, as fraudsters tend to only use mobiles.' He also suggests asking someone not going on the holiday to have a look at the website. 'They might spot problems you don't spot.' Another potential red flag is being asked to pay by bank transfer. 'The problem is that when the money leaves your account it's in theirs straightaway and it's very hard to track it,' says Barclays Bank head of digital safety, Jodie Gilbert. 'We generally recommend other forms of payment, like credit card.'",
+    "F) Little seems to be known about these fraudsters, 'There is no way to definitely know who they are,' says Neate. 'It could be anyone. It could be your next-door neighbor or organized crime in Russia.'Action Fraud says people should ensure the company renting the villa is a member of a recognized trade body such as ABTA.",
+    "G) By working with industry partners such as ABTA and Get Safe Online, we are able to issue alerts about the latest threats they should be aware of. If you believe you have fallen victim to fraud or cyber-crime, please report it to Action Fraud,' it adds. ABTA says it is trying to combat the issue by running public awareness campaigns. 'It's a growing problem and people can't stop fraudsters being dishonest,'says Tipton. 'They're still going to do it. It's not impossible to stop but as it's internet-based it's harder to pursue.'",
+    "H) Nick Cooper, the founder and co-owner of villa booking company Villa Plus, estimates his company has uncovered more than 200 fake villa websites over the past two years, and doesn't believe enough is being done. 'It is hopeless to report fake villa websites to the interet giants who host them,' he says. '1 found it impossible to speak to anyone. Also, once one bank account gets reported, they simply use another.'",
+    "I) For now the only way to stop fraudsters appears ultimately to lie in the hands of the consumer. 'When people book their holidays they get so emotionally involved, and when they find that villa at a good price with availability in peak season, they are an easy target.' says Cooper. 'The public has to learn to be far more aware they are a target for these sort of frauds' But it's not just the financial cost. 'A family will turn up at a villa and find out it doesn't exist or the owner doesn't know who you are,' says Tipton. 'The problem then is you have to find accommodation at short notice. It can be incredibly expensive but it's the emotional cost, too.'",
+    "J) Carla O'Shaughnessy from Sydenham was searching last year for a good deal to book a villa in Majorca for a summer break for the family. 'I was comparing prices online and found one that came in a bit cheaper than others,' says O'Shaughnessy. She emailed the company via its website, asking how far the villa was from the airport and about local restaurants. 'They came back with believable answers; it was all very friendly and professional,' she says. Happy with the responses, O'Shaughnessy paid the full amount of £3,000 via bank transfer into the travel agent's account and then forgot about it until a month before the booking.",
+    "K) I tried logging on to the website and couldn't, she recalls. 'I Googled the agent's name and there were lots of complaints about him being a fraudster. If only I'd Googled before but I never thought of it.' Although she found another villa in time for their holiday, she admits she was much more cautious. 'I paid through a secure third-party site and had phone conversations with the agent. But I wasn't able to relax until we turned up and I had the keys.'"
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "Fraudsters often steal villa-booking information from authentic holiday websites.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 37,
+      "Statement": "Fraudsters keep changing their bank accounts to avoid being tracked.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 38,
+      "Statement": "It is suggested that people not going on the holiday might help detect website frauds.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 39,
+      "Statement": "More and more British holidaymakers find the seaside villas they booked online actually nonexistent.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 40,
+      "Statement": "By checking an agent's name online before booking a villa, holidaymakers can avoid falling into traps.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 41,
+      "Statement": "Fraudsters are difficult to identify, according to an online safety expert.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 42,
+      "Statement": "Holidaymakers have been alerted to the frequent occurrence of online villa-booking frauds.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 43,
+      "Statement": "It is holidaymakers that can protect themselves from falling victim to frauds.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 44,
+      "Statement": "Holidaymakers are advised not to make payments by bank transfer.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    },
+    {
+      "Number": 45,
+      "Statement": "Fraudsters advertise their villas at reasonable prices so as not to be suspected.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+    }
+  ]
+}

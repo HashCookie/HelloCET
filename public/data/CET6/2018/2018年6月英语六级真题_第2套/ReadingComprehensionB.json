@@ -1,0 +1,70 @@
+{
+  "title": "Section B",
+  "passageTitle": "Peer Pressure Has a Positive Side",
+  "passages": [
+    "A) Parents of teenagers often view their children’s friends with something like suspicion. They worry that the adolescent peer group has the power to push its members into behavior that is foolish and even dangerous. Such wariness is well founded: statistics show, for example, that a teenage driver with a same-age passenger in the car is at higher risk of a fatal crash than an adolescent driving alone or with an adult.",
+    "B) In a 2005 study, psychologist Laurence Steinberg of Temple University and his co-author, psychologist Margo Gardner, then at Temple, divided 306 people into three age groups: young adolescents, with a mean age of 14; older adolescents, with a mean age of 19; and adults, aged 24 and older. Subjects played a computerized driving game in which the player must avoid crashing into a wall that materializes, without warning, on the roadway. Steinberg and Gardner randomly assigned some participants to play alone or with two same-age peers looking on.",
+    "C) Older adolescents scored about 50 percent higher on an index of risky driving when their peers were in the room—and the driving of early adolescents was fully twice as reckless when other young teens were around. In contrast, adults behaved in similar ways regardless of whether they were on their own or observed by others. “The presence of peers makes adolescents and youth, but not adults, more likely to take risks,” Steinberg and Gardner concluded.",
+    "D) Yet in the years following the publication of this study, Steinberg began to believe that this interpretation did not capture the whole picture. As he and other researchers examined the question of why teens were more apt to take risks in the company of other teenagers, they came to suspect that a crowd’s influence need not always be negative. Now some experts are proposing that we should take advantage of the teen brain’s keen sensitivity to the presence of friends and leverage it to improve education.",
+    "E) In a 2011 study, Steinberg and his colleagues turned to functional MRI（磁共振）to investigate how the presence of peers affects the activity in the adolescent brain. They scanned the brains of 40 teens and adults who were playing a virtual driving game designed to test whether players would brake at a yellow light or speed on through the crossroad.",
+    "F) The brains of teenagers, but not adults, showed greater activity in two regions associated with rewards when they were being observed by same-age peers than when alone. In other words, rewards are more intense for teens when they are with peers, which motivates them to pursue higher-risk experiences that might bring a big payoff (such as the thrill of just making the light before it turns red). But Steinberg suspected this tendency could also have its advantages. In his latest experiment, published online in August, Steinberg and his colleagues used a computerized version of a card game called the Iowa Gambling Task to investigate how the presence of peers affects the way young people gather and apply information.",
+    "G) The results: Teens who played the Iowa Gambling Task under the eyes of fellow adolescents engaged in more exploratory behavior, learned faster from both positive and negative outcomes, and achieved better performance on the task than those who played in solitude. “What our study suggests is that teenagers learn more quickly and more effectively when their peers are present than when they’re on their own,” Steinberg says. And this finding could have important implications for how we think about educating adolescents.",
+    "H) Matthew D. Lieberman, a social cognitive neuroscientist at the University of California, Los Angeles, and author of the 2013 book Social: Why Our Brains Are Wired to Connect, suspects that the human brain is especially skillful at learning socially significant information. He points to a classic 2004 study in which psychologists at Dartmouth College and Harvard University used functional MRI to track brain activity in 17 young men as they listened to descriptions of people while concentrating on either socially relevant cues (for example, trying to form an impression of a person based on the description) or more socially neutral information (such as noting the order of details in the description). The descriptions were the same in each condition, but people could better remember these statements when given a social motivation.",
+    "I) The study also found that when subjects thought about and later recalled descriptions in terms of their informational content, regions associated with factual memory, such as the medial temporal lobe, became active. But thinking about or remembering descriptions in terms of their social meaning activated the dorsomedial prefrontal cortex—part of the brain’s social network—even as traditional memory regions registered low levels of activity. More recently, as he reported in a 2012 review, Lieberman has discovered that this region may be part of a distinct network involved in socially motivated learning and memory. Such findings, he says, suggest that “this network can be called on to process and store the kind of information taught in school—potentially giving students access to a range of untapped mental powers.”",
+    "J) If humans are generally geared to recall details about one another, this pattern is probably even more powerful among teenagers who are very attentive to social details: who is in, who is out, who likes whom, who is mad at whom. Their desire for social drama is not—or not only—a way of distracting themselves from their schoolwork or of driving adults crazy. It is actually a neurological（神经的）sensitivity, initiated by hormonal changes. Evolutionarily speaking, people in this age group are at a stage in which they can prepare to find a mate and start their own family while separating from parents and striking out on their own. To do this successfully, their brain prompts them to think and even obsess about others.",
+    "K) Yet our schools focus primarily on students as individual entities. What would happen if educators instead took advantage of the fact that teens are powerfully compelled to think in social terms? In Social, Lieberman lays out a number of ways to do so. History and English could be presented through the lens of the psychological drives of the people involved. One could therefore present Napoleon in terms of his desire to impress or Churchill in terms of his lonely gloom. Less inherently interpersonal subjects, such as math, could acquire a social aspect through team problem solving and peer tutoring. Research shows that when we absorb information in order to teach it to someone else, we learn it more accurately and deeply, perhaps in part because we are engaging our social cognition.",
+    "L) And although anxious parents may not welcome the notion, educators could turn adolescent recklessness to academic ends. “Risk taking in an educational context is a vital skill that enables progress and creativity,” wrote Sarah-Jayne Blakemore, a cognitive neuroscientist at University College London, in a review published last year. Yet, she noted, many young people are especially unwilling to take risks at school—afraid that one low test score or poor grade could cost them a spot at a selective university. We should assure such students that risk, and even peer pressure, can be a good thing—as long as it happens in the classroom and not in the car."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "It is thought probable that the human brain is particularly good at picking up socially important information.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 37,
+      "Statement": "It can be concluded from experiments that the presence of peers increases risk-taking by adolescents and youth.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 38,
+      "Statement": "Students should be told that risk-taking in the classroom can be something positive.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 39,
+      "Statement": "The urge of finding a mate and getting married accounts for adolescents’ greater attention to social interactions.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 40,
+      "Statement": "According to Steinberg, the presence of peers increases the speed and effectiveness of teenagers’ learning.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 41,
+      "Statement": "Teenagers’ parents are often concerned about negative peer influence.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 42,
+      "Statement": "Activating the brain’s social network involved in socially motivated learning and memory may allow students to tap unused mental powers.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 43,
+      "Statement": "The presence of peers intensifies the feeling of rewards in teens’ brains.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 44,
+      "Statement": "When we absorb information for the purpose of imparting it to others, we do so with greater accuracy and depth.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    },
+    {
+      "Number": 45,
+      "Statement": "Some experts are suggesting that we turn peer influence to good use in education.",
+      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+    }
+  ]
+}
