@@ -1,0 +1,246 @@
+{
+    "title": "Section C",
+    "passagesOne": [
+        "A growing number of U.S. bike riders are attracted to electric bikes for convenience, health benefits and their fun factor. Although ebikes first appeared in the 90s, cheaper options and longer-lasting batteries are breathing new life into the concept.",
+        "Established bike companies and startups are embracing ebikes to meet demand. About 34 million ebikes were sold worldwide last year, according to data from eCycleElectric Consultants. Most were sold in Europe and China, where the bikes already have exploded in popularity. Recently, the U.S. market has grown to 263,000 bikes, a 25% gain from the prior year.",
+        "The industry is benefiting from improved batteries as suppliers over the years developed technology for laptops, smartphones and electric cars. In 2004, the price of batteries used on ebikes fell, spurring European sales.",
+        "But lower cost options are emerging, too. This month, three U.S. bikeshare companies, Motivate, LimeBike and Spin, announced electric bicycles will be added to their fleets. New York-based Jump Bikes is already operating an electric bikeshare in Washington, D.C., and is launching in San Francisco Thursday. Rides cost $2 for 30 minutes.",
+        "The system works like existing dockless bikeshare systems, where riders unlock bikes through a smartphone app. “This is the beginning of a long-term shift away from regular pedal (踏板) to electric bikes,” said Jump Bikes CEO Ryan Rzepecki. “When people first jump on an ebike, their face lights up. It's exciting and joyful in a way that you don't get from a regular bike.”",
+        "Two years ago, CEO Chris Cocalis of Pivot Cycles, which sells high-end mountain bikes, found that U.S. bike shops weren't interested in stocking ebikes. Some retailers warned Cocalis that they'd drop the brand if it came out with an electric bike.",
+        "Now that sales are taking off, the vast majority of bike dealers are asking Cocalis when he'll make an ebike available. “There's tremendous opportunity to get a generation of people for whom suffering isn't their thing,” Cocalis said. “Ebike riders get the enjoyable part of cycling without the massive suffering of climbing huge hills.”"
+    ],
+    "questionsOne": [
+        {
+            "Number": 46,
+            "Statement": "What do we learn from the passage about ebikes?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Their health benefits and fun values outweigh their cost."
+                },
+                {
+                    "key": "B",
+                    "text": "They did not catch public attention in the United States until the 1990s."
+                },
+                {
+                    "key": "C",
+                    "text": "They did not become popular until the emergence of improved batteries."
+                },
+                {
+                    "key": "D",
+                    "text": "Their widespread use is attributable to people's environmental awareness."
+                }
+            ]
+        },
+        {
+            "Number": 47,
+            "Statement": "What brought about the boost in ebike sales in Europe at the beginning of the century?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Updated technology of bike manufacture."
+                },
+                {
+                    "key": "B",
+                    "text": "The falling prices of ebike batteries."
+                },
+                {
+                    "key": "C",
+                    "text": "Changed fashion in short-distance travel."
+                },
+                {
+                    "key": "D",
+                    "text": "The rising costs for making electric cars."
+                }
+            ]
+        },
+        {
+            "Number": 48,
+            "Statement": "What is the prospect of the bike industry according to Ryan Rzepecki?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "More will be invested in bike battery research."
+                },
+                {
+                    "key": "B",
+                    "text": "The sales of ebikes will increase."
+                },
+                {
+                    "key": "C",
+                    "text": "It will profit from ebike sharing."
+                },
+                {
+                    "key": "D",
+                    "text": "It will make a difference in people's daily lives."
+                }
+            ]
+        },
+        {
+            "Number": 49,
+            "Statement": "What prevented Chris Cocalis from developing ebikes sooner?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Retailers' refusal to deal in ebikes."
+                },
+                {
+                    "key": "B",
+                    "text": "High profits from conventional bikes."
+                },
+                {
+                    "key": "C",
+                    "text": "Users' concern about risks of ebike riding."
+                },
+                {
+                    "key": "D",
+                    "text": "His focus on selling costly mountain bikes."
+                }
+            ]
+        },
+        {
+            "Number": 50,
+            "Statement": "What makes Chris Cocalis believe there is a greater opportunity for ebike sales?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "The further lowering of ebike prices."
+                },
+                {
+                    "key": "B",
+                    "text": "The public's concern for their health."
+                },
+                {
+                    "key": "C",
+                    "text": "The increasing interest in mountain climbing."
+                },
+                {
+                    "key": "D",
+                    "text": "The younger generation's pursuit of comfortable riding."
+                }
+            ]
+        }
+    ],
+    "passagesTwo": [
+        "The terms “global warming” and “climate change” are used by many, seemingly interchangeably. But do they really mean the same thing?",
+        "Scientists shaped the history of the terms while attempting to accurately describe how humans continue to alter the planet. Later, political strategists adopted the terms to influence public opinion.",
+        "In 1975, geochemist Wallace Broecker introduced the term “climate change” in an article published by Science. In 1979, a National Academy of Sciences report used the term “global warming” to define increases in the Earth's average surface temperature, while “climate change” more broadly referred to the numerous effects of this increase, such as sea-level rise and ocean acidification (酸化).",
+        "During the following decades, some industrialists and politicians launched a campaign to sow doubt in the minds of the American public about the ability of fossil-fuel use, deforestation and other human activities to influence the planet's climate.",
+        "Word use played a critical role in developing that doubt. For example, the language and polls expert Frank Luntz wrote a memo encouraging the use of “climate change” because the phrase sounded less scary than “global warming,” reported the Guardian.",
+        "However, Luntz's recommendation wasn't necessary. A Google Ngram Viewer chart shows that by 1993 climate change was already more commonly used in books than global warming. By the end of the next decade both words were used more frequently, and climate change was used nearly twice as often as global warming.",
+        "NASA used the term “climate change” because it more accurately reflects the wide range of changes to the planet caused by increasing amounts of greenhouse gases in the atmosphere.",
+        "The debate isn't new. A century ago, chemist Svante Arrhenius started one of the first debates over the potential for humans to influence the planet's climate. Arrhenius calculated the capability of carbon dioxide to trap heat in the Earth's atmosphere, but other chemists disagreed. Some argued that humans weren't producing enough greenhouse gases, while others claimed the effects would be tiny. Now, of course, we know that whatever you call it, human behavior is warming the planet, with grave consequences ahead."
+    ],
+    "questionsTwo": [
+        {
+            "Number": 51,
+            "Statement": "Why did politicians use the two terms “global warming” and “climate change”?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To sway public opinion of the impact of human activities on Earth."
+                },
+                {
+                    "key": "B",
+                    "text": "To more accurately describe the consequences of human activities."
+                },
+                {
+                    "key": "C",
+                    "text": "To win more popular votes in their campaign activities."
+                },
+                {
+                    "key": "D",
+                    "text": "To assure the public of the safety of existing industries."
+                }
+            ]
+        },
+        {
+            "Number": 52,
+            "Statement": "As used in a National Academy of Sciences report, the term “climate change” differs from “global warming” in that ______.",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "it sounds less vague"
+                },
+                {
+                    "key": "B",
+                    "text": "it looks more scientific"
+                },
+                {
+                    "key": "C",
+                    "text": "it covers more phenomena"
+                },
+                {
+                    "key": "D",
+                    "text": "it is much closer to reality"
+                }
+            ]
+        },
+        {
+            "Number": 53,
+            "Statement": "What did industrialists of the late 20th century resort to in order to mislead Americans?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Made-up survey results."
+                },
+                {
+                    "key": "B",
+                    "text": "Hired climate experts."
+                },
+                {
+                    "key": "C",
+                    "text": "False research findings."
+                },
+                {
+                    "key": "D",
+                    "text": "Deliberate choice of words."
+                }
+            ]
+        },
+        {
+            "Number": 54,
+            "Statement": "Why did NASA choose the term “climate change”?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "To obtain more funds."
+                },
+                {
+                    "key": "B",
+                    "text": "For greater precision."
+                },
+                {
+                    "key": "C",
+                    "text": "For political needs."
+                },
+                {
+                    "key": "D",
+                    "text": "To avoid debate."
+                }
+            ]
+        },
+        {
+            "Number": 55,
+            "Statement": "What is the author's final conclusion?",
+            "Options": [
+                {
+                    "key": "A",
+                    "text": "Global warming is the more accurate term."
+                },
+                {
+                    "key": "B",
+                    "text": "Accuracy of terminology matters in science."
+                },
+                {
+                    "key": "C",
+                    "text": "Human activities have serious effects on Earth."
+                },
+                {
+                    "key": "D",
+                    "text": "Politics interferes with serious scientific debate."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+  "questions": [
+    {
+      "number": 1,
+      "options": {
+        "A": "It can benefit professionals and non-professionals alike.",
+        "B": "It lists the various challenges physicists are confronting.",
+        "C": "It describes how some mysteries of physics were solved.",
+        "D": "It is one of the most fascinating physics books ever written."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "Physicists’ contribution to humanity.",
+        "B": "Stories about some female physicists.",
+        "C": "Historical evolution of modern physics.",
+        "D": "Women’s changing attitudes to physics."
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "By exposing a lot of myths in physics.",
+        "B": "By describing her own life experiences.",
+        "C": "By including lots of fascinating knowledge.",
+        "D": "By telling anecdotes about famous professors."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "It avoids detailing abstract concepts of physics.",
+        "B": "It contains a lot of thought-provoking questions.",
+        "C": "It demonstrates how they can become physicists.",
+        "D": "It provides experiments they can do themselves."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "He is too busy to finish his assignment in time.",
+        "B": "He does not know what kind of topic to write on.",
+        "C": "He does not understand the professor’s instructions.",
+        "D": "He has no idea how to proceed with his dissertation."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "It is too broad.",
+        "B": "It is outdated.",
+        "C": "It is challenging.",
+        "D": "It is interesting."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "Biography.",
+        "B": "Nature.",
+        "C": "Photography.",
+        "D": "Beauty."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "Improve his cumulative grade.",
+        "B": "Develop his reading ability.",
+        "C": "Stick to the topic assigned.",
+        "D": "List the parameters first."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "The unprecedented high temperature in Greenland.",
+        "B": "The collapse of ice on the northern tip of Greenland.",
+        "C": "The unusual cold spell in the Arctic area in October.",
+        "D": "The rapid change of Arctic temperature within a day."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "It has created a totally new climate pattern.",
+        "B": "It will pose a serious threat to many species.",
+        "C": "It typically appears about once every ten years.",
+        "D": "It has puzzled the climate scientists for decades."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Extinction of Arctic wildlife.",
+        "B": "Iceless summers in the Arctic.",
+        "C": "Emigration of indigenous people.",
+        "D": "Better understanding of ecosystems."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "A good start.",
+        "B": "A detailed plan.",
+        "C": "A strong determination.",
+        "D": "A scientific approach."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "Most people get energized after a sufficient rest.",
+        "B": "Most people tend to have finite source of energy.",
+        "C": "It is vital to take breaks between demanding mental tasks.",
+        "D": "It is most important to have confidence in one’s willpower."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "They could keep on working longer.",
+        "B": "They could do more challenging tasks.",
+        "C": "They found it easier to focus on work at hand.",
+        "D": "They held more positive attitudes toward life."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "They are part of their nature.",
+        "B": "They are subject to change.",
+        "C": "They are related to culture.",
+        "D": "They are beyond control."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "About half of current jobs might be automated.",
+        "B": "The jobs of doctors and lawyers would be threatened.",
+        "C": "The job market is becoming somewhat unpre-dictable.",
+        "D": "Machine learning would prove disruptive by 2013."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "They are widely applicable for massive open online courses.",
+        "B": "They are now being used by numerous high school teachers.",
+        "C": "They could read as many as 10,000 essays in a single minute.",
+        "D": "They could grade high-school essays just like human teacher."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "It needs instructions throughout the process.",
+        "B": "It does poorly on frequent, high-volume tasks.",
+        "C": "It has to rely on huge amounts of previous data.",
+        "D": "It is slow when it comes to tracking novel things."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "The engineering problems with solar power.",
+        "B": "The generation of steam with the latest technology.",
+        "C": "The importance of exploring new energy sources.",
+        "D": "The theoretical aspects of sustainable energy."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "Drive trains with solar energy.",
+        "B": "Upgrade the city’s train facilities.",
+        "C": "Build a new ten-kilometre railway line.",
+        "D": "Cut down the city’s energy consumption."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "Build a tank for keeping calcium oxide.",
+        "B": "Find a new material for storing energy.",
+        "C": "Recover super-heated steam.",
+        "D": "Collect carbon dioxide gas."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "The lack of supervision by both the nation and local government.",
+        "B": "The impact of the current economic crisis at home and abroad.",
+        "C": "The poor management of day centers and home help services.",
+        "D": "The poor relation between national health and social care services."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "It was mainly provided by voluntary services.",
+        "B": "It mainly caters to the need of the privileged.",
+        "C": "It called for a sufficient number of volunteers.",
+        "D": "It has deteriorated over the past sixty years."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "Their longer lifespans.",
+        "B": "Fewer home helpers available.",
+        "C": "Their preference for private services.",
+        "D": "More of them suffering serious illness."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "They are unable to pay for health services.",
+        "B": "They have long been discriminated against.",
+        "C": "They are vulnerable to illness and diseases.",
+        "D": "They have contributed a great deal to society."
+      }
+    }
+  ]
+}

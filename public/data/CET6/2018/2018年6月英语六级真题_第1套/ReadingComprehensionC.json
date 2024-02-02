@@ -1,0 +1,249 @@
+{
+  "title": "Section C",
+  "passagesOne": [
+    "Human memory is notoriously unreliable. Even people with the sharpest facial-recognition skills can only remember so much.",
+    "It's tough to quantify how good a person is at remembering. No one really knows how many different faces someone can recall, for example, but various estimates tend to hover in the thousands—based on the number of acquaintances a person might have.",
+    "Machines aren't limited this way. Give the right computer a massive database of faces, and it can process what it sees—then recognize a face it's told to find—with remarkable speed and precision. This skill is what supports the enormous promise of facial-recognition software in the 21st century. It's also what makes contemporary surveillance systems so scary.",
+    "The thing is, machines still have limitations when it comes to facial recognition. And scientists are only just beginning to understand what those constraints are. To begin to figure out how computers are struggling, researchers at the University of Washington created a massive database of faces—they call it MegaFace—and tested a variety of facial-recognition algorithms（算法）as they scaled up in complexity. The idea was to test the machines on a database that included up to 1 million different images of nearly 700,000 different people—and not just a large database featuring a relatively small number of different faces, more consistent with what's been used in other research.",
+    "As the databases grew, machine accuracy dipped across the board. Algorithms that were right 95% of the time when they were dealing with a 13,000-image database, for example, were accurate about 70% of the time when confronted with 1 million images. That's still pretty good, says one of the researchers, Ira Kemelmacher-Shlizerman. “Much better than we expected,” she said.",
+    "Machines also had difficulty adjusting for people who look a lot alike—either doppelgangers（长相极相似的人）, whom the machine would have trouble identifying as two separate people, or the same person who appeared in different photos at different ages or in different lighting, whom the machine would incorrectly view as separate people.",
+    "“Once we scale up, algorithms must be sensitive to tiny changes in identities and at the same time invariant to lighting, pose, age,” Kemelmacher-Shlizerman said.",
+    "The trouble is, for many of the researchers who'd like to design systems to address these challenges, massive datasets for experimentation just don't exist—at least, not in formats that are accessible to academic researchers. Training sets like the ones Google and Facebook have are private. There are no public databases that contain millions of faces. MegaFace's creators say it's the largest publicly available facial-recognition dataset out there.",
+    "“An ultimate face recognition algorithm should perform with billions of people in a dataset,” the researchers wrote."
+  ],
+  "questionsOne": [
+    {
+      "Number": 46,
+      "Statement": "Compared with human memory, machines can _________.",
+      "Options": [
+        {
+          "key": "A",
+          "text": "identify human faces more efficiently"
+        },
+        {
+          "key": "B",
+          "text": "tell a friend from a mere acquaintance"
+        },
+        {
+          "key": "C",
+          "text": "store an unlimited number of human faces"
+        },
+        {
+          "key": "D",
+          "text": "perceive images invisible to the human eye"
+        }
+      ]
+    },
+    {
+      "Number": 47,
+      "Statement": "Why did researchers create MegaFace?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "To enlarge the volume of the facial-recognition database."
+        },
+        {
+          "key": "B",
+          "text": "To increase the variety of facial-recognition software."
+        },
+        {
+          "key": "C",
+          "text": "To understand computers’ problems with facial recognition."
+        },
+        {
+          "key": "D",
+          "text": "To reduce the complexity of facial-recognition algorithms."
+        }
+      ]
+    },
+    {
+      "Number": 48,
+      "Statement": "What does the passage say about machine accuracy?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "It falls short of researchers’ expectations."
+        },
+        {
+          "key": "B",
+          "text": "It improves with added computing power."
+        },
+        {
+          "key": "C",
+          "text": "It varies greatly with different algorithms."
+        },
+        {
+          "key": "D",
+          "text": "It decreases as the database size increases."
+        }
+      ]
+    },
+    {
+      "Number": 49,
+      "Statement": "What is said to be a shortcoming of facial-recognition machines?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They cannot easily tell apart people with near-identical appearances."
+        },
+        {
+          "key": "B",
+          "text": "They have difficulty identifying changes in facial expressions."
+        },
+        {
+          "key": "C",
+          "text": "They are not sensitive to minute changes in people’s mood."
+        },
+        {
+          "key": "D",
+          "text": "They have problems distinguishing people of the same age."
+        }
+      ]
+    },
+    {
+      "Number": 50,
+      "Statement": "What is the difficulty confronting researchers of facial-recognition machines?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "No computer is yet able to handle huge datasets of human faces."
+        },
+        {
+          "key": "B",
+          "text": "There do not exist public databases with sufficient face samples."
+        },
+        {
+          "key": "C",
+          "text": "There are no appropriate algorithms to process the face samples."
+        },
+        {
+          "key": "D",
+          "text": "They have trouble converting face datasets into the right format."
+        }
+      ]
+    }
+  ],
+  "passagesTwo": [
+    "There're currently 21.5 million students in America, and many will be funding their college on borrowed money. Given that there's now over $1.3 trillion in student loans on the books, it's pretty clear that many students are far from sensible. The average student's debt upon graduation now approaches $40,000, and as college becomes ever more expensive, calls to make it “free” are multiplying. Even Hillary Clinton says that when it comes to college, “Costs won't be a barrier.”",
+    "But the only way college could be free is if the faculty and staff donated their time, the buildings required no maintenance, and campuses required no utilities. As long as it's impossible to produce something from nothing, costs are absolutely a barrier.",
+    "The actual question we debate is who should pay for people to go to college. If taxpayers are to bear the cost of forgiving student loans, shouldn't they have a say in how their money is used?",
+    "At least taxpayers should be able to decide what students will study on the public dime. If we're going to force taxpayers to foot the bill for college degrees, students should only study those subjects that're of greatest benefit to taxpayers. After all, students making their own choices in this respect is what caused the problem in the first place. We simply don't need more poetry, gender studies, or sociology majors. How do we know which subjects benefit society? Easy.",
+    "Average starting salaries give a clear indication of what type of training society needs its new workers to have. Certainly, there're benefits to a college major beyond the job a student can perform. But if we're talking about the benefits to society, the only thing that matters is what the major enables the student to produce for society. And the value of what the student can produce is reflected in the wage employers are willing to pay the student to produce it.",
+    "A low wage for elementary school teachers, however, doesn't mean elementary education isn't important. It simply means there're too many elementary school teachers already.",
+    "Meanwhile, there're few who're willing and able to perform jobs requiring a petroleum engineering major, so the value of one more of those people is very high.",
+    "So we can have taxpayers pick up students' tuition in exchange for dictating what those students will study. Or we can allow students both to choose their majors and pay for their education themselves. But in the end, one of two things is true:",
+    "Either a college major is worth its cost or it isn't. If yes, taxpayer financing isn't needed. If not, taxpayer financing isn't desirable. Either way, taxpayers have no business paying for students' college education."
+  ],
+  "questionsTwo": [
+    {
+      "Number": 51,
+      "Statement": "What does the author think of college students funding their education through loans?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They only expect to get huge returns."
+        },
+        {
+          "key": "B",
+          "text": "They are acting in an irrational way."
+        },
+        {
+          "key": "C",
+          "text": "They benefit at taxpayers’ expense."
+        },
+        {
+          "key": "D",
+          "text": "They will regret doing so someday."
+        }
+      ]
+    },
+    {
+      "Number": 52,
+      "Statement": "In the author’s opinion, free college education is ______.",
+      "Options": [
+        {
+          "key": "A",
+          "text": "impractical"
+        },
+        {
+          "key": "B",
+          "text": "unsustainable"
+        },
+        {
+          "key": "C",
+          "text": "a goal to strive for"
+        },
+        {
+          "key": "D",
+          "text": "a way to social equality"
+        }
+      ]
+    },
+    {
+      "Number": 53,
+      "Statement": "What should students do if taxpayers are to bear their college costs?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Work even harder to repay society."
+        },
+        {
+          "key": "B",
+          "text": "Choose their subjects more carefully."
+        },
+        {
+          "key": "C",
+          "text": "Choose majors that will serve society’s practical needs."
+        },
+        {
+          "key": "D",
+          "text": "Allow taxpayers to participate in college administration."
+        }
+      ]
+    },
+    {
+      "Number": 54,
+      "Statement": "What does the author say about the value of a student’s college education?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "It is underestimated by profit-seeking employers."
+        },
+        {
+          "key": "B",
+          "text": "It is to be proved by what they can do on the job."
+        },
+        {
+          "key": "C",
+          "text": "It is well reflected in their average starting salary."
+        },
+        {
+          "key": "D",
+          "text": "It is embodied in how they remove social barriers."
+        }
+      ]
+    },
+    {
+      "Number": 55,
+      "Statement": "What message does the author want to convey in the passage?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Students should think carefully whether to go to college."
+        },
+        {
+          "key": "B",
+          "text": "Taxpayers should only finance the most gifted students."
+        },
+        {
+          "key": "C",
+          "text": "The worth of a college education is open to debate."
+        },
+        {
+          "key": "D",
+          "text": "College students should fund their own education."
+        }
+      ]
+    }
+  ]
+}

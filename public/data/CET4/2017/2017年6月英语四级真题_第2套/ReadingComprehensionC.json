@@ -1,0 +1,244 @@
+{
+  "title": "Section C",
+  "passagesOne": [
+      "Shoppers in the UK are spending less money on toilet paper to save money, research has shown.",
+      "Penny-pinching UK consumers choose cheaper products from discounters such as Aldi and Lidl rather than luxury alternatives.",
+      "This has wiped 6% off the value of the soft tissue paper market in the UK. It has shrunk from￡1.19 billion in 2011 to￡1.12 billion in 2015, according to a new report from market research company Mintel.Furthermore, the future of the market looks far from rosy, with sales expected to fall further to ￡1.11 billion in 2016.",
+      "In the last year alone, despite an increase in the UK population and a subsequent rise in the number of households, sales of toilet paper fell by 2%，with the average household reducing their toilet roll spending from ￡43 in 2014 to ￡41 in 2015.",
+      "Overall, almost three in five people say they try to limit their usage of paper—including facial tissue and kitchen roll—to save money.“Strength, softness and thickness remain the leading indicators of toilet paper quality, with just a small proportion of consumers preferring more luxurious alternatives, such as those with flower patterns or perfume,”said Mintel analyst Jack Duckett.“These extra features are deemed unnecessary by the majority of shoppers, which probably reflects how these types of products are typically more expensive than regular toilet paper, even when on special offer.”",
+      "While consumers are spending less on toilet paper, they remain fussy—in theory at least—when it comes to paper quality.Top of Britons' toilet paper wish list is softness (57%）followed by strength (45%）and thickness (36%).",
+      "One in 10 buyers rank toilet rolls made from recycled paper among their top considerations, highlighting how overall the environment is much less of a consideration for shoppers than product quality. In a challenge for manufacturers, 81% of paper product users said they would consider buying recycled toilet tissue if it were comparable in quality to standard paper."
+  ],
+  "questionsOne": [
+      {
+          "Number": 46,
+          "Statement": "The market sales of toilet paper have decreased because _____.",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Britons have cut their spending on it"
+              },
+              {
+                  "key": "B",
+                  "text": "its prices have gone up over the years"
+              },
+              {
+                  "key": "C",
+                  "text": "its quality has seen marked improvement"
+              },
+              {
+                  "key": "D",
+                  "text": "Britons have developed the habit of saving"
+              }
+          ]
+      },
+      {
+          "Number": 47,
+          "Statement": "What does the author think of the tissue paper market in the UK?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "It will expand in time."
+              },
+              {
+                  "key": "B",
+                  "text": "It will remain gloomy."
+              },
+              {
+                  "key": "C",
+                  "text": "It will experience ups and downs."
+              },
+              {
+                  "key": "D",
+                  "text": "It will recover as population grows."
+              }
+          ]
+      },
+      {
+          "Number": 48,
+          "Statement": "What does Jack Duckett say about toilet paper?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "Special offers would promote its sales."
+              },
+              {
+                  "key": "B",
+                  "text": "Consumers are loyal to certain brands."
+              },
+              {
+                  "key": "C",
+                  "text": "Luxurious features add much to the price."
+              },
+              {
+                  "key": "D",
+                  "text": "Consumers have a variety to choose from."
+              }
+          ]
+      },
+      {
+          "Number": 49,
+          "Statement": "What do we learn about Britons concerning toilet paper?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They are particular about the quality of toilet paper."
+              },
+              {
+                  "key": "B",
+                  "text": "They emphasize the strength of toilet paper the most."
+              },
+              {
+                  "key": "C",
+                  "text": "They prefer cheap toilet paper to recycled toilet paper."
+              },
+              {
+                  "key": "D",
+                  "text": "They reject using toilet paper with unnecessary features."
+              }
+          ]
+      },
+      {
+          "Number": 50,
+          "Statement": "What can we infer from the last paragraph?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "More and more Britons buy recycled toilet paper to protect the environment."
+              },
+              {
+                  "key": "B",
+                  "text": "Toilet paper manufacturers are facing a great challenge in promoting its sales."
+              },
+              {
+                  "key": "C",
+                  "text": "Toilet paper manufacturers compete with one another to improve product quality."
+              },
+              {
+                  "key": "D",
+                  "text": "Environmental protection is not much of a concern when Britons buy toilet paper."
+              }
+          ]
+      }
+  ],
+  "passagesTwo": [
+      "“One of the reasons I find this topic very interesting is because my mom was a smoker when I was younger,”says Lindson-Hawley, who studies tobacco and health at the University of Oxford.",
+      "By studying about 700 adult smokers, she found out that her mom quit the right way—by stopping abruptly and completely.",
+      "In her study, participants were randomly（随机地）assigned to two groups.One had to quit abruptly on a given day, going from about a pack a day to zero.The other cut down gradually over the course of two weeks.People in both groups used nicotine（尼古丁）patches before they quit, in addition to a second form of nicotine replacement, like gum or spray.They also had talk therapy with a nurse before and after quit day.",
+      "Six months out, more people who had quit abruptly had stuck with it—more than one-fifth of them, compared to about one-seventh in the other group.Although these numbers appear low, it is much higher than if people try without support.",
+      "And the quit rates were particularly convincing given that before the study started, most of the people had said they'd rather cut down gradually before quitting.“If you're training for a marathon, you wouldn't expect to turn up and just be able to run it.And I think people see that for smoking as well.They think, ‘Well, if I gradually reduce, it's like practice,'”says Lindson-Hawley.But that wasn't the case.Instead of giving people practice, the gradual reduction likely gave them cravings（瘾）and withdrawal symptoms before they even reached quit day, which could be why fewer people in that group actually made it to that point.“Regardless of your stated preference, if you're ready to quit, quitting abruptly is more effective,”says Dr.Gabriela Ferreira.“When you can quote a specific number like a fifth of the patients were able to quit, that's compelling. It gives them the encouragement, I think, to really go for it,”Ferreira says.",
+      "People rarely manage to quit the first time they try.But at least, she says, they can maximize the odds of success."
+  ],
+  "questionsTwo": [
+      {
+          "Number": 51,
+          "Statement": "What does Lindson-Hawley say about her mother?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "She quit smoking with her daughter's help."
+              },
+              {
+                  "key": "B",
+                  "text": "She succeeded in quitting smoking abruptly."
+              },
+              {
+                  "key": "C",
+                  "text": "She was also a researcher of tobacco and health."
+              },
+              {
+                  "key": "D",
+                  "text": "She studied the smoking patterns of adult smokers."
+              }
+          ]
+      },
+      {
+          "Number": 52,
+          "Statement": "What kind of support did smokers receive to quit smoking in Lindson-Hawley's study?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They were given physical training."
+              },
+              {
+                  "key": "B",
+                  "text": "They were looked after by physicians."
+              },
+              {
+                  "key": "C",
+                  "text": "They were encouraged by psychologists."
+              },
+              {
+                  "key": "D",
+                  "text": "They were offered nicotine replacements."
+              }
+          ]
+      },
+      {
+          "Number": 53,
+          "Statement": "How does Dr. Gabriela Ferreira view the result of Lindson-Hawley's experiment?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "It is idealized."
+              },
+              {
+                  "key": "B",
+                  "text": "It is unexpected."
+              },
+              {
+                  "key": "C",
+                  "text": "It is encouraging."
+              },
+              {
+                  "key": "D",
+                  "text": "It is misleading."
+              }
+          ]
+      },
+      {
+          "Number": 54,
+          "Statement": "The idea of “a marathon” （Line 2, Para. 5） illustrates the popular belief that quitting smoking_____.",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "is something few can accomplish"
+              },
+              {
+                  "key": "B",
+                  "text": "needs some practice first"
+              },
+              {
+                  "key": "C",
+                  "text": "requires a lot of patience"
+              },
+              {
+                  "key": "D",
+                  "text": "is a challenge at the beginning"
+              }
+          ]
+      },
+      {
+          "Number": 55,
+          "Statement": "What happens when people try to quit smoking gradually?",
+          "Options": [
+              {
+                  "key": "A",
+                  "text": "They find it even more difficult."
+              },
+              {
+                  "key": "B",
+                  "text": "They are simply unable to make it."
+              },
+              {
+                  "key": "C",
+                  "text": "They show fewer withdrawal symptoms."
+              },
+              {
+                  "key": "D",
+                  "text": "They feel much less pain in the process."
+              }
+          ]
+      }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "title": "Section A",
+  "passages": [
+      "America's Internet is faster than ever before, but people still complain about their Internet being too slow.",
+      "New York's Attorney General's office 26 an investigation in the fall into whether or not Verizon, Cablevision and Time Warner are delivering broadband that's as fast as the providers 27 it is.Earlier this month, the office asked for the public's help to measure their speed results, saying consumers 28 to get the speeds they were promised.“Too many of us may be paying for one thing, and getting another,”the Attorney General said.",
+      "If the investigation uncovers anything, it wouldn't be the first time a telecom provider got into 29 over the broadband speeds it promised and delivered customers.Back in June, the Federal Communications Commission fined AT&T $100 million over 30 that the carrier secretly reduced wireless speeds after customers consumed a certain amount of 31 .",
+      "Even when they stay on the right side of the law, Internet providers arouse customers' anger over bandwidth speed and cost.Just this week, an investigation found that media and telecom giant Comcast is the most 32 provider.Over 10 months, Comcast received nearly 12,000 customer complaints, many 33 to its monthly data cap and overage（超过额度的）charges.",
+      "Some Americans are getting so 34 with Internet providers they're just giving up.A recent study found that the number of Americans with high-speed Internet at home today 35 fell during the last two years, and 15％ of people now consider themselves to be“cord-cutters.”"
+
+  ],
+  "options": {
+      "A": "accusations",
+      "B": "actually",
+      "C": "claim",
+      "D": "communicating",
+      "E": "complain",
+      "F": "data",
+      "G": "deserved",
+      "H": "frustrated",
+      "I": "hated",
+      "J": "launched",
+      "K": "relating",
+      "L": "times",
+      "M": "trouble",
+      "N": "usually",
+      "O": "worried"
+  },
+  "questions": [
+      {
+          "number": 26,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 27,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 28,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 29,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 30,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 31,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 32,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 33,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 34,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      },
+      {
+          "number": 35,
+          "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O"
+          ]
+      }
+  ]
+}
