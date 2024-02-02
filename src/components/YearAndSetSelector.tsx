@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 
 interface YearAndSetSelectorProps {
   onSelect: (basePath: string) => void;
@@ -18,8 +18,19 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
   const [month, setMonth] = useState("");
   const [set, setSet] = useState("");
   const [data, setData] = useState<YearData[]>([]);
-  const [months, setMonths] = useState<string[]>([]);
-  const [sets, setSets] = useState<string[]>([]);
+
+  // 加入 useMemo 钩子
+  const monthOptions = useMemo(() => {
+    if (!year) return [];
+    const selectedYearData = data.find((item) => item.year === year);
+    return Object.keys(selectedYearData?.monthsAndSets || {});
+  }, [year, data]);
+
+  const setOptions = useMemo(() => {
+    if (!month || !year) return [];
+    const selectedYearData = data.find((item) => item.year === year);
+    return selectedYearData?.monthsAndSets[month] || [];
+  }, [month, year, data]);
 
   useEffect(() => {
     fetch("/data.json")
@@ -33,37 +44,36 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
   }, [testType]); // 添加 testType 作为依赖项
 
   useEffect(() => {
-    if (year) {
-      const selectedYearData = data.find((item) => item.year === year);
-      setMonths(Object.keys(selectedYearData?.monthsAndSets || {}));
-    } else {
-      setMonths([]);
-    }
+    // 当年份改变时，重置月份和套数的选择
     setMonth("");
     setSet("");
-  }, [year, data]); // 包含 year 作为依赖项
+  }, [year]);
 
   useEffect(() => {
-    if (month && year) {
-      const selectedYearData = data.find((item) => item.year === year);
-      setSets(selectedYearData?.monthsAndSets[month] || []);
-    } else {
-      setSets([]);
-    }
+    // 当月份改变时，重置套数的选择
     setSet("");
-  }, [month, year, data]); // 包含 month 和 year 作为依赖项
+  }, [month]);
 
-  const handleYearChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setYear(e.target.value);
-  };
+  const handleYearChange = useCallback(
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setYear(e.target.value);
+    },
+    []
+  );
 
-  const handleMonthChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setMonth(e.target.value);
-  };
+  const handleMonthChange = useCallback(
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setMonth(e.target.value);
+    },
+    []
+  );
 
-  const handleSetChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSet(e.target.value);
-  };
+  const handleSetChange = useCallback(
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setSet(e.target.value);
+    },
+    []
+  );
 
   const handleSubmit = () => {
     const basePath = `/data/${testType}/${year}/${year}年${month}英语${
@@ -93,7 +103,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
         className="px-1 py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
       >
         <option value="">选择月份</option>
-        {months.map((m) => (
+        {monthOptions.map((m) => (
           <option key={m} value={m}>
             {m}
           </option>
@@ -106,7 +116,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
         className="px-1 py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
       >
         <option value="">选择套数</option>
-        {sets.map((s) => (
+        {setOptions.map((s) => (
           <option key={s} value={s}>
             {s}
           </option>
