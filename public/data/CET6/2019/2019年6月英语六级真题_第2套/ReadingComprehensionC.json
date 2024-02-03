@@ -1,0 +1,245 @@
+{
+  "title": "Section C",
+  "passagesOne": [
+    "Effective Friday, Screen Actors Guild-American Federation of Television and Radio Artists (SAG-AFTRA) has declared a strike against 11 video game publishers over games that went into production after Feb. 17, 2015. The companies include some of the heavyweights of the industry, like Electronic Arts Productions, Insomniac Games, Activision and Disney.",
+    "The strike comes in light of an unsuccessful 19 months of negotiations after the existing labor contract known as the Interactive Media Agreement expired in late 2014. Overall, the strike is an effort to provide more secondary compensation along with other concerns, such as transparency upon hiring talent and on-set （制作中） safety precautions.",
+    "The video gaming industry has ballooned in recent years. The Los Angeles Times reports that the industry is in the midst of an intense increase in cash flow. In 2015, gaming produced $23.5 billion in domestic revenue.",
+    "But SAG-AFTRA says voice actors don't receive residuals （追加酬金） for their gaming work. Instead, they receive a fixed rate, which is typically about $825 for a standard four-hour vocal session. So the voice actors are pushing for the idea of secondary compensation—a performance bonus every time a game sells 2 million copies or downloads, or reaches 2 million subscribers, with a cap at 8 million.",
+    "“It's a very small number of games that would trigger this secondary compensation issue,” said voice actor Crispin Freeman, who's a member of the union's negotiating committee. “This is an important aspect of what it means to be a freelance （从事自由职业的） performer, who isn't regularly employed every single day working on projects.”",
+    "Another major complaint from the actors is the secrecy of the industry. “I can't imagine if there's any other acting job in the world where you don't know what show you're in, when you're hired,” says voice actor Keythe Farley, who chairs the SAG-AFTRA negotiating committee.",
+    "“And yet that happens every day in the video game world,” Farley told reporters during a press conference Friday. “I was a main character in Fallout 4, a character by the name of Kellogg, and I never knew that I was doing vocal recording for that game throughout the year and a half.”",
+    "Scott Witlin, the lawyer representing the video game companies, says voice actors “represent less than one tenth of 1 percent of the work that goes into making a video game.” So “even though they're the top craftsmen in their field,” Witlin says, “if we pay them under a vastly different system than the people who do the 99.9 percent of the work, that's going to create far more problems for the video game companies.”"
+  ],
+  "questionsOne": [
+    {
+      "Number": 46,
+      "Statement": "Why did SAG-AFTRA declare a strike against some video game publishers?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "The labor contract between them had been violated."
+        },
+        {
+          "key": "B",
+          "text": "Its appeal to renegotiate the contract had been rejected."
+        },
+        {
+          "key": "C",
+          "text": "It had been cheated repeatedly in the 19 months of talks."
+        },
+        {
+          "key": "D",
+          "text": "The negotiations between them had broken down."
+        }
+      ]
+    },
+    {
+      "Number": 47,
+      "Statement": "What do we learn from the passage about the video gaming industry?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "It has reaped huge profits in recent years."
+        },
+        {
+          "key": "B",
+          "text": "It has become more open and transparent."
+        },
+        {
+          "key": "C",
+          "text": "It has attracted many famous voice actors."
+        },
+        {
+          "key": "D",
+          "text": "It has invested a lot in its domestic market."
+        }
+      ]
+    },
+    {
+      "Number": 48,
+      "Statement": "What are the voice actors demanding?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "More regular employment."
+        },
+        {
+          "key": "B",
+          "text": "A non-discriminatory contract."
+        },
+        {
+          "key": "C",
+          "text": "Extra pay based on sales revenues."
+        },
+        {
+          "key": "D",
+          "text": "A limit on the maximum work hours."
+        }
+      ]
+    },
+    {
+      "Number": 49,
+      "Statement": "What does Keythe Farley say about voice actors?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "They are kept in the dark about many details of their job."
+        },
+        {
+          "key": "B",
+          "text": "They are discriminated against in the gaming industry."
+        },
+        {
+          "key": "C",
+          "text": "They are not paid on a regular basis."
+        },
+        {
+          "key": "D",
+          "text": "They are not employed full-time."
+        }
+      ]
+    },
+    {
+      "Number": 50,
+      "Statement": "What is the argument of lawyer Scott Witlin?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Voice actors should have a pay raise if they prove to be top craftsmen."
+        },
+        {
+          "key": "B",
+          "text": "Changing the pay system would cause the industry more problems."
+        },
+        {
+          "key": "C",
+          "text": "Voice actors are mere craftsmen, not professional performers."
+        },
+        {
+          "key": "D",
+          "text": "Paying voice actors on an hourly basis is in line with the law."
+        }
+      ]
+    }
+  ],
+  "passagesTwo": [
+    "Officials at the White House announced a new space policy focused on managing the increasing number of satellites that companies and governments are launching into space. Space Policy Directive-3 lays out general guidelines for the United States to mitigate （缓解） the effects of space debris and track and manage traffic in space.",
+    "This policy sets the stage for the Department of Commerce to take over the management of traffic in space. The department will make sure that newly launched satellites don't use radio frequencies that would interfere with existing satellites, and schedule when such new satellites can be launched. This only applies to American space activities, but the hope is that it will help standardize a set of norms in the dawning commercial spaceflight industry throughout the world.",
+    "Space, especially the space directly around our planet, is getting more crowded as more governments and companies launch satellites. One impetus for the policy is that companies are already starting to build massive constellations （星座）, comprising hundreds or thousands of satellites with many moving parts among them. With so much stuff in space, and a limited area around our planet, the government wants to reduce the chances of a collision. Two or more satellites slamming into each other could create many more out-of-control bits that would pose even more hazards to the growing collection of satellites in space.",
+    "And it's not like this hasn't happened before. In 2009 an old Russian craft slammed into a communications satellite, creating a cloud of hundreds of pieces of debris and putting other hardware at risk. Journalist Sarah Scoles reports that NASA currently tracks about 24,000 objects in space, and in 2016 the Air Force had to issue 3,995,874 warnings to satellite owners alerting them to a potential nearby threat from another satellite or bit of debris.",
+    "That's why this new policy also includes directions to update the current U.S. Government Orbital Debris Mitigation Standard Practices, which already require any entity that launches a satellite or spacecraft to vigorously analyze the likelihood that any of their actions, from an unexpected failure or normal operations, will create more space debris. It includes accounting for any piece of debris they plan to release over 5mm that might stay in orbit for 25 years or more. It might seem surprising to think about an item staying in space for that long, but the oldest satellite still in orbit—Vanguard 1—turned 60 in 2018.",
+    "Agencies and companies throughout the world are working on developing technology that would dispose of or capture space debris before it causes serious damage. But for now, the U.S. government is more focused on preventing new debris from forming than taking the trash out of orbit."
+  ],
+  "questionsTwo": [
+    {
+      "Number": 51,
+      "Statement": "What is the purpose of the new U.S. space policy?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "To lay out general guidelines for space exploration."
+        },
+        {
+          "key": "B",
+          "text": "To encourage companies to join in space programs."
+        },
+        {
+          "key": "C",
+          "text": "To make the best use of satellites in space."
+        },
+        {
+          "key": "D",
+          "text": "To improve traffic conditions in space."
+        }
+      ]
+    },
+    {
+      "Number": 52,
+      "Statement": "What is the Department of Commerce expected to do under the new policy?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Reduce debris in space."
+        },
+        {
+          "key": "B",
+          "text": "Monitor satellite operations."
+        },
+        {
+          "key": "C",
+          "text": "Regulate the launching of new satellites."
+        },
+        {
+          "key": "D",
+          "text": "Update satellite communications technology."
+        }
+      ]
+    },
+    {
+      "Number": 53,
+      "Statement": "What does the U.S. government hope to do with the new space policy?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Set international standards for the space flight industry."
+        },
+        {
+          "key": "B",
+          "text": "Monopolize space industry by developing a set of norms."
+        },
+        {
+          "key": "C",
+          "text": "Facilitate commercial space flights throughout the world."
+        },
+        {
+          "key": "D",
+          "text": "Promote international collaboration in space exploration."
+        }
+      ]
+    },
+    {
+      "Number": 54,
+      "Statement": "What is a space vehicle launching entity required to do according to the current U.S. Government Orbital Debris Mitigation Standard Practices?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Give an estimate of how long its debris will stay in space."
+        },
+        {
+          "key": "B",
+          "text": "Account for the debris it has released into space at any time."
+        },
+        {
+          "key": "C",
+          "text": "Provide a detailed plan for managing the space debris it creates."
+        },
+        {
+          "key": "D",
+          "text": "Make a thorough analysis of any possible addition to space debris."
+        }
+      ]
+    },
+    {
+      "Number": 55,
+      "Statement": "What are space agencies and companies aiming to do at present?",
+      "Options": [
+        {
+          "key": "A",
+          "text": "Recycle used space vehicles before they turn into debris."
+        },
+        {
+          "key": "B",
+          "text": "Develop technology to address the space debris problem."
+        },
+        {
+          "key": "C",
+          "text": "Limit the amount of debris entering space."
+        },
+        {
+          "key": "D",
+          "text": "Cooperate closely to retrieve space debris."
+        }
+      ]
+    }
+  ]
+}
