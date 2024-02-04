@@ -1,0 +1,233 @@
+{
+  "title": "Section B",
+  "passageTitle": "How Telemedicine Is Transforming Healthcare",
+  "passages": [
+    "A) After years of big promises, telemedicine is finally living up to its potential. Driven by faster internet connections, ubiquitous （无处不在的）smartphones and changing insurance standards, more health providers are turning to electronic communications to do their jobs—and it’s dramatically changing the delivery of healthcare.",
+    "B) Doctors are linking up with patients by phone, email and webcam （网络摄像头）. They’re also consulting with each other electronically—sometimes to make split-second decisions on heart attacks and strokes. Patients, meanwhile, are using new devices to relay their blood pressure, heart rate and other vital signs to their doctors so they can manage chronic conditions at home. Telemedicine also allows for better care in places where medical expertise is hard to come by. Five to 10 times a day, Doctors Without Borders relays questions about tough cases from its physicians in Niger, South Sudan and elsewhere to its network of 280 experts around the world, and back again via the internet.",
+    "C) As a measure of how rapidly telemedicine is spreading, consider: More than 15 million Americans received some kind of medical care remotely last year, according to the American Telemedicine Association, a trade group, which expects those numbers to grow by 30% this year.",
+    "D) None of this is to say that telemedicine has found its way into all corners of medicine. A recent survey of 500 tech-savvy （精通技术的）consumers found that 39% hadn’t heard of telemedicine, and of those who haven’t used it, 42% said they preferred in-person doctor visits. In a poll of 1,500 family physicians, only 15% had used it in their practices—but 90% said they would if it were appropriately reimbursed （补偿）.",
+    "E) What’s more, for all the rapid growth, significant questions and challenges remain. Rules defining and regulating telemedicine differ widely from state to state. Physicians groups are issuing different guidelines about what care they consider appropriate to deliver and in what form.",
+    "F) Some critics also question whether the quality of care is keeping up with the rapid expansion of telemedicine. And there’s the question of what services physicians should be paid for: Insurance coverage varies from health plan to health plan, and a big federal plan covers only a narrow range of services. Telemedicine’s future will depend on how—and whether—regulators, providers, payers and patients can address these challenges. Here’s a closer look at some of these issues:",
+    "G) Do patients trade quality for convenience? The fastest-growing services in telemedicine connect consumers with clinicians they’ve never met for a phone, video or email visit—on-demand, 24/7. Typically, these are for nonemergency issues such as colds, flu, ear-aches and skin rashes, and they cost around $45, compared with approximately $100 at a doctor’s office, $160 at an urgent-care clinic or $750 and up at an emergency room.",
+    "H) Many health plans and employers have rushed to offer the services and promote them as a convenient way for plan members to get medical care without leaving home or work. Nearly three-quarters of large employers will offer virtual doctor visits as a benefit to employees this year, up from 48% last year. Web companies such as Teladoc and American Well are expected to host some 1.2 million such virtual doctor visits this year, up 20% from last year, according to the American Telemedicine Association.",
+    "I) But critics worry that such services may be sacrificing quality for convenience. Consulting a random doctor patients will never meet, they say, further fragments the health-care system, and even minor issues such as upper respiratory （上呼吸道的）infections can’t be thoroughly evaluated by a doctor who can’t listen to your heart or feel your swollen glands. In a recent study, researchers posing as patients with skin problems sought help from 16 telemedicine sites—with unsettling results. In 62 encounters, fewer than one-third disclosed clinicians’ credential or let patients choose; only 32% discussed potential side effects of prescribed medications. Several sites misdiagnosed serious conditions, largely because they failed to ask basic follow-up questions, the researchers said. “Telemedicine holds enormous promise, but these sites are just not ready for prime time,” says Jack Resneck, the study’s lead author.",
+    "J) The American Telemedicine Association and other organizations have started accreditation （鉴定）programs to identify top-quality telemedicine sites. The American Medical Association this month approved new ethical guidelines for telemedicine, calling for participating doctors to recognize the limitations of such services and ensure that they have sufficient information to make clinical recommendations.",
+    "K) Who pays for the services? While employers and health plans have been eager to cover virtual urgent-care visits, insurers have been far less willing to pay for telemedicine when doctors use phone, email or video to consult with existing patients about continuing issues. “It’s very hard to get paid unless you physically see the patient,” says Peter Rasmussen, medical director of distance health at the Cleveland Clinic. Some 32 states have passed “parity” （等同的）laws requiring private insurers to reimburse doctors for services delivered remotely if the same service would be covered in person, though not necessarily at the same rate or frequency. Medicare lags further behind. The federal health plan for the elderly covers a small number of telemedicine services—only for beneficiaries in rural areas and only when the services are received in a hospital, doctor’s office or clinic.",
+    "L) Bills to expand Medicare coverage of telemedicine have bipartisan （两党的）support in Congress. Opponents worry that such expansion would be costly for taxpayers, but advocates say it would save money in the long run.",
+    "M) Experts say more hospitals are likely to invest in telemedicine systems as they move away from fee-for-service payments and into managed-care-type contracts that give them a set fee to provide care for patients and allow them to keep any savings they achieve.",
+    "N) Is the state-by-state regulatory system outdated? Historically, regulation of medicine has been left to individual states. But some industry members contend that having 50 different sets of rules, licensing fees and even definitions of “medical practice” makes less sense in the era of telemedicine and is hampering its growth. Currently, doctors must have a valid license in the state where the patient is located to provide medical care, which means virtual-visit companies can match users only with locally licensed clinicians. It also causes administrative hassles （麻烦）for world-class medical centers that attract patients from across the country. At the Mayo Clinic, doctors who treat out-of-state patients can follow up with them via phone, email or web chats when they return home, but they can only discuss the conditions they treated in person. “If the patient wants to talk about a new problem, the doctor has to be licensed in that state to discuss it. If not, the patient should talk to his primary-care physician about it,” says Steve Ommen, who runs Mayo’s Connected Care program.",
+    "O) To date, 17 states have joined a compact that will allow a doctor licensed in one member state to quickly obtain a license in another. While welcoming the move, some telemedicine advocates would prefer states to automatically honor one another’s licenses, as they do with drivers’ licenses. But states aren’t likely to surrender control of medical practice, and most are considering new regulations. This year, more than 200 telemedicine-related bills have been introduced in 42 states, many regarding what services Medicaid will cover and whether payers should reimburse for remote patient monitoring. “A lot of states are still trying to define telemedicine,” says Lisa Robbin, chiefadvocacy officer for the Federation of State Medical Boards."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "An overwhelming majority of family physicians are willing to use telemedicine if they are duly paid.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 37,
+      "Statement": "Many employers are eager to provide telemedicine service as a benefit to their employees because of its convenience.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 38,
+      "Statement": "Different states have markedly different regulations for telemedicine.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 39,
+      "Statement": "With telemedicine, patients in regions short of professional medical service are able to receive better medical care.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 40,
+      "Statement": "Unlike employers and health plans, insurers have been rather reluctant to pay for some telemedicine services.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 41,
+      "Statement": "Some supporters of telemedicine hope states will accept each other’s medical practice licenses as valid.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 42,
+      "Statement": "The fastest growing area for telemedicine services is for lesser health problems.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 43,
+      "Statement": "As telemedicine spreads quickly, some of its opponents doubt whether its service quality can be guaranteed.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 44,
+      "Statement": "The results obtained by researchers who pretended to be patients seeking help from telemedicine providers are disturbing.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 45,
+      "Statement": "Some people argue that the fact that different states have different regulations concerning medical services hinders the development of telemedicine.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    }
+  ]
+}
