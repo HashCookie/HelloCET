@@ -7,6 +7,7 @@ import styles from "../../styles/ReadingComprehension.module.css";
 interface ReadingComprehensionProps {
   basePath: string;
   updateReadingScore: (score: number, completedQuestions: number) => void;
+  updateReadingDuration: (duration: string) => void;
 }
 interface Answers {
   [key: string]: string;
@@ -15,12 +16,14 @@ interface Answers {
 const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   basePath,
   updateReadingScore,
+  updateReadingDuration,
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
   const [sectionAData, setSectionAData] = useState(null);
   const [sectionBData, setSectionBData] = useState(null);
   const [sectionCData, setSectionCData] = useState(null);
   const [correctAnswers, setCorrectAnswers] = useState<Answers>({});
+  const [startTime, setStartTime] = useState<Date>(new Date()); // 设置开始时间
 
   useEffect(() => {
     if (basePath) {
@@ -90,6 +93,10 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
     }
   }, [basePath]);
 
+  useEffect(() => {
+    setStartTime(new Date());
+  }, []);
+
   const handleOptionChange = (questionNumber: number, option: string) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
@@ -98,6 +105,37 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   };
 
   const handleSubmit = () => {
+    const end = new Date();
+
+    if (startTime) {
+      const durationSeconds = Math.round(
+        (end.getTime() - startTime.getTime()) / 1000
+      );
+      let formattedDuration = "";
+
+      if (durationSeconds < 60) {
+        // 小于1分钟，只显示秒
+        formattedDuration = `${durationSeconds}秒`;
+      } else if (durationSeconds < 3600) {
+        // 小于1小时，显示分钟和秒
+        const minutes = Math.floor(durationSeconds / 60);
+        const seconds = durationSeconds % 60;
+        formattedDuration = `${minutes}分钟${seconds
+          .toString()
+          .padStart(2, "0")}秒`;
+      } else {
+        // 大于等于1小时，显示小时、分钟和秒
+        const hours = Math.floor(durationSeconds / 3600);
+        const minutes = Math.floor((durationSeconds % 3600) / 60);
+        const seconds = durationSeconds % 60;
+        formattedDuration = `${hours}小时${minutes
+          .toString()
+          .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
+      }
+
+      console.log("耗时:", formattedDuration);
+      updateReadingDuration(formattedDuration); // 更新耗时
+    }
     // 各题型每题的分数
     const scorePerBlankFillingQuestion = 3.55; // 选词填空每题分数
     const scorePerParagraphMatchingQuestion = 7.1; // 段落匹配每题分数
