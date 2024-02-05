@@ -5,6 +5,7 @@ import SectionC from "./SectionC";
 
 interface ListeningComprehensionProps {
   basePath: string;
+  updateListeningScore: (score: number) => void;
 }
 
 interface Question {
@@ -18,6 +19,7 @@ interface Answers {
 
 const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   basePath,
+  updateListeningScore,
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
   const [questions, setQuestions] = useState<any[]>([]); // 如果您知道问题的具体类型，可以替换 any
@@ -118,6 +120,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
     // 四舍五入到小数点后一位
     const roundedScore = Math.round(rawListeningScore * 10) / 10;
     console.log("听力成绩:", roundedScore);
+    updateListeningScore(roundedScore);
   };
 
   if (questions.length === 0) {
