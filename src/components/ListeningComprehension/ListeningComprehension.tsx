@@ -5,7 +5,7 @@ import SectionC from "./SectionC";
 
 interface ListeningComprehensionProps {
   basePath: string;
-  updateListeningScore: (score: number) => void;
+  updateListeningScore: (score: number, totalQuestionsDone: number) => void;
 }
 
 interface Question {
@@ -117,10 +117,12 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       }
     });
 
-    // 四舍五入到小数点后一位
+    const totalQuestionsDone = Object.keys(selectedAnswer).filter(
+      (key) => selectedAnswer[key] !== ""
+    ).length;
     const roundedScore = Math.round(rawListeningScore * 10) / 10;
     console.log("听力成绩:", roundedScore);
-    updateListeningScore(roundedScore);
+    updateListeningScore(roundedScore, totalQuestionsDone);
   };
 
   if (questions.length === 0) {

@@ -13,11 +13,14 @@ function App() {
   const [basePath, setBasePath] = useState("");
   const [records, setRecords] = useState<TableRecord[]>([]); // 添加records的状态
 
-  const updateListeningScore = (score: number) => {
+  const updateListeningScore = (score: number, totalQuestionsDone: number) => {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
         if (record.category === "分数") {
           return { ...record, listeningTest: `${score} | 248.5` };
+        } else if (record.category === "题目") {
+          // 更新完成的题目数量
+          return { ...record, listeningTest: `${totalQuestionsDone} | 25` };
         }
         return record;
       });
