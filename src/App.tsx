@@ -48,6 +48,17 @@ function App() {
     });
   };
 
+  const updateListeningDuration = (duration: string) => {
+    setRecords((prevRecords) => {
+      return prevRecords.map((record) => {
+        if (record.category === "时间") {
+          return { ...record, listeningTest: `${duration}` };
+        }
+        return record;
+      });
+    });
+  };
+
   useEffect(() => {
     // 假设这个函数是异步的并且返回一个Promise，它解析为TableRecord类型的数组
     const fetchRecords = async (): Promise<TableRecord[]> => {
@@ -116,6 +127,7 @@ function App() {
           <ListeningComprehension
             basePath={basePath}
             updateListeningScore={updateListeningScore}
+            updateListeningDuration={updateListeningDuration}
           />
           <ReadingComprehension
             basePath={basePath}

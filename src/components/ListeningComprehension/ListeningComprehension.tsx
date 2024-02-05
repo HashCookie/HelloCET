@@ -6,6 +6,7 @@ import SectionC from "./SectionC";
 interface ListeningComprehensionProps {
   basePath: string;
   updateListeningScore: (score: number, totalQuestionsDone: number) => void;
+  updateListeningDuration: (duration: string) => void;
 }
 
 interface Question {
@@ -20,6 +21,7 @@ interface Answers {
 const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   basePath,
   updateListeningScore,
+  updateListeningDuration,
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
   const [questions, setQuestions] = useState<any[]>([]); // 如果您知道问题的具体类型，可以替换 any
@@ -28,6 +30,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   const [paperNumber, setPaperNumber] = useState("");
   const [month, setMonth] = useState("");
   const [playingAudio, setPlayingAudio] = useState<string | null>(null);
+  const [startTime, setStartTime] = useState<Date | null>(null);
 
   useEffect(() => {
     if (basePath) {
@@ -79,6 +82,10 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
     }
   }, [basePath]);
 
+  useEffect(() => {
+    setStartTime(new Date());
+  }, []);
+
   // 在回调函数中设置当前播放的音频ID
   const handleAudioPlay = (audioId: string | null) => {
     setPlayingAudio(audioId);
@@ -92,6 +99,37 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   };
 
   const handleSubmit = () => {
+    const end = new Date();
+
+    if (startTime) {
+      const durationSeconds = Math.round(
+        (end.getTime() - startTime.getTime()) / 1000
+      );
+      let formattedDuration = "";
+
+      if (durationSeconds < 60) {
+        // 小于1分钟，只显示秒
+        formattedDuration = `${durationSeconds}秒`;
+      } else if (durationSeconds < 3600) {
+        // 小于1小时，显示分钟和秒
+        const minutes = Math.floor(durationSeconds / 60);
+        const seconds = durationSeconds % 60;
+        formattedDuration = `${minutes}分钟${seconds
+          .toString()
+          .padStart(2, "0")}秒`;
+      } else {
+        // 大于等于1小时，显示小时、分钟和秒
+        const hours = Math.floor(durationSeconds / 3600);
+        const minutes = Math.floor((durationSeconds % 3600) / 60);
+        const seconds = durationSeconds % 60;
+        formattedDuration = `${hours}小时${minutes
+          .toString()
+          .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
+      }
+
+      console.log("耗时:", formattedDuration);
+      updateListeningDuration(formattedDuration); // 更新耗时
+    }
     // 各题型每题的分数
     const scorePerShortNewsQuestion = 7.1;
     const scorePerLongConversationQuestion = 7.1;
