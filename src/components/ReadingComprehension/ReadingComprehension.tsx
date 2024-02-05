@@ -6,7 +6,7 @@ import styles from "../../styles/ReadingComprehension.module.css";
 
 interface ReadingComprehensionProps {
   basePath: string;
-  updateReadingScore: (score: number) => void;
+  updateReadingScore: (score: number, completedQuestions: number) => void;
 }
 interface Answers {
   [key: string]: string;
@@ -122,10 +122,16 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
       }
     });
 
-    // 使用 Math.round 方法四舍五入到小数点后一位
+    // 计算完成的题目数量
+    const completedQuestions = Object.keys(selectedAnswer).filter(
+      (key) => selectedAnswer[key] !== ""
+    ).length;
+
     const roundedScore = Math.round(rawReadingScore * 10) / 10;
     console.log("阅读成绩:", roundedScore);
-    updateReadingScore(roundedScore);
+
+    // 通过 updateReadingScore 方法更新 App 组件中的 records 状态
+    updateReadingScore(roundedScore, completedQuestions);
   };
 
   if (!sectionAData || !sectionBData || !sectionCData) {

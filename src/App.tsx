@@ -27,13 +27,20 @@ function App() {
     });
   };
 
-  const updateReadingScore = (score: number) => {
+  const updateReadingScore = (score: number, completedQuestions: number) => {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
         if (record.category === "分数") {
           return {
             ...record,
             readingTest: `${score} | ${record.readingTest.split(" | ")[1]}`,
+          };
+        } else if (record.category === "题目") {
+          return {
+            ...record,
+            readingTest: `${completedQuestions} | ${
+              record.readingTest.split(" | ")[1]
+            }`,
           };
         }
         return record;
