@@ -6,6 +6,7 @@ import styles from "../../styles/ReadingComprehension.module.css";
 
 interface ReadingComprehensionProps {
   basePath: string;
+  updateReadingScore: (score: number) => void;
 }
 interface Answers {
   [key: string]: string;
@@ -13,6 +14,7 @@ interface Answers {
 
 const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   basePath,
+  updateReadingScore,
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
   const [sectionAData, setSectionAData] = useState(null);
@@ -123,6 +125,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
     // 使用 Math.round 方法四舍五入到小数点后一位
     const roundedScore = Math.round(rawReadingScore * 10) / 10;
     console.log("阅读成绩:", roundedScore);
+    updateReadingScore(roundedScore);
   };
 
   if (!sectionAData || !sectionBData || !sectionCData) {
