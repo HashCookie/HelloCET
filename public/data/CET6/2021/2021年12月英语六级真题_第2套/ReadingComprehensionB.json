@@ -1,0 +1,233 @@
+{
+  "title": "Section B",
+  "passageTitle": "Do music lessons really make children smarter?",
+  "passages": [
+    "A) A recent analysis found that most research mischaracterizes the relationship between music and skills enhancement.",
+    "B) In 2004, a paper appeared in the journal Psychological Science, titled “Music Lessons Enhance IQ.” The author, composer and psychologist Glenn Schellenberg, had conducted an experiment with 144 children randomly assigned to four groups: one learned the keyboard for a year, one took singing lessons, one joined an acting class, and a control group had no extracurricular training. The IQ of the children in the two musical groups rose by an average of seven points in the course of a year; those in the other two groups gained an average of 4.3 points.",
+    "C) Schellenberg had long been skeptical of the science supporting claims that music education enhances children's abstract reasoning, math, or language skills. If children who play the piano are smarter, he says, it doesn't necessarily mean they are smarter because they play the piano. It could be that the youngsters who play the piano also happen to be more ambitious or better at focusing on a task. Correlation, after all, does not prove causation.",
+    "D) The 2004 paper was specifically designed to address those concerns. And as a passionate musician, Schellenberg was delighted when he turned up credible evidence that music has transfer effects on general intelligence. But nearly a decade later, in 2013, the Education Endowment Foundation funded a bigger study with more than 900 students. That study failed to confirm Schellenberg's findings, producing no evidence that music lessons improved math and literacy skills.",
+    "E) Schellenberg took that news in stride while continuing to cast a skeptical eye on the research in his field. Recently, he decided to formally investigate just how often his fellow researchers in psychology and neuroscience make what he believes are erroneous—or at least premature—causal connections between music and intelligence. His results, published in May, suggest that many of his peers do just that.",
+    "F) For his recent study, Schellenberg asked two research assistants to look for correlational studies on the effects of music education. They found a total of 114 papers published since 2000. To assess whether the authors claimed any causation, researchers then looked for telltale verbs in each paper's title and abstract, verbs like “enhance,” “promote,” “facilitate,” and “strengthen.” The papers were categorized as neuroscience if the study employed a brain imaging method like magnetic resonance, or if the study appeared in a journal that had “brain,” “neuroscience,” or a related term in its title. Otherwise the papers were categorized as psychology. Schellenberg didn't tell his assistants what exactly he was trying to prove.",
+    "G) After computing their assessments, Schellenberg concluded that the majority of the articles erroneously claimed that music training had a causal effect. The overselling, he also found, was more prevalent among neuroscience studies, three quarters of which mischaracterized a mere association between music training and skills enhancement as a cause-and-effect relationship. This may come as a surprise to some. Psychologists have been battling charges that they don't do “real” science for some time—in large part because many findings from classic experiments have proved unreproducible. Neuroscientists, on the other hand, armed with brain scans and EEGs (脑电图), have not been subject to the same degree of critique.",
+    "H) To argue for a cause-and-effect relationship, scientists must attempt to explain why and how a connection could occur. When it comes to transfer effects of music, scientists frequently point to brain plasticity—the fact that the brain changes according to how we use it. When a child learns to play the violin, for example, several studies have shown that the brain region responsible for the fine motor skills of the left hand's fingers is likely to grow. And many experiments have shown that musical training improves certain hearing capabilities, like filtering voices from background noise or distinguishing the difference between the consonants (辅音) ‘b’ and ‘g’.",
+    "I) But Schellenberg remains highly critical of how the concept of plasticity has been applied in his field. “Plasticity has become an industry of its own,” he wrote in his May paper. Practice does change the brain, he allows, but what is questionable is the assertion that these changes affect other brain regions, such as those responsible for spatial reasoning or math problems.",
+    "J) Neuropsychologist Lutz Jäncke agrees. “Most of these studies don't allow for causal inferences,” he said. For over two decades, Jäncke has researched the effects of music lessons, and like Schellenberg, he believes that the only way to truly understand their effects is to run longitudinal studies. In such studies, researchers would need to follow groups of children with and without music lessons over a long period of time—even if the assignments are not completely random. Then they could compare outcomes for each group.",
+    "K) Some researchers are starting to do just that. The neuroscientist Peter Schneider from Heidelberg University in Germany, for example, has been following a group of children for ten years now. Some of them were handed musical instruments and given lessons through a school-based program in the Ruhr region of Germany called Jedem Kind ein Instrument, or “an instrument for every child,” which was carried out with government funding. Among these children, Schneider has found that those who were enthusiastic about music and who practiced voluntarily showed improvements in hearing ability, as well as in more general competencies, such as the ability to concentrate.",
+    "L) To establish whether effects such as improved concentration are caused by music participation itself, and not by investing time in an extracurricular activity of any kind, Assal Habibi, a psychology professor at the University of Southern California, is conducting a five-year longitudinal study with children from low-income communities in Los Angeles. The youngsters fall into three groups: those who take after-school music, those who do after-school sports, and those with no structured after-school program at all. After two years, Habibi and her colleagues reported seeing structural changes in the brains of the musically trained children, both locally and in the pathways connecting different parts of the brain.",
+    "M) That may seem compelling, but Habibi's children were not selected randomly. Did the children who were drawn to music perhaps have something in them from the start that made them different but eluded the brain scanners? “As somebody who started taking piano lessons at the age of five and got up every morning at seven to practice, that experience changed me and made me part of who I am today,” Schellenberg said. “The question is whether those kinds of experiences do so systematically across individuals and create exactly the same changes. And I think that is that huge leap of faith.”",
+    "N) Did he have a hidden talent that others didn't have? Or more endurance than his peers? Music researchers tend, like Schellenberg, to be musicians themselves, and as he noted in his recent paper, “the idea of positive cognitive and neural side effects from music training (and other pleasurable activities) is inherently appealing.” He also admits that if he had children of his own, he would encourage them to take music lessons and go to university. “I would think that it makes them better people, more critical, just wiser in general,” he said.",
+    "O) But those convictions should be checked at the entrance to the lab, he added. Otherwise, the work becomes religion or faith. “You have to let go of your faith if you want to be a scientist.”"
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "Glenn Schellenberg's latest research suggests many psychologists and neuroscientists wrongly believe in the causal relationship between music and IQ.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 37,
+      "Statement": "The belief in the positive effects of music training appeals to many researchers who are musicians themselves.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 38,
+      "Statement": "Glenn Schellenberg was doubtful about the claim that music education helps enhance children's intelligence.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 39,
+      "Statement": "Glenn Schellenberg came to the conclusion that most of the papers assessed made the wrong claim regarding music's effect on intelligence.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 40,
+      "Statement": "You must abandon your unverified beliefs before you become a scientist.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 41,
+      "Statement": "Lots of experiments have demonstrated that people with music training can better differentiate certain sounds.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 42,
+      "Statement": "Glenn Schellenberg's findings at the beginning of this century were not supported by a larger study carried out some ten years later.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 43,
+      "Statement": "One researcher shares Glenn Schellenberg's view that it is necessary to conduct long-term developmental studies to understand the effects of music training.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 44,
+      "Statement": "Glenn Schellenberg's research assistants had no idea what he was trying to prove in his new study.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "Number": 45,
+      "Statement": "Glenn Schellenberg admits that practice can change certain areas of the brain but doubts that the change can affect other areas.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ]
+    }
+  ]
+}
