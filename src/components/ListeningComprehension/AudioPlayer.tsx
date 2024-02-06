@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 
-// 定义组件props的接口
 interface AudioPlayerProps {
   src: string;
   playingAudio: string | null; // 允许 null 值
