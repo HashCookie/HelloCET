@@ -1,0 +1,222 @@
+{
+  "title": "Section B",
+  "passageTitle": "Is computer coding a foreign language?",
+  "passages": [
+    "A) As computer coding has become an increasingly sought-after skill, more K-12 schools are working it into their curriculums. Some states have considered allowing students to forgo (X}ĩ) foreign language for coding classes, despite opposition from educators.",
+    "B) There's a debate over whether it's appropriate to teach coding in elementary schools, with fierce opinions on each side. When it comes to allowing coding to fill foreign language requirements, though, most educators agree: Coding should be added to curriculums, but not at the expense of foreign language classes.",
+    "C) The idea is that computer programming is a language, allowing people to communicate with machines and programs. It's the language of the 21st century and more valuable than a natural language, some advocates argue. The computer science field is growing faster than schools can keep up because of budget constraints and a lack of skills training for teachers.",
+    "D) According to the 2016 U.S. News/Raytheon STEM Index, computer science jobs have helped boost wages in the U.S., and computer-related jobs hold the top seven positions in STEM fields for highest number of workers. Foreign language interest, on the other hand, is declining for the first time since 1995. The number of higher education language enrollments declined between 2009 and 2013 by more than 111,000 spots, according to the Modern Language Association of America.",
+    "E) “I think the opportunity to give people a choice is important,“ says Florida state Senator Jeremy Ring, who introduced a bill last year that would allow Florida students to choose between foreign language and coding classes for the purpose of university admissions requirements. “I think if you're going to give two years of language in high school, you might as well do computer coding. “",
+    "F) The Florida bill died this year after passing 35:5 in the state Senate when the full Legislature failed to take action. It would have been the first state to try this initiative. Ring says that although he will be out of office, an identical bill will be reintroduced within the next year by others on his behalf. “In the speech I gave on the Senate floor, I said, 'We can be the first state to do this, or we can be the 50th state to do it. It's our choice. It's going to happen,'“ Ring says.",
+    "G) A Kentucky bill similar to the one in Florida was met with complaints from educators, and was then amended to promote computer science education initiatives with no mention of foreign language requirements. Instead, the state will provide support for higher quality certified teachers for programming classes. Under the Washington bill, public universities would accept two years of computer science classes in place of two years of foreign language for admission purposes. A report detailing the opinions of state university officials is due to the Legislature by November 2017.",
+    "H) Texas passed a bill in 2013 that allows students to substitute computer coding only after they have attempted and performed poorly in a foreign language class. Srini Mandyam, CTO and co-founder of kid-friendly instructional coding company Tynker, believes allowing students to forgo foreign language because they struggle with it is unproductive because every subject, whether art, math or language, is a significant contribution to a well-rounded existence. “Many students don't fare well with algebra but we never discuss eliminating it or... say chemistry is now counted as an algebra class,“ he said via email. “We teach algebra because it's important and we should teach foreign language and coding for the same reason. Exposure to a wide breadth of subjects and material results in well-rounded students who are able to make informed decisions... about what they want to pursue.“",
+    "I) Computer science courses already fulfill a math or science high school graduation requirement in 28 states and the District of Columbia, up from only 12 states in 2013. And while advocates of the bills say they should count as foreign language instead, opponents stress the importance of balancing computer and foreign language skills.",
+    "J) Studies show that bilingualism (AXif) correlates with cognitive development, intelligence, memory and problem solving abilities, according to the American Council on the Teaching of Foreign Languages. A 2007 study showed that foreign language students outperformed their non-foreign language peers on standardized tests after only two to three years of study. And while a 2014 report from German and American universities suggests that programmers are using language ( but not mathematical) regions of the brain when understanding code, critics remain wary. They say that regardless of cognitive functions, being monolingual is a disadvantage in the increasingly international economy, even if English has become the de facto ( L#J) language of business.",
+    "K) “Our world is shrinking but its problems are really growing,“ says ACTFL National Language Teacher of the Year Ted Zarrow, who teaches high school Latin in Westwood, Massachusetts, and has also studied Spanish, French, German, Italian and Greek. “We need to find a way to put ourselves at the global table and to treat each other with mutual respect. And learning languages allows us to do that because language is not part of culture, language is culture.“",
+    "L) Even with the benefits and skill sets languages provide, recruiters and employers value computer skills more. According to the National Association of Colleges and Employers' 2016 report, study abroad and foreign language fluency were not very influential in the employee hiring processes, but 55 percent of employers looked for computer skills on applicants' resumes. However, although 2016 computer science graduates can expect to make the second highest starting salary compared with other jobs this year, the Bureau of Labor predicts the demand for computer programmers will decrease 8 percent or by 26,500 jobs by 2024.",
+    "M) Ring says foreign language skills are important, but expresses doubt that school districts could work both coding and language into their curriculum in a significant way because they lack the time in the school day. “Nothing against language,“ he says. “I just think it's something you have to start early and not just have something that you do for a couple of years in high school,“ he says.",
+    "N) Zarrow agrees that foreign language education should begin earlier, but says it is possible to work both computer programming and foreign language learning into schools evenly. He suggests an immersive, dual language program where students spend half the day in English and half the day in another language, as several schools around the country have successfully implemented. “The study of language fosters a respect for diversity, a respect for ethnicity and really a respect for language,“ Zarrow says."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "Employers attach more importance to applicants' computer skills than their language competence.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 37,
+      "Statement": "One U.S. state senator proposed that high school students be allowed to study either foreign language or computer coding.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 38,
+      "Statement": "Learning languages broadens students' international perspective and nurtures mutual respect among peoples, according to a high school language teacher.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 39,
+      "Statement": "One U.S. state will see to it that programming classes are taught by quality teachers.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 40,
+      "Statement": "Statistics show while computer-related jobs have been on the rise, foreign languages have become less appealing to American students since mid-1990s.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 41,
+      "Statement": "All school subjects are said to be essential to students' well-rounded development.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 42,
+      "Statement": "There is consensus among most educators that coding should be taught in schools but should not replace foreign language.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 43,
+      "Statement": "One study showed that foreign language learning improved students' academic performance.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 44,
+      "Statement": "Being short of funding and qualified teachers, schools lag behind the fast developing computer science field.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "Number": 45,
+      "Statement": "A distinguished high school language teacher also believes it is advisable to start learning a foreign language at an earlier age.",
+      "Options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ]
+    }
+  ]
+}
