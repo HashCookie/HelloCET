@@ -8,6 +8,7 @@ import ReadingComprehension from "./components/ReadingComprehension/ReadingCompr
 import Translation from "./components/Translation/Translation";
 import ContactForm from "./pages/ContactForm";
 import ScoreStatistics, { TableRecord } from "./components/ScoreStatistics";
+import HeroSection from "./pages/HeroSection";
 
 function App() {
   const [basePath, setBasePath] = useState("");
@@ -117,7 +118,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <HeroSection />
+            </>
+          }
+        />
         <Route
           path="/cet4"
           element={
