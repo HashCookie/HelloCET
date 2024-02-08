@@ -24,7 +24,6 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
   selectedAnswer,
   onAnswerChange,
 }) => {
-  // 处理选项选择的函数
   const handleOptionSelect = (questionNumber: number, option: string) => {
     if (onAnswerChange) {
       onAnswerChange(questionNumber, option);
