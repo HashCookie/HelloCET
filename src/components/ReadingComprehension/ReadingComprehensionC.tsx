@@ -51,7 +51,7 @@ const ReadingComprehensionC: React.FC<ReadingComprehensionCProps> = ({
     questions.map((question, index) => (
       <div key={index} className="mb-6">
         <p className="font-bold text-lg mb-4">
-          Question {question.Number}: {question.Statement}
+          {question.Number}. {question.Statement}
         </p>
         <div className="grid grid-cols-2 gap-4">
           {question.Options.map((option, oIndex) => {
