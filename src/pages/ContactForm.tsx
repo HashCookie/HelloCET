@@ -1,6 +1,6 @@
 function ContactForm() {
   return (
-    <div className="grid px-10 sm:grid-cols-2 items-center gap-16 my-6 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
+    <div className="grid px-10 sm:grid-cols-2 items-center gap-16 my-16 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
       <div>
         <h1 className="text-3xl font-extrabold">联系我</h1>
         <p className="text-sm text-gray-400 mt-3">
