@@ -24,7 +24,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   updateListeningDuration,
 }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
-  const [questions, setQuestions] = useState<any[]>([]); // 如果您知道问题的具体类型，可以替换 any
+  const [questions, setQuestions] = useState<any[]>([]);
   const [correctAnswers, setCorrectAnswers] = useState<Answers>({});
   const [year, setYear] = useState("");
   const [paperNumber, setPaperNumber] = useState("");
@@ -38,7 +38,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       fetch(`${basePath}/ListeningComprehension.json`)
         .then((response) => response.json())
         .then((data) => {
-          setQuestions(data.questions as Question[]); // 假设data.questions是Question类型的数组
+          setQuestions(data.questions as Question[]); // data.questions是Question类型的数组
           // 初始化用户答案
           const initialAnswers = data.questions.reduce(
             (acc: Answers, question: Question) => {
