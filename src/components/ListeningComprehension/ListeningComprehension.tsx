@@ -51,7 +51,8 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
 
           // 提取试卷名称
           const paperName = basePath.split("/").slice(-2, -1)[0];
-          const answerPath = `/answers/${paperName}.json`;
+          const testLevel = basePath.includes("CET4") ? "CET4" : "CET6";
+          const answerPath = `/answers/${testLevel}/${paperName}.json`;
 
           // 加载答案
           fetch(answerPath)
