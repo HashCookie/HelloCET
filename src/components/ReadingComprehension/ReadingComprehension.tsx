@@ -34,7 +34,8 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
       setCorrectAnswers({});
       setSelectedAnswer({});
       const paperName = basePath.split("/").slice(-2, -1)[0];
-      const answerPath = `/answers/${paperName}.json`;
+      const testLevel = basePath.includes("CET4") ? "CET4" : "CET6";
+      const answerPath = `/answers/${testLevel}/${paperName}.json`;
 
       const loadData = async () => {
         try {
