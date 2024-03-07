@@ -72,7 +72,7 @@ function App() {
   };
 
   useEffect(() => {
-    // 假设这个函数是异步的并且返回一个Promise，它解析为TableRecord类型的数组
+    // 这个函数是异步的并且返回一个Promise，它解析为TableRecord类型的数组
     const fetchRecords = async (): Promise<TableRecord[]> => {
       return [
         {
@@ -121,10 +121,10 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <div className="flex flex-col h-screen bg-white">
               <Header />
               <HeroSection />
-            </>
+            </div>
           }
         />
         <Route
