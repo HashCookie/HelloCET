@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./pages/Header";
 import YearAndSetSelector from "./components/YearAndSetSelector";
 import Writing from "./components/Writing/Writing";
@@ -10,9 +10,17 @@ import ContactForm from "./pages/ContactForm";
 import ScoreStatistics, { TableRecord } from "./components/ScoreStatistics";
 import HeroSection from "./pages/HeroSection";
 
-function App() {
+function MainApp() {
   const [basePath, setBasePath] = useState("");
-  const [records, setRecords] = useState<TableRecord[]>([]); // 添加records的状态
+  const [records, setRecords] = useState<TableRecord[]>([]);
+  let location = useLocation();
+
+  useEffect(() => {
+    // 当路由变化时重置basePath
+    if (location.pathname === "/") {
+      setBasePath("");
+    }
+  }, [location]);
 
   const updateListeningScore = (score: number, totalQuestionsDone: number) => {
     setRecords((prevRecords) => {
@@ -116,7 +124,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <>
       <Routes>
         <Route
           path="/"
@@ -159,6 +167,14 @@ function App() {
           <ScoreStatistics records={records} />
         </>
       )}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <MainApp />
     </BrowserRouter>
   );
 }
