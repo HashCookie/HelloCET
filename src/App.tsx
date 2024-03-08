@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./pages/Header";
 import YearAndSetSelector from "./components/YearAndSetSelector";
@@ -22,42 +22,48 @@ function MainApp() {
     }
   }, [location]);
 
-  const updateListeningScore = (score: number, totalQuestionsDone: number) => {
-    setRecords((prevRecords) => {
-      return prevRecords.map((record) => {
-        if (record.category === "分数") {
-          return { ...record, listeningTest: `${score} | 248.5` };
-        } else if (record.category === "题目") {
-          // 更新完成的题目数量
-          return { ...record, listeningTest: `${totalQuestionsDone} | 25` };
-        }
-        return record;
+  const updateListeningScore = useCallback(
+    (score: number, totalQuestionsDone: number) => {
+      setRecords((prevRecords) => {
+        return prevRecords.map((record) => {
+          if (record.category === "分数") {
+            return { ...record, listeningTest: `${score} | 248.5` };
+          } else if (record.category === "题目") {
+            // 更新完成的题目数量
+            return { ...record, listeningTest: `${totalQuestionsDone} | 25` };
+          }
+          return record;
+        });
       });
-    });
-  };
+    },
+    []
+  );
 
-  const updateReadingScore = (score: number, completedQuestions: number) => {
-    setRecords((prevRecords) => {
-      return prevRecords.map((record) => {
-        if (record.category === "分数") {
-          return {
-            ...record,
-            readingTest: `${score} | ${record.readingTest.split(" | ")[1]}`,
-          };
-        } else if (record.category === "题目") {
-          return {
-            ...record,
-            readingTest: `${completedQuestions} | ${
-              record.readingTest.split(" | ")[1]
-            }`,
-          };
-        }
-        return record;
+  const updateReadingScore = useCallback(
+    (score: number, completedQuestions: number) => {
+      setRecords((prevRecords) => {
+        return prevRecords.map((record) => {
+          if (record.category === "分数") {
+            return {
+              ...record,
+              readingTest: `${score} | ${record.readingTest.split(" | ")[1]}`,
+            };
+          } else if (record.category === "题目") {
+            return {
+              ...record,
+              readingTest: `${completedQuestions} | ${
+                record.readingTest.split(" | ")[1]
+              }`,
+            };
+          }
+          return record;
+        });
       });
-    });
-  };
+    },
+    []
+  );
 
-  const updateListeningDuration = (duration: string) => {
+  const updateListeningDuration = useCallback((duration: string) => {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
         if (record.category === "时间") {
@@ -66,9 +72,9 @@ function MainApp() {
         return record;
       });
     });
-  };
+  }, []);
 
-  const updateReadingDuration = (duration: string) => {
+  const updateReadingDuration = useCallback((duration: string) => {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
         if (record.category === "时间") {
@@ -77,7 +83,7 @@ function MainApp() {
         return record;
       });
     });
-  };
+  }, []);
 
   useEffect(() => {
     // 这个函数是异步的并且返回一个Promise，它解析为TableRecord类型的数组
