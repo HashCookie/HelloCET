@@ -49,6 +49,7 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
         paragraph is marked with a letter. Answer the questions by marking the
         corresponding letter on Answer Sheet 2.
       </p>
+
       <div className="text-center mb-4">
         <b>{data.passageTitle}</b>
       </div>
@@ -62,6 +63,7 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
         ></p>
       ))}
 
+      {/* 问题列表 */}
       {data.questions.map((question, index) => (
         <div key={index} className="mb-6">
           <p className="font-bold">
@@ -71,8 +73,8 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
             {question.Options.map((option, oIndex) => {
               const isSelected = selectedAnswer[question.Number] === option;
               const buttonClasses = isSelected
-                ? "bg-blue-500 hover:bg-blue-700 text-white"
-                : "bg-white text-black border border-gray-300 hover:bg-blue-100";
+                ? "bg-blue-500 hover:bg-blue-700 text-white" // 选中时的样式
+                : "bg-white text-black border border-gray-300 hover:bg-blue-100"; // 未选中时的样式
               return (
                 <button
                   key={oIndex}
