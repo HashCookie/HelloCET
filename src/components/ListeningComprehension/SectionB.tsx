@@ -32,8 +32,8 @@ const SectionB: React.FC<SectionBProps> = ({
 
   // 题目范围到音频文件名的映射
   const audioFiles = {
-    "7-10": "0811.mp3", // 假设第一段长对话对应第8题到第11题
-    "11-14": "1215.mp3", // 假设第二段长对话对应第12题到第15题
+    "7-10": "0811.mp3", // 第一段长对话对应第8题到第11题
+    "11-14": "1215.mp3", // 第二段长对话对应第12题到第15题
   };
 
   return (
@@ -57,8 +57,8 @@ const SectionB: React.FC<SectionBProps> = ({
             <AudioPlayer
               src={audioPathBase + audioFile}
               playingAudio={playingAudio}
-              onAudioPlay={onAudioPlay} // 确保这里传递了正确的 prop
-              audioId={`section-a-${audioFile}`} // audioId 应该是唯一的标识符
+              onAudioPlay={onAudioPlay}
+              audioId={`section-a-${audioFile}`} // audioId 是唯一的标识符
             />
             <b>
               Questions {start + 1} to {end + 1} are based on the conversation

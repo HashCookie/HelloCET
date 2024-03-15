@@ -32,9 +32,9 @@ const SectionC: React.FC<SectionCProps> = ({
 
   // 题目范围到音频文件名的映射
   const audioFiles = {
-    "15-17": "1618.mp3", // 假设第一段对应第16题到第18题
-    "18-20": "1921.mp3", // 假设第二段对应第19题到第21题
-    "21-24": "2225.mp3", // 假设第三段对应第22题到第25题
+    "15-17": "1618.mp3", // 第一段对应第16题到第18题
+    "18-20": "1921.mp3", // 第二段对应第19题到第21题
+    "21-24": "2225.mp3", // 第三段对应第22题到第25题
   };
 
   return (
@@ -58,8 +58,8 @@ const SectionC: React.FC<SectionCProps> = ({
             <AudioPlayer
               src={audioPathBase + audioFile}
               playingAudio={playingAudio}
-              onAudioPlay={onAudioPlay} // 确保这里传递了正确的 prop
-              audioId={`section-a-${audioFile}`} // audioId 应该是唯一的标识符
+              onAudioPlay={onAudioPlay}
+              audioId={`section-a-${audioFile}`} // audioId 是唯一的标识符
             />
             <b>
               Questions {start + 1} to {end + 1} are based on the passage you

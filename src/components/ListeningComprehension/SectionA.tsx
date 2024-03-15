@@ -38,10 +38,9 @@ const SectionA: React.FC<SectionAProps> = ({
     // 根据需要添加更多映射
   };
 
-
   return (
     <section>
-      <h3 className="font-bold">Section A</h3>
+      <h3 className="font-bold mb-1">Section A</h3>
       <p className="font-normal">
         <b>Directions:</b> In this section, you will hear three news reports. At
         the end of each news report, you will hear two or three questions. Both
@@ -60,7 +59,7 @@ const SectionA: React.FC<SectionAProps> = ({
             <AudioPlayer
               src={audioPathBase + audioFile}
               playingAudio={playingAudio}
-              onAudioPlay={onAudioPlay} // 确保这里传递了正确的 prop
+              onAudioPlay={onAudioPlay}
               audioId={`section-a-${audioFile}`} // audioId 应该是唯一的标识符
             />
             <b>
