@@ -29,12 +29,10 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part1 Writing
       </h1>
-      <p
-        dangerouslySetInnerHTML={{
-          __html: Directions.replace(/(Directions:)/, "<strong>$1</strong>"),
-        }}
-        className="text-base mb-5"
-      ></p>
+      <p className="text-base mb-5">
+        <strong>Directions:</strong>
+        {Directions}
+      </p>
       <textarea
         value={essay}
         onChange={handleInputChange}
