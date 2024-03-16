@@ -11,7 +11,6 @@ interface ListeningComprehensionProps {
 
 interface Question {
   number: number;
-  // 如果还有其他属性，请在这里添加
 }
 
 interface Answers {
@@ -95,7 +94,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   const handleOptionChange = (questionNumber: number, option: string) => {
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
-      [questionNumber]: option, // 直接使用 questionNumber 作为键
+      [questionNumber]: option,
     }));
   };
 
