@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ReadingComprehensionA from "./ReadingComprehensionA";
 import ReadingComprehensionB from "./ReadingComprehensionB";
 import ReadingComprehensionC from "./ReadingComprehensionC";
-import styles from "../../styles/ReadingComprehension.module.css";
 
 interface ReadingComprehensionProps {
   basePath: string;
@@ -182,7 +181,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   }
 
   return (
-    <div className={styles.comprehensionContainer}>
+    <div className="container mx-auto px-20 mt-10">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part3 Reading Comprehension
       </h1>
@@ -206,7 +205,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
           onClick={handleSubmit}
           className="px-6 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
         >
-          提交答案
+          提交
         </button>
       </div>
     </div>

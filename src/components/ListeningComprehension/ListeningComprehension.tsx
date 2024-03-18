@@ -211,7 +211,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
           onClick={handleSubmit}
           className="px-6 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
         >
-          提交答案
+          提交
         </button>
       </div>
     </div>

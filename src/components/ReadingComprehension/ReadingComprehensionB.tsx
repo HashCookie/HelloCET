@@ -63,10 +63,9 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
         ></p>
       ))}
 
-      {/* 问题列表 */}
       {data.questions.map((question, index) => (
         <div key={index} className="mb-6">
-          <p className="font-bold">
+          <p>
             {question.Number}. {question.Statement}
           </p>
           <div className="flex flex-wrap space-x-2">
