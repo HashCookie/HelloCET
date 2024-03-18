@@ -21,7 +21,7 @@ const Translation: React.FC<TranslationProps> = ({ basePath }) => {
   }, [basePath]); // 依赖数组包含 basePath，确保路径改变时重新加载
 
   return (
-    <div className="container mx-auto px-20 py-10">
+    <div className="container mx-auto px-20 mt-10">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part 4 Translation
       </h1>
