@@ -14,7 +14,7 @@ interface DataComponentProps {
 
 const ScoreStatistics: React.FC<DataComponentProps> = ({ records }) => {
   return (
-    <div className="overflow-x-auto mt-6">
+    <div className="container mx-auto px-30 mt-20 mb-3">
       <table className="min-w-full divide-y divide-gray-200 shadow-sm border-2 border-gray-200">
         <thead className="bg-gray-50">
           <tr>
