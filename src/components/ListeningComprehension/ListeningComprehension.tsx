@@ -172,7 +172,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   }
 
   return (
-    <div className="container mx-auto px-20">
+    <div className="container mx-auto px-20 mt-10">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part2 Listening Comprehension
       </h1>

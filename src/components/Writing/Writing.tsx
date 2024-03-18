@@ -25,7 +25,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
   };
 
   return (
-    <div className="w-4/5 mx-auto p-5">
+    <div className="container mx-auto px-20 mt-10">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part1 Writing
       </h1>

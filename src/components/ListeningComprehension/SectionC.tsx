@@ -39,7 +39,7 @@ const SectionC: React.FC<SectionCProps> = ({
 
   return (
     <section>
-      <h3 className="font-bold">Section C</h3>
+      <h3 className="font-bold mt-5">Section C</h3>
       <p>
         <b>Directions:</b>In this section, you will hear three passages. At the
         end of each passage, you will hear three or four questions. Both the
