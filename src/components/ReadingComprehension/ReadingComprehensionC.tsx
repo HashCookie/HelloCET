@@ -50,7 +50,7 @@ const ReadingComprehensionC: React.FC<ReadingComprehensionCProps> = ({
   const renderQuestions = (questions: Question[]) =>
     questions.map((question, index) => (
       <div key={index} className="mb-6">
-        <p className="font-bold text-lg mb-4">
+        <p className="text-base mb-4">
           {question.Number}. {question.Statement}
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -76,21 +76,21 @@ const ReadingComprehensionC: React.FC<ReadingComprehensionCProps> = ({
   return (
     <div className="container mx-auto px-1">
       <h2 className="text-xl font-bold text-center mb-6">{data.title}</h2>
-      <p>
+      <p className="text-base italic font-serif">
         <b>Directions:</b> There are 2 passages in this section. Each passage is
         followed by some questions or unfinished statements. For each of them,
         there are four choices marked A), B), C), and D). You should decide on
-        the best choice and mark the corresponding letter on Answer Sheet 2 with
-        a single line through the center.
+        the best choice and mark the corresponding letter on{" "}
+        <b>Answer Sheet 2</b> with a single line through the center.
       </p>
 
       <div className="mb-6">
-        <h3 className="font-bold text-center">Passage One</h3>
+        <h3 className="font-bold text-left">Passage One</h3>
         <h4 className="font-bold">
           Questions 46 to 50 are based on the following passage.
         </h4>
         {data.passagesOne.map((passage, index) => (
-          <p key={index} className="mb-4 text-base text-justify">
+          <p key={index} className="text-justify indent-8 mb-1">
             {passage}
           </p>
         ))}
@@ -98,12 +98,12 @@ const ReadingComprehensionC: React.FC<ReadingComprehensionCProps> = ({
       </div>
 
       <div className="mb-6">
-        <h3 className="font-bold text-center">Passage Two</h3>
+        <h3 className="font-bold text-left">Passage Two</h3>
         <h4 className="font-bold">
           Questions 51 to 55 are based on the following passage.
         </h4>
         {data.passagesTwo.map((passage, index) => (
-          <p key={index} className="mb-4 text-base text-justify">
+          <p key={index} className="text-justify indent-8 mb-1">
             {passage}
           </p>
         ))}

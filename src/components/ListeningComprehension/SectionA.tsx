@@ -26,7 +26,7 @@ const SectionA: React.FC<SectionAProps> = ({
   selectedAnswer,
   onAnswerChange,
   playingAudio,
-  onAudioPlay, 
+  onAudioPlay,
 }) => {
   const audioPathBase = `${process.env.PUBLIC_URL}/listeninglibrary/${year}年${month}月英语四级真题_第${paperNumber}套/`;
 
@@ -41,7 +41,7 @@ const SectionA: React.FC<SectionAProps> = ({
   return (
     <section>
       <h3 className="font-bold mb-1">Section A</h3>
-      <p className="font-normal">
+      <p className="text-base mb-5 italic font-serif">
         <b>Directions:</b> In this section, you will hear three news reports. At
         the end of each news report, you will hear two or three questions. Both
         the news report and the questions will be spoken only once. After you

@@ -29,7 +29,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part1 Writing
       </h1>
-      <p className="text-base mb-5">
+      <p className="text-base mb-5 italic font-serif">
         <strong>Directions:</strong>
         {Directions}
       </p>

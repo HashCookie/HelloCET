@@ -5,7 +5,6 @@ interface TranslationProps {
 }
 
 const Translation: React.FC<TranslationProps> = ({ basePath }) => {
-  const [Directions, setDirections] = useState("");
   const [ChinesePassage, setChinesePassage] = useState("");
 
   useEffect(() => {
@@ -13,7 +12,6 @@ const Translation: React.FC<TranslationProps> = ({ basePath }) => {
       fetch(`${basePath}/Translation.json`)
         .then((response) => response.json())
         .then((data) => {
-          setDirections(data.Directions);
           setChinesePassage(data.ChinesePassage);
         })
         .catch((error) => console.error("Error loading data:", error));
@@ -25,7 +23,11 @@ const Translation: React.FC<TranslationProps> = ({ basePath }) => {
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
         Part 4 Translation
       </h1>
-      <p className="mb-4 text-base text-justify">{Directions}</p>
+      <p className="text-base italic font-serif">
+        <b>Directions:</b>
+        For this part, you are allowed 30 minutes to translate a passage from
+        Chinese into English. You should write your answer on Answer Sheet 2.
+      </p>
       <p className="mb-4 text-base text-justify">{ChinesePassage}</p>
       <textarea
         className="block p-2.5 w-full text-sm h-32 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"

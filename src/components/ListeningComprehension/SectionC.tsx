@@ -40,7 +40,7 @@ const SectionC: React.FC<SectionCProps> = ({
   return (
     <section>
       <h3 className="font-bold mt-5">Section C</h3>
-      <p>
+      <p className="text-base mb-5 italic font-serif">
         <b>Directions:</b>In this section, you will hear three passages. At the
         end of each passage, you will hear three or four questions. Both the
         passage and the questions will be spoken only once. After you hear a

@@ -40,23 +40,23 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
 
   return (
     <div className="container mx-auto px-1">
-      <h2 className="text-xl font-bold text-center mb-6">{data.title}</h2>
-      <p className="mb-4 text-base text-justify">
+      <h2 className="text-xl font-bold text-left mb-6">{data.title}</h2>
+      <p className="text-base italic font-serif">
         <b>Directions:</b> In this section, you are going to read a passage with
         ten statements attached to it. Each statement contains information given
         in one of the paragraphs. Identify the paragraph from which the
         information is derived. You may choose a paragraph more than once. Each
         paragraph is marked with a letter. Answer the questions by marking the
-        corresponding letter on Answer Sheet 2.
+        corresponding letter on <b>Answer Sheet 2</b>.
       </p>
 
-      <div className="text-center mb-4">
+      <div className="text-left mb-2 mt-4">
         <b>{data.passageTitle}</b>
       </div>
       {data.passages.map((paragraph, index) => (
         <p
           key={index}
-          className="mb-4 text-base text-justify"
+          className="text-justify indent-8 mb-1"
           dangerouslySetInnerHTML={{
             __html: paragraph.replace(/\b([A-Z]\))/g, "<strong>$1</strong>"),
           }}

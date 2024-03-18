@@ -40,21 +40,24 @@ const ReadingComprehensionA: React.FC<ReadingComprehensionAProps> = ({
 
   return (
     <div className="container mx-auto px-1">
-      <h2 className="text-xl font-bold text-center mb-6">{data.title}</h2>
-      <p className="mb-4 text-base text-justify">
+      <h2 className="text-xl font-bold text-left mb-6">{data.title}</h2>
+      <p className="text-base italic font-serif">
         <b>Directions:</b> In this section, there is a passage with ten blanks.
         You are required to select one word for each blank from a list of
         choices given in a word bank following the passage. Read the passage
         through carefully before making your choices. Each choice in the bank is
         identified by a letter. Please mark the corresponding letter for each
-        item on Answer Sheet 2 with a single line through the centre. You may
-        not use any of the words in the bank more than once.
+        item on <b>Answer Sheet 2</b> with a single line through the centre. You
+        may not use any of the words in the bank more than once.
       </p>
+      <b className="block mb-3">
+        Questions 26 to 35 are based on the following passage.
+      </b>
 
       {data.passages.map((paragraph, index) => (
         <p
           key={index}
-          className="mb-4 text-base text-justify"
+          className="text-base text-justify indent-8 mb-1"
           dangerouslySetInnerHTML={{
             __html: paragraph.replace(
               /\b(26|27|28|29|30|31|32|33|34|35)\b/g,
