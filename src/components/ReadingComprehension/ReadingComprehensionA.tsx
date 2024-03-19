@@ -68,31 +68,30 @@ const ReadingComprehensionA: React.FC<ReadingComprehensionAProps> = ({
       ))}
 
       {/* 选项列表 */}
-      <div className="mb-6">
+      <div className="mb-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {Object.entries(data.options).map(([key, value]) => (
           <p
             key={key}
-            className="inline-block mr-3 mb-1 px-4 py-2 rounded-lg border"
+            className="px-4 py-2 rounded-lg border flex justify-center items-center text-center"
           >
             {key}) {value}
           </p>
         ))}
       </div>
 
-      {/* 问题列表 */}
       {data.questions.map((question, index) => (
         <div key={index} className="mb-6">
           <p className="font-bold">Question {question.number}</p>
-          <div className="flex flex-wrap space-x-2">
+          <div className="flex flex-wrap -mx-1">
             {question.options.map((option, oIndex) => {
               const isSelected = selectedAnswer[question.number] === option;
               const buttonStyle = isSelected
-                ? "bg-blue-500 hover:bg-blue-700 text-white" // 选中时的样式
-                : "bg-white text-black border border-gray-300 hover:bg-blue-100"; // 未选中时的样式
+                ? "border-blue-500 bg-blue-500 hover:bg-blue-700 text-white" // 选中时的样式
+                : "border-gray-300 bg-white hover:bg-blue-100 text-black"; // 未选中时的样式
               return (
                 <button
                   key={oIndex}
-                  className={`px-4 py-2 rounded-lg border ${buttonStyle}`}
+                  className={`px-4 py-2 m-2 rounded-lg border ${buttonStyle} flex-auto md:flex-none`}
                   onClick={() => handleAnswerChange(question.number, option)}
                 >
                   {option}

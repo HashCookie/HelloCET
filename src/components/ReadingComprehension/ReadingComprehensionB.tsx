@@ -65,19 +65,19 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
 
       {data.questions.map((question, index) => (
         <div key={index} className="mb-6">
-          <p className="mt-2">
+          <p className="font-bold">
             {question.Number}. {question.Statement}
           </p>
-          <div className="flex flex-wrap space-x-2">
+          <div className="flex flex-wrap -mx-1">
             {question.Options.map((option, oIndex) => {
               const isSelected = selectedAnswer[question.Number] === option;
               const buttonClasses = isSelected
-                ? "bg-blue-500 hover:bg-blue-700 text-white" // 选中时的样式
-                : "bg-white text-black border border-gray-300 hover:bg-blue-100"; // 未选中时的样式
+                ? "bg-blue-500 hover:bg-blue-700 text-white" // Selected style
+                : "bg-white text-black border border-gray-300 hover:bg-blue-100"; // Unselected style
               return (
                 <button
                   key={oIndex}
-                  className={`px-4 py-2 mt-2 rounded-lg border ${buttonClasses}`}
+                  className={`px-4 py-2 m-2 rounded-lg border flex-auto md:flex-none ${buttonClasses} focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50`}
                   onClick={() => handleOptionSelect(question.Number, option)}
                 >
                   {option}
