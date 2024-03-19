@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../styles/ListeningComprehension.module.css";
 
 // 定义问题的接口
 interface Question {
@@ -20,13 +19,13 @@ const QuestionList: React.FC<QuestionListProps> = ({
   onAnswerChange,
 }) => {
   return (
-    <div className={styles["questions"]}>
+    <div className="font-sans">
       {questions.map((question) => (
-        <div className={styles["question"]} key={question.number}>
+        <div className="mt-5" key={question.number}>
           <p className="font-semibold">{question.number}.</p>
-          <ul className="list-inside list-decimal">
+          <ul className="list-inside list-none p-0">
             {Object.entries(question.options).map(([key, text]) => (
-              <li key={key} className="ml-4">
+              <li key={key} className="mb-2.5 ml-4">
                 <input
                   type="radio"
                   id={`q${question.number}-${key}`}
@@ -34,7 +33,7 @@ const QuestionList: React.FC<QuestionListProps> = ({
                   value={key}
                   checked={selectedAnswer[question.number] === key}
                   onChange={() => onAnswerChange(question.number, key)}
-                  className="mr-2"
+                  className="mr-2.5"
                 />
                 <label
                   htmlFor={`q${question.number}-${key}`}

@@ -167,7 +167,7 @@ function MainApp() {
       </Routes>
       {basePath && (
         <>
-          <div className="mt-10 font-sans text-center font-bold text-xl md:text-2xl lg:text-3xl">
+          <div className="mt-10 text-center font-mono font-bold text-xl md:text-2xl lg:text-3xl">
             {renderPaperName()}
           </div>
           <Writing basePath={basePath} />

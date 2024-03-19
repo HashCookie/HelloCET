@@ -50,7 +50,7 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
         corresponding letter on <b>Answer Sheet 2</b>.
       </p>
 
-      <div className="text-left mb-2 mt-4">
+      <div className="text-center mb-2 mt-4">
         <b>{data.passageTitle}</b>
       </div>
       {data.passages.map((paragraph, index) => (
@@ -65,7 +65,7 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
 
       {data.questions.map((question, index) => (
         <div key={index} className="mb-6">
-          <p>
+          <p className="mt-2">
             {question.Number}. {question.Statement}
           </p>
           <div className="flex flex-wrap space-x-2">
