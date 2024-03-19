@@ -173,9 +173,11 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
 
   return (
     <div className="container mx-auto px-20 mt-10">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
-        Part2 Listening Comprehension
-      </h1>
+      <div className="text-base md:text-xl lg:text-2xl font-bold font-serif text-center mb-6 flex justify-between items-center">
+        <h2>Part II</h2>
+        <h1>Listening Comprehension</h1>
+        <h2>(30 minutes)</h2>
+      </div>
       <SectionA
         year={year}
         month={month}

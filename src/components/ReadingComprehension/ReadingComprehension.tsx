@@ -182,9 +182,11 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
 
   return (
     <div className="container mx-auto px-20 mt-10">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
-        Part3 Reading Comprehension
-      </h1>
+      <div className="text-base md:text-xl lg:text-2xl font-bold font-serif text-center mb-6 flex justify-between items-center">
+        <h2>Part III</h2>
+        <h1>Reading Comprehension</h1>
+        <h2>(40 minutes)</h2>
+      </div>
       <ReadingComprehensionA
         data={sectionAData}
         selectedAnswer={selectedAnswer}

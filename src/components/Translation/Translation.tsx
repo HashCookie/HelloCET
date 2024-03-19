@@ -20,9 +20,11 @@ const Translation: React.FC<TranslationProps> = ({ basePath }) => {
 
   return (
     <div className="container mx-auto px-20 mt-10">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
-        Part 4 Translation
-      </h1>
+      <div className="text-xl md:text-xl lg:text-2xl font-serif font-bold text-center mb-6 flex justify-between items-center">
+        <h2>Part IV</h2>
+        <h1>Translation</h1>
+        <h2>(30 minutes)</h2>
+      </div>
       <p className="text-base italic font-serif">
         <b>Directions:</b>
         For this part, you are allowed 30 minutes to translate a passage from

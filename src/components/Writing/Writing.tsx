@@ -26,9 +26,11 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
 
   return (
     <div className="container mx-auto px-20 mt-10">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6">
-        Part1 Writing
-      </h1>
+      <div className="text-base md:text-xl lg:text-2xl font-bold font-serif text-center mb-6 flex justify-between items-center">
+        <h2>Part I</h2>
+        <h1>Writing</h1>
+        <h2>(25 minutes)</h2>
+      </div>
       <p className="text-base mb-5 italic font-serif">
         <strong>Directions:</strong>
         {Directions}
