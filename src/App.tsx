@@ -9,6 +9,7 @@ import Translation from "./components/Translation/Translation";
 import ContactForm from "./pages/ContactForm";
 import ScoreStatistics, { TableRecord } from "./components/ScoreStatistics";
 import HeroSection from "./pages/HeroSection";
+import ScoresHistory from "./pages/ScoresHistory";
 
 function MainApp() {
   const [basePath, setBasePath] = useState("");
@@ -164,6 +165,7 @@ function MainApp() {
           }
         />
         <Route path="/feedback" element={<ContactForm />} />
+        <Route path="/scores" element={<ScoresHistory />} />
       </Routes>
       {basePath && (
         <>

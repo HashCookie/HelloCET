@@ -5,7 +5,7 @@ import SectionC from "./SectionC";
 
 interface ListeningComprehensionProps {
   basePath: string;
-  updateListeningScore: (score: number, totalQuestionsDone: number) => void;
+  updateListeningScore: (score: number, completedQuestions: number) => void;
   updateListeningDuration: (duration: string) => void;
 }
 
@@ -100,12 +100,12 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
 
   const handleSubmit = () => {
     const end = new Date();
+    let formattedDuration = "";
 
     if (startTime) {
       const durationSeconds = Math.round(
         (end.getTime() - startTime.getTime()) / 1000
       );
-      let formattedDuration = "";
 
       if (durationSeconds < 60) {
         // 小于1分钟，只显示秒
@@ -127,49 +127,46 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
           .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
       }
 
-      console.log("耗时:", formattedDuration);
-      updateListeningDuration(formattedDuration); // 更新耗时
+      updateListeningDuration(formattedDuration);
     }
-    // 各题型每题的分数
-    const scorePerShortNewsQuestion = 7.1;
-    const scorePerLongConversationQuestion = 7.1;
-    const scorePerPassageQuestion = 14.2;
 
     // 计算原始听力分数
     let rawListeningScore = 0;
     Object.keys(selectedAnswer).forEach((questionNumber) => {
-      // 因为现在questionNumber是直接从selectedAnswer的键获取的，所以不需要去掉'q'
-      const questionIndex = parseInt(questionNumber); // 直接转换为数字
+      const questionIndex = parseInt(questionNumber.replace("q", ""), 10);
       const userAnswer = selectedAnswer[questionNumber];
       const correctAnswer = correctAnswers[questionNumber];
 
       if (userAnswer === correctAnswer) {
-        // 判断题型并计算分数
         if (questionIndex <= 7) {
-          rawListeningScore += scorePerShortNewsQuestion;
+          rawListeningScore += 7.1;
         } else if (questionIndex <= 15) {
-          rawListeningScore += scorePerLongConversationQuestion;
+          rawListeningScore += 7.1;
         } else {
-          rawListeningScore += scorePerPassageQuestion;
+          rawListeningScore += 14.2;
         }
       }
     });
 
-    const totalQuestionsDone = Object.keys(selectedAnswer).filter(
+    const completedQuestions = Object.keys(selectedAnswer).filter(
       (key) => selectedAnswer[key] !== ""
     ).length;
     const roundedScore = Math.round(rawListeningScore * 10) / 10;
-    console.log("听力成绩:", roundedScore);
-    updateListeningScore(roundedScore, totalQuestionsDone);
-  };
+    updateListeningScore(roundedScore, completedQuestions);
 
-  if (questions.length === 0) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        Loading...
-      </div>
+    // 保存成绩到localStorage
+    const scoreRecord = {
+      date: new Date().toISOString(),
+      score: roundedScore,
+      completedQuestions,
+      duration: formattedDuration,
+    };
+    const existingRecords = JSON.parse(
+      localStorage.getItem("listeningScores") || "[]"
     );
-  }
+    existingRecords.push(scoreRecord);
+    localStorage.setItem("listeningScores", JSON.stringify(existingRecords));
+  };
 
   return (
     <div className="container mx-auto px-20 mt-10">

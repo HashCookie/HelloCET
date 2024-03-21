@@ -17,6 +17,10 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   updateReadingScore,
   updateReadingDuration,
 }) => {
+  const scorePerBlankFillingQuestion = 3.55; // 选词填空每题分数
+  const scorePerParagraphMatchingQuestion = 7.1; // 段落匹配每题分数
+  const scorePerCarefulReadingQuestion = 14.2; // 仔细阅读每题分数
+
   const [selectedAnswer, setSelectedAnswer] = useState<Answers>({});
   const [sectionAData, setSectionAData] = useState(null);
   const [sectionBData, setSectionBData] = useState(null);
@@ -114,17 +118,14 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
       let formattedDuration = "";
 
       if (durationSeconds < 60) {
-        // 小于1分钟，只显示秒
         formattedDuration = `${durationSeconds}秒`;
       } else if (durationSeconds < 3600) {
-        // 小于1小时，显示分钟和秒
         const minutes = Math.floor(durationSeconds / 60);
         const seconds = durationSeconds % 60;
         formattedDuration = `${minutes}分钟${seconds
           .toString()
           .padStart(2, "0")}秒`;
       } else {
-        // 大于等于1小时，显示小时、分钟和秒
         const hours = Math.floor(durationSeconds / 3600);
         const minutes = Math.floor((durationSeconds % 3600) / 60);
         const seconds = durationSeconds % 60;
@@ -133,43 +134,44 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
           .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
       }
 
-      console.log("耗时:", formattedDuration);
       updateReadingDuration(formattedDuration); // 更新耗时
-    }
-    // 各题型每题的分数
-    const scorePerBlankFillingQuestion = 3.55; // 选词填空每题分数
-    const scorePerParagraphMatchingQuestion = 7.1; // 段落匹配每题分数
-    const scorePerCarefulReadingQuestion = 14.2; // 仔细阅读每题分数
 
-    // 计算原始阅读分数
-    let rawReadingScore = 0;
-    Object.keys(selectedAnswer).forEach((questionNumber) => {
-      const questionIndex = parseInt(questionNumber); // 直接转换为数字
-      const userAnswer = selectedAnswer[questionNumber.toString()];
-      const correctAnswer = correctAnswers[questionNumber.toString()];
+      let rawReadingScore = 0;
+      Object.keys(selectedAnswer).forEach((questionNumber) => {
+        const questionIndex = parseInt(questionNumber);
+        const userAnswer = selectedAnswer[questionNumber];
+        const correctAnswer = correctAnswers[questionNumber];
 
-      if (userAnswer === correctAnswer) {
-        // 判断题型并计算分数
-        if (questionIndex >= 26 && questionIndex <= 35) {
-          rawReadingScore += scorePerBlankFillingQuestion;
-        } else if (questionIndex >= 36 && questionIndex <= 45) {
-          rawReadingScore += scorePerParagraphMatchingQuestion;
-        } else if (questionIndex >= 46 && questionIndex <= 55) {
-          rawReadingScore += scorePerCarefulReadingQuestion;
+        if (userAnswer === correctAnswer) {
+          if (questionIndex >= 26 && questionIndex <= 35) {
+            rawReadingScore += scorePerBlankFillingQuestion;
+          } else if (questionIndex >= 36 && questionIndex <= 45) {
+            rawReadingScore += scorePerParagraphMatchingQuestion;
+          } else if (questionIndex >= 46 && questionIndex <= 55) {
+            rawReadingScore += scorePerCarefulReadingQuestion;
+          }
         }
-      }
-    });
+      });
 
-    // 计算完成的题目数量
-    const completedQuestions = Object.keys(selectedAnswer).filter(
-      (key) => selectedAnswer[key] !== ""
-    ).length;
+      const completedQuestions = Object.keys(selectedAnswer).filter(
+        (key) => selectedAnswer[key] !== ""
+      ).length;
+      const roundedScore = Math.round(rawReadingScore * 10) / 10;
+      updateReadingScore(roundedScore, completedQuestions); // 更新成绩
 
-    const roundedScore = Math.round(rawReadingScore * 10) / 10;
-    console.log("阅读成绩:", roundedScore);
-
-    // 通过 updateReadingScore 方法更新 App 组件中的 records 状态
-    updateReadingScore(roundedScore, completedQuestions);
+      // 将成绩保存到localStorage
+      const scoreRecord = {
+        date: new Date().toISOString(),
+        score: roundedScore,
+        completedQuestions,
+        duration: formattedDuration,
+      };
+      const existingRecords = JSON.parse(
+        localStorage.getItem("readingScores") || "[]"
+      );
+      existingRecords.push(scoreRecord);
+      localStorage.setItem("readingScores", JSON.stringify(existingRecords));
+    }
   };
 
   if (!sectionAData || !sectionBData || !sectionCData) {
