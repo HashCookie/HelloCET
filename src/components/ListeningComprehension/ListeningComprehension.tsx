@@ -5,7 +5,12 @@ import SectionC from "./SectionC";
 
 interface ListeningComprehensionProps {
   basePath: string;
-  updateListeningScore: (score: number, completedQuestions: number) => void;
+  attemptTimestamp: string;
+  updateListeningScore: (
+    score: number,
+    completedQuestions: number,
+    attemptTimestamp: string
+  ) => void;
   updateListeningDuration: (duration: string) => void;
 }
 
@@ -19,6 +24,7 @@ interface Answers {
 
 const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   basePath,
+  attemptTimestamp,
   updateListeningScore,
   updateListeningDuration,
 }) => {
@@ -152,7 +158,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       (key) => selectedAnswer[key] !== ""
     ).length;
     const roundedScore = Math.round(rawListeningScore * 10) / 10;
-    updateListeningScore(roundedScore, completedQuestions);
+    updateListeningScore(roundedScore, completedQuestions, attemptTimestamp);
 
     // 保存成绩到localStorage
     const scoreRecord = {

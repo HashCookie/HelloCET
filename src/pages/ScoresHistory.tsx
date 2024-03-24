@@ -9,10 +9,6 @@ interface ScoreRecord {
   duration: string;
 }
 
-interface ListeningScoreRecord extends ScoreRecord {
-  totalQuestionsDone?: number; // 假设这是额外的属性
-}
-
 // 将持续时间字符串转换为秒数
 const convertDurationToSeconds = (duration: string): number => {
   const [hours = "0", minutes = "0", seconds = "0"] =
@@ -30,6 +26,7 @@ const formatDurationFromSeconds = (seconds: number): string => {
   }${minutes}分钟${remainingSeconds}秒`;
 };
 
+//将给定的日期字符串转换为北京时间。由于北京时间是UTC+8，函数考虑了时区差异，并格式化日期和时间。
 const formatDateToBeijingTime = (dateString: string): string => {
   const date = new Date(dateString);
   const beijingTimeOffset = 8 * 60; // 北京时间偏移量，以分钟为单位
@@ -53,21 +50,22 @@ const ScoresHistory = () => {
   useEffect(() => {
     const readingScoresString = localStorage.getItem("readingScores");
     const listeningScoresString = localStorage.getItem("listeningScores");
-    console.log("readingScores", readingScoresString);
-    console.log("listeningScores", listeningScoresString);
+    console.log("readingScores1", readingScoresString);
+    console.log("listeningScores1", listeningScoresString);
 
-    const readingScores: ScoreRecord[] = readingScoresString
-      ? JSON.parse(readingScoresString)
-      : [];
+    // 如果scoresString存在，它通过JSON.parse将JSON字符串转换为JavaScript对象数组；如果不存在，返回一个空数组。
+    const transformScores = (scoresString: string | null): ScoreRecord[] => {
+      return scoresString ? JSON.parse(scoresString) : [];
+    };
+
+    const readingScores: ScoreRecord[] = transformScores(
+      localStorage.getItem("readingScores")
+    );
     console.log("readingScores2", readingScores);
 
-    const listeningScores: ListeningScoreRecord[] = listeningScoresString
-      ? JSON.parse(listeningScoresString).map((item: ListeningScoreRecord) => ({
-          ...item,
-          completedQuestions:
-            item.totalQuestionsDone || item.completedQuestions, // 使用 totalQuestionsDone 或 fallback 到 completedQuestions
-        }))
-      : [];
+    const listeningScores: ScoreRecord[] = transformScores(
+      localStorage.getItem("listeningScores")
+    );
     console.log("listeningScores2", listeningScores);
 
     const combinedRecords = readingScores.map((readingRecord) => {
@@ -81,7 +79,7 @@ const ScoresHistory = () => {
         const totalScore = readingRecord.score + listeningRecord.score;
         const totalCompletedQuestions =
           readingRecord.completedQuestions + listeningRecord.completedQuestions;
-          
+
         const totalDurationSeconds =
           convertDurationToSeconds(readingRecord.duration) +
           convertDurationToSeconds(listeningRecord.duration);
@@ -122,8 +120,8 @@ const ScoresHistory = () => {
               </span>{" "}
               <span className="font-medium">{record.type}</span>, 分数:{" "}
               <span className="font-medium">{record.score}</span>分, 完成题目:{" "}
-              <span className="font-medium">{record.completedQuestions}</span>
-              个, 耗时: <span className="font-medium">{record.duration}</span>
+              <span className="font-medium">{record.completedQuestions}</span>,
+              耗时: <span className="font-medium">{record.duration}</span>
             </li>
           ))}
         </ul>

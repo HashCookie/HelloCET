@@ -4,7 +4,9 @@ export interface TableRecord {
   category: string;
   writingTest: string;
   listeningTest: string;
+  listeningTimestamp?: string;
   readingTest: string;
+  readingTimestamp?: string;
   translationTest: string;
 }
 

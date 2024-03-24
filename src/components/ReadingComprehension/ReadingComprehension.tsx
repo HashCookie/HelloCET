@@ -5,7 +5,12 @@ import ReadingComprehensionC from "./ReadingComprehensionC";
 
 interface ReadingComprehensionProps {
   basePath: string;
-  updateReadingScore: (score: number, completedQuestions: number) => void;
+  attemptTimestamp: string;
+  updateReadingScore: (
+    score: number,
+    completedQuestions: number,
+    attemptTimestamp: string
+  ) => void;
   updateReadingDuration: (duration: string) => void;
 }
 interface Answers {
@@ -14,6 +19,7 @@ interface Answers {
 
 const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   basePath,
+  attemptTimestamp,
   updateReadingScore,
   updateReadingDuration,
 }) => {
@@ -157,7 +163,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
         (key) => selectedAnswer[key] !== ""
       ).length;
       const roundedScore = Math.round(rawReadingScore * 10) / 10;
-      updateReadingScore(roundedScore, completedQuestions); // 更新成绩
+      updateReadingScore(roundedScore, completedQuestions, attemptTimestamp); // 更新成绩
 
       // 将成绩保存到localStorage
       const scoreRecord = {

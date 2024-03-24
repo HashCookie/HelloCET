@@ -14,6 +14,7 @@ import ScoresHistory from "./pages/ScoresHistory";
 function MainApp() {
   const [basePath, setBasePath] = useState("");
   const [records, setRecords] = useState<TableRecord[]>([]);
+  const [attemptTimestamp, setAttemptTimestamp] = useState("");
   let location = useLocation();
 
   useEffect(() => {
@@ -23,15 +24,31 @@ function MainApp() {
     }
   }, [location]);
 
+  useEffect(() => {
+    if (basePath) {
+      setAttemptTimestamp(new Date().toISOString());
+    } else {
+      setAttemptTimestamp(""); // 重置时间戳
+    }
+  }, [basePath]);
+
   const updateListeningScore = useCallback(
-    (score: number, totalQuestionsDone: number) => {
+    (score: number, totalQuestionsDone: number, attemptTimestamp: string) => {
       setRecords((prevRecords) => {
         return prevRecords.map((record) => {
           if (record.category === "分数") {
-            return { ...record, listeningTest: `${score} | 248.5` };
+            return {
+              ...record,
+              listeningTest: `${score} | 248.5`,
+              listeningTimestamp: attemptTimestamp,
+            };
           } else if (record.category === "题目") {
             // 更新完成的题目数量
-            return { ...record, listeningTest: `${totalQuestionsDone} | 25` };
+            return {
+              ...record,
+              listeningTest: `${totalQuestionsDone} | 25`,
+              listeningTimestamp: attemptTimestamp,
+            };
           }
           return record;
         });
@@ -41,13 +58,14 @@ function MainApp() {
   );
 
   const updateReadingScore = useCallback(
-    (score: number, completedQuestions: number) => {
+    (score: number, completedQuestions: number, attemptTimestamp: string) => {
       setRecords((prevRecords) => {
         return prevRecords.map((record) => {
           if (record.category === "分数") {
             return {
               ...record,
               readingTest: `${score} | ${record.readingTest.split(" | ")[1]}`,
+              readingTimestamp: attemptTimestamp,
             };
           } else if (record.category === "题目") {
             return {
@@ -55,6 +73,7 @@ function MainApp() {
               readingTest: `${completedQuestions} | ${
                 record.readingTest.split(" | ")[1]
               }`,
+              readingTimestamp: attemptTimestamp,
             };
           }
           return record;
@@ -175,11 +194,13 @@ function MainApp() {
           <Writing basePath={basePath} />
           <ListeningComprehension
             basePath={basePath}
+            attemptTimestamp={attemptTimestamp}
             updateListeningScore={updateListeningScore}
             updateListeningDuration={updateListeningDuration}
           />
           <ReadingComprehension
             basePath={basePath}
+            attemptTimestamp={attemptTimestamp}
             updateReadingScore={updateReadingScore}
             updateReadingDuration={updateReadingDuration}
           />
