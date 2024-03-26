@@ -125,12 +125,23 @@ const ScoresHistory = () => {
           {records.map((record, index) => (
             <li key={index} className="text-gray-600">
               <span className="font-medium">
-                {formatDateToBeijingTime(record.date)}
-              </span>{" "}
-              <span className="font-medium">{record.type}</span>, 分数:{" "}
-              <span className="font-medium">{record.score}</span>分, 完成题目:{" "}
-              <span className="font-medium">{record.completedQuestions}</span>,
-              耗时: <span className="font-medium">{record.duration}</span>
+                {formatDateToBeijingTime(record.date)} -{" "}
+              </span>
+              <span className="font-medium">{record.type}</span>,
+              <span>
+                {" "}
+                分数: <span className="font-medium">
+                  {record.score}
+                </span>分,{" "}
+              </span>
+              <span>
+                完成题目:{" "}
+                <span className="font-medium">{record.completedQuestions}</span>
+                ,{" "}
+              </span>
+              <span>
+                耗时: <span className="font-medium">{record.duration}</span>
+              </span>
             </li>
           ))}
         </ul>

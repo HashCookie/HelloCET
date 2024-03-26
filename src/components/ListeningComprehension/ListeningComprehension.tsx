@@ -103,6 +103,15 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       [questionNumber]: option,
     }));
   };
+  const extractPaperName = (basePath:string) => {
+    const regex = /(\d{4})年(\d+)月英语四级真题_第(\d+)套/;
+    const match = basePath.match(regex);
+    if (match) {
+      const [, year, month, setNumber] = match;
+      return `英语四级${year}年${month}月第${setNumber}套`;
+    }
+    return "未知试卷";
+  };
 
   const handleSubmit = () => {
     const end = new Date();
@@ -158,6 +167,8 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
     const roundedScore = Math.round(rawListeningScore * 10) / 10;
     updateListeningScore(roundedScore, completedQuestions, attemptTimestamp);
 
+    const paperName = extractPaperName(basePath);
+
     // 保存成绩到localStorage
     const scoreRecord = {
       date: new Date().toISOString(),
@@ -165,6 +176,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       completedQuestions,
       seconds: durationInSeconds,
       attemptId: attemptTimestamp,
+      type: paperName,
     };
     const existingRecords = JSON.parse(
       localStorage.getItem("listeningScores") || "[]"
