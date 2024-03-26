@@ -10,6 +10,7 @@ import ContactForm from "./pages/ContactForm";
 import ScoreStatistics, { TableRecord } from "./components/ScoreStatistics";
 import HeroSection from "./pages/HeroSection";
 import ScoresHistory from "./pages/ScoresHistory";
+import { v4 as uuidv4 } from "uuid";
 
 function MainApp() {
   const [basePath, setBasePath] = useState("");
@@ -26,7 +27,7 @@ function MainApp() {
 
   useEffect(() => {
     if (basePath) {
-      setAttemptTimestamp(new Date().toISOString());
+      setAttemptTimestamp(uuidv4());
     } else {
       setAttemptTimestamp(""); // 重置时间戳
     }

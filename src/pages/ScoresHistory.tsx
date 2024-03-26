@@ -7,14 +7,9 @@ interface ScoreRecord {
   score: number;
   completedQuestions: number;
   duration: string;
+  attemptId: string;
+  seconds: number; //
 }
-
-// 将持续时间字符串转换为秒数
-const convertDurationToSeconds = (duration: string): number => {
-  const [hours = "0", minutes = "0", seconds = "0"] =
-    duration.match(/\d+/g) || [];
-  return Number(hours) * 3600 + Number(minutes) * 60 + Number(seconds);
-};
 
 // 格式化持续时间为 "X小时Y分钟Z秒" 的格式
 const formatDurationFromSeconds = (seconds: number): string => {
@@ -48,10 +43,8 @@ const ScoresHistory = () => {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
 
   useEffect(() => {
-    const readingScoresString = localStorage.getItem("readingScores");
-    const listeningScoresString = localStorage.getItem("listeningScores");
-    console.log("readingScores1", readingScoresString);
-    console.log("listeningScores1", listeningScoresString);
+    const combinedDurationInSeconds = new Map<string, number>();
+    const combinedScoresMap = new Map<string, ScoreRecord>();
 
     // 如果scoresString存在，它通过JSON.parse将JSON字符串转换为JavaScript对象数组；如果不存在，返回一个空数组。
     const transformScores = (scoresString: string | null): ScoreRecord[] => {
@@ -61,50 +54,58 @@ const ScoresHistory = () => {
     const readingScores: ScoreRecord[] = transformScores(
       localStorage.getItem("readingScores")
     );
-    console.log("readingScores2", readingScores);
 
     const listeningScores: ScoreRecord[] = transformScores(
       localStorage.getItem("listeningScores")
     );
-    console.log("listeningScores2", listeningScores);
+    console.log("readingScores", readingScores);
+    console.log("listeningScores", listeningScores);
 
-    const combinedRecords = readingScores.map((readingRecord) => {
-      //查找满足特定条件的第一个元素，并返回该元素。在这个上下文中，find方法被用来从listeningScores数组中查找与当前readingRecord具有相同日期的听力成绩记录。
-      const listeningRecord = listeningScores.find(
-        (ls) => ls.date === readingRecord.date
-      );
+    // 遍历并合并成绩
+    [...readingScores, ...listeningScores].forEach((record) => {
+      // 获取已合并的记录，或创建一个新的初始记录
+      const combinedRecord = combinedScoresMap.get(record.attemptId) || {
+        date: record.date,
+        type: record.type,
+        score: 0,
+        completedQuestions: 0,
+        duration: "0分钟0秒",
+        seconds: 0, // 新记录初始化秒数为0
+        attemptId: record.attemptId,
+      };
 
-      console.log("listeningRecord", listeningRecord);
-      if (listeningRecord) {
-        const totalScore = readingRecord.score + listeningRecord.score;
-        const totalCompletedQuestions =
-          readingRecord.completedQuestions + listeningRecord.completedQuestions;
+      // console.log(`处理attemptId为${record.attemptId}的记录`);
+      // console.log(`合并记录中添加前的秒数：${combinedRecord.seconds}`);
 
-        const totalDurationSeconds =
-          convertDurationToSeconds(readingRecord.duration) +
-          convertDurationToSeconds(listeningRecord.duration);
+      // 累加分数和完成题目数
+      combinedRecord.score += record.score;
+      combinedRecord.completedQuestions += record.completedQuestions;
 
-        const totalDurationFormatted =
-          formatDurationFromSeconds(totalDurationSeconds);
+      // 计算并累加持续时间的秒数
+      const currentTotalSeconds =
+        combinedDurationInSeconds.get(record.attemptId) || 0;
+      const newSeconds = record.seconds || 0; // 使用记录中的秒数，如果不存在则默认为0
+      const updatedTotalSeconds = currentTotalSeconds + newSeconds;
+      combinedDurationInSeconds.set(record.attemptId, updatedTotalSeconds);
 
-        return {
-          ...readingRecord,
-          score: totalScore,
-          completedQuestions: totalCompletedQuestions,
-          duration: totalDurationFormatted,
-        };
-      }
-      return readingRecord; // 如果没有找到匹配的听力记录，返回阅读记录本身
+      // console.log(`记录中的新秒数：${newSeconds}`);
+      // console.log(`添加后的更新总秒数：${updatedTotalSeconds}`);
+
+      // 更新合并记录中的持续时间
+      combinedRecord.duration = formatDurationFromSeconds(updatedTotalSeconds);
+      combinedRecord.seconds = updatedTotalSeconds; // 跟踪原始总秒数
+
+      // 将更新后的合并记录放回映射中
+      combinedScoresMap.set(record.attemptId, combinedRecord);
     });
 
-    setRecords(combinedRecords);
+    // 设置状态以重新渲染UI
+    setRecords(Array.from(combinedScoresMap.values()));
   }, []);
 
   // 清空旧的localStorage数据
   // localStorage.removeItem("listeningScores");
   // localStorage.removeItem("readingScores");
-
-  console.log("records", records);
 
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">

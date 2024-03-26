@@ -116,25 +116,27 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
 
   const handleSubmit = () => {
     const end = new Date();
+    let durationInSeconds = 0;
 
     if (startTime) {
-      const durationSeconds = Math.round(
+      durationInSeconds = Math.round(
         (end.getTime() - startTime.getTime()) / 1000
       );
+
       let formattedDuration = "";
 
-      if (durationSeconds < 60) {
-        formattedDuration = `${durationSeconds}秒`;
-      } else if (durationSeconds < 3600) {
-        const minutes = Math.floor(durationSeconds / 60);
-        const seconds = durationSeconds % 60;
+      if (durationInSeconds < 60) {
+        formattedDuration = `${durationInSeconds}秒`;
+      } else if (durationInSeconds < 3600) {
+        const minutes = Math.floor(durationInSeconds / 60);
+        const seconds = durationInSeconds % 60;
         formattedDuration = `${minutes}分钟${seconds
           .toString()
           .padStart(2, "0")}秒`;
       } else {
-        const hours = Math.floor(durationSeconds / 3600);
-        const minutes = Math.floor((durationSeconds % 3600) / 60);
-        const seconds = durationSeconds % 60;
+        const hours = Math.floor(durationInSeconds / 3600);
+        const minutes = Math.floor((durationInSeconds % 3600) / 60);
+        const seconds = durationInSeconds % 60;
         formattedDuration = `${hours}小时${minutes
           .toString()
           .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
@@ -170,7 +172,8 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
         date: new Date().toISOString(),
         score: roundedScore,
         completedQuestions,
-        duration: formattedDuration,
+        seconds: durationInSeconds,
+        attemptId: attemptTimestamp,
       };
       const existingRecords = JSON.parse(
         localStorage.getItem("readingScores") || "[]"

@@ -106,28 +106,26 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
 
   const handleSubmit = () => {
     const end = new Date();
-    let formattedDuration = "";
+    let durationInSeconds = 0;
 
     if (startTime) {
-      const durationSeconds = Math.round(
+      durationInSeconds = Math.round(
         (end.getTime() - startTime.getTime()) / 1000
       );
 
-      if (durationSeconds < 60) {
-        // 小于1分钟，只显示秒
-        formattedDuration = `${durationSeconds}秒`;
-      } else if (durationSeconds < 3600) {
-        // 小于1小时，显示分钟和秒
-        const minutes = Math.floor(durationSeconds / 60);
-        const seconds = durationSeconds % 60;
+      let formattedDuration = "";
+      if (durationInSeconds < 60) {
+        formattedDuration = `${durationInSeconds}秒`;
+      } else if (durationInSeconds < 3600) {
+        const minutes = Math.floor(durationInSeconds / 60);
+        const seconds = durationInSeconds % 60;
         formattedDuration = `${minutes}分钟${seconds
           .toString()
           .padStart(2, "0")}秒`;
       } else {
-        // 大于等于1小时，显示小时、分钟和秒
-        const hours = Math.floor(durationSeconds / 3600);
-        const minutes = Math.floor((durationSeconds % 3600) / 60);
-        const seconds = durationSeconds % 60;
+        const hours = Math.floor(durationInSeconds / 3600);
+        const minutes = Math.floor((durationInSeconds % 3600) / 60);
+        const seconds = durationInSeconds % 60;
         formattedDuration = `${hours}小时${minutes
           .toString()
           .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
@@ -165,7 +163,8 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       date: new Date().toISOString(),
       score: roundedScore,
       completedQuestions,
-      duration: formattedDuration,
+      seconds: durationInSeconds,
+      attemptId: attemptTimestamp,
     };
     const existingRecords = JSON.parse(
       localStorage.getItem("listeningScores") || "[]"
