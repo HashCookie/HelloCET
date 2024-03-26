@@ -13,12 +13,20 @@ interface ScoreRecord {
 
 // 格式化持续时间为 "X小时Y分钟Z秒" 的格式
 const formatDurationFromSeconds = (seconds: number): string => {
-  const hours = Math.floor(seconds / 3600);
-  const minutes = Math.floor((seconds % 3600) / 60);
-  const remainingSeconds = seconds % 60;
-  return `${
-    hours > 0 ? hours + "小时" : ""
-  }${minutes}分钟${remainingSeconds}秒`;
+  if (seconds < 60) {
+    return `${seconds}秒`;
+  } else if (seconds < 3600) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}分钟${remainingSeconds.toString().padStart(2, "0")}秒`;
+  } else {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const remainingSeconds = seconds % 60;
+    return `${hours}小时${minutes
+      .toString()
+      .padStart(2, "0")}分钟${remainingSeconds.toString().padStart(2, "0")}秒`;
+  }
 };
 
 //将给定的日期字符串转换为北京时间。由于北京时间是UTC+8，函数考虑了时区差异，并格式化日期和时间。
