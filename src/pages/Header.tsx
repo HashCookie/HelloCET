@@ -97,7 +97,21 @@ const Header = () => {
               反馈
             </Link>
           </li>
+          <li className="max-lg:border-b max-lg:py-2 px-3">
+            <Link
+              to="/scores"
+              className="text-gray-500 block font-semibold text-[15px]"
+            >
+              数据记录
+            </Link>
+          </li>
         </ul>
+        {/* <Link
+          to="/scores"
+          className="hidden lg:block text-[#007bff] font-semibold text-[15px]"
+        >
+          数据记录
+        </Link> */}
       </div>
     </header>
   );
