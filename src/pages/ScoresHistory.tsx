@@ -87,6 +87,7 @@ const ScoresHistory = () => {
 
       // 累加分数和完成题目数
       combinedRecord.score += record.score;
+      combinedRecord.score = parseFloat(combinedRecord.score.toFixed(1));
       combinedRecord.completedQuestions += record.completedQuestions;
 
       // 计算并累加持续时间的秒数
