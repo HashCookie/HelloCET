@@ -120,11 +120,12 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   };
 
   const extractPaperName = (basePath: string) => {
-    const regex = /(\d{4})年(\d+)月英语四级真题_第(\d+)套/;
+    const regex = /(\d{4})年(\d+)月英语(四级|六级)真题_第(\d+)套/;
     const match = basePath.match(regex);
     if (match) {
-      const [, year, month, setNumber] = match;
-      return `英语四级${year}年${month}月第${setNumber}套`;
+      const [, year, month, level, setNumber] = match;
+      const levelName = level === "四级" ? "英语四级" : "英语六级";
+      return `${levelName}${year}年${month}月第${setNumber}套`;
     }
     return "未知试卷";
   };
