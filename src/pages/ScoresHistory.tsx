@@ -108,7 +108,17 @@ const ScoresHistory = () => {
     });
 
     // 设置状态以重新渲染UI
-    setRecords(Array.from(combinedScoresMap.values()));
+    // 将合并的记录从Map转换为数组
+    const combinedRecordsArray = Array.from(combinedScoresMap.values());
+
+    // 对记录按照日期进行排序
+    combinedRecordsArray.sort((a, b) => {
+      // 转换为日期对象并比较时间戳
+      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    });
+
+    // 设置状态以重新渲染UI
+    setRecords(combinedRecordsArray);
   }, []);
 
   // 清空旧的localStorage数据
