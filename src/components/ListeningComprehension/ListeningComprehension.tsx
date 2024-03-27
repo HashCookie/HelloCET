@@ -89,9 +89,11 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
     }
   }, [basePath]);
 
-  useEffect(() => {
-    setStartTime(new Date());
-  }, []);
+  const handleFirstInteraction = () => {
+    if (!startTime) {
+      setStartTime(new Date());
+    }
+  };
 
   // 在回调函数中设置当前播放的音频ID
   const handleAudioPlay = (audioId: string | null) => {
@@ -99,6 +101,8 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
   };
 
   const handleOptionChange = (questionNumber: number, option: string) => {
+    handleFirstInteraction();
+
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
       [questionNumber]: option,

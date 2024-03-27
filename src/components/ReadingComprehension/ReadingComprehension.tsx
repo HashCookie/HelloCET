@@ -33,7 +33,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
   const [sectionBData, setSectionBData] = useState(null);
   const [sectionCData, setSectionCData] = useState(null);
   const [correctAnswers, setCorrectAnswers] = useState<Answers>({});
-  const [startTime, setStartTime] = useState<Date>(new Date()); // 设置开始时间
+  const [startTime, setStartTime] = useState<Date | null>(null); // 设置开始时间
 
   useEffect(() => {
     if (basePath) {
@@ -104,11 +104,15 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
     }
   }, [basePath]);
 
-  useEffect(() => {
-    setStartTime(new Date());
-  }, []);
+  const handleFirstInteraction = () => {
+    if (!startTime) {
+      setStartTime(new Date());
+    }
+  };
 
   const handleOptionChange = (questionNumber: number, option: string) => {
+    handleFirstInteraction();
+
     setSelectedAnswer((prevAnswers) => ({
       ...prevAnswers,
       [questionNumber]: option,
