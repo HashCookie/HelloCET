@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReadingComprehensionA from "./ReadingComprehensionA";
 import ReadingComprehensionB from "./ReadingComprehensionB";
 import ReadingComprehensionC from "./ReadingComprehensionC";
+import { Toaster, toast } from "sonner";
 
 interface ReadingComprehensionProps {
   basePath: string;
@@ -194,6 +195,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
       existingRecords.push(scoreRecord);
       localStorage.setItem("readingScores", JSON.stringify(existingRecords));
     }
+    toast.success("已提交", { duration: 1000 });
   };
 
   if (!sectionAData || !sectionBData || !sectionCData) {
@@ -233,6 +235,7 @@ const ReadingComprehension: React.FC<ReadingComprehensionProps> = ({
         >
           提交
         </button>
+        <Toaster position="top-right" richColors />
       </div>
     </div>
   );

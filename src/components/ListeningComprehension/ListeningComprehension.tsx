@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
+import { Toaster, toast } from "sonner";
 
 interface ListeningComprehensionProps {
   basePath: string;
@@ -103,7 +104,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
       [questionNumber]: option,
     }));
   };
-  const extractPaperName = (basePath:string) => {
+  const extractPaperName = (basePath: string) => {
     const regex = /(\d{4})年(\d+)月英语四级真题_第(\d+)套/;
     const match = basePath.match(regex);
     if (match) {
@@ -183,6 +184,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
     );
     existingRecords.push(scoreRecord);
     localStorage.setItem("listeningScores", JSON.stringify(existingRecords));
+    toast.success("已提交", { duration: 1000 });
   };
 
   return (
@@ -229,6 +231,7 @@ const ListeningComprehension: React.FC<ListeningComprehensionProps> = ({
         >
           提交
         </button>
+        <Toaster position="top-right" richColors />
       </div>
     </div>
   );
