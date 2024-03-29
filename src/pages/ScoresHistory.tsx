@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Table } from "@radix-ui/themes";
 
 // 定义记录的类型
 interface ScoreRecord {
@@ -132,30 +133,28 @@ const ScoresHistory = () => {
         成绩记录
       </h2>
       {records.length > 0 ? (
-        <ul className="list-disc pl-5 space-y-2">
-          {records.map((record, index) => (
-            <li key={index} className="text-gray-600">
-              <span className="font-medium">
-                {formatDateToBeijingTime(record.date)} -{" "}
-              </span>
-              <span className="font-medium">{record.type}</span>,
-              <span>
-                {" "}
-                分数: <span className="font-medium">
-                  {record.score}
-                </span>分,{" "}
-              </span>
-              <span>
-                完成题目:{" "}
-                <span className="font-medium">{record.completedQuestions}</span>
-                ,{" "}
-              </span>
-              <span>
-                耗时: <span className="font-medium">{record.duration}</span>
-              </span>
-            </li>
-          ))}
-        </ul>
+        <Table.Root variant="surface">
+          <Table.Header>
+            <Table.Row>
+              <Table.ColumnHeaderCell>日期</Table.ColumnHeaderCell>
+              <Table.ColumnHeaderCell>卷子</Table.ColumnHeaderCell>
+              <Table.ColumnHeaderCell>分数</Table.ColumnHeaderCell>
+              <Table.ColumnHeaderCell>已完成</Table.ColumnHeaderCell>
+              <Table.ColumnHeaderCell>耗时</Table.ColumnHeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            {records.map((record, index) => (
+              <Table.Row key={index}>
+                <Table.Cell>{formatDateToBeijingTime(record.date)}</Table.Cell>
+                <Table.Cell>{record.type}</Table.Cell>
+                <Table.Cell>{record.score}分</Table.Cell>
+                <Table.Cell>{record.completedQuestions}</Table.Cell>
+                <Table.Cell>{record.duration}</Table.Cell>
+              </Table.Row>
+            ))}
+          </Table.Body>
+        </Table.Root>
       ) : (
         <p className="text-center text-gray-600">暂无成绩记录</p>
       )}

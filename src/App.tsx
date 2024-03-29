@@ -11,6 +11,8 @@ import ScoreStatistics, { TableRecord } from "./components/ScoreStatistics";
 import HeroSection from "./pages/HeroSection";
 import ScoresHistory from "./pages/ScoresHistory";
 import { v4 as uuidv4 } from "uuid";
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 
 function MainApp() {
   const [basePath, setBasePath] = useState("");
@@ -216,7 +218,9 @@ function MainApp() {
 function App() {
   return (
     <BrowserRouter>
-      <MainApp />
+      <Theme>
+        <MainApp />
+      </Theme>
     </BrowserRouter>
   );
 }
