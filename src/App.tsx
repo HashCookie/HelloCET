@@ -13,6 +13,7 @@ import ScoresHistory from "./pages/ScoresHistory";
 import { v4 as uuidv4 } from "uuid";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function MainApp() {
   const [basePath, setBasePath] = useState("");
@@ -220,6 +221,7 @@ function App() {
     <BrowserRouter>
       <Theme>
         <MainApp />
+        <SpeedInsights />
       </Theme>
     </BrowserRouter>
   );
