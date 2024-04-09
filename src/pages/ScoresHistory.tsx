@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Table } from "@radix-ui/themes";
 
 // 定义记录的类型
