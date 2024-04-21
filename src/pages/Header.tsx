@@ -106,12 +106,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        {/* <Link
-          to="/scores"
-          className="hidden lg:block text-[#007bff] font-semibold text-[15px]"
-        >
-          数据记录
-        </Link> */}
       </div>
     </header>
   );
