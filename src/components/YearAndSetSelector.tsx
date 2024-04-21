@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
+import { fetchData } from "../utils/dataFetchUtils";
+import { buildBasePath } from "../utils/pathUtils";
+import { filterMonths, filterSets } from "../utils/filterOptions";
 
 interface YearAndSetSelectorProps {
   onSelect: (basePath: string) => void;
@@ -19,29 +22,17 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
   const [set, setSet] = useState("");
   const [data, setData] = useState<YearData[]>([]);
 
-  // 加入 useMemo 钩子
-  const monthOptions = useMemo(() => {
-    if (!year) return [];
-    const selectedYearData = data.find((item) => item.year === year);
-    return Object.keys(selectedYearData?.monthsAndSets || {});
-  }, [year, data]);
-
-  const setOptions = useMemo(() => {
-    if (!month || !year) return [];
-    const selectedYearData = data.find((item) => item.year === year);
-    return selectedYearData?.monthsAndSets[month] || [];
-  }, [month, year, data]);
+  const monthOptions = useMemo(() => filterMonths(data, year), [year, data]);
+  const setOptions = useMemo(
+    () => filterSets(data, year, month),
+    [month, year, data]
+  );
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((allData) => {
-        const testData = allData[testType]; // 选择 CET4 或 CET6 的数据
-        console.log("Loaded data for", testType, testData);
-        setData(testData);
-      })
-      .catch((error) => console.error("Error loading data:", error));
-  }, [testType]); // 添加 testType 作为依赖项
+    fetchData(testType)
+      .then((testData) => setData(testData))
+      .catch((error) => console.error("Failed to fetch data:", error));
+  }, [testType]);
 
   useEffect(() => {
     // 当年份改变时，重置月份和套数的选择
@@ -76,9 +67,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
   );
 
   const handleSubmit = () => {
-    const basePath = `/data/${testType}/${year}/${year}年${month}英语${
-      testType === "CET4" ? "四" : "六"
-    }级真题_${set}/`;
+    const basePath = buildBasePath(testType, year, month, set);
     onSelect(basePath);
   };
 
