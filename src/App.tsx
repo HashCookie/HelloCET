@@ -15,6 +15,7 @@ import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { extractPaperDetails } from "./utils/parseUtils";
+import { fetchRecords } from "./utils/dataUtils";
 
 function MainApp() {
   const [basePath, setBasePath] = useState("");
@@ -111,33 +112,6 @@ function MainApp() {
   }, []);
 
   useEffect(() => {
-    // 这个函数是异步的并且返回一个Promise，它解析为TableRecord类型的数组
-    const fetchRecords = async (): Promise<TableRecord[]> => {
-      return [
-        {
-          category: "时间",
-          writingTest: "",
-          listeningTest: "",
-          readingTest: "",
-          translationTest: "",
-        },
-        {
-          category: "题目",
-          writingTest: "0 | 1",
-          listeningTest: "0 | 25",
-          readingTest: "0 | 30",
-          translationTest: "0 | 1",
-        },
-        {
-          category: "分数",
-          writingTest: "0 | 106.5",
-          listeningTest: "0 | 248.5",
-          readingTest: "0 | 248.5",
-          translationTest: "0 | 106.5",
-        },
-      ];
-    };
-
     if (basePath) {
       fetchRecords()
         .then((data) => {
