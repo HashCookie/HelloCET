@@ -110,7 +110,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
           <select
             value={year}
             onChange={handleYearChange}
-            className="px-1 py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+            className="px-2 text-center py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
           >
             <option value="">选择年份</option>
             {data.map((item) => (
@@ -123,7 +123,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
           <select
             value={month}
             onChange={handleMonthChange}
-            className="px-1 py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+            className="px-2 text-center py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
           >
             <option value="">选择月份</option>
             {monthOptions.map((m) => (
@@ -136,7 +136,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
           <select
             value={set}
             onChange={handleSetChange}
-            className="px-1 py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+            className="px-2 text-center py-2.5 rounded text-white text-sm font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
           >
             <option value="">选择套数</option>
             {setOptions.map((s) => (
