@@ -16,7 +16,7 @@ const HeroSection: React.FC<Props> = () => {
           一个在线四六级练习平台专门为准备参加大学英语四级和六级考试的学生设计的在线测试网站。
         </p>
         <div className="mt-10">
-          <button className="w-full sm:w-auto px-8 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors">
+          <button className="w-full rounded sm:w-auto px-8 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors">
             Get started today
           </button>
         </div>
