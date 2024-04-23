@@ -3,6 +3,7 @@ import { fetchData } from "../utils/dataFetchUtils";
 import { buildBasePath } from "../utils/pathUtils";
 import { filterMonths, filterSets } from "../utils/filterOptions";
 import { useNavigate } from "react-router-dom";
+import { Toaster, toast } from "sonner";
 
 interface YearAndSetSelectorProps {
   onSelect: (basePath: string) => void;
@@ -70,6 +71,12 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
   );
 
   const handleSubmit = () => {
+    if (!year || !month || !set) {
+      toast.error("请选择完整的卷子信息（年份、月份和套数）。", {
+        duration: 3000,
+      });
+      return;
+    }
     const basePath = buildBasePath(testType, year, month, set);
     onSelect(basePath);
     setShowControls(true);
@@ -152,6 +159,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
           >
             加载数据
           </button>
+          <Toaster position="top-right" richColors />
         </div>
       )}
     </div>

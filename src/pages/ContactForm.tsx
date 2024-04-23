@@ -44,7 +44,7 @@ export default function ContactForm() {
           <h2 className="text-lg font-extrabold">Socials</h2>
           <ul className="flex mt-3 space-x-4">
             <li className="h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="https://github.com/HashCookie/LanguageLadder">
+              <a href="https://github.com/HashCookie/HelloCET">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0,0,256,256"

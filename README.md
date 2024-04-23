@@ -1,4 +1,4 @@
-# languageladder
+# HelloCET
 
 ## 项目介绍
 
@@ -6,7 +6,7 @@
 
 ## 安装指南
 
-- 克隆仓库到本地：`git clone git@github.com:HashCookie/LanguageLadder.git`
+- 克隆仓库到本地：`git clone git@github.com:HashCookie/HelloCET.git`
 - 安装依赖：在项目根目录下运行 `npm install`
 - 启动服务器：运行 `npm start`，在浏览器中访问 `http://localhost:3000`
 
