@@ -16,8 +16,12 @@ const Header = () => {
   return (
     <header className="py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px]">
       <div className="flex flex-wrap items-center gap-x-2 max-lg:gap-y-6">
-        <img src="/CET.svg" alt="logo" className="w-12" />
-        <button id="toggle" className="lg:hidden ml-auto" onClick={toggleMenu}>
+        <img src="/favicon.ico" alt="logo" className="w-12 z-10" />
+        <button
+          id="toggle"
+          className="lg:hidden ml-auto z-10"
+          onClick={toggleMenu}
+        >
           <svg
             className="w-7 h-7"
             fill="#000"
@@ -33,9 +37,9 @@ const Header = () => {
         </button>
         <ul
           id="collapseMenu"
-          className={`lg:flex lg:ml-14 lg:space-x-5 ${
+          className={`lg:flex lg:ml-14 lg:space-x-5 z-10 ${
             isMenuOpen ? "flex" : "hidden"
-          } flex-col lg:flex-row lg:items-center max-lg:py-4 max-lg:w-full`}
+          } flex-col lg:flex-row lg:items-center max-lg:py-4 max-lg:w-full z-10`}
         >
           <li className="max-lg:border-b max-lg:py-2 px-3">
             <Link

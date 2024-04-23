@@ -6,11 +6,9 @@ const HeroSection: React.FC<Props> = () => {
   return (
     <header
       className="h-screen bg-no-repeat bg-cover flex items-center justify-center"
-      style={{
-        backgroundImage: "url('/bg-effect.svg')",
-      }}
+      style={{}}
     >
-      <div className="text-center px-4 sm:px-6 lg:px-8">
+      <div className="text-center px-4 sm:px-6 lg:px-8 z-10">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-500 leading-none">
           Welcome to
           <br className="hidden lg:inline-block" />

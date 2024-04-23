@@ -133,8 +133,16 @@ function MainApp() {
     return extractPaperDetails(basePath);
   };
 
+  const isHomePage = location.pathname === "/"; // 判断是否是首页
+
   return (
     <>
+      {isHomePage && (
+        // 只有在首页时才渲染这个背景
+        <div className="main">
+          <div className="gradient"></div>
+        </div>
+      )}
       <Routes>
         <Route
           path="/"
