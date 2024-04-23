@@ -80,6 +80,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
     setMonth("");
     setSet("");
     setShowControls(false); // 重置状态，隐藏控制按钮
+    onSelect("");
   };
 
   const handleBack = () => {
@@ -99,7 +100,7 @@ const YearAndSetSelector: React.FC<YearAndSetSelectorProps> = ({
           </button>
           <button
             onClick={handleBack}
-            className="px-6  mt-4 py-2.5 rounded text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+            className="px-6 mt-4 py-2.5 rounded text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
           >
             返回
           </button>
