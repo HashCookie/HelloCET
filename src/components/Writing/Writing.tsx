@@ -102,13 +102,24 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
 
     try {
       const result = await getMoonshotResponse(messages);
-      console.log("Received scoring result:", result);
+      // console.log("Received scoring result:", result);
+      if (
+        !result.choices ||
+        result.choices.length === 0 ||
+        !result.choices[0].message
+      ) {
+        console.error("API response is missing expected data.");
+        setFeedback("无法从API获取有效分数。");
+        setIsLoading(false);
+        return;
+      }
       const feedbackContent = result.choices[0].message.content;
-      const score = parseInt(feedbackContent, 10);
-      console.log(`Parsed score: ${score}`);
-      if (!isNaN(score) && score.toString() === feedbackContent.trim()) {
+      const scoreMatch = feedbackContent.match(/(\b\d+\b)/);
+      const rawScore = scoreMatch ? parseInt(scoreMatch[0], 10) : 0;
+      const score = scoreToPercentageMap[rawScore] || 0; // 使用映射表直接转换为百分比
+
+      if (!isNaN(score)) {
         const percentage = scoreToPercentageMap[score] || 0; // 使用映射表获取得分率
-        // 假设你有一个变量`duration`来表示写作测试的持续时间
         updateWritingScore(score, /* completedQuestions */ 1, attemptTimestamp); // 假设完成了1个问题
         const paperName = extractPaperName(basePath);
         const scoreRecord = {
@@ -124,7 +135,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
         );
         existingRecords.push(scoreRecord);
         localStorage.setItem("writingScores", JSON.stringify(existingRecords));
-        console.log("Invalid score received.");
+        // console.log("Invalid score received.");
         setFeedback(`${percentage}`);
       } else {
         setFeedback("0");
