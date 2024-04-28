@@ -8,6 +8,7 @@ export interface TableRecord {
   readingTest: string;
   readingTimestamp?: string;
   translationTest: string;
+  writingTimestamp?: string;
 }
 
 interface DataComponentProps {

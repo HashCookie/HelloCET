@@ -3,6 +3,13 @@ import getMoonshotResponse from "../../utils/MoonshotAPI";
 
 interface WritingTestPageProps {
   basePath: string;
+  attemptTimestamp: string;
+  updateWritingScore: (
+    score: number,
+    completedQuestions: number,
+    attemptTimestamp: string
+  ) => void;
+  updateWritingDuration: (duration: string) => void;
 }
 
 const SYSTEM_PROMPT_CONTENT = `
@@ -42,7 +49,23 @@ const scoreToPercentageMap: ScoreToPercentageMap = {
   0: 0,
 };
 
-const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
+const extractPaperName = (basePath: string) => {
+  const regex = /(\d{4})年(\d+)月英语(四级|六级)真题_第(\d+)套/;
+  const match = basePath.match(regex);
+  if (match) {
+    const [, year, month, level, setNumber] = match;
+    const levelName = level === "四级" ? "英语四级" : "英语六级";
+    return `${levelName}${year}年${month}月第${setNumber}套`;
+  }
+  return "未知试卷";
+};
+
+const WritingTestPage: React.FC<WritingTestPageProps> = ({
+  basePath,
+  attemptTimestamp,
+  updateWritingScore,
+  updateWritingDuration,
+}) => {
   const [essay, setEssay] = useState("");
   const [directions, setDirections] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -79,10 +102,29 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({ basePath }) => {
 
     try {
       const result = await getMoonshotResponse(messages);
+      console.log("Received scoring result:", result);
       const feedbackContent = result.choices[0].message.content;
       const score = parseInt(feedbackContent, 10);
+      console.log(`Parsed score: ${score}`);
       if (!isNaN(score) && score.toString() === feedbackContent.trim()) {
         const percentage = scoreToPercentageMap[score] || 0; // 使用映射表获取得分率
+        // 假设你有一个变量`duration`来表示写作测试的持续时间
+        updateWritingScore(score, /* completedQuestions */ 1, attemptTimestamp); // 假设完成了1个问题
+        const paperName = extractPaperName(basePath);
+        const scoreRecord = {
+          date: new Date().toISOString(),
+          score: score,
+          completedQuestions: 1,
+          seconds: 25,
+          attemptId: attemptTimestamp,
+          type: paperName,
+        };
+        const existingRecords = JSON.parse(
+          localStorage.getItem("writingScores") || "[]"
+        );
+        existingRecords.push(scoreRecord);
+        localStorage.setItem("writingScores", JSON.stringify(existingRecords));
+        console.log("Invalid score received.");
         setFeedback(`${percentage}`);
       } else {
         setFeedback("0");

@@ -89,6 +89,45 @@ function MainApp() {
     []
   );
 
+  const updateWritingScore = useCallback(
+    (score: number, completedQuestions: number, attemptTimestamp: string) => {
+      console.log(
+        `Updating writing score: ${score}, Completed Questions: ${completedQuestions}`
+      );
+      setRecords((prevRecords) => {
+        return prevRecords.map((record) => {
+          if (record.category === "分数") {
+            return {
+              ...record,
+              writingTest: `${score} | ${record.writingTest.split(" | ")[1]}`,
+              writingTimestamp: attemptTimestamp,
+            };
+          } else if (record.category === "题目") {
+            return {
+              ...record,
+              writingTest: `${completedQuestions} | ${
+                record.writingTest.split(" | ")[1]
+              }`,
+              writingTimestamp: attemptTimestamp,
+            };
+          }
+          return record;
+        });
+      });
+    },
+    []
+  );
+  const updateWritingDuration = useCallback((duration: string) => {
+    setRecords((prevRecords) => {
+      return prevRecords.map((record) => {
+        if (record.category === "时间") {
+          return { ...record, WritingTest: `${duration}` };
+        }
+        return record;
+      });
+    });
+  }, []);
+
   const updateListeningDuration = useCallback((duration: string) => {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
@@ -173,7 +212,12 @@ function MainApp() {
           <div className="mt-10 text-center font-mono font-bold text-xl md:text-2xl lg:text-3xl">
             {renderPaperName()}
           </div>
-          <Writing basePath={basePath} />
+          <Writing
+            basePath={basePath}
+            attemptTimestamp={attemptTimestamp}
+            updateWritingScore={updateWritingScore}
+            updateWritingDuration={updateWritingDuration}
+          />
           <ListeningComprehension
             basePath={basePath}
             attemptTimestamp={attemptTimestamp}
