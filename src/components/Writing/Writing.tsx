@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import getMoonshotResponse from "../../utils/MoonshotAPI";
+import axios from "axios";
 
 interface WritingTestPageProps {
   basePath: string;
@@ -11,43 +11,6 @@ interface WritingTestPageProps {
   ) => void;
   updateWritingDuration: (duration: string) => void;
 }
-
-const SYSTEM_PROMPT_CONTENT = `
-请根据以下原则直接返回作文的分数，不需要其他反馈。
-（接下来是评分原则和标准……）
-满分为15分。
-评分标准：
-   - 2分——条理不清，思路紊乱，语言支离破碎或大部分句子均有错误，且多数为严重错误。
-   - 5分——基本切题。表达思想不清楚，连贯性差。有较多的严重语言错误。
-   - 8分——基本切题。有些地方表达思想不够清楚，文字勉强连贯；语言错误相当多，其中有一些是严重错误。
-   - 11分——切题。表达思想清楚，文字连贯，但有少量语言错误。
-   - 14分——切题。表达思想清楚，文字通顺，连贯性较好。基本上无语言错误，仅有个别小错。
-注：作文与题目毫不相关，或只有几个孤立的词而无法表达思想，则给0分。
-注：请直接返回一个整数分数，不要包括任何其他解释或评论。
-`;
-
-interface ScoreToPercentageMap {
-  [key: number]: number;
-}
-
-const scoreToPercentageMap: ScoreToPercentageMap = {
-  15: 100,
-  14: 94,
-  13: 87,
-  12: 80,
-  11: 74,
-  10: 67,
-  9: 60,
-  8: 54,
-  7: 47,
-  6: 40,
-  5: 34,
-  4: 27,
-  3: 20,
-  2: 14,
-  1: 7,
-  0: 0,
-};
 
 const extractPaperName = (basePath: string) => {
   const regex = /(\d{4})年(\d+)月英语(四级|六级)真题_第(\d+)套/;
@@ -95,36 +58,22 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
       return;
     }
     setIsLoading(true);
-    const messages = [
-      { role: "system", content: SYSTEM_PROMPT_CONTENT },
-      { role: "user", content: essay },
-    ];
 
     try {
-      const result = await getMoonshotResponse(messages);
-      // console.log("Received scoring result:", result);
-      if (
-        !result.choices ||
-        result.choices.length === 0 ||
-        !result.choices[0].message
-      ) {
-        console.error("API response is missing expected data.");
-        setFeedback("无法从API获取有效分数。");
-        setIsLoading(false);
-        return;
-      }
-      const feedbackContent = result.choices[0].message.content;
-      const scoreMatch = feedbackContent.match(/(\b\d+\b)/);
-      const rawScore = scoreMatch ? parseInt(scoreMatch[0], 10) : 0;
-      const score = scoreToPercentageMap[rawScore] || 0; // 使用映射表直接转换为百分比
+      const response = await axios.post(
+        "https://vercel-deployment-server-self.vercel.app/score",
+        {
+          essay: essay,
+          title: directions,
+        }
+      );
+      const rawScore = response.data.totalScore;
 
-      if (!isNaN(score)) {
-        const percentage = scoreToPercentageMap[score] || 0; // 使用映射表获取得分率
-        updateWritingScore(score, /* completedQuestions */ 1, attemptTimestamp); // 假设完成了1个问题
+      if (!isNaN(rawScore)) {
         const paperName = extractPaperName(basePath);
         const scoreRecord = {
           date: new Date().toISOString(),
-          score: score,
+          score: rawScore,
           completedQuestions: 1,
           seconds: 25,
           attemptId: attemptTimestamp,
@@ -135,8 +84,8 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
         );
         existingRecords.push(scoreRecord);
         localStorage.setItem("writingScores", JSON.stringify(existingRecords));
-        // console.log("Invalid score received.");
-        setFeedback(`${percentage}`);
+        updateWritingScore(rawScore, 1, attemptTimestamp);
+        setFeedback(`你的分数是: ${rawScore}`);
       } else {
         setFeedback("0");
       }
