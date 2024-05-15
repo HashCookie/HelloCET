@@ -33,6 +33,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
   const [directions, setDirections] = useState("");
   const [feedback, setFeedback] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [startTime, setStartTime] = useState<Date | null>(null);
 
   useEffect(() => {
     if (basePath) {
@@ -48,8 +49,19 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
     }
   }, [basePath]);
 
+  useEffect(() => {
+    setStartTime(new Date());
+  }, []);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setEssay(e.target.value);
+  };
+
+  const calculateDuration = (start: Date, end: Date): string => {
+    const diff = end.getTime() - start.getTime();
+    const minutes = Math.floor(diff / 1000 / 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+    return `${minutes}分钟${seconds}秒`;
   };
 
   const handleSubmit = async () => {
@@ -70,12 +82,22 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
       const rawScore = response.data.totalScore;
 
       if (!isNaN(rawScore)) {
+        const endTime = new Date();
+        const duration = startTime
+          ? calculateDuration(startTime, endTime)
+          : "未知";
+        updateWritingDuration(duration);
+
         const paperName = extractPaperName(basePath);
         const scoreRecord = {
           date: new Date().toISOString(),
           score: rawScore,
           completedQuestions: 1,
-          seconds: 25,
+          seconds: Math.floor(
+            (endTime.getTime() -
+              (startTime ? startTime.getTime() : endTime.getTime())) /
+              1000
+          ),
           attemptId: attemptTimestamp,
           type: paperName,
         };
@@ -84,10 +106,11 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
         );
         existingRecords.push(scoreRecord);
         localStorage.setItem("writingScores", JSON.stringify(existingRecords));
+
         updateWritingScore(rawScore, 1, attemptTimestamp);
-        setFeedback(`你的分数是: ${rawScore}`);
+        setFeedback(`你的分数是: ${rawScore}。时间是: ${duration}`);
       } else {
-        setFeedback("0");
+        setFeedback("无法从API获取有效分数。");
       }
     } catch (error) {
       console.error("写作部分评估请求失败:", error);
