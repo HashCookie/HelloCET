@@ -153,7 +153,7 @@ function MainApp() {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
         if (record.category === "时间") {
-          return { ...record, WritingTest: `${duration}` };
+          return { ...record, writingTest: `${duration}` };
         }
         return record;
       });

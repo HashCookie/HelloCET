@@ -58,10 +58,29 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
   };
 
   const calculateDuration = (start: Date, end: Date): string => {
-    const diff = end.getTime() - start.getTime();
-    const minutes = Math.floor(diff / 1000 / 60);
-    const seconds = Math.floor((diff / 1000) % 60);
-    return `${minutes}分钟${seconds}秒`;
+    const durationInSeconds = Math.round(
+      (end.getTime() - start.getTime()) / 1000
+    );
+
+    let formattedDuration = "";
+    if (durationInSeconds < 60) {
+      formattedDuration = `${durationInSeconds}秒`;
+    } else if (durationInSeconds < 3600) {
+      const minutes = Math.floor(durationInSeconds / 60);
+      const seconds = durationInSeconds % 60;
+      formattedDuration = `${minutes}分钟${seconds
+        .toString()
+        .padStart(2, "0")}秒`;
+    } else {
+      const hours = Math.floor(durationInSeconds / 3600);
+      const minutes = Math.floor((durationInSeconds % 3600) / 60);
+      const seconds = durationInSeconds % 60;
+      formattedDuration = `${hours}小时${minutes
+        .toString()
+        .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
+    }
+
+    return formattedDuration;
   };
 
   const handleSubmit = async () => {
