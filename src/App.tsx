@@ -21,12 +21,10 @@ function MainApp() {
   const [basePath, setBasePath] = useState("");
   const [records, setRecords] = useState<TableRecord[]>([]);
   const [attemptTimestamp, setAttemptTimestamp] = useState("");
-  const [isScoreStatisticsVisible, setIsScoreStatisticsVisible] =
-    useState(false); // 新增状态
+  const [isScoreStatisticsVisible, setIsScoreStatisticsVisible] = useState(false);
   let location = useLocation();
 
   useEffect(() => {
-    // 当路由变化时重置basePath
     if (location.pathname === "/") {
       setBasePath("");
     }
@@ -36,7 +34,7 @@ function MainApp() {
     if (basePath) {
       setAttemptTimestamp(uuidv4());
     } else {
-      setAttemptTimestamp(""); // 重置时间戳
+      setAttemptTimestamp("");
     }
   }, [basePath]);
 
@@ -51,7 +49,6 @@ function MainApp() {
               listeningTimestamp: attemptTimestamp,
             };
           } else if (record.category === "题目") {
-            // 更新完成的题目数量
             return {
               ...record,
               listeningTest: `${totalQuestionsDone} | 25`,
@@ -122,6 +119,36 @@ function MainApp() {
     },
     []
   );
+
+  const updateTranslationScore = useCallback(
+    (score: number, completedQuestions: number, attemptTimestamp: string) => {
+      setRecords((prevRecords) => {
+        return prevRecords.map((record) => {
+          if (record.category === "分数") {
+            return {
+              ...record,
+              translationTest: `${score} | ${
+                record.translationTest.split(" | ")[1]
+              }`,
+              translationTimestamp: attemptTimestamp,
+            };
+          } else if (record.category === "题目") {
+            return {
+              ...record,
+              translationTest: `${completedQuestions} | ${
+                record.translationTest.split(" | ")[1]
+              }`,
+              translationTimestamp: attemptTimestamp,
+            };
+          }
+          return record;
+        });
+      });
+      setIsScoreStatisticsVisible(true);
+    },
+    []
+  );
+
   const updateWritingDuration = useCallback((duration: string) => {
     setRecords((prevRecords) => {
       return prevRecords.map((record) => {
@@ -165,7 +192,7 @@ function MainApp() {
           console.error("Failed to fetch records:", error);
         });
     }
-  }, [basePath]); // 当basePath更新时获取数据
+  }, [basePath]);
 
   const handleSelect = (path: string) => {
     console.log("Selected basePath:", path);
@@ -177,12 +204,11 @@ function MainApp() {
     return extractPaperDetails(basePath);
   };
 
-  const isHomePage = location.pathname === "/"; // 判断是否是首页
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
       {isHomePage && (
-        // 只有在首页时才渲染这个背景
         <div className="main">
           <div className="gradient"></div>
         </div>
@@ -235,7 +261,11 @@ function MainApp() {
             updateReadingScore={updateReadingScore}
             updateReadingDuration={updateReadingDuration}
           />
-          <Translation basePath={basePath} />
+          <Translation
+            basePath={basePath}
+            attemptTimestamp={attemptTimestamp}
+            updateTranslationScore={updateTranslationScore}
+          />
           {isScoreStatisticsVisible && <ScoreStatistics records={records} />}
         </>
       )}

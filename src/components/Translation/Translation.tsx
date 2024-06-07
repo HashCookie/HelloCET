@@ -4,9 +4,19 @@ import { scoreTranslation } from "../../utils/MoonshotAPI";
 
 interface TranslationProps {
   basePath: string;
+  attemptTimestamp: string;
+  updateTranslationScore: (
+    score: number,
+    completedQuestions: number,
+    attemptTimestamp: string
+  ) => void;
 }
 
-const Translation: React.FC<TranslationProps> = ({ basePath }) => {
+const Translation: React.FC<TranslationProps> = ({
+  basePath,
+  attemptTimestamp,
+  updateTranslationScore,
+}) => {
   const [ChinesePassage, setChinesePassage] = useState("");
   const [userTranslation, setUserTranslation] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -42,6 +52,10 @@ const Translation: React.FC<TranslationProps> = ({ basePath }) => {
         ChinesePassage,
         userTranslation
       );
+      const score = parseFloat(scoreContent);
+      const completedQuestions = 1;
+
+      updateTranslationScore(score, completedQuestions, attemptTimestamp);
       toast.success(`你的分数是: ${scoreContent}`);
     } catch (error) {
       toast.error("无法获取翻译评分，请检查网络或配置。");
