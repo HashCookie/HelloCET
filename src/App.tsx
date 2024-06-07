@@ -92,9 +92,6 @@ function MainApp() {
 
   const updateWritingScore = useCallback(
     (score: number, completedQuestions: number, attemptTimestamp: string) => {
-      console.log(
-        `Updating writing score: ${score}, Completed Questions: ${completedQuestions}`
-      );
       setRecords((prevRecords) => {
         return prevRecords.map((record) => {
           if (record.category === "分数") {
