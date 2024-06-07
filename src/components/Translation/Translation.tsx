@@ -70,7 +70,7 @@ const Translation: React.FC<TranslationProps> = ({ basePath }) => {
         onChange={handleTranslationChange}
       />
       <button
-        className="py-2.5 px-5 mt-4 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600 block mx-auto"
+        className="py-2.5 px-5 mt-4 mb-8 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600 block mx-auto"
         onClick={handleScoreTranslation}
         disabled={isLoading}
       >

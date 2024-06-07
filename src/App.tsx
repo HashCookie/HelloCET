@@ -21,6 +21,8 @@ function MainApp() {
   const [basePath, setBasePath] = useState("");
   const [records, setRecords] = useState<TableRecord[]>([]);
   const [attemptTimestamp, setAttemptTimestamp] = useState("");
+  const [isScoreStatisticsVisible, setIsScoreStatisticsVisible] =
+    useState(false); // 新增状态
   let location = useLocation();
 
   useEffect(() => {
@@ -59,6 +61,7 @@ function MainApp() {
           return record;
         });
       });
+      setIsScoreStatisticsVisible(true);
     },
     []
   );
@@ -85,6 +88,7 @@ function MainApp() {
           return record;
         });
       });
+      setIsScoreStatisticsVisible(true);
     },
     []
   );
@@ -114,6 +118,7 @@ function MainApp() {
           return record;
         });
       });
+      setIsScoreStatisticsVisible(true);
     },
     []
   );
@@ -231,7 +236,7 @@ function MainApp() {
             updateReadingDuration={updateReadingDuration}
           />
           <Translation basePath={basePath} />
-          <ScoreStatistics records={records} />
+          {isScoreStatisticsVisible && <ScoreStatistics records={records} />}
         </>
       )}
     </>
