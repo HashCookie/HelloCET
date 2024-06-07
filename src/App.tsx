@@ -21,7 +21,8 @@ function MainApp() {
   const [basePath, setBasePath] = useState("");
   const [records, setRecords] = useState<TableRecord[]>([]);
   const [attemptTimestamp, setAttemptTimestamp] = useState("");
-  const [isScoreStatisticsVisible, setIsScoreStatisticsVisible] = useState(false);
+  const [isScoreStatisticsVisible, setIsScoreStatisticsVisible] =
+    useState(false);
   let location = useLocation();
 
   useEffect(() => {
@@ -179,6 +180,17 @@ function MainApp() {
     });
   }, []);
 
+  const handleTranslationDurationUpdate = useCallback((duration: string) => {
+    setRecords((prevRecords) => {
+      return prevRecords.map((record) => {
+        if (record.category === "时间") {
+          return { ...record, translationTest: `${duration}` };
+        }
+        return record;
+      });
+    });
+  }, []);
+
   useEffect(() => {
     if (basePath) {
       fetchRecords()
@@ -262,6 +274,7 @@ function MainApp() {
             basePath={basePath}
             attemptTimestamp={attemptTimestamp}
             updateTranslationScore={updateTranslationScore}
+            updateTranslationDuration={handleTranslationDurationUpdate}
           />
           {isScoreStatisticsVisible && <ScoreStatistics records={records} />}
         </>

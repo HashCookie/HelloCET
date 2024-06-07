@@ -10,16 +10,30 @@ interface TranslationProps {
     completedQuestions: number,
     attemptTimestamp: string
   ) => void;
+  updateTranslationDuration: (duration: string) => void;
 }
+
+const extractPaperName = (basePath: string) => {
+  const regex = /(\d{4})年(\d+)月英语(四级|六级)真题_第(\d+)套/;
+  const match = basePath.match(regex);
+  if (match) {
+    const [, year, month, level, setNumber] = match;
+    const levelName = level === "四级" ? "英语四级" : "英语六级";
+    return `${levelName}${year}年${month}月第${setNumber}套`;
+  }
+  return "未知试卷";
+};
 
 const Translation: React.FC<TranslationProps> = ({
   basePath,
   attemptTimestamp,
   updateTranslationScore,
+  updateTranslationDuration,
 }) => {
   const [ChinesePassage, setChinesePassage] = useState("");
   const [userTranslation, setUserTranslation] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [startTime, setStartTime] = useState<Date | null>(null);
 
   useEffect(() => {
     if (basePath) {
@@ -30,14 +44,45 @@ const Translation: React.FC<TranslationProps> = ({
         })
         .catch((error) => {
           console.error("Error loading data:", error);
+          toast.error("加载指导方针失败，请检查网络连接。");
         });
     }
   }, [basePath]);
+
+  useEffect(() => {
+    setStartTime(new Date());
+  }, []);
 
   const handleTranslationChange = (
     e: React.ChangeEvent<HTMLTextAreaElement>
   ) => {
     setUserTranslation(e.target.value);
+  };
+
+  const calculateDuration = (start: Date, end: Date): string => {
+    const durationInSeconds = Math.round(
+      (end.getTime() - start.getTime()) / 1000
+    );
+
+    let formattedDuration = "";
+    if (durationInSeconds < 60) {
+      formattedDuration = `${durationInSeconds}秒`;
+    } else if (durationInSeconds < 3600) {
+      const minutes = Math.floor(durationInSeconds / 60);
+      const seconds = durationInSeconds % 60;
+      formattedDuration = `${minutes}分钟${seconds
+        .toString()
+        .padStart(2, "0")}秒`;
+    } else {
+      const hours = Math.floor(durationInSeconds / 3600);
+      const minutes = Math.floor((durationInSeconds % 3600) / 60);
+      const seconds = durationInSeconds % 60;
+      formattedDuration = `${hours}小时${minutes
+        .toString()
+        .padStart(2, "0")}分钟${seconds.toString().padStart(2, "0")}秒`;
+    }
+
+    return formattedDuration;
   };
 
   const handleScoreTranslation = async () => {
@@ -53,15 +98,46 @@ const Translation: React.FC<TranslationProps> = ({
         userTranslation
       );
       const score = parseFloat(scoreContent);
-      const completedQuestions = 1;
 
-      updateTranslationScore(score, completedQuestions, attemptTimestamp);
-      toast.success(`你的分数是: ${scoreContent}`);
+      if (!isNaN(score)) {
+        const endTime = new Date();
+        const duration = startTime
+          ? calculateDuration(startTime, endTime)
+          : "未知";
+        updateTranslationDuration(duration);
+
+        const paperName = extractPaperName(basePath);
+        const scoreRecord = {
+          date: new Date().toISOString(),
+          score,
+          completedQuestions: 1,
+          seconds: Math.floor(
+            (endTime.getTime() -
+              (startTime ? startTime.getTime() : endTime.getTime())) /
+              1000
+          ),
+          attemptId: attemptTimestamp,
+          type: paperName,
+        };
+        const existingRecords = JSON.parse(
+          localStorage.getItem("translationScores") || "[]"
+        );
+        existingRecords.push(scoreRecord);
+        localStorage.setItem(
+          "translationScores",
+          JSON.stringify(existingRecords)
+        );
+
+        updateTranslationScore(score, 1, attemptTimestamp);
+        toast.success(`你的分数是: ${score}。时间是: ${duration}`);
+      } else {
+        toast.error("无法从API获取有效分数。");
+      }
     } catch (error) {
-      toast.error("无法获取翻译评分，请检查网络或配置。");
-    } finally {
-      setIsLoading(false);
+      console.error("翻译部分评估请求失败:", error);
+      toast.error("无法获取翻译反馈，请检查网络或配置。");
     }
+    setIsLoading(false);
   };
 
   return (
