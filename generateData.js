@@ -4,18 +4,8 @@ const path = require("path");
 // 获取 data 目录的路径
 const dataDir = path.join(__dirname, "public/data");
 const monthOrder = [
-  "1月",
-  "2月",
-  "3月",
-  "4月",
-  "5月",
-  "6月",
-  "7月",
-  "8月",
-  "9月",
-  "10月",
-  "11月",
-  "12月",
+  "1月", "2月", "3月", "4月", "5月", "6月",
+  "7月", "8月", "9月", "10月", "11月", "12月",
 ];
 const testTypes = fs.readdirSync(dataDir).filter((item) => {
   const itemPath = path.join(dataDir, item);
