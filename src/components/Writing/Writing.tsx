@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Toaster, toast } from "sonner";
 
 interface WritingTestPageProps {
   basePath: string;
@@ -31,7 +32,6 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
 }) => {
   const [essay, setEssay] = useState("");
   const [directions, setDirections] = useState("");
-  const [feedback, setFeedback] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [startTime, setStartTime] = useState<Date | null>(null);
 
@@ -44,7 +44,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
         })
         .catch((error) => {
           console.error("Error loading data:", error);
-          setFeedback("加载指导方针失败，请检查网络连接。");
+          toast.error("加载指导方针失败，请检查网络连接。");
         });
     }
   }, [basePath]);
@@ -66,7 +66,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
 
   const handleSubmit = async () => {
     if (!essay.trim()) {
-      setFeedback("请输入一些文本后再提交。");
+      toast.error("请输入一些文本后再提交。");
       return;
     }
     setIsLoading(true);
@@ -108,13 +108,13 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
         localStorage.setItem("writingScores", JSON.stringify(existingRecords));
 
         updateWritingScore(rawScore, 1, attemptTimestamp);
-        setFeedback(`你的分数是: ${rawScore}。时间是: ${duration}`);
+        toast.success(`你的分数是: ${rawScore}。时间是: ${duration}`);
       } else {
-        setFeedback("无法从API获取有效分数。");
+        toast.error("无法从API获取有效分数。");
       }
     } catch (error) {
       console.error("写作部分评估请求失败:", error);
-      setFeedback("无法获取写作反馈，请检查网络或配置。");
+      toast.error("无法获取写作反馈，请检查网络或配置。");
     }
     setIsLoading(false);
   };
@@ -143,11 +143,7 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
       >
         {isLoading ? "正在提交..." : "提交"}
       </button>
-      {feedback && (
-        <div className="mt-4 text-gray-800 bg-gray-100 p-3 rounded">
-          <p>{feedback}</p>
-        </div>
-      )}
+      <Toaster position="top-right" richColors />
     </div>
   );
 };
