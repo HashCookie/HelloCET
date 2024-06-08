@@ -16,85 +16,86 @@ interface ScoreRecord {
   seconds: number;
 }
 
-const ScoresHistory = () => {
+const useScoreRecords = () => {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
 
-  const loadRecords = () => {
-    const combinedDurationInSeconds = new Map<string, number>();
-    const combinedScoresMap = new Map<string, ScoreRecord>();
+  useEffect(() => {
+    const loadRecords = () => {
+      const combinedDurationInSeconds = new Map<string, number>();
+      const combinedScoresMap = new Map<string, ScoreRecord>();
 
-    const transformScores = (scoresString: string | null): ScoreRecord[] => {
-      return scoresString ? JSON.parse(scoresString) : [];
-    };
-
-    const readingScores: ScoreRecord[] = transformScores(
-      localStorage.getItem("readingScores")
-    );
-
-    const listeningScores: ScoreRecord[] = transformScores(
-      localStorage.getItem("listeningScores")
-    );
-
-    const writingScores: ScoreRecord[] = transformScores(
-      localStorage.getItem("writingScores")
-    );
-
-    const translationScores: ScoreRecord[] = transformScores(
-      localStorage.getItem("translationScores")
-    );
-
-    [
-      ...readingScores,
-      ...listeningScores,
-      ...writingScores,
-      ...translationScores,
-    ].forEach((record) => {
-      const combinedRecord = combinedScoresMap.get(record.attemptId) || {
-        date: record.date,
-        type: record.type,
-        score: 0,
-        completedQuestions: 0,
-        duration: "0分钟0秒",
-        seconds: 0,
-        attemptId: record.attemptId,
+      const transformScores = (scoresString: string | null): ScoreRecord[] => {
+        return scoresString ? JSON.parse(scoresString) : [];
       };
 
-      combinedRecord.score += record.score;
-      combinedRecord.score = parseFloat(combinedRecord.score.toFixed(1));
-      combinedRecord.completedQuestions += record.completedQuestions;
+      const scoreCategories = [
+        "readingScores",
+        "listeningScores",
+        "writingScores",
+        "translationScores",
+      ];
 
-      const currentTotalSeconds =
-        combinedDurationInSeconds.get(record.attemptId) || 0;
-      const newSeconds = record.seconds || 0;
-      const updatedTotalSeconds = currentTotalSeconds + newSeconds;
-      combinedDurationInSeconds.set(record.attemptId, updatedTotalSeconds);
+      const allScores: ScoreRecord[] = scoreCategories.flatMap((category) =>
+        transformScores(localStorage.getItem(category))
+      );
 
-      combinedRecord.duration = formatDurationFromSeconds(updatedTotalSeconds);
-      combinedRecord.seconds = updatedTotalSeconds;
+      allScores.forEach((record) => {
+        const combinedRecord = combinedScoresMap.get(record.attemptId) || {
+          date: record.date,
+          type: record.type,
+          score: 0,
+          completedQuestions: 0,
+          duration: "0分钟0秒",
+          seconds: 0,
+          attemptId: record.attemptId,
+        };
 
-      combinedScoresMap.set(record.attemptId, combinedRecord);
-    });
+        combinedRecord.score += record.score;
+        combinedRecord.score = parseFloat(combinedRecord.score.toFixed(1));
+        combinedRecord.completedQuestions += record.completedQuestions;
 
-    const combinedRecordsArray = Array.from(combinedScoresMap.values());
+        const currentTotalSeconds =
+          combinedDurationInSeconds.get(record.attemptId) || 0;
+        const newSeconds = record.seconds || 0;
+        const updatedTotalSeconds = currentTotalSeconds + newSeconds;
+        combinedDurationInSeconds.set(record.attemptId, updatedTotalSeconds);
 
-    combinedRecordsArray.sort((a, b) => {
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
-    });
+        combinedRecord.duration =
+          formatDurationFromSeconds(updatedTotalSeconds);
+        combinedRecord.seconds = updatedTotalSeconds;
 
-    setRecords(combinedRecordsArray);
-  };
+        combinedScoresMap.set(record.attemptId, combinedRecord);
+      });
 
-  useEffect(() => {
+      const combinedRecordsArray = Array.from(combinedScoresMap.values());
+
+      combinedRecordsArray.sort((a, b) => {
+        return new Date(a.date).getTime() - new Date(b.date).getTime();
+      });
+
+      setRecords(combinedRecordsArray);
+    };
+
     loadRecords();
   }, []);
 
   const clearRecords = () => {
-    localStorage.removeItem("readingScores");
-    localStorage.removeItem("listeningScores");
-    localStorage.removeItem("writingScores");
-    localStorage.removeItem("translationScores");
+    [
+      "readingScores",
+      "listeningScores",
+      "writingScores",
+      "translationScores",
+    ].forEach((category) => {
+      localStorage.removeItem(category);
+    });
     setRecords([]);
   };
+
+  return { records, clearRecords };
+};
+
+const ScoresHistory = () => {
+  const { records, clearRecords } = useScoreRecords();
 
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">
