@@ -39,12 +39,12 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
     }
   }, [basePath]);
 
-  useEffect(() => {
-    setStartTime(new Date());
-  }, []);
-
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setEssay(e.target.value);
+
+    if (!startTime) {
+      setStartTime(new Date());
+    }
   };
 
   const handleSubmit = async () => {
@@ -53,6 +53,8 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
       return;
     }
     setIsLoading(true);
+
+    const endTime = new Date();
 
     try {
       const response = await axios.post(
@@ -65,7 +67,6 @@ const WritingTestPage: React.FC<WritingTestPageProps> = ({
       const rawScore = response.data.totalScore;
 
       if (!isNaN(rawScore)) {
-        const endTime = new Date();
         const duration = startTime
           ? calculateDuration(startTime, endTime)
           : "未知";

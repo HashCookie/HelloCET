@@ -39,14 +39,14 @@ const Translation: React.FC<TranslationProps> = ({
     }
   }, [basePath]);
 
-  useEffect(() => {
-    setStartTime(new Date());
-  }, []);
-
   const handleTranslationChange = (
     e: React.ChangeEvent<HTMLTextAreaElement>
   ) => {
     setUserTranslation(e.target.value);
+
+    if (!startTime) {
+      setStartTime(new Date());
+    }
   };
 
   const handleScoreTranslation = async () => {
@@ -56,6 +56,8 @@ const Translation: React.FC<TranslationProps> = ({
     }
     setIsLoading(true);
 
+    const endTime = new Date();
+
     try {
       const scoreContent = await scoreTranslation(
         ChinesePassage,
@@ -64,7 +66,6 @@ const Translation: React.FC<TranslationProps> = ({
       const score = parseFloat(scoreContent);
 
       if (!isNaN(score)) {
-        const endTime = new Date();
         const duration = startTime
           ? calculateDuration(startTime, endTime)
           : "未知";
