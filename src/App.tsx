@@ -204,7 +204,6 @@ function MainApp() {
   }, [basePath]);
 
   const handleSelect = (path: string) => {
-    console.log("Selected basePath:", path);
     setBasePath(path);
   };
 

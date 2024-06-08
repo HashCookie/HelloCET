@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.14",
-    "@vercel/speed-insights": "^1.0.10",
+    "@vercel/speed-insights": "^1.0.11",
     "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

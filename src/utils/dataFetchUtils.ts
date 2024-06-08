@@ -4,7 +4,6 @@ export async function fetchData(testType: string): Promise<any> {
     const response = await fetch("/data.json");
     const allData = await response.json();
     const testData = allData[testType];
-    console.log("Loaded data for", testType, testData);
     return testData;
   } catch (error) {
     console.error("Error loading data:", error);
