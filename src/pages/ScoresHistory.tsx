@@ -67,11 +67,26 @@ const ScoresHistory = () => {
     const listeningScores: ScoreRecord[] = transformScores(
       localStorage.getItem("listeningScores")
     );
+
+    const writingScores: ScoreRecord[] = transformScores(
+      localStorage.getItem("writingScores")
+    );
+
+    const translationScores: ScoreRecord[] = transformScores(
+      localStorage.getItem("translationScores")
+    );
+
+    console.log("writingScores", writingScores);
     console.log("readingScores", readingScores);
     console.log("listeningScores", listeningScores);
 
     // 遍历并合并成绩
-    [...readingScores, ...listeningScores].forEach((record) => {
+    [
+      ...readingScores,
+      ...listeningScores,
+      ...writingScores,
+      ...translationScores,
+    ].forEach((record) => {
       // 获取已合并的记录，或创建一个新的初始记录
       const combinedRecord = combinedScoresMap.get(record.attemptId) || {
         date: record.date,
