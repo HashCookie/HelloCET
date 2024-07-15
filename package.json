@@ -8,7 +8,6 @@
     "@vercel/speed-insights": "^1.0.11",
     "axios": "^1.6.8",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.10",
     "next-themes": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
