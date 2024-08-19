@@ -9,7 +9,6 @@ interface Data {
   title: string;
   passages: string[];
   options: { [key: string]: string };
-  questions: Question[];
 }
 
 interface ReadingComprehensionAProps {
@@ -37,6 +36,12 @@ const ReadingComprehensionA: React.FC<ReadingComprehensionAProps> = ({
       </div>
     );
   }
+
+  // 生成问题数组
+  const questions = Array.from({ length: 10 }, (_, i) => ({
+    number: i + 26,
+    options: Object.keys(data.options)
+  }));
 
   return (
     <div className="container mx-auto px-1">
@@ -79,18 +84,18 @@ const ReadingComprehensionA: React.FC<ReadingComprehensionAProps> = ({
         ))}
       </div>
 
-      {data.questions.map((question, index) => (
-        <div key={index} className="mb-6">
+      {questions.map((question) => (
+        <div key={question.number} className="mb-6">
           <p className="font-bold">Question {question.number}</p>
           <div className="flex flex-wrap -mx-1">
-            {question.options.map((option, oIndex) => {
+            {question.options.map((option) => {
               const isSelected = selectedAnswer[question.number] === option;
               const buttonStyle = isSelected
                 ? "border-blue-500 bg-blue-500 hover:bg-blue-700 text-white" // 选中时的样式
                 : "border-gray-300 bg-white hover:bg-blue-100 text-black"; // 未选中时的样式
               return (
                 <button
-                  key={oIndex}
+                  key={option}
                   className={`px-4 py-2 m-2 rounded-lg border ${buttonStyle} flex-auto md:flex-none`}
                   onClick={() => handleAnswerChange(question.number, option)}
                 >
