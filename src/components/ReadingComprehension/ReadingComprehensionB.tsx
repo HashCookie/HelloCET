@@ -3,7 +3,6 @@ import React from "react";
 interface Question {
   Number: number;
   Statement: string;
-  Options: string[]; // 直接使用字符串数组
 }
 
 interface Data {
@@ -38,6 +37,8 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
     );
   }
 
+  const options = Array.from({ length: 15 }, (_, i) => String.fromCharCode(65 + i));
+
   return (
     <div className="container mx-auto px-1">
       <h2 className="text-xl font-bold text-left mb-6">{data.title}</h2>
@@ -63,20 +64,20 @@ const ReadingComprehensionB: React.FC<ReadingComprehensionBProps> = ({
         ></p>
       ))}
 
-      {data.questions.map((question, index) => (
-        <div key={index} className="mb-6">
+      {data.questions.map((question) => (
+        <div key={question.Number} className="mb-6">
           <p className="font-bold">
             {question.Number}. {question.Statement}
           </p>
           <div className="flex flex-wrap -mx-1">
-            {question.Options.map((option, oIndex) => {
+            {options.map((option) => {
               const isSelected = selectedAnswer[question.Number] === option;
               const buttonClasses = isSelected
-                ? "bg-blue-500 hover:bg-blue-700 text-white" // Selected style
-                : "bg-white text-black border border-gray-300 hover:bg-blue-100"; // Unselected style
+                ? "bg-blue-500 hover:bg-blue-700 text-white"
+                : "bg-white text-black border border-gray-300 hover:bg-blue-100";
               return (
                 <button
-                  key={oIndex}
+                  key={option}
                   className={`px-4 py-2 m-2 rounded-lg border flex-auto md:flex-none ${buttonClasses} focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50`}
                   onClick={() => handleOptionSelect(question.Number, option)}
                 >
