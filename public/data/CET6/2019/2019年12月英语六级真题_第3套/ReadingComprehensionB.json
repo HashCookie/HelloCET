@@ -20,203 +20,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "It is quite easy for one to take in the recommended amount of protein.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "It is quite easy for one to take in the recommended amount of protein."
     },
     {
       "Number": 37,
-      "Statement": "Pipitone claims that healthy adults need not spend money on protein supplements.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Pipitone claims that healthy adults need not spend money on protein supplements."
     },
     {
       "Number": 38,
-      "Statement": "The protein supplement business is found to be thriving.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "The protein supplement business is found to be thriving."
     },
     {
       "Number": 39,
-      "Statement": "Protein can speed the repairing of damaged muscles.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Protein can speed the repairing of damaged muscles."
     },
     {
       "Number": 40,
-      "Statement": "Protein supplements may overburden some internal organ, thus leading to its malfunctioning.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Protein supplements may overburden some internal organ, thus leading to its malfunctioning."
     },
     {
       "Number": 41,
-      "Statement": "Older adults need to take in more protein to keep their muscles strong.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Older adults need to take in more protein to keep their muscles strong."
     },
     {
       "Number": 42,
-      "Statement": "Protein is found in more foods than people might realize.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Protein is found in more foods than people might realize."
     },
     {
       "Number": 43,
-      "Statement": "Additional protein was found to help strengthen the muscles of overweight seniors seeking weight loss.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Additional protein was found to help strengthen the muscles of overweight seniors seeking weight loss."
     },
     {
       "Number": 44,
-      "Statement": "Pipitone believes that whole foods provide the best source of protein.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Pipitone believes that whole foods provide the best source of protein."
     },
     {
       "Number": 45,
-      "Statement": "People are advised to drink more liquid when they take in more protein.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "People are advised to drink more liquid when they take in more protein."
     }
   ]
 }

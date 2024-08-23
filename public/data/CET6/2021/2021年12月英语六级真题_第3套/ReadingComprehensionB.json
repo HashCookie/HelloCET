@@ -22,223 +22,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "According to the author, humans can hardly survive if separated from their community.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to the author, humans can hardly survive if separated from their community."
     },
     {
       "Number": 37,
-      "Statement": "People often accept false beliefs because they prioritize social bonds rather than facts.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "People often accept false beliefs because they prioritize social bonds rather than facts."
     },
     {
       "Number": 38,
-      "Statement": "Most often people learn from those close to them.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Most often people learn from those close to them."
     },
     {
       "Number": 39,
-      "Statement": "Sometimes people adopt certain beliefs in order to leave a favorable impression on those dear to them.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Sometimes people adopt certain beliefs in order to leave a favorable impression on those dear to them."
     },
     {
       "Number": 40,
-      "Statement": "Compared with face-to-face communication, books often provide a better medium for changing people's beliefs.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Compared with face-to-face communication, books often provide a better medium for changing people's beliefs."
     },
     {
       "Number": 41,
-      "Statement": "On many occasions in daily life, people benefit more from their social bonds than from knowing the truth.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "On many occasions in daily life, people benefit more from their social bonds than from knowing the truth."
     },
     {
       "Number": 42,
-      "Statement": "If you want to change somebody's beliefs, you should first establish social connection with them.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "If you want to change somebody's beliefs, you should first establish social connection with them."
     },
     {
       "Number": 43,
-      "Statement": "Humans cannot survive without a fair knowledge of the actual world.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Humans cannot survive without a fair knowledge of the actual world."
     },
     {
       "Number": 44,
-      "Statement": "Repetition of bad ideas increases their chances of being accepted.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Repetition of bad ideas increases their chances of being accepted."
     },
     {
       "Number": 45,
-      "Statement": "Nobody is willing to give up their beliefs at the risk of getting isolated.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Nobody is willing to give up their beliefs at the risk of getting isolated."
     }
   ]
 }

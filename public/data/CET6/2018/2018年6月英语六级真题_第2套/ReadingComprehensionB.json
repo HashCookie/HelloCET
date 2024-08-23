@@ -18,53 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "It is thought probable that the human brain is particularly good at picking up socially important information.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "It is thought probable that the human brain is particularly good at picking up socially important information."
     },
     {
       "Number": 37,
-      "Statement": "It can be concluded from experiments that the presence of peers increases risk-taking by adolescents and youth.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "It can be concluded from experiments that the presence of peers increases risk-taking by adolescents and youth."
     },
     {
       "Number": 38,
-      "Statement": "Students should be told that risk-taking in the classroom can be something positive.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Students should be told that risk-taking in the classroom can be something positive."
     },
     {
       "Number": 39,
-      "Statement": "The urge of finding a mate and getting married accounts for adolescents’ greater attention to social interactions.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The urge of finding a mate and getting married accounts for adolescents’ greater attention to social interactions."
     },
     {
       "Number": 40,
-      "Statement": "According to Steinberg, the presence of peers increases the speed and effectiveness of teenagers’ learning.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "According to Steinberg, the presence of peers increases the speed and effectiveness of teenagers’ learning."
     },
     {
       "Number": 41,
-      "Statement": "Teenagers’ parents are often concerned about negative peer influence.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Teenagers’ parents are often concerned about negative peer influence."
     },
     {
       "Number": 42,
-      "Statement": "Activating the brain’s social network involved in socially motivated learning and memory may allow students to tap unused mental powers.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Activating the brain’s social network involved in socially motivated learning and memory may allow students to tap unused mental powers."
     },
     {
       "Number": 43,
-      "Statement": "The presence of peers intensifies the feeling of rewards in teens’ brains.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The presence of peers intensifies the feeling of rewards in teens’ brains."
     },
     {
       "Number": 44,
-      "Statement": "When we absorb information for the purpose of imparting it to others, we do so with greater accuracy and depth.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "When we absorb information for the purpose of imparting it to others, we do so with greater accuracy and depth."
     },
     {
       "Number": 45,
-      "Statement": "Some experts are suggesting that we turn peer influence to good use in education.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Some experts are suggesting that we turn peer influence to good use in education."
     }
   ]
 }

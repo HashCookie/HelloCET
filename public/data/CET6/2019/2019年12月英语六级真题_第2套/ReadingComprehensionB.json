@@ -16,53 +16,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "The year when most Americans began using smartphones was identified as a turning point in young Americans’ level of happiness.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "The year when most Americans began using smartphones was identified as a turning point in young Americans’ level of happiness."
     },
     {
       "Number": 37,
-      "Statement": "Scores in various wellbeing measures began to go downward among young Americans in recent years.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "Scores in various wellbeing measures began to go downward among young Americans in recent years."
     },
     {
       "Number": 38,
-      "Statement": "Unfortunately, activities involving direct contact with people, which contributed to better wellbeing, were found to be on the decline.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "Unfortunately, activities involving direct contact with people, which contributed to better wellbeing, were found to be on the decline."
     },
     {
       "Number": 39,
-      "Statement": "In response to past critics, Twenge and her co-researchers stress they are not trying to prove that the use of digital devices reduces young people’s wellbeing.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "In response to past critics, Twenge and her co-researchers stress they are not trying to prove that the use of digital devices reduces young people’s wellbeing."
     },
     {
       "Number": 40,
-      "Statement": "In the last few decades of the 20th century, living standards went up and economic depressions were largely averted in the US.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "In the last few decades of the 20th century, living standards went up and economic depressions were largely averted in the US."
     },
     {
       "Number": 41,
-      "Statement": "Contrary to popular belief, doing homework might add to students’ wellbeing.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "Contrary to popular belief, doing homework might add to students’ wellbeing."
     },
     {
       "Number": 42,
-      "Statement": "The author believes the researchers’ new study has gone a step further regarding the impact of screen time on wellbeing.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "The author believes the researchers’ new study has gone a step further regarding the impact of screen time on wellbeing."
     },
     {
       "Number": 43,
-      "Statement": "The researchers found that extended screen time makes young people less happy.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "The researchers found that extended screen time makes young people less happy."
     },
     {
       "Number": 44,
-      "Statement": "Data reveals that economic inequality rather than family income might affect people’s wellbeing.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "Data reveals that economic inequality rather than family income might affect people’s wellbeing."
     },
     {
       "Number": 45,
-      "Statement": "Too much screen time is widely believed to be the cause of unhappiness among today’s young people.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+      "Statement": "Too much screen time is widely believed to be the cause of unhappiness among today’s young people."
     }
   ]
 }

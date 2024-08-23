@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Although online retailing has existed for some twenty years, nearly half of the internet retailers still fail to receive satisfactory feedback from consumers, according to a recent survey.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Although online retailing has existed for some twenty years, nearly half of the internet retailers still fail to receive satisfactory feedback from consumers, according to a recent survey."
     },
     {
       "Number": 37,
-      "Statement": "Innovative retailers integrate internet technologies with conventional retailing to create new retail models.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Innovative retailers integrate internet technologies with conventional retailing to create new retail models."
     },
     {
       "Number": 38,
-      "Statement": "Despite what the Census data suggest, the value of physical retail’s stocks has been dropping.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Despite what the Census data suggest, the value of physical retail’s stocks has been dropping."
     },
     {
       "Number": 39,
-      "Statement": "Internet-driven changes in the retail industry didn’t take place as quickly as widely anticipated.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Internet-driven changes in the retail industry didn’t take place as quickly as widely anticipated."
     },
     {
       "Number": 40,
-      "Statement": "Statistics indicate that brick and mortar sales still made up the lion’s share of the retail business.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Statistics indicate that brick and mortar sales still made up the lion’s share of the retail business."
     },
     {
       "Number": 41,
-      "Statement": "Companies that successfully combine online and offline business models may prove to be a big concern for traditional retailers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Companies that successfully combine online and offline business models may prove to be a big concern for traditional retailers."
     },
     {
       "Number": 42,
-      "Statement": "Brick and mortar retailers’ faith in their business was strengthened when the dot.com bubble burst.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Brick and mortar retailers’ faith in their business was strengthened when the dot.com bubble burst."
     },
     {
       "Number": 43,
-      "Statement": "Despite the tremendous challenges from online retailing, traditional retailing will be here to stay for quite some time.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Despite the tremendous challenges from online retailing, traditional retailing will be here to stay for quite some time."
     },
     {
       "Number": 44,
-      "Statement": "With the rise of online commerce, physical retail stores are likely to suffer the same fate as the yellow pages.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "With the rise of online commerce, physical retail stores are likely to suffer the same fate as the yellow pages."
     },
     {
       "Number": 45,
-      "Statement": "The wide use of smartphones has made it more complex for traditional retailers to reinvent their business.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The wide use of smartphones has made it more complex for traditional retailers to reinvent their business."
     }
   ]
 }

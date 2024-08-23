@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"Fake holiday villa websites prompt warning",
+  "passageTitle": "Fake holiday villa websites prompt warning",
   "passages": [
     "A) During the British winter, the thought of two weeks in a coastal villa（别墅）with soul-stirring views of the sea and a huge pool to enjoy is enough to offset（抵消）the labor until the holidays start. For a growing number of people, however, their yearly break is turning into a nightmare as they find that the property they have paid thousands for does not exist and the website through which they booked it has disappeared.",
     "B) Consumers have been warned to be aware of the potential for deception in this market, which is far from uncommon. In 2017 there were 1,632 cases of reported 'villa fraud（诈骗）', with victims losing an average of £ 2,052, according to Action Fraud, the national center for reporting such frauds. 'Millions of pounds are lost each year by defrauded holiday makers,' says Sean Tipton of the Association of British Travel Agents （ABTA）.",
@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Fraudsters often steal villa-booking information from authentic holiday websites.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Fraudsters often steal villa-booking information from authentic holiday websites."
     },
     {
       "Number": 37,
-      "Statement": "Fraudsters keep changing their bank accounts to avoid being tracked.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Fraudsters keep changing their bank accounts to avoid being tracked."
     },
     {
       "Number": 38,
-      "Statement": "It is suggested that people not going on the holiday might help detect website frauds.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It is suggested that people not going on the holiday might help detect website frauds."
     },
     {
       "Number": 39,
-      "Statement": "More and more British holidaymakers find the seaside villas they booked online actually nonexistent.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "More and more British holidaymakers find the seaside villas they booked online actually nonexistent."
     },
     {
       "Number": 40,
-      "Statement": "By checking an agent's name online before booking a villa, holidaymakers can avoid falling into traps.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "By checking an agent's name online before booking a villa, holidaymakers can avoid falling into traps."
     },
     {
       "Number": 41,
-      "Statement": "Fraudsters are difficult to identify, according to an online safety expert.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Fraudsters are difficult to identify, according to an online safety expert."
     },
     {
       "Number": 42,
-      "Statement": "Holidaymakers have been alerted to the frequent occurrence of online villa-booking frauds.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Holidaymakers have been alerted to the frequent occurrence of online villa-booking frauds."
     },
     {
       "Number": 43,
-      "Statement": "It is holidaymakers that can protect themselves from falling victim to frauds.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It is holidaymakers that can protect themselves from falling victim to frauds."
     },
     {
       "Number": 44,
-      "Statement": "Holidaymakers are advised not to make payments by bank transfer.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Holidaymakers are advised not to make payments by bank transfer."
     },
     {
       "Number": 45,
-      "Statement": "Fraudsters advertise their villas at reasonable prices so as not to be suspected.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Fraudsters advertise their villas at reasonable prices so as not to be suspected."
     }
   ]
 }

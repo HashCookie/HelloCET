@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "There are a couple of plants tough and adaptable enough to survive on bare rocky hills and in deserts.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "There are a couple of plants tough and adaptable enough to survive on bare rocky hills and in deserts."
     },
     {
       "Number": 37,
-      "Statement": "Farrant is trying to isolate genes in resurrection plants and reproduce them in crops.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Farrant is trying to isolate genes in resurrection plants and reproduce them in crops."
     },
     {
       "Number": 38,
-      "Statement": "Farmers in South Africa are more at the mercy of nature, especially inconsistent rainfall.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Farmers in South Africa are more at the mercy of nature, especially inconsistent rainfall."
     },
     {
       "Number": 39,
-      "Statement": "Resurrection crops are most likely to be the choice of subsistence farmers.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Resurrection crops are most likely to be the choice of subsistence farmers."
     },
     {
       "Number": 40,
-      "Statement": "Even though many plants have developed various tactics to cope with dry weather, they cannot survive a prolonged drought.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Even though many plants have developed various tactics to cope with dry weather, they cannot survive a prolonged drought."
     },
     {
       "Number": 41,
-      "Statement": "Despite consumer resistance, researchers are pushing ahead with genetic modification of crops.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Despite consumer resistance, researchers are pushing ahead with genetic modification of crops."
     },
     {
       "Number": 42,
-      "Statement": "Most seeds can pull through dry spells and begin growing when conditions are ripe, but once this process starts, it cannot be held back.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Most seeds can pull through dry spells and begin growing when conditions are ripe, but once this process starts, it cannot be held back."
     },
     {
       "Number": 43,
-      "Statement": "Farrant is working hard to cultivate food crops that can survive extreme dryness by studying the traits of rare wild plants.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Farrant is working hard to cultivate food crops that can survive extreme dryness by studying the traits of rare wild plants."
     },
     {
       "Number": 44,
-      "Statement": "By adjusting their metabolism, resurrection plants can recover from an extended period of drought.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "By adjusting their metabolism, resurrection plants can recover from an extended period of drought."
     },
     {
       "Number": 45,
-      "Statement": "Resurrection plants can come back to life in a short time after a rainfall.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Resurrection plants can come back to life in a short time after a rainfall."
     }
   ]
 }

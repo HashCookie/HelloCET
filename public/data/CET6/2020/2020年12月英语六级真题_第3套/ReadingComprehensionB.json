@@ -22,223 +22,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Students should develop the key skills before they start a project.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Students should develop the key skills before they start a project."
     },
     {
       "Number": 37,
-      "Statement": "By acquiring reasoning skills in the first few years of college, students can lay a foundation for lifelong learning.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "By acquiring reasoning skills in the first few years of college, students can lay a foundation for lifelong learning."
     },
     {
       "Number": 38,
-      "Statement": "The easy access to learning and rapid technological changes have brought the traditional model of education under challenge.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The easy access to learning and rapid technological changes have brought the traditional model of education under challenge."
     },
     {
       "Number": 39,
-      "Statement": "Unbelievable as it may seem, part-time students constitute a considerable portion of the student body in many universities across the world.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Unbelievable as it may seem, part-time students constitute a considerable portion of the student body in many universities across the world."
     },
     {
       "Number": 40,
-      "Statement": "Some social and managerial skills, which are not easily automated, will be of great importance to students’ future careers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some social and managerial skills, which are not easily automated, will be of great importance to students’ future careers."
     },
     {
       "Number": 41,
-      "Statement": "A new model of college education should provide students with the knowledge and skills that will make them more inventive and capable of lifelong learning.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A new model of college education should provide students with the knowledge and skills that will make them more inventive and capable of lifelong learning."
     },
     {
       "Number": 42,
-      "Statement": "A mixed student body may change the classroom dynamics and benefit learning.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A mixed student body may change the classroom dynamics and benefit learning."
     },
     {
       "Number": 43,
-      "Statement": "The question of who will bear the cost of lifelong learning is a topic of constant debate.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The question of who will bear the cost of lifelong learning is a topic of constant debate."
     },
     {
       "Number": 44,
-      "Statement": "To the traditional subjects of math and physics should be added a new discipline which combines computer science with statistics and other components.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "To the traditional subjects of math and physics should be added a new discipline which combines computer science with statistics and other components."
     },
     {
       "Number": 45,
-      "Statement": "Students who are burdened with family duties might choose to take online courses.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Students who are burdened with family duties might choose to take online courses."
     }
   ]
 }

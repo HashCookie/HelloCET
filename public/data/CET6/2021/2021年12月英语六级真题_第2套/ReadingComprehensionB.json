@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Glenn Schellenberg's latest research suggests many psychologists and neuroscientists wrongly believe in the causal relationship between music and IQ.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Glenn Schellenberg's latest research suggests many psychologists and neuroscientists wrongly believe in the causal relationship between music and IQ."
     },
     {
       "Number": 37,
-      "Statement": "The belief in the positive effects of music training appeals to many researchers who are musicians themselves.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The belief in the positive effects of music training appeals to many researchers who are musicians themselves."
     },
     {
       "Number": 38,
-      "Statement": "Glenn Schellenberg was doubtful about the claim that music education helps enhance children's intelligence.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Glenn Schellenberg was doubtful about the claim that music education helps enhance children's intelligence."
     },
     {
       "Number": 39,
-      "Statement": "Glenn Schellenberg came to the conclusion that most of the papers assessed made the wrong claim regarding music's effect on intelligence.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Glenn Schellenberg came to the conclusion that most of the papers assessed made the wrong claim regarding music's effect on intelligence."
     },
     {
       "Number": 40,
-      "Statement": "You must abandon your unverified beliefs before you become a scientist.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "You must abandon your unverified beliefs before you become a scientist."
     },
     {
       "Number": 41,
-      "Statement": "Lots of experiments have demonstrated that people with music training can better differentiate certain sounds.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Lots of experiments have demonstrated that people with music training can better differentiate certain sounds."
     },
     {
       "Number": 42,
-      "Statement": "Glenn Schellenberg's findings at the beginning of this century were not supported by a larger study carried out some ten years later.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Glenn Schellenberg's findings at the beginning of this century were not supported by a larger study carried out some ten years later."
     },
     {
       "Number": 43,
-      "Statement": "One researcher shares Glenn Schellenberg's view that it is necessary to conduct long-term developmental studies to understand the effects of music training.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "One researcher shares Glenn Schellenberg's view that it is necessary to conduct long-term developmental studies to understand the effects of music training."
     },
     {
       "Number": 44,
-      "Statement": "Glenn Schellenberg's research assistants had no idea what he was trying to prove in his new study.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Glenn Schellenberg's research assistants had no idea what he was trying to prove in his new study."
     },
     {
       "Number": 45,
-      "Statement": "Glenn Schellenberg admits that practice can change certain areas of the brain but doubts that the change can affect other areas.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Glenn Schellenberg admits that practice can change certain areas of the brain but doubts that the change can affect other areas."
     }
   ]
 }

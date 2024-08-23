@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "It seems some people today dream that a cutting-edge new technology might save them from the present ecological disaster.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It seems some people today dream that a cutting-edge new technology might save them from the present ecological disaster."
     },
     {
       "Number": 37,
-      "Statement": "According to one great thinker, it is most unfortunate if we lose the ability to think diff erently.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "According to one great thinker, it is most unfortunate if we lose the ability to think diff erently."
     },
     {
       "Number": 38,
-      "Statement": "Urgent attention should be paid to the ecological problems we have created in our pursuit of a comfortable life.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Urgent attention should be paid to the ecological problems we have created in our pursuit of a comfortable life."
     },
     {
       "Number": 39,
-      "Statement": "Even in the fast-food nation America, the number of vegetarians is on the rise.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Even in the fast-food nation America, the number of vegetarians is on the rise."
     },
     {
       "Number": 40,
-      "Statement": "The deterioration of the ecological system is accelerating because of the dramatic increase of human production and consumption.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "The deterioration of the ecological system is accelerating because of the dramatic increase of human production and consumption."
     },
     {
       "Number": 41,
-      "Statement": "It is obvious that solutions must be found to curb the fast worsening environment and social acceleration.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It is obvious that solutions must be found to curb the fast worsening environment and social acceleration."
     },
     {
       "Number": 42,
-      "Statement": "Many people believe changing the world is possible, though it may take time and involve setbacks.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Many people believe changing the world is possible, though it may take time and involve setbacks."
     },
     {
       "Number": 43,
-      "Statement": "It might be wrong to expect that our world would be saved at one stroke with some miraculous technology.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It might be wrong to expect that our world would be saved at one stroke with some miraculous technology."
     },
     {
       "Number": 44,
-      "Statement": "It is human nature to cherish hopes for a better world.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It is human nature to cherish hopes for a better world."
     },
     {
       "Number": 45,
-      "Statement": "Technology has given us humans the power to change the natural world, but we have paid a price for the change.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Technology has given us humans the power to change the natural world, but we have paid a price for the change."
     }
   ]
 }

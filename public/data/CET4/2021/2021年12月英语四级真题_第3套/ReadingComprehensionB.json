@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"Why it matters that teens are reading less",
+  "passageTitle": "Why it matters that teens are reading less",
   "passages": [
     "A) Most of us spend much more time with digital media than we did a decade ago. But today's teens have grown up with smartphones. Compared with teens a couple of decades ago, the way they interact with traditional media like books and movies is fundamentally different.",
     "B) Analysis of surveys of over one million teens in the United States collected since 1976 reveals a major shift in how teens are spending their leisure time. Paper books are being ignored, in favor of screens. D屯ital devices are changing other behaviors, too. More and more, young people choose spending time on their electronic devices over engaging in other activities, regardless of the type. Indeed, by 2016, the average American high school senior said they spent six hours a day writing text messages, on social media, and online during their free time. And that covers just three activities, and if other digital media activities were included, that estimate would no doubt rise.",
@@ -16,223 +16,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Many years' surveys reveal that young people in America are going to the cinema much less often than they used to.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Many years' surveys reveal that young people in America are going to the cinema much less often than they used to."
     },
     {
       "Number": 37,
-      "Statement": "Survey analysis shows American teens now spend their leisure time on digital devices rather than reading printed books.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Survey analysis shows American teens now spend their leisure time on digital devices rather than reading printed books."
     },
     {
       "Number": 38,
-      "Statement": "The number of senior high schoolers not reading books for pleasure in a year increased three times over 20 years.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The number of senior high schoolers not reading books for pleasure in a year increased three times over 20 years."
     },
     {
       "Number": 39,
-      "Statement": "Many scholars claim that spending time on electronic devices doesn't necessarily mean a decrease of time for other activities.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Many scholars claim that spending time on electronic devices doesn't necessarily mean a decrease of time for other activities."
     },
     {
       "Number": 40,
-      "Statement": "Most people spend much more time interacting with dgiital media than they did ten years ago.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Most people spend much more time interacting with dgiital media than they did ten years ago."
     },
     {
       "Number": 41,
-      "Statement": "The author claims that it will be a great loss if we no longer read books and longer articles.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The author claims that it will be a great loss if we no longer read books and longer articles."
     },
     {
       "Number": 42,
-      "Statement": "Over a decade or so, American teens'social media use shifted from an occasional activity to a routine one.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Over a decade or so, American teens'social media use shifted from an occasional activity to a routine one."
     },
     {
       "Number": 43,
-      "Statement": "A more disturbing trend in America today is that teens are spending far less time reading than around four decades ago.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A more disturbing trend in America today is that teens are spending far less time reading than around four decades ago."
     },
     {
       "Number": 44,
-      "Statement": "Some five years ago, high school seniors in America generally spent more than six hours a day on electronic devices.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some five years ago, high school seniors in America generally spent more than six hours a day on electronic devices."
     },
     {
       "Number": 45,
-      "Statement": "It was found that American youngsters today don't socialize nearly as much as the earlier generations.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It was found that American youngsters today don't socialize nearly as much as the earlier generations."
     }
   ]
 }

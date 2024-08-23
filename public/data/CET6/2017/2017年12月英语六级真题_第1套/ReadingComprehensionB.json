@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Online services are so designed that the more they are used, the more profit they generate.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Online services are so designed that the more they are used, the more profit they generate."
     },
     {
       "Number": 37,
-      "Statement": "The author admits using technology as an escape from the task at hand.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The author admits using technology as an escape from the task at hand."
     },
     {
       "Number": 38,
-      "Statement": "Checking phones at dinners is now accepted as normal but not belching.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Checking phones at dinners is now accepted as normal but not belching."
     },
     {
       "Number": 39,
-      "Statement": "To make proper use of technology, we should not only increase our awareness of how it is changing but also how it is impacting us.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "To make proper use of technology, we should not only increase our awareness of how it is changing but also how it is impacting us."
     },
     {
       "Number": 40,
-      "Statement": "Most of us find it hard to focus on our immediate tasks because of Internet distractions.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Most of us find it hard to focus on our immediate tasks because of Internet distractions."
     },
     {
       "Number": 41,
-      "Statement": "When one person starts checking their phone, the others will follow suit.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "When one person starts checking their phone, the others will follow suit."
     },
     {
       "Number": 42,
-      "Statement": "The great majority of smartphone users don't take the trouble to adjust their settings to suit their own purposes.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The great majority of smartphone users don't take the trouble to adjust their settings to suit their own purposes."
     },
     {
       "Number": 43,
-      "Statement": "The Internet is regarded by some as designed to distract our attention.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The Internet is regarded by some as designed to distract our attention."
     },
     {
       "Number": 44,
-      "Statement": "The author attributes his tech addiction chiefly to his habit of putting off doing what he should do right away.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The author attributes his tech addiction chiefly to his habit of putting off doing what he should do right away."
     },
     {
       "Number": 45,
-      "Statement": "White-collar workers check email round the clock because it is required by their employers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "White-collar workers check email round the clock because it is required by their employers."
     }
   ]
 }

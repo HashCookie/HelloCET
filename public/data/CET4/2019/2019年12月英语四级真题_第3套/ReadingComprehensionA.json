@@ -1,228 +1,26 @@
 {
-    "title": "Section A",
-    "passages": [
-        "Millions of people travel by plane every single day. If you're planning on being one of them soon, you might not be looking forward to the 26 feeling air travel often leaves you with.",
-        "Besides the airport crowds and stress, traveling at a high altitude has real effects on the body. Although the pressure of the cabin is 27 to prevent altitude sickness, you could still 28 sleepiness or a headache. The lower oxygen pressure found in an aircraft cabin is 29 to that at 6,000-8,000 feet of altitude. A drop in oxygen pressure can cause headaches in certain 30 . To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.",
-        "Airplane food might not really be as tasteless as you 31 thought. The air you breathe in a plane dries out your mouth and nose, which can affect your sense of taste. Perception of sweet and salty foods dropped by almost 30 percent in a simulation of air travel. However, you can make your taste buds active again by drinking water. A dry mouth may 32 taste sensitivity, but taste is restored by drinking fluids.",
-        "Although in-flight infections 33 in dry environments like airplanes, your risk of getting sick from an airplane is actually low because of the air 34 used. Unless you're sitting next to someone who is coughing or sneezing, you shouldn't worry too much about getting sick. However, bacteria have been shown to live on cabin surfaces, so wash your hands 35 ."
-    ],
-    "options": {
-        "A": "adjusted",
-        "B": "channels",
-        "C": "equivalent",
-        "D": "experience",
-        "E": "filters",
-        "F": "frequently",
-        "G": "individuals",
-        "H": "originally",
-        "I": "particular",
-        "J": "primarily",
-        "K": "reduce",
-        "L": "renovated",
-        "M": "smooth",
-        "N": "thrive",
-        "O": "unpleasant"
-    },
-    "questions": [
-        {
-            "number": 26,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 27,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 28,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 29,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 30,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 31,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 32,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 33,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 34,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 35,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section A",
+  "passages": [
+    "Millions of people travel by plane every single day. If you're planning on being one of them soon, you might not be looking forward to the 26 feeling air travel often leaves you with.",
+    "Besides the airport crowds and stress, traveling at a high altitude has real effects on the body. Although the pressure of the cabin is 27 to prevent altitude sickness, you could still 28 sleepiness or a headache. The lower oxygen pressure found in an aircraft cabin is 29 to that at 6,000-8,000 feet of altitude. A drop in oxygen pressure can cause headaches in certain 30 . To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.",
+    "Airplane food might not really be as tasteless as you 31 thought. The air you breathe in a plane dries out your mouth and nose, which can affect your sense of taste. Perception of sweet and salty foods dropped by almost 30 percent in a simulation of air travel. However, you can make your taste buds active again by drinking water. A dry mouth may 32 taste sensitivity, but taste is restored by drinking fluids.",
+    "Although in-flight infections 33 in dry environments like airplanes, your risk of getting sick from an airplane is actually low because of the air 34 used. Unless you're sitting next to someone who is coughing or sneezing, you shouldn't worry too much about getting sick. However, bacteria have been shown to live on cabin surfaces, so wash your hands 35 ."
+  ],
+  "options": {
+    "A": "adjusted",
+    "B": "channels",
+    "C": "equivalent",
+    "D": "experience",
+    "E": "filters",
+    "F": "frequently",
+    "G": "individuals",
+    "H": "originally",
+    "I": "particular",
+    "J": "primarily",
+    "K": "reduce",
+    "L": "renovated",
+    "M": "smooth",
+    "N": "thrive",
+    "O": "unpleasant"
+  }
 }

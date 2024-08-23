@@ -18,53 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Farmers going grass-fed are not affected by the ever-changing milk prices of the global market.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Farmers going grass-fed are not affected by the ever-changing milk prices of the global market."
     },
     {
       "Number": 37,
-      "Statement": "Over the years, Tim Joseph’s partners have helped many dairy farmers to switch to grass-fed.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Over the years, Tim Joseph’s partners have helped many dairy farmers to switch to grass-fed."
     },
     {
       "Number": 38,
-      "Statement": "One advocate believes that many other benefits should be taken into consideration when we assess the cost-effectiveness of grass-fed farming.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "One advocate believes that many other benefits should be taken into consideration when we assess the cost-effectiveness of grass-fed farming."
     },
     {
       "Number": 39,
-      "Statement": "Many dairy farmers were persuaded to switch to grass-fed when they saw its advantage in terms of profits.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Many dairy farmers were persuaded to switch to grass-fed when they saw its advantage in terms of profits."
     },
     {
       "Number": 40,
-      "Statement": "Tim Joseph’s grass-fed program is only one example of how American farming practice is changing.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Tim Joseph’s grass-fed program is only one example of how American farming practice is changing."
     },
     {
       "Number": 41,
-      "Statement": "Tim Joseph was fascinated by the notion that sunlight brings energy and wealth to mankind.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Tim Joseph was fascinated by the notion that sunlight brings energy and wealth to mankind."
     },
     {
       "Number": 42,
-      "Statement": "One problem with grass-fed products is that they are usually more expensive than conventional ones.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "One problem with grass-fed products is that they are usually more expensive than conventional ones."
     },
     {
       "Number": 43,
-      "Statement": "Grass-fed products have proved to be healthier and more nutritious.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Grass-fed products have proved to be healthier and more nutritious."
     },
     {
       "Number": 44,
-      "Statement": "When Tim Joseph started his business, he found grass-fed products fell short of demand.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "When Tim Joseph started his business, he found grass-fed products fell short of demand."
     },
     {
       "Number": 45,
-      "Statement": "A snack bar producer discovered that the supply of purely grass-fed bison meat was scarce.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "A snack bar producer discovered that the supply of purely grass-fed bison meat was scarce."
     }
   ]
 }

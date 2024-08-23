@@ -20,203 +20,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Employers attach more importance to applicants' computer skills than their language competence.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Employers attach more importance to applicants' computer skills than their language competence."
     },
     {
       "Number": 37,
-      "Statement": "One U.S. state senator proposed that high school students be allowed to study either foreign language or computer coding.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "One U.S. state senator proposed that high school students be allowed to study either foreign language or computer coding."
     },
     {
       "Number": 38,
-      "Statement": "Learning languages broadens students' international perspective and nurtures mutual respect among peoples, according to a high school language teacher.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Learning languages broadens students' international perspective and nurtures mutual respect among peoples, according to a high school language teacher."
     },
     {
       "Number": 39,
-      "Statement": "One U.S. state will see to it that programming classes are taught by quality teachers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "One U.S. state will see to it that programming classes are taught by quality teachers."
     },
     {
       "Number": 40,
-      "Statement": "Statistics show while computer-related jobs have been on the rise, foreign languages have become less appealing to American students since mid-1990s.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Statistics show while computer-related jobs have been on the rise, foreign languages have become less appealing to American students since mid-1990s."
     },
     {
       "Number": 41,
-      "Statement": "All school subjects are said to be essential to students' well-rounded development.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "All school subjects are said to be essential to students' well-rounded development."
     },
     {
       "Number": 42,
-      "Statement": "There is consensus among most educators that coding should be taught in schools but should not replace foreign language.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "There is consensus among most educators that coding should be taught in schools but should not replace foreign language."
     },
     {
       "Number": 43,
-      "Statement": "One study showed that foreign language learning improved students' academic performance.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "One study showed that foreign language learning improved students' academic performance."
     },
     {
       "Number": 44,
-      "Statement": "Being short of funding and qualified teachers, schools lag behind the fast developing computer science field.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Being short of funding and qualified teachers, schools lag behind the fast developing computer science field."
     },
     {
       "Number": 45,
-      "Statement": "A distinguished high school language teacher also believes it is advisable to start learning a foreign language at an earlier age.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "A distinguished high school language teacher also believes it is advisable to start learning a foreign language at an earlier age."
     }
   ]
 }

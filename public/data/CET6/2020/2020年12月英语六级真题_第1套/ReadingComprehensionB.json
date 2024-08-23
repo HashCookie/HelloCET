@@ -24,243 +24,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Farmers will not profit from replanting once they have applied most of the fertilizer and other chemicals to their fields.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "Farmers will not profit from replanting once they have applied most of the fertilizer and other chemicals to their fields."
     },
     {
       "Number": 37,
-      "Statement": "Agriculture diff ers from the medical science of the human body in that its environment is not a contained one.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "Agriculture diff ers from the medical science of the human body in that its environment is not a contained one."
     },
     {
       "Number": 38,
-      "Statement": "The agronomist is sure that he will obtain a near accurate count of plant population with his software.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "The agronomist is sure that he will obtain a near accurate count of plant population with his software."
     },
     {
       "Number": 39,
-      "Statement": "The application of artificial intelligence to agriculture is much more challenging than to most other industries.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "The application of artificial intelligence to agriculture is much more challenging than to most other industries."
     },
     {
       "Number": 40,
-      "Statement": "Even the farmers know the data provided by the UAV is not correct.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "Even the farmers know the data provided by the UAV is not correct."
     },
     {
       "Number": 41,
-      "Statement": "The pressure for quick results leads to product failure, which, in turn, arouses doubts about the applicability of AI technology to agriculture.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "The pressure for quick results leads to product failure, which, in turn, arouses doubts about the applicability of AI technology to agriculture."
     },
     {
       "Number": 42,
-      "Statement": "Remote sensors are aimed to help farmers improve decision-making to increase yields.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "Remote sensors are aimed to help farmers improve decision-making to increase yields."
     },
     {
       "Number": 43,
-      "Statement": "The farmer expects the software to tell him whether he will have to replant any parts of his farm fields.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "The farmer expects the software to tell him whether he will have to replant any parts of his farm fields."
     },
     {
       "Number": 44,
-      "Statement": "Agriculture proves very difficult to quantify because of the constantly changing conditions involved.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "Agriculture proves very difficult to quantify because of the constantly changing conditions involved."
     },
     {
       "Number": 45,
-      "Statement": "The same seed and fertilizer program may yield completely different outcomes in diff erent places.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R"
-      ]
+      "Statement": "The same seed and fertilizer program may yield completely different outcomes in diff erent places."
     }
   ]
 }

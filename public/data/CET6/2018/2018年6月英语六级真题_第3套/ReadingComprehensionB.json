@@ -20,203 +20,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Modest institutions can also have successful graduates and strong alumni networks.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Modest institutions can also have successful graduates and strong alumni networks."
     },
     {
       "Number": 37,
-      "Statement": "The money the author made in high school helped pay for her living expenses and books at college.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "The money the author made in high school helped pay for her living expenses and books at college."
     },
     {
       "Number": 38,
-      "Statement": "The author came to see how costly college education could be when she was trying to choose a university to attend.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "The author came to see how costly college education could be when she was trying to choose a university to attend."
     },
     {
       "Number": 39,
-      "Statement": "A recent study found that a graduate’s salary is determined by their potential, not the university they attended.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "A recent study found that a graduate’s salary is determined by their potential, not the university they attended."
     },
     {
       "Number": 40,
-      "Statement": "The author cannot recall for sure what made certain top universities appear a lot better.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "The author cannot recall for sure what made certain top universities appear a lot better."
     },
     {
       "Number": 41,
-      "Statement": "None of the author’s job interviewers cared which college she went to.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "None of the author’s job interviewers cared which college she went to."
     },
     {
       "Number": 42,
-      "Statement": "The author thinks she did the right thing in choosing a less prestigious university.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "The author thinks she did the right thing in choosing a less prestigious university."
     },
     {
       "Number": 43,
-      "Statement": "In order to be admitted to a prestigious university, the author took part in various extracurricular activities and attended test preparation courses.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "In order to be admitted to a prestigious university, the author took part in various extracurricular activities and attended test preparation courses."
     },
     {
       "Number": 44,
-      "Statement": "The author liked her university which was not prestigious but less expensive.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "The author liked her university which was not prestigious but less expensive."
     },
     {
       "Number": 45,
-      "Statement": "Colleges are reluctant to admit that graduates today are in heavier debt.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Colleges are reluctant to admit that graduates today are in heavier debt."
     }
   ]
 }

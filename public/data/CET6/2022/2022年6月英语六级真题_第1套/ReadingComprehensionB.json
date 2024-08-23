@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Some children on the remote islands won’t eat their meals because they are fed cheap junk food.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Some children on the remote islands won’t eat their meals because they are fed cheap junk food."
     },
     {
       "Number": 37,
-      "Statement": "Unlike other parts of Bangladesh, the number of women who die from giving birth remains high on the river islands.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Unlike other parts of Bangladesh, the number of women who die from giving birth remains high on the river islands."
     },
     {
       "Number": 38,
-      "Statement": "One big problem many islanders have is that they can’t afford the prescribed medicines, even with discounts offered.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "One big problem many islanders have is that they can’t afford the prescribed medicines, even with discounts offered."
     },
     {
       "Number": 39,
-      "Statement": "TD is a virtual medical service financially supported by one of the nation’s nonprofit organizations.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "TD is a virtual medical service financially supported by one of the nation’s nonprofit organizations."
     },
     {
       "Number": 40,
-      "Statement": "TD doctors are welcome to the islanders because they treat the sick with respect and patience.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "TD doctors are welcome to the islanders because they treat the sick with respect and patience."
     },
     {
       "Number": 41,
-      "Statement": "Women islanders tend to have health problems early partly because they get married and give birth early.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Women islanders tend to have health problems early partly because they get married and give birth early."
     },
     {
       "Number": 42,
-      "Statement": "TD doctors make weekly visits to the remote islands to provide services at a temporary medical center.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "TD doctors make weekly visits to the remote islands to provide services at a temporary medical center."
     },
     {
       "Number": 43,
-      "Statement": "TD doctors provide the islanders with online diagnoses and treatments for common diseases.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "TD doctors provide the islanders with online diagnoses and treatments for common diseases."
     },
     {
       "Number": 44,
-      "Statement": "The residents of the river islands have to keep moving their homes because of floods and land erosions.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "The residents of the river islands have to keep moving their homes because of floods and land erosions."
     },
     {
       "Number": 45,
-      "Statement": "Women islanders usually rely on their husbands to get some medicines for them without diagnoses and prescriptions.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Women islanders usually rely on their husbands to get some medicines for them without diagnoses and prescriptions."
     }
   ]
 }

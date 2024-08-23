@@ -19,193 +19,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "It has been found that inadequate recovery often leads to poor health and accidents.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "It has been found that inadequate recovery often leads to poor health and accidents."
     },
     {
       "Number": 37,
-      "Statement": "Mental relaxation is much needed, just as physical relaxation is.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Mental relaxation is much needed, just as physical relaxation is."
     },
     {
       "Number": 38,
-      "Statement": "Adequate rest not only helps one recover, but also increases one's work efficiency.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Adequate rest not only helps one recover, but also increases one's work efficiency."
     },
     {
       "Number": 39,
-      "Statement": "The author always has a hectic time before taking a flight.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "The author always has a hectic time before taking a flight."
     },
     {
       "Number": 40,
-      "Statement": "Recovery may not take place even if one seems to have stopped working.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Recovery may not take place even if one seems to have stopped working."
     },
     {
       "Number": 41,
-      "Statement": "It is advised that technology be used to prevent people from overworking.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "It is advised that technology be used to prevent people from overworking."
     },
     {
       "Number": 42,
-      "Statement": "Contrary to popular belief, rest does not equal recovery.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Contrary to popular belief, rest does not equal recovery."
     },
     {
       "Number": 43,
-      "Statement": "The author has come to see that his problem results from a misunderstanding of the meaning of resilience.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "The author has come to see that his problem results from a misunderstanding of the meaning of resilience."
     },
     {
       "Number": 44,
-      "Statement": "People's distorted view about resilience may have developed from their upbringing.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "People's distorted view about resilience may have developed from their upbringing."
     },
     {
       "Number": 45,
-      "Statement": "People tend to think the more determined they are, the greater their success will be.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "People tend to think the more determined they are, the greater their success will be."
     }
   ]
 }

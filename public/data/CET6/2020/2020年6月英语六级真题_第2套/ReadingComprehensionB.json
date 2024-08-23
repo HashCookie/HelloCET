@@ -22,223 +22,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "A study found that there are similar changes in brain structure between those who are bilingual from birth and those who start learning a second language later.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A study found that there are similar changes in brain structure between those who are bilingual from birth and those who start learning a second language later."
     },
     {
       "Number": 37,
-      "Statement": "Unlike traditional monolingual programs, bilingual classrooms aim at developing students’ ability to use two languages by middle school.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Unlike traditional monolingual programs, bilingual classrooms aim at developing students’ ability to use two languages by middle school."
     },
     {
       "Number": 38,
-      "Statement": "A study showed that dual-language students did significantly better than their peers in reading English texts.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A study showed that dual-language students did significantly better than their peers in reading English texts."
     },
     {
       "Number": 39,
-      "Statement": "About twenty years ago, bilingual practice was strongly discouraged, especially in California.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "About twenty years ago, bilingual practice was strongly discouraged, especially in California."
     },
     {
       "Number": 40,
-      "Statement": "Ethnically and economically balanced bilingual classrooms are found to be helpful for kids to get used to social and cultural diversity.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Ethnically and economically balanced bilingual classrooms are found to be helpful for kids to get used to social and cultural diversity."
     },
     {
       "Number": 41,
-      "Statement": "Researchers now claim that earlier research on bilingual education was seriously flawed.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Researchers now claim that earlier research on bilingual education was seriously flawed."
     },
     {
       "Number": 42,
-      "Statement": "According to a researcher, dual-language experiences exert a lifelong influence on one’s brain.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to a researcher, dual-language experiences exert a lifelong influence on one’s brain."
     },
     {
       "Number": 43,
-      "Statement": "Advocates of bilingual education argued that it produces positive effects though they may be limited.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Advocates of bilingual education argued that it produces positive effects though they may be limited."
     },
     {
       "Number": 44,
-      "Statement": "Bilingual speakers often do better than monolinguals in completing certain tasks because they can con-centrate better on what they are doing.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Bilingual speakers often do better than monolinguals in completing certain tasks because they can con-centrate better on what they are doing."
     },
     {
       "Number": 45,
-      "Statement": "When their native language is used, parents can become more involved in their children’s education.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "When their native language is used, parents can become more involved in their children’s education."
     }
   ]
 }

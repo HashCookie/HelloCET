@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "A number of factors are driving down the global oil prices not just for now but in the foreseeable future.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "A number of factors are driving down the global oil prices not just for now but in the foreseeable future."
     },
     {
       "Number": 37,
-      "Statement": "Pricing carbon proves the most economical way to reduce greenhouse gas emissions.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Pricing carbon proves the most economical way to reduce greenhouse gas emissions."
     },
     {
       "Number": 38,
-      "Statement": "It is estimated that extreme weather conditions have endangered the lives of millions of African children.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "It is estimated that extreme weather conditions have endangered the lives of millions of African children."
     },
     {
       "Number": 39,
-      "Statement": "The prices of coal are low as a result of over-supply and decreasing demand.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The prices of coal are low as a result of over-supply and decreasing demand."
     },
     {
       "Number": 40,
-      "Statement": "Higher fossil fuel prices prove to be conducive to innovation and application of cleaner technology.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Higher fossil fuel prices prove to be conducive to innovation and application of cleaner technology."
     },
     {
       "Number": 41,
-      "Statement": "If fossil fuel prices remain low for a long time, it may lead to higher emissions of greenhouse gases.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "If fossil fuel prices remain low for a long time, it may lead to higher emissions of greenhouse gases."
     },
     {
       "Number": 42,
-      "Statement": "Fossil fuels remain the major source of primary energy consumption in today's world.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Fossil fuels remain the major source of primary energy consumption in today's world."
     },
     {
       "Number": 43,
-      "Statement": "Even major fossil fuel exporting countries have great potential to develop renewable energies.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Even major fossil fuel exporting countries have great potential to develop renewable energies."
     },
     {
       "Number": 44,
-      "Statement": "Greenhouse gas emissions, if not properly dealt with, will pose endless risks for mankind.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Greenhouse gas emissions, if not properly dealt with, will pose endless risks for mankind."
     },
     {
       "Number": 45,
-      "Statement": "It is urgent for governments to increase the cost of using fossil fuels to an appropriate level to lessen the catastrophic effects of climate change.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "It is urgent for governments to increase the cost of using fossil fuels to an appropriate level to lessen the catastrophic effects of climate change."
     }
   ]
 }

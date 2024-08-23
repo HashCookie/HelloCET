@@ -1,233 +1,63 @@
 {
-    "title": "Section B",
-    "passageTitle":"Make Stuff, Fail, And Learn While You’re At It",
-    "passages": [
-        "A) We’ve always been a hands-on, do-it-yourself kind of nation. Ben Franklin, one of America’s founding fathers, didn’t just invent the lightning rod. His creations include glasses, innovative stoves and more.",
-        "B) Franklin, who was largely self-taught, may have been a genius, but he wasn’t really an exception when it comes to American making and creativity.",
-        "C) The personal computing revolution and philosophy of disruptive innovation of Silicon Valley grew, in part, out of the creations of the Homebrew Computer Club, Which was founded in a garage in Menlo Park, California, in the mid-1970s. Members—including guys named Jobs and Wozniak—started making and inventing things they couldn’t buy.",
-        "D) So it’s no surprise that the Maker Movement today is thriving in communities and some schools across America. Making is available to ordinary people who aren’t tied to big companies, big defense labs or research universities. The maker philosophy echoes old ideas advocated by John Dewey, Montessori, and even ancient Greek philosophers, as we pointed out recently.",
-        "E) These maker spaces are often outside of classrooms, and are serving an important educational function. The Maker Movement is rediscovering learning by doing, which is Dewey’s phrase from 100 years ago. We are rediscovering Dewey and Montessori and a lot of the practices that they pioneered that have been forgotten or at least put aside. A maker space is a place which can be in a school, but it doesn’t look like a classroom. It can be in a library. It can be out in the community. It has tools and materials. It’s a place where you get to make things based on your interest and on what you’re learning to do.",
-        "F) Ideas about learning by doing have struggled to become mainstream educationally, despite being old concepts from Dewey and Montessori, Plato and Aristotle, and in the American context, Ralph Emerson, on the value of experience and self-reliance. It’s not necessarily an efficient way to learn. We learn, in a sense, by trial and error. Learning from experience is something that takes time and patience. It’s very individualized. If your goal is to have standardized approaches to learning, where everybody learns the same thing at the same time in the same way, then learning by doing doesn’t really fit that mold anymore. It’s not the world of textbooks. It’s not the world of testing.",
-        "G) Learning by doing may not be efficient, but it is effective. Project-based learning has grown in popularity with teachers and administrators. However, project-based learning is not making. Although there is a connection, there is also a distinction. The difference lies in whether the project is in a sense defined and developed by the student or whether it’s assigned by a teacher. We’ll all get the kids to build a small boat. We are all going to learn about X, Y, and Z. That tends to be one form of project-based learning.",
-        "H) I really believe the core idea of making is to have an idea within your head—or you just borrow it from someone—and begin to develop it , repeat it and improve it. Then, realize that idea somehow. That thing that you make is valuable to you and you can share it with others. I’m interested in how these things are expressions of that person, their ideas, and their interactions with the world.",
-        "I) In some ways, a lot of forms of making in school trivialize (使变得无足轻重) making. The thing that you make has no value to you. Once you are done demonstrating whatever concept was in the textbook, you throw away the pipe cleaners, the straws, the cardboard tubes.",
-        "J) Making should be student-directed and student-led, otherwise it’s boring. It doesn’t have the motivation of the student. I’m not saying that students should not learn concepts or not learn skills. They do. But to really harness their motivation is to build upon their interest. It’s to let them be in control and to drive the car.",
-        "K) Teachers should aim to build a supportive, creative environment for students to do this work. A very social environment, where they are learning from each other. When they have a problem, it isn’t the teacher necessarily coming in to solve it. They are responsible for working through that problem. It might be they have to talk to other students in the class to help get an answer.",
-        "L) The teacher’s role is more of a coach or observer. Sometimes, to people, it sounds like this is a diminished role for teachers. I think it’s a heightened role. You’re creating this environment, like a maker space. You have 20 kids doing different things. You are watching them and really it’s the human behaviors you’re looking at. Are they engaged? Are they developing and repeating their project? Are they stumbling (受挫)？ Do they need something that they don’t have? Can you help them be aware of where they are?",
-        "M) My belief is that the goal of making is not to get every kid to be hands-on, but it enables us to be good learners. It’s not the knowledge that is valuable, it’s the practice of learning new things and understanding how things work. These are processes that you are developing so that you are able, over time, to tackle more interesting problems, more challenging problems—problems that require many people instead of one person, and many skills instead of one.",
-        "N) If teachers keep it form-free and student-led, it can still be tied to a curriculum and an educational plan. I think a maker space is more like a library in that there are multiple subjects and multiple things that you can learn. What seems to be missing in school is how these subjects integrate, how they fit together in any meaningful way. Rather than saying, ‘This is science, over here is history,’ I see schools taking this idea of projects and looking at: How do they support children in a higher level learning?",
-        "O) I feel like this is a shift away from a subject matter-based curriculum to a more experiential curriculum or learning. It’s still in its early stages, but I think it’s shifting around not what kids learn but how they learn."
-    ],
-    "questions": [
-        {
-            "Number": 36,
-            "Statement": "A maker space is where people make things according to their personal interests.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 37,
-            "Statement": "The teachers’ role is enhanced in a maker space as they have to monitor and facilitate during the process.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 38,
-            "Statement": "Coming up with an idea of one’s own or improving one from others is key to the concept of making.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 39,
-            "Statement": "Contrary to structured learning, learning by doing is highly individualized.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 40,
-            "Statement": "America is a nation known for the idea of making things by oneself.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 41,
-            "Statement": "Making will be boring unless students are able to take charge.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 42,
-            "Statement": "Making can be related to a project, but it is created and carried out by students themselves.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 43,
-            "Statement": "The author suggests incorporating the idea of a maker space into a school curriculum.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 44,
-            "Statement": "The maker concept is a modern version of some ancient philosophical ideas.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 45,
-            "Statement": "Making is not taken seriously in school when students are asked to make something meaningless to them based on textbooks.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section B",
+  "passageTitle": "Make Stuff, Fail, And Learn While You’re At It",
+  "passages": [
+    "A) We’ve always been a hands-on, do-it-yourself kind of nation. Ben Franklin, one of America’s founding fathers, didn’t just invent the lightning rod. His creations include glasses, innovative stoves and more.",
+    "B) Franklin, who was largely self-taught, may have been a genius, but he wasn’t really an exception when it comes to American making and creativity.",
+    "C) The personal computing revolution and philosophy of disruptive innovation of Silicon Valley grew, in part, out of the creations of the Homebrew Computer Club, Which was founded in a garage in Menlo Park, California, in the mid-1970s. Members—including guys named Jobs and Wozniak—started making and inventing things they couldn’t buy.",
+    "D) So it’s no surprise that the Maker Movement today is thriving in communities and some schools across America. Making is available to ordinary people who aren’t tied to big companies, big defense labs or research universities. The maker philosophy echoes old ideas advocated by John Dewey, Montessori, and even ancient Greek philosophers, as we pointed out recently.",
+    "E) These maker spaces are often outside of classrooms, and are serving an important educational function. The Maker Movement is rediscovering learning by doing, which is Dewey’s phrase from 100 years ago. We are rediscovering Dewey and Montessori and a lot of the practices that they pioneered that have been forgotten or at least put aside. A maker space is a place which can be in a school, but it doesn’t look like a classroom. It can be in a library. It can be out in the community. It has tools and materials. It’s a place where you get to make things based on your interest and on what you’re learning to do.",
+    "F) Ideas about learning by doing have struggled to become mainstream educationally, despite being old concepts from Dewey and Montessori, Plato and Aristotle, and in the American context, Ralph Emerson, on the value of experience and self-reliance. It’s not necessarily an efficient way to learn. We learn, in a sense, by trial and error. Learning from experience is something that takes time and patience. It’s very individualized. If your goal is to have standardized approaches to learning, where everybody learns the same thing at the same time in the same way, then learning by doing doesn’t really fit that mold anymore. It’s not the world of textbooks. It’s not the world of testing.",
+    "G) Learning by doing may not be efficient, but it is effective. Project-based learning has grown in popularity with teachers and administrators. However, project-based learning is not making. Although there is a connection, there is also a distinction. The difference lies in whether the project is in a sense defined and developed by the student or whether it’s assigned by a teacher. We’ll all get the kids to build a small boat. We are all going to learn about X, Y, and Z. That tends to be one form of project-based learning.",
+    "H) I really believe the core idea of making is to have an idea within your head—or you just borrow it from someone—and begin to develop it , repeat it and improve it. Then, realize that idea somehow. That thing that you make is valuable to you and you can share it with others. I’m interested in how these things are expressions of that person, their ideas, and their interactions with the world.",
+    "I) In some ways, a lot of forms of making in school trivialize (使变得无足轻重) making. The thing that you make has no value to you. Once you are done demonstrating whatever concept was in the textbook, you throw away the pipe cleaners, the straws, the cardboard tubes.",
+    "J) Making should be student-directed and student-led, otherwise it’s boring. It doesn’t have the motivation of the student. I’m not saying that students should not learn concepts or not learn skills. They do. But to really harness their motivation is to build upon their interest. It’s to let them be in control and to drive the car.",
+    "K) Teachers should aim to build a supportive, creative environment for students to do this work. A very social environment, where they are learning from each other. When they have a problem, it isn’t the teacher necessarily coming in to solve it. They are responsible for working through that problem. It might be they have to talk to other students in the class to help get an answer.",
+    "L) The teacher’s role is more of a coach or observer. Sometimes, to people, it sounds like this is a diminished role for teachers. I think it’s a heightened role. You’re creating this environment, like a maker space. You have 20 kids doing different things. You are watching them and really it’s the human behaviors you’re looking at. Are they engaged? Are they developing and repeating their project? Are they stumbling (受挫)？ Do they need something that they don’t have? Can you help them be aware of where they are?",
+    "M) My belief is that the goal of making is not to get every kid to be hands-on, but it enables us to be good learners. It’s not the knowledge that is valuable, it’s the practice of learning new things and understanding how things work. These are processes that you are developing so that you are able, over time, to tackle more interesting problems, more challenging problems—problems that require many people instead of one person, and many skills instead of one.",
+    "N) If teachers keep it form-free and student-led, it can still be tied to a curriculum and an educational plan. I think a maker space is more like a library in that there are multiple subjects and multiple things that you can learn. What seems to be missing in school is how these subjects integrate, how they fit together in any meaningful way. Rather than saying, ‘This is science, over here is history,’ I see schools taking this idea of projects and looking at: How do they support children in a higher level learning?",
+    "O) I feel like this is a shift away from a subject matter-based curriculum to a more experiential curriculum or learning. It’s still in its early stages, but I think it’s shifting around not what kids learn but how they learn."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "A maker space is where people make things according to their personal interests."
+    },
+    {
+      "Number": 37,
+      "Statement": "The teachers’ role is enhanced in a maker space as they have to monitor and facilitate during the process."
+    },
+    {
+      "Number": 38,
+      "Statement": "Coming up with an idea of one’s own or improving one from others is key to the concept of making."
+    },
+    {
+      "Number": 39,
+      "Statement": "Contrary to structured learning, learning by doing is highly individualized."
+    },
+    {
+      "Number": 40,
+      "Statement": "America is a nation known for the idea of making things by oneself."
+    },
+    {
+      "Number": 41,
+      "Statement": "Making will be boring unless students are able to take charge."
+    },
+    {
+      "Number": 42,
+      "Statement": "Making can be related to a project, but it is created and carried out by students themselves."
+    },
+    {
+      "Number": 43,
+      "Statement": "The author suggests incorporating the idea of a maker space into a school curriculum."
+    },
+    {
+      "Number": 44,
+      "Statement": "The maker concept is a modern version of some ancient philosophical ideas."
+    },
+    {
+      "Number": 45,
+      "Statement": "Making is not taken seriously in school when students are asked to make something meaningless to them based on textbooks."
+    }
+  ]
 }

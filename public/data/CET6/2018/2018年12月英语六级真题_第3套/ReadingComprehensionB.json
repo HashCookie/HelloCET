@@ -20,203 +20,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Steinberg argued parental sharing online can be beneficial.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Steinberg argued parental sharing online can be beneficial."
     },
     {
       "Number": 37,
-      "Statement": "According to an expert, when children reach school age, they can help their parents learn what can and cannot be done.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "According to an expert, when children reach school age, they can help their parents learn what can and cannot be done."
     },
     {
       "Number": 38,
-      "Statement": "One mother refrained from posting her son’s photos online when she considered the matter from her son’s perspective.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "One mother refrained from posting her son’s photos online when she considered the matter from her son’s perspective."
     },
     {
       "Number": 39,
-      "Statement": "According to a study, more children than parents think there should be rules on parents’ sharing.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "According to a study, more children than parents think there should be rules on parents’ sharing."
     },
     {
       "Number": 40,
-      "Statement": "Katlyn Burbidge had never realized she had to ask her son’s approval to put his photos online.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Katlyn Burbidge had never realized she had to ask her son’s approval to put his photos online."
     },
     {
       "Number": 41,
-      "Statement": "A mother decided not to post her son’s photo online when he asked her not to.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "A mother decided not to post her son’s photo online when he asked her not to."
     },
     {
       "Number": 42,
-      "Statement": "A woman pediatrician tries to help other parents by sharing her own parenting experience.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "A woman pediatrician tries to help other parents by sharing her own parenting experience."
     },
     {
       "Number": 43,
-      "Statement": "There are people who decide simply not to share their children’s photos online.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "There are people who decide simply not to share their children’s photos online."
     },
     {
       "Number": 44,
-      "Statement": "Parents and physicians should realize sharing information online about children may involve risks.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Parents and physicians should realize sharing information online about children may involve risks."
     },
     {
       "Number": 45,
-      "Statement": "Parents who share their parenting experiences may find themselves intruding into their children’s privacy.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N"
-      ]
+      "Statement": "Parents who share their parenting experiences may find themselves intruding into their children’s privacy."
     }
   ]
 }

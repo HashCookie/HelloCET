@@ -1,228 +1,26 @@
 {
-    "title": "Section A",
-    "passages": [
-        "A rat or pigeon might not be the obvious choice to tend to someone who is sick, but these creatures have some 26 skills that could help the treatment of human diseases.",
-        "Pigeons are often seen as dirty birds and an urban 27 , but they are just the latest in a long line of animals that have been found to have abilities to help humans. Despite having a brain no bigger than the 28 of your index finger, pigeons have a very impressive 29 memory. Recently it was shown that they could be trained to be as accurate as humans at detecting breast cancer in images.",
-        "Rats are often 30 with spreading disease rather than 31 it, but this long-tailed animal is highly 32 . Inside a rat’s nose are up to 1,000 different types of olfactory receptors (嗅觉感受器), whereas humans only have 100 to 200 types. This gives rats the ability to detect 33 smells. As a result, some rats are being put to work to detect TB (肺结核). When the rats detect the smell, they stop and rub their legs to 34 a sample is infected.",
-        "Traditionally, a hundred samples would take lab technicians more than two days to 35 , but for a rat it takes less than 20 minutes. This rat detection method doesn’t rely on specialist equipment. It is also more accurate— the rats are able to find more TB infections and, therefore, save more lives."
-    ],
-    "options": {
-        "A": "associated",
-        "B": "examine",
-        "C": "indicate",
-        "D": "nuisance",
-        "E": "peak",
-        "F": "preventing",
-        "G": "prohibiting",
-        "H": "sensitive",
-        "I": "slight",
-        "J": "specify",
-        "K": "superior",
-        "L": "suspicious",
-        "M": "tip",
-        "N": "treated",
-        "O": "visual"
-    },
-    "questions": [
-        {
-            "number": 26,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 27,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 28,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 29,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 30,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 31,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 32,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 33,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 34,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 35,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section A",
+  "passages": [
+    "A rat or pigeon might not be the obvious choice to tend to someone who is sick, but these creatures have some 26 skills that could help the treatment of human diseases.",
+    "Pigeons are often seen as dirty birds and an urban 27 , but they are just the latest in a long line of animals that have been found to have abilities to help humans. Despite having a brain no bigger than the 28 of your index finger, pigeons have a very impressive 29 memory. Recently it was shown that they could be trained to be as accurate as humans at detecting breast cancer in images.",
+    "Rats are often 30 with spreading disease rather than 31 it, but this long-tailed animal is highly 32 . Inside a rat’s nose are up to 1,000 different types of olfactory receptors (嗅觉感受器), whereas humans only have 100 to 200 types. This gives rats the ability to detect 33 smells. As a result, some rats are being put to work to detect TB (肺结核). When the rats detect the smell, they stop and rub their legs to 34 a sample is infected.",
+    "Traditionally, a hundred samples would take lab technicians more than two days to 35 , but for a rat it takes less than 20 minutes. This rat detection method doesn’t rely on specialist equipment. It is also more accurate— the rats are able to find more TB infections and, therefore, save more lives."
+  ],
+  "options": {
+    "A": "associated",
+    "B": "examine",
+    "C": "indicate",
+    "D": "nuisance",
+    "E": "peak",
+    "F": "preventing",
+    "G": "prohibiting",
+    "H": "sensitive",
+    "I": "slight",
+    "J": "specify",
+    "K": "superior",
+    "L": "suspicious",
+    "M": "tip",
+    "N": "treated",
+    "O": "visual"
+  }
 }

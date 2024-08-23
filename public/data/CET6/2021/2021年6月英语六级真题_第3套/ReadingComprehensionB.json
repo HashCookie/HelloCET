@@ -18,53 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "There is an ongoing debate among the public as to whether the images of deceased celebrities should be recreated.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "There is an ongoing debate among the public as to whether the images of deceased celebrities should be recreated."
     },
     {
       "Number": 37,
-      "Statement": "The CGI technology allows the image of the deceased James Dean to be presented to young people in new settings.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The CGI technology allows the image of the deceased James Dean to be presented to young people in new settings."
     },
     {
       "Number": 38,
-      "Statement": "It is very likely that the CGI-recreated image of a deceased celebrity will fail to match the real actor especially in facial expressions.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "It is very likely that the CGI-recreated image of a deceased celebrity will fail to match the real actor especially in facial expressions."
     },
     {
       "Number": 39,
-      "Statement": "The use of digital technology can bring images of deceased celebrities back to the screen.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The use of digital technology can bring images of deceased celebrities back to the screen."
     },
     {
       "Number": 40,
-      "Statement": "Recreating a deceased famous actor or actress may violate their legitimate rights.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Recreating a deceased famous actor or actress may violate their legitimate rights."
     },
     {
       "Number": 41,
-      "Statement": "More CGI-recreated images of deceased celebrities are expected to appear on screen.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "More CGI-recreated images of deceased celebrities are expected to appear on screen."
     },
     {
       "Number": 42,
-      "Statement": "The image of James Dean will be recreated on screen with his voice dubbed by someone else.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The image of James Dean will be recreated on screen with his voice dubbed by someone else."
     },
     {
       "Number": 43,
-      "Statement": "However advanced the CGI technology is, the recreated image will dif er in a way from the real actor.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "However advanced the CGI technology is, the recreated image will dif er in a way from the real actor."
     },
     {
       "Number": 44,
-      "Statement": "A lot of actors today are likely to make use of the CGI technology to have their images stored for the benefit of their families.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "A lot of actors today are likely to make use of the CGI technology to have their images stored for the benefit of their families."
     },
     {
       "Number": 45,
-      "Statement": "Some actors are concerned that they may lose jobs because of the CGI technology.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Some actors are concerned that they may lose jobs because of the CGI technology."
     }
   ]
 }

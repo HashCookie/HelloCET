@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"Evil Genius",
+  "passageTitle": "Evil Genius",
   "passages": [
     "A) A few years ago I found myself teaching a university class on evil.It was for third-year criminology students to help them contextualize theory and research within controversial current topics.It was a huge success.The debates were heated and interesting.I could see people's views change within the course of a single lecture.Over the past 13 years,as a student,lecturer and researcher,I've enjoyed discussing the science of evil with anyone willing to listen.What I like most is destroying the cliche of good and evil,and replacing them with scientific insight.We need a more informed way of discussing behavior that at first we cannot,or should not,begin to understand.",
     "B) Without understanding,we risk dehumanizing others,writing off human beings simply because we don't comprehend them.We must try to understand what we have labeled evil.We tend to think evil is something that other people are.We think of ourselves as \"good people\",and even when we do morally wrong things,we understand the context of our decisions.With others,however,it is far easier to write them off.If their actions deviate (substantially from what we consider acceptable,we may label them evil.We need to be careful with this.Calling someone evil is often similar to saying they cannot change,and perhaps aren't even a human at all.However,when you actually go monster-hunting,and you look deeply at the people behind shocking behavior,you may be surprised.",
@@ -17,223 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "A behavior that does not conform to social norms may be described as being deviant.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A behavior that does not conform to social norms may be described as being deviant."
     },
     {
       "Number": 37,
-      "Statement": "Various experiments found that participants who cheated in the initial task performed better in the creativity test.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Various experiments found that participants who cheated in the initial task performed better in the creativity test."
     },
     {
       "Number": 38,
-      "Statement": "People may be simply considered evil if their behaviors are morally unacceptable to us.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "People may be simply considered evil if their behaviors are morally unacceptable to us."
     },
     {
       "Number": 39,
-      "Statement": "The research published by two scientists was intended to examine the relationship between dishonesty and creativity.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The research published by two scientists was intended to examine the relationship between dishonesty and creativity."
     },
     {
       "Number": 40,
-      "Statement": "The author's lectures sparked lively discussions in his class.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The author's lectures sparked lively discussions in his class."
     },
     {
       "Number": 41,
-      "Statement": "The researchers tested the participants'creativity by asking them to play a word game.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The researchers tested the participants'creativity by asking them to play a word game."
     },
     {
       "Number": 42,
-      "Statement": "It is time we realized that deviance may be capable of doing both good and harm to individuals and society.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is time we realized that deviance may be capable of doing both good and harm to individuals and society."
     },
     {
       "Number": 43,
-      "Statement": "The reasons for people's evil behaviors can be explained in more ways than one.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The reasons for people's evil behaviors can be explained in more ways than one."
     },
     {
       "Number": 44,
-      "Statement": "The math task in one experiment was designed to test participants'tendency to cheat.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The math task in one experiment was designed to test participants'tendency to cheat."
     },
     {
       "Number": 45,
-      "Statement": "Some creative ideas have turned out to do harm to human society.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some creative ideas have turned out to do harm to human society."
     }
   ]
 }

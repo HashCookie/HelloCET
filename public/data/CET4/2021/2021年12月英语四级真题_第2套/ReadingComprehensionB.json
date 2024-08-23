@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"How to not be boring",
+  "passageTitle": "How to not be boring",
   "passages": [
     "A) Humans are creatures of habit. We love to establish a routine and stick with it. Then we often put ourselves on auto-pilot. Routines can be incredibly useful in helping you get things done. However, too much of a routine can also make you incredibly boring. Nevertheless, many people live lives that are boringly predictable, or live a life where everything is outlined or planned.",
     "B) To tell the truth, interesting people are more popular among their friends. If you don't arouse someone's curiosity or brighten someone's day, you probably come across as being a little bit dull. But that doesn't mean your life has ended and you can't do anything to change it. If you find yourself searching for something to say beyond small talk, try these tactics to find more interesting approaches to conversation.",
@@ -18,223 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Pirson claims that some ordinary things may often prove to be miraculously interesting.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Pirson claims that some ordinary things may often prove to be miraculously interesting."
     },
     {
       "Number": 37,
-      "Statement": "To make a conversation interesting, it is important that you listen to the other party attentively.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "To make a conversation interesting, it is important that you listen to the other party attentively."
     },
     {
       "Number": 38,
-      "Statement": "A person who is unable to stimulate others' curiosity or make their life enjoyable may appear somewhat boring.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A person who is unable to stimulate others' curiosity or make their life enjoyable may appear somewhat boring."
     },
     {
       "Number": 39,
-      "Statement": "Interesting people usually possess certain unique qualities, according to a TV program producer.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Interesting people usually possess certain unique qualities, according to a TV program producer."
     },
     {
       "Number": 40,
-      "Statement": "Be interested in others and they are sure to be interested in you.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Be interested in others and they are sure to be interested in you."
     },
     {
       "Number": 41,
-      "Statement": "The author considers himself usually good at conducting conversations.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The author considers himself usually good at conducting conversations."
     },
     {
       "Number": 42,
-      "Statement": "Interesting people are always full of curiosity.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Interesting people are always full of curiosity."
     },
     {
       "Number": 43,
-      "Statement": "Falling into a routine can turn a person into an utter bore.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Falling into a routine can turn a person into an utter bore."
     },
     {
       "Number": 44,
-      "Statement": "One strategy to be a good conversationalist is to motivate your partner to tell their own stories.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "One strategy to be a good conversationalist is to motivate your partner to tell their own stories."
     },
     {
       "Number": 45,
-      "Statement": "Interesting as it might appear, a made-up conversation will probably turn out to be dull.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Interesting as it might appear, a made-up conversation will probably turn out to be dull."
     }
   ]
 }

@@ -1,244 +1,64 @@
 {
-    "title": "Section B",
-    "passageTitle":"Poverty is a story about us, not them",
-    "passages": [
-        "A) Too often still, we think we know what poverty looks like. It's the way we've been taught, the images we've been force-fed for decades. The chronically homeless. The undocumented immigrant. The urban poor, usually personified as a woman of color, the “welfare queen” politicians still too often reference.",
-        "B) But as income inequality rises to record levels in the United States, even in the midst of a record economic expansion, those familiar images are outdated, hurtful, and counterproductive to focusing attention on solutions and building ladders of opportunity.",
-        "C) Today's faces of income inequality and lack of opportunity look like all of us. It's Anna Landre, a disabled Georgetown University student fighting to keep health benefits that allow her the freedom to live her life. It's Tiffanie Standard, a counselor for young women of color in Philadelphia who want to be tech entrepreneurs—but who must work multiple jobs to stay afloat. It's Ken Outlaw, a welder in rural North Carolina whose dream of going back to school at a local community college was dashed by Hurricane Florence—just one of the extreme weather events that have tipped the balance for struggling Americans across the nation.",
-        "D) If these are the central characters of our story about poverty, what layers of perceptions, myths, and realities must we unearth to find meaningful solutions and support? In pursuit of revealing this complicated reality, Mothering Justice, led by women of color, went last year to the state capital in Lansing, Michigan, to lobby on issues that affect working mothers. One of the Mothering Justice organizers went to the office of a state representative to talk about the lack of affordable childcare—the vestiges (痕迹) of a system that expected mothers to stay home with their children while their husbands worked. A legislative staffer dismissed the activist's concerns, telling her “my husband took care of that—I stayed home.”",
-        "E) That comment, says Mothering Justice director Danielle Atkinson, “was meant to shame” and relied on the familiar notion that a woman of color concerned about income inequality and programs that promote mobility must by definition be a single mom, probably with multiple kids. In this case, the Mothering Justice activist happened to be married. And in most cases in the America of 2019, the images that come to mind when we hear the words poverty or income inequality fail miserably in reflecting a complicated reality: poverty touches virtually all of us. The face of income inequality, for all but a very few of us, is the one we each see in the mirror.",
-        "F) How many of us are poor in the U.S.? It depends on who you ask. According to the Census Bureau, 38 million people in the U.S. are living below the official poverty thresholds. Taking into account economic need beyond that absolute measure, the Institute for Policy Studies found that 140 million people are poor or low-income. That's almost half the U.S. population.",
-        "G) Whatever the measure, within that massive group, poverty is extremely diverse. We know that some people are more affected than others, like children, the elderly, people with disabilities, and people of color.",
-        "H) But the fact that 4 in 10 Americans can't come up with $400 in an emergency is a commonly cited statistic for good reason: economic instability stretches across race, gender, and geography. It even reaches into the middle classes, as real wages have stagnated (不增长) for all but the very wealthy and temporary spells of financial instability are not uncommon.",
-        "I) Negative images remain of who is living in poverty as well as what is needed to move out of it. The big American myth is that you can pull yourself up by your own efforts and change a bad situation into a good one. The reality is that finding opportunity without help from families, friends, schools, and community is virtually impossible. And the playing field is nothing close to level.",
-        "J) The FrameWorks Institute, a research group that focuses on public framing of issues, has studied what sustains stereotypes and narratives of poverty in the United Kingdom. “People view economic success and wellbeing in life as a product of choice, willpower, and drive,” says Nat Kendall-Taylor, CEO of FrameWorks. “When we see people who are struggling,” he says, those assumptions “lead us to the perception that people in poverty are lazy, they don't care, and they haven't made the right decisions.”",
-        "K) Does this sound familiar? Similar ideas surround poverty in the U.S. And these assumptions give a false picture of reality. “When people enter into that pattern of thinking,” says Kendall-Taylor, “it's cognitively comfortable to make sense of issues of poverty in that way. It creates a kind of cognitive blindness—all of the factors external to a person's drive and choices that they've made become invisible and fade from view.”",
-        "L) Those external factors include the difficulties accompanying low-wage work or structural discrimination based on race, gender, or ability. Assumptions get worse when people who are poor use government benefits to help them survive. There is a great tension between “the poor” and those who are receiving what has become a dirty word: “welfare.”",
-        "M) According to the General Social Survey, 71 percent of respondents believe the country is spending too little on “assistance to the poor.” On the other hand, 22 percent think we are spending too little on “welfare”: 37 percent believe we are spending too much.",
-        "N) “Poverty has been interchangeable with people of color—specifically black women and black mothers,” says Atkinson of Mothering Justice. It's true that black mothers are more affected by poverty than many other groups, yet they are disproportionately the face of poverty. For example, Americans routinely overestimate the share of black recipients of public assistance programs.",
-        "O) In reality, most people will experience some form of financial hardship at some point in their lives. Indeed, people tend to dip in and out of poverty, perhaps due to unexpected obstacles like losing a job, or when hours of a low-wage job fluctuate.",
-        "P) Something each of us can do is to treat each other with the dignity and sympathy that is deserved and to understand deeply that the issue of poverty touches all of us."
-    ],
-    "questions": [
-        {
-            "Number": 36,
-            "Statement": "One legislative staffer assumed that a woman of color who advocated affordable childcare must be a single mother.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 37,
-            "Statement": "People from different races, genders, and regions all suffer from a lack of financial security.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 38,
-            "Statement": "According to a survey, while the majority believe too little assistance is given to the poor, more than a third believe too much is spent on welfare.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 39,
-            "Statement": "A research group has found that Americans who are struggling are thought to be lazy and to have made the wrong decisions.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 40,
-            "Statement": "Under the old system in America, a mother was supposed to stay home and take care of her children.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 41,
-            "Statement": "It was found that nearly 50% of Americans are poor or receive low pay.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 42,
-            "Statement": "Americans usually overestimate the number of blacks receiving welfare benefits.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 43,
-            "Statement": "It is impossible for Americans to lift themselves out of poverty entirely on their own.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 44,
-            "Statement": "Nowadays, it seems none of us can get away from income inequality.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        },
-        {
-            "Number": 45,
-            "Statement": "Assumptions about poor people become even more negative when they live on welfare.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O",
-                "P"
-            ]
-        }
-    ]
+  "title": "Section B",
+  "passageTitle": "Poverty is a story about us, not them",
+  "passages": [
+    "A) Too often still, we think we know what poverty looks like. It's the way we've been taught, the images we've been force-fed for decades. The chronically homeless. The undocumented immigrant. The urban poor, usually personified as a woman of color, the “welfare queen” politicians still too often reference.",
+    "B) But as income inequality rises to record levels in the United States, even in the midst of a record economic expansion, those familiar images are outdated, hurtful, and counterproductive to focusing attention on solutions and building ladders of opportunity.",
+    "C) Today's faces of income inequality and lack of opportunity look like all of us. It's Anna Landre, a disabled Georgetown University student fighting to keep health benefits that allow her the freedom to live her life. It's Tiffanie Standard, a counselor for young women of color in Philadelphia who want to be tech entrepreneurs—but who must work multiple jobs to stay afloat. It's Ken Outlaw, a welder in rural North Carolina whose dream of going back to school at a local community college was dashed by Hurricane Florence—just one of the extreme weather events that have tipped the balance for struggling Americans across the nation.",
+    "D) If these are the central characters of our story about poverty, what layers of perceptions, myths, and realities must we unearth to find meaningful solutions and support? In pursuit of revealing this complicated reality, Mothering Justice, led by women of color, went last year to the state capital in Lansing, Michigan, to lobby on issues that affect working mothers. One of the Mothering Justice organizers went to the office of a state representative to talk about the lack of affordable childcare—the vestiges (痕迹) of a system that expected mothers to stay home with their children while their husbands worked. A legislative staffer dismissed the activist's concerns, telling her “my husband took care of that—I stayed home.”",
+    "E) That comment, says Mothering Justice director Danielle Atkinson, “was meant to shame” and relied on the familiar notion that a woman of color concerned about income inequality and programs that promote mobility must by definition be a single mom, probably with multiple kids. In this case, the Mothering Justice activist happened to be married. And in most cases in the America of 2019, the images that come to mind when we hear the words poverty or income inequality fail miserably in reflecting a complicated reality: poverty touches virtually all of us. The face of income inequality, for all but a very few of us, is the one we each see in the mirror.",
+    "F) How many of us are poor in the U.S.? It depends on who you ask. According to the Census Bureau, 38 million people in the U.S. are living below the official poverty thresholds. Taking into account economic need beyond that absolute measure, the Institute for Policy Studies found that 140 million people are poor or low-income. That's almost half the U.S. population.",
+    "G) Whatever the measure, within that massive group, poverty is extremely diverse. We know that some people are more affected than others, like children, the elderly, people with disabilities, and people of color.",
+    "H) But the fact that 4 in 10 Americans can't come up with $400 in an emergency is a commonly cited statistic for good reason: economic instability stretches across race, gender, and geography. It even reaches into the middle classes, as real wages have stagnated (不增长) for all but the very wealthy and temporary spells of financial instability are not uncommon.",
+    "I) Negative images remain of who is living in poverty as well as what is needed to move out of it. The big American myth is that you can pull yourself up by your own efforts and change a bad situation into a good one. The reality is that finding opportunity without help from families, friends, schools, and community is virtually impossible. And the playing field is nothing close to level.",
+    "J) The FrameWorks Institute, a research group that focuses on public framing of issues, has studied what sustains stereotypes and narratives of poverty in the United Kingdom. “People view economic success and wellbeing in life as a product of choice, willpower, and drive,” says Nat Kendall-Taylor, CEO of FrameWorks. “When we see people who are struggling,” he says, those assumptions “lead us to the perception that people in poverty are lazy, they don't care, and they haven't made the right decisions.”",
+    "K) Does this sound familiar? Similar ideas surround poverty in the U.S. And these assumptions give a false picture of reality. “When people enter into that pattern of thinking,” says Kendall-Taylor, “it's cognitively comfortable to make sense of issues of poverty in that way. It creates a kind of cognitive blindness—all of the factors external to a person's drive and choices that they've made become invisible and fade from view.”",
+    "L) Those external factors include the difficulties accompanying low-wage work or structural discrimination based on race, gender, or ability. Assumptions get worse when people who are poor use government benefits to help them survive. There is a great tension between “the poor” and those who are receiving what has become a dirty word: “welfare.”",
+    "M) According to the General Social Survey, 71 percent of respondents believe the country is spending too little on “assistance to the poor.” On the other hand, 22 percent think we are spending too little on “welfare”: 37 percent believe we are spending too much.",
+    "N) “Poverty has been interchangeable with people of color—specifically black women and black mothers,” says Atkinson of Mothering Justice. It's true that black mothers are more affected by poverty than many other groups, yet they are disproportionately the face of poverty. For example, Americans routinely overestimate the share of black recipients of public assistance programs.",
+    "O) In reality, most people will experience some form of financial hardship at some point in their lives. Indeed, people tend to dip in and out of poverty, perhaps due to unexpected obstacles like losing a job, or when hours of a low-wage job fluctuate.",
+    "P) Something each of us can do is to treat each other with the dignity and sympathy that is deserved and to understand deeply that the issue of poverty touches all of us."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "One legislative staffer assumed that a woman of color who advocated affordable childcare must be a single mother."
+    },
+    {
+      "Number": 37,
+      "Statement": "People from different races, genders, and regions all suffer from a lack of financial security."
+    },
+    {
+      "Number": 38,
+      "Statement": "According to a survey, while the majority believe too little assistance is given to the poor, more than a third believe too much is spent on welfare."
+    },
+    {
+      "Number": 39,
+      "Statement": "A research group has found that Americans who are struggling are thought to be lazy and to have made the wrong decisions."
+    },
+    {
+      "Number": 40,
+      "Statement": "Under the old system in America, a mother was supposed to stay home and take care of her children."
+    },
+    {
+      "Number": 41,
+      "Statement": "It was found that nearly 50% of Americans are poor or receive low pay."
+    },
+    {
+      "Number": 42,
+      "Statement": "Americans usually overestimate the number of blacks receiving welfare benefits."
+    },
+    {
+      "Number": 43,
+      "Statement": "It is impossible for Americans to lift themselves out of poverty entirely on their own."
+    },
+    {
+      "Number": 44,
+      "Statement": "Nowadays, it seems none of us can get away from income inequality."
+    },
+    {
+      "Number": 45,
+      "Statement": "Assumptions about poor people become even more negative when they live on welfare."
+    }
+  ]
 }

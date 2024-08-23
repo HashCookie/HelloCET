@@ -19,193 +19,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Given the easier accessibility to space, it is time to think about how to prevent misuse of satellites.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Given the easier accessibility to space, it is time to think about how to prevent misuse of satellites."
     },
     {
       "Number": 37,
-      "Statement": "A group of mini-satellites can work together to accomplish more complex tasks.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "A group of mini-satellites can work together to accomplish more complex tasks."
     },
     {
       "Number": 38,
-      "Statement": "The greater accessibility of mini-satellites increases the risks of their irresponsible use.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "The greater accessibility of mini-satellites increases the risks of their irresponsible use."
     },
     {
       "Number": 39,
-      "Statement": "Even school pupils can have their CubeSats put in orbit owing to the lowered launching cost.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Even school pupils can have their CubeSats put in orbit owing to the lowered launching cost."
     },
     {
       "Number": 40,
-      "Statement": "AMSAT is careful about sharing information with outsiders to prevent hijacking of their satellites.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "AMSAT is careful about sharing information with outsiders to prevent hijacking of their satellites."
     },
     {
       "Number": 41,
-      "Statement": "NASA offers to launch CubeSats free of charge for educational and research purposes.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "NASA offers to launch CubeSats free of charge for educational and research purposes."
     },
     {
       "Number": 42,
-      "Statement": "Even with constraints, it is possible for some creative developers to take the CubeSat technology in directions that result in harmful outcomes.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Even with constraints, it is possible for some creative developers to take the CubeSat technology in directions that result in harmful outcomes."
     },
     {
       "Number": 43,
-      "Statement": "While making significant contributions to space science, CubeSats may pose hazards to other space vehicles.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "While making significant contributions to space science, CubeSats may pose hazards to other space vehicles."
     },
     {
       "Number": 44,
-      "Statement": "Mini-satellites enable operators to study Earth from LEO and space around it.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "Mini-satellites enable operators to study Earth from LEO and space around it."
     },
     {
       "Number": 45,
-      "Statement": "AMSAT operates on the principle of having all its technical data accessible to its members, preventing the abuse of amateur satellites.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M"
-      ]
+      "Statement": "AMSAT operates on the principle of having all its technical data accessible to its members, preventing the abuse of amateur satellites."
     }
   ]
 }

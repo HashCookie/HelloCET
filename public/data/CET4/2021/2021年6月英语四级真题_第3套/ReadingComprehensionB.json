@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"Science of setbacks:How failure can improve career prospects",
+  "passageTitle": "Science of setbacks:How failure can improve career prospects",
   "passages": [
     "A) How do early career setbacks affect our long-term success? Failures can help us learn and overcome our fears. But disasters can still wound us. They can screw us up and set us back. Wouldn’t it be nice if there was genuine, scientifically documented truth to the expression “what doesn’t kill you makes you stronger”?",
     "B) One way social scientists have probed the effects of career setbacks is to look at scientists of very similar qualifications. These scientists, for reasons that are mostly arbitrary, either just missed getting a research grant or just barely made it. In social sciences, this is known as examining “near misses” and “narrow wins” in areas where merit is subjective. That allows researchers to measure only the effects of being chosen or not. Studies in this area have found conflicting results. In the competitive game of biomedical science, research has been done on scientists who narrowly lost or won grant money. It suggests that narrow winners become even bigger winners down the line. In other words, the rich get richer.",
@@ -17,223 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Being a close loser could greatly motivate one to persevere in their research.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Being a close loser could greatly motivate one to persevere in their research."
     },
     {
       "Number": 37,
-      "Statement": "Grant awarders tend to favor researchers already recognized in their respective fields.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Grant awarders tend to favor researchers already recognized in their respective fields."
     },
     {
       "Number": 38,
-      "Statement": "Suffering early setbacks might help people improve their job performance.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Suffering early setbacks might help people improve their job performance."
     },
     {
       "Number": 39,
-      "Statement": "Research by social scientists on the effects of career setbacks has produced contradictory findings.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Research by social scientists on the effects of career setbacks has produced contradictory findings."
     },
     {
       "Number": 40,
-      "Statement": "It is not to the best interest of taxpayers to keep giving money to narrow winners.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is not to the best interest of taxpayers to keep giving money to narrow winners."
     },
     {
       "Number": 41,
-      "Statement": "Scientists who persisted in research without receiving a grant made greater achievements than those who got one with luck, as suggested in one study.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Scientists who persisted in research without receiving a grant made greater achievements than those who got one with luck, as suggested in one study."
     },
     {
       "Number": 42,
-      "Statement": "A research paper rejected by one journal may get accepted by another.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A research paper rejected by one journal may get accepted by another."
     },
     {
       "Number": 43,
-      "Statement": "According to one recent study, narrow winners of research grants had better chances to be promoted to professors.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to one recent study, narrow winners of research grants had better chances to be promoted to professors."
     },
     {
       "Number": 44,
-      "Statement": "One researcher suggests it might be more fruitful to distribute grants on a relatively equal basis.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "One researcher suggests it might be more fruitful to distribute grants on a relatively equal basis."
     },
     {
       "Number": 45,
-      "Statement": "Minor setbacks in their early career may have a strong negative effect on the career of close losers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Minor setbacks in their early career may have a strong negative effect on the career of close losers."
     }
   ]
 }

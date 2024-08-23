@@ -19,223 +19,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Kelli Harding also distinguishes herself by her literary talent.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Kelli Harding also distinguishes herself by her literary talent."
     },
     {
       "Number": 37,
-      "Statement": "Kelli Harding doesn't think America's medical model is sufficient for patients who need help most.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Kelli Harding doesn't think America's medical model is sufficient for patients who need help most."
     },
     {
       "Number": 38,
-      "Statement": "Kelli Harding differs from those seeking quick and simple solutions to America's medical problems.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Kelli Harding differs from those seeking quick and simple solutions to America's medical problems."
     },
     {
       "Number": 39,
-      "Statement": "Kelli Harding was a participant in a summer course the author taught.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Kelli Harding was a participant in a summer course the author taught."
     },
     {
       "Number": 40,
-      "Statement": "According to Kelli Harding, scientific advances have not made Americans healthier, nor prolonged their life.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to Kelli Harding, scientific advances have not made Americans healthier, nor prolonged their life."
     },
     {
       "Number": 41,
-      "Statement": "The author was deeply moved by what Kelli Harding wrote about her current life.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The author was deeply moved by what Kelli Harding wrote about her current life."
     },
     {
       "Number": 42,
-      "Statement": "George Engel, in treating his patients, not only looks into their symptoms but also into things like the emotional support they receive.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "George Engel, in treating his patients, not only looks into their symptoms but also into things like the emotional support they receive."
     },
     {
       "Number": 43,
-      "Statement": "According to Kelli Harding, rabbits' health had more to do with humans' kindness to them than their diet or genetics.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to Kelli Harding, rabbits' health had more to do with humans' kindness to them than their diet or genetics."
     },
     {
       "Number": 44,
-      "Statement": "What Kelli Harding went through in Washington changed her life.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "What Kelli Harding went through in Washington changed her life."
     },
     {
       "Number": 45,
-      "Statement": "A social aspect to health has not been taken into account in trying to provide the best medical care.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A social aspect to health has not been taken into account in trying to provide the best medical care."
     }
   ]
 }

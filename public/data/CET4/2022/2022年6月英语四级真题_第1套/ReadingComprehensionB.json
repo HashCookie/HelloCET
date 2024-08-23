@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"How to determine if a company is a good fit for you",
+  "passageTitle": "How to determine if a company is a good fit for you",
   "passages": [
     "A) On paper, the job seemed perfect for me: The position was completely in line with my degree, the duties and responsibilities were compatible with my interests, and the office maintained a well-stocked kitchen that would satisfy my every snack desire.",
     "B) Sounds like my dream job, right? There was only one small problem: I simply didn’t get along with the company culture. They favored a more rigid, closed-door, corporate atmosphere, while I would have preferred something more collaborative and open. They were complete clock watchers, while I would have liked a more flexible schedule. To put it plainly, we just weren’t on the same page.",
@@ -21,223 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Clues about the culture of a company can be found on its website.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Clues about the culture of a company can be found on its website."
     },
     {
       "Number": 37,
-      "Statement": "It can be difficult to know the real situation in a company until you become part of it.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It can be difficult to know the real situation in a company until you become part of it."
     },
     {
       "Number": 38,
-      "Statement": "It is impossible for a job applicant to have every expectation met.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is impossible for a job applicant to have every expectation met."
     },
     {
       "Number": 39,
-      "Statement": "Simply by reading its description, the author found the job offered ideal.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Simply by reading its description, the author found the job offered ideal."
     },
     {
       "Number": 40,
-      "Statement": "Job applicants are advised to make a written list of their likes and dislikes in their previous employment.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Job applicants are advised to make a written list of their likes and dislikes in their previous employment."
     },
     {
       "Number": 41,
-      "Statement": "At the end of an interview, a job applicant should seize the opportunity to get answers to their urgent questions.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "At the end of an interview, a job applicant should seize the opportunity to get answers to their urgent questions."
     },
     {
       "Number": 42,
-      "Statement": "To begin with, job applicants should be clear what they expect from their future employer.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "To begin with, job applicants should be clear what they expect from their future employer."
     },
     {
       "Number": 43,
-      "Statement": "Job applicants should read with a critical eye what is written about a company on the website.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Job applicants should read with a critical eye what is written about a company on the website."
     },
     {
       "Number": 44,
-      "Statement": "Job satisfaction has a lot to do with company culture.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Job satisfaction has a lot to do with company culture."
     },
     {
       "Number": 45,
-      "Statement": "A chat with an insider of a company can give job applicants very useful information when they prepare for an interview.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A chat with an insider of a company can give job applicants very useful information when they prepare for an interview."
     }
   ]
 }

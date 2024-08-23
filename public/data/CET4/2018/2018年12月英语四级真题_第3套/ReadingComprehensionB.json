@@ -1,222 +1,62 @@
 {
-    "title": "Section B",
-    "passageTitle":"Is it really OK to eat food that’s fallen on the floor?",
-    "passages": [
-        "A) When you drop a piece of food on the floor, is it really OK to eat if you pick it up within five seconds? An urban food myth contends that if food spends just a few seconds on the floor, dirt and germs won’t have much of a chance to contaminate it. Research in my lab has focused on how food becomes contaminated, and we’ve done some work on this particular piece of wisdom.",
-        "B) While the ‘five-second rule’ might not seem like the most pressing issue for food scientists to get to the bottom of, it’s still worth investigating food myths like this one because they shape our beliefs about when food is safe to eat.",
-        "C) So is five seconds on the floor the critical threshold (门槛) that separates a piece of eatable food from a case of food poisoning? It’s a bit more complicated than that. It depends on just how many bacteria can make it from floor to food in a few seconds and just how dirty the floor is.",
-        "D) Wondering if food is still OK to eat after it’s dropped on the floor is a pretty common experience. And it’s probably not a new one either. A well-known, but inaccurate, story about Julia Child may have contributed to this food myth. Some viewers of her cooking show, The French Chef, insist they saw Child drop lamb on the floor and pick it up, with the advice that if they were alone in the kitchen, their guests would never know.",
-        "E) In fact it was a potato pancake, and it fell on the stovetop, not on the floor. Child put it back in the pan, saying, “But you can always pick it up and if you’re alone in the kitchen, who’s going to see it?” But the misremembered story persists. It’s harder to pin down the origins of the oft-quoted five-second rule, but a 2003 study reported that 70% of women and 56% of men surveyed were familiar with the five-second rule and that women were more likely than men to eat food that had dropped on the floor.",
-        "F) So what does science tell us about what a few moments on the floor means for the safety of your food? The earliest research report on the five-second rule is attributed to Jillian Clarke, a high school student participating in a research project at the University of Illinois. Clarke and her colleagues introduced bacteria to floor tiles (瓷砖) and then placed cookies on the tiles for varying times. They reported bacteria were transferred from the tiles to the cookies within five seconds, but didn’t report the specific amount of bacteria that made it from the tiles to the food.",
-        "G) But how many bacteria actually transfer in five seconds? In 2007, my lab at Clemson University published a study in the Journal of Applied Microbiology. We wanted to know if the length of time food is in contact with a contaminated surface affected the rate of transfer of bacteria to the food. To find out, we introduced bacteria to squares of tile, carpet or wood. Five minutes after that, we placed either bacon or bread on the surface for 5, 30 or 60 seconds, and then measured the number of bacteria transferred to the food. We repeated this exact procedure after the bacteria had been on the surface for 2, 4, 8 and 24 hours.",
-        "H) We found that the number of bacteria transferred to either kind of food didn’t depend much on how long the food was in contact with the contaminated surface—whether for a few seconds or for a whole minute. The overall number of bacteria on the surface mattered more, and this decreased over time after the initial introduction. It looks like what’s at issue is less how long your food stays on the floor and much more how contaminated with bacteria that patch of floor happens to be.",
-        "I) We also found that the kind of surface made a difference as well. Carpets, for instance, seem to be slightly better places to drop your food than wood or tile. When a carpet was contaminated, less than 1% of the bacteria were transferred. But when the food was in contact with tile or wood, 48 - 70% of bacteria were.",
-        "J) Last year, a study from Aston University in the UK used nearly identical parameters (参数) to our study and found similar results. They also reported that 87% of people asked either would eat or had eaten food fallen on the floor.",
-        "K) Should you eat food fallen on the floor then? From a food safety standpoint, if you have millions or more bacteria on a surface, 0.1% is still enough to make you sick. Also, certain types of bacteria are extremely harmful, and it takes only a small number to make you sick. For example, 10 bacteria or less of an especially deadly strain of bacteria can cause severe illness and death in people with compromised immune systems. But the chance of these bacteria being on most surfaces is very low.",
-        "L) And it’s not just dropping food on the floor that can lead to bacterial contamination. Bacteria are carried by various ‘media’, which can include raw food, moist surfaces where bacteria have been left, our hands or skin and from coughing or sneezing (打喷嚏). Hands, foods and utensils (器皿) can carry individual bacteria living in communities contained within a protective film. These microscopic layers of deposits containing bacteria are known as biofilms and they are found on most surfaces and objects. Biofilm communities can harbor bacteria longer and are very difficult to clean. Bacteria in these communities also have an enhanced resistance to sanitizers (清洁剂) and antibiotics compared to bacteria living on their own.",
-        "M) So the next time you consider eating fallen food, the odds are in your favor that you can eat it without getting sick. But in the rare chance that there is a micro-organism that can make you sick on the exact spot where the food dropped, you can be fairly sure that the bug is on the food you are about to put in your mouth.",
-        "N) Research or common sense tells us that the best thing to do is keep your hands, utensils and other surfaces clean."
-    ],
-    "questions": [
-        {
-            "Number": 36,
-            "Statement": "A research project found bacteria made their way to the food on the floor in five seconds.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 37,
-            "Statement": "Whether food is contaminated depends much on the number of bacteria that get onto it.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 38,
-            "Statement": "Food contamination may result from various factors other than food dropping on the floor.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 39,
-            "Statement": "Males are less likely than females to eat food that may have been contaminated.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 40,
-            "Statement": "The author’s research centers around how food gets contaminated.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 41,
-            "Statement": "Keeping everything clean is the best way to stay healthy.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 42,
-            "Statement": "Chances are you will not fall sick because of eating food picked up from the floor.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 43,
-            "Statement": "For a long time people have had the experience of deciding whether or not to eat food picked up from the floor.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 44,
-            "Statement": "Some strains of bacteria are so harmful that a tiny few can have deadly consequences.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 45,
-            "Statement": "Researchers found how many bacteria got onto the food did not have much to do with how long the food stayed on a contaminated floor.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        }
-    ]
+  "title": "Section B",
+  "passageTitle": "Is it really OK to eat food that’s fallen on the floor?",
+  "passages": [
+    "A) When you drop a piece of food on the floor, is it really OK to eat if you pick it up within five seconds? An urban food myth contends that if food spends just a few seconds on the floor, dirt and germs won’t have much of a chance to contaminate it. Research in my lab has focused on how food becomes contaminated, and we’ve done some work on this particular piece of wisdom.",
+    "B) While the ‘five-second rule’ might not seem like the most pressing issue for food scientists to get to the bottom of, it’s still worth investigating food myths like this one because they shape our beliefs about when food is safe to eat.",
+    "C) So is five seconds on the floor the critical threshold (门槛) that separates a piece of eatable food from a case of food poisoning? It’s a bit more complicated than that. It depends on just how many bacteria can make it from floor to food in a few seconds and just how dirty the floor is.",
+    "D) Wondering if food is still OK to eat after it’s dropped on the floor is a pretty common experience. And it’s probably not a new one either. A well-known, but inaccurate, story about Julia Child may have contributed to this food myth. Some viewers of her cooking show, The French Chef, insist they saw Child drop lamb on the floor and pick it up, with the advice that if they were alone in the kitchen, their guests would never know.",
+    "E) In fact it was a potato pancake, and it fell on the stovetop, not on the floor. Child put it back in the pan, saying, “But you can always pick it up and if you’re alone in the kitchen, who’s going to see it?” But the misremembered story persists. It’s harder to pin down the origins of the oft-quoted five-second rule, but a 2003 study reported that 70% of women and 56% of men surveyed were familiar with the five-second rule and that women were more likely than men to eat food that had dropped on the floor.",
+    "F) So what does science tell us about what a few moments on the floor means for the safety of your food? The earliest research report on the five-second rule is attributed to Jillian Clarke, a high school student participating in a research project at the University of Illinois. Clarke and her colleagues introduced bacteria to floor tiles (瓷砖) and then placed cookies on the tiles for varying times. They reported bacteria were transferred from the tiles to the cookies within five seconds, but didn’t report the specific amount of bacteria that made it from the tiles to the food.",
+    "G) But how many bacteria actually transfer in five seconds? In 2007, my lab at Clemson University published a study in the Journal of Applied Microbiology. We wanted to know if the length of time food is in contact with a contaminated surface affected the rate of transfer of bacteria to the food. To find out, we introduced bacteria to squares of tile, carpet or wood. Five minutes after that, we placed either bacon or bread on the surface for 5, 30 or 60 seconds, and then measured the number of bacteria transferred to the food. We repeated this exact procedure after the bacteria had been on the surface for 2, 4, 8 and 24 hours.",
+    "H) We found that the number of bacteria transferred to either kind of food didn’t depend much on how long the food was in contact with the contaminated surface—whether for a few seconds or for a whole minute. The overall number of bacteria on the surface mattered more, and this decreased over time after the initial introduction. It looks like what’s at issue is less how long your food stays on the floor and much more how contaminated with bacteria that patch of floor happens to be.",
+    "I) We also found that the kind of surface made a difference as well. Carpets, for instance, seem to be slightly better places to drop your food than wood or tile. When a carpet was contaminated, less than 1% of the bacteria were transferred. But when the food was in contact with tile or wood, 48 - 70% of bacteria were.",
+    "J) Last year, a study from Aston University in the UK used nearly identical parameters (参数) to our study and found similar results. They also reported that 87% of people asked either would eat or had eaten food fallen on the floor.",
+    "K) Should you eat food fallen on the floor then? From a food safety standpoint, if you have millions or more bacteria on a surface, 0.1% is still enough to make you sick. Also, certain types of bacteria are extremely harmful, and it takes only a small number to make you sick. For example, 10 bacteria or less of an especially deadly strain of bacteria can cause severe illness and death in people with compromised immune systems. But the chance of these bacteria being on most surfaces is very low.",
+    "L) And it’s not just dropping food on the floor that can lead to bacterial contamination. Bacteria are carried by various ‘media’, which can include raw food, moist surfaces where bacteria have been left, our hands or skin and from coughing or sneezing (打喷嚏). Hands, foods and utensils (器皿) can carry individual bacteria living in communities contained within a protective film. These microscopic layers of deposits containing bacteria are known as biofilms and they are found on most surfaces and objects. Biofilm communities can harbor bacteria longer and are very difficult to clean. Bacteria in these communities also have an enhanced resistance to sanitizers (清洁剂) and antibiotics compared to bacteria living on their own.",
+    "M) So the next time you consider eating fallen food, the odds are in your favor that you can eat it without getting sick. But in the rare chance that there is a micro-organism that can make you sick on the exact spot where the food dropped, you can be fairly sure that the bug is on the food you are about to put in your mouth.",
+    "N) Research or common sense tells us that the best thing to do is keep your hands, utensils and other surfaces clean."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "A research project found bacteria made their way to the food on the floor in five seconds."
+    },
+    {
+      "Number": 37,
+      "Statement": "Whether food is contaminated depends much on the number of bacteria that get onto it."
+    },
+    {
+      "Number": 38,
+      "Statement": "Food contamination may result from various factors other than food dropping on the floor."
+    },
+    {
+      "Number": 39,
+      "Statement": "Males are less likely than females to eat food that may have been contaminated."
+    },
+    {
+      "Number": 40,
+      "Statement": "The author’s research centers around how food gets contaminated."
+    },
+    {
+      "Number": 41,
+      "Statement": "Keeping everything clean is the best way to stay healthy."
+    },
+    {
+      "Number": 42,
+      "Statement": "Chances are you will not fall sick because of eating food picked up from the floor."
+    },
+    {
+      "Number": 43,
+      "Statement": "For a long time people have had the experience of deciding whether or not to eat food picked up from the floor."
+    },
+    {
+      "Number": 44,
+      "Statement": "Some strains of bacteria are so harmful that a tiny few can have deadly consequences."
+    },
+    {
+      "Number": 45,
+      "Statement": "Researchers found how many bacteria got onto the food did not have much to do with how long the food stayed on a contaminated floor."
+    }
+  ]
 }

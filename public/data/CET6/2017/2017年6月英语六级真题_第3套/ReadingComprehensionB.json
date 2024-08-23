@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Middle school is a crucial period when students may become keenly interested in advanced mathematics.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Middle school is a crucial period when students may become keenly interested in advanced mathematics."
     },
     {
       "Number": 37,
-      "Statement": "Elite high school math competitions are attracting more interest throughout the United States.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Elite high school math competitions are attracting more interest throughout the United States."
     },
     {
       "Number": 38,
-      "Statement": "Math circles provide students with access to advanced-math training by university professors.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Math circles provide students with access to advanced-math training by university professors."
     },
     {
       "Number": 39,
-      "Statement": "Students may take advantage of online resources to learn to solve math problems.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Students may take advantage of online resources to learn to solve math problems."
     },
     {
       "Number": 40,
-      "Statement": "The summer program run by a nonprofit organization has helped many underserved students learn advanced math.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The summer program run by a nonprofit organization has helped many underserved students learn advanced math."
     },
     {
       "Number": 41,
-      "Statement": "Winners of local contests will participate in the national math competition for free.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Winners of local contests will participate in the national math competition for free."
     },
     {
       "Number": 42,
-      "Statement": "Many schools don't place academic competitions at the top of their priority list.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Many schools don't place academic competitions at the top of their priority list."
     },
     {
       "Number": 43,
-      "Statement": "Contestants of elite high school math competitions are mostly Asian and white students from well-off families.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Contestants of elite high school math competitions are mostly Asian and white students from well-off families."
     },
     {
       "Number": 44,
-      "Statement": "Some math training programs primarily focus on raising students' math scores.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Some math training programs primarily focus on raising students' math scores."
     },
     {
       "Number": 45,
-      "Statement": "Some intensive summer programs are very expensive but most of them provide scholarships.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Some intensive summer programs are very expensive but most of them provide scholarships."
     }
   ]
 }

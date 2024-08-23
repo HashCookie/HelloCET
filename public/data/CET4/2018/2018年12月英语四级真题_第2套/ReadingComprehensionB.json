@@ -1,222 +1,62 @@
 {
-    "title": "Section B",
-    "passageTitle":"How a Poor, Abandoned Parisian Boy Became a Top Chef",
-    "passages": [
-        "A) The busy streets in Paris were uneven and caked in thick mud, but there was always a breathtaking sight to see in the shop windows of Patisserie de la Rue de la Paix. By 1814, people crowded outside the bakery, straining for a glimpse of the latest sweet food created by the young chef who worked inside.",
-        "B) His name was Marie-Antoine Carême, and he had appeared, one day, almost out of nowhere. But in his short lifetime, which ended exactly 184 years ago today, he would forever revolutionize French gourmet food (美食), write best-selling cook books and think up magical dishes for royals and other important people.",
-        "C) Carême’s childhood was one part tragedy, equal part mystery. Born the 16th child to poor parents in Paris in either 1783 or 1784, a young Carême was suddenly abandoned at the height of the French Revolution. At 8 years old, he worked as a kitchen boy for a restaurant in Paris in exchange for room and board. By age 15, he had become an apprentice (学徒) to Sylvain Bailly, a well-known dessert chef with a successful bakery in one of Paris’ most fashionable neighborhoods.",
-        "D) Carême was quick at learning in the kitchen. Bailly encouraged his young apprentice to learn to read and write. Carême would often spend his free afternoons at the nearby National Library reading books on art and architecture. In the back room of the little bakery, his interest in design and his baking talent combined to work wonders—he shaped delicious masterpieces out of flour, butter and sugar.",
-        "E) In his teenage years, Carême fashioned eatable copies of the late 18th century’s most famous buildings—cookies in the shape of ruins of ancient Athens and pies in the shape of ancient Chinese palaces and temples. Sylvain Bailly, his master, displayed these luxuriant creations—often as large as 4 feet tall—in his bakery windows.",
-        "F) Carême’s creations soon captured the discriminating eye of a French diplomat, Charles Maurice de Talleyrand-Périgord. Around 1804, Talleyrand challenged Carême to produce a full menu for his personal castle, instructing the young baker to use local, seasonal fruits and vegetables and to avoid repeating main dishes over the course of an entire year. The experiment was a grand success and Talleyrand’s association with French nobility would prove a profitable connection for Carême.",
-        "G) French Emperor Napoleon Bonaparte was known to be unimpressed by the declining taste of early 18th century cooking, but under pressure to entertain Paris’ high society, he too called Carême to his kitchen at Tuileries Palace. In 1810, Carême designed the extraordinary cake for the wedding of Napoleon and his second bride, Marie-Louise of Austria. He became one of the first modern chefs to focus on the appearance of his table, not just the flavor of his dishes. “I want order and taste. A well-displayed meal is enhanced one hundred percent in my eyes,” he later wrote in one of his cook books.",
-        "H) In 1816, Carême began a culinary (烹饪的) journey which would forever mark his place as history’s first top chef. He voyaged to England to cook in the modern Great Kitchen of the prince regent (摄政王), George IV, and crossed continents to prepare grand banquets for the tables of Tsar Alexander I of Russia. Never afraid to talk up his own accomplishments, a boastful Carême made a fortune as wealthy families with social ambitions invited him to their kitchens. Later, in his cook books, he would often include a sketch of himself, so that people on the street would be able to recognize—and admire—him.",
-        "I) Carême’s cooking displays became the symbol of fine French dining; they were plentiful, beautiful and imposing. Guests would fall silent in wonder as servants carried Carême’s fancy creations into the dining hall. For a banquet celebrating the Grand Duke Nicholas of Russia’s visit to George IV’s Brighton Pavillion on Jan. 18, 1817, the menu featured 120 different dishes, highlighting eight different soups, 40 main courses, and 32 desserts.",
-        "J) As he traveled through the homes of early 19th century nobility, Carême forged the new art of French gourmet food. Locked in hot kitchens, Carême created his four “mother sauces.” These sauces—béchamel, velouté, espagnole and allemande—formed the central building blocks for many French main courses. He also perfected the soufflé—a baked egg dish, and introduced the standard chef’s uniform—the same double-breasted white coat and tall white hat still worn by many chefs today. The white clothing conveyed an image of cleanliness, according to Carême—and in his realm, appearance was everything.",
-        "K) Between meals, Carême wrote cook books that would be used in European kitchens for the next century. His manuals including The Royal Parisian Baker and the massive five-volume Art of French Cooking Series (1833-1847, completed after his death) first systematized many basic principles of cooking, complete with drawings and step-by-step directions. Long before television cooking shows, Carême walked readers through common kitchen tasks, instructing them to “try this for yourself, at home” as famous American Chef Julia Child might do, many years later.",
-        "L) In the end, however, it was the kitchen that did Carême in. Decades of working over coal fires in tight, closed spaces with little fresh air (to ensure his dishes would not get cold) had fatally damaged his lungs. On Jan. 12, 1833, Carême died just before he turned 50.",
-        "M) But in his lifetime, Carême, ever confident, could see beyond his short domination in the kitchen. He wanted to “set the standard for beauty in classical and modern cooking, and prove to the distant future that the French chefs of the 19th century were the most famous in the world,” as he wrote in his papers.",
-        "N) Decades later, chef Auguste Escoffier would build upon Carême’s concept of French cuisine (烹饪). But in the very beginning, there was just Carême, the top chef who elevated dining into art."
-    ],
-    "questions": [
-        {
-            "Number": 36,
-            "Statement": "Carême was among the first chefs who stressed both the appearance and flavor of dishes.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 37,
-            "Statement": "Carême wanted to show to later generations that French chefs of his time were most outstanding in the world.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 38,
-            "Statement": "Carême benefited greatly from serving a French diplomat and his connections.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 39,
-            "Statement": "Carême learned his trade from a famous desert chef in Paris.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 40,
-            "Statement": "Carême’s creative works were exhibited in the shop windows by his master.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 41,
-            "Statement": "Carême’s knowledge of art and architecture helped him create extraordinary desserts out of ordinary ingredients.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 42,
-            "Statement": "Many people in Paris were eager to have a look at the latest sweet food made by Carême.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 43,
-            "Statement": "Carême became extremely wealthy by cooking for rich and socially ambitious families.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 44,
-            "Statement": "Carême’s writing dealt with the fundamental cooking principles in a systematic way.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        },
-        {
-            "Number": 45,
-            "Statement": "Carême’s contribution to French cooking was revolutionary.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N"
-            ]
-        }
-    ]
+  "title": "Section B",
+  "passageTitle": "How a Poor, Abandoned Parisian Boy Became a Top Chef",
+  "passages": [
+    "A) The busy streets in Paris were uneven and caked in thick mud, but there was always a breathtaking sight to see in the shop windows of Patisserie de la Rue de la Paix. By 1814, people crowded outside the bakery, straining for a glimpse of the latest sweet food created by the young chef who worked inside.",
+    "B) His name was Marie-Antoine Carême, and he had appeared, one day, almost out of nowhere. But in his short lifetime, which ended exactly 184 years ago today, he would forever revolutionize French gourmet food (美食), write best-selling cook books and think up magical dishes for royals and other important people.",
+    "C) Carême’s childhood was one part tragedy, equal part mystery. Born the 16th child to poor parents in Paris in either 1783 or 1784, a young Carême was suddenly abandoned at the height of the French Revolution. At 8 years old, he worked as a kitchen boy for a restaurant in Paris in exchange for room and board. By age 15, he had become an apprentice (学徒) to Sylvain Bailly, a well-known dessert chef with a successful bakery in one of Paris’ most fashionable neighborhoods.",
+    "D) Carême was quick at learning in the kitchen. Bailly encouraged his young apprentice to learn to read and write. Carême would often spend his free afternoons at the nearby National Library reading books on art and architecture. In the back room of the little bakery, his interest in design and his baking talent combined to work wonders—he shaped delicious masterpieces out of flour, butter and sugar.",
+    "E) In his teenage years, Carême fashioned eatable copies of the late 18th century’s most famous buildings—cookies in the shape of ruins of ancient Athens and pies in the shape of ancient Chinese palaces and temples. Sylvain Bailly, his master, displayed these luxuriant creations—often as large as 4 feet tall—in his bakery windows.",
+    "F) Carême’s creations soon captured the discriminating eye of a French diplomat, Charles Maurice de Talleyrand-Périgord. Around 1804, Talleyrand challenged Carême to produce a full menu for his personal castle, instructing the young baker to use local, seasonal fruits and vegetables and to avoid repeating main dishes over the course of an entire year. The experiment was a grand success and Talleyrand’s association with French nobility would prove a profitable connection for Carême.",
+    "G) French Emperor Napoleon Bonaparte was known to be unimpressed by the declining taste of early 18th century cooking, but under pressure to entertain Paris’ high society, he too called Carême to his kitchen at Tuileries Palace. In 1810, Carême designed the extraordinary cake for the wedding of Napoleon and his second bride, Marie-Louise of Austria. He became one of the first modern chefs to focus on the appearance of his table, not just the flavor of his dishes. “I want order and taste. A well-displayed meal is enhanced one hundred percent in my eyes,” he later wrote in one of his cook books.",
+    "H) In 1816, Carême began a culinary (烹饪的) journey which would forever mark his place as history’s first top chef. He voyaged to England to cook in the modern Great Kitchen of the prince regent (摄政王), George IV, and crossed continents to prepare grand banquets for the tables of Tsar Alexander I of Russia. Never afraid to talk up his own accomplishments, a boastful Carême made a fortune as wealthy families with social ambitions invited him to their kitchens. Later, in his cook books, he would often include a sketch of himself, so that people on the street would be able to recognize—and admire—him.",
+    "I) Carême’s cooking displays became the symbol of fine French dining; they were plentiful, beautiful and imposing. Guests would fall silent in wonder as servants carried Carême’s fancy creations into the dining hall. For a banquet celebrating the Grand Duke Nicholas of Russia’s visit to George IV’s Brighton Pavillion on Jan. 18, 1817, the menu featured 120 different dishes, highlighting eight different soups, 40 main courses, and 32 desserts.",
+    "J) As he traveled through the homes of early 19th century nobility, Carême forged the new art of French gourmet food. Locked in hot kitchens, Carême created his four “mother sauces.” These sauces—béchamel, velouté, espagnole and allemande—formed the central building blocks for many French main courses. He also perfected the soufflé—a baked egg dish, and introduced the standard chef’s uniform—the same double-breasted white coat and tall white hat still worn by many chefs today. The white clothing conveyed an image of cleanliness, according to Carême—and in his realm, appearance was everything.",
+    "K) Between meals, Carême wrote cook books that would be used in European kitchens for the next century. His manuals including The Royal Parisian Baker and the massive five-volume Art of French Cooking Series (1833-1847, completed after his death) first systematized many basic principles of cooking, complete with drawings and step-by-step directions. Long before television cooking shows, Carême walked readers through common kitchen tasks, instructing them to “try this for yourself, at home” as famous American Chef Julia Child might do, many years later.",
+    "L) In the end, however, it was the kitchen that did Carême in. Decades of working over coal fires in tight, closed spaces with little fresh air (to ensure his dishes would not get cold) had fatally damaged his lungs. On Jan. 12, 1833, Carême died just before he turned 50.",
+    "M) But in his lifetime, Carême, ever confident, could see beyond his short domination in the kitchen. He wanted to “set the standard for beauty in classical and modern cooking, and prove to the distant future that the French chefs of the 19th century were the most famous in the world,” as he wrote in his papers.",
+    "N) Decades later, chef Auguste Escoffier would build upon Carême’s concept of French cuisine (烹饪). But in the very beginning, there was just Carême, the top chef who elevated dining into art."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "Carême was among the first chefs who stressed both the appearance and flavor of dishes."
+    },
+    {
+      "Number": 37,
+      "Statement": "Carême wanted to show to later generations that French chefs of his time were most outstanding in the world."
+    },
+    {
+      "Number": 38,
+      "Statement": "Carême benefited greatly from serving a French diplomat and his connections."
+    },
+    {
+      "Number": 39,
+      "Statement": "Carême learned his trade from a famous desert chef in Paris."
+    },
+    {
+      "Number": 40,
+      "Statement": "Carême’s creative works were exhibited in the shop windows by his master."
+    },
+    {
+      "Number": 41,
+      "Statement": "Carême’s knowledge of art and architecture helped him create extraordinary desserts out of ordinary ingredients."
+    },
+    {
+      "Number": 42,
+      "Statement": "Many people in Paris were eager to have a look at the latest sweet food made by Carême."
+    },
+    {
+      "Number": 43,
+      "Statement": "Carême became extremely wealthy by cooking for rich and socially ambitious families."
+    },
+    {
+      "Number": 44,
+      "Statement": "Carême’s writing dealt with the fundamental cooking principles in a systematic way."
+    },
+    {
+      "Number": 45,
+      "Statement": "Carême’s contribution to French cooking was revolutionary."
+    }
+  ]
 }

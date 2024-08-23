@@ -18,53 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Wardian considers the various extraordinary challenges as a test of his physical limits.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Wardian considers the various extraordinary challenges as a test of his physical limits."
     },
     {
       "Number": 37,
-      "Statement": "Wardian aims to contribute to a worthy cause through his participation in the seven-day marathon series.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Wardian aims to contribute to a worthy cause through his participation in the seven-day marathon series."
     },
     {
       "Number": 38,
-      "Statement": "Wardian will join more than 30 other runners in the week-long marathon series.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Wardian will join more than 30 other runners in the week-long marathon series."
     },
     {
       "Number": 39,
-      "Statement": "Exerting too much effort in extreme cold can lead to dangerously low body temperature.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Exerting too much effort in extreme cold can lead to dangerously low body temperature."
     },
     {
       "Number": 40,
-      "Statement": "Wardian was greatly impressed by the race director's spirit of adventure.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Wardian was greatly impressed by the race director's spirit of adventure."
     },
     {
       "Number": 41,
-      "Statement": "Once Wardian sets his mind on something, he is determined to achieve it.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Once Wardian sets his mind on something, he is determined to achieve it."
     },
     {
       "Number": 42,
-      "Statement": "One top American marathoner ended his running career due to his physical condition.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "One top American marathoner ended his running career due to his physical condition."
     },
     {
       "Number": 43,
-      "Statement": "For many participants in the week-long marathon, completing the race itself will be a success.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "For many participants in the week-long marathon, completing the race itself will be a success."
     },
     {
       "Number": 44,
-      "Statement": "The marathon in the Arctic was more about Wardian's triumph over the extreme cold.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The marathon in the Arctic was more about Wardian's triumph over the extreme cold."
     },
     {
       "Number": 45,
-      "Statement": "To participate in the week-long marathon series, Wardian had to raise a significant amount of money and gain his wife's support.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "To participate in the week-long marathon series, Wardian had to raise a significant amount of money and gain his wife's support."
     }
   ]
 }

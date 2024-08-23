@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Marconi was central to our present-day understanding of communication.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Marconi was central to our present-day understanding of communication."
     },
     {
       "Number": 37,
-      "Statement": "As an adult, Marconi had an intuition that he had to be loyal to politicians in order to be influential.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "As an adult, Marconi had an intuition that he had to be loyal to politicians in order to be influential."
     },
     {
       "Number": 38,
-      "Statement": "Marconi disapproved of the use of wireless communication for commercial broadcasting.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Marconi disapproved of the use of wireless communication for commercial broadcasting."
     },
     {
       "Number": 39,
-      "Statement": "Marconi’s example demonstrates that theoretical concepts and experiments complement each other in making progress in science and technology.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Marconi’s example demonstrates that theoretical concepts and experiments complement each other in making progress in science and technology."
     },
     {
       "Number": 40,
-      "Statement": "Marconi’s real interest lay in the development of worldwide wireless communication.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Marconi’s real interest lay in the development of worldwide wireless communication."
     },
     {
       "Number": 41,
-      "Statement": "Marconi spent his whole life making wireless communication simple to use.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Marconi spent his whole life making wireless communication simple to use."
     },
     {
       "Number": 42,
-      "Statement": "Because of his long-time connection with people in power,Marconi was unable to cut himself off from the fascist regime in Italy.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Because of his long-time connection with people in power,Marconi was unable to cut himself off from the fascist regime in Italy."
     },
     {
       "Number": 43,
-      "Statement": "In his later years, Marconi exerted a tremendous influence on all aspects of people’s life.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "In his later years, Marconi exerted a tremendous influence on all aspects of people’s life."
     },
     {
       "Number": 44,
-      "Statement": "What connected the 19th century and our present time was the development of wireless communication.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "What connected the 19th century and our present time was the development of wireless communication."
     },
     {
       "Number": 45,
-      "Statement": "Despite his autonomy, Marconi felt alienated and suf ered from a lack of acceptance.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Despite his autonomy, Marconi felt alienated and suf ered from a lack of acceptance."
     }
   ]
 }

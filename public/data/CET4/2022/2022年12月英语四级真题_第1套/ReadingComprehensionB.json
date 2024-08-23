@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"The hidden costs colleges don't want you to know about",
+  "passageTitle": "The hidden costs colleges don't want you to know about",
   "passages": [
     "A) This fall, thousands of college students from across the country will begin their undergraduate studies at colleges around the nation. They will inevitably pack too much to fit in their tiny dorm rooms. They will also carry with them a huge student loan debt, in addition to countless \"hidden\" out-of-pocket costs paid for by their bank accounts and the bank accounts of their families.",
     "B) At my well-respected, private, four-year university in Washington, D.C., which boasts a yearly tuition of $44,046 not including room and board, I receive over $ 57,000 yearly in financial aid. As a student from a family that is struggling to make ends meet, my financial aid package is a combination of federal grants and federal work study, university merit scholarships and financial aid awards, and about $8,000 yearly in federally subsidized（有补贴的）and unsubsidized loans. On paper, my expenses and my financial aid just about even out. Off paper, they don't.",
@@ -19,223 +19,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Students' financial aid remains unchanged even when tuition rises.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Students' financial aid remains unchanged even when tuition rises."
     },
     {
       "Number": 37,
-      "Statement": "Students may not be able to enjoy their state benefits when they go to college out of the state.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Students may not be able to enjoy their state benefits when they go to college out of the state."
     },
     {
       "Number": 38,
-      "Statement": "The financial aid the author receives is supposed to cover all her college expenses.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The financial aid the author receives is supposed to cover all her college expenses."
     },
     {
       "Number": 39,
-      "Statement": "When the person who damages dorm facilities is not identified, students are required to share the cost.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "When the person who damages dorm facilities is not identified, students are required to share the cost."
     },
     {
       "Number": 40,
-      "Statement": "Though it is difficult and embarrassing, students should make inquiries about what fees they have to pay and why.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Though it is difficult and embarrassing, students should make inquiries about what fees they have to pay and why."
     },
     {
       "Number": 41,
-      "Statement": "Today, many Americans have to go to college on student loans.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Today, many Americans have to go to college on student loans."
     },
     {
       "Number": 42,
-      "Statement": "Receiving education in a private university in the nation's capital may change the author's future life and that of her family's.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Receiving education in a private university in the nation's capital may change the author's future life and that of her family's."
     },
     {
       "Number": 43,
-      "Statement": "Students may no longer be qualified for financial aid if they perform poorly in school or if their family income has increased.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Students may no longer be qualified for financial aid if they perform poorly in school or if their family income has increased."
     },
     {
       "Number": 44,
-      "Statement": "In addition to tuition, college students have to pay extra fees for the courses they take.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "In addition to tuition, college students have to pay extra fees for the courses they take."
     },
     {
       "Number": 45,
-      "Statement": "Some schools charge students a fee to their student accounts for using credit cards to pay bills.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some schools charge students a fee to their student accounts for using credit cards to pay bills."
     }
   ]
 }

@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Climate change has wrought havoc on the lives of tens of thousands of people.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Climate change has wrought havoc on the lives of tens of thousands of people."
     },
     {
       "Number": 37,
-      "Statement": "It took scientists a long time to realise that the function of forests goes far beyond providing humans with timber.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "It took scientists a long time to realise that the function of forests goes far beyond providing humans with timber."
     },
     {
       "Number": 38,
-      "Statement": "There is abundant evidence that we are now facing a possible ecological disaster.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "There is abundant evidence that we are now facing a possible ecological disaster."
     },
     {
       "Number": 39,
-      "Statement": "Environmental science became academic disciplines only some sixty years ago.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Environmental science became academic disciplines only some sixty years ago."
     },
     {
       "Number": 40,
-      "Statement": "Things cannot change overnight, but reducing the consumption of natural resources will help solve the ecological crisis.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Things cannot change overnight, but reducing the consumption of natural resources will help solve the ecological crisis."
     },
     {
       "Number": 41,
-      "Statement": "Human perception of forests has undergone a tremendous change in the past years.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Human perception of forests has undergone a tremendous change in the past years."
     },
     {
       "Number": 42,
-      "Statement": "Recent history shows reduction of pollution, once seemingly impossible, can actually be accomplished.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Recent history shows reduction of pollution, once seemingly impossible, can actually be accomplished."
     },
     {
       "Number": 43,
-      "Statement": "People began to consider preserving natural resources when they feared they would have nothing to use in the future.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "People began to consider preserving natural resources when they feared they would have nothing to use in the future."
     },
     {
       "Number": 44,
-      "Statement": "If we doubt our ability to reverse ecological deterioration, we are throwing away the chance to take action.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "If we doubt our ability to reverse ecological deterioration, we are throwing away the chance to take action."
     },
     {
       "Number": 45,
-      "Statement": "How to respond effectively to climate change has become the focus of international diplomacy.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "How to respond effectively to climate change has become the focus of international diplomacy."
     }
   ]
 }

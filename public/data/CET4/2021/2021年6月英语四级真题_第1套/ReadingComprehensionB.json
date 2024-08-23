@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"What happens when a language has no words for numbers?",
+  "passageTitle": "What happens when a language has no words for numbers?",
   "passages": [
     "A) Numbers do not exist in all cultures. There are numberless hunter-gatherers in Amazonia, living along branches of the world’s largest river tree. Instead of using words for precise quantities, these people rely exclusively on terms similar to “a few” or “some.” In contrast, our own lives are governed by numbers. As you read this, you are likely aware of what time it is, how old you are, your checking account balance, your weight and so on. The exact numbers we think with impact everything in our lives.",
     "B) But, in a historical sense, number-conscious people like us are the unusual ones. For the bulk of our species’ approximately 200,000-year lifespan, we had no means of precisely representing quantities. What’s more, the 7,000 or so languages that exist today vary dramatically in how they utilize numbers.",
@@ -17,223 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "It is difficult for anumeric people to keep track of the change in numbers even when the total is very small.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is difficult for anumeric people to keep track of the change in numbers even when the total is very small."
     },
     {
       "Number": 37,
-      "Statement": "Human numerical instincts are not so superior to those of other mammals as is generally believed.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Human numerical instincts are not so superior to those of other mammals as is generally believed."
     },
     {
       "Number": 38,
-      "Statement": "The author emphasizes being anumeric does not affect one’s cognitive ability.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The author emphasizes being anumeric does not affect one’s cognitive ability."
     },
     {
       "Number": 39,
-      "Statement": "In the long history of mankind, humans who use numbers are a very small minority.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "In the long history of mankind, humans who use numbers are a very small minority."
     },
     {
       "Number": 40,
-      "Statement": "An in-depth study of differences between human languages contributes to a true understanding of cognitive differences between cultures.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "An in-depth study of differences between human languages contributes to a true understanding of cognitive differences between cultures."
     },
     {
       "Number": 41,
-      "Statement": "A conclusion has been drawn from many experiments that anumeric people have a hard time distinguishing quantities.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A conclusion has been drawn from many experiments that anumeric people have a hard time distinguishing quantities."
     },
     {
       "Number": 42,
-      "Statement": "The participants in the Venetian march used shopping carts to show they were 100% local residents.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The participants in the Venetian march used shopping carts to show they were 100% local residents."
     },
     {
       "Number": 43,
-      "Statement": "Every aspect of our lives is affected by numbers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Every aspect of our lives is affected by numbers."
     },
     {
       "Number": 44,
-      "Statement": "Larger numbers are said to be built upon smaller numbers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Larger numbers are said to be built upon smaller numbers."
     },
     {
       "Number": 45,
-      "Statement": "It takes great efforts for children to grasp the concept of number words.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It takes great efforts for children to grasp the concept of number words."
     }
   ]
 }

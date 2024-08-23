@@ -22,223 +22,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Astronomer David Hogg doesn't think scooping is as serious a problem as generally thought.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Astronomer David Hogg doesn't think scooping is as serious a problem as generally thought."
     },
     {
       "Number": 37,
-      "Statement": "Some researchers are hesitant to make their data public for fear that others might publish something similar before them.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some researchers are hesitant to make their data public for fear that others might publish something similar before them."
     },
     {
       "Number": 38,
-      "Statement": "Some psychology journals have offered incentives to encourage authors to share their data.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some psychology journals have offered incentives to encourage authors to share their data."
     },
     {
       "Number": 39,
-      "Statement": "There is a growing demand in the science community that research data be open to the public.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "There is a growing demand in the science community that research data be open to the public."
     },
     {
       "Number": 40,
-      "Statement": "Sharing data offers early-career researchers the chance to build a certain level of reputation.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Sharing data offers early-career researchers the chance to build a certain level of reputation."
     },
     {
       "Number": 41,
-      "Statement": "Data sharing enables scientists to publish each step of their research work, thus leading to more citations.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Data sharing enables scientists to publish each step of their research work, thus leading to more citations."
     },
     {
       "Number": 42,
-      "Statement": "Scientists hold different opinions about the extent and timing of data sharing.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Scientists hold different opinions about the extent and timing of data sharing."
     },
     {
       "Number": 43,
-      "Statement": "Potential problems related to data sharing should be made known to and discussed by all participants at the beginning of a joint research project.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Potential problems related to data sharing should be made known to and discussed by all participants at the beginning of a joint research project."
     },
     {
       "Number": 44,
-      "Statement": "Sharing data and handling data-related issues can be time-consuming.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Sharing data and handling data-related issues can be time-consuming."
     },
     {
       "Number": 45,
-      "Statement": "Junior researchers may have no say when it comes to sharing data.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Junior researchers may have no say when it comes to sharing data."
     }
   ]
 }

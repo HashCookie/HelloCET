@@ -18,53 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Many people today still find name hyphenation upon marriage unacceptable.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Many people today still find name hyphenation upon marriage unacceptable."
     },
     {
       "Number": 37,
-      "Statement": "As a compromise, a bride will in most cases adopt a name that combines the couple's last names.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "As a compromise, a bride will in most cases adopt a name that combines the couple's last names."
     },
     {
       "Number": 38,
-      "Statement": "The bride should consider adopting her groom's last name whether he feels strongly about it or not.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The bride should consider adopting her groom's last name whether he feels strongly about it or not."
     },
     {
       "Number": 39,
-      "Statement": "Making preparations for marriage causes a lot of stress.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Making preparations for marriage causes a lot of stress."
     },
     {
       "Number": 40,
-      "Statement": "Hyphenating the last names could be a win-win solution should arguments arise about what name to adopt upon marriage.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Hyphenating the last names could be a win-win solution should arguments arise about what name to adopt upon marriage."
     },
     {
       "Number": 41,
-      "Statement": "It used to be considered socially unacceptable for a bride to retain her maiden name.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "It used to be considered socially unacceptable for a bride to retain her maiden name."
     },
     {
       "Number": 42,
-      "Statement": "The bride who adopts a hyphenated last name after marriage can maintain connections with their past achievements.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "The bride who adopts a hyphenated last name after marriage can maintain connections with their past achievements."
     },
     {
       "Number": 43,
-      "Statement": "Hyphenating names allows the bride to preserve her own identity while respecting tradition.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Hyphenating names allows the bride to preserve her own identity while respecting tradition."
     },
     {
       "Number": 44,
-      "Statement": "No matter what name the bride adopts, it is most important that the newly weds truly love each other.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "No matter what name the bride adopts, it is most important that the newly weds truly love each other."
     },
     {
       "Number": 45,
-      "Statement": "Legally speaking, the bride is free to choose whatever name she prefers.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+      "Statement": "Legally speaking, the bride is free to choose whatever name she prefers."
     }
   ]
 }

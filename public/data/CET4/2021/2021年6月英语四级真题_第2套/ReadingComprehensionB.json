@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"The start of high school doesn’t have to be stressful",
+  "passageTitle": "The start of high school doesn’t have to be stressful",
   "passages": [
     "A) This month, more than 4 million students across the nation will begin high school. Many will do well. But many will not. Consider that nearly two-thirds of students will experience the “ninth-grade shock,” which refers to a dramatic drop in a student’s academic performance. Some students cope with this shock by avoiding challenges. For instance, they may drop difficult coursework. Others may experience a hopelessness that results in failing their core classes, such as English, science and math.",
     "B) This should matter a great deal to parents, teachers and policymakers. Ultimately it should matter to the students themselves and society at large, because students’ experience of transitioning（过渡） to the ninth grade can have long-term consequences not only for the students themselves but for their home communities. We make these observations as research psychologists who have studied how schools and families can help young people thrive.",
@@ -16,223 +16,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "The number of people experiencing depression shows a sharp increase in the first year of high school.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The number of people experiencing depression shows a sharp increase in the first year of high school."
     },
     {
       "Number": 37,
-      "Statement": "According to one study, students’ academic performance is not the only decisive factor of their stress responses.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to one study, students’ academic performance is not the only decisive factor of their stress responses."
     },
     {
       "Number": 38,
-      "Statement": "Researchers would like to explore further how parents and schools can help ninth graders by changing their mindset.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Researchers would like to explore further how parents and schools can help ninth graders by changing their mindset."
     },
     {
       "Number": 39,
-      "Statement": "According to one study, each high school graduate contributes at least 500,000 dollars to the local economy.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to one study, each high school graduate contributes at least 500,000 dollars to the local economy."
     },
     {
       "Number": 40,
-      "Statement": "In one study, students were told their social position in school is not unchangeable.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "In one study, students were told their social position in school is not unchangeable."
     },
     {
       "Number": 41,
-      "Statement": "It is reported that depression results in enormous economic losses worldwide.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is reported that depression results in enormous economic losses worldwide."
     },
     {
       "Number": 42,
-      "Statement": "One study showed that friendships among ninth graders were far from stable.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "One study showed that friendships among ninth graders were far from stable."
     },
     {
       "Number": 43,
-      "Statement": "More than half of students will find their academic performance declining sharply when they enter the ninth grade.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "More than half of students will find their academic performance declining sharply when they enter the ninth grade."
     },
     {
       "Number": 44,
-      "Statement": "Researchers found through experiments that students could be taught to respond to stress in a more positive way.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Researchers found through experiments that students could be taught to respond to stress in a more positive way."
     },
     {
       "Number": 45,
-      "Statement": "It is beneficial to explore ways to cope with the challenges facing students entering high school.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is beneficial to explore ways to cope with the challenges facing students entering high school."
     }
   ]
 }

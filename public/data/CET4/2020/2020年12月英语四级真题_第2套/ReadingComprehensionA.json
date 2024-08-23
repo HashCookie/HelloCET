@@ -1,228 +1,26 @@
 {
-    "title": "Section A",
-    "passages": [
-        "When my son completes a task, I can't help but praise him. It's only natural to give praise where praise is due, right? But is there such a thing as too much praise?",
-        "According to psychologist Katherine Phillip, children don't benefit from 26 praise as much as we'd like to think. “Parents often praise, believing they are building their child's self-confidence. However, over-praising can have a 27 effect,” says Phillip. “When we use the same praise 28 , it may become empty and no longer valued by the child. It can also become an expectation that anything they do must be 29 with praise. This may lead to the child avoiding taking risks due to fear of 30 their parents.”",
-        "Does this mean we should do away with all the praise? Phillip says no. “The key to healthy praise is to focus on the process rather than the 31 . It is the recognition of a child's attempt, or the process in which they achieved something, that is essential,” she says. “Parents should encourage their child to take the risks needed to learn and grow.”",
-        "So how do we break the 32 of praise we're all so accustomed to? Phillip says it's important to 33 between “person praise” and “process praise”. “Person praise is 34 saying how great someone is. It's a form of personal approval. Process praise is acknowledgement of the efforts the person has just 35 . Children who receive person praise are more likely to feel shame after losing,” says Phillip."
-    ],
-    "options": {
-        "A": "choose",
-        "B": "constant",
-        "C": "disappointing",
-        "D": "distinguish",
-        "E": "exhausting",
-        "F": "experienced",
-        "G": "negative",
-        "H": "outcome",
-        "I": "pattern",
-        "J": "plural",
-        "K": "repeatedly",
-        "L": "rewarded",
-        "M": "separately",
-        "N": "simply",
-        "O": "undertaken"
-    },
-    "questions": [
-        {
-            "number": 26,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 27,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 28,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 29,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 30,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 31,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 32,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 33,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 34,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 35,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section A",
+  "passages": [
+    "When my son completes a task, I can't help but praise him. It's only natural to give praise where praise is due, right? But is there such a thing as too much praise?",
+    "According to psychologist Katherine Phillip, children don't benefit from 26 praise as much as we'd like to think. “Parents often praise, believing they are building their child's self-confidence. However, over-praising can have a 27 effect,” says Phillip. “When we use the same praise 28 , it may become empty and no longer valued by the child. It can also become an expectation that anything they do must be 29 with praise. This may lead to the child avoiding taking risks due to fear of 30 their parents.”",
+    "Does this mean we should do away with all the praise? Phillip says no. “The key to healthy praise is to focus on the process rather than the 31 . It is the recognition of a child's attempt, or the process in which they achieved something, that is essential,” she says. “Parents should encourage their child to take the risks needed to learn and grow.”",
+    "So how do we break the 32 of praise we're all so accustomed to? Phillip says it's important to 33 between “person praise” and “process praise”. “Person praise is 34 saying how great someone is. It's a form of personal approval. Process praise is acknowledgement of the efforts the person has just 35 . Children who receive person praise are more likely to feel shame after losing,” says Phillip."
+  ],
+  "options": {
+    "A": "choose",
+    "B": "constant",
+    "C": "disappointing",
+    "D": "distinguish",
+    "E": "exhausting",
+    "F": "experienced",
+    "G": "negative",
+    "H": "outcome",
+    "I": "pattern",
+    "J": "plural",
+    "K": "repeatedly",
+    "L": "rewarded",
+    "M": "separately",
+    "N": "simply",
+    "O": "undertaken"
+  }
 }

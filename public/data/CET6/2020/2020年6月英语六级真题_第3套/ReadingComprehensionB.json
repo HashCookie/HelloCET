@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "An overwhelming majority of family physicians are willing to use telemedicine if they are duly paid.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "An overwhelming majority of family physicians are willing to use telemedicine if they are duly paid."
     },
     {
       "Number": 37,
-      "Statement": "Many employers are eager to provide telemedicine service as a benefit to their employees because of its convenience.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Many employers are eager to provide telemedicine service as a benefit to their employees because of its convenience."
     },
     {
       "Number": 38,
-      "Statement": "Different states have markedly different regulations for telemedicine.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Different states have markedly different regulations for telemedicine."
     },
     {
       "Number": 39,
-      "Statement": "With telemedicine, patients in regions short of professional medical service are able to receive better medical care.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "With telemedicine, patients in regions short of professional medical service are able to receive better medical care."
     },
     {
       "Number": 40,
-      "Statement": "Unlike employers and health plans, insurers have been rather reluctant to pay for some telemedicine services.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Unlike employers and health plans, insurers have been rather reluctant to pay for some telemedicine services."
     },
     {
       "Number": 41,
-      "Statement": "Some supporters of telemedicine hope states will accept each other’s medical practice licenses as valid.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Some supporters of telemedicine hope states will accept each other’s medical practice licenses as valid."
     },
     {
       "Number": 42,
-      "Statement": "The fastest growing area for telemedicine services is for lesser health problems.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The fastest growing area for telemedicine services is for lesser health problems."
     },
     {
       "Number": 43,
-      "Statement": "As telemedicine spreads quickly, some of its opponents doubt whether its service quality can be guaranteed.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "As telemedicine spreads quickly, some of its opponents doubt whether its service quality can be guaranteed."
     },
     {
       "Number": 44,
-      "Statement": "The results obtained by researchers who pretended to be patients seeking help from telemedicine providers are disturbing.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "The results obtained by researchers who pretended to be patients seeking help from telemedicine providers are disturbing."
     },
     {
       "Number": 45,
-      "Statement": "Some people argue that the fact that different states have different regulations concerning medical services hinders the development of telemedicine.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Some people argue that the fact that different states have different regulations concerning medical services hinders the development of telemedicine."
     }
   ]
 }

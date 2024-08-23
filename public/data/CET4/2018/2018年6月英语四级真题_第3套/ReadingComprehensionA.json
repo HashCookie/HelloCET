@@ -1,227 +1,25 @@
 {
-    "title": "Section A",
-    "passages": [
-        "An office tower on Miller Street in Manchester is completely covered in solar panels. They are used to create some of the energy used by the insurance company inside. When the tower was first 26 in 1962, it was covered with thin square stones. These small square stones became a problem for the building and continued to fall off the face for 40 years until a major renovation was 27 . During this renovation the building’s owners, CIS, 28 the solar panel company, Solarcentury. They agreed to cover the entire building in solar panels. In 2004, the completed CIS tower became Europe’s largest 29 of vertical solar panels. A vertical solar project on such a large 30 has never been repeated since.",
-        "Covering a skyscraper with solar panels had never been done before, and the CIS tower was chosen as one of the “10 best green energy projects”. For a long time after this renovation project, it was the tallest building in the United Kingdom, but it was 31 overtaken by the Millbank Tower.",
-        "Green buildings like this aren’t 32 cost-efficient for the investor, but it does produce much less pollution than that caused by energy 33 through fossil fuels. As solar panels get 34 , the world is likely to see more skyscrapers covered in solar panels, collecting energy much like trees do. Imagine a world where building the tallest skyscraper wasn’t a race of 35 , but rather one to collect the most solar energy."
-    ],
-    "options": {
-        "A": "cheaper",
-        "B": "cleaner",
-        "C": "collection",
-        "D": "competed",
-        "E": "constructed",
-        "F": "consulted",
-        "G": "dimension",
-        "H": "discovered",
-        "I": "eventually",
-        "J": "height",
-        "K": "necessarily",
-        "L": "production",
-        "M": "range",
-        "N": "scale",
-        "O": "undertaken"
-    },
-    "questions": [
-        {
-            "number": 26,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 27,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 28,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 29,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 30,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 31,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 32,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 33,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 34,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 35,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section A",
+  "passages": [
+    "An office tower on Miller Street in Manchester is completely covered in solar panels. They are used to create some of the energy used by the insurance company inside. When the tower was first 26 in 1962, it was covered with thin square stones. These small square stones became a problem for the building and continued to fall off the face for 40 years until a major renovation was 27 . During this renovation the building’s owners, CIS, 28 the solar panel company, Solarcentury. They agreed to cover the entire building in solar panels. In 2004, the completed CIS tower became Europe’s largest 29 of vertical solar panels. A vertical solar project on such a large 30 has never been repeated since.",
+    "Covering a skyscraper with solar panels had never been done before, and the CIS tower was chosen as one of the “10 best green energy projects”. For a long time after this renovation project, it was the tallest building in the United Kingdom, but it was 31 overtaken by the Millbank Tower.",
+    "Green buildings like this aren’t 32 cost-efficient for the investor, but it does produce much less pollution than that caused by energy 33 through fossil fuels. As solar panels get 34 , the world is likely to see more skyscrapers covered in solar panels, collecting energy much like trees do. Imagine a world where building the tallest skyscraper wasn’t a race of 35 , but rather one to collect the most solar energy."
+  ],
+  "options": {
+    "A": "cheaper",
+    "B": "cleaner",
+    "C": "collection",
+    "D": "competed",
+    "E": "constructed",
+    "F": "consulted",
+    "G": "dimension",
+    "H": "discovered",
+    "I": "eventually",
+    "J": "height",
+    "K": "necessarily",
+    "L": "production",
+    "M": "range",
+    "N": "scale",
+    "O": "undertaken"
+  }
 }

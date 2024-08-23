@@ -22,223 +22,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "It is a popular belief that tech companies are committed to protecting their customers' private data.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is a popular belief that tech companies are committed to protecting their customers' private data."
     },
     {
       "Number": 37,
-      "Statement": "The US government believes that its access to people's iPhones could be used to prevent terrorist attacks.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The US government believes that its access to people's iPhones could be used to prevent terrorist attacks."
     },
     {
       "Number": 38,
-      "Statement": "A federal court asked Apple to help the FBI access data in a terrorist's iPhone.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "A federal court asked Apple to help the FBI access data in a terrorist's iPhone."
     },
     {
       "Number": 39,
-      "Statement": "Privacy advocates now have Apple fighting alongside them against government access to personal data.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Privacy advocates now have Apple fighting alongside them against government access to personal data."
     },
     {
       "Number": 40,
-      "Statement": "Snowden revealed that the American government had tried hard to access private data on a massive scale.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Snowden revealed that the American government had tried hard to access private data on a massive scale."
     },
     {
       "Number": 41,
-      "Statement": "The FBI might have been able to access private data in earlier iPhones without Apple's help.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The FBI might have been able to access private data in earlier iPhones without Apple's help."
     },
     {
       "Number": 42,
-      "Statement": "After the Snowden incident, Apple made clear its position to counter government intrusion into personal data by means of encryption.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "After the Snowden incident, Apple made clear its position to counter government intrusion into personal data by means of encryption."
     },
     {
       "Number": 43,
-      "Statement": "According to one digital expert, no iPhone can be entirely free from hacking.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "According to one digital expert, no iPhone can be entirely free from hacking."
     },
     {
       "Number": 44,
-      "Statement": "Timothy Cook's long web post has helped enhance Apple's image.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Timothy Cook's long web post has helped enhance Apple's image."
     },
     {
       "Number": 45,
-      "Statement": "Apple's CEO has decided to appeal the federal court's order to unlock a user's iPhone.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Apple's CEO has decided to appeal the federal court's order to unlock a user's iPhone."
     }
   ]
 }

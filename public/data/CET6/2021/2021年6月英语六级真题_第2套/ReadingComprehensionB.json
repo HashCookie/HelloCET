@@ -17,53 +17,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "The total amount of damage to Notre Dame Cathedral can be assessed only when its structure is considered safe.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "The total amount of damage to Notre Dame Cathedral can be assessed only when its structure is considered safe."
     },
     {
       "Number": 37,
-      "Statement": "Once again people began to argue whether Notre Dame Cathedral was going to collapse even without the fire.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Once again people began to argue whether Notre Dame Cathedral was going to collapse even without the fire."
     },
     {
       "Number": 38,
-      "Statement": "The Notre Dame Cathedral catastrophe was said to have helped unite the French nation.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "The Notre Dame Cathedral catastrophe was said to have helped unite the French nation."
     },
     {
       "Number": 39,
-      "Statement": "The roof of Notre Dame Cathedral was built with large numbers of densely laid-out wood beams.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "The roof of Notre Dame Cathedral was built with large numbers of densely laid-out wood beams."
     },
     {
       "Number": 40,
-      "Statement": "Renovation workers of Notre Dame Cathedral were questioned to find out the cause of the accident.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Renovation workers of Notre Dame Cathedral were questioned to find out the cause of the accident."
     },
     {
       "Number": 41,
-      "Statement": "Had the bell towers’ wooden frames burned down, the heavy bells would have crashed down.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Had the bell towers’ wooden frames burned down, the heavy bells would have crashed down."
     },
     {
       "Number": 42,
-      "Statement": "The timely action of the firefighters prevented the fire from reaching the Cathedral’s bell towers.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "The timely action of the firefighters prevented the fire from reaching the Cathedral’s bell towers."
     },
     {
       "Number": 43,
-      "Statement": "Apart from the fire, the water used to extinguish it also caused a lot of damage to Notre Dame Cathedral.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "Apart from the fire, the water used to extinguish it also caused a lot of damage to Notre Dame Cathedral."
     },
     {
       "Number": 44,
-      "Statement": "There has been argument over the years as to who should pay for the restoration of Notre Dame Cathedral.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "There has been argument over the years as to who should pay for the restoration of Notre Dame Cathedral."
     },
     {
       "Number": 45,
-      "Statement": "News of the Notre Dame Cathedral catastrophe instantly caught media attention throughout the world.",
-      "Options": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
+      "Statement": "News of the Notre Dame Cathedral catastrophe instantly caught media attention throughout the world."
     }
   ]
 }

@@ -21,213 +21,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Some companies believe that products’ prolonged lifespan benefits both the environment and customers.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Some companies believe that products’ prolonged lifespan benefits both the environment and customers."
     },
     {
       "Number": 37,
-      "Statement": "A survey shows shoppers today are getting more concerned about energy conservation and environmental protection when deciding what to buy.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "A survey shows shoppers today are getting more concerned about energy conservation and environmental protection when deciding what to buy."
     },
     {
       "Number": 38,
-      "Statement": "Companies can build customer loyalty by creating a positive culture of environmental awareness.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Companies can build customer loyalty by creating a positive culture of environmental awareness."
     },
     {
       "Number": 39,
-      "Statement": "When companies launch environmental programs, they will have their brand reputation enhanced.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "When companies launch environmental programs, they will have their brand reputation enhanced."
     },
     {
       "Number": 40,
-      "Statement": "One multinational company offers discounts to customers who bring in old footwear to be used as fuel.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "One multinational company offers discounts to customers who bring in old footwear to be used as fuel."
     },
     {
       "Number": 41,
-      "Statement": "Recycling used products can help manufacturers reduce production costs.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Recycling used products can help manufacturers reduce production costs."
     },
     {
       "Number": 42,
-      "Statement": "Electronic products contain valuable metals that could be recovered.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Electronic products contain valuable metals that could be recovered."
     },
     {
       "Number": 43,
-      "Statement": "It seems commonly believed that companies are not motivated to prolong their products’ lifespan.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "It seems commonly believed that companies are not motivated to prolong their products’ lifespan."
     },
     {
       "Number": 44,
-      "Statement": "It is advisable for companies to partner with each other in product recycling.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "It is advisable for companies to partner with each other in product recycling."
     },
     {
       "Number": 45,
-      "Statement": "Some businesses have begun to realize it may not be effective to let consumers take full responsibility for recycling.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O"
-      ]
+      "Statement": "Some businesses have begun to realize it may not be effective to let consumers take full responsibility for recycling."
     }
   ]
 }

@@ -1,227 +1,25 @@
 {
-    "title": "Section A",
-    "passages": [
-        "Ships are often sunk in order to create underwater reefs (暗礁) perfect for scuba diving (水肺式潜泳) and preserving marine 26 . Turkish authorities have just sunk something a little different than a ship, and it wouldn’t normally ever touch water, an Airbus A300. The hollowed-out A300 was 27 of everything potentially harmful to the environment and sunk off the Aegean coast today. Not only will the sunken plane 28 the perfect skeleton for artificial reef growth, but authorities hope this new underwater attraction will bring tourists to the area.",
-        "The plane 29 a total length of 54 meters, where experienced scuba divers will 30 be able to venture through the cabin and around the plane’s 31 . Aydin Municipality bought the plane from a private company for just under US$100,000, but they hope to see a return on that 32 through the tourism industry. Tourism throughout Turkey is expected to fall this year as the country has been the 33 of several deadly terrorist attacks. As far as sunken planes go, this Airbus A300 is the largest 34 sunk aircraft ever.",
-        "Taking a trip underwater and 35 the inside of a sunken A300 would be quite an adventure, and that is exactly what Turkish authorities are hoping this attraction will make people think. Drawing in adventure seekers and experienced divers, this new artificial Airbus reef will be a scuba diver’s paradise (天堂)."
-    ],
-    "options": {
-        "A": "create.",
-        "B": "depressed.",
-        "C": "eventually.",
-        "D": "experiences.",
-        "E": "exploring.",
-        "F": "exterior.",
-        "G": "habitats.",
-        "H": "innovate.",
-        "I": "intentionally.",
-        "J": "investment.",
-        "K": "revealing.",
-        "L": "stretches.",
-        "M": "stripped.",
-        "N": "territory.",
-        "O": "victim"
-    },
-    "questions": [
-        {
-            "number": 26,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 27,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 28,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 29,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 30,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 31,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 32,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 33,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 34,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "number": 35,
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section A",
+  "passages": [
+    "Ships are often sunk in order to create underwater reefs (暗礁) perfect for scuba diving (水肺式潜泳) and preserving marine 26 . Turkish authorities have just sunk something a little different than a ship, and it wouldn’t normally ever touch water, an Airbus A300. The hollowed-out A300 was 27 of everything potentially harmful to the environment and sunk off the Aegean coast today. Not only will the sunken plane 28 the perfect skeleton for artificial reef growth, but authorities hope this new underwater attraction will bring tourists to the area.",
+    "The plane 29 a total length of 54 meters, where experienced scuba divers will 30 be able to venture through the cabin and around the plane’s 31 . Aydin Municipality bought the plane from a private company for just under US$100,000, but they hope to see a return on that 32 through the tourism industry. Tourism throughout Turkey is expected to fall this year as the country has been the 33 of several deadly terrorist attacks. As far as sunken planes go, this Airbus A300 is the largest 34 sunk aircraft ever.",
+    "Taking a trip underwater and 35 the inside of a sunken A300 would be quite an adventure, and that is exactly what Turkish authorities are hoping this attraction will make people think. Drawing in adventure seekers and experienced divers, this new artificial Airbus reef will be a scuba diver’s paradise (天堂)."
+  ],
+  "options": {
+    "A": "create.",
+    "B": "depressed.",
+    "C": "eventually.",
+    "D": "experiences.",
+    "E": "exploring.",
+    "F": "exterior.",
+    "G": "habitats.",
+    "H": "innovate.",
+    "I": "intentionally.",
+    "J": "investment.",
+    "K": "revealing.",
+    "L": "stretches.",
+    "M": "stripped.",
+    "N": "territory.",
+    "O": "victim"
+  }
 }

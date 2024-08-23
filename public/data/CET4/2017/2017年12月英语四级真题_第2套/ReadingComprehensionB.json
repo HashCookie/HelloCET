@@ -1,233 +1,63 @@
 {
-    "title": "Section B",
-    "passageTitle":"Why aren’t you curious about what happened?",
-    "passages": [
-        "A) “You suspended Ray Rice after our video,”a reporter from TMZ challenged National Football League Commissioner Roger Goodell the other day. “Why didn’t you have the curiosity to go to the casino (赌场) yourself?”The implication of the question is that a more curious commissioner would have found a way to get the tape.",
-        "B) The accusation of incuriosity is one that we hear often, carrying the suggestion that there is something wrong with not wanting to search out the truth. “I have been bothered for a long time about the curious lack of curiosity,”said a Democratic member of the New Jersey legislature back in July, referring to an insufficiently inquiring attitude on the part of an assistant to New Jersey Governor Chris Christie who chose not to ask hard questions about the George Washington Bridge traffic scandal. “Isn’t the mainstream media the least bit curious about what happened?”wrote conservative writer Jennifer Rubin earlier this year, referring to the attack on Americans in Benghazi, Libya.",
-        "C) The implication, in each case, is that curiosity is a good thing, and a lack of curiosity is a problem. Are such accusations simply efforts to score political points for one’s party? Or is there something of particular value about curiosity in and of itself?",
-        "D) The journalist Ian Leslie, in his new and enjoyable book Curious: The Desire to Know and Why Your Future Depends on It, insists that the answer to that last question is ‘Yes’. Leslie argues that curiosity is a much-overlooked human virtue, crucial to our success, and that we are losing it.",
-        "E) We are suffering, he writes, from a “serendipity deficit.”The word “serendipity”was coined by Horace Walpole in an 1854 letter, from a tale of three princes who “were always making discoveries, by accident, of things they were not in search of.”Leslie worries that the rise of the Internet, among other social and technological changes, has reduced our appetite for aimless adventures. No longer have we the inclination to let ourselves wander through fields of knowledge, ready to be surprised. Instead, we seek only the information we want.",
-        "F) Why is this a problem? Because without curiosity we will lose the spirit of innovation and entrepreneurship. We will see unimaginative governments and dying corporations make disastrous decisions. We will lose a vital part of what has made humanity as a whole so successful as a species.",
-        "G) Leslie presents considerable evidence for the proposition that the society as a whole is growing less curious. In the U.S. and Europe, for example, the rise of the Internet has led to a declining consumption of news from outside the reader’s borders. But not everything is to be blamed on technology. The decline in interest in literary fiction is also one of the causes identified by Leslie. Reading literary fiction, he says, makes us more curious.",
-        "H) Moreover, in order to be curious, “you have to be aware of a gap in your knowledge in the first place.”Although Leslie perhaps paints a bit broadly in contending that most of us are unaware of how much we don’t know, he’s surely right to point out that the problem is growing: “Google can give us the powerful illusion that all questions have definite answers.”",
-        "I) Indeed, Google, for which Leslie expresses admiration, is also his frequent whipping boy (替罪羊) . He quotes Google co-founder Larry Page to the effect that the “perfect search engine”will “understand exactly what I mean and give me back exactly what I want.”Elsewhere in the book, Leslie writes: “Google aims to save you from the thirst of curiosity altogether.”",
-        "J) Somewhat nostalgically (怀旧地) , he quotes John Maynard Keynes’s justly famous words of praise to the bookstore: “One should enter it vaguely, almost in a dream, and allow what is there freely to attract and influence the eye. To walk the rounds of the bookshops, dipping in as curiosity dictates, should be an afternoon’s entertainment.”If only!",
-        "K) Citing the work of psychologists and cognitive (认知的) scientists, Leslie criticizes the received wisdom that academic success is the result of a combination of intellectual talent and hard work. Curiosity, he argues, is the third key factor—and a difficult one to preserve. If not cultivated, it will not survive: “Childhood curiosity is a collaboration between child and adult. The surest way to kill it is to leave it alone.”",
-        "L) School education, he warns, is often conducted in a way that makes children incurious. Children of educated and upper-middle-class parents turn out to be far more curious, even at early ages, than children of working class and lower class families. That lack of curiosity produces a relative lack of knowledge, and the lack of knowledge is difficult if not impossible to compensate for later on.",
-        "M) Although Leslie’s book isn’t about politics, he doesn’t entirely shy away from the problem. Political leaders, like leaders of other organizations, should be curious. They should ask questions at crucial moments. There are serious consequences, he warns, in not wanting to know.",
-        "N) He presents as an example the failure of the George W. Bush administration to prepare properly for the after-effects of the invasion of Iraq. According to Leslie, those who ridiculed former Defense Secretary Donald Rumsfeld for his 2002 remark that we have to be wary of the “unknown unknowns”were mistaken. Rumsfeld’s idea, Leslie writes, “wasn’t absurd—it was smart.”He adds, “The tragedy is that he didn’t follow his own advice.”",
-        "O) All of which brings us back to Goodell and the Christie case and Benghazi. Each critic in those examples is charging, in a different way, that someone in authority is intentionally being incurious. I leave it to the reader’s political preference to decide which, if any, charges should stick. But let’s be careful about demanding curiosity about the other side’s weaknesses and remaining determinedly incurious about our own. We should be delighted to pursue knowledge for its own sake—even when what we find out is something we didn’t particularly want to know."
-    ],
-    "questions": [
-        {
-            "Number": 36,
-            "Statement": "To be curious, we need to realize first of all that there are many things we don’t know.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 37,
-            "Statement": "According to Leslie, curiosity is essential to one’s success.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 38,
-            "Statement": "We should feel happy when we pursue knowledge for knowledge’s sake.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 39,
-            "Statement": "Political leaders’ lack of curiosity will result in bad consequences.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 40,
-            "Statement": "There are often accusations about politicians’ and the media’s lack of curiosity to find out the truth.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 41,
-            "Statement": "The less curious a child is, the less knowledge the child may turn out to have.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 42,
-            "Statement": "It is widely accepted that academic accomplishment lies in both intelligence and diligence.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 43,
-            "Statement": "Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 44,
-            "Statement": "Both the rise of the Internet and reduced appetite for literary fiction contribute to people’s declining curiosity.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        },
-        {
-            "Number": 45,
-            "Statement": "Mankind wouldn’t be so innovative without curiosity.",
-            "Options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H",
-                "I",
-                "J",
-                "K",
-                "L",
-                "M",
-                "N",
-                "O"
-            ]
-        }
-    ]
+  "title": "Section B",
+  "passageTitle": "Why aren’t you curious about what happened?",
+  "passages": [
+    "A) “You suspended Ray Rice after our video,”a reporter from TMZ challenged National Football League Commissioner Roger Goodell the other day. “Why didn’t you have the curiosity to go to the casino (赌场) yourself?”The implication of the question is that a more curious commissioner would have found a way to get the tape.",
+    "B) The accusation of incuriosity is one that we hear often, carrying the suggestion that there is something wrong with not wanting to search out the truth. “I have been bothered for a long time about the curious lack of curiosity,”said a Democratic member of the New Jersey legislature back in July, referring to an insufficiently inquiring attitude on the part of an assistant to New Jersey Governor Chris Christie who chose not to ask hard questions about the George Washington Bridge traffic scandal. “Isn’t the mainstream media the least bit curious about what happened?”wrote conservative writer Jennifer Rubin earlier this year, referring to the attack on Americans in Benghazi, Libya.",
+    "C) The implication, in each case, is that curiosity is a good thing, and a lack of curiosity is a problem. Are such accusations simply efforts to score political points for one’s party? Or is there something of particular value about curiosity in and of itself?",
+    "D) The journalist Ian Leslie, in his new and enjoyable book Curious: The Desire to Know and Why Your Future Depends on It, insists that the answer to that last question is ‘Yes’. Leslie argues that curiosity is a much-overlooked human virtue, crucial to our success, and that we are losing it.",
+    "E) We are suffering, he writes, from a “serendipity deficit.”The word “serendipity”was coined by Horace Walpole in an 1854 letter, from a tale of three princes who “were always making discoveries, by accident, of things they were not in search of.”Leslie worries that the rise of the Internet, among other social and technological changes, has reduced our appetite for aimless adventures. No longer have we the inclination to let ourselves wander through fields of knowledge, ready to be surprised. Instead, we seek only the information we want.",
+    "F) Why is this a problem? Because without curiosity we will lose the spirit of innovation and entrepreneurship. We will see unimaginative governments and dying corporations make disastrous decisions. We will lose a vital part of what has made humanity as a whole so successful as a species.",
+    "G) Leslie presents considerable evidence for the proposition that the society as a whole is growing less curious. In the U.S. and Europe, for example, the rise of the Internet has led to a declining consumption of news from outside the reader’s borders. But not everything is to be blamed on technology. The decline in interest in literary fiction is also one of the causes identified by Leslie. Reading literary fiction, he says, makes us more curious.",
+    "H) Moreover, in order to be curious, “you have to be aware of a gap in your knowledge in the first place.”Although Leslie perhaps paints a bit broadly in contending that most of us are unaware of how much we don’t know, he’s surely right to point out that the problem is growing: “Google can give us the powerful illusion that all questions have definite answers.”",
+    "I) Indeed, Google, for which Leslie expresses admiration, is also his frequent whipping boy (替罪羊) . He quotes Google co-founder Larry Page to the effect that the “perfect search engine”will “understand exactly what I mean and give me back exactly what I want.”Elsewhere in the book, Leslie writes: “Google aims to save you from the thirst of curiosity altogether.”",
+    "J) Somewhat nostalgically (怀旧地) , he quotes John Maynard Keynes’s justly famous words of praise to the bookstore: “One should enter it vaguely, almost in a dream, and allow what is there freely to attract and influence the eye. To walk the rounds of the bookshops, dipping in as curiosity dictates, should be an afternoon’s entertainment.”If only!",
+    "K) Citing the work of psychologists and cognitive (认知的) scientists, Leslie criticizes the received wisdom that academic success is the result of a combination of intellectual talent and hard work. Curiosity, he argues, is the third key factor—and a difficult one to preserve. If not cultivated, it will not survive: “Childhood curiosity is a collaboration between child and adult. The surest way to kill it is to leave it alone.”",
+    "L) School education, he warns, is often conducted in a way that makes children incurious. Children of educated and upper-middle-class parents turn out to be far more curious, even at early ages, than children of working class and lower class families. That lack of curiosity produces a relative lack of knowledge, and the lack of knowledge is difficult if not impossible to compensate for later on.",
+    "M) Although Leslie’s book isn’t about politics, he doesn’t entirely shy away from the problem. Political leaders, like leaders of other organizations, should be curious. They should ask questions at crucial moments. There are serious consequences, he warns, in not wanting to know.",
+    "N) He presents as an example the failure of the George W. Bush administration to prepare properly for the after-effects of the invasion of Iraq. According to Leslie, those who ridiculed former Defense Secretary Donald Rumsfeld for his 2002 remark that we have to be wary of the “unknown unknowns”were mistaken. Rumsfeld’s idea, Leslie writes, “wasn’t absurd—it was smart.”He adds, “The tragedy is that he didn’t follow his own advice.”",
+    "O) All of which brings us back to Goodell and the Christie case and Benghazi. Each critic in those examples is charging, in a different way, that someone in authority is intentionally being incurious. I leave it to the reader’s political preference to decide which, if any, charges should stick. But let’s be careful about demanding curiosity about the other side’s weaknesses and remaining determinedly incurious about our own. We should be delighted to pursue knowledge for its own sake—even when what we find out is something we didn’t particularly want to know."
+  ],
+  "questions": [
+    {
+      "Number": 36,
+      "Statement": "To be curious, we need to realize first of all that there are many things we don’t know."
+    },
+    {
+      "Number": 37,
+      "Statement": "According to Leslie, curiosity is essential to one’s success."
+    },
+    {
+      "Number": 38,
+      "Statement": "We should feel happy when we pursue knowledge for knowledge’s sake."
+    },
+    {
+      "Number": 39,
+      "Statement": "Political leaders’ lack of curiosity will result in bad consequences."
+    },
+    {
+      "Number": 40,
+      "Statement": "There are often accusations about politicians’ and the media’s lack of curiosity to find out the truth."
+    },
+    {
+      "Number": 41,
+      "Statement": "The less curious a child is, the less knowledge the child may turn out to have."
+    },
+    {
+      "Number": 42,
+      "Statement": "It is widely accepted that academic accomplishment lies in both intelligence and diligence."
+    },
+    {
+      "Number": 43,
+      "Statement": "Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves."
+    },
+    {
+      "Number": 44,
+      "Statement": "Both the rise of the Internet and reduced appetite for literary fiction contribute to people’s declining curiosity."
+    },
+    {
+      "Number": 45,
+      "Statement": "Mankind wouldn’t be so innovative without curiosity."
+    }
+  ]
 }

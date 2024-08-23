@@ -1,6 +1,6 @@
 {
   "title": "Section B",
-  "passageTitle":"There's a stress gap between men and women",
+  "passageTitle": "There's a stress gap between men and women",
   "passages": [
     "A) “I used to work very hard. I love to create things, grow them and solve problems,” said Meng Li, a successful app developer in San Francisco. “I didn't really care about my mind and my body until they decided to go on strike.”",
     "B) Ms. Li said her stress led to sleeplessness. When she did sleep, she experienced “problem-solving dreams,” which left her feeling unrested when she woke up. “After I became a first-time mother, I quickly realized I was so busy caring for other people and work that I felt like I'd lost myself,” she said.",
@@ -18,223 +18,43 @@
   "questions": [
     {
       "Number": 36,
-      "Statement": "Some career women who aim high tend to feel guilty if they fail to achieve their goals.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some career women who aim high tend to feel guilty if they fail to achieve their goals."
     },
     {
       "Number": 37,
-      "Statement": "The unpaid housework done by women is triple that done by men.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The unpaid housework done by women is triple that done by men."
     },
     {
       "Number": 38,
-      "Statement": "It is reported that women consistently suffer more from severe stress than men.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "It is reported that women consistently suffer more from severe stress than men."
     },
     {
       "Number": 39,
-      "Statement": "Women are advised to identify the specific causes of their stress so that steps can be taken to deal with it.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Women are advised to identify the specific causes of their stress so that steps can be taken to deal with it."
     },
     {
       "Number": 40,
-      "Statement": "One study showed that women managers often expressed positive emotions that they didn't really feel.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "One study showed that women managers often expressed positive emotions that they didn't really feel."
     },
     {
       "Number": 41,
-      "Statement": "Women tend to mistake signs of heart attacks for symptoms of stress.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Women tend to mistake signs of heart attacks for symptoms of stress."
     },
     {
       "Number": 42,
-      "Statement": "For a time an app developer in America was so busy attending to work and family that she suffered from sleeplessness.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "For a time an app developer in America was so busy attending to work and family that she suffered from sleeplessness."
     },
     {
       "Number": 43,
-      "Statement": "The emotional labor women do is noticed only when it is not done.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "The emotional labor women do is noticed only when it is not done."
     },
     {
       "Number": 44,
-      "Statement": "Dr. Joyce suggests that apart from self-care, women should seek professional support if they experience severe stress.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Dr. Joyce suggests that apart from self-care, women should seek professional support if they experience severe stress."
     },
     {
       "Number": 45,
-      "Statement": "Some people believe that there may not exist a stress gap between men and women.",
-      "Options": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P"
-      ]
+      "Statement": "Some people believe that there may not exist a stress gap between men and women."
     }
   ]
 }
