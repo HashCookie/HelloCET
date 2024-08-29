@@ -65,19 +65,23 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
         ref={audioRef}
         src={src}
         onLoadedData={handleOnLoadedData}
-        onError={() => setError("音频加载失败")}
-        onPlay={() => setLoading(false)} // 当音频实际开始播放时停止加载
-        onPause={() => setIsPlaying(false)} // 当音频暂停时更新状态
+        onError={() => {
+          if (loading) setError("音频加载失败");
+        }}
+        onPlay={() => setLoading(false)}
+        onPause={() => setIsPlaying(false)}
       />
       {loading && <p>正在加载...</p>}
-      {isPlaying && <p>正在播放...</p>}
-      {error && <p className="text-red-500">{error}</p>}
-      <button
-        onClick={handlePlayPause}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        {isPlaying ? "Pause" : "Play"}
-      </button>
+      <div className="flex items-center">
+        {isPlaying && <p>正在播放...</p>}
+        <button
+          onClick={handlePlayPause}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          {isPlaying ? "Pause" : "Play"}
+        </button>
+        {error && <p className="text-red-500 ml-2">{error}</p>}{" "}
+      </div>
     </div>
   );
 };

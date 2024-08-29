@@ -30,10 +30,9 @@ const SectionB: React.FC<SectionBProps> = ({
 }) => {
   const audioPathBase = `${process.env.PUBLIC_URL}/listeninglibrary/${year}年${month}月英语四级真题_第${paperNumber}套/`;
 
-  // 题目范围到音频文件名的映射
   const audioFiles = {
-    "7-10": "0811.mp3", // 第一段长对话对应第8题到第11题
-    "11-14": "1215.mp3", // 第二段长对话对应第12题到第15题
+    "7-10": "0811.mp3",
+    "11-14": "1215.mp3",
   };
 
   return (
@@ -54,16 +53,18 @@ const SectionB: React.FC<SectionBProps> = ({
 
         return (
           <React.Fragment key={index}>
-            <AudioPlayer
-              src={audioPathBase + audioFile}
-              playingAudio={playingAudio}
-              onAudioPlay={onAudioPlay}
-              audioId={`section-a-${audioFile}`} // audioId 是唯一的标识符
-            />
-            <b>
-              Questions {start + 1} to {end + 1} are based on the conversation
-              you have just heard.
-            </b>
+            <div className="flex items-center">
+              <b>
+                Questions {start + 1} to {end + 1} are based on the conversation
+                you have just heard.
+              </b>
+              <AudioPlayer
+                src={audioPathBase + audioFile}
+                playingAudio={playingAudio}
+                onAudioPlay={onAudioPlay}
+                audioId={`section-a-${audioFile}`}
+              />
+            </div>
             <QuestionList
               questions={questionSubset}
               selectedAnswer={selectedAnswer}

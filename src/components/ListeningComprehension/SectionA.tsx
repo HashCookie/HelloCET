@@ -30,12 +30,10 @@ const SectionA: React.FC<SectionAProps> = ({
 }) => {
   const audioPathBase = `${process.env.PUBLIC_URL}/listeninglibrary/${year}年${month}月英语四级真题_第${paperNumber}套/`;
 
-  // 题目范围到音频文件名的映射
   const questionRanges = {
     "0-1": "0102.mp3",
     "2-3": "0304.mp3",
     "4-6": "0507.mp3",
-    // 根据需要添加更多映射
   };
 
   return (
@@ -56,16 +54,18 @@ const SectionA: React.FC<SectionAProps> = ({
 
         return (
           <React.Fragment key={range}>
-            <AudioPlayer
-              src={audioPathBase + audioFile}
-              playingAudio={playingAudio}
-              onAudioPlay={onAudioPlay}
-              audioId={`section-a-${audioFile}`} // audioId 应该是唯一的标识符
-            />
-            <b>
-              Questions {start + 1} and {end + 1} are based on the news report
-              you have just heard.
-            </b>
+            <div className="flex items-center">
+              <b>
+                Questions {start + 1} and {end + 1} are based on the news report
+                you have just heard.
+              </b>
+              <AudioPlayer
+                src={audioPathBase + audioFile}
+                playingAudio={playingAudio}
+                onAudioPlay={onAudioPlay}
+                audioId={`section-a-${audioFile}`}
+              />
+            </div>
             <QuestionList
               questions={questionSubset}
               selectedAnswer={selectedAnswer}
