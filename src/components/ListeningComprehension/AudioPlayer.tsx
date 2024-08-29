@@ -71,14 +71,15 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
         onPlay={() => setLoading(false)}
         onPause={() => setIsPlaying(false)}
       />
-      {loading && <p className="ml-2">正在加载...</p>}
-      {isPlaying && <p className="ml-2">正在播放...</p>}
       <button
         onClick={handlePlayPause}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
+        style={{ minWidth: '80px' }}
       >
         {isPlaying ? "Pause" : "Play"}
       </button>
+      {loading && <p className="ml-2">正在加载...</p>}
+      {isPlaying && <p className="ml-2">正在播放...</p>}
       {error && <p className="text-red-500 ml-2">{error}</p>}
     </div>
   );
