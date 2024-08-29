@@ -42,17 +42,19 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
             setIsPlaying(true); // 开始播放时设置为 true
             onAudioPlay(audioId); // 通知父组件
           })
-          .catch(() => {
-            setError("音频加载失败");
-            setLoading(false);
-          });
+          .catch(() => handleError("音频加载失败"));
       } else {
         audio.pause();
         setIsPlaying(false); // 暂停时设置为 false
         onAudioPlay(null); // 通知父组件
-        setLoading(false);
       }
+      setLoading(false);
     }
+  };
+
+  const handleError = (message: string) => {
+    setError(message);
+    setLoading(false);
   };
 
   const handleOnLoadedData = () => {
@@ -60,28 +62,24 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex items-center">
       <audio
         ref={audioRef}
         src={src}
         onLoadedData={handleOnLoadedData}
-        onError={() => {
-          if (loading) setError("音频加载失败");
-        }}
+        onError={() => handleError("音频加载失败")}
         onPlay={() => setLoading(false)}
         onPause={() => setIsPlaying(false)}
       />
-      {loading && <p>正在加载...</p>}
-      <div className="flex items-center">
-        {isPlaying && <p>正在播放...</p>}
-        <button
-          onClick={handlePlayPause}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          {isPlaying ? "Pause" : "Play"}
-        </button>
-        {error && <p className="text-red-500 ml-2">{error}</p>}{" "}
-      </div>
+      {loading && <p className="ml-2">正在加载...</p>}
+      {isPlaying && <p className="ml-2">正在播放...</p>}
+      <button
+        onClick={handlePlayPause}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
+      >
+        {isPlaying ? "Pause" : "Play"}
+      </button>
+      {error && <p className="text-red-500 ml-2">{error}</p>}
     </div>
   );
 };
