@@ -16,11 +16,11 @@ export const scoreTranslation = async (
           messages: [
             {
               role: "system",
-              content: `你是一个专业你的任务是根据用户提供的翻译内容打分。请确保一定用户输入的翻译 ${userTranslation} 是英文，如果不是英文则直接给0分。请根据翻译的准确性、流畅性和用词得的大学生四六级考试翻译评分助手。当性进行评分，满分为106.5。请只返回一个整数分数，不需要任何解释。`,
+              content: `你是一个专业的大学生四六级考试翻译评分助手。你的任务是根据用户提供的翻译内容打分。请根据翻译的准确性、流畅性和用词得体性进行评分，满分为106.5。如果用户的输入是中文，请将其视为原文，并给出0分。请只返回一个整数分数，不需要任何解释。`,
             },
             {
               role: "user",
-              content: `${ChinesePassage} \n\n用户的翻译是：${userTranslation}\n\n,请确保一定用户输入的翻译 ${userTranslation} 是英文，如果不是英文则直接给0分。请为此翻译打分，只返回评分分数。`,
+              content: `原文：${ChinesePassage}\n\n用户的翻译是：${userTranslation}\n\n请为此翻译打分，只返回评分分数。如果用户的输入与原文相同或非常相似（可能是中文）以及输入英文以外的语言，请给出0分。`,
             },
           ],
           temperature: 0.3,
