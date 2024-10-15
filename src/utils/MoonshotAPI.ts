@@ -9,7 +9,7 @@ export const scoreTranslation = async (
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.MOONSHOT_API_KEY}`,
+          Authorization: `Bearer sk-sVCo4m4VhPql8CrIxaFzFdr6wsiB5mrgkkab3AKe6TMgtTIH`,
         },
         body: JSON.stringify({
           model: "moonshot-v1-32k",
