@@ -19,21 +19,19 @@ const Header = () => {
     <header className="py-2 px-4 sm:px-10 bg-white h-16">
       <div className="flex flex-wrap items-center gap-x-2 max-lg:gap-y-6">
         <img src="/favicon.ico" alt="logo" className="w-12 z-10" />
-        <button
-          id="toggle"
-          className="lg:hidden ml-auto z-10"
-          onClick={toggleMenu}
-        >
+        <button className="lg:hidden ml-auto z-10" onClick={toggleMenu}>
           <svg
-            className="w-7 h-7"
-            fill="#000"
-            viewBox="0 0 20 20"
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
         </button>
@@ -81,13 +79,13 @@ const Header = () => {
                   听力
                 </Link>
                 <Link
-                  href="/practice/ReadingComprehension"
+                  href="/practice/reading"
                   className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
                 >
                   阅读理解
                 </Link>
                 <Link
-                  href="/practice/Translation"
+                  href="/practice/translation"
                   className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
                 >
                   翻译
