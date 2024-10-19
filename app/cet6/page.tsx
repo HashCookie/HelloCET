@@ -1,3 +1,9 @@
+import YearAndSetSelector from "../components/YearAndSetSelector";
+
 export default function CET6() {
-  return <div>CET6</div>;
+  return (
+    <div>
+      <YearAndSetSelector />
+    </div>
+  );
 }
