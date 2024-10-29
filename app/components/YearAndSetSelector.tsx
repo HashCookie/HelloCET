@@ -3,11 +3,20 @@
 import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 
+interface PaperData {
+  years: number[];
+  months: number[];
+  papers: {
+    year: number;
+    month: number;
+    setCount: number;
+  }[];
+}
+
 const YearAndSetSelector = () => {
   const pathname = usePathname();
   const examType = pathname.includes('cet4') ? 'CET4' : 'CET6';
   
-  const [showControls, setShowControls] = useState(false);
   const [years, setYears] = useState<number[]>([]);
   const [months, setMonths] = useState<number[]>([]);
   const [setCount, setSetCount] = useState(0);
@@ -16,24 +25,21 @@ const YearAndSetSelector = () => {
   const [selectedMonth, setSelectedMonth] = useState<string>('');
   const [selectedSet, setSelectedSet] = useState<string>('');
 
-  const fetchPaperInfo = useCallback(async (year?: string, month?: string) => {
-    let url = `/api/papers?type=${examType}`;
-    if (year) url += `&year=${year}`;
-    if (month) url += `&month=${month}`;
+  const [isLoading, setIsLoading] = useState(false);
+  const [paperData, setPaperData] = useState<PaperData | null>(null);
 
+  const fetchPaperInfo = useCallback(async () => {
+    setIsLoading(true);
     try {
-      const response = await fetch(url);
+      const response = await fetch(`/api/papers?type=${examType}`);
       const data = await response.json();
-      
-      if (!year) {
-        setYears(data[0]?.years.sort((a: number, b: number) => a - b) || []);
-      } else if (!month) {
-        setMonths(data[0]?.months.sort((a: number, b: number) => a - b) || []);
-      } else {
-        setSetCount(data[0]?.setCount || 0);
-      }
+      setPaperData(data[0]);
+      const yearData = data[0]?.years || [];
+      setYears(yearData.sort((a: number, b: number) => a - b));
     } catch (error) {
       console.error('获取试卷信息失败:', error);
+    } finally {
+      setIsLoading(false);
     }
   }, [examType]);
 
@@ -41,20 +47,28 @@ const YearAndSetSelector = () => {
     fetchPaperInfo();
   }, [fetchPaperInfo]);
 
-  const handleYearChange = async (year: string) => {
+  const handleYearChange = (year: string) => {
     setSelectedYear(year);
     setSelectedMonth('');
     setSelectedSet('');
-    if (year) {
-      await fetchPaperInfo(year);
+    if (year && paperData) {
+      const availableMonths = paperData.papers
+        .filter((p) => p.year === parseInt(year))
+        .map((p) => p.month);
+      setMonths(Array.from(new Set(availableMonths)).sort((a, b) => a - b));
     }
   };
 
-  const handleMonthChange = async (month: string) => {
+  const handleMonthChange = (month: string) => {
     setSelectedMonth(month);
     setSelectedSet('');
-    if (selectedYear && month) {
-      await fetchPaperInfo(selectedYear, month);
+    if (selectedYear && month && paperData) {
+      const sets = paperData.papers
+        .filter((p) => 
+          p.year === parseInt(selectedYear) && 
+          p.month === parseInt(month)
+        );
+      setSetCount(sets[0]?.setCount || 0);
     }
   };
 
@@ -64,23 +78,14 @@ const YearAndSetSelector = () => {
 
   const handleSubmit = () => {
     if (selectedYear && selectedMonth && selectedSet) {
-      setShowControls(true);
       // TODO: 处理加载具体试卷数据的逻辑
     }
   };
 
   return (
     <div className="font-[sans-serif] space-y-4 text-center">
-      {showControls ? (
-        <div className="flex justify-end space-x-4 pr-4">
-          <button 
-            className="blue-button mt-4"
-            onClick={() => setShowControls(false)}
-          >
-            重新选择
-          </button>
-          <button className="blue-button mt-4">返回</button>
-        </div>
+      {isLoading ? (
+        <div>加载中...</div>
       ) : (
         <div className="flex flex-wrap justify-center items-center gap-4">
           <select 
