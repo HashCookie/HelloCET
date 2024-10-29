@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Next App",
-  description: "create next app",
+  title: "HelloCET",
+  description: "为准备参加大学英语四级和六级考试的学生设计的在线测试网站。",
 };
 
 export default function RootLayout({
@@ -12,10 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
+    <html lang="zh-CN">
+      <body>{children}</body>
     </html>
   );
 }
