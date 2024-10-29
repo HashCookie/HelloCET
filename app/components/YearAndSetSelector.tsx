@@ -17,16 +17,16 @@ const YearAndSetSelector = () => {
   const pathname = usePathname();
   const examType = pathname.includes('cet4') ? 'CET4' : 'CET6';
   
+  const [showControls, setShowControls] = useState(false);
   const [years, setYears] = useState<number[]>([]);
   const [months, setMonths] = useState<number[]>([]);
   const [setCount, setSetCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+  const [paperData, setPaperData] = useState<PaperData | null>(null);
   
   const [selectedYear, setSelectedYear] = useState<string>('');
   const [selectedMonth, setSelectedMonth] = useState<string>('');
   const [selectedSet, setSelectedSet] = useState<string>('');
-
-  const [isLoading, setIsLoading] = useState(false);
-  const [paperData, setPaperData] = useState<PaperData | null>(null);
 
   const fetchPaperInfo = useCallback(async () => {
     setIsLoading(true);
@@ -34,8 +34,7 @@ const YearAndSetSelector = () => {
       const response = await fetch(`/api/papers?type=${examType}`);
       const data = await response.json();
       setPaperData(data[0]);
-      const yearData = data[0]?.years || [];
-      setYears(yearData.sort((a: number, b: number) => a - b));
+      setYears(data[0]?.years.sort((a: number, b: number) => a - b) || []);
     } catch (error) {
       console.error('获取试卷信息失败:', error);
     } finally {
@@ -78,14 +77,35 @@ const YearAndSetSelector = () => {
 
   const handleSubmit = () => {
     if (selectedYear && selectedMonth && selectedSet) {
+      setShowControls(true);
       // TODO: 处理加载具体试卷数据的逻辑
     }
+  };
+
+  const handleReset = () => {
+    setShowControls(false);
+    setSelectedYear('');
+    setSelectedMonth('');
+    setSelectedSet('');
   };
 
   return (
     <div className="font-[sans-serif] space-y-4 text-center">
       {isLoading ? (
-        <div>加载中...</div>
+        <div className="flex justify-center items-center p-4">
+          <div className="w-8 h-8 border-4 border-blue-200 border-t-blue-500 rounded-full animate-spin"></div>
+          <span className="ml-2 text-gray-600">加载中...</span>
+        </div>
+      ) : showControls ? (
+        <div className="flex justify-end space-x-4 pr-4">
+          <button 
+            className="blue-button mt-4"
+            onClick={handleReset}
+          >
+            重新选择
+          </button>
+          <button className="blue-button mt-4">返回</button>
+        </div>
       ) : (
         <div className="flex flex-wrap justify-center items-center gap-4">
           <select 
