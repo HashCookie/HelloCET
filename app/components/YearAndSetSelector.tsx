@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Writing from "./Writing/Writing";
 import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
+import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
+import Translation from "./CTOE/Translation";
 import ExamSelector from "./Selector/ExamSelector";
 import LoadingSpinner from "./Common/LoadingSpinner";
 import ControlButtons from "./Common/ControlButtons";
@@ -110,7 +112,17 @@ const YearAndSetSelector = () => {
             year={selectedYear} 
             month={selectedMonth} 
             set={selectedSet} 
-          />  
+          />
+          <ReadingComprehension 
+            year={selectedYear} 
+            month={selectedMonth} 
+            set={selectedSet} 
+          />
+          <Translation 
+            year={selectedYear} 
+            month={selectedMonth} 
+            set={selectedSet} 
+          />
         </>
       ) : (
         <ExamSelector
