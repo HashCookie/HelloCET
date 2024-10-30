@@ -1,16 +1,21 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-export function useExamData<T>(field: string, year: string, month: string, set: string) {
+export function useExamData<T>(
+  field: string,
+  year: string,
+  month: string,
+  set: string
+) {
   const pathname = usePathname();
-  const examType = pathname.includes('cet4') ? 'CET4' : 'CET6';
+  const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const [data, setData] = useState<T | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       if (!year || !month || !set) return;
-      
+
       setIsLoading(true);
       try {
         const response = await fetch(

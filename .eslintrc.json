@@ -1,5 +1,5 @@
 {
-  "rules":{
+  "rules": {
     "eol-last": ["warn", "always"],
     "@next/next/no-img-element": "off"
   },

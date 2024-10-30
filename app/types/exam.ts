@@ -55,7 +55,7 @@ interface ReadingComprehension {
 
 // 完整试卷数据接口
 interface ExamPaper {
-  _id: string;  // MongoDB ObjectId
+  _id: string; // MongoDB ObjectId
   year: number;
   month: number;
   set: number;
@@ -84,5 +84,5 @@ export type {
   SectionB,
   SectionC,
   ReadingComprehension,
-  ExamPaper
+  ExamPaper,
 };

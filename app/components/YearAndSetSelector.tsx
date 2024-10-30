@@ -22,18 +22,18 @@ interface PaperData {
 
 const YearAndSetSelector = () => {
   const pathname = usePathname();
-  const examType = pathname.includes('cet4') ? 'CET4' : 'CET6';
-  
+  const examType = pathname.includes("cet4") ? "CET4" : "CET6";
+
   const [showControls, setShowControls] = useState(false);
   const [years, setYears] = useState<number[]>([]);
   const [months, setMonths] = useState<number[]>([]);
   const [setCount, setSetCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [paperData, setPaperData] = useState<PaperData | null>(null);
-  
-  const [selectedYear, setSelectedYear] = useState<string>('');
-  const [selectedMonth, setSelectedMonth] = useState<string>('');
-  const [selectedSet, setSelectedSet] = useState<string>('');
+
+  const [selectedYear, setSelectedYear] = useState<string>("");
+  const [selectedMonth, setSelectedMonth] = useState<string>("");
+  const [selectedSet, setSelectedSet] = useState<string>("");
 
   const fetchPaperInfo = useCallback(async () => {
     setIsLoading(true);
@@ -43,7 +43,7 @@ const YearAndSetSelector = () => {
       setPaperData(data[0]);
       setYears(data[0]?.years.sort((a: number, b: number) => a - b) || []);
     } catch (error) {
-      console.error('获取试卷信息失败:', error);
+      console.error("获取试卷信息失败:", error);
     } finally {
       setIsLoading(false);
     }
@@ -55,8 +55,8 @@ const YearAndSetSelector = () => {
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
-    setSelectedMonth('');
-    setSelectedSet('');
+    setSelectedMonth("");
+    setSelectedSet("");
     if (year && paperData) {
       const availableMonths = paperData.papers
         .filter((p) => p.year === parseInt(year))
@@ -67,13 +67,11 @@ const YearAndSetSelector = () => {
 
   const handleMonthChange = (month: string) => {
     setSelectedMonth(month);
-    setSelectedSet('');
+    setSelectedSet("");
     if (selectedYear && month && paperData) {
-      const sets = paperData.papers
-        .filter((p) => 
-          p.year === parseInt(selectedYear) && 
-          p.month === parseInt(month)
-        );
+      const sets = paperData.papers.filter(
+        (p) => p.year === parseInt(selectedYear) && p.month === parseInt(month)
+      );
       setSetCount(sets[0]?.setCount || 0);
     }
   };
@@ -91,9 +89,9 @@ const YearAndSetSelector = () => {
 
   const handleReset = () => {
     setShowControls(false);
-    setSelectedYear('');
-    setSelectedMonth('');
-    setSelectedSet('');
+    setSelectedYear("");
+    setSelectedMonth("");
+    setSelectedSet("");
   };
 
   return (
@@ -103,25 +101,25 @@ const YearAndSetSelector = () => {
       ) : showControls ? (
         <>
           <ControlButtons onReset={handleReset} />
-          <Writing 
-            year={selectedYear} 
-            month={selectedMonth} 
-            set={selectedSet} 
+          <Writing
+            year={selectedYear}
+            month={selectedMonth}
+            set={selectedSet}
           />
-          <ListeningComprehension 
-            year={selectedYear} 
-            month={selectedMonth} 
-            set={selectedSet} 
+          <ListeningComprehension
+            year={selectedYear}
+            month={selectedMonth}
+            set={selectedSet}
           />
-          <ReadingComprehension 
-            year={selectedYear} 
-            month={selectedMonth} 
-            set={selectedSet} 
+          <ReadingComprehension
+            year={selectedYear}
+            month={selectedMonth}
+            set={selectedSet}
           />
-          <Translation 
-            year={selectedYear} 
-            month={selectedMonth} 
-            set={selectedSet} 
+          <Translation
+            year={selectedYear}
+            month={selectedMonth}
+            set={selectedSet}
           />
         </>
       ) : (
