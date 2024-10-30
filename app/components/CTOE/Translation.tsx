@@ -3,18 +3,11 @@
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
+import type { ExamComponentProps } from "@/app/types/props";
 
 type TranslationData = Pick<ExamPaper, "translation">;
 
-const Translation = ({
-  year,
-  month,
-  set,
-}: {
-  year: string;
-  month: string;
-  set: string;
-}) => {
+const Translation = ({ year, month, set }: ExamComponentProps) => {
   const { data, isLoading } = useExamData<TranslationData>(
     "translation",
     year,

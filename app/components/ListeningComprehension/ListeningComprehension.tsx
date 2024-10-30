@@ -3,20 +3,13 @@
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
 import type { ListeningQuestion } from "@/app/types/exam";
+import type { ExamComponentProps } from "@/app/types/props";
 
 interface ListeningData {
   listeningComprehension: ListeningQuestion[];
 }
 
-const ListeningComprehension = ({
-  year,
-  month,
-  set,
-}: {
-  year: string;
-  month: string;
-  set: string;
-}) => {
+const ListeningComprehension = ({ year, month, set }: ExamComponentProps) => {
   const { data, isLoading } = useExamData<ListeningData>(
     "listeningComprehension",
     year,

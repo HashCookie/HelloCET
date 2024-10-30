@@ -3,18 +3,11 @@
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
+import type { ExamComponentProps } from "@/app/types/props";
 
 type WritingData = Pick<ExamPaper, "writing">;
 
-const Writing = ({
-  year,
-  month,
-  set,
-}: {
-  year: string;
-  month: string;
-  set: string;
-}) => {
+const Writing = ({ year, month, set }: ExamComponentProps) => {
   const { data, isLoading } = useExamData<WritingData>(
     "writing",
     year,
