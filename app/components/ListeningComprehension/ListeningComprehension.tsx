@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useExamData } from "@/app/hooks/useExamData";
+import ExamSection from "../Common/ExamSection";
 
 interface Option {
   A: string;
@@ -19,61 +19,27 @@ interface ListeningData {
   listeningComprehension: Question[];
 }
 
-const ListeningComprehension = ({ 
-  year, 
-  month, 
-  set 
-}: { 
-  year: string; 
-  month: string; 
+const ListeningComprehension = ({
+  year,
+  month,
+  set,
+}: {
+  year: string;
+  month: string;
   set: string;
 }) => {
-  const pathname = usePathname();
-  const examType = pathname.includes('cet4') ? 'CET4' : 'CET6';
-  const [listeningData, setListeningData] = useState<ListeningData | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    const fetchListeningData = async () => {
-      if (!year || !month || !set) return;
-      
-      setIsLoading(true);
-      try {
-        const response = await fetch(
-          `/api/examData?type=${examType}&year=${year}&month=${month}&set=${set}&field=listeningComprehension`
-        );
-        const data = await response.json();
-        setListeningData(data);
-      } catch (error) {
-        console.error('获取听力数据失败:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchListeningData();
-  }, [year, month, set, examType]);
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center p-4">
-        <div className="w-8 h-8 border-4 border-blue-200 border-t-blue-500 rounded-full animate-spin"></div>
-        <span className="ml-2 text-gray-600">加载中...</span>
-      </div>
-    );
-  }
-
-  if (!listeningData) {
-    return null;
-  }
+  const { data, isLoading } = useExamData<ListeningData>(
+    "listeningComprehension",
+    year,
+    month,
+    set
+  );
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-6">Part I Listening Comprehension</h2>
-        
+    <ExamSection title="Part II Listening Comprehension" isLoading={isLoading}>
+      {data && (
         <div className="space-y-8">
-          {listeningData.listeningComprehension.map((question) => (
+          {data.listeningComprehension.map((question) => (
             <div key={question.number} className="border-b pb-6">
               <h3 className="font-semibold mb-4">Question {question.number}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -88,7 +54,7 @@ const ListeningComprehension = ({
                         className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
                       />
                     </div>
-                    <label 
+                    <label
                       htmlFor={`question-${question.number}-${key}`}
                       className="text-sm font-medium text-gray-700"
                     >
@@ -100,8 +66,8 @@ const ListeningComprehension = ({
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      )}
+    </ExamSection>
   );
 };
 
