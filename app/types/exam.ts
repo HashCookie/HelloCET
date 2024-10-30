@@ -1,4 +1,3 @@
-// 基础选项接口
 interface Option {
   A: string;
   B: string;
@@ -12,7 +11,7 @@ interface ListeningQuestion {
   options: Option;
 }
 
-// 阅读理解 Section A 接口
+// Section A 接口
 interface SectionA {
   passages: string[];
   options: {
@@ -20,7 +19,7 @@ interface SectionA {
   };
 }
 
-// 阅读理解 Section B 接口
+// Section B 接口
 interface SectionB {
   passageTitle: string;
   passages: string[];
@@ -30,7 +29,7 @@ interface SectionB {
   }[];
 }
 
-// 阅读理解 Section C 接口
+// Section C 接口
 interface SectionC {
   passagesOne: string[];
   questionsOne: {
