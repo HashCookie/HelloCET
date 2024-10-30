@@ -2,21 +2,10 @@
 
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
-
-interface Option {
-  A: string;
-  B: string;
-  C: string;
-  D: string;
-}
-
-interface Question {
-  number: number;
-  options: Option;
-}
+import type { ListeningQuestion } from "@/app/types/exam";
 
 interface ListeningData {
-  listeningComprehension: Question[];
+  listeningComprehension: ListeningQuestion[];
 }
 
 const ListeningComprehension = ({

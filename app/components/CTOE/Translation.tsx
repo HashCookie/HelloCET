@@ -2,12 +2,9 @@
 
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
+import type { ExamPaper } from "@/app/types/exam";
 
-interface TranslationData {
-  translation: {
-    ChinesePassage: string;
-  };
-}
+type TranslationData = Pick<ExamPaper, "translation">;
 
 const Translation = ({
   year,

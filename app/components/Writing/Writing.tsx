@@ -2,12 +2,9 @@
 
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
+import type { ExamPaper } from "@/app/types/exam";
 
-interface WritingData {
-  writing: {
-    Directions: string;
-  };
-}
+type WritingData = Pick<ExamPaper, "writing">;
 
 const Writing = ({
   year,

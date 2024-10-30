@@ -2,46 +2,9 @@
 
 import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
+import type { ExamPaper } from "@/app/types/exam";
 
-interface Option {
-  A: string;
-  B: string;
-  C: string;
-  D: string;
-}
-
-interface SectionAQuestion {
-  number: number;
-  statement: string;
-}
-
-interface SectionBCQuestion {
-  number: number;
-  statement: string;
-  options: Option;
-}
-
-interface ReadingData {
-  readingComprehension: {
-    sectionA: {
-      passages: string[];
-      options: {
-        [key: string]: string;
-      };
-    };
-    sectionB: {
-      passageTitle: string;
-      passages: string[];
-      questions: SectionAQuestion[];
-    };
-    sectionC: {
-      passagesOne: string[];
-      questionsOne: SectionBCQuestion[];
-      passagesTwo: string[];
-      questionsTwo: SectionBCQuestion[];
-    };
-  };
-}
+type ReadingData = Pick<ExamPaper, "readingComprehension">;
 
 const ReadingComprehension = ({
   year,
