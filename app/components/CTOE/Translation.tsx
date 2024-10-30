@@ -27,7 +27,7 @@ const Translation = ({
       {data && (
         <>
           <div className="mb-6">
-            <div className="prose max-w-none">
+            <div className="prose max-w-none text-left">
               <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">
                 {data.translation.ChinesePassage}
               </p>
