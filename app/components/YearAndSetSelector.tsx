@@ -4,6 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Writing from "./Writing/Writing";
 import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
+import ExamSelector from "./Selector/ExamSelector";
+import LoadingSpinner from "./Common/LoadingSpinner";
+import ControlButtons from "./Common/ControlButtons";
 
 interface PaperData {
   years: number[];
@@ -94,77 +97,34 @@ const YearAndSetSelector = () => {
   return (
     <div className="font-[sans-serif] space-y-4 text-center">
       {isLoading ? (
-        <div className="flex justify-center items-center p-4">
-          <div className="w-8 h-8 border-4 border-blue-200 border-t-blue-500 rounded-full animate-spin"></div>
-          <span className="ml-2 text-gray-600">加载中...</span>
-        </div>
+        <LoadingSpinner />
       ) : showControls ? (
         <>
-          <div className="flex justify-end space-x-4 pr-4">
-            <button 
-              className="blue-button mt-4"
-              onClick={handleReset}
-            >
-              重新选择
-            </button>
-            <button className="blue-button mt-4">返回</button>
-          </div>
+          <ControlButtons onReset={handleReset} />
           <Writing 
             year={selectedYear} 
             month={selectedMonth} 
             set={selectedSet} 
-            />
-            <ListeningComprehension 
-              year={selectedYear} 
-              month={selectedMonth} 
-              set={selectedSet} 
-            />  
+          />
+          <ListeningComprehension 
+            year={selectedYear} 
+            month={selectedMonth} 
+            set={selectedSet} 
+          />  
         </>
       ) : (
-        <div className="flex flex-wrap justify-center items-center gap-4">
-          <select 
-            className="blue-select"
-            value={selectedYear}
-            onChange={(e) => handleYearChange(e.target.value)}
-          >
-            <option value="">选择年份</option>
-            {years.map(year => (
-              <option key={year} value={year}>{year}</option>
-            ))}
-          </select>
-          
-          <select 
-            className="blue-select"
-            value={selectedMonth}
-            onChange={(e) => handleMonthChange(e.target.value)}
-            disabled={!selectedYear}
-          >
-            <option value="">选择月份</option>
-            {months.map(month => (
-              <option key={month} value={month}>{month}</option>
-            ))}
-          </select>
-          
-          <select 
-            className="blue-select"
-            value={selectedSet}
-            onChange={(e) => handleSetChange(e.target.value)}
-            disabled={!selectedMonth}
-          >
-            <option value="">选择套数</option>
-            {Array.from({length: setCount}, (_, i) => i + 1).map(set => (
-              <option key={set} value={set}>第{set}套</option>
-            ))}
-          </select>
-          
-          <button
-            onClick={handleSubmit}
-            className="blue-button"
-            disabled={!selectedYear || !selectedMonth || !selectedSet}
-          >
-            加载数据
-          </button>
-        </div>
+        <ExamSelector
+          years={years}
+          months={months}
+          setCount={setCount}
+          selectedYear={selectedYear}
+          selectedMonth={selectedMonth}
+          selectedSet={selectedSet}
+          onYearChange={handleYearChange}
+          onMonthChange={handleMonthChange}
+          onSetChange={handleSetChange}
+          onSubmit={handleSubmit}
+        />
       )}
     </div>
   );
