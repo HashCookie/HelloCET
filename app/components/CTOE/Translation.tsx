@@ -30,7 +30,7 @@ const Translation = ({
       setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/translation?type=${examType}&year=${year}&month=${month}&set=${set}`
+          `/api/examData?type=${examType}&year=${year}&month=${month}&set=${set}&field=translation`
         );
         const data = await response.json();
         setTranslationData(data);

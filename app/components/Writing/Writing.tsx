@@ -22,7 +22,7 @@ const Writing = ({ year, month, set }: { year: string; month: string; set: strin
       setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/writing?type=${examType}&year=${year}&month=${month}&set=${set}`
+          `/api/examData?type=${examType}&year=${year}&month=${month}&set=${set}&field=writing`
         );
         const data = await response.json();
         setWritingData(data);

@@ -40,7 +40,7 @@ const ListeningComprehension = ({
       setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/listening?type=${examType}&year=${year}&month=${month}&set=${set}`
+          `/api/examData?type=${examType}&year=${year}&month=${month}&set=${set}&field=listeningComprehension`
         );
         const data = await response.json();
         setListeningData(data);

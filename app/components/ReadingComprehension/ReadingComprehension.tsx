@@ -64,10 +64,9 @@ const ReadingComprehension = ({
       setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/reading?type=${examType}&year=${year}&month=${month}&set=${set}`
+          `/api/examData?type=${examType}&year=${year}&month=${month}&set=${set}&field=readingComprehension`
         );
         const data = await response.json();
-        console.log('Reading Data:', data); // 用于调试
         setReadingData(data);
       } catch (error) {
         console.error('获取阅读数据失败:', error);
