@@ -32,14 +32,20 @@ export async function GET(request: Request) {
     const result = await collection.aggregate<AggregateResult>([
       {
         $group: {
+          _id: { year: "$year", month: "$month" },
+          setCount: { $count: {} }
+        }
+      },
+      {
+        $group: {
           _id: null,
-          years: { $addToSet: '$year' },
-          months: { $addToSet: '$month' },
+          years: { $addToSet: "$_id.year" },
+          months: { $addToSet: "$_id.month" },
           papers: {
             $push: {
-              year: '$year',
-              month: '$month',
-              setCount: { $sum: 1 }
+              year: "$_id.year",
+              month: "$_id.month",
+              setCount: "$setCount"
             }
           }
         }

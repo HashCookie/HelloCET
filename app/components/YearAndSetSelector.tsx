@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
+import Writing from "./Writing/Writing";
+import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
 
 interface PaperData {
   years: number[];
@@ -97,15 +99,27 @@ const YearAndSetSelector = () => {
           <span className="ml-2 text-gray-600">加载中...</span>
         </div>
       ) : showControls ? (
-        <div className="flex justify-end space-x-4 pr-4">
-          <button 
-            className="blue-button mt-4"
-            onClick={handleReset}
-          >
-            重新选择
-          </button>
-          <button className="blue-button mt-4">返回</button>
-        </div>
+        <>
+          <div className="flex justify-end space-x-4 pr-4">
+            <button 
+              className="blue-button mt-4"
+              onClick={handleReset}
+            >
+              重新选择
+            </button>
+            <button className="blue-button mt-4">返回</button>
+          </div>
+          <Writing 
+            year={selectedYear} 
+            month={selectedMonth} 
+            set={selectedSet} 
+            />
+            <ListeningComprehension 
+              year={selectedYear} 
+              month={selectedMonth} 
+              set={selectedSet} 
+            />  
+        </>
       ) : (
         <div className="flex flex-wrap justify-center items-center gap-4">
           <select 
