@@ -22,7 +22,7 @@ export async function GET(request: Request) {
   try {
     const client = await MongoClient.connect(uri);
     const db = client.db("EnglishExams");
-    const collection = db.collection(examType || "CET4");
+    const collection = db.collection(`${examType || "CET4"}_Papers`);
 
     const result = await collection.findOne(
       { year, month, set },
