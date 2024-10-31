@@ -22,7 +22,7 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
           {/* Section A */}
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Section A</h3>
-            <div className="space-y-4 mb-6">
+            <div className="space-y-4 mb-6 text-left">
               {data.readingComprehension.sectionA.passages.map(
                 (passage, index) => (
                   <p key={index} className="text-gray-700 leading-relaxed">
@@ -49,7 +49,7 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
             <h4 className="text-md font-medium mb-4">
               {data.readingComprehension.sectionB.passageTitle}
             </h4>
-            <div className="space-y-4 mb-6">
+            <div className="space-y-4 mb-6 text-left">
               {data.readingComprehension.sectionB.passages.map(
                 (passage, index) => (
                   <p key={index} className="text-gray-700 leading-relaxed">
@@ -58,7 +58,7 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
                 )
               )}
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 text-left">
               {data.readingComprehension.sectionB.questions.map((question) => (
                 <div key={question.number} className="border-b pb-4">
                   <p className="font-medium mb-3">
@@ -72,10 +72,22 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
           {/* Section C */}
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Section C</h3>
+            <h3 className="text-sm text-gray-600 mb-4 text-left">
+              <span className="font-semibold">Directions:</span> There are 2
+              passages in this section. Each passage is followed by some
+              questions or unfinished statements. For each of them, there are
+              four choices marked A), B), C), and D). You should decide on the
+              best choice and mark the corresponding letter on Answer Sheet 2
+              with a single line through the center.
+            </h3>
+            <h3 className="text-md font-medium mb-4 text-left">Passage One</h3>
+            <h3 className="text-sm text-gray-600 mb-4 text-left">
+              Questions 46 to 50 are based on the following passage.
+            </h3>
 
             {/* 第一篇文章 (46-50) */}
             <div className="mb-8">
-              <div className="space-y-4 mb-6">
+              <div className="space-y-4 mb-6 text-left">
                 {data.readingComprehension.sectionC.passagesOne.map(
                   (passage, index) => (
                     <p key={index} className="text-gray-700 leading-relaxed">
@@ -84,7 +96,7 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
                   )
                 )}
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 text-left">
                 {data.readingComprehension.sectionC.questionsOne.map(
                   (question) => (
                     <div key={question.number} className="border-b pb-4">
@@ -120,9 +132,13 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
               </div>
             </div>
 
+            <h3 className="text-md font-medium mb-4 text-left">Passage Two</h3>
+            <h3 className="text-sm text-gray-600 mb-4 text-left">
+              Questions 51 to 55 are based on the following passage.
+            </h3>
             {/* 第二篇文章 (51-55) */}
             <div className="mb-8">
-              <div className="space-y-4 mb-6">
+              <div className="space-y-4 mb-6 text-left">
                 {data.readingComprehension.sectionC.passagesTwo.map(
                   (passage, index) => (
                     <p key={index} className="text-gray-700 leading-relaxed">
@@ -131,7 +147,7 @@ const ReadingComprehension = ({ year, month, set }: ExamComponentProps) => {
                   )
                 )}
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 text-left">
                 {data.readingComprehension.sectionC.questionsTwo.map(
                   (question) => (
                     <div key={question.number} className="border-b pb-4">
