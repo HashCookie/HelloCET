@@ -85,7 +85,7 @@ const Header = () => {
                   阅读理解
                 </Link>
                 <Link
-                  href="/practice/translation"
+                  href="/practice/ctoe"
                   className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
                 >
                   翻译
