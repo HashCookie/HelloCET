@@ -21,7 +21,7 @@ export async function GET(request: Request) {
     const collection = db.collection(`${examType || "CET4"}_Answers`);
 
     const projection = field ? { [field]: 1, _id: 0 } : { _id: 0 };
-    
+
     const result = await collection.findOne(
       { year, month, set },
       { projection }

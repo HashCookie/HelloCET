@@ -8,7 +8,9 @@ interface QuestionGroupProps {
 const QuestionGroup = ({ description, questions }: QuestionGroupProps) => {
   return (
     <div className="mb-8">
-      <p className="text-sm text-gray-600 italic mb-4 text-left">{description}</p>
+      <p className="text-sm text-gray-600 italic mb-4 text-left">
+        {description}
+      </p>
       <div className="space-y-8">
         {questions.map((question) => (
           <div key={question.number} className="border-b pb-6">
