@@ -9,6 +9,7 @@ import Translation from "./CTOE/Translation";
 import ExamSelector from "./Selector/ExamSelector";
 import LoadingSpinner from "./Common/LoadingSpinner";
 import ControlButtons from "./Common/ControlButtons";
+import ExamTabs from "./Common/ExamTabs";
 
 interface PaperData {
   years: number[];
@@ -34,6 +35,8 @@ const YearAndSetSelector = () => {
   const [selectedYear, setSelectedYear] = useState<string>("");
   const [selectedMonth, setSelectedMonth] = useState<string>("");
   const [selectedSet, setSelectedSet] = useState<string>("");
+
+  const [activeTab, setActiveTab] = useState("writing");
 
   const fetchPaperInfo = useCallback(async () => {
     setIsLoading(true);
@@ -94,37 +97,65 @@ const YearAndSetSelector = () => {
     setSelectedSet("");
   };
 
-  return (
-    <div className="font-[sans-serif] space-y-4 text-center">
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : showControls ? (
-        <>
-          <ControlButtons onReset={handleReset} />
-          <h1 className="text-2xl font-bold">
-            {selectedYear}年{selectedMonth}月大学英语{examType}真题（卷{selectedSet}）
-          </h1>
+  const renderExamContent = () => {
+    switch (activeTab) {
+      case "writing":
+        return (
           <Writing
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
           />
+        );
+      case "listening":
+        return (
           <ListeningComprehension
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
           />
+        );
+      case "reading":
+        return (
           <ReadingComprehension
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
           />
+        );
+      case "translation":
+        return (
           <Translation
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
           />
-        </>
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="font-[sans-serif] space-y-4">
+      {isLoading ? (
+        <LoadingSpinner />
+      ) : showControls ? (
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="mb-6 flex justify-between items-center">
+            <h1 className="text-2xl font-bold">
+              {selectedYear}年{selectedMonth}月大学英语{examType}真题（卷
+              {selectedSet}）
+            </h1>
+            <ControlButtons onReset={handleReset} />
+          </div>
+
+          <ExamTabs activeTab={activeTab} onTabChange={setActiveTab} />
+
+          <div className="mt-6 bg-white rounded-lg shadow-sm">
+            {renderExamContent()}
+          </div>
+        </div>
       ) : (
         <ExamSelector
           years={years}
