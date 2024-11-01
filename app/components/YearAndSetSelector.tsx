@@ -10,6 +10,8 @@ import ExamSelector from "./Selector/ExamSelector";
 import LoadingSpinner from "./Common/LoadingSpinner";
 import ControlButtons from "./Common/ControlButtons";
 import ExamTabs from "./Common/ExamTabs";
+import { useExamData } from "@/app/hooks/useExamData";
+import type { ExamPaper } from "@/app/types/exam";
 
 interface PaperData {
   years: number[];
@@ -37,6 +39,34 @@ const YearAndSetSelector = () => {
   const [selectedSet, setSelectedSet] = useState<string>("");
 
   const [activeTab, setActiveTab] = useState("writing");
+
+  const { data: writingData, isLoading: writingLoading } = useExamData<Pick<ExamPaper, "writing">>(
+    "writing",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  const { data: listeningData, isLoading: listeningLoading } = useExamData<Pick<ExamPaper, "listeningComprehension">>(
+    "listeningComprehension",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  const { data: readingData, isLoading: readingLoading } = useExamData<Pick<ExamPaper, "readingComprehension">>(
+    "readingComprehension",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  const { data: translationData, isLoading: translationLoading } = useExamData<Pick<ExamPaper, "translation">>(
+    "translation",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
 
   const fetchPaperInfo = useCallback(async () => {
     setIsLoading(true);
@@ -105,6 +135,8 @@ const YearAndSetSelector = () => {
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
+            data={writingData}
+            isLoading={writingLoading}
           />
         );
       case "listening":
@@ -113,6 +145,8 @@ const YearAndSetSelector = () => {
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
+            data={listeningData}
+            isLoading={listeningLoading}
           />
         );
       case "reading":
@@ -121,6 +155,8 @@ const YearAndSetSelector = () => {
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
+            data={readingData}
+            isLoading={readingLoading}
           />
         );
       case "translation":
@@ -129,6 +165,8 @@ const YearAndSetSelector = () => {
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
+            data={translationData}
+            isLoading={translationLoading}
           />
         );
       default:

@@ -1,6 +1,5 @@
 "use client";
 
-import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
 import type { ListeningQuestion } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
@@ -9,6 +8,11 @@ import { SECTION_CONFIG } from "./constants";
 
 interface ListeningData {
   listeningComprehension: ListeningQuestion[];
+}
+
+interface ListeningProps extends ExamComponentProps {
+  data: ListeningData | null;
+  isLoading: boolean;
 }
 
 interface SectionProps {
@@ -49,14 +53,7 @@ const Section = ({
   );
 };
 
-const ListeningComprehension = ({ year, month, set }: ExamComponentProps) => {
-  const { data, isLoading } = useExamData<ListeningData>(
-    "listeningComprehension",
-    year,
-    month,
-    set
-  );
-
+const ListeningComprehension = ({ data, isLoading }: ListeningProps) => {
   return (
     <ExamSection title="Part II Listening Comprehension" isLoading={isLoading}>
       {data && (

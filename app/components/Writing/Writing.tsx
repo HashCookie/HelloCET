@@ -1,20 +1,17 @@
 "use client";
 
-import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
 
 type WritingData = Pick<ExamPaper, "writing">;
 
-const Writing = ({ year, month, set }: ExamComponentProps) => {
-  const { data, isLoading } = useExamData<WritingData>(
-    "writing",
-    year,
-    month,
-    set
-  );
+interface WritingProps extends ExamComponentProps {
+  data: WritingData | null;
+  isLoading: boolean;
+}
 
+const Writing = ({ data, isLoading }: WritingProps) => {
   return (
     <ExamSection title="Part I Writing" isLoading={isLoading}>
       {data && (
@@ -24,7 +21,6 @@ const Writing = ({ year, month, set }: ExamComponentProps) => {
               {data.writing.Directions}
             </p>
           </div>
-
           <div className="mt-8">
             <textarea
               id="writing"

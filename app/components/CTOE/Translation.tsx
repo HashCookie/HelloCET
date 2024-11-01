@@ -1,20 +1,17 @@
 "use client";
 
-import { useExamData } from "@/app/hooks/useExamData";
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
 
 type TranslationData = Pick<ExamPaper, "translation">;
 
-const Translation = ({ year, month, set }: ExamComponentProps) => {
-  const { data, isLoading } = useExamData<TranslationData>(
-    "translation",
-    year,
-    month,
-    set
-  );
+interface TranslationProps extends ExamComponentProps {
+  data: TranslationData | null;
+  isLoading: boolean;
+}
 
+const Translation = ({ data, isLoading }: TranslationProps) => {
   return (
     <ExamSection title="Part IV Translation" isLoading={isLoading}>
       {data && (
