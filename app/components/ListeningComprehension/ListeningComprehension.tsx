@@ -26,12 +26,7 @@ interface SectionProps {
   questions: ListeningQuestion[];
 }
 
-const Section = ({
-  title,
-  directions,
-  groups,
-  questions,
-}: SectionProps) => {
+const Section = ({ title, directions, groups, questions }: SectionProps) => {
   return (
     <div className="mb-8">
       <h2 className="text-lg font-bold mb-6">{title}</h2>

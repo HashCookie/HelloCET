@@ -19,9 +19,10 @@ const Translation = ({ data, isLoading }: TranslationProps) => {
           <div className="mb-6">
             <div className="prose max-w-none text-left">
               <h3 className="text-sm text-gray-500 mb-6 text-left">
-                <span className="font-semibold">Directions:</span> For this part,
-                you are allowed 30 minutes to translate a passage from Chinese
-                into English. You should write your answer on Answer Sheet 2.
+                <span className="font-semibold">Directions:</span> For this
+                part, you are allowed 30 minutes to translate a passage from
+                Chinese into English. You should write your answer on Answer
+                Sheet 2.
               </h3>
               <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">
                 {data.translation.ChinesePassage}

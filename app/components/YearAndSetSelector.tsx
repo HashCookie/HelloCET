@@ -40,33 +40,21 @@ const YearAndSetSelector = () => {
 
   const [activeTab, setActiveTab] = useState("writing");
 
-  const { data: writingData, isLoading: writingLoading } = useExamData<Pick<ExamPaper, "writing">>(
-    "writing",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
+  const { data: writingData, isLoading: writingLoading } = useExamData<
+    Pick<ExamPaper, "writing">
+  >("writing", selectedYear, selectedMonth, selectedSet);
 
-  const { data: listeningData, isLoading: listeningLoading } = useExamData<Pick<ExamPaper, "listeningComprehension">>(
-    "listeningComprehension",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
+  const { data: listeningData, isLoading: listeningLoading } = useExamData<
+    Pick<ExamPaper, "listeningComprehension">
+  >("listeningComprehension", selectedYear, selectedMonth, selectedSet);
 
-  const { data: readingData, isLoading: readingLoading } = useExamData<Pick<ExamPaper, "readingComprehension">>(
-    "readingComprehension",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
+  const { data: readingData, isLoading: readingLoading } = useExamData<
+    Pick<ExamPaper, "readingComprehension">
+  >("readingComprehension", selectedYear, selectedMonth, selectedSet);
 
-  const { data: translationData, isLoading: translationLoading } = useExamData<Pick<ExamPaper, "translation">>(
-    "translation",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
+  const { data: translationData, isLoading: translationLoading } = useExamData<
+    Pick<ExamPaper, "translation">
+  >("translation", selectedYear, selectedMonth, selectedSet);
 
   const fetchPaperInfo = useCallback(async () => {
     setIsLoading(true);
