@@ -19,26 +19,17 @@ interface SectionProps {
     startIndex: number;
     endIndex: number;
   }[];
-  year: string;
-  month: string;
-  set: string;
+  questions: ListeningQuestion[];
+  isLoading: boolean;
 }
 
 const Section = ({
   title,
   directions,
   groups,
-  year,
-  month,
-  set,
+  questions,
+  isLoading,
 }: SectionProps) => {
-  const { data, isLoading } = useExamData<ListeningData>(
-    "listeningComprehension",
-    year,
-    month,
-    set
-  );
-
   return (
     <div className="mb-8">
       <h2 className="text-lg font-bold mb-6">{title}</h2>
@@ -50,12 +41,7 @@ const Section = ({
         <QuestionGroup
           key={index}
           description={group.description}
-          questions={
-            data?.listeningComprehension.slice(
-              group.startIndex,
-              group.endIndex
-            ) || []
-          }
+          questions={questions.slice(group.startIndex, group.endIndex)}
           isLoading={isLoading}
         />
       ))}
@@ -81,9 +67,8 @@ const ListeningComprehension = ({ year, month, set }: ExamComponentProps) => {
               title={section.title}
               directions={section.directions}
               groups={section.groups}
-              year={year}
-              month={month}
-              set={set}
+              questions={data.listeningComprehension}
+              isLoading={isLoading}
             />
           ))}
         </div>
