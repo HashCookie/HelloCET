@@ -32,7 +32,7 @@ const Section = ({
   month,
   set,
 }: SectionProps) => {
-  const { data } = useExamData<ListeningData>(
+  const { data, isLoading } = useExamData<ListeningData>(
     "listeningComprehension",
     year,
     month,
@@ -56,6 +56,7 @@ const Section = ({
               group.endIndex
             ) || []
           }
+          isLoading={isLoading}
         />
       ))}
     </div>
