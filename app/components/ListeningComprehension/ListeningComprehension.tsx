@@ -24,7 +24,6 @@ interface SectionProps {
     endIndex: number;
   }[];
   questions: ListeningQuestion[];
-  isLoading: boolean;
 }
 
 const Section = ({
@@ -32,7 +31,6 @@ const Section = ({
   directions,
   groups,
   questions,
-  isLoading,
 }: SectionProps) => {
   return (
     <div className="mb-8">
@@ -46,7 +44,6 @@ const Section = ({
           key={index}
           description={group.description}
           questions={questions.slice(group.startIndex, group.endIndex)}
-          isLoading={isLoading}
         />
       ))}
     </div>
@@ -65,7 +62,6 @@ const ListeningComprehension = ({ data, isLoading }: ListeningProps) => {
               directions={section.directions}
               groups={section.groups}
               questions={data.listeningComprehension}
-              isLoading={isLoading}
             />
           ))}
         </div>

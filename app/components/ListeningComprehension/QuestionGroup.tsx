@@ -1,17 +1,11 @@
 import { ListeningQuestion } from "@/app/types/exam";
-import QuestionGroupSkeleton from "./QuestionGroupSkeleton";
 
 interface QuestionGroupProps {
   description: string;
   questions: ListeningQuestion[];
-  isLoading?: boolean;
 }
 
-const QuestionGroup = ({ description, questions, isLoading }: QuestionGroupProps) => {
-  if (isLoading) {
-    return <QuestionGroupSkeleton />;
-  }
-
+const QuestionGroup = ({ description, questions }: QuestionGroupProps) => {
   return (
     <div className="mb-8">
       <p className="text-sm text-gray-600 italic mb-4 text-left">
