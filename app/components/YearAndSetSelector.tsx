@@ -101,6 +101,9 @@ const YearAndSetSelector = () => {
       ) : showControls ? (
         <>
           <ControlButtons onReset={handleReset} />
+          <h1 className="text-2xl font-bold">
+            {selectedYear}年{selectedMonth}月大学英语{examType}真题（卷{selectedSet}）
+          </h1>
           <Writing
             year={selectedYear}
             month={selectedMonth}
