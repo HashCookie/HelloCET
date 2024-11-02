@@ -11,18 +11,9 @@ interface SubmitButtonProps {
   year?: string;
   month?: string;
   set?: string;
-  translationData?: {
-    ChinesePassage: string;
-  };
 }
 
-const SubmitButton = ({
-  section,
-  year,
-  month,
-  set,
-  translationData,
-}: SubmitButtonProps) => {
+const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -142,14 +133,15 @@ const SubmitButton = ({
           return;
         }
 
-        if (!translationData) {
-          alert("缺少翻译原文");
+        const originalText = document.querySelector(".prose p")?.textContent;
+        if (!originalText) {
+          alert("获取原文失败");
           return;
         }
 
         const result = await handleTranslationSubmit(
           translationText,
-          translationData.ChinesePassage
+          originalText
         );
 
         if (result.success) {
