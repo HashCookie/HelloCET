@@ -1,6 +1,6 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { handleListeningSubmit } from "@/app/utils/submitHandlers";
+import { handleListeningSubmit, handleReadingSubmit } from "@/app/utils/submitHandlers";
 
 interface SubmitButtonProps {
   section: "writing" | "listening" | "reading" | "translation";
@@ -80,6 +80,42 @@ const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
         );
 
         if (result.success) {
+          console.log(result.data);
+        } else {
+          throw new Error(result.error);
+        }
+      } else if (section === "reading") {
+        if (!year || !month || !set) {
+          alert("缺少试卷信息");
+          return;
+        }
+
+        const answers: Record<number, string> = {};
+        const inputs = document.querySelectorAll('input[type="radio"]:checked');
+        
+        inputs.forEach((input) => {
+          const name = input.getAttribute("name");
+          if (name?.startsWith("question-")) {
+            const number = parseInt(name.replace("question-", ""));
+            answers[number] = (input as HTMLInputElement).value;
+          }
+        });
+
+        if (Object.keys(answers).length === 0) {
+          alert("请至少回答一道题目");
+          return;
+        }
+
+        const result = await handleReadingSubmit(
+          answers,
+          examType,
+          parseInt(year),
+          parseInt(month),
+          parseInt(set)
+        );
+
+        if (result.success) {
+
           console.log(result.data);
         } else {
           throw new Error(result.error);

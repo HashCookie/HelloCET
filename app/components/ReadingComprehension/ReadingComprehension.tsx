@@ -13,9 +13,12 @@ type ReadingData = Pick<ExamPaper, "readingComprehension">;
 interface ReadingProps extends ExamComponentProps {
   data: ReadingData | null;
   isLoading: boolean;
+  year: string;
+  month: string;
+  set: string;
 }
 
-const ReadingComprehension = ({ data, isLoading }: ReadingProps) => {
+const ReadingComprehension = ({ data, isLoading, year, month, set }: ReadingProps) => {
   return (
     <ExamSection title="Part III Reading Comprehension" isLoading={isLoading}>
       {data?.readingComprehension && (
@@ -35,7 +38,12 @@ const ReadingComprehension = ({ data, isLoading }: ReadingProps) => {
             passagesTwo={data.readingComprehension.sectionC.passagesTwo}
             questionsTwo={data.readingComprehension.sectionC.questionsTwo}
           />
-          <SubmitButton section="reading" />
+          <SubmitButton 
+            section="reading" 
+            year={year} 
+            month={month} 
+            set={set} 
+          />
         </>
       )}
     </ExamSection>
