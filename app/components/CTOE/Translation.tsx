@@ -3,6 +3,7 @@
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
+import SubmitButton from "../Common/SubmitButton";
 
 type TranslationData = Pick<ExamPaper, "translation">;
 
@@ -38,6 +39,7 @@ const Translation = ({ data, isLoading }: TranslationProps) => {
               placeholder="在此输入你的翻译..."
             />
           </div>
+          <SubmitButton section="translation" />
         </>
       )}
     </ExamSection>

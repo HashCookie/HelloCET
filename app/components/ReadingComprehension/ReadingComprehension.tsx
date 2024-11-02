@@ -6,6 +6,7 @@ import type { ExamComponentProps } from "@/app/types/props";
 import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
+import SubmitButton from "../Common/SubmitButton";
 
 type ReadingData = Pick<ExamPaper, "readingComprehension">;
 
@@ -34,6 +35,7 @@ const ReadingComprehension = ({ data, isLoading }: ReadingProps) => {
             passagesTwo={data.readingComprehension.sectionC.passagesTwo}
             questionsTwo={data.readingComprehension.sectionC.questionsTwo}
           />
+          <SubmitButton section="reading" />
         </>
       )}
     </ExamSection>
