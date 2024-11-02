@@ -1,11 +1,15 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { handleListeningSubmit } from "@/app/utils/submitHandlers";
 
 interface SubmitButtonProps {
   section: "writing" | "listening" | "reading" | "translation";
+  year?: string;
+  month?: string;
+  set?: string;
 }
 
-const SubmitButton = ({ section }: SubmitButtonProps) => {
+const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -44,6 +48,41 @@ const SubmitButton = ({ section }: SubmitButtonProps) => {
           console.log("作文评分结果:", data);
         } else {
           throw new Error(data.error || "提交失败");
+        }
+      } else if (section === "listening") {
+        if (!year || !month || !set) {
+          alert("缺少试卷信息");
+          return;
+        }
+
+        const answers: Record<number, string> = {};
+        const inputs = document.querySelectorAll('input[type="radio"]:checked');
+
+        inputs.forEach((input) => {
+          const name = input.getAttribute("name");
+          if (name?.startsWith("question-")) {
+            const number = parseInt(name.replace("question-", ""));
+            answers[number] = (input as HTMLInputElement).value;
+          }
+        });
+
+        if (Object.keys(answers).length === 0) {
+          alert("请至少回答一道题目");
+          return;
+        }
+
+        const result = await handleListeningSubmit(
+          answers,
+          examType,
+          parseInt(year),
+          parseInt(month),
+          parseInt(set)
+        );
+
+        if (result.success) {
+          console.log(result.data);
+        } else {
+          throw new Error(result.error);
         }
       }
     } catch (error) {

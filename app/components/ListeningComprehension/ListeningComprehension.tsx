@@ -14,6 +14,9 @@ interface ListeningData {
 interface ListeningProps extends ExamComponentProps {
   data: ListeningData | null;
   isLoading: boolean;
+  year: string;
+  month: string;
+  set: string;
 }
 
 interface SectionProps {
@@ -46,7 +49,13 @@ const Section = ({ title, directions, groups, questions }: SectionProps) => {
   );
 };
 
-const ListeningComprehension = ({ data, isLoading }: ListeningProps) => {
+const ListeningComprehension = ({
+  data,
+  isLoading,
+  year,
+  month,
+  set,
+}: ListeningProps) => {
   return (
     <ExamSection title="Part II Listening Comprehension" isLoading={isLoading}>
       {data && (
@@ -62,7 +71,7 @@ const ListeningComprehension = ({ data, isLoading }: ListeningProps) => {
           ))}
         </div>
       )}
-      <SubmitButton section="listening" />
+      <SubmitButton section="listening" year={year} month={month} set={set} />
     </ExamSection>
   );
 };

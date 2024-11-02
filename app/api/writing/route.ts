@@ -20,11 +20,12 @@ function addAuthParams(appKey: string, appSecret: string, params: AuthParams) {
   const q = params.q;
   const salt = uuidv1();
   const curtime = Math.floor(Date.now() / 1000).toString();
-  
-  const input = q.length <= 20 
-    ? q 
-    : q.substring(0, 10) + q.length + q.substring(q.length - 10);
-    
+
+  const input =
+    q.length <= 20
+      ? q
+      : q.substring(0, 10) + q.length + q.substring(q.length - 10);
+
   const strSrc = appKey + input + salt + curtime + appSecret;
   const sign = crypto.createHash("sha256").update(strSrc).digest("hex");
 
@@ -38,12 +39,9 @@ function addAuthParams(appKey: string, appSecret: string, params: AuthParams) {
 export async function POST(request: Request) {
   try {
     const { essay, examType } = await request.json();
-    
+
     if (!APP_KEY || !APP_SECRET) {
-      return NextResponse.json(
-        { error: "API 密钥未配置" },
-        { status: 500 }
-      );
+      return NextResponse.json({ error: "API 密钥未配置" }, { status: 500 });
     }
 
     const params = {
@@ -77,9 +75,6 @@ export async function POST(request: Request) {
     }
   } catch (error) {
     console.error("写作评分失败:", error);
-    return NextResponse.json(
-      { error: "写作评分失败" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "写作评分失败" }, { status: 500 });
   }
 }
