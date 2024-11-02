@@ -18,7 +18,13 @@ interface ReadingProps extends ExamComponentProps {
   set: string;
 }
 
-const ReadingComprehension = ({ data, isLoading, year, month, set }: ReadingProps) => {
+const ReadingComprehension = ({
+  data,
+  isLoading,
+  year,
+  month,
+  set,
+}: ReadingProps) => {
   return (
     <ExamSection title="Part III Reading Comprehension" isLoading={isLoading}>
       {data?.readingComprehension && (
@@ -38,12 +44,7 @@ const ReadingComprehension = ({ data, isLoading, year, month, set }: ReadingProp
             passagesTwo={data.readingComprehension.sectionC.passagesTwo}
             questionsTwo={data.readingComprehension.sectionC.questionsTwo}
           />
-          <SubmitButton 
-            section="reading" 
-            year={year} 
-            month={month} 
-            set={set} 
-          />
+          <SubmitButton section="reading" year={year} month={month} set={set} />
         </>
       )}
     </ExamSection>

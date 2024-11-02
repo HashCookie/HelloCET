@@ -122,3 +122,41 @@ export async function handleReadingSubmit(
     };
   }
 }
+
+export async function handleTranslationSubmit(
+  translation: string,
+  originalText: string
+) {
+  try {
+    const response = await fetch("/api/translation", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        translation,
+        originalText,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      return {
+        success: true,
+        data: {
+          score: data.score,
+          totalScore: data.totalScore,
+          accuracy: (data.score / data.totalScore) * 100,
+        },
+      };
+    } else {
+      throw new Error(data.error || "提交失败");
+    }
+  } catch (error) {
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "提交失败",
+    };
+  }
+}

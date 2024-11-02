@@ -1,15 +1,28 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { handleListeningSubmit, handleReadingSubmit } from "@/app/utils/submitHandlers";
+import {
+  handleListeningSubmit,
+  handleReadingSubmit,
+  handleTranslationSubmit,
+} from "@/app/utils/submitHandlers";
 
 interface SubmitButtonProps {
   section: "writing" | "listening" | "reading" | "translation";
   year?: string;
   month?: string;
   set?: string;
+  translationData?: {
+    ChinesePassage: string;
+  };
 }
 
-const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
+const SubmitButton = ({
+  section,
+  year,
+  month,
+  set,
+  translationData,
+}: SubmitButtonProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -92,7 +105,7 @@ const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
 
         const answers: Record<number, string> = {};
         const inputs = document.querySelectorAll('input[type="radio"]:checked');
-        
+
         inputs.forEach((input) => {
           const name = input.getAttribute("name");
           if (name?.startsWith("question-")) {
@@ -115,7 +128,31 @@ const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
         );
 
         if (result.success) {
+          console.log(result.data);
+        } else {
+          throw new Error(result.error);
+        }
+      } else if (section === "translation") {
+        const translationText = (
+          document.getElementById("translation") as HTMLTextAreaElement
+        )?.value;
 
+        if (!translationText?.trim()) {
+          alert("请输入翻译内容");
+          return;
+        }
+
+        if (!translationData) {
+          alert("缺少翻译原文");
+          return;
+        }
+
+        const result = await handleTranslationSubmit(
+          translationText,
+          translationData.ChinesePassage
+        );
+
+        if (result.success) {
           console.log(result.data);
         } else {
           throw new Error(result.error);

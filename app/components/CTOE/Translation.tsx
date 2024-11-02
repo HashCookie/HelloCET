@@ -10,9 +10,18 @@ type TranslationData = Pick<ExamPaper, "translation">;
 interface TranslationProps extends ExamComponentProps {
   data: TranslationData | null;
   isLoading: boolean;
+  year: string;
+  month: string;
+  set: string;
 }
 
-const Translation = ({ data, isLoading }: TranslationProps) => {
+const Translation = ({
+  data,
+  isLoading,
+  year,
+  month,
+  set,
+}: TranslationProps) => {
   return (
     <ExamSection title="Part IV Translation" isLoading={isLoading}>
       {data && (
@@ -39,7 +48,13 @@ const Translation = ({ data, isLoading }: TranslationProps) => {
               placeholder="在此输入你的翻译..."
             />
           </div>
-          <SubmitButton section="translation" />
+          <SubmitButton
+            section="translation"
+            year={year}
+            month={month}
+            set={set}
+            translationData={data.translation}
+          />
         </>
       )}
     </ExamSection>
