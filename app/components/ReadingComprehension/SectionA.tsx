@@ -1,6 +1,16 @@
 import type { SectionA } from "@/app/types/exam";
 
-const SectionA = ({ passages, options }: SectionA) => {
+interface SectionAProps extends SectionA {
+  answers: Record<number, string>;
+  onAnswerChange: (questionNumber: number, answer: string) => void;
+}
+
+const SectionA = ({
+  passages,
+  options,
+  answers,
+  onAnswerChange,
+}: SectionAProps) => {
   const renderPassageWithBlanks = (text: string) => {
     const parts = text.split(/(\s(?:2[6-9]|3[0-5])\s)/g);
 
@@ -8,13 +18,17 @@ const SectionA = ({ passages, options }: SectionA) => {
       const numberMatch = part.trim().match(/^(?:2[6-9]|3[0-5])$/);
 
       if (numberMatch) {
-        const number = numberMatch[0];
+        const number = parseInt(numberMatch[0]);
         return (
           <span key={index} className="inline-block mx-1">
             <span className="text-gray-500">{number}.</span>
             <input
               type="text"
               name={`question-${number}`}
+              value={answers[number] || ""}
+              onChange={(e) =>
+                onAnswerChange(number, e.target.value.toUpperCase())
+              }
               className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase"
               maxLength={1}
             />

@@ -14,9 +14,22 @@ interface ControlButtonsProps {
   year?: string;
   month?: string;
   set?: string;
+  answers: {
+    writing: string;
+    listening: Record<number, string>;
+    reading: Record<number, string>;
+    translation: string;
+  };
 }
 
-const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtonsProps) => {
+const ControlButtons = ({
+  onReset,
+  activeTab,
+  year,
+  month,
+  set,
+  answers,
+}: ControlButtonsProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
@@ -29,11 +42,7 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
 
       switch (activeTab) {
         case "writing": {
-          const essay = (
-            document.getElementById("writing") as HTMLTextAreaElement
-          )?.value;
-
-          if (!essay?.trim()) {
+          if (!answers.writing?.trim()) {
             alert("请输入作文内容");
             return;
           }
@@ -44,7 +53,7 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              essay,
+              essay: answers.writing,
               examType,
             }),
           });
@@ -65,24 +74,13 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
             return;
           }
 
-          const answers: Record<number, string> = {};
-          const inputs = document.querySelectorAll('input[type="radio"]:checked');
-
-          inputs.forEach((input) => {
-            const name = input.getAttribute("name");
-            if (name?.startsWith("question-")) {
-              const number = parseInt(name.replace("question-", ""));
-              answers[number] = (input as HTMLInputElement).value;
-            }
-          });
-
-          if (Object.keys(answers).length === 0) {
+          if (Object.keys(answers.listening).length === 0) {
             alert("请至少回答一道题目");
             return;
           }
 
           const result = await handleListeningSubmit(
-            answers,
+            answers.listening,
             examType,
             parseInt(year),
             parseInt(month),
@@ -103,40 +101,13 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
             return;
           }
 
-          const answers: Record<number, string> = {};
-
-          // 获取 Section A 的文本输入
-          const textInputs = document.querySelectorAll('input[type="text"]');
-          textInputs.forEach((input) => {
-            const name = input.getAttribute("name");
-            if (name?.startsWith("question-")) {
-              const number = parseInt(name.replace("question-", ""));
-              const value = (input as HTMLInputElement).value;
-              if (value) {
-                answers[number] = value.toUpperCase();
-              }
-            }
-          });
-
-          // 获取 Section B 和 C 的单选答案
-          const radioInputs = document.querySelectorAll(
-            'input[type="radio"]:checked'
-          );
-          radioInputs.forEach((input) => {
-            const name = input.getAttribute("name");
-            if (name?.startsWith("question-")) {
-              const number = parseInt(name.replace("question-", ""));
-              answers[number] = (input as HTMLInputElement).value;
-            }
-          });
-
-          if (Object.keys(answers).length === 0) {
+          if (Object.keys(answers.reading).length === 0) {
             alert("请至少回答一道题目");
             return;
           }
 
           const result = await handleReadingSubmit(
-            answers,
+            answers.reading,
             examType,
             parseInt(year),
             parseInt(month),
@@ -152,11 +123,7 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
         }
 
         case "translation": {
-          const translationText = (
-            document.getElementById("translation") as HTMLTextAreaElement
-          )?.value;
-
-          if (!translationText?.trim()) {
+          if (!answers.translation?.trim()) {
             alert("请输入翻译内容");
             return;
           }
@@ -168,7 +135,7 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
           }
 
           const result = await handleTranslationSubmit(
-            translationText,
+            answers.translation,
             originalText
           );
 
@@ -190,7 +157,7 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
 
   return (
     <div className="flex justify-end space-x-4 pr-4">
-      <button 
+      <button
         className={`px-6 py-2 text-white rounded-md transition-colors ${
           isSubmitting
             ? "bg-gray-400 cursor-not-allowed"
@@ -201,7 +168,7 @@ const ControlButtons = ({ onReset, activeTab, year, month, set }: ControlButtons
       >
         {isSubmitting ? "提交中..." : "提交试卷"}
       </button>
-      <button 
+      <button
         className="px-6 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors"
         onClick={onReset}
       >

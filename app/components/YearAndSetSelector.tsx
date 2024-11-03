@@ -23,6 +23,15 @@ interface PaperData {
   }[];
 }
 
+interface Answers {
+  writing: string;
+  listening: Record<number, string>;
+  reading: Record<number, string>;
+  translation: string;
+}
+
+type AnswerValue = Answers[keyof Answers];
+
 const YearAndSetSelector = () => {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
@@ -39,6 +48,13 @@ const YearAndSetSelector = () => {
   const [selectedSet, setSelectedSet] = useState<string>("");
 
   const [activeTab, setActiveTab] = useState("writing");
+
+  const [answers, setAnswers] = useState<Answers>({
+    writing: "",
+    listening: {},
+    reading: {},
+    translation: "",
+  });
 
   const { data: writingData, isLoading: writingLoading } = useExamData<
     Pick<ExamPaper, "writing">
@@ -115,6 +131,16 @@ const YearAndSetSelector = () => {
     setSelectedSet("");
   };
 
+  const handleAnswerChange = (
+    section: keyof Answers,
+    newAnswer: AnswerValue
+  ) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [section]: newAnswer,
+    }));
+  };
+
   const renderExamContent = () => {
     switch (activeTab) {
       case "writing":
@@ -125,6 +151,8 @@ const YearAndSetSelector = () => {
             set={selectedSet}
             data={writingData}
             isLoading={writingLoading}
+            answer={answers.writing}
+            onAnswerChange={(value) => handleAnswerChange("writing", value)}
           />
         );
       case "listening":
@@ -135,6 +163,8 @@ const YearAndSetSelector = () => {
             set={selectedSet}
             data={listeningData}
             isLoading={listeningLoading}
+            answers={answers.listening}
+            onAnswerChange={(value) => handleAnswerChange("listening", value)}
           />
         );
       case "reading":
@@ -145,6 +175,8 @@ const YearAndSetSelector = () => {
             set={selectedSet}
             data={readingData}
             isLoading={readingLoading}
+            answers={answers.reading}
+            onAnswerChange={(value) => handleAnswerChange("reading", value)}
           />
         );
       case "translation":
@@ -155,6 +187,8 @@ const YearAndSetSelector = () => {
             set={selectedSet}
             data={translationData}
             isLoading={translationLoading}
+            answer={answers.translation}
+            onAnswerChange={(value) => handleAnswerChange("translation", value)}
           />
         );
       default:
@@ -173,12 +207,13 @@ const YearAndSetSelector = () => {
               {selectedYear}年{selectedMonth}月大学英语{examType}真题（卷
               {selectedSet}）
             </h1>
-            <ControlButtons 
+            <ControlButtons
               onReset={handleReset}
               activeTab={activeTab}
               year={selectedYear}
               month={selectedMonth}
               set={selectedSet}
+              answers={answers}
             />
           </div>
 

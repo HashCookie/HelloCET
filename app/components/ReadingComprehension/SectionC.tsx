@@ -1,11 +1,18 @@
 import type { Option, SectionC as SectionCType } from "@/app/types/exam";
 
+interface SectionCProps extends SectionCType {
+  answers: Record<number, string>;
+  onAnswerChange: (questionNumber: number, answer: string) => void;
+}
+
 const SectionC = ({
   passagesOne,
   questionsOne,
   passagesTwo,
   questionsTwo,
-}: SectionCType) => {
+  answers,
+  onAnswerChange,
+}: SectionCProps) => {
   const renderQuestions = (questions: SectionCType["questionsOne"]) => (
     <div className="space-y-6 text-left">
       {questions.map((question) => (
@@ -22,6 +29,8 @@ const SectionC = ({
                     name={`question-${question.number}`}
                     id={`question-${question.number}-${key}`}
                     value={key}
+                    checked={answers[question.number] === key}
+                    onChange={() => onAnswerChange(question.number, key)}
                     className="mt-1"
                   />
                   <label htmlFor={`question-${question.number}-${key}`}>

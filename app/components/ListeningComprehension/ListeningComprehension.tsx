@@ -13,6 +13,8 @@ interface ListeningData {
 interface ListeningProps extends ExamComponentProps {
   data: ListeningData | null;
   isLoading: boolean;
+  answers: Record<number, string>;
+  onAnswerChange: (answers: Record<number, string>) => void;
 }
 
 interface SectionProps {
@@ -24,9 +26,18 @@ interface SectionProps {
     endIndex: number;
   }[];
   questions: ListeningQuestion[];
+  answers: Record<number, string>;
+  onAnswerChange: (questionNumber: number, answer: string) => void;
 }
 
-const Section = ({ title, directions, groups, questions }: SectionProps) => {
+const Section = ({
+  title,
+  directions,
+  groups,
+  questions,
+  answers,
+  onAnswerChange,
+}: SectionProps) => {
   return (
     <div className="mb-8">
       <h2 className="text-lg font-bold mb-6">{title}</h2>
@@ -37,6 +48,8 @@ const Section = ({ title, directions, groups, questions }: SectionProps) => {
           key={index}
           description={group.description}
           questions={questions.slice(group.startIndex, group.endIndex)}
+          answers={answers}
+          onAnswerChange={onAnswerChange}
         />
       ))}
     </div>
@@ -46,10 +59,16 @@ const Section = ({ title, directions, groups, questions }: SectionProps) => {
 const ListeningComprehension = ({
   data,
   isLoading,
-  year,
-  month,
-  set,
+  answers,
+  onAnswerChange,
 }: ListeningProps) => {
+  const handleAnswerChange = (questionNumber: number, answer: string) => {
+    onAnswerChange({
+      ...answers,
+      [questionNumber]: answer,
+    });
+  };
+
   return (
     <ExamSection title="Part II Listening Comprehension" isLoading={isLoading}>
       {data && (
@@ -61,6 +80,8 @@ const ListeningComprehension = ({
               directions={section.directions}
               groups={section.groups}
               questions={data.listeningComprehension}
+              answers={answers}
+              onAnswerChange={handleAnswerChange}
             />
           ))}
         </div>

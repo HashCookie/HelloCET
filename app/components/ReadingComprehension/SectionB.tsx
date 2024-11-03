@@ -1,6 +1,17 @@
 import type { SectionB } from "@/app/types/exam";
 
-const SectionB = ({ passageTitle, passages, questions }: SectionB) => {
+interface SectionBProps extends SectionB {
+  answers: Record<number, string>;
+  onAnswerChange: (questionNumber: number, answer: string) => void;
+}
+
+const SectionB = ({
+  passageTitle,
+  passages,
+  questions,
+  answers,
+  onAnswerChange,
+}: SectionBProps) => {
   return (
     <div className="mb-8">
       <h3 className="text-lg font-semibold mb-4">Section B</h3>
@@ -29,6 +40,10 @@ const SectionB = ({ passageTitle, passages, questions }: SectionB) => {
             <input
               type="text"
               name={`question-${question.number}`}
+              value={answers[question.number] || ""}
+              onChange={(e) =>
+                onAnswerChange(question.number, e.target.value.toUpperCase())
+              }
               className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase"
               maxLength={1}
             />

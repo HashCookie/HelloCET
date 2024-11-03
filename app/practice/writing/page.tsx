@@ -71,7 +71,6 @@ export default function PracticeWriting() {
             placeholder="在此输入你的作文..."
           />
         </div>
-
       </div>
     </ExamSection>
   );

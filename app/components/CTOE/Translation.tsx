@@ -9,9 +9,16 @@ type TranslationData = Pick<ExamPaper, "translation">;
 interface TranslationProps extends ExamComponentProps {
   data: TranslationData | null;
   isLoading: boolean;
+  answer: string;
+  onAnswerChange: (value: string) => void;
 }
 
-const Translation = ({ data, isLoading }: TranslationProps) => {
+const Translation = ({
+  data,
+  isLoading,
+  answer,
+  onAnswerChange,
+}: TranslationProps) => {
   return (
     <ExamSection title="Part IV Translation" isLoading={isLoading}>
       {data && (
@@ -33,6 +40,8 @@ const Translation = ({ data, isLoading }: TranslationProps) => {
             <textarea
               id="translation"
               rows={10}
+              value={answer}
+              onChange={(e) => onAnswerChange(e.target.value)}
               className="w-full p-4 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
               placeholder="在此输入你的翻译..."
             />
