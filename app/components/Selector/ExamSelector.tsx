@@ -1,3 +1,5 @@
+import { useRouter } from "next/navigation";
+
 interface ExamSelectorProps {
   years: number[];
   months: number[];
@@ -23,6 +25,8 @@ const ExamSelector = ({
   onSetChange,
   onSubmit,
 }: ExamSelectorProps) => {
+  const router = useRouter();
+
   return (
     <div className="flex flex-wrap justify-center items-center gap-4">
       <select
@@ -72,6 +76,13 @@ const ExamSelector = ({
         disabled={!selectedYear || !selectedMonth || !selectedSet}
       >
         加载数据
+      </button>
+
+      <button
+        onClick={() => router.push("/")}
+        className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors border border-gray-300 rounded-md hover:bg-gray-50"
+      >
+        返回首页
       </button>
     </div>
   );
