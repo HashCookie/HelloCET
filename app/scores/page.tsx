@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Table } from "@radix-ui/themes";
 import {
   formatDurationFromSeconds,
   formatDateToBeijingTime,
@@ -106,41 +105,68 @@ const ScoresHistory = () => {
       </h2>
       {records.length > 0 ? (
         <>
-          <Table.Root variant="surface">
-            <Table.Header>
-              <Table.Row>
-                <Table.ColumnHeaderCell>日期</Table.ColumnHeaderCell>
-                <Table.ColumnHeaderCell>卷子</Table.ColumnHeaderCell>
-                <Table.ColumnHeaderCell>分数</Table.ColumnHeaderCell>
-                <Table.ColumnHeaderCell>已完成</Table.ColumnHeaderCell>
-                <Table.ColumnHeaderCell>耗时</Table.ColumnHeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>
-              {records.map((record, index) => (
-                <Table.Row key={index}>
-                  <Table.Cell>
-                    {formatDateToBeijingTime(record.date)}
-                  </Table.Cell>
-                  <Table.Cell>{record.type}</Table.Cell>
-                  <Table.Cell>{record.score}分</Table.Cell>
-                  <Table.Cell>{record.completedQuestions}</Table.Cell>
-                  <Table.Cell>{record.duration}</Table.Cell>
-                </Table.Row>
-              ))}
-            </Table.Body>
-          </Table.Root>
-          <div className="text-center mt-6">
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
+                    日期
+                  </th>
+                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
+                    卷子
+                  </th>
+                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
+                    分数
+                  </th>
+                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
+                    已完成
+                  </th>
+                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
+                    耗时
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {records.map((record, index) => (
+                  <tr
+                    key={index}
+                    className="hover:bg-gray-50 transition-colors"
+                  >
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                      {formatDateToBeijingTime(record.date)}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
+                      {record.type}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
+                      <span className="text-blue-600 font-medium">
+                        {record.score}分
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                      {record.completedQuestions}题
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                      {record.duration}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="text-center mt-8">
             <button
-              className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
               onClick={clearRecords}
+              className="px-6 py-2.5 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200 shadow-sm"
             >
               清除数据
             </button>
           </div>
         </>
       ) : (
-        <p className="text-center text-gray-600">暂无成绩记录</p>
+        <div className="text-center py-12 text-gray-500">
+          <p>暂无成绩记录</p>
+        </div>
       )}
     </div>
   );

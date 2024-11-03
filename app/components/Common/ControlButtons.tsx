@@ -21,6 +21,14 @@ interface ControlButtonsProps {
   };
 }
 
+interface ScoreData {
+  score: number;
+  totalQuestions?: number;
+  accuracy?: number;
+  totalScore?: number;
+  details?: unknown;
+}
+
 const ControlButtons = ({
   onReset,
   year,
@@ -38,6 +46,7 @@ const ControlButtons = ({
     try {
       setIsSubmitting(true);
       const submissionResults = [];
+      const attemptId = new Date().getTime().toString();
 
       // 检查并提交写作部分
       if (answers.writing?.trim()) {
@@ -56,6 +65,7 @@ const ControlButtons = ({
           const data = await response.json();
           if (response.ok) {
             submissionResults.push({ section: "写作", data });
+            saveScoreToLocalStorage("writing", data, examType, attemptId);
           }
         } catch {
           submissionResults.push({ section: "写作", error: "提交失败" });
@@ -73,8 +83,14 @@ const ControlButtons = ({
             parseInt(set)
           );
 
-          if (result.success) {
+          if (result.success && result.data) {
             submissionResults.push({ section: "听力", data: result.data });
+            saveScoreToLocalStorage(
+              "listening",
+              result.data,
+              examType,
+              attemptId
+            );
           } else {
             submissionResults.push({ section: "听力", error: result.error });
           }
@@ -94,8 +110,14 @@ const ControlButtons = ({
             parseInt(set)
           );
 
-          if (result.success) {
+          if (result.success && result.data) {
             submissionResults.push({ section: "阅读", data: result.data });
+            saveScoreToLocalStorage(
+              "reading",
+              result.data,
+              examType,
+              attemptId
+            );
           } else {
             submissionResults.push({ section: "阅读", error: result.error });
           }
@@ -114,8 +136,14 @@ const ControlButtons = ({
               originalText
             );
 
-            if (result.success) {
+            if (result.success && result.data) {
               submissionResults.push({ section: "翻译", data: result.data });
+              saveScoreToLocalStorage(
+                "translation",
+                result.data,
+                examType,
+                attemptId
+              );
             } else {
               submissionResults.push({ section: "翻译", error: result.error });
             }
@@ -130,6 +158,7 @@ const ControlButtons = ({
         alert("请至少完成一个部分的答题");
         return;
       }
+
       // 显示提交结果
       console.log("提交结果:", submissionResults);
     } catch (error) {
@@ -138,6 +167,36 @@ const ControlButtons = ({
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const saveScoreToLocalStorage = (
+    section: string,
+    data: ScoreData,
+    examType: string,
+    attemptId: string
+  ) => {
+    const storageKey = `${section}Scores`;
+    const existingScores = localStorage.getItem(storageKey);
+    const scores = existingScores ? JSON.parse(existingScores) : [];
+
+    const scoreRecord = {
+      date: new Date().toISOString(),
+      type: examType,
+      score:
+        section === "writing" || section === "translation"
+          ? data.score
+          : data.score * 7.1,
+      completedQuestions:
+        section === "writing" || section === "translation"
+          ? 1
+          : data.totalQuestions,
+      duration: "计时功能待实现",
+      seconds: 0,
+      attemptId,
+    };
+
+    scores.push(scoreRecord);
+    localStorage.setItem(storageKey, JSON.stringify(scores));
   };
 
   return (
