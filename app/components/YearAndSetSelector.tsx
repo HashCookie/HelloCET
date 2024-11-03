@@ -174,8 +174,11 @@ const YearAndSetSelector = () => {
               {selectedSet}）
             </h1>
             <ControlButtons 
-              onReset={handleReset} 
-              onSubmit={handleSubmit}
+              onReset={handleReset}
+              activeTab={activeTab}
+              year={selectedYear}
+              month={selectedMonth}
+              set={selectedSet}
             />
           </div>
 
