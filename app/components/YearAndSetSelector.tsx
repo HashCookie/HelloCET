@@ -94,6 +94,13 @@ const YearAndSetSelector = () => {
     setSelectedYear(year);
     setSelectedMonth("");
     setSelectedSet("");
+    setActiveTab("writing");
+    setAnswers({
+      writing: "",
+      listening: {},
+      reading: {},
+      translation: "",
+    });
     if (year && paperData) {
       const availableMonths = paperData.papers
         .filter((p) => p.year === parseInt(year))
@@ -129,6 +136,13 @@ const YearAndSetSelector = () => {
     setSelectedYear("");
     setSelectedMonth("");
     setSelectedSet("");
+    setActiveTab("writing");
+    setAnswers({
+      writing: "",
+      listening: {},
+      reading: {},
+      translation: "",
+    });
   };
 
   const handleAnswerChange = (
