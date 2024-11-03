@@ -8,7 +8,7 @@ interface QuestionGroupProps {
 const QuestionGroup = ({ description, questions }: QuestionGroupProps) => {
   return (
     <div className="mb-8">
-      <p className="text-sm text-gray-600 italic mb-4 text-left">
+      <p className="text-sm text-gray-600 not-italic mb-4 text-left">
         {description}
       </p>
       <div className="space-y-8">
