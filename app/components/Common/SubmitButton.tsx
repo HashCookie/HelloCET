@@ -95,9 +95,23 @@ const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
         }
 
         const answers: Record<number, string> = {};
-        const inputs = document.querySelectorAll('input[type="radio"]:checked');
+        
+        // 获取 Section A 的文本输入
+        const textInputs = document.querySelectorAll('input[type="text"]');
+        textInputs.forEach((input) => {
+          const name = input.getAttribute("name");
+          if (name?.startsWith("question-")) {
+            const number = parseInt(name.replace("question-", ""));
+            const value = (input as HTMLInputElement).value;
+            if (value) {
+              answers[number] = value.toUpperCase();
+            }
+          }
+        });
 
-        inputs.forEach((input) => {
+        // 获取 Section B 和 C 的单选答案
+        const radioInputs = document.querySelectorAll('input[type="radio"]:checked');
+        radioInputs.forEach((input) => {
           const name = input.getAttribute("name");
           if (name?.startsWith("question-")) {
             const number = parseInt(name.replace("question-", ""));

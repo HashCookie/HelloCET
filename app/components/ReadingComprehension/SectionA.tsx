@@ -18,7 +18,7 @@ const SectionA = ({ passages, options }: SectionAProps) => {
             <input
               type="text"
               name={`question-${number}`}
-              className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent"
+              className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase"
               maxLength={1}
             />
           </span>
