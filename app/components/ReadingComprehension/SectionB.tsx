@@ -5,12 +5,12 @@ const SectionB = ({ passageTitle, passages, questions }: SectionB) => {
     <div className="mb-8">
       <h3 className="text-lg font-semibold mb-4">Section B</h3>
       <h3 className="text-sm text-gray-600 mb-4 text-left">
-        <span className="font-semibold">Directions:</span>In this section, you
-        are going to read a passage with ten statements attached to it. Each
-        statement contains information given in one of the paragraphs. Identify
-        the paragraph from which the information is derived. You may choose a
-        paragraph more than once. Each paragraph is marked with a letter. Answer
-        the questions by marking the corresponding letter on Answer Sheet 2.
+        In this section, you are going to read a passage with ten statements
+        attached to it. Each statement contains information given in one of the
+        paragraphs. Identify the paragraph from which the information is
+        derived. You may choose a paragraph more than once. Each paragraph is
+        marked with a letter. Answer the questions by marking the corresponding
+        letter on Answer Sheet 2.
       </h3>
       <h4 className="text-md font-medium mb-4 text-center">{passageTitle}</h4>
       <div className="space-y-4 mb-6 text-left">

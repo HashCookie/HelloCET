@@ -40,16 +40,15 @@ const SectionC = ({
     <div className="mb-8">
       <h3 className="text-lg font-semibold mb-4">Section C</h3>
       <h3 className="text-sm text-gray-600 mb-4 text-left">
-        <span className="font-semibold">Directions:</span> There are 2 passages
-        in this section. Each passage is followed by some questions or
-        unfinished statements. For each of them, there are four choices marked
-        A), B), C), and D). You should decide on the best choice and mark the
-        corresponding letter on Answer Sheet 2 with a single line through the
-        center.
+        There are 2 passages in this section. Each passage is followed by some
+        questions or unfinished statements. For each of them, there are four
+        choices marked A), B), C), and D). You should decide on the best choice
+        and mark the corresponding letter on Answer Sheet 2 with a single line
+        through the center.
       </h3>
 
       {/* Passage One */}
-      <h3 className="text-md font-medium mb-4 text-left">Passage One</h3>
+      <h3 className="text-md font-medium mb-4 text-center">Passage One</h3>
       <h3 className="text-sm text-gray-600 mb-4 text-left">
         Questions 46 to 50 are based on the following passage.
       </h3>
@@ -65,7 +64,7 @@ const SectionC = ({
       </div>
 
       {/* Passage Two */}
-      <h3 className="text-md font-medium mb-4 text-left">Passage Two</h3>
+      <h3 className="text-md font-medium mb-4 text-center">Passage Two</h3>
       <h3 className="text-sm text-gray-600 mb-4 text-left">
         Questions 51 to 55 are based on the following passage.
       </h3>

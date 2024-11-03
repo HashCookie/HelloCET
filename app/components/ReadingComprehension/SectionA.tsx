@@ -29,14 +29,13 @@ const SectionA = ({ passages, options }: SectionA) => {
     <div className="mb-8">
       <h3 className="text-lg font-semibold mb-4">Section A</h3>
       <h3 className="text-sm text-gray-600 mb-4 text-left">
-        <span className="font-semibold">Directions:</span> In this section,
-        there is a passage with ten blanks. You are required to select one word
-        for each blank from a list of choices given in a word bank following the
-        passage. Read the passage through carefully before making your choices.
-        Each choice in the bank is identified by a letter. Please mark the
-        corresponding letter for each item on Answer Sheet 2 with a single line
-        through the centre. You may not use any of the words in the bank more
-        than once.
+        In this section, there is a passage with ten blanks. You are required to
+        select one word for each blank from a list of choices given in a word
+        bank following the passage. Read the passage through carefully before
+        making your choices. Each choice in the bank is identified by a letter.
+        Please mark the corresponding letter for each item on Answer Sheet 2
+        with a single line through the centre. You may not use any of the words
+        in the bank more than once.
       </h3>
       <h3 className="text-sm text-gray-600 mb-4 text-left">
         Questions 26 to 35 are based on the following passage.
