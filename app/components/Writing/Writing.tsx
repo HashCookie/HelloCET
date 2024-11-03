@@ -3,7 +3,6 @@
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
-import SubmitButton from "../Common/SubmitButton";
 
 type WritingData = Pick<ExamPaper, "writing">;
 
@@ -30,7 +29,6 @@ const Writing = ({ data, isLoading }: WritingProps) => {
               placeholder="在此输入你的作文..."
             />
           </div>
-          <SubmitButton section="writing" />
         </>
       )}
     </ExamSection>

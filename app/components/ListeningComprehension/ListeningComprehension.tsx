@@ -5,7 +5,6 @@ import type { ListeningQuestion } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
 import QuestionGroup from "./QuestionGroup";
 import { SECTION_CONFIG } from "./constants";
-import SubmitButton from "../Common/SubmitButton";
 
 interface ListeningData {
   listeningComprehension: ListeningQuestion[];
@@ -66,7 +65,6 @@ const ListeningComprehension = ({
           ))}
         </div>
       )}
-      <SubmitButton section="listening" year={year} month={month} set={set} />
     </ExamSection>
   );
 };

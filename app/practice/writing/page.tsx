@@ -1,7 +1,6 @@
 "use client";
 
 import ExamSection from "@/app/components/Common/ExamSection";
-import SubmitButton from "@/app/components/Common/SubmitButton";
 import { useState } from "react";
 
 interface TopicCardProps {
@@ -73,7 +72,6 @@ export default function PracticeWriting() {
           />
         </div>
 
-        <SubmitButton section="writing" />
       </div>
     </ExamSection>
   );
