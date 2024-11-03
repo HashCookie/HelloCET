@@ -95,7 +95,7 @@ const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
         }
 
         const answers: Record<number, string> = {};
-        
+
         // 获取 Section A 的文本输入
         const textInputs = document.querySelectorAll('input[type="text"]');
         textInputs.forEach((input) => {
@@ -110,7 +110,9 @@ const SubmitButton = ({ section, year, month, set }: SubmitButtonProps) => {
         });
 
         // 获取 Section B 和 C 的单选答案
-        const radioInputs = document.querySelectorAll('input[type="radio"]:checked');
+        const radioInputs = document.querySelectorAll(
+          'input[type="radio"]:checked'
+        );
         radioInputs.forEach((input) => {
           const name = input.getAttribute("name");
           if (name?.startsWith("question-")) {

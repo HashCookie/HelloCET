@@ -14,9 +14,6 @@ interface ListeningData {
 interface ListeningProps extends ExamComponentProps {
   data: ListeningData | null;
   isLoading: boolean;
-  year: string;
-  month: string;
-  set: string;
 }
 
 interface SectionProps {
