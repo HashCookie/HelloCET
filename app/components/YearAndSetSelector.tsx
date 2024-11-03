@@ -173,7 +173,10 @@ const YearAndSetSelector = () => {
               {selectedYear}年{selectedMonth}月大学英语{examType}真题（卷
               {selectedSet}）
             </h1>
-            <ControlButtons onReset={handleReset} />
+            <ControlButtons 
+              onReset={handleReset} 
+              onSubmit={handleSubmit}
+            />
           </div>
 
           <ExamTabs activeTab={activeTab} onTabChange={setActiveTab} />
