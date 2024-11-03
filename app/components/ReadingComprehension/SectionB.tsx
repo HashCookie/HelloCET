@@ -1,15 +1,6 @@
-interface Question {
-  number: number;
-  statement: string;
-}
+import type { SectionB } from "@/app/types/exam";
 
-interface SectionBProps {
-  passageTitle: string;
-  passages: string[];
-  questions: Question[];
-}
-
-const SectionB = ({ passageTitle, passages, questions }: SectionBProps) => {
+const SectionB = ({ passageTitle, passages, questions }: SectionB) => {
   return (
     <div className="mb-8">
       <h3 className="text-lg font-semibold mb-4">Section B</h3>

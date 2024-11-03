@@ -1,9 +1,6 @@
-interface SectionAProps {
-  passages: string[];
-  options: Record<string, string>;
-}
+import type { SectionA } from "@/app/types/exam";
 
-const SectionA = ({ passages, options }: SectionAProps) => {
+const SectionA = ({ passages, options }: SectionA) => {
   const renderPassageWithBlanks = (text: string) => {
     const parts = text.split(/(\s(?:2[6-9]|3[0-5])\s)/g);
 
