@@ -10,7 +10,6 @@ import {
 
 interface ControlButtonsProps {
   onReset: () => void;
-  activeTab: string;
   year?: string;
   month?: string;
   set?: string;
@@ -24,7 +23,6 @@ interface ControlButtonsProps {
 
 const ControlButtons = ({
   onReset,
-  activeTab,
   year,
   month,
   set,
@@ -39,14 +37,11 @@ const ControlButtons = ({
 
     try {
       setIsSubmitting(true);
+      const submissionResults = [];
 
-      switch (activeTab) {
-        case "writing": {
-          if (!answers.writing?.trim()) {
-            alert("请输入作文内容");
-            return;
-          }
-
+      // 检查并提交写作部分
+      if (answers.writing?.trim()) {
+        try {
           const response = await fetch("/api/writing", {
             method: "POST",
             headers: {
@@ -59,26 +54,17 @@ const ControlButtons = ({
           });
 
           const data = await response.json();
-
           if (response.ok) {
-            console.log("作文评分结果:", data);
-          } else {
-            throw new Error(data.error || "提交失败");
+            submissionResults.push({ section: "写作", data });
           }
-          break;
+        } catch {
+          submissionResults.push({ section: "写作", error: "提交失败" });
         }
+      }
 
-        case "listening": {
-          if (!year || !month || !set) {
-            alert("缺少试卷信息");
-            return;
-          }
-
-          if (Object.keys(answers.listening).length === 0) {
-            alert("请至少回答一道题目");
-            return;
-          }
-
+      // 检查并提交听力部分
+      if (Object.keys(answers.listening).length > 0 && year && month && set) {
+        try {
           const result = await handleListeningSubmit(
             answers.listening,
             examType,
@@ -88,24 +74,18 @@ const ControlButtons = ({
           );
 
           if (result.success) {
-            console.log(result.data);
+            submissionResults.push({ section: "听力", data: result.data });
           } else {
-            throw new Error(result.error);
+            submissionResults.push({ section: "听力", error: result.error });
           }
-          break;
+        } catch {
+          submissionResults.push({ section: "听力", error: "提交失败" });
         }
+      }
 
-        case "reading": {
-          if (!year || !month || !set) {
-            alert("缺少试卷信息");
-            return;
-          }
-
-          if (Object.keys(answers.reading).length === 0) {
-            alert("请至少回答一道题目");
-            return;
-          }
-
+      // 检查并提交阅读部分
+      if (Object.keys(answers.reading).length > 0 && year && month && set) {
+        try {
           const result = await handleReadingSubmit(
             answers.reading,
             examType,
@@ -115,38 +95,43 @@ const ControlButtons = ({
           );
 
           if (result.success) {
-            console.log(result.data);
+            submissionResults.push({ section: "阅读", data: result.data });
           } else {
-            throw new Error(result.error);
+            submissionResults.push({ section: "阅读", error: result.error });
           }
-          break;
-        }
-
-        case "translation": {
-          if (!answers.translation?.trim()) {
-            alert("请输入翻译内容");
-            return;
-          }
-
-          const originalText = document.querySelector(".prose p")?.textContent;
-          if (!originalText) {
-            alert("获取原文失败");
-            return;
-          }
-
-          const result = await handleTranslationSubmit(
-            answers.translation,
-            originalText
-          );
-
-          if (result.success) {
-            console.log(result.data);
-          } else {
-            throw new Error(result.error);
-          }
-          break;
+        } catch {
+          submissionResults.push({ section: "阅读", error: "提交失败" });
         }
       }
+
+      // 检查并提交翻译部分
+      if (answers.translation?.trim()) {
+        try {
+          const originalText = document.querySelector(".prose p")?.textContent;
+          if (originalText) {
+            const result = await handleTranslationSubmit(
+              answers.translation,
+              originalText
+            );
+
+            if (result.success) {
+              submissionResults.push({ section: "翻译", data: result.data });
+            } else {
+              submissionResults.push({ section: "翻译", error: result.error });
+            }
+          }
+        } catch {
+          submissionResults.push({ section: "翻译", error: "提交失败" });
+        }
+      }
+
+      // 检查提交结果
+      if (submissionResults.length === 0) {
+        alert("请至少完成一个部分的答题");
+        return;
+      }
+      // 显示提交结果
+      console.log("提交结果:", submissionResults);
     } catch (error) {
       console.error("提交失败:", error);
       alert("提交失败,请重试");

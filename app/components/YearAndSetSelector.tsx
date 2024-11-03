@@ -223,7 +223,6 @@ const YearAndSetSelector = () => {
             </h1>
             <ControlButtons
               onReset={handleReset}
-              activeTab={activeTab}
               year={selectedYear}
               month={selectedMonth}
               set={selectedSet}
