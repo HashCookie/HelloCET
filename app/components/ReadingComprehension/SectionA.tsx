@@ -4,6 +4,30 @@ interface SectionAProps {
 }
 
 const SectionA = ({ passages, options }: SectionAProps) => {
+  const renderPassageWithBlanks = (text: string) => {
+    const parts = text.split(/(\s(?:2[6-9]|3[0-5])\s)/g);
+
+    return parts.map((part, index) => {
+      const numberMatch = part.trim().match(/^(?:2[6-9]|3[0-5])$/);
+
+      if (numberMatch) {
+        const number = numberMatch[0];
+        return (
+          <span key={index} className="inline-block mx-1">
+            <span className="text-gray-500">{number}.</span>
+            <input
+              type="text"
+              name={`question-${number}`}
+              className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent"
+              maxLength={1}
+            />
+          </span>
+        );
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
+
   return (
     <div className="mb-8">
       <h3 className="text-lg font-semibold mb-4">Section A</h3>
@@ -23,7 +47,7 @@ const SectionA = ({ passages, options }: SectionAProps) => {
       <div className="space-y-4 mb-6 text-left">
         {passages.map((passage, index) => (
           <p key={index} className="text-gray-700 leading-relaxed">
-            {passage}
+            {renderPassageWithBlanks(passage)}
           </p>
         ))}
       </div>
