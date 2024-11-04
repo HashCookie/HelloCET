@@ -181,7 +181,7 @@ const ControlButtons = ({
 
     const scoreRecord = {
       date: new Date().toISOString(),
-      type: examType,
+      type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
       score:
         section === "writing" || section === "translation"
           ? data.score
