@@ -8,10 +8,9 @@ import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
 import Translation from "./CTOE/Translation";
 import ExamSelector from "./Selector/ExamSelector";
 import LoadingSpinner from "./Common/LoadingSpinner";
-import ControlButtons from "./Common/ControlButtons";
-import ExamTabs from "./Common/ExamTabs";
 import { useExamData } from "@/app/hooks/useExamData";
 import type { ExamPaper } from "@/app/types/exam";
+import ExamHeader from "./Common/ExamHeader";
 
 interface PaperData {
   years: number[];
@@ -211,29 +210,25 @@ const YearAndSetSelector = () => {
   };
 
   return (
-    <div className="font-[sans-serif] space-y-4">
+    <div className="font-[sans-serif]">
       {isLoading ? (
         <LoadingSpinner />
       ) : showControls ? (
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="mb-6 flex justify-between items-center">
-            <h1 className="text-2xl font-bold">
-              {selectedYear}年{selectedMonth}月大学英语{examType}真题（卷
-              {selectedSet}）
-            </h1>
-            <ControlButtons
-              onReset={handleReset}
-              year={selectedYear}
-              month={selectedMonth}
-              set={selectedSet}
-              answers={answers}
-            />
-          </div>
-
-          <ExamTabs activeTab={activeTab} onTabChange={setActiveTab} />
-
-          <div className="mt-6 bg-white rounded-lg shadow-sm">
-            {renderExamContent()}
+        <div>
+          <ExamHeader
+            title={`${selectedYear}年${selectedMonth}月大学英语${examType}真题（卷${selectedSet}）`}
+            activeTab={activeTab}
+            onTabChange={setActiveTab}
+            onReset={handleReset}
+            year={selectedYear}
+            month={selectedMonth}
+            set={selectedSet}
+            answers={answers}
+          />
+          <div className="pt-28 max-w-6xl mx-auto px-4">
+            <div className="bg-white rounded-lg shadow-sm">
+              {renderExamContent()}
+            </div>
           </div>
         </div>
       ) : (
