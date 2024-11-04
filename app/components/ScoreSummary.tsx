@@ -1,4 +1,5 @@
 import { formatDurationFromSeconds } from "@/utils/dateConversion";
+import { useRouter } from "next/navigation";
 
 interface SectionResult {
   section: string;
@@ -14,6 +15,7 @@ interface ScoreSummaryProps {
 }
 
 const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
+  const router = useRouter();
   const sections = ["写作", "听力", "阅读", "翻译"];
   const totalScore = results.reduce(
     (sum, result) => sum + (result.data?.score || 0),
@@ -23,7 +25,7 @@ const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
   const resultMap = new Map(results.map((result) => [result.section, result]));
 
   return (
-    <div className="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+    <div className="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg relative">
       <h1 className="text-2xl font-bold text-center mb-8">考试成绩统计</h1>
 
       <div className="text-center mb-8">
@@ -54,8 +56,17 @@ const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
         })}
       </div>
 
-      <div className="text-center text-gray-600">
+      <div className="text-center text-gray-600 mb-8">
         考试用时：{formatDurationFromSeconds(duration)}
+      </div>
+
+      <div className="flex justify-center">
+        <button
+          onClick={() => router.push("/")}
+          className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+        >
+          返回首页
+        </button>
       </div>
     </div>
   );
