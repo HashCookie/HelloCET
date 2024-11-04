@@ -40,14 +40,24 @@ export async function handleListeningSubmit(
     const totalQuestions = correctAnswers.length;
     const wrongAnswers: number[] = [];
 
-    // 计算得分
+    // 根据题号计算不同部分的分值
     correctAnswers.forEach(({ number, answer }) => {
       if (answers[number]?.toUpperCase() === answer.toUpperCase()) {
-        score++;
+        // Section A (1-7) 和 Section B (8-15): 7.1分/题
+        if (number <= 15) {
+          score += 7.1;
+        }
+        // Section C (16-25): 14.2分/题
+        else {
+          score += 14.2;
+        }
       } else {
         wrongAnswers.push(number);
       }
     });
+
+    // 四舍五入到一位小数
+    score = Math.round(score * 10) / 10;
 
     return {
       success: true,

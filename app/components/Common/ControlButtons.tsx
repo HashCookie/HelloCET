@@ -182,10 +182,7 @@ const ControlButtons = ({
     const scoreRecord = {
       date: new Date().toISOString(),
       type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
-      score:
-        section === "writing" || section === "translation"
-          ? data.score
-          : data.score * 7.1,
+      score: data.score,
       completedQuestions:
         section === "writing" || section === "translation"
           ? 1
