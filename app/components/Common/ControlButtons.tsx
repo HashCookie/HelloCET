@@ -181,6 +181,10 @@ const ControlButtons = ({
         })
       );
 
+      // 清除考试状态和答案
+      localStorage.removeItem("EXAM_STATE");
+      localStorage.removeItem("EXAM_ANSWERS");
+
       // 跳转到成绩统计页面
       window.location.href = "/exam-result";
     } catch (error) {
