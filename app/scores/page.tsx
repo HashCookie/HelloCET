@@ -98,6 +98,20 @@ const useScoreRecords = () => {
 const ScoresHistory = () => {
   const { records, clearRecords } = useScoreRecords();
 
+  const formatCompletedQuestions = (record: ScoreRecord) => {
+    const type = record.type.toLowerCase();
+    if (type.includes('writing')) {
+      return record.completedQuestions ? '写作1篇' : '写作0篇';
+    } else if (type.includes('translation')) {
+      return record.completedQuestions ? '翻译1篇' : '翻译0篇';
+    } else if (type.includes('listening')) {
+      return `听力${record.completedQuestions}/25题`;
+    } else if (type.includes('reading')) {
+      return `阅读${record.completedQuestions}/30题`;
+    }
+    return `${record.completedQuestions}题`;
+  };
+
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">
       <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
@@ -144,7 +158,7 @@ const ScoresHistory = () => {
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                      {record.completedQuestions}题
+                      {formatCompletedQuestions(record)}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
                       {record.duration}

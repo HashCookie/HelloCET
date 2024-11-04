@@ -21,6 +21,13 @@ interface ControlButtonsProps {
   };
 }
 
+interface Answers {
+  writing: string;
+  listening: Record<number, string>;
+  reading: Record<number, string>;
+  translation: string;
+}
+
 interface ScoreData {
   score: number;
   totalQuestions?: number;
@@ -179,14 +186,14 @@ const ControlButtons = ({
     const existingScores = localStorage.getItem(storageKey);
     const scores = existingScores ? JSON.parse(existingScores) : [];
 
+    // 计算已完成的题目数
+    const completedQuestions = getCompletedQuestions(section, answers);
+
     const scoreRecord = {
       date: new Date().toISOString(),
       type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
       score: data.score,
-      completedQuestions:
-        section === "writing" || section === "translation"
-          ? 1
-          : data.totalQuestions,
+      completedQuestions,
       duration: "计时功能待实现",
       seconds: 0,
       attemptId,
@@ -194,6 +201,21 @@ const ControlButtons = ({
 
     scores.push(scoreRecord);
     localStorage.setItem(storageKey, JSON.stringify(scores));
+  };
+
+  const getCompletedQuestions = (section: string, answers: Answers) => {
+    switch (section) {
+      case "writing":
+        return answers.writing?.trim() ? 1 : 0;
+      case "translation":
+        return answers.translation?.trim() ? 1 : 0;
+      case "listening":
+        return Object.keys(answers.listening).length;
+      case "reading":
+        return Object.keys(answers.reading).length;
+      default:
+        return 0;
+    }
   };
 
   return (
