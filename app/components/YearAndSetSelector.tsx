@@ -31,6 +31,11 @@ interface Answers {
 
 type AnswerValue = Answers[keyof Answers];
 
+const STORAGE_KEY = {
+  EXAM_STATE: 'examState',
+  EXAM_ANSWERS: 'currentExamAnswers'
+};
+
 const YearAndSetSelector = () => {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
@@ -95,6 +100,24 @@ const YearAndSetSelector = () => {
     fetchPaperInfo();
   }, [fetchPaperInfo]);
 
+  useEffect(() => {
+    const savedState = localStorage.getItem(STORAGE_KEY.EXAM_STATE);
+    const savedAnswers = localStorage.getItem(STORAGE_KEY.EXAM_ANSWERS);
+    
+    if (savedState) {
+      const state = JSON.parse(savedState);
+      setSelectedYear(state.year);
+      setSelectedMonth(state.month);
+      setSelectedSet(state.set);
+      setShowControls(state.showControls);
+      setActiveTab(state.activeTab);
+    }
+    
+    if (savedAnswers) {
+      setAnswers(JSON.parse(savedAnswers));
+    }
+  }, []);
+
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
     setSelectedMonth("");
@@ -132,7 +155,13 @@ const YearAndSetSelector = () => {
   const handleSubmit = () => {
     if (selectedYear && selectedMonth && selectedSet) {
       setShowControls(true);
-      // TODO: 处理加载具体试卷数据的逻辑
+      localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify({
+        year: selectedYear,
+        month: selectedMonth,
+        set: selectedSet,
+        showControls: true,
+        activeTab: activeTab
+      }));
     }
   };
 
@@ -148,16 +177,22 @@ const YearAndSetSelector = () => {
       reading: {},
       translation: "",
     });
+    localStorage.removeItem(STORAGE_KEY.EXAM_STATE);
+    localStorage.removeItem(STORAGE_KEY.EXAM_ANSWERS);
   };
 
   const handleAnswerChange = (
     section: keyof Answers,
     newAnswer: AnswerValue
   ) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [section]: newAnswer,
-    }));
+    setAnswers((prev) => {
+      const updatedAnswers = {
+        ...prev,
+        [section]: newAnswer,
+      };
+      localStorage.setItem(STORAGE_KEY.EXAM_ANSWERS, JSON.stringify(updatedAnswers));
+      return updatedAnswers;
+    });
   };
 
   const handleTabChange = (tab: string) => {
@@ -166,6 +201,13 @@ const YearAndSetSelector = () => {
       [activeTab]: window.scrollY,
     }));
     setActiveTab(tab);
+    localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify({
+      year: selectedYear,
+      month: selectedMonth,
+      set: selectedSet,
+      showControls: true,
+      activeTab: tab
+    }));
     setTimeout(() => {
       window.scrollTo(0, scrollPositions[tab as keyof typeof scrollPositions]);
     }, 0);
