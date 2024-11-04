@@ -120,53 +120,55 @@ const ScoresHistory = () => {
       {records.length > 0 ? (
         <>
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
-                    日期
-                  </th>
-                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
-                    卷子
-                  </th>
-                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
-                    分数
-                  </th>
-                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
-                    已完成
-                  </th>
-                  <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider">
-                    耗时
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {records.map((record, index) => (
-                  <tr
-                    key={index}
-                    className="hover:bg-gray-50 transition-colors"
-                  >
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                      {formatDateToBeijingTime(record.date)}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
-                      {record.type}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
-                      <span className="text-blue-600 font-medium">
-                        {record.score}分
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                      {formatCompletedQuestions(record)}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                      {record.duration}
-                    </td>
+            <div className="max-h-[600px] overflow-y-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50 sticky top-0 z-10">
+                  <tr>
+                    <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                      日期
+                    </th>
+                    <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                      卷子
+                    </th>
+                    <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                      分数
+                    </th>
+                    <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                      已完成
+                    </th>
+                    <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                      耗时
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {records.map((record, index) => (
+                    <tr
+                      key={index}
+                      className="hover:bg-gray-50 transition-colors"
+                    >
+                      <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                        {formatDateToBeijingTime(record.date)}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
+                        {record.type}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
+                        <span className="text-blue-600 font-medium">
+                          {record.score}分
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                        {formatCompletedQuestions(record)}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                        {record.duration}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
           <div className="text-center mt-8">
             <button

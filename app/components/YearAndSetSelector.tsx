@@ -99,7 +99,7 @@ const YearAndSetSelector = () => {
   useEffect(() => {
     const savedState = examStorage.getState();
     const savedAnswers = examStorage.getAnswers();
-    
+
     if (savedState) {
       setSelectedYear(savedState.year);
       setSelectedMonth(savedState.month);
@@ -107,7 +107,7 @@ const YearAndSetSelector = () => {
       setShowControls(savedState.showControls);
       setActiveTab(savedState.activeTab);
     }
-    
+
     if (savedAnswers) {
       setAnswers(savedAnswers);
     }
@@ -123,8 +123,8 @@ const YearAndSetSelector = () => {
 
     if (selectedMonth) {
       const sets = paperData.papers.filter(
-        (p) => 
-          p.year === parseInt(selectedYear) && 
+        (p) =>
+          p.year === parseInt(selectedYear) &&
           p.month === parseInt(selectedMonth)
       );
       setSetCount(sets[0]?.setCount || 0);
@@ -174,7 +174,7 @@ const YearAndSetSelector = () => {
         month: selectedMonth,
         set: selectedSet,
         showControls: true,
-        activeTab: "writing"
+        activeTab: "writing",
       });
     }
   };
@@ -219,7 +219,7 @@ const YearAndSetSelector = () => {
       month: selectedMonth,
       set: selectedSet,
       showControls: true,
-      activeTab: tab
+      activeTab: tab,
     });
     setTimeout(() => {
       window.scrollTo(0, scrollPositions[tab as keyof typeof scrollPositions]);

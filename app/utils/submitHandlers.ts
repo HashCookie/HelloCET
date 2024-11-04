@@ -60,7 +60,7 @@ export async function handleListeningSubmit(
     score = Math.round(score * 10) / 10;
 
     const correctCount = totalQuestions - wrongAnswers.length;
-    
+
     return {
       success: true,
       data: {
@@ -140,7 +140,7 @@ export async function handleReadingSubmit(
       correctAnswers.sectionC.passageTwo.length;
 
     const correctCount = totalQuestions - wrongAnswers.length;
-    
+
     return {
       success: true,
       data: {
