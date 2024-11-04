@@ -281,12 +281,6 @@ const YearAndSetSelector = () => {
     }
   };
 
-  useEffect(() => {
-    return () => {
-      examStorage.clearExamData();
-    };
-  }, []);
-
   return (
     <div className="font-[sans-serif]">
       {isLoading ? (
