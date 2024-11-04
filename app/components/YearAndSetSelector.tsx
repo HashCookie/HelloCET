@@ -11,6 +11,7 @@ import LoadingSpinner from "./Common/LoadingSpinner";
 import { useExamData } from "@/app/hooks/useExamData";
 import type { ExamPaper } from "@/app/types/exam";
 import ExamHeader from "./Common/ExamHeader";
+import { examStorage } from "@/app/utils/storage";
 
 interface PaperData {
   years: number[];
@@ -30,11 +31,6 @@ interface Answers {
 }
 
 type AnswerValue = Answers[keyof Answers];
-
-const STORAGE_KEY = {
-  EXAM_STATE: 'examState',
-  EXAM_ANSWERS: 'currentExamAnswers'
-};
 
 const YearAndSetSelector = () => {
   const pathname = usePathname();
@@ -101,20 +97,19 @@ const YearAndSetSelector = () => {
   }, [fetchPaperInfo]);
 
   useEffect(() => {
-    const savedState = localStorage.getItem(STORAGE_KEY.EXAM_STATE);
-    const savedAnswers = localStorage.getItem(STORAGE_KEY.EXAM_ANSWERS);
+    const savedState = examStorage.getState();
+    const savedAnswers = examStorage.getAnswers();
     
     if (savedState) {
-      const state = JSON.parse(savedState);
-      setSelectedYear(state.year);
-      setSelectedMonth(state.month);
-      setSelectedSet(state.set);
-      setShowControls(state.showControls);
-      setActiveTab(state.activeTab);
+      setSelectedYear(savedState.year);
+      setSelectedMonth(savedState.month);
+      setSelectedSet(savedState.set);
+      setShowControls(savedState.showControls);
+      setActiveTab(savedState.activeTab);
     }
     
     if (savedAnswers) {
-      setAnswers(JSON.parse(savedAnswers));
+      setAnswers(savedAnswers);
     }
   }, []);
 
@@ -173,13 +168,14 @@ const YearAndSetSelector = () => {
   const handleSubmit = () => {
     if (selectedYear && selectedMonth && selectedSet) {
       setShowControls(true);
-      localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify({
+      setActiveTab("writing");
+      examStorage.saveState({
         year: selectedYear,
         month: selectedMonth,
         set: selectedSet,
         showControls: true,
-        activeTab: activeTab
-      }));
+        activeTab: "writing"
+      });
     }
   };
 
@@ -195,8 +191,7 @@ const YearAndSetSelector = () => {
       reading: {},
       translation: "",
     });
-    localStorage.removeItem(STORAGE_KEY.EXAM_STATE);
-    localStorage.removeItem(STORAGE_KEY.EXAM_ANSWERS);
+    examStorage.clearExamData();
   };
 
   const handleAnswerChange = (
@@ -208,7 +203,7 @@ const YearAndSetSelector = () => {
         ...prev,
         [section]: newAnswer,
       };
-      localStorage.setItem(STORAGE_KEY.EXAM_ANSWERS, JSON.stringify(updatedAnswers));
+      examStorage.saveAnswers(updatedAnswers);
       return updatedAnswers;
     });
   };
@@ -219,13 +214,13 @@ const YearAndSetSelector = () => {
       [activeTab]: window.scrollY,
     }));
     setActiveTab(tab);
-    localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify({
+    examStorage.saveState({
       year: selectedYear,
       month: selectedMonth,
       set: selectedSet,
       showControls: true,
       activeTab: tab
-    }));
+    });
     setTimeout(() => {
       window.scrollTo(0, scrollPositions[tab as keyof typeof scrollPositions]);
     }, 0);
@@ -288,8 +283,7 @@ const YearAndSetSelector = () => {
 
   useEffect(() => {
     return () => {
-      localStorage.removeItem(STORAGE_KEY.EXAM_STATE);
-      localStorage.removeItem(STORAGE_KEY.EXAM_ANSWERS);
+      examStorage.clearExamData();
     };
   }, []);
 

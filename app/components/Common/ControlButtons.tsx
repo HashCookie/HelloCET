@@ -9,6 +9,7 @@ import {
 } from "@/app/utils/submitHandlers";
 import { formatDurationFromSeconds } from "@/utils/dateConversion";
 import ConfirmSubmitModal from "./ConfirmSubmitModal";
+import { examStorage } from "@/app/utils/storage";
 
 interface ControlButtonsProps {
   onReset: () => void;
@@ -181,9 +182,8 @@ const ControlButtons = ({
         })
       );
 
-      // 清除考试状态和答案
-      localStorage.removeItem("EXAM_STATE");
-      localStorage.removeItem("EXAM_ANSWERS");
+      // 使用统一的方法清除考试状态
+      examStorage.clearExamData();
 
       // 跳转到成绩统计页面
       window.location.href = "/exam-result";
