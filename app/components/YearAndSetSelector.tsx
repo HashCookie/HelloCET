@@ -118,6 +118,24 @@ const YearAndSetSelector = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (!paperData || !selectedYear) return;
+
+    const availableMonths = paperData.papers
+      .filter((p) => p.year === parseInt(selectedYear))
+      .map((p) => p.month);
+    setMonths(Array.from(new Set(availableMonths)).sort((a, b) => a - b));
+
+    if (selectedMonth) {
+      const sets = paperData.papers.filter(
+        (p) => 
+          p.year === parseInt(selectedYear) && 
+          p.month === parseInt(selectedMonth)
+      );
+      setSetCount(sets[0]?.setCount || 0);
+    }
+  }, [paperData, selectedYear, selectedMonth]);
+
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
     setSelectedMonth("");
