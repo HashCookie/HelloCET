@@ -98,23 +98,43 @@ export async function handleReadingSubmit(
     let score = 0;
     const wrongAnswers: number[] = [];
 
-    // 合并所有答案进行检查
-    const allAnswers = [
-      ...correctAnswers.sectionA,
-      ...correctAnswers.sectionB,
-      ...correctAnswers.sectionC.passageOne,
-      ...correctAnswers.sectionC.passageTwo,
-    ];
-
-    const totalQuestions = allAnswers.length;
-
-    allAnswers.forEach(({ number, answer }) => {
+    // Section A (36-45): 每题3.55分
+    correctAnswers.sectionA.forEach(({ number, answer }) => {
       if (answers[number]?.toUpperCase() === answer.toUpperCase()) {
-        score++;
+        score += 3.55;
       } else {
         wrongAnswers.push(number);
       }
     });
+
+    // Section B (46-55): 每题7.1分
+    correctAnswers.sectionB.forEach(({ number, answer }) => {
+      if (answers[number]?.toUpperCase() === answer.toUpperCase()) {
+        score += 7.1;
+      } else {
+        wrongAnswers.push(number);
+      }
+    });
+
+    // Section C (46-55): 每题14.2分
+    [...correctAnswers.sectionC.passageOne, ...correctAnswers.sectionC.passageTwo].forEach(
+      ({ number, answer }) => {
+        if (answers[number]?.toUpperCase() === answer.toUpperCase()) {
+          score += 14.2;
+        } else {
+          wrongAnswers.push(number);
+        }
+      }
+    );
+
+    // 四舍五入到一位小数
+    score = Math.round(score * 10) / 10;
+
+    const totalQuestions = 
+      correctAnswers.sectionA.length + 
+      correctAnswers.sectionB.length + 
+      correctAnswers.sectionC.passageOne.length + 
+      correctAnswers.sectionC.passageTwo.length;
 
     return {
       success: true,
@@ -122,7 +142,7 @@ export async function handleReadingSubmit(
         score,
         totalQuestions,
         wrongAnswers,
-        accuracy: (score / totalQuestions) * 100,
+        accuracy: (wrongAnswers.length / totalQuestions) * 100,
       },
     };
   } catch (error) {
