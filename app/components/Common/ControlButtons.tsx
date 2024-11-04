@@ -58,6 +58,8 @@ const ControlButtons = ({
       setIsSubmitting(true);
       const submissionResults = [];
       const attemptId = new Date().getTime().toString();
+      const endTime = Date.now();
+      const duration = Math.floor((endTime - startTime) / 1000);
 
       // 检查并提交写作部分
       if (answers.writing?.trim()) {
@@ -170,8 +172,17 @@ const ControlButtons = ({
         return;
       }
 
-      // 显示提交结果
-      console.log("提交结果:", submissionResults);
+      // 保存成绩数据到 sessionStorage
+      sessionStorage.setItem(
+        "examResults",
+        JSON.stringify({
+          results: submissionResults,
+          duration,
+        })
+      );
+
+      // 跳转到成绩统计页面
+      window.location.href = "/exam-result";
     } catch (error) {
       console.error("提交失败:", error);
       alert("提交失败,请重试");

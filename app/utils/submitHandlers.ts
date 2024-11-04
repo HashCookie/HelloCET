@@ -59,13 +59,15 @@ export async function handleListeningSubmit(
     // 四舍五入到一位小数
     score = Math.round(score * 10) / 10;
 
+    const correctCount = totalQuestions - wrongAnswers.length;
+    
     return {
       success: true,
       data: {
         score,
         totalQuestions,
         wrongAnswers,
-        accuracy: (score / totalQuestions) * 100,
+        accuracy: (correctCount / totalQuestions) * 100,
       },
     };
   } catch (error) {
@@ -137,13 +139,15 @@ export async function handleReadingSubmit(
       correctAnswers.sectionC.passageOne.length +
       correctAnswers.sectionC.passageTwo.length;
 
+    const correctCount = totalQuestions - wrongAnswers.length;
+    
     return {
       success: true,
       data: {
         score,
         totalQuestions,
         wrongAnswers,
-        accuracy: (wrongAnswers.length / totalQuestions) * 100,
+        accuracy: (correctCount / totalQuestions) * 100,
       },
     };
   } catch (error) {
