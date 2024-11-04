@@ -4,8 +4,6 @@ interface SectionResult {
   section: string;
   data: {
     score: number;
-    totalQuestions?: number;
-    accuracy?: number;
   };
   error?: string;
 }
@@ -36,11 +34,6 @@ const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
             <div className="text-2xl font-bold text-blue-600 mb-2">
               {result.data.score.toFixed(1)}分
             </div>
-            {result.data.accuracy && (
-              <div className="text-sm text-gray-500">
-                正确率: {result.data.accuracy.toFixed(1)}%
-              </div>
-            )}
           </div>
         ))}
       </div>
