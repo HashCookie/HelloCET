@@ -100,13 +100,13 @@ const ScoresHistory = () => {
 
   const formatCompletedQuestions = (record: ScoreRecord) => {
     const type = record.type.toLowerCase();
-    if (type.includes('writing')) {
-      return record.completedQuestions ? '写作1篇' : '写作0篇';
-    } else if (type.includes('translation')) {
-      return record.completedQuestions ? '翻译1篇' : '翻译0篇';
-    } else if (type.includes('listening')) {
+    if (type.includes("writing")) {
+      return record.completedQuestions ? "写作1篇" : "写作0篇";
+    } else if (type.includes("translation")) {
+      return record.completedQuestions ? "翻译1篇" : "翻译0篇";
+    } else if (type.includes("listening")) {
       return `听力${record.completedQuestions}/25题`;
-    } else if (type.includes('reading')) {
+    } else if (type.includes("reading")) {
       return `阅读${record.completedQuestions}/30题`;
     }
     return `${record.completedQuestions}题`;

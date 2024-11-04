@@ -8,6 +8,7 @@ import {
   handleTranslationSubmit,
 } from "@/app/utils/submitHandlers";
 import { formatDurationFromSeconds } from "@/utils/dateConversion";
+import ConfirmSubmitModal from "./ConfirmSubmitModal";
 
 interface ControlButtonsProps {
   onReset: () => void;
@@ -47,6 +48,7 @@ const ControlButtons = ({
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [startTime] = useState(Date.now());
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
   const handleSubmit = async () => {
@@ -223,15 +225,53 @@ const ControlButtons = ({
     }
   };
 
+  const getUnfinishedSections = () => {
+    const unfinished: string[] = [];
+    if (!answers.writing?.trim()) unfinished.push("写作");
+
+    const listeningAnswered = Object.keys(answers.listening).length;
+    if (listeningAnswered < 25) {
+      unfinished.push(`听力(已完成${listeningAnswered}/25题)`);
+    }
+
+    const readingAnswered = Object.keys(answers.reading).length;
+    if (readingAnswered < 30) {
+      unfinished.push(`阅读(已完成${readingAnswered}/30题)`);
+    }
+
+    if (!answers.translation?.trim()) unfinished.push("翻译");
+    return unfinished;
+  };
+
+  const handleSubmitClick = () => {
+    const neverShow = localStorage.getItem("neverShowSubmitConfirm");
+    const unfinishedSections = getUnfinishedSections();
+
+    if (unfinishedSections.length > 0 && !neverShow) {
+      setShowConfirmModal(true);
+    } else {
+      handleSubmit();
+    }
+  };
+
   return (
     <div className="flex justify-end space-x-4 pr-4">
+      <ConfirmSubmitModal
+        isOpen={showConfirmModal}
+        onClose={() => setShowConfirmModal(false)}
+        onConfirm={() => {
+          setShowConfirmModal(false);
+          handleSubmit();
+        }}
+        unfinishedSections={getUnfinishedSections()}
+      />
       <button
         className={`px-6 py-2 text-white rounded-md transition-colors ${
           isSubmitting
             ? "bg-gray-400 cursor-not-allowed"
             : "bg-green-600 hover:bg-green-700"
         }`}
-        onClick={handleSubmit}
+        onClick={handleSubmitClick}
         disabled={isSubmitting}
       >
         {isSubmitting ? "提交中..." : "提交试卷"}

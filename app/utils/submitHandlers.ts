@@ -117,23 +117,24 @@ export async function handleReadingSubmit(
     });
 
     // Section C (46-55): 每题14.2分
-    [...correctAnswers.sectionC.passageOne, ...correctAnswers.sectionC.passageTwo].forEach(
-      ({ number, answer }) => {
-        if (answers[number]?.toUpperCase() === answer.toUpperCase()) {
-          score += 14.2;
-        } else {
-          wrongAnswers.push(number);
-        }
+    [
+      ...correctAnswers.sectionC.passageOne,
+      ...correctAnswers.sectionC.passageTwo,
+    ].forEach(({ number, answer }) => {
+      if (answers[number]?.toUpperCase() === answer.toUpperCase()) {
+        score += 14.2;
+      } else {
+        wrongAnswers.push(number);
       }
-    );
+    });
 
     // 四舍五入到一位小数
     score = Math.round(score * 10) / 10;
 
-    const totalQuestions = 
-      correctAnswers.sectionA.length + 
-      correctAnswers.sectionB.length + 
-      correctAnswers.sectionC.passageOne.length + 
+    const totalQuestions =
+      correctAnswers.sectionA.length +
+      correctAnswers.sectionB.length +
+      correctAnswers.sectionC.passageOne.length +
       correctAnswers.sectionC.passageTwo.length;
 
     return {
