@@ -7,6 +7,7 @@ import {
   handleReadingSubmit,
   handleTranslationSubmit,
 } from "@/app/utils/submitHandlers";
+import { formatDurationFromSeconds } from "@/utils/dateConversion";
 
 interface ControlButtonsProps {
   onReset: () => void;
@@ -45,6 +46,7 @@ const ControlButtons = ({
 }: ControlButtonsProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [startTime] = useState(Date.now());
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
   const handleSubmit = async () => {
@@ -186,16 +188,19 @@ const ControlButtons = ({
     const existingScores = localStorage.getItem(storageKey);
     const scores = existingScores ? JSON.parse(existingScores) : [];
 
-    // 计算已完成的题目数
     const completedQuestions = getCompletedQuestions(section, answers);
+    const endTime = Date.now();
+    const durationInSeconds = startTime
+      ? Math.floor((endTime - startTime) / 1000)
+      : 0;
 
     const scoreRecord = {
       date: new Date().toISOString(),
       type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
       score: data.score,
       completedQuestions,
-      duration: "计时功能待实现",
-      seconds: 0,
+      duration: formatDurationFromSeconds(durationInSeconds),
+      seconds: durationInSeconds,
       attemptId,
     };
 
