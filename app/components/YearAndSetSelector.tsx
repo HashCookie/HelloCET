@@ -54,6 +54,12 @@ const YearAndSetSelector = () => {
     reading: {},
     translation: "",
   });
+  const [scrollPositions, setScrollPositions] = useState({
+    writing: 0,
+    listening: 0,
+    reading: 0,
+    translation: 0,
+  });
 
   const { data: writingData, isLoading: writingLoading } = useExamData<
     Pick<ExamPaper, "writing">
@@ -154,6 +160,17 @@ const YearAndSetSelector = () => {
     }));
   };
 
+  const handleTabChange = (tab: string) => {
+    setScrollPositions((prev) => ({
+      ...prev,
+      [activeTab]: window.scrollY,
+    }));
+    setActiveTab(tab);
+    setTimeout(() => {
+      window.scrollTo(0, scrollPositions[tab as keyof typeof scrollPositions]);
+    }, 0);
+  };
+
   const renderExamContent = () => {
     switch (activeTab) {
       case "writing":
@@ -218,7 +235,7 @@ const YearAndSetSelector = () => {
           <ExamHeader
             title={`${selectedYear}年${selectedMonth}月大学英语${examType}真题（卷${selectedSet}）`}
             activeTab={activeTab}
-            onTabChange={setActiveTab}
+            onTabChange={handleTabChange}
             onReset={handleReset}
             year={selectedYear}
             month={selectedMonth}
