@@ -268,6 +268,13 @@ const YearAndSetSelector = () => {
     }
   };
 
+  useEffect(() => {
+    return () => {
+      localStorage.removeItem(STORAGE_KEY.EXAM_STATE);
+      localStorage.removeItem(STORAGE_KEY.EXAM_ANSWERS);
+    };
+  }, []);
+
   return (
     <div className="font-[sans-serif]">
       {isLoading ? (
