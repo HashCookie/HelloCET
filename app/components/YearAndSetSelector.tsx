@@ -12,6 +12,8 @@ import { useExamData } from "@/app/hooks/useExamData";
 import type { ExamPaper } from "@/app/types/exam";
 import ExamHeader from "./Common/ExamHeader";
 import { examStorage } from "@/app/utils/storage";
+import RecommendedExams from "./RecommendedExams";
+import RecentPractice from "./RecentPractice";
 
 interface PaperData {
   years: number[];
@@ -304,18 +306,32 @@ const YearAndSetSelector = () => {
           </div>
         </div>
       ) : (
-        <ExamSelector
-          years={years}
-          months={months}
-          setCount={setCount}
-          selectedYear={selectedYear}
-          selectedMonth={selectedMonth}
-          selectedSet={selectedSet}
-          onYearChange={handleYearChange}
-          onMonthChange={handleMonthChange}
-          onSetChange={handleSetChange}
-          onSubmit={handleSubmit}
-        />
+        <div className="max-w-6xl mx-auto px-4">
+          <ExamSelector
+            years={years}
+            months={months}
+            setCount={setCount}
+            selectedYear={selectedYear}
+            selectedMonth={selectedMonth}
+            selectedSet={selectedSet}
+            onYearChange={handleYearChange}
+            onMonthChange={handleMonthChange}
+            onSetChange={handleSetChange}
+            onSubmit={handleSubmit}
+          />
+          
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h2 className="text-xl font-semibold mb-4">推荐试卷</h2>
+              <RecommendedExams />
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h2 className="text-xl font-semibold mb-4">最近练习</h2>
+              <RecentPractice />
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
