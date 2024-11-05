@@ -330,7 +330,7 @@ const YearAndSetSelector = () => {
   };
 
   return (
-    <div className="font-[sans-serif]">
+    <div className="font-[sans-serif] mt-5">
       {isLoading ? (
         <LoadingSpinner />
       ) : showControls ? (
