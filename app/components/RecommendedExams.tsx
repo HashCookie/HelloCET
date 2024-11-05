@@ -15,7 +15,7 @@ export default function RecommendedExams() {
       tag: "最新",
       practiceCount: "3.2k",
       borderColor: "border-blue-500",
-      hoverBg: "hover:bg-blue-50"
+      hoverBg: "hover:bg-blue-50",
     },
     {
       year: "2023",
@@ -24,7 +24,7 @@ export default function RecommendedExams() {
       tag: "高分率",
       practiceCount: "5.6k",
       borderColor: "border-green-500",
-      hoverBg: "hover:bg-green-50"
+      hoverBg: "hover:bg-green-50",
     },
     {
       year: "2022",
@@ -33,18 +33,20 @@ export default function RecommendedExams() {
       tag: "经典",
       practiceCount: "4.8k",
       borderColor: "border-yellow-500",
-      hoverBg: "hover:bg-yellow-50"
-    }
+      hoverBg: "hover:bg-yellow-50",
+    },
   ];
 
   return (
     <div className="space-y-4">
       {recommendedPapers.map((paper, index) => (
-        <Link 
+        <Link
           key={index}
           href={`/${examType}?year=${paper.year}&month=${paper.month}&set=${paper.set}`}
         >
-          <div className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}>
+          <div
+            className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
+          >
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-medium text-gray-900">
                 {paper.year}年{paper.month}月第{paper.set}套
