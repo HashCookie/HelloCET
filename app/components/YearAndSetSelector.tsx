@@ -217,6 +217,8 @@ const YearAndSetSelector = () => {
       translation: "",
     });
     examStorage.clearExamData();
+    const baseUrl = window.location.pathname;
+    window.history.replaceState({}, '', baseUrl);
   };
 
   const handleAnswerChange = (
