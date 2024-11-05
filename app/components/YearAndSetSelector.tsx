@@ -101,21 +101,25 @@ const YearAndSetSelector = () => {
   }, [fetchPaperInfo]);
 
   useEffect(() => {
-    const savedState = examStorage.getState();
-    const savedAnswers = examStorage.getAnswers();
+    const loadSavedData = async () => {
+      const savedState = examStorage.getState();
+      const savedAnswers = examStorage.getAnswers();
 
-    if (savedState) {
-      setSelectedYear(savedState.year);
-      setSelectedMonth(savedState.month);
-      setSelectedSet(savedState.set);
-      setShowControls(savedState.showControls);
-      setActiveTab(savedState.activeTab);
-    }
+      if (savedState) {
+        setSelectedYear(savedState.year);
+        setSelectedMonth(savedState.month);
+        setSelectedSet(savedState.set);
+        setShowControls(savedState.showControls);
+        setActiveTab(savedState.activeTab);
+      }
 
-    if (savedAnswers) {
-      setAnswers(savedAnswers);
-    }
-  }, []);
+      if (savedAnswers) {
+        setAnswers(savedAnswers);
+      }
+    };
+
+    loadSavedData();
+  }, [searchParams]);
 
   useEffect(() => {
     if (!paperData || !selectedYear) return;

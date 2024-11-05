@@ -76,12 +76,6 @@ export default function RecentPractice() {
       translation: translationRecord?.answer || ''
     };
 
-    console.log('Record:', {
-      attemptId: record.attemptId,
-      type: record.type,
-      answers
-    });
-
     if (!answers.writing && 
         Object.keys(answers.listening).length === 0 && 
         Object.keys(answers.reading).length === 0 && 
@@ -89,9 +83,6 @@ export default function RecentPractice() {
       console.warn('未找到任何答案记录');
       return;
     }
-
-    // 保存答案到 examStorage
-    await examStorage.saveAnswers(answers);
 
     // 保存试卷状态
     await examStorage.saveState({
@@ -101,6 +92,9 @@ export default function RecentPractice() {
       showControls: true,
       activeTab: 'writing'
     });
+
+    // 保存答案到 examStorage
+    await examStorage.saveAnswers(answers);
 
     // 跳转到对应试卷页面
     const lowerCaseExamType = examType.toLowerCase();
