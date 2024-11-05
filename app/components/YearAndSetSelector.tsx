@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import Writing from "./Writing/Writing";
 import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
 import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
@@ -36,6 +36,7 @@ type AnswerValue = Answers[keyof Answers];
 
 const YearAndSetSelector = () => {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
   const [showControls, setShowControls] = useState(false);
@@ -132,6 +133,28 @@ const YearAndSetSelector = () => {
       setSetCount(sets[0]?.setCount || 0);
     }
   }, [paperData, selectedYear, selectedMonth]);
+
+  useEffect(() => {
+    const urlYear = searchParams.get('year');
+    const urlMonth = searchParams.get('month');
+    const urlSet = searchParams.get('set');
+    
+    if (urlYear && urlMonth && urlSet && paperData) {
+      const paperExists = paperData.papers.some(
+        p => 
+          p.year === parseInt(urlYear) && 
+          p.month === parseInt(urlMonth) &&
+          p.setCount >= parseInt(urlSet)
+      );
+      
+      if (paperExists) {
+        setSelectedYear(urlYear);
+        setSelectedMonth(urlMonth);
+        setSelectedSet(urlSet);
+        setShowControls(true);
+      }
+    }
+  }, [searchParams, paperData]);
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);

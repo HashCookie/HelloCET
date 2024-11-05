@@ -1,7 +1,24 @@
 "use client";
 
+import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+
+interface Paper {
+  year: string;
+  month: string;
+  set: string;
+  tag: string;
+  practiceCount: string;
+  borderColor: string;
+  hoverBg: string;
+}
+
 export default function RecommendedExams() {
-  const recommendedPapers = [
+  const router = useRouter();
+  const pathname = usePathname();
+  const examType = pathname.includes("cet4") ? "cet4" : "cet6";
+
+  const recommendedPapers: Paper[] = [
     {
       year: "2023",
       month: "12",
@@ -31,11 +48,16 @@ export default function RecommendedExams() {
     },
   ];
 
+  const handlePaperClick = (paper: Paper) => {
+    router.push(`/${examType}?year=${paper.year}&month=${paper.month}&set=${paper.set}`);
+  };
+
   return (
     <div className="space-y-4">
       {recommendedPapers.map((paper, index) => (
         <div
           key={index}
+          onClick={() => handlePaperClick(paper)}
           className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
         >
           <div className="flex items-center justify-between mb-2">
