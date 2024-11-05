@@ -347,6 +347,7 @@ const YearAndSetSelector = () => {
             set={selectedSet}
             answers={answers}
             readOnly={isReadOnly}
+            examType={examType}
           />
           <div className="pt-28 max-w-6xl mx-auto px-4">
             <div className="bg-white rounded-lg shadow-sm">

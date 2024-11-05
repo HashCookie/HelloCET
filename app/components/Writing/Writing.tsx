@@ -14,7 +14,13 @@ interface WritingProps extends ExamComponentProps {
   readOnly?: boolean;
 }
 
-const Writing = ({ data, isLoading, answer, onAnswerChange, readOnly }: WritingProps) => {
+const Writing = ({
+  data,
+  isLoading,
+  answer,
+  onAnswerChange,
+  readOnly,
+}: WritingProps) => {
   return (
     <ExamSection title="Part I Writing" isLoading={isLoading}>
       {data && (

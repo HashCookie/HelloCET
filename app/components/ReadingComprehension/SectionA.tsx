@@ -32,7 +32,7 @@ const SectionA = ({
                 onAnswerChange(number, e.target.value.toUpperCase())
               }
               className={`w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
-                readOnly ? 'cursor-not-allowed' : ''
+                readOnly ? "cursor-not-allowed" : ""
               }`}
               maxLength={1}
               readOnly={readOnly}

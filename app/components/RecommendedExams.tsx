@@ -76,13 +76,25 @@ export default function RecommendedExams() {
 
   // 获取边框颜色
   const getBorderColor = (index: number) => {
-    const colors = ["border-blue-500", "border-green-500", "border-yellow-500", "border-purple-500", "border-pink-500"];
+    const colors = [
+      "border-blue-500",
+      "border-green-500",
+      "border-yellow-500",
+      "border-purple-500",
+      "border-pink-500",
+    ];
     return colors[index];
   };
 
   // 获取悬停背景色
   const getHoverBg = (index: number) => {
-    const colors = ["hover:bg-blue-50", "hover:bg-green-50", "hover:bg-yellow-50", "hover:bg-purple-50", "hover:bg-pink-50"];
+    const colors = [
+      "hover:bg-blue-50",
+      "hover:bg-green-50",
+      "hover:bg-yellow-50",
+      "hover:bg-purple-50",
+      "hover:bg-pink-50",
+    ];
     return colors[index];
   };
 

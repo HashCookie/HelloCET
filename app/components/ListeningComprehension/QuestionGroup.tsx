@@ -36,7 +36,7 @@ const QuestionGroup = ({
                       checked={answers[question.number] === key}
                       onChange={() => onAnswerChange(question.number, key)}
                       className={`h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 ${
-                        readOnly ? 'cursor-not-allowed' : ''
+                        readOnly ? "cursor-not-allowed" : ""
                       }`}
                       disabled={readOnly}
                     />
@@ -44,7 +44,7 @@ const QuestionGroup = ({
                   <label
                     htmlFor={`question-${question.number}-${key}`}
                     className={`text-sm font-medium text-gray-700 ${
-                      readOnly ? 'cursor-not-allowed' : ''
+                      readOnly ? "cursor-not-allowed" : ""
                     }`}
                   >
                     {key}. {value}

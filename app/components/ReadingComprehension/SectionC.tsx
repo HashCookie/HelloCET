@@ -33,12 +33,12 @@ const SectionC = ({
                     value={key}
                     checked={answers[question.number] === key}
                     onChange={() => onAnswerChange(question.number, key)}
-                    className={`mt-1 ${readOnly ? 'cursor-not-allowed' : ''}`}
+                    className={`mt-1 ${readOnly ? "cursor-not-allowed" : ""}`}
                     disabled={readOnly}
                   />
-                  <label 
+                  <label
                     htmlFor={`question-${question.number}-${key}`}
-                    className={readOnly ? 'cursor-not-allowed' : ''}
+                    className={readOnly ? "cursor-not-allowed" : ""}
                   >
                     {key}. {question.options[key]}
                   </label>

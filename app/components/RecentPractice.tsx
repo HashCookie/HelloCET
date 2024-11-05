@@ -50,17 +50,19 @@ export default function RecentPractice() {
 
     // 获取所有分数记录
     const allScores = {
-      writing: JSON.parse(localStorage.getItem('writingScores') || '[]'),
-      listening: JSON.parse(localStorage.getItem('listeningScores') || '[]'),
-      reading: JSON.parse(localStorage.getItem('readingScores') || '[]'),
-      translation: JSON.parse(localStorage.getItem('translationScores') || '[]')
+      writing: JSON.parse(localStorage.getItem("writingScores") || "[]"),
+      listening: JSON.parse(localStorage.getItem("listeningScores") || "[]"),
+      reading: JSON.parse(localStorage.getItem("readingScores") || "[]"),
+      translation: JSON.parse(
+        localStorage.getItem("translationScores") || "[]"
+      ),
     };
 
     // 根据试卷信息和attemptId找到对应的答案记录
     const matchRecord = (scores: ScoreRecord[]) => {
-      return scores.find((s: ScoreRecord) => 
-        s.attemptId === record.attemptId && 
-        s.type === record.type
+      return scores.find(
+        (s: ScoreRecord) =>
+          s.attemptId === record.attemptId && s.type === record.type
       );
     };
 
@@ -70,17 +72,19 @@ export default function RecentPractice() {
     const translationRecord = matchRecord(allScores.translation);
 
     const answers = {
-      writing: writingRecord?.answer || '',
+      writing: writingRecord?.answer || "",
       listening: listeningRecord?.answers || {},
       reading: readingRecord?.answers || {},
-      translation: translationRecord?.answer || ''
+      translation: translationRecord?.answer || "",
     };
 
-    if (!answers.writing && 
-        Object.keys(answers.listening).length === 0 && 
-        Object.keys(answers.reading).length === 0 && 
-        !answers.translation) {
-      console.warn('未找到任何答案记录');
+    if (
+      !answers.writing &&
+      Object.keys(answers.listening).length === 0 &&
+      Object.keys(answers.reading).length === 0 &&
+      !answers.translation
+    ) {
+      console.warn("未找到任何答案记录");
       return;
     }
 
@@ -90,8 +94,8 @@ export default function RecentPractice() {
       month,
       set,
       showControls: true,
-      activeTab: 'writing',
-      readOnly: true
+      activeTab: "writing",
+      readOnly: true,
     });
 
     // 保存答案到 examStorage
@@ -99,7 +103,9 @@ export default function RecentPractice() {
 
     // 跳转到对应试卷页面
     const lowerCaseExamType = examType.toLowerCase();
-    router.push(`/${lowerCaseExamType}?year=${year}&month=${month}&set=${set}&readOnly=true`);
+    router.push(
+      `/${lowerCaseExamType}?year=${year}&month=${month}&set=${set}&readOnly=true`
+    );
   };
 
   if (records.length === 0) {

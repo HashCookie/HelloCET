@@ -218,12 +218,14 @@ const ControlButtons = ({
       duration: formatDurationFromSeconds(durationInSeconds),
       seconds: durationInSeconds,
       attemptId,
-      answer: section === 'writing' || section === 'translation' 
-        ? answers[section] 
-        : undefined,
-      answers: section === 'listening' || section === 'reading' 
-        ? answers[section] 
-        : undefined
+      answer:
+        section === "writing" || section === "translation"
+          ? answers[section]
+          : undefined,
+      answers:
+        section === "listening" || section === "reading"
+          ? answers[section]
+          : undefined,
     };
 
     scores.push(scoreRecord);
