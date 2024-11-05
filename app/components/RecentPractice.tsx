@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { formatDateToBeijingTime } from "../../utils/dateConversion";
 import { useScoreRecords } from "../hooks/useScoreRecords";
@@ -17,22 +16,20 @@ export default function RecentPractice() {
   return (
     <div className="space-y-4">
       {records.map((record, index) => (
-        <Link
+        <div
           key={index}
-          href={`/${examType.toLowerCase()}?year=${record.year}&month=${record.month}&set=${record.set}`}
+          className="p-4 bg-gray-50 rounded hover:bg-gray-100 transition-colors cursor-pointer"
         >
-          <div className="p-4 bg-gray-50 rounded hover:bg-gray-100 transition-colors cursor-pointer">
-            <div className="flex items-center justify-between mb-2">
-              <h4 className="font-medium text-gray-900">{record.type}</h4>
-              <span className="text-blue-600 font-medium">
-                {record.score.toFixed(1)}分
-              </span>
-            </div>
-            <div className="text-sm text-gray-500">
-              {formatDateToBeijingTime(record.date)} | 用时: {record.duration}
-            </div>
+          <div className="flex items-center justify-between mb-2">
+            <h4 className="font-medium text-gray-900">{record.type}</h4>
+            <span className="text-blue-600 font-medium">
+              {record.score.toFixed(1)}分
+            </span>
           </div>
-        </Link>
+          <div className="text-sm text-gray-500">
+            {formatDateToBeijingTime(record.date)} | 用时: {record.duration}
+          </div>
+        </div>
       ))}
     </div>
   );

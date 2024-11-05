@@ -1,12 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
 export default function RecommendedExams() {
-  const pathname = usePathname();
-  const examType = pathname.includes("cet4") ? "cet4" : "cet6";
-
   const recommendedPapers = [
     {
       year: "2023",
@@ -40,26 +34,20 @@ export default function RecommendedExams() {
   return (
     <div className="space-y-4">
       {recommendedPapers.map((paper, index) => (
-        <Link
+        <div
           key={index}
-          href={`/${examType}?year=${paper.year}&month=${paper.month}&set=${paper.set}`}
+          className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
         >
-          <div
-            className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
-          >
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="font-medium text-gray-900">
-                {paper.year}年{paper.month}月第{paper.set}套
-              </h3>
-              <span className="text-sm text-blue-600 font-medium">
-                {paper.tag}
-              </span>
-            </div>
-            <p className="text-sm text-gray-500">
-              {paper.practiceCount}人已练习
-            </p>
+          <div className="flex items-center justify-between mb-2">
+            <h3 className="font-medium text-gray-900">
+              {paper.year}年{paper.month}月第{paper.set}套
+            </h3>
+            <span className="text-sm text-blue-600 font-medium">
+              {paper.tag}
+            </span>
           </div>
-        </Link>
+          <p className="text-sm text-gray-500">{paper.practiceCount}人已练习</p>
+        </div>
       ))}
     </div>
   );
