@@ -1,11 +1,13 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { formatDateToBeijingTime } from "../../utils/dateConversion";
 import { useScoreRecords } from "../hooks/useScoreRecords";
 
 export default function RecentPractice() {
-  const { records } = useScoreRecords(5);
+  const pathname = usePathname();
+  const examType = pathname.includes("cet4") ? "CET4" : "CET6";
+  const { records } = useScoreRecords(5, examType);
   const router = useRouter();
 
   if (records.length === 0) {
@@ -20,7 +22,7 @@ export default function RecentPractice() {
           className="p-4 bg-gray-50 rounded hover:bg-gray-100 transition-colors cursor-pointer"
           onClick={() =>
             router.push(
-              `/cet4?year=${record.year}&month=${record.month}&set=${record.set}`
+              `/${examType.toLowerCase()}?year=${record.year}&month=${record.month}&set=${record.set}`
             )
           }
         >

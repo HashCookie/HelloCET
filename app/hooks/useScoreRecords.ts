@@ -15,7 +15,7 @@ export interface ScoreRecord {
   set?: string;
 }
 
-export function useScoreRecords(limit?: number) {
+export function useScoreRecords(limit?: number, type?: string) {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
 
   useEffect(() => {
@@ -38,6 +38,11 @@ export function useScoreRecords(limit?: number) {
 
     allScores.forEach((record) => {
       const paperKey = record.attemptId;
+      const examType = record.type.includes("CET4") ? "CET4" : "CET6";
+      
+      if (type && examType !== type) {
+        return;
+      }
 
       const combinedRecord = combinedScoresMap.get(paperKey) || {
         date: record.date,
@@ -47,7 +52,7 @@ export function useScoreRecords(limit?: number) {
         duration: "0分钟0秒",
         seconds: 0,
         attemptId: record.attemptId,
-        examType: record.type.includes("CET4") ? "CET4" : "CET6",
+        examType,
         year: "",
         month: "",
         set: "",
@@ -81,7 +86,7 @@ export function useScoreRecords(limit?: number) {
     setRecords(
       limit ? combinedRecordsArray.slice(0, limit) : combinedRecordsArray
     );
-  }, [limit]);
+  }, [limit, type]);
 
   const clearRecords = () => {
     const scoreCategories = [
