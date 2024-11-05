@@ -25,14 +25,16 @@ export default function RecommendedExams() {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const [recommendedPapers, setRecommendedPapers] = useState<Paper[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPaperInfo = async () => {
+      setLoading(true);
       try {
         const response = await fetch(`/api/papers?type=${examType}`);
         const data = await response.json();
         if (data && data[0]?.papers) {
-          const selectedPapers = getRandomPapers(data[0].papers, 3); // 从所有试卷中随机选择3套
+          const selectedPapers = getRandomPapers(data[0].papers, 3);
           const formattedPapers = selectedPapers.map((paper, index) => ({
             year: paper.year.toString(),
             month: paper.month.toString(),
@@ -46,6 +48,8 @@ export default function RecommendedExams() {
         }
       } catch (error) {
         console.error("获取推荐试卷失败:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -95,24 +99,40 @@ export default function RecommendedExams() {
 
   return (
     <div className="space-y-4">
-      {recommendedPapers.map((paper, index) => (
-        <div
-          key={index}
-          onClick={() => handlePaperClick(paper)}
-          className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
-        >
-          <div className="flex items-center justify-between mb-2">
-            <h3 className="font-medium text-gray-900">
-              {paper.year}年{paper.month}月大学英语{examType.toUpperCase()}
-              真题（卷{paper.set}）
-            </h3>
-            <span className="text-sm text-blue-600 font-medium">
-              {paper.tag}
-            </span>
-          </div>
-          <p className="text-sm text-gray-500">{paper.practiceCount}人已练习</p>
-        </div>
-      ))}
+      {loading
+        ? // Skeleton UI
+          [...Array(3)].map((_, index) => (
+            <div
+              key={index}
+              className="border-l-4 border-gray-200 pl-4 p-4 rounded animate-pulse"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <div className="h-5 bg-gray-200 rounded w-2/3"></div>
+                <div className="h-4 bg-gray-200 rounded w-16"></div>
+              </div>
+              <div className="h-4 bg-gray-200 rounded w-24"></div>
+            </div>
+          ))
+        : recommendedPapers.map((paper, index) => (
+            <div
+              key={index}
+              onClick={() => handlePaperClick(paper)}
+              className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
+            >
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-medium text-gray-900">
+                  {paper.year}年{paper.month}月大学英语{examType.toUpperCase()}
+                  真题（卷{paper.set}）
+                </h3>
+                <span className="text-sm text-blue-600 font-medium">
+                  {paper.tag}
+                </span>
+              </div>
+              <p className="text-sm text-gray-500">
+                {paper.practiceCount}人已练习
+              </p>
+            </div>
+          ))}
     </div>
   );
 }
