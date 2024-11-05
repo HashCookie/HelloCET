@@ -205,7 +205,6 @@ const ControlButtons = ({
     const existingScores = localStorage.getItem(storageKey);
     const scores = existingScores ? JSON.parse(existingScores) : [];
 
-    const completedQuestions = getCompletedQuestions(section, answers);
     const endTime = Date.now();
     const durationInSeconds = startTime
       ? Math.floor((endTime - startTime) / 1000)
@@ -215,10 +214,16 @@ const ControlButtons = ({
       date: new Date().toISOString(),
       type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
       score: data.score,
-      completedQuestions,
+      completedQuestions: getCompletedQuestions(section, answers),
       duration: formatDurationFromSeconds(durationInSeconds),
       seconds: durationInSeconds,
       attemptId,
+      answer: section === 'writing' || section === 'translation' 
+        ? answers[section] 
+        : undefined,
+      answers: section === 'listening' || section === 'reading' 
+        ? answers[section] 
+        : undefined
     };
 
     scores.push(scoreRecord);

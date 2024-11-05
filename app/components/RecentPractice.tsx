@@ -3,6 +3,7 @@
 import { useRouter, usePathname } from "next/navigation";
 import { formatDateToBeijingTime } from "../../utils/dateConversion";
 import { useScoreRecords } from "../hooks/useScoreRecords";
+import { examStorage } from "@/app/utils/storage";
 
 interface PracticeRecord {
   type: string;
@@ -12,6 +13,19 @@ interface PracticeRecord {
   year?: string;
   month?: string;
   set?: string;
+  attemptId: string;
+}
+
+interface ScoreRecord {
+  attemptId: string;
+  answer?: string;
+  answers?: Record<number, string>;
+  date: string;
+  type: string;
+  score: number;
+  completedQuestions: number;
+  duration: string;
+  seconds: number;
 }
 
 export default function RecentPractice() {
@@ -20,7 +34,7 @@ export default function RecentPractice() {
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const { records } = useScoreRecords(5, examType);
 
-  const handleRecordClick = (record: PracticeRecord) => {
+  const handleRecordClick = async (record: PracticeRecord) => {
     const yearMatch = record.type.match(/(\d{4})年/);
     const monthMatch = record.type.match(/(\d{1,2})月/);
     const setMatch = record.type.match(/卷(\d+)/);
@@ -34,6 +48,61 @@ export default function RecentPractice() {
       return;
     }
 
+    // 获取所有分数记录
+    const allScores = {
+      writing: JSON.parse(localStorage.getItem('writingScores') || '[]'),
+      listening: JSON.parse(localStorage.getItem('listeningScores') || '[]'),
+      reading: JSON.parse(localStorage.getItem('readingScores') || '[]'),
+      translation: JSON.parse(localStorage.getItem('translationScores') || '[]')
+    };
+
+    // 根据试卷信息和attemptId找到对应的答案记录
+    const matchRecord = (scores: ScoreRecord[]) => {
+      return scores.find((s: ScoreRecord) => 
+        s.attemptId === record.attemptId && 
+        s.type === record.type
+      );
+    };
+
+    const writingRecord = matchRecord(allScores.writing);
+    const listeningRecord = matchRecord(allScores.listening);
+    const readingRecord = matchRecord(allScores.reading);
+    const translationRecord = matchRecord(allScores.translation);
+
+    const answers = {
+      writing: writingRecord?.answer || '',
+      listening: listeningRecord?.answers || {},
+      reading: readingRecord?.answers || {},
+      translation: translationRecord?.answer || ''
+    };
+
+    console.log('Record:', {
+      attemptId: record.attemptId,
+      type: record.type,
+      answers
+    });
+
+    if (!answers.writing && 
+        Object.keys(answers.listening).length === 0 && 
+        Object.keys(answers.reading).length === 0 && 
+        !answers.translation) {
+      console.warn('未找到任何答案记录');
+      return;
+    }
+
+    // 保存答案到 examStorage
+    await examStorage.saveAnswers(answers);
+
+    // 保存试卷状态
+    await examStorage.saveState({
+      year,
+      month,
+      set,
+      showControls: true,
+      activeTab: 'writing'
+    });
+
+    // 跳转到对应试卷页面
     const lowerCaseExamType = examType.toLowerCase();
     router.push(`/${lowerCaseExamType}?year=${year}&month=${month}&set=${set}`);
   };
