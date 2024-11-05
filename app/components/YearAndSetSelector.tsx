@@ -256,15 +256,18 @@ const YearAndSetSelector = () => {
 
     setShowControls(false);
     setIsReadOnly(false);
-
-    examStorage.saveState({
-      year: selectedYear,
-      month: selectedMonth,
-      set: selectedSet,
-      showControls: false,
-      activeTab: activeTab,
-      readOnly: false,
+    setSelectedYear("");
+    setSelectedMonth("");
+    setSelectedSet("");
+    setActiveTab("writing");
+    setAnswers({
+      writing: "",
+      listening: {},
+      reading: {},
+      translation: "",
     });
+
+    examStorage.clearExamData();
   };
 
   const renderExamContent = () => {
