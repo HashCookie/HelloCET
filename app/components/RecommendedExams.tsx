@@ -34,7 +34,7 @@ export default function RecommendedExams() {
         const response = await fetch(`/api/papers?type=${examType}`);
         const data = await response.json();
         if (data && data[0]?.papers) {
-          const selectedPapers = getRandomPapers(data[0].papers, 3);
+          const selectedPapers = getRandomPapers(data[0].papers, 5);
           const formattedPapers = selectedPapers.map((paper, index) => ({
             year: paper.year.toString(),
             month: paper.month.toString(),
@@ -64,7 +64,7 @@ export default function RecommendedExams() {
 
   // 根据索引获取标签
   const getTag = (index: number) => {
-    const tags = ["最新", "高分率", "经典"];
+    const tags = ["最新", "高分率", "经典", "热门", "推荐"];
     return tags[index];
   };
 
@@ -76,17 +76,13 @@ export default function RecommendedExams() {
 
   // 获取边框颜色
   const getBorderColor = (index: number) => {
-    const colors = ["border-blue-500", "border-green-500", "border-yellow-500"];
+    const colors = ["border-blue-500", "border-green-500", "border-yellow-500", "border-purple-500", "border-pink-500"];
     return colors[index];
   };
 
   // 获取悬停背景色
   const getHoverBg = (index: number) => {
-    const colors = [
-      "hover:bg-blue-50",
-      "hover:bg-green-50",
-      "hover:bg-yellow-50",
-    ];
+    const colors = ["hover:bg-blue-50", "hover:bg-green-50", "hover:bg-yellow-50", "hover:bg-purple-50", "hover:bg-pink-50"];
     return colors[index];
   };
 
@@ -101,7 +97,7 @@ export default function RecommendedExams() {
     <div className="space-y-4">
       {loading
         ? // Skeleton UI
-          [...Array(3)].map((_, index) => (
+          [...Array(5)].map((_, index) => (
             <div
               key={index}
               className="border-l-4 border-gray-200 pl-4 p-4 rounded animate-pulse"
