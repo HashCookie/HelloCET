@@ -134,27 +134,31 @@ const YearAndSetSelector = () => {
     }
   }, [paperData, selectedYear, selectedMonth]);
 
-  useEffect(() => {
-    const urlYear = searchParams.get("year");
-    const urlMonth = searchParams.get("month");
-    const urlSet = searchParams.get("set");
-
-    if (urlYear && urlMonth && urlSet && paperData) {
-      const paperExists = paperData.papers.some(
-        (p) =>
-          p.year === parseInt(urlYear) &&
-          p.month === parseInt(urlMonth) &&
-          p.setCount >= parseInt(urlSet)
-      );
-
-      if (paperExists) {
-        setSelectedYear(urlYear);
-        setSelectedMonth(urlMonth);
-        setSelectedSet(urlSet);
-        setShowControls(true);
-      }
+  const handleSubmit = useCallback(() => {
+    if (selectedYear && selectedMonth && selectedSet) {
+      setShowControls(true);
+      examStorage.saveState({
+        year: selectedYear,
+        month: selectedMonth,
+        set: selectedSet,
+        showControls: true,
+        activeTab,
+      });
     }
-  }, [searchParams, paperData]);
+  }, [selectedYear, selectedMonth, selectedSet, activeTab]);
+
+  useEffect(() => {
+    const year = searchParams.get("year");
+    const month = searchParams.get("month");
+    const set = searchParams.get("set");
+
+    if (year && month && set) {
+      setSelectedYear(year);
+      setSelectedMonth(month);
+      setSelectedSet(set);
+      handleSubmit();
+    }
+  }, [searchParams, handleSubmit]);
 
   const handleYearChange = (year: string) => {
     setSelectedYear(year);
@@ -188,20 +192,6 @@ const YearAndSetSelector = () => {
 
   const handleSetChange = (set: string) => {
     setSelectedSet(set);
-  };
-
-  const handleSubmit = () => {
-    if (selectedYear && selectedMonth && selectedSet) {
-      setShowControls(true);
-      setActiveTab("writing");
-      examStorage.saveState({
-        year: selectedYear,
-        month: selectedMonth,
-        set: selectedSet,
-        showControls: true,
-        activeTab: "writing",
-      });
-    }
   };
 
   const handleReset = () => {
