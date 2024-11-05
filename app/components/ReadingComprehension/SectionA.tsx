@@ -3,6 +3,7 @@ import type { SectionA } from "@/app/types/exam";
 interface SectionAProps extends SectionA {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
+  readOnly?: boolean;
 }
 
 const SectionA = ({
@@ -10,6 +11,7 @@ const SectionA = ({
   options,
   answers,
   onAnswerChange,
+  readOnly,
 }: SectionAProps) => {
   const renderPassageWithBlanks = (text: string) => {
     const parts = text.split(/(\s(?:2[6-9]|3[0-5])\s)/g);
@@ -29,8 +31,11 @@ const SectionA = ({
               onChange={(e) =>
                 onAnswerChange(number, e.target.value.toUpperCase())
               }
-              className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase"
+              className={`w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
+                readOnly ? 'cursor-not-allowed' : ''
+              }`}
               maxLength={1}
+              readOnly={readOnly}
             />
           </span>
         );

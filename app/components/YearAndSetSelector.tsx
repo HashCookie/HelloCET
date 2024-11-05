@@ -66,6 +66,8 @@ const YearAndSetSelector = () => {
     translation: 0,
   });
 
+  const [isReadOnly, setIsReadOnly] = useState(false);
+
   const { data: writingData, isLoading: writingLoading } = useExamData<
     Pick<ExamPaper, "writing">
   >("writing", selectedYear, selectedMonth, selectedSet);
@@ -111,6 +113,7 @@ const YearAndSetSelector = () => {
         setSelectedSet(savedState.set);
         setShowControls(savedState.showControls);
         setActiveTab(savedState.activeTab);
+        setIsReadOnly(savedState.readOnly || false);
       }
 
       if (savedAnswers) {
@@ -264,6 +267,7 @@ const YearAndSetSelector = () => {
             isLoading={writingLoading}
             answer={answers.writing}
             onAnswerChange={(value) => handleAnswerChange("writing", value)}
+            readOnly={isReadOnly}
           />
         );
       case "listening":
@@ -276,6 +280,7 @@ const YearAndSetSelector = () => {
             isLoading={listeningLoading}
             answers={answers.listening}
             onAnswerChange={(value) => handleAnswerChange("listening", value)}
+            readOnly={isReadOnly}
           />
         );
       case "reading":
@@ -288,6 +293,7 @@ const YearAndSetSelector = () => {
             isLoading={readingLoading}
             answers={answers.reading}
             onAnswerChange={(value) => handleAnswerChange("reading", value)}
+            readOnly={isReadOnly}
           />
         );
       case "translation":
@@ -300,6 +306,7 @@ const YearAndSetSelector = () => {
             isLoading={translationLoading}
             answer={answers.translation}
             onAnswerChange={(value) => handleAnswerChange("translation", value)}
+            readOnly={isReadOnly}
           />
         );
       default:

@@ -19,6 +19,7 @@ interface ExamHeaderProps {
   month: string;
   set: string;
   answers: Answers;
+  readOnly?: boolean;
 }
 
 const ExamHeader = ({
@@ -32,6 +33,7 @@ const ExamHeader = ({
   month,
   set,
   answers,
+  readOnly,
 }: ExamHeaderProps) => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white z-50 border-b shadow-sm">
@@ -60,13 +62,15 @@ const ExamHeader = ({
             )}
             <h1 className="text-2xl font-bold">{title}</h1>
           </div>
-          <ControlButtons
-            onReset={onReset}
-            year={year}
-            month={month}
-            set={set}
-            answers={answers}
-          />
+          {!readOnly && (
+            <ControlButtons
+              onReset={onReset}
+              year={year}
+              month={month}
+              set={set}
+              answers={answers}
+            />
+          )}
         </div>
         <ExamTabs activeTab={activeTab} onTabChange={onTabChange} />
       </div>

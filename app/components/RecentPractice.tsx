@@ -90,7 +90,8 @@ export default function RecentPractice() {
       month,
       set,
       showControls: true,
-      activeTab: 'writing'
+      activeTab: 'writing',
+      readOnly: true
     });
 
     // 保存答案到 examStorage
@@ -98,7 +99,7 @@ export default function RecentPractice() {
 
     // 跳转到对应试卷页面
     const lowerCaseExamType = examType.toLowerCase();
-    router.push(`/${lowerCaseExamType}?year=${year}&month=${month}&set=${set}`);
+    router.push(`/${lowerCaseExamType}?year=${year}&month=${month}&set=${set}&readOnly=true`);
   };
 
   if (records.length === 0) {

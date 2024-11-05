@@ -4,6 +4,7 @@ interface ExamState {
   set: string;
   showControls: boolean;
   activeTab: string;
+  readOnly?: boolean;
 }
 
 interface ExamAnswers {

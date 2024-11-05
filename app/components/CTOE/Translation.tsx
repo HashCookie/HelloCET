@@ -11,6 +11,7 @@ interface TranslationProps extends ExamComponentProps {
   isLoading: boolean;
   answer: string;
   onAnswerChange: (value: string) => void;
+  readOnly?: boolean;
 }
 
 const Translation = ({
@@ -18,6 +19,7 @@ const Translation = ({
   isLoading,
   answer,
   onAnswerChange,
+  readOnly,
 }: TranslationProps) => {
   return (
     <ExamSection title="Part IV Translation" isLoading={isLoading}>
@@ -44,6 +46,7 @@ const Translation = ({
               onChange={(e) => onAnswerChange(e.target.value)}
               className="w-full p-4 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
               placeholder="在此输入你的翻译..."
+              readOnly={readOnly}
             />
           </div>
         </>

@@ -11,9 +11,10 @@ interface WritingProps extends ExamComponentProps {
   isLoading: boolean;
   answer: string;
   onAnswerChange: (value: string) => void;
+  readOnly?: boolean;
 }
 
-const Writing = ({ data, isLoading, answer, onAnswerChange }: WritingProps) => {
+const Writing = ({ data, isLoading, answer, onAnswerChange, readOnly }: WritingProps) => {
   return (
     <ExamSection title="Part I Writing" isLoading={isLoading}>
       {data && (
@@ -31,6 +32,7 @@ const Writing = ({ data, isLoading, answer, onAnswerChange }: WritingProps) => {
               onChange={(e) => onAnswerChange(e.target.value)}
               className="w-full p-4 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
               placeholder="在此输入你的作文..."
+              readOnly={readOnly}
             />
           </div>
         </>

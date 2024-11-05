@@ -3,6 +3,7 @@ import type { Option, SectionC as SectionCType } from "@/app/types/exam";
 interface SectionCProps extends SectionCType {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
+  readOnly?: boolean;
 }
 
 const SectionC = ({
@@ -12,6 +13,7 @@ const SectionC = ({
   questionsTwo,
   answers,
   onAnswerChange,
+  readOnly,
 }: SectionCProps) => {
   const renderQuestions = (questions: SectionCType["questionsOne"]) => (
     <div className="space-y-6 text-left">
@@ -31,9 +33,13 @@ const SectionC = ({
                     value={key}
                     checked={answers[question.number] === key}
                     onChange={() => onAnswerChange(question.number, key)}
-                    className="mt-1"
+                    className={`mt-1 ${readOnly ? 'cursor-not-allowed' : ''}`}
+                    disabled={readOnly}
                   />
-                  <label htmlFor={`question-${question.number}-${key}`}>
+                  <label 
+                    htmlFor={`question-${question.number}-${key}`}
+                    className={readOnly ? 'cursor-not-allowed' : ''}
+                  >
                     {key}. {question.options[key]}
                   </label>
                 </div>

@@ -14,6 +14,7 @@ interface ReadingProps extends ExamComponentProps {
   isLoading: boolean;
   answers: Record<number, string>;
   onAnswerChange: (answers: Record<number, string>) => void;
+  readOnly?: boolean;
 }
 
 const ReadingComprehension = ({
@@ -21,8 +22,10 @@ const ReadingComprehension = ({
   isLoading,
   answers,
   onAnswerChange,
+  readOnly,
 }: ReadingProps) => {
   const handleAnswerChange = (questionNumber: number, answer: string) => {
+    if (readOnly) return;
     onAnswerChange({
       ...answers,
       [questionNumber]: answer,
@@ -38,6 +41,7 @@ const ReadingComprehension = ({
             options={data.readingComprehension.sectionA.options}
             answers={answers}
             onAnswerChange={handleAnswerChange}
+            readOnly={readOnly}
           />
           <SectionB
             passageTitle={data.readingComprehension.sectionB.passageTitle}
@@ -45,6 +49,7 @@ const ReadingComprehension = ({
             questions={data.readingComprehension.sectionB.questions}
             answers={answers}
             onAnswerChange={handleAnswerChange}
+            readOnly={readOnly}
           />
           <SectionC
             passagesOne={data.readingComprehension.sectionC.passagesOne}
@@ -53,6 +58,7 @@ const ReadingComprehension = ({
             questionsTwo={data.readingComprehension.sectionC.questionsTwo}
             answers={answers}
             onAnswerChange={handleAnswerChange}
+            readOnly={readOnly}
           />
         </>
       )}

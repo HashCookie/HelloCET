@@ -5,6 +5,7 @@ interface QuestionGroupProps {
   questions: ListeningQuestion[];
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
+  readOnly?: boolean;
 }
 
 const QuestionGroup = ({
@@ -12,6 +13,7 @@ const QuestionGroup = ({
   questions,
   answers,
   onAnswerChange,
+  readOnly,
 }: QuestionGroupProps) => {
   return (
     <div className="mb-8">
@@ -33,12 +35,17 @@ const QuestionGroup = ({
                       value={key}
                       checked={answers[question.number] === key}
                       onChange={() => onAnswerChange(question.number, key)}
-                      className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                      className={`h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 ${
+                        readOnly ? 'cursor-not-allowed' : ''
+                      }`}
+                      disabled={readOnly}
                     />
                   </div>
                   <label
                     htmlFor={`question-${question.number}-${key}`}
-                    className="text-sm font-medium text-gray-700"
+                    className={`text-sm font-medium text-gray-700 ${
+                      readOnly ? 'cursor-not-allowed' : ''
+                    }`}
                   >
                     {key}. {value}
                   </label>

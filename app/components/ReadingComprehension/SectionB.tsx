@@ -3,6 +3,7 @@ import type { SectionB } from "@/app/types/exam";
 interface SectionBProps extends SectionB {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
+  readOnly?: boolean;
 }
 
 const SectionB = ({
@@ -11,6 +12,7 @@ const SectionB = ({
   questions,
   answers,
   onAnswerChange,
+  readOnly,
 }: SectionBProps) => {
   return (
     <div className="mb-8">
@@ -44,8 +46,11 @@ const SectionB = ({
               onChange={(e) =>
                 onAnswerChange(question.number, e.target.value.toUpperCase())
               }
-              className="w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase"
+              className={`w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
+                readOnly ? 'cursor-not-allowed' : ''
+              }`}
               maxLength={1}
+              readOnly={readOnly}
             />
           </div>
         ))}
