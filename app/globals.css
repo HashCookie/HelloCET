@@ -9,3 +9,26 @@
 .blue-select {
   @apply px-2 py-2.5 rounded text-white text-sm text-center font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600;
 }
+
+/* 始终显示滚动条,防止切换时页面抖动 */
+html {
+  overflow-y: scroll;
+}
+
+/* 美化滚动条样式(可选) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
