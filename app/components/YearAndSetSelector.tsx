@@ -135,18 +135,18 @@ const YearAndSetSelector = () => {
   }, [paperData, selectedYear, selectedMonth]);
 
   useEffect(() => {
-    const urlYear = searchParams.get('year');
-    const urlMonth = searchParams.get('month');
-    const urlSet = searchParams.get('set');
-    
+    const urlYear = searchParams.get("year");
+    const urlMonth = searchParams.get("month");
+    const urlSet = searchParams.get("set");
+
     if (urlYear && urlMonth && urlSet && paperData) {
       const paperExists = paperData.papers.some(
-        p => 
-          p.year === parseInt(urlYear) && 
+        (p) =>
+          p.year === parseInt(urlYear) &&
           p.month === parseInt(urlMonth) &&
           p.setCount >= parseInt(urlSet)
       );
-      
+
       if (paperExists) {
         setSelectedYear(urlYear);
         setSelectedMonth(urlMonth);
@@ -218,7 +218,7 @@ const YearAndSetSelector = () => {
     });
     examStorage.clearExamData();
     const baseUrl = window.location.pathname;
-    window.history.replaceState({}, '', baseUrl);
+    window.history.replaceState({}, "", baseUrl);
   };
 
   const handleAnswerChange = (
