@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import Writing from "./Writing/Writing";
 import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
 import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
@@ -37,6 +37,7 @@ type AnswerValue = Answers[keyof Answers];
 const YearAndSetSelector = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const router = useRouter();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
   const [showControls, setShowControls] = useState(false);
@@ -243,6 +244,10 @@ const YearAndSetSelector = () => {
     }, 0);
   };
 
+  const handleBack = () => {
+    router.back();
+  };
+
   const renderExamContent = () => {
     switch (activeTab) {
       case "writing":
@@ -309,6 +314,8 @@ const YearAndSetSelector = () => {
             activeTab={activeTab}
             onTabChange={handleTabChange}
             onReset={handleReset}
+            onBack={handleBack}
+            showBackButton={true}
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
