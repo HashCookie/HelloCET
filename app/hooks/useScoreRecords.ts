@@ -39,7 +39,7 @@ export function useScoreRecords(limit?: number, type?: string) {
     allScores.forEach((record) => {
       const paperKey = record.attemptId;
       const examType = record.type.includes("CET4") ? "CET4" : "CET6";
-      
+
       if (type && examType !== type) {
         return;
       }
