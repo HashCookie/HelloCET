@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import Writing from "./Writing/Writing";
 import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
 import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
@@ -37,7 +37,6 @@ type AnswerValue = Answers[keyof Answers];
 const YearAndSetSelector = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const router = useRouter();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
   const [showControls, setShowControls] = useState(false);
@@ -252,7 +251,20 @@ const YearAndSetSelector = () => {
   };
 
   const handleBack = () => {
-    router.back();
+    const baseUrl = window.location.pathname;
+    window.history.replaceState({}, "", baseUrl);
+
+    setShowControls(false);
+    setIsReadOnly(false);
+
+    examStorage.saveState({
+      year: selectedYear,
+      month: selectedMonth,
+      set: selectedSet,
+      showControls: false,
+      activeTab: activeTab,
+      readOnly: false,
+    });
   };
 
   const renderExamContent = () => {
@@ -331,6 +343,7 @@ const YearAndSetSelector = () => {
             month={selectedMonth}
             set={selectedSet}
             answers={answers}
+            readOnly={isReadOnly}
           />
           <div className="pt-28 max-w-6xl mx-auto px-4">
             <div className="bg-white rounded-lg shadow-sm">
