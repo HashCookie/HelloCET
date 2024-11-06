@@ -1,13 +1,7 @@
 import ExamTabs from "./ExamTabs";
 import ControlButtons from "./ControlButtons";
 import { useState, useEffect } from "react";
-
-interface Answers {
-  writing: string;
-  listening: Record<number, string>;
-  reading: Record<number, string>;
-  translation: string;
-}
+import type { Answers } from "@/app/types/answers";
 
 interface ExamHeaderProps {
   title: string;

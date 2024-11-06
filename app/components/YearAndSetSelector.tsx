@@ -15,6 +15,7 @@ import ExamHeader from "./Common/ExamHeader";
 import { examStorage } from "@/app/utils/storage";
 import RecommendedExams from "./RecommendedExams";
 import RecentPractice from "./RecentPractice";
+import type { Answers } from "@/app/types/answers";
 
 interface PaperData {
   years: number[];
@@ -24,13 +25,6 @@ interface PaperData {
     month: number;
     setCount: number;
   }[];
-}
-
-interface Answers {
-  writing: string;
-  listening: Record<number, string>;
-  reading: Record<number, string>;
-  translation: string;
 }
 
 type AnswerValue = Answers[keyof Answers];

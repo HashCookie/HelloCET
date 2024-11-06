@@ -10,25 +10,14 @@ import {
 import { formatDurationFromSeconds } from "@/utils/dateConversion";
 import ConfirmSubmitModal from "./ConfirmSubmitModal";
 import { examStorage } from "@/app/utils/storage";
+import type { Answers } from "@/app/types/answers";
 
 interface ControlButtonsProps {
   onReset: () => void;
   year?: string;
   month?: string;
   set?: string;
-  answers: {
-    writing: string;
-    listening: Record<number, string>;
-    reading: Record<number, string>;
-    translation: string;
-  };
-}
-
-interface Answers {
-  writing: string;
-  listening: Record<number, string>;
-  reading: Record<number, string>;
-  translation: string;
+  answers: Answers;
 }
 
 interface ScoreData {
