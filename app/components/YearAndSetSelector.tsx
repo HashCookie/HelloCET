@@ -309,9 +309,6 @@ const YearAndSelectorContent = () => {
             answer={answers.writing}
             onAnswerChange={(value) => handleAnswerChange("writing", value)}
             readOnly={isReadOnly}
-            year={selectedYear}
-            month={selectedMonth}
-            set={selectedSet}
             referenceAnswer={referenceAnswers.writing}
           />
         );
@@ -344,9 +341,6 @@ const YearAndSelectorContent = () => {
       case "translation":
         return (
           <Translation
-            year={selectedYear}
-            month={selectedMonth}
-            set={selectedSet}
             data={translationData}
             isLoading={translationLoading}
             answer={answers.translation}

@@ -2,20 +2,15 @@
 
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
-import type { ExamComponentProps } from "@/app/types/props";
 
 type TranslationData = Pick<ExamPaper, "translation">;
 
-interface TranslationProps
-  extends Omit<ExamComponentProps, "year" | "month" | "set"> {
+interface TranslationProps {
   data: TranslationData | null;
   isLoading: boolean;
   answer: string;
   onAnswerChange: (value: string) => void;
   readOnly?: boolean;
-  year: string;
-  month: string;
-  set: string;
   referenceAnswer: string;
 }
 
