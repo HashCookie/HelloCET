@@ -12,10 +12,12 @@ interface SectionResult {
 interface ScoreSummaryProps {
   results: SectionResult[];
   duration: number;
+  examType: string;
 }
 
-const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
+const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
   const router = useRouter();
+  const defaultPath = `/${examType.toLowerCase()}`;
   const sections = ["写作", "听力", "阅读", "翻译"];
   const totalScore = results.reduce(
     (sum, result) => sum + (result.data?.score || 0),
@@ -26,7 +28,9 @@ const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
 
   return (
     <div className="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg relative">
-      <h1 className="text-2xl font-bold text-center mb-8">考试成绩统计</h1>
+      <h1 className="text-2xl font-bold text-center mb-2">
+        {examType}考试成绩统计
+      </h1>
 
       <div className="text-center mb-8">
         <div className="text-4xl font-bold text-blue-600 mb-2">
@@ -62,10 +66,10 @@ const ScoreSummary = ({ results, duration }: ScoreSummaryProps) => {
 
       <div className="flex justify-center">
         <button
-          onClick={() => router.push("/")}
+          onClick={() => router.push(defaultPath)}
           className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
         >
-          返回首页
+          返回试卷列表
         </button>
       </div>
     </div>

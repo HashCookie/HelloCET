@@ -180,6 +180,7 @@ const ControlButtons = ({
         JSON.stringify({
           results: submissionResults,
           duration,
+          examType,
         })
       );
 

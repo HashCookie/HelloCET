@@ -12,4 +12,5 @@ export interface SectionResult {
 export interface ExamResultData {
   results: SectionResult[];
   duration: number;
+  examType: string;
 }

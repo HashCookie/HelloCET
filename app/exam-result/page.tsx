@@ -18,8 +18,6 @@ export default function ExamResultPage() {
 
     const data = JSON.parse(savedResults) as ExamResultData;
     setExamData(data);
-    // 清除数据,防止刷新页面重复显示
-    // sessionStorage.removeItem("examResults");
   }, [router]);
 
   if (!examData) {
@@ -27,6 +25,10 @@ export default function ExamResultPage() {
   }
 
   return (
-    <ScoreSummary results={examData.results} duration={examData.duration} />
+    <ScoreSummary
+      results={examData.results}
+      duration={examData.duration}
+      examType={examData.examType}
+    />
   );
 }
