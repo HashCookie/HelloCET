@@ -78,6 +78,7 @@ const ControlButtons = ({
 
           const data = await response.json();
           if (response.ok) {
+            console.log("写作提交成功", data);
             submissionResults.push({ section: "写作", data });
             saveScoreToLocalStorage("writing", data, examType, attemptId);
           }

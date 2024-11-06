@@ -276,14 +276,14 @@ const YearAndSelectorContent = () => {
       case "writing":
         return (
           <Writing
-            year={selectedYear}
-            month={selectedMonth}
-            set={selectedSet}
             data={writingData}
             isLoading={writingLoading}
             answer={answers.writing}
             onAnswerChange={(value) => handleAnswerChange("writing", value)}
             readOnly={isReadOnly}
+            year={selectedYear}
+            month={selectedMonth}
+            set={selectedSet}
           />
         );
       case "listening":
