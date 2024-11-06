@@ -207,12 +207,22 @@ const YearAndSelectorContent = () => {
     setSelectedSet(set);
   };
 
-  const handleReset = () => {
+  const resetExam = (clearReadOnly = false) => {
+    const baseUrl = window.location.pathname;
+    window.history.replaceState({}, "", baseUrl);
+
     setShowControls(false);
+    if (clearReadOnly) setIsReadOnly(false);
     setSelectedYear("");
     setSelectedMonth("");
     setSelectedSet("");
     setActiveTab("writing");
+    setScrollPositions({
+      writing: 0,
+      listening: 0,
+      reading: 0,
+      translation: 0,
+    });
     setAnswers({
       writing: "",
       listening: {},
@@ -220,9 +230,10 @@ const YearAndSelectorContent = () => {
       translation: "",
     });
     examStorage.clearExamData();
-    const baseUrl = window.location.pathname;
-    window.history.replaceState({}, "", baseUrl);
   };
+
+  const handleReset = () => resetExam();
+  const handleBack = () => resetExam(true);
 
   const handleAnswerChange = (
     section: keyof Answers,
@@ -254,26 +265,6 @@ const YearAndSelectorContent = () => {
     setTimeout(() => {
       window.scrollTo(0, scrollPositions[tab as keyof typeof scrollPositions]);
     }, 0);
-  };
-
-  const handleBack = () => {
-    const baseUrl = window.location.pathname;
-    window.history.replaceState({}, "", baseUrl);
-
-    setShowControls(false);
-    setIsReadOnly(false);
-    setSelectedYear("");
-    setSelectedMonth("");
-    setSelectedSet("");
-    setActiveTab("writing");
-    setAnswers({
-      writing: "",
-      listening: {},
-      reading: {},
-      translation: "",
-    });
-
-    examStorage.clearExamData();
   };
 
   const fetchReferenceAnswers = useCallback(async () => {
