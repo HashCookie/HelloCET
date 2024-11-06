@@ -240,23 +240,31 @@ const YearAndSelectorContent = () => {
     });
   };
 
-  const handleTabChange = (tab: string) => {
-    setScrollPositions((prev) => ({
-      ...prev,
-      [activeTab]: window.scrollY,
-    }));
-    setActiveTab(tab);
-    examStorage.saveState({
-      year: selectedYear,
-      month: selectedMonth,
-      set: selectedSet,
-      showControls: true,
-      activeTab: tab,
-    });
-    setTimeout(() => {
-      window.scrollTo(0, scrollPositions[tab as keyof typeof scrollPositions]);
-    }, 0);
-  };
+  const handleTabChange = useCallback(
+    (tab: string) => {
+      setScrollPositions((prev) => ({
+        ...prev,
+        [activeTab]: window.scrollY,
+      }));
+
+      setActiveTab(tab);
+      examStorage.saveState({
+        year: selectedYear,
+        month: selectedMonth,
+        set: selectedSet,
+        showControls: true,
+        activeTab: tab,
+      });
+
+      requestAnimationFrame(() => {
+        window.scrollTo(
+          0,
+          scrollPositions[tab as keyof typeof scrollPositions]
+        );
+      });
+    },
+    [activeTab, selectedYear, selectedMonth, selectedSet, scrollPositions]
+  );
 
   const fetchReferenceAnswers = useCallback(async () => {
     if (isReadOnly && selectedYear && selectedMonth && selectedSet) {
