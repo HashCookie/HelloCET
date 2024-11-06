@@ -2,7 +2,6 @@
 
 import ExamSection from "../Common/ExamSection";
 import type { ListeningQuestion } from "@/app/types/exam";
-import type { ExamComponentProps } from "@/app/types/props";
 import QuestionGroup from "./QuestionGroup";
 import { SECTION_CONFIG } from "./constants";
 
@@ -10,7 +9,7 @@ interface ListeningData {
   listeningComprehension: ListeningQuestion[];
 }
 
-interface ListeningProps extends ExamComponentProps {
+interface ListeningProps {
   data: ListeningData | null;
   isLoading: boolean;
   answers: Record<number, string>;

@@ -315,9 +315,6 @@ const YearAndSelectorContent = () => {
       case "listening":
         return (
           <ListeningComprehension
-            year={selectedYear}
-            month={selectedMonth}
-            set={selectedSet}
             data={listeningData}
             isLoading={listeningLoading}
             answers={answers.listening}
@@ -328,9 +325,6 @@ const YearAndSelectorContent = () => {
       case "reading":
         return (
           <ReadingComprehension
-            year={selectedYear}
-            month={selectedMonth}
-            set={selectedSet}
             data={readingData}
             isLoading={readingLoading}
             answers={answers.reading}

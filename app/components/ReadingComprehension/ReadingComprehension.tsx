@@ -2,14 +2,13 @@
 
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
-import type { ExamComponentProps } from "@/app/types/props";
 import SectionA from "./SectionA";
 import SectionB from "./SectionB";
 import SectionC from "./SectionC";
 
 type ReadingData = Pick<ExamPaper, "readingComprehension">;
 
-interface ReadingProps extends ExamComponentProps {
+interface ReadingProps {
   data: ReadingData | null;
   isLoading: boolean;
   answers: Record<number, string>;
