@@ -35,6 +35,20 @@ interface Answers {
 
 type AnswerValue = Answers[keyof Answers];
 
+const INITIAL_ANSWERS = {
+  writing: "",
+  listening: {},
+  reading: {},
+  translation: "",
+} as const;
+
+const INITIAL_SCROLL_POSITIONS = {
+  writing: 0,
+  listening: 0,
+  reading: 0,
+  translation: 0,
+} as const;
+
 const YearAndSelectorContent = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -52,20 +66,6 @@ const YearAndSelectorContent = () => {
   const [selectedSet, setSelectedSet] = useState<string>("");
 
   const [activeTab, setActiveTab] = useState("writing");
-
-  const INITIAL_ANSWERS = {
-    writing: "",
-    listening: {},
-    reading: {},
-    translation: "",
-  };
-
-  const INITIAL_SCROLL_POSITIONS = {
-    writing: 0,
-    listening: 0,
-    reading: 0,
-    translation: 0,
-  };
 
   const [answers, setAnswers] = useState<Answers>(INITIAL_ANSWERS);
   const [scrollPositions, setScrollPositions] = useState(
@@ -96,12 +96,15 @@ const YearAndSelectorContent = () => {
   >("translation", selectedYear, selectedMonth, selectedSet);
 
   const fetchPaperInfo = useCallback(async () => {
-    setIsLoading(true);
     try {
+      setIsLoading(true);
       const response = await fetch(`/api/papers?type=${examType}`);
       const data = await response.json();
+      const sortedYears =
+        data[0]?.years.sort((a: number, b: number) => a - b) || [];
+
       setPaperData(data[0]);
-      setYears(data[0]?.years.sort((a: number, b: number) => a - b) || []);
+      setYears(sortedYears);
     } catch (error) {
       console.error("获取试卷信息失败:", error);
     } finally {
@@ -135,23 +138,28 @@ const YearAndSelectorContent = () => {
     loadSavedData();
   }, [searchParams]);
 
-  useEffect(() => {
+  const updateMonthsAndSets = useCallback(() => {
     if (!paperData || !selectedYear) return;
 
     const availableMonths = paperData.papers
       .filter((p) => p.year === parseInt(selectedYear))
       .map((p) => p.month);
+
     setMonths(Array.from(new Set(availableMonths)).sort((a, b) => a - b));
 
     if (selectedMonth) {
-      const sets = paperData.papers.filter(
+      const sets = paperData.papers.find(
         (p) =>
           p.year === parseInt(selectedYear) &&
           p.month === parseInt(selectedMonth)
       );
-      setSetCount(sets[0]?.setCount || 0);
+      setSetCount(sets?.setCount || 0);
     }
   }, [paperData, selectedYear, selectedMonth]);
+
+  useEffect(() => {
+    updateMonthsAndSets();
+  }, [updateMonthsAndSets]);
 
   const handleSubmit = useCallback(() => {
     if (selectedYear && selectedMonth && selectedSet) {
