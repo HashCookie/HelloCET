@@ -53,18 +53,24 @@ const YearAndSelectorContent = () => {
 
   const [activeTab, setActiveTab] = useState("writing");
 
-  const [answers, setAnswers] = useState<Answers>({
+  const INITIAL_ANSWERS = {
     writing: "",
     listening: {},
     reading: {},
     translation: "",
-  });
-  const [scrollPositions, setScrollPositions] = useState({
+  };
+
+  const INITIAL_SCROLL_POSITIONS = {
     writing: 0,
     listening: 0,
     reading: 0,
     translation: 0,
-  });
+  };
+
+  const [answers, setAnswers] = useState<Answers>(INITIAL_ANSWERS);
+  const [scrollPositions, setScrollPositions] = useState(
+    INITIAL_SCROLL_POSITIONS
+  );
 
   const [isReadOnly, setIsReadOnly] = useState(false);
 
@@ -178,12 +184,7 @@ const YearAndSelectorContent = () => {
     setSelectedMonth("");
     setSelectedSet("");
     setActiveTab("writing");
-    setAnswers({
-      writing: "",
-      listening: {},
-      reading: {},
-      translation: "",
-    });
+    setAnswers(INITIAL_ANSWERS);
     if (year && paperData) {
       const availableMonths = paperData.papers
         .filter((p) => p.year === parseInt(year))
@@ -217,18 +218,8 @@ const YearAndSelectorContent = () => {
     setSelectedMonth("");
     setSelectedSet("");
     setActiveTab("writing");
-    setScrollPositions({
-      writing: 0,
-      listening: 0,
-      reading: 0,
-      translation: 0,
-    });
-    setAnswers({
-      writing: "",
-      listening: {},
-      reading: {},
-      translation: "",
-    });
+    setScrollPositions(INITIAL_SCROLL_POSITIONS);
+    setAnswers(INITIAL_ANSWERS);
     examStorage.clearExamData();
   };
 
