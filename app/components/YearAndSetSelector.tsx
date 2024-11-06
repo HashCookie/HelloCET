@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useState, useEffect, useCallback } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Writing from "./Writing/Writing";
@@ -34,7 +35,7 @@ interface Answers {
 
 type AnswerValue = Answers[keyof Answers];
 
-const YearAndSetSelector = () => {
+const YearAndSelectorContent = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
@@ -384,6 +385,14 @@ const YearAndSetSelector = () => {
         </div>
       )}
     </div>
+  );
+};
+
+const YearAndSetSelector = () => {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <YearAndSelectorContent />
+    </Suspense>
   );
 };
 
