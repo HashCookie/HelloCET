@@ -3,7 +3,6 @@
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
-import { useState, useEffect } from "react";
 
 type TranslationData = Pick<ExamPaper, "translation">;
 
@@ -17,6 +16,7 @@ interface TranslationProps
   year: string;
   month: string;
   set: string;
+  referenceAnswer: string;
 }
 
 const Translation = ({
@@ -25,32 +25,8 @@ const Translation = ({
   answer,
   onAnswerChange,
   readOnly,
-  year,
-  month,
-  set,
+  referenceAnswer,
 }: TranslationProps) => {
-  const [referenceAnswer, setReferenceAnswer] = useState<string>("");
-
-  useEffect(() => {
-    const fetchReferenceAnswer = async () => {
-      if (readOnly && year && month && set) {
-        try {
-          const response = await fetch(
-            `/api/answers?type=CET4&year=${year}&month=${month}&set=${set}&field=translationAnswer`
-          );
-          const data = await response.json();
-          if (data.translationAnswer?.referenceTranslation) {
-            setReferenceAnswer(data.translationAnswer.referenceTranslation);
-          }
-        } catch (error) {
-          console.error("获取翻译参考答案失败:", error);
-        }
-      }
-    };
-
-    fetchReferenceAnswer();
-  }, [readOnly, year, month, set]);
-
   return (
     <ExamSection title="Part IV Translation" isLoading={isLoading}>
       {data && (

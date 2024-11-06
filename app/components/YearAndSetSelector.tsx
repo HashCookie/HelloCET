@@ -68,6 +68,11 @@ const YearAndSelectorContent = () => {
 
   const [isReadOnly, setIsReadOnly] = useState(false);
 
+  const [referenceAnswers, setReferenceAnswers] = useState({
+    writing: "",
+    translation: "",
+  });
+
   const { data: writingData, isLoading: writingLoading } = useExamData<
     Pick<ExamPaper, "writing">
   >("writing", selectedYear, selectedMonth, selectedSet);
@@ -271,6 +276,29 @@ const YearAndSelectorContent = () => {
     examStorage.clearExamData();
   };
 
+  const fetchReferenceAnswers = useCallback(async () => {
+    if (isReadOnly && selectedYear && selectedMonth && selectedSet) {
+      try {
+        const response = await fetch(
+          `/api/answers?type=${examType}&year=${selectedYear}&month=${selectedMonth}&set=${selectedSet}`
+        );
+        const data = await response.json();
+        setReferenceAnswers({
+          writing: data.writingAnswer?.referenceEssay || "",
+          translation: data.translationAnswer?.referenceTranslation || "",
+        });
+      } catch (error) {
+        console.error("获取参考答案失败:", error);
+      }
+    }
+  }, [isReadOnly, selectedYear, selectedMonth, selectedSet, examType]);
+
+  useEffect(() => {
+    if (showControls) {
+      fetchReferenceAnswers();
+    }
+  }, [showControls, fetchReferenceAnswers]);
+
   const renderExamContent = () => {
     switch (activeTab) {
       case "writing":
@@ -284,6 +312,7 @@ const YearAndSelectorContent = () => {
             year={selectedYear}
             month={selectedMonth}
             set={selectedSet}
+            referenceAnswer={referenceAnswers.writing}
           />
         );
       case "listening":
@@ -323,6 +352,7 @@ const YearAndSelectorContent = () => {
             answer={answers.translation}
             onAnswerChange={(value) => handleAnswerChange("translation", value)}
             readOnly={isReadOnly}
+            referenceAnswer={referenceAnswers.translation}
           />
         );
       default:

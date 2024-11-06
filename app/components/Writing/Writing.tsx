@@ -3,7 +3,6 @@
 import ExamSection from "../Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 import type { ExamComponentProps } from "@/app/types/props";
-import { useState, useEffect } from "react";
 
 type WritingData = Pick<ExamPaper, "writing">;
 
@@ -17,6 +16,7 @@ interface WritingProps
   year: string;
   month: string;
   set: string;
+  referenceAnswer: string;
 }
 
 const Writing = ({
@@ -25,32 +25,8 @@ const Writing = ({
   answer,
   onAnswerChange,
   readOnly,
-  year,
-  month,
-  set,
+  referenceAnswer,
 }: WritingProps) => {
-  const [referenceAnswer, setReferenceAnswer] = useState<string>("");
-
-  useEffect(() => {
-    const fetchReferenceAnswer = async () => {
-      if (readOnly && year && month && set) {
-        try {
-          const response = await fetch(
-            `/api/answers?type=CET4&year=${year}&month=${month}&set=${set}&field=writingAnswer`
-          );
-          const data = await response.json();
-          if (data.writingAnswer?.referenceEssay) {
-            setReferenceAnswer(data.writingAnswer.referenceEssay);
-          }
-        } catch (error) {
-          console.error("获取写作参考答案失败:", error);
-        }
-      }
-    };
-
-    fetchReferenceAnswer();
-  }, [readOnly, year, month, set]);
-
   return (
     <ExamSection title="Part I Writing" isLoading={isLoading}>
       {data && (
