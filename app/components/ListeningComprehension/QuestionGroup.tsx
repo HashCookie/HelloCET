@@ -28,11 +28,9 @@ const QuestionGroup = ({
     );
     const userAnswer = answers[questionNumber];
 
-    if (optionKey === referenceAnswer?.answer && userAnswer === optionKey) {
+    if (optionKey === referenceAnswer?.answer) {
       return "correct";
     } else if (userAnswer && userAnswer === optionKey) {
-      return "wrong";
-    } else if (!userAnswer && optionKey === referenceAnswer?.answer) {
       return "wrong";
     }
     return null;
@@ -71,7 +69,7 @@ const QuestionGroup = ({
                     <label
                       className={`flex-1 text-sm font-medium ${
                         status === "correct"
-                          ? "text-green-600"
+                          ? "text-gray-700"
                           : status === "wrong"
                             ? "text-red-600"
                             : "text-gray-700"
@@ -84,6 +82,13 @@ const QuestionGroup = ({
                       {status === "wrong" && (
                         <span className="ml-2 text-red-600">✗</span>
                       )}
+                      {!status &&
+                        readOnly &&
+                        referenceAnswers?.find(
+                          (a) => a.number === question.number
+                        )?.answer === key && (
+                          <span className="ml-2 text-green-600">✓</span>
+                        )}
                     </label>
                   </div>
                 );
