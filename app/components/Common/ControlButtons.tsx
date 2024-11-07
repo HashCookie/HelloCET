@@ -41,6 +41,14 @@ const ControlButtons = ({
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
+  const calculateDuration = () => {
+    const endTime = Date.now();
+    return {
+      durationInSeconds: Math.floor((endTime - startTime) / 1000),
+      endTime,
+    };
+  };
+
   const handleSubmit = async () => {
     if (isSubmitting) return;
 
@@ -48,8 +56,7 @@ const ControlButtons = ({
       setIsSubmitting(true);
       const submissionResults = [];
       const attemptId = new Date().getTime().toString();
-      const endTime = Date.now();
-      const duration = Math.floor((endTime - startTime) / 1000);
+      const { durationInSeconds: duration } = calculateDuration();
 
       // 检查并提交写作部分
       if (answers.writing?.trim()) {
@@ -196,10 +203,7 @@ const ControlButtons = ({
     const existingScores = localStorage.getItem(storageKey);
     const scores = existingScores ? JSON.parse(existingScores) : [];
 
-    const endTime = Date.now();
-    const durationInSeconds = startTime
-      ? Math.floor((endTime - startTime) / 1000)
-      : 0;
+    const { durationInSeconds } = calculateDuration();
 
     const scoreRecord = {
       date: new Date().toISOString(),
