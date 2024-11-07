@@ -26,8 +26,11 @@ const getAnswerStatus = (
     number: number;
     answer: string;
     explanation?: string;
-  }>
+  }>,
+  readOnly?: boolean
 ) => {
+  if (!readOnly) return null;
+
   if (!referenceAnswers) return null;
 
   const referenceAnswer = referenceAnswers.find(
@@ -59,7 +62,8 @@ const renderOption = (
     question.number,
     optionKey,
     answers,
-    referenceAnswers
+    referenceAnswers,
+    readOnly
   );
   const isSelected = answers[question.number] === optionKey;
 

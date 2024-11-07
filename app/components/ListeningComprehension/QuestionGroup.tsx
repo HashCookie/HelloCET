@@ -48,25 +48,33 @@ const QuestionGroup = ({
             <div className="flex flex-col space-y-3">
               {Object.entries(question.options).map(([key, value]) => {
                 const status = getAnswerStatus(question.number, key);
+                const isSelected = answers[question.number] === key;
+
                 return (
-                  <div
+                  <label
                     key={key}
-                    className="flex items-start space-x-4 text-left"
+                    className={`flex items-start space-x-4 text-left cursor-pointer ${
+                      readOnly ? "cursor-not-allowed" : ""
+                    }`}
+                    onClick={(e) => {
+                      if (!readOnly) {
+                        e.preventDefault();
+                        onAnswerChange(question.number, key);
+                      }
+                    }}
                   >
                     <div className="flex items-center h-6 min-w-[24px]">
                       <input
                         type="radio"
                         name={`question-${question.number}`}
                         value={key}
-                        checked={answers[question.number] === key}
+                        checked={isSelected}
                         onChange={() => onAnswerChange(question.number, key)}
                         disabled={readOnly}
-                        className={`h-4 w-4 border-gray-300 ${
-                          readOnly ? "cursor-not-allowed" : ""
-                        }`}
+                        className={readOnly ? "cursor-not-allowed" : ""}
                       />
                     </div>
-                    <label
+                    <div
                       className={`flex-1 text-sm font-medium ${
                         status === "correct"
                           ? "text-gray-700"
@@ -89,8 +97,8 @@ const QuestionGroup = ({
                         )?.answer === key && (
                           <span className="ml-2 text-green-600">✓</span>
                         )}
-                    </label>
-                  </div>
+                    </div>
+                  </label>
                 );
               })}
             </div>
