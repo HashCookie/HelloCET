@@ -14,6 +14,22 @@ interface ReadingProps {
   answers: Record<number, string>;
   onAnswerChange: (answers: Record<number, string>) => void;
   readOnly?: boolean;
+  referenceAnswers?: {
+    sectionA: Array<{ number: number; answer: string }>;
+    sectionB: Array<{ number: number; answer: string; explanation?: string }>;
+    sectionC: {
+      passageOne: Array<{
+        number: number;
+        answer: string;
+        explanation?: string;
+      }>;
+      passageTwo: Array<{
+        number: number;
+        answer: string;
+        explanation?: string;
+      }>;
+    };
+  };
 }
 
 const ReadingComprehension = ({
@@ -22,6 +38,7 @@ const ReadingComprehension = ({
   answers,
   onAnswerChange,
   readOnly,
+  referenceAnswers,
 }: ReadingProps) => {
   const handleAnswerChange = (questionNumber: number, answer: string) => {
     if (readOnly) return;
@@ -41,6 +58,7 @@ const ReadingComprehension = ({
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
+            referenceAnswers={referenceAnswers?.sectionA}
           />
           <SectionB
             passageTitle={data.readingComprehension.sectionB.passageTitle}
@@ -49,6 +67,7 @@ const ReadingComprehension = ({
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
+            // referenceAnswers={referenceAnswers?.sectionB}
           />
           <SectionC
             passagesOne={data.readingComprehension.sectionC.passagesOne}
@@ -58,6 +77,7 @@ const ReadingComprehension = ({
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
+            // referenceAnswers={referenceAnswers?.sectionC}
           />
         </>
       )}

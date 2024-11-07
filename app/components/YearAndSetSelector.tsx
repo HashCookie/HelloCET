@@ -72,7 +72,14 @@ const YearAndSelectorContent = () => {
     writing: "",
     translation: "",
     listening: [],
-    reading: {},
+    reading: {
+      sectionA: [],
+      sectionB: [],
+      sectionC: {
+        passageOne: [],
+        passageTwo: [],
+      },
+    },
   });
 
   const { data: writingData, isLoading: writingLoading } = useExamData<
@@ -326,6 +333,7 @@ const YearAndSelectorContent = () => {
             answers={answers.reading}
             onAnswerChange={(value) => handleAnswerChange("reading", value)}
             readOnly={isReadOnly}
+            referenceAnswers={referenceAnswers.reading}
           />
         );
       case "translation":

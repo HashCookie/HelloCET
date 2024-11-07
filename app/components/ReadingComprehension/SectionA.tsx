@@ -4,7 +4,75 @@ interface SectionAProps extends SectionA {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
   readOnly?: boolean;
+  referenceAnswers?: Array<{ number: number; answer: string }>;
 }
+
+const getAnswerStatus = (
+  questionNumber: number,
+  currentAnswer: string,
+  referenceAnswers?: Array<{ number: number; answer: string }>
+) => {
+  if (!referenceAnswers) return null;
+
+  const referenceAnswer = referenceAnswers.find(
+    (a) => a.number === questionNumber
+  );
+  if (!referenceAnswer) return null;
+
+  if (currentAnswer === referenceAnswer.answer) {
+    return "correct";
+  } else {
+    return "wrong";
+  }
+};
+
+const renderInput = (
+  number: number,
+  value: string,
+  onChange: (number: number, answer: string) => void,
+  readOnly?: boolean,
+  referenceAnswers?: Array<{ number: number; answer: string }>
+) => {
+  const status = getAnswerStatus(number, value, referenceAnswers);
+  const referenceAnswer = referenceAnswers?.find(
+    (a) => a.number === number
+  )?.answer;
+
+  const displayValue =
+    readOnly && referenceAnswer
+      ? value
+        ? status === "wrong"
+          ? `${value}|${referenceAnswer}`
+          : `${value}✓`
+        : referenceAnswer
+      : value;
+
+  return (
+    <span className="inline-block mx-1">
+      <span className="text-gray-500">{number}.</span>
+      <input
+        type="text"
+        value={displayValue}
+        onChange={(e) => onChange(number, e.target.value.toUpperCase())}
+        className={`w-16 text-center border-b-2 ${
+          readOnly
+            ? status === "correct"
+              ? "border-green-500 text-green-600"
+              : status === "wrong"
+                ? "border-red-500 text-red-600"
+                : "border-gray-300"
+            : "border-gray-300"
+        } focus:outline-none bg-transparent uppercase ${
+          readOnly ? "cursor-not-allowed" : ""
+        }`}
+        maxLength={
+          readOnly && status === "wrong" ? 3 : status === "correct" ? 2 : 1
+        }
+        readOnly={readOnly}
+      />
+    </span>
+  );
+};
 
 const SectionA = ({
   passages,
@@ -12,6 +80,7 @@ const SectionA = ({
   answers,
   onAnswerChange,
   readOnly,
+  referenceAnswers,
 }: SectionAProps) => {
   const renderPassageWithBlanks = (text: string) => {
     const parts = text.split(/(\s(?:2[6-9]|3[0-5])\s)/g);
@@ -21,23 +90,12 @@ const SectionA = ({
 
       if (numberMatch) {
         const number = parseInt(numberMatch[0]);
-        return (
-          <span key={index} className="inline-block mx-1">
-            <span className="text-gray-500">{number}.</span>
-            <input
-              type="text"
-              name={`question-${number}`}
-              value={answers[number] || ""}
-              onChange={(e) =>
-                onAnswerChange(number, e.target.value.toUpperCase())
-              }
-              className={`w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
-                readOnly ? "cursor-not-allowed" : ""
-              }`}
-              maxLength={1}
-              readOnly={readOnly}
-            />
-          </span>
+        return renderInput(
+          number,
+          answers[number] || "",
+          onAnswerChange,
+          readOnly,
+          referenceAnswers
         );
       }
       return <span key={index}>{part}</span>;
