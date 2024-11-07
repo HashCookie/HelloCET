@@ -71,6 +71,8 @@ const YearAndSelectorContent = () => {
   const [referenceAnswers, setReferenceAnswers] = useState({
     writing: "",
     translation: "",
+    listening: [],
+    reading: {},
   });
 
   const { data: writingData, isLoading: writingLoading } = useExamData<
@@ -277,6 +279,8 @@ const YearAndSelectorContent = () => {
         setReferenceAnswers({
           writing: data.writingAnswer?.referenceEssay || "",
           translation: data.translationAnswer?.referenceTranslation || "",
+          listening: data.listeningAnswers || [],
+          reading: data.readingAnswers || {},
         });
       } catch (error) {
         console.error("获取参考答案失败:", error);
@@ -311,6 +315,7 @@ const YearAndSelectorContent = () => {
             answers={answers.listening}
             onAnswerChange={(value) => handleAnswerChange("listening", value)}
             readOnly={isReadOnly}
+            referenceAnswers={referenceAnswers.listening}
           />
         );
       case "reading":

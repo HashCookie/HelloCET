@@ -15,6 +15,10 @@ interface ListeningProps {
   answers: Record<number, string>;
   onAnswerChange: (answers: Record<number, string>) => void;
   readOnly?: boolean;
+  referenceAnswers?: {
+    number: number;
+    answer: string;
+  }[];
 }
 
 interface SectionProps {
@@ -29,6 +33,10 @@ interface SectionProps {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
   readOnly?: boolean;
+  referenceAnswers?: {
+    number: number;
+    answer: string;
+  }[];
 }
 
 const Section = ({
@@ -39,6 +47,7 @@ const Section = ({
   answers,
   onAnswerChange,
   readOnly,
+  referenceAnswers,
 }: SectionProps) => {
   return (
     <div className="mb-8">
@@ -53,6 +62,7 @@ const Section = ({
           answers={answers}
           onAnswerChange={onAnswerChange}
           readOnly={readOnly}
+          referenceAnswers={referenceAnswers}
         />
       ))}
     </div>
@@ -65,6 +75,7 @@ const ListeningComprehension = ({
   answers,
   onAnswerChange,
   readOnly,
+  referenceAnswers,
 }: ListeningProps) => {
   const handleAnswerChange = (questionNumber: number, answer: string) => {
     if (readOnly) return;
@@ -88,6 +99,7 @@ const ListeningComprehension = ({
               answers={answers}
               onAnswerChange={handleAnswerChange}
               readOnly={readOnly}
+              referenceAnswers={referenceAnswers}
             />
           ))}
         </div>
