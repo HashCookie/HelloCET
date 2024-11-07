@@ -1,103 +1,103 @@
 import { useState, useEffect } from "react";
-import { formatDurationFromSeconds } from "../../utils/dateConversion";
 
-export interface ScoreRecord {
-  date: string;
-  type: string;
-  score: number;
-  completedQuestions: number;
-  duration: string;
+interface BaseRecord {
   attemptId: string;
-  seconds: number;
-  examType?: string;
-  year?: string;
-  month?: string;
-  set?: string;
+  type: string;
+  date: string;
 }
 
-export function useScoreRecords(limit?: number, type?: string) {
+interface ExamRecord extends BaseRecord {
+  duration: string;
+  seconds: number;
+}
+
+interface SectionRecord extends BaseRecord {
+  score: number;
+  completedQuestions: number;
+  answer?: string;
+  answers?: Record<number, string>;
+  duration?: string;
+  seconds?: number;
+}
+
+export interface ScoreRecord
+  extends Omit<SectionRecord, "duration" | "seconds"> {
+  duration: string;
+  seconds: number;
+}
+
+export function useScoreRecords(limit?: number, examType?: string) {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
 
   useEffect(() => {
-    const transformScores = (scoresString: string | null): ScoreRecord[] => {
-      return scoresString ? JSON.parse(scoresString) : [];
-    };
-
-    const scoreCategories = [
-      "readingScores",
-      "listeningScores",
-      "writingScores",
-      "translationScores",
-    ];
-
-    const allScores = scoreCategories.flatMap((category) =>
-      transformScores(localStorage.getItem(category))
+    const examRecords = JSON.parse(
+      localStorage.getItem("examRecords") || "[]"
+    ) as ExamRecord[];
+    const examRecordsMap = new Map(
+      examRecords.map((record) => [record.attemptId, record])
     );
 
-    const combinedScoresMap = new Map<string, ScoreRecord>();
+    const sections = ["writing", "listening", "reading", "translation"];
+    const recordsMap = new Map<string, ScoreRecord>();
 
-    allScores.forEach((record) => {
-      const paperKey = record.attemptId;
-      const examType = record.type.includes("CET4") ? "CET4" : "CET6";
+    sections.forEach((section) => {
+      const key = `${section}Scores`;
+      const sectionRecords = JSON.parse(
+        localStorage.getItem(key) || "[]"
+      ) as SectionRecord[];
 
-      if (type && examType !== type) {
-        return;
-      }
-
-      const combinedRecord = combinedScoresMap.get(paperKey) || {
-        date: record.date,
-        type: record.type,
-        score: 0,
-        completedQuestions: 0,
-        duration: "0分钟0秒",
-        seconds: 0,
-        attemptId: record.attemptId,
-        examType,
-        year: "",
-        month: "",
-        set: "",
-      };
-
-      if (!combinedRecord.year) {
-        const paperInfo = record.type.match(/(\d{4})年(\d{1,2})月.*?第(\d+)套/);
-        if (paperInfo) {
-          const [, year, month, set] = paperInfo;
-          combinedRecord.year = year;
-          combinedRecord.month = month;
-          combinedRecord.set = set;
+      sectionRecords.forEach((record) => {
+        const examRecord = examRecordsMap.get(record.attemptId);
+        if (!examRecord) {
+          console.warn(
+            `Missing exam record for attemptId: ${record.attemptId}`
+          );
+          return;
         }
-      }
 
-      combinedRecord.score += record.score;
-      combinedRecord.score = parseFloat(combinedRecord.score.toFixed(1));
-      combinedRecord.completedQuestions += record.completedQuestions;
-      combinedRecord.seconds += record.seconds || 0;
-      combinedRecord.duration = formatDurationFromSeconds(
-        combinedRecord.seconds
-      );
-
-      combinedScoresMap.set(paperKey, combinedRecord);
+        const existingRecord = recordsMap.get(record.attemptId);
+        if (existingRecord) {
+          recordsMap.set(record.attemptId, {
+            ...existingRecord,
+            score: Math.max(existingRecord.score, record.score),
+            completedQuestions:
+              existingRecord.completedQuestions + record.completedQuestions,
+          });
+        } else {
+          recordsMap.set(record.attemptId, {
+            ...record,
+            duration: examRecord.duration,
+            seconds: examRecord.seconds,
+          } as ScoreRecord);
+        }
+      });
     });
 
-    const combinedRecordsArray = Array.from(combinedScoresMap.values()).sort(
+    let allRecords = Array.from(recordsMap.values());
+
+    allRecords.sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
 
-    setRecords(
-      limit ? combinedRecordsArray.slice(0, limit) : combinedRecordsArray
-    );
-  }, [limit, type]);
+    if (examType) {
+      allRecords = allRecords.filter((record) =>
+        record.type.includes(examType)
+      );
+    }
+
+    if (limit) {
+      allRecords = allRecords.slice(0, limit);
+    }
+
+    setRecords(allRecords);
+  }, [limit, examType]);
 
   const clearRecords = () => {
-    const scoreCategories = [
-      "readingScores",
-      "listeningScores",
-      "writingScores",
-      "translationScores",
-    ];
-    scoreCategories.forEach((category) => {
-      localStorage.removeItem(category);
+    const sections = ["writing", "listening", "reading", "translation"];
+    sections.forEach((section) => {
+      localStorage.removeItem(`${section}Scores`);
     });
+    localStorage.removeItem("examRecords");
     setRecords([]);
   };
 

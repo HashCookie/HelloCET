@@ -58,6 +58,60 @@ const ControlButtons = ({
       const attemptId = new Date().getTime().toString();
       const { durationInSeconds: duration } = calculateDuration();
 
+      const examRecord = {
+        duration: formatDurationFromSeconds(duration),
+        seconds: duration,
+        date: new Date().toISOString(),
+        type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
+        attemptId,
+      };
+
+      const storageKey = "examRecords";
+      const existingRecords = JSON.parse(
+        localStorage.getItem(storageKey) || "[]"
+      );
+      existingRecords.push(examRecord);
+      localStorage.setItem(storageKey, JSON.stringify(existingRecords));
+
+      interface ExamRecord {
+        duration: string;
+        seconds: number;
+        date: string;
+        type: string;
+        attemptId: string;
+      }
+
+      const saveScoreToLocalStorage = (
+        section: string,
+        data: ScoreData,
+        examRecord: ExamRecord
+      ) => {
+        const storageKey = `${section}Scores`;
+        const existingScores = localStorage.getItem(storageKey);
+        const scores = existingScores ? JSON.parse(existingScores) : [];
+
+        const scoreRecord = {
+          duration: examRecord.duration,
+          seconds: examRecord.seconds,
+          date: examRecord.date,
+          type: examRecord.type,
+          attemptId: examRecord.attemptId,
+          score: data.score,
+          completedQuestions: getCompletedQuestions(section, answers),
+          answer:
+            section === "writing" || section === "translation"
+              ? answers[section]
+              : undefined,
+          answers:
+            section === "listening" || section === "reading"
+              ? answers[section]
+              : undefined,
+        };
+
+        scores.push(scoreRecord);
+        localStorage.setItem(storageKey, JSON.stringify(scores));
+      };
+
       // 检查并提交写作部分
       if (answers.writing?.trim()) {
         try {
@@ -76,7 +130,7 @@ const ControlButtons = ({
           if (response.ok) {
             console.log("写作提交成功", data);
             submissionResults.push({ section: "写作", data });
-            saveScoreToLocalStorage("writing", data, examType, attemptId);
+            saveScoreToLocalStorage("writing", data, examRecord);
           }
         } catch {
           submissionResults.push({ section: "写作", error: "提交失败" });
@@ -96,12 +150,7 @@ const ControlButtons = ({
 
           if (result.success && result.data) {
             submissionResults.push({ section: "听力", data: result.data });
-            saveScoreToLocalStorage(
-              "listening",
-              result.data,
-              examType,
-              attemptId
-            );
+            saveScoreToLocalStorage("listening", result.data, examRecord);
           } else {
             submissionResults.push({ section: "听力", error: result.error });
           }
@@ -123,12 +172,7 @@ const ControlButtons = ({
 
           if (result.success && result.data) {
             submissionResults.push({ section: "阅读", data: result.data });
-            saveScoreToLocalStorage(
-              "reading",
-              result.data,
-              examType,
-              attemptId
-            );
+            saveScoreToLocalStorage("reading", result.data, examRecord);
           } else {
             submissionResults.push({ section: "阅读", error: result.error });
           }
@@ -149,12 +193,7 @@ const ControlButtons = ({
 
             if (result.success && result.data) {
               submissionResults.push({ section: "翻译", data: result.data });
-              saveScoreToLocalStorage(
-                "translation",
-                result.data,
-                examType,
-                attemptId
-              );
+              saveScoreToLocalStorage("translation", result.data, examRecord);
             } else {
               submissionResults.push({ section: "翻译", error: result.error });
             }
@@ -191,40 +230,6 @@ const ControlButtons = ({
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const saveScoreToLocalStorage = (
-    section: string,
-    data: ScoreData,
-    examType: string,
-    attemptId: string
-  ) => {
-    const storageKey = `${section}Scores`;
-    const existingScores = localStorage.getItem(storageKey);
-    const scores = existingScores ? JSON.parse(existingScores) : [];
-
-    const { durationInSeconds } = calculateDuration();
-
-    const scoreRecord = {
-      date: new Date().toISOString(),
-      type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
-      score: data.score,
-      completedQuestions: getCompletedQuestions(section, answers),
-      duration: formatDurationFromSeconds(durationInSeconds),
-      seconds: durationInSeconds,
-      attemptId,
-      answer:
-        section === "writing" || section === "translation"
-          ? answers[section]
-          : undefined,
-      answers:
-        section === "listening" || section === "reading"
-          ? answers[section]
-          : undefined,
-    };
-
-    scores.push(scoreRecord);
-    localStorage.setItem(storageKey, JSON.stringify(scores));
   };
 
   const getCompletedQuestions = (section: string, answers: Answers) => {

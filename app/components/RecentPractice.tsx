@@ -5,6 +5,14 @@ import { formatDateToBeijingTime } from "../../utils/dateConversion";
 import { useScoreRecords } from "../hooks/useScoreRecords";
 import { examStorage } from "@/app/utils/storage";
 
+interface ExamRecord {
+  attemptId: string;
+  duration: string;
+  seconds: number;
+  date: string;
+  type: string;
+}
+
 interface PracticeRecord {
   type: string;
   score: number;
@@ -108,29 +116,42 @@ export default function RecentPractice() {
     );
   };
 
+  const getExamRecord = (attemptId: string): ExamRecord | undefined => {
+    const examRecords = JSON.parse(
+      localStorage.getItem("examRecords") || "[]"
+    ) as ExamRecord[];
+    return examRecords.find(
+      (record: ExamRecord) => record.attemptId === attemptId
+    );
+  };
+
   if (records.length === 0) {
     return <div className="text-center text-gray-500 py-8">暂无练习记录</div>;
   }
 
   return (
     <div className="space-y-4">
-      {records.map((record, index) => (
-        <div
-          key={index}
-          onClick={() => handleRecordClick(record)}
-          className="p-4 bg-gray-50 rounded hover:bg-gray-100 transition-colors cursor-pointer"
-        >
-          <div className="flex items-center justify-between mb-2">
-            <h4 className="font-medium text-gray-900">{record.type}</h4>
-            <span className="text-blue-600 font-medium">
-              {record.score.toFixed(1)}分
-            </span>
+      {records.map((record, index) => {
+        const examRecord = getExamRecord(record.attemptId);
+        return (
+          <div
+            key={index}
+            onClick={() => handleRecordClick(record)}
+            className="p-4 bg-gray-50 rounded hover:bg-gray-100 transition-colors cursor-pointer"
+          >
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="font-medium text-gray-900">{record.type}</h4>
+              <span className="text-blue-600 font-medium">
+                {record.score.toFixed(1)}分
+              </span>
+            </div>
+            <div className="text-sm text-gray-500">
+              {formatDateToBeijingTime(record.date)} | 用时:{" "}
+              {examRecord?.duration || record.duration}
+            </div>
           </div>
-          <div className="text-sm text-gray-500">
-            {formatDateToBeijingTime(record.date)} | 用时: {record.duration}
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
