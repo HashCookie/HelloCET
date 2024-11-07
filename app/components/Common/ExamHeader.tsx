@@ -7,7 +7,6 @@ interface ExamHeaderProps {
   title: string;
   activeTab: string;
   onTabChange: (tab: string) => void;
-  onReset: () => void;
   onBack?: () => void;
   showBackButton?: boolean;
   year: string;
@@ -32,7 +31,6 @@ const ExamHeader = ({
   title,
   activeTab,
   onTabChange,
-  onReset,
   onBack,
   showBackButton = false,
   year,
@@ -144,7 +142,6 @@ const ExamHeader = ({
           </div>
           {!readOnly && (
             <ControlButtons
-              onReset={onReset}
               year={year}
               month={month}
               set={set}

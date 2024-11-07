@@ -13,7 +13,6 @@ import { examStorage } from "@/app/utils/storage";
 import type { Answers } from "@/app/types/answers";
 
 interface ControlButtonsProps {
-  onReset: () => void;
   year?: string;
   month?: string;
   set?: string;
@@ -28,13 +27,7 @@ interface ScoreData {
   details?: unknown;
 }
 
-const ControlButtons = ({
-  onReset,
-  year,
-  month,
-  set,
-  answers,
-}: ControlButtonsProps) => {
+const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [startTime] = useState(Date.now());
@@ -297,12 +290,6 @@ const ControlButtons = ({
         disabled={isSubmitting}
       >
         {isSubmitting ? "提交中..." : "提交试卷"}
-      </button>
-      <button
-        className="px-6 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors"
-        onClick={onReset}
-      >
-        重新选择
       </button>
     </div>
   );

@@ -225,7 +225,6 @@ const YearAndSelectorContent = () => {
     examStorage.clearExamData();
   };
 
-  const handleReset = () => resetExam();
   const handleBack = () => resetExam(true);
 
   const handleAnswerChange = (
@@ -350,7 +349,6 @@ const YearAndSelectorContent = () => {
             title={`${selectedYear}年${selectedMonth}月大学英语${examType}真题（卷${selectedSet}）`}
             activeTab={activeTab}
             onTabChange={handleTabChange}
-            onReset={handleReset}
             onBack={handleBack}
             showBackButton={true}
             year={selectedYear}
