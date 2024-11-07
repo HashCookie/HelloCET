@@ -1,7 +1,9 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { formatDateToBeijingTime } from "../../utils/dateConversion";
 import { useScoreRecords, type ScoreRecord } from "../hooks/useScoreRecords";
+import { examStorage } from "@/app/utils/storage";
 
 const formatCompletedQuestions = (record: ScoreRecord) => {
   const type = record.type.toLowerCase();
@@ -18,7 +20,68 @@ const formatCompletedQuestions = (record: ScoreRecord) => {
 };
 
 export default function ScoresHistory() {
+  const router = useRouter();
   const { records, clearRecords } = useScoreRecords();
+
+  const handleRecordClick = async (record: ScoreRecord) => {
+    const yearMatch = record.type.match(/(\d{4})年/);
+    const monthMatch = record.type.match(/(\d{1,2})月/);
+    const setMatch = record.type.match(/卷(\d+)/);
+    const examTypeMatch = record.type.match(/(CET4|CET6)/i);
+
+    const year = yearMatch ? yearMatch[1] : "";
+    const month = monthMatch ? monthMatch[1] : "";
+    const set = setMatch ? setMatch[1] : "1";
+    const examType = examTypeMatch ? examTypeMatch[1].toLowerCase() : "";
+
+    if (!year || !month || !examType) {
+      console.warn("无法从试卷标题解析出年份、月份或考试类型");
+      return;
+    }
+
+    const allScores = {
+      writing: JSON.parse(localStorage.getItem("writingScores") || "[]"),
+      listening: JSON.parse(localStorage.getItem("listeningScores") || "[]"),
+      reading: JSON.parse(localStorage.getItem("readingScores") || "[]"),
+      translation: JSON.parse(
+        localStorage.getItem("translationScores") || "[]"
+      ),
+    };
+
+    const matchRecord = (scores: ScoreRecord[]) => {
+      return scores.find(
+        (s: ScoreRecord) =>
+          s.attemptId === record.attemptId && s.type === record.type
+      );
+    };
+
+    const writingRecord = matchRecord(allScores.writing);
+    const listeningRecord = matchRecord(allScores.listening);
+    const readingRecord = matchRecord(allScores.reading);
+    const translationRecord = matchRecord(allScores.translation);
+
+    const answers = {
+      writing: writingRecord?.answer || "",
+      listening: listeningRecord?.answers || {},
+      reading: readingRecord?.answers || {},
+      translation: translationRecord?.answer || "",
+    };
+
+    await examStorage.saveState({
+      year,
+      month,
+      set,
+      showControls: true,
+      activeTab: "writing",
+      readOnly: true,
+    });
+
+    await examStorage.saveAnswers(answers);
+
+    router.push(
+      `/${examType}?year=${year}&month=${month}&set=${set}&readOnly=true`
+    );
+  };
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-5">
@@ -53,7 +116,8 @@ export default function ScoresHistory() {
                   {records.map((record, index) => (
                     <tr
                       key={index}
-                      className="hover:bg-gray-50 transition-colors"
+                      onClick={() => handleRecordClick(record)}
+                      className="hover:bg-gray-50 transition-colors cursor-pointer"
                     >
                       <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
                         {formatDateToBeijingTime(record.date)}
