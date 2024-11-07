@@ -59,7 +59,7 @@ export function useScoreRecords(limit?: number, examType?: string) {
         if (existingRecord) {
           recordsMap.set(record.attemptId, {
             ...existingRecord,
-            score: Math.max(existingRecord.score, record.score),
+            score: existingRecord.score + record.score,
             completedQuestions:
               existingRecord.completedQuestions + record.completedQuestions,
           });

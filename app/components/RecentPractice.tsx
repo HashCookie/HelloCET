@@ -125,6 +125,20 @@ export default function RecentPractice() {
     );
   };
 
+  const getSectionScore = (
+    attemptId: string,
+    type: string,
+    section: string
+  ): number => {
+    const scores = JSON.parse(
+      localStorage.getItem(`${section}Scores`) || "[]"
+    ) as ScoreRecord[];
+    const record = scores.find(
+      (s) => s.attemptId === attemptId && s.type === type
+    );
+    return record?.score || 0;
+  };
+
   if (records.length === 0) {
     return <div className="text-center text-gray-500 py-8">暂无练习记录</div>;
   }
@@ -133,6 +147,27 @@ export default function RecentPractice() {
     <div className="space-y-4">
       {records.map((record, index) => {
         const examRecord = getExamRecord(record.attemptId);
+        const writingScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "writing"
+        );
+        const listeningScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "listening"
+        );
+        const readingScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "reading"
+        );
+        const translationScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "translation"
+        );
+
         return (
           <div
             key={index}
@@ -144,6 +179,12 @@ export default function RecentPractice() {
               <span className="text-blue-600 font-medium">
                 {record.score.toFixed(1)}分
               </span>
+            </div>
+            <div className="text-sm text-gray-600 mb-2 flex flex-wrap gap-2">
+              <span>写作: {writingScore.toFixed(1)}</span>
+              <span>听力: {listeningScore.toFixed(1)}</span>
+              <span>阅读: {readingScore.toFixed(1)}</span>
+              <span>翻译: {translationScore.toFixed(1)}</span>
             </div>
             <div className="text-sm text-gray-500">
               {formatDateToBeijingTime(record.date)} | 用时:{" "}
