@@ -67,7 +67,7 @@ const ReadingComprehension = ({
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
-            // referenceAnswers={referenceAnswers?.sectionB}
+            referenceAnswers={referenceAnswers?.sectionB}
           />
           <SectionC
             passagesOne={data.readingComprehension.sectionC.passagesOne}

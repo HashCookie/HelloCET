@@ -4,7 +4,87 @@ interface SectionBProps extends SectionB {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
   readOnly?: boolean;
+  referenceAnswers?: Array<{
+    number: number;
+    answer: string;
+    explanation?: string;
+  }>;
 }
+
+const getAnswerStatus = (
+  questionNumber: number,
+  currentAnswer: string,
+  referenceAnswers?: Array<{
+    number: number;
+    answer: string;
+    explanation?: string;
+  }>
+) => {
+  if (!referenceAnswers) return null;
+
+  const referenceAnswer = referenceAnswers.find(
+    (a) => a.number === questionNumber
+  );
+  if (!referenceAnswer) return null;
+
+  return currentAnswer.toUpperCase() === referenceAnswer.answer
+    ? "correct"
+    : "wrong";
+};
+
+const renderInput = (
+  number: number,
+  value: string,
+  onChange: (number: number, answer: string) => void,
+  readOnly?: boolean,
+  referenceAnswers?: Array<{
+    number: number;
+    answer: string;
+    explanation?: string;
+  }>
+) => {
+  const status = getAnswerStatus(number, value, referenceAnswers);
+  const referenceAnswer = referenceAnswers?.find((a) => a.number === number);
+
+  const displayValue =
+    readOnly && referenceAnswer
+      ? value
+        ? status === "wrong"
+          ? `${value}|${referenceAnswer.answer}`
+          : `${value}✓`
+        : referenceAnswer.answer
+      : value;
+
+  return (
+    <>
+      <input
+        type="text"
+        value={displayValue}
+        onChange={(e) => onChange(number, e.target.value.toUpperCase())}
+        className={`w-12 text-center border-b-2 ${
+          readOnly
+            ? status === "correct"
+              ? "border-green-500 text-green-600"
+              : status === "wrong"
+                ? "border-red-500 text-red-600"
+                : "border-gray-300"
+            : "border-gray-300"
+        } focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
+          readOnly ? "cursor-not-allowed" : ""
+        }`}
+        maxLength={
+          readOnly && status === "wrong" ? 3 : status === "correct" ? 2 : 1
+        }
+        readOnly={readOnly}
+      />
+      {readOnly && referenceAnswer?.explanation && (
+        <p className="text-gray-600 mt-1 text-sm">
+          解析: {referenceAnswer.explanation}
+        </p>
+      )}
+    </>
+  );
+};
 
 const SectionB = ({
   passageTitle,
@@ -13,6 +93,7 @@ const SectionB = ({
   answers,
   onAnswerChange,
   readOnly,
+  referenceAnswers,
 }: SectionBProps) => {
   return (
     <div className="mb-8">
@@ -39,19 +120,13 @@ const SectionB = ({
             <p className="font-medium mb-3">
               {question.number}. {question.statement}
             </p>
-            <input
-              type="text"
-              name={`question-${question.number}`}
-              value={answers[question.number] || ""}
-              onChange={(e) =>
-                onAnswerChange(question.number, e.target.value.toUpperCase())
-              }
-              className={`w-12 text-center border-b-2 border-gray-300 focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
-                readOnly ? "cursor-not-allowed" : ""
-              }`}
-              maxLength={1}
-              readOnly={readOnly}
-            />
+            {renderInput(
+              question.number,
+              answers[question.number] || "",
+              onAnswerChange,
+              readOnly,
+              referenceAnswers
+            )}
           </div>
         ))}
       </div>
