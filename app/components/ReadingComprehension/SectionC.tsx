@@ -4,7 +4,100 @@ interface SectionCProps extends SectionCType {
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
   readOnly?: boolean;
+  referenceAnswers?: {
+    passageOne: Array<{
+      number: number;
+      answer: string;
+      explanation?: string;
+    }>;
+    passageTwo: Array<{
+      number: number;
+      answer: string;
+      explanation?: string;
+    }>;
+  };
 }
+
+const getAnswerStatus = (
+  questionNumber: number,
+  optionKey: string,
+  answers: Record<number, string>,
+  referenceAnswers?: Array<{
+    number: number;
+    answer: string;
+    explanation?: string;
+  }>
+) => {
+  if (!referenceAnswers) return null;
+
+  const referenceAnswer = referenceAnswers.find(
+    (a) => a.number === questionNumber
+  );
+  const userAnswer = answers[questionNumber];
+
+  if (optionKey === referenceAnswer?.answer) {
+    return "correct";
+  } else if (userAnswer && userAnswer === optionKey) {
+    return "wrong";
+  }
+  return null;
+};
+
+const renderOption = (
+  question: { number: number; options: Option },
+  optionKey: keyof Option,
+  answers: Record<number, string>,
+  onAnswerChange: (questionNumber: number, answer: string) => void,
+  readOnly?: boolean,
+  referenceAnswers?: Array<{
+    number: number;
+    answer: string;
+    explanation?: string;
+  }>
+) => {
+  const status = getAnswerStatus(
+    question.number,
+    optionKey,
+    answers,
+    referenceAnswers
+  );
+  const isSelected = answers[question.number] === optionKey;
+
+  return (
+    <div key={optionKey} className="flex items-start space-x-2">
+      <input
+        type="radio"
+        name={`question-${question.number}`}
+        id={`question-${question.number}-${optionKey}`}
+        value={optionKey}
+        checked={isSelected}
+        onChange={() => onAnswerChange(question.number, optionKey)}
+        className={`mt-1 ${readOnly ? "cursor-not-allowed" : ""}`}
+        disabled={readOnly}
+      />
+      <label
+        htmlFor={`question-${question.number}-${optionKey}`}
+        className={`${readOnly ? "cursor-not-allowed" : ""} ${
+          status === "correct"
+            ? "text-gray-700"
+            : status === "wrong"
+              ? "text-red-600"
+              : "text-gray-700"
+        }`}
+      >
+        {optionKey}. {question.options[optionKey]}
+        {status === "correct" && <span className="ml-2 text-green-600">✓</span>}
+        {status === "wrong" && <span className="ml-2 text-red-600">✗</span>}
+        {!status &&
+          readOnly &&
+          referenceAnswers?.find((a) => a.number === question.number)
+            ?.answer === optionKey && (
+            <span className="ml-2 text-green-600">✓</span>
+          )}
+      </label>
+    </div>
+  );
+};
 
 const SectionC = ({
   passagesOne,
@@ -14,8 +107,16 @@ const SectionC = ({
   answers,
   onAnswerChange,
   readOnly,
+  referenceAnswers,
 }: SectionCProps) => {
-  const renderQuestions = (questions: SectionCType["questionsOne"]) => (
+  const renderQuestions = (
+    questions: SectionCType["questionsOne"],
+    referenceAnswersSection?: Array<{
+      number: number;
+      answer: string;
+      explanation?: string;
+    }>
+  ) => (
     <div className="space-y-6 text-left">
       {questions.map((question) => (
         <div key={question.number} className="border-b pb-4">
@@ -23,29 +124,29 @@ const SectionC = ({
             {question.number}. {question.statement}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {(Object.keys(question.options) as Array<keyof Option>).map(
-              (key) => (
-                <div key={key} className="flex items-start space-x-2">
-                  <input
-                    type="radio"
-                    name={`question-${question.number}`}
-                    id={`question-${question.number}-${key}`}
-                    value={key}
-                    checked={answers[question.number] === key}
-                    onChange={() => onAnswerChange(question.number, key)}
-                    className={`mt-1 ${readOnly ? "cursor-not-allowed" : ""}`}
-                    disabled={readOnly}
-                  />
-                  <label
-                    htmlFor={`question-${question.number}-${key}`}
-                    className={readOnly ? "cursor-not-allowed" : ""}
-                  >
-                    {key}. {question.options[key]}
-                  </label>
-                </div>
+            {(Object.keys(question.options) as Array<keyof Option>).map((key) =>
+              renderOption(
+                question,
+                key,
+                answers,
+                onAnswerChange,
+                readOnly,
+                referenceAnswersSection
               )
             )}
           </div>
+          {readOnly &&
+            referenceAnswersSection?.find((a) => a.number === question.number)
+              ?.explanation && (
+              <p className="text-gray-600 mt-2 text-sm">
+                解析:{" "}
+                {
+                  referenceAnswersSection.find(
+                    (a) => a.number === question.number
+                  )?.explanation
+                }
+              </p>
+            )}
         </div>
       ))}
     </div>
@@ -75,7 +176,7 @@ const SectionC = ({
             </p>
           ))}
         </div>
-        {renderQuestions(questionsOne)}
+        {renderQuestions(questionsOne, referenceAnswers?.passageOne)}
       </div>
 
       {/* Passage Two */}
@@ -91,7 +192,7 @@ const SectionC = ({
             </p>
           ))}
         </div>
-        {renderQuestions(questionsTwo)}
+        {renderQuestions(questionsTwo, referenceAnswers?.passageTwo)}
       </div>
     </div>
   );

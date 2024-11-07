@@ -77,7 +77,7 @@ const ReadingComprehension = ({
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
-            // referenceAnswers={referenceAnswers?.sectionC}
+            referenceAnswers={referenceAnswers?.sectionC}
           />
         </>
       )}
