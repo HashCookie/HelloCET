@@ -17,8 +17,8 @@ export default function HeroSection() {
           为准备参加大学英语四级和六级考试的学生设计的在线测试网站。
         </p>
         <div className="mt-10">
-          <button 
-            onClick={() => router.push('/cet4')}
+          <button
+            onClick={() => router.push("/cet4")}
             className="w-full sm:w-auto px-6 py-2 text-sm sm:text-base sm:px-8 sm:py-3 rounded font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
           >
             Get started
