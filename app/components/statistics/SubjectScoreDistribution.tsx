@@ -28,22 +28,55 @@ const getSectionScore = (
   return record?.score || 0;
 };
 
+const getPercentageScore = (score: number, section: SectionName): number => {
+  return (score / SECTION_MAX_SCORES[section]) * 100;
+};
+
 const getAverage = (scores: number[]): number => {
-  const average = scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
-  return average;
+  return scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
 };
 
 const getMax = (scores: number[]): number => {
-  const max = scores.length ? Math.max(...scores) : 0;
-  return max;
+  return scores.length ? Math.max(...scores) : 0;
 };
 
-const getLatest = (scores: number[], records: ScoreRecord[], section: SectionName): number => {
+const getAveragePercentage = (
+  scores: number[],
+  section: SectionName
+): number => {
+  const average = getAverage(scores);
+  return getPercentageScore(average, section);
+};
+
+const getMaxPercentage = (scores: number[], section: SectionName): number => {
+  const max = getMax(scores);
+  return getPercentageScore(max, section);
+};
+
+const getLatest = (
+  scores: number[],
+  records: ScoreRecord[],
+  section: SectionName
+): number => {
   if (!scores.length || !records.length) return 0;
-  const latestRecord = [...records]
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-  const score = getSectionScore(latestRecord.attemptId, latestRecord.type, section);
+  const latestRecord = [...records].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  )[0];
+  const score = getSectionScore(
+    latestRecord.attemptId,
+    latestRecord.type,
+    section
+  );
   return score;
+};
+
+const getLatestPercentage = (
+  scores: number[],
+  records: ScoreRecord[],
+  section: SectionName
+): number => {
+  const latest = getLatest(scores, records, section);
+  return getPercentageScore(latest, section);
 };
 
 export default function SubjectScoreDistribution() {
@@ -104,10 +137,10 @@ export default function SubjectScoreDistribution() {
           {
             label: "平均分",
             data: [
-              getAverage(subjectScores.writing),
-              getAverage(subjectScores.listening),
-              getAverage(subjectScores.reading),
-              getAverage(subjectScores.translation),
+              getAveragePercentage(subjectScores.writing, "writing"),
+              getAveragePercentage(subjectScores.listening, "listening"),
+              getAveragePercentage(subjectScores.reading, "reading"),
+              getAveragePercentage(subjectScores.translation, "translation"),
             ],
             backgroundColor: "rgba(59, 130, 246, 0.2)",
             borderColor: "rgb(59, 130, 246)",
@@ -117,10 +150,10 @@ export default function SubjectScoreDistribution() {
           {
             label: "最高分",
             data: [
-              getMax(subjectScores.writing),
-              getMax(subjectScores.listening),
-              getMax(subjectScores.reading),
-              getMax(subjectScores.translation),
+              getMaxPercentage(subjectScores.writing, "writing"),
+              getMaxPercentage(subjectScores.listening, "listening"),
+              getMaxPercentage(subjectScores.reading, "reading"),
+              getMaxPercentage(subjectScores.translation, "translation"),
             ],
             backgroundColor: "rgba(34, 197, 94, 0.2)",
             borderColor: "rgb(34, 197, 94)",
@@ -130,10 +163,18 @@ export default function SubjectScoreDistribution() {
           {
             label: "最近得分",
             data: [
-              getLatest(subjectScores.writing, records, "writing"),
-              getLatest(subjectScores.listening, records, "listening"),
-              getLatest(subjectScores.reading, records, "reading"),
-              getLatest(subjectScores.translation, records, "translation"),
+              getLatestPercentage(subjectScores.writing, records, "writing"),
+              getLatestPercentage(
+                subjectScores.listening,
+                records,
+                "listening"
+              ),
+              getLatestPercentage(subjectScores.reading, records, "reading"),
+              getLatestPercentage(
+                subjectScores.translation,
+                records,
+                "translation"
+              ),
             ],
             backgroundColor: "rgba(249, 115, 22, 0.2)",
             borderColor: "rgb(249, 115, 22)",
@@ -148,9 +189,9 @@ export default function SubjectScoreDistribution() {
         scales: {
           r: {
             min: 0,
-            max: 250,
+            max: 100,
             ticks: {
-              stepSize: 50,
+              stepSize: 20,
               display: false,
             },
             grid: {
@@ -173,15 +214,22 @@ export default function SubjectScoreDistribution() {
           tooltip: {
             callbacks: {
               label: (context) => {
-                const sections: SectionName[] = ["writing", "listening", "reading", "translation"];
+                const sections: SectionName[] = [
+                  "writing",
+                  "listening",
+                  "reading",
+                  "translation",
+                ];
                 const sectionName = sections[context.dataIndex];
                 const maxScore = SECTION_MAX_SCORES[sectionName];
-                return `${context.dataset.label}: ${context.formattedValue}/${maxScore}分`;
-              }
-            }
-          }
-        }
-      }
+                const actualScore =
+                  (parseFloat(context.formattedValue) * maxScore) / 100;
+                return `${context.dataset.label}: ${actualScore.toFixed(1)}/${maxScore}分 (${parseFloat(context.formattedValue).toFixed(1)}%)`;
+              },
+            },
+          },
+        },
+      },
     });
 
     return () => {
