@@ -3,6 +3,30 @@
 import { useScoreRecords } from "@/app/hooks/useScoreRecords";
 import { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
+import { ScoreRecord } from "@/app/hooks/useScoreRecords";
+
+type SectionName = "writing" | "listening" | "reading" | "translation";
+
+const SECTION_MAX_SCORES = {
+  writing: 106.5,
+  listening: 248.5,
+  reading: 248.5,
+  translation: 106.5,
+} as const;
+
+const getSectionScore = (
+  attemptId: string,
+  type: string,
+  section: string
+): number => {
+  const scores = JSON.parse(
+    localStorage.getItem(`${section}Scores`) || "[]"
+  ) as ScoreRecord[];
+  const record = scores.find(
+    (s) => s.attemptId === attemptId && s.type === type
+  );
+  return record?.score || 0;
+};
 
 export default function SubjectScoreDistribution() {
   const { records } = useScoreRecords();
@@ -10,24 +34,46 @@ export default function SubjectScoreDistribution() {
   const chartInstance = useRef<Chart | null>(null);
 
   useEffect(() => {
-    if (!chartRef.current) return;
+    if (!chartRef.current || !records.length) return;
 
-    const subjectScores = {
-      writing: [] as number[],
-      listening: [] as number[],
-      reading: [] as number[],
-      translation: [] as number[],
-    };
+    // 获取每个科目的所有分数
+    const subjectScores = records.reduce(
+      (acc, record) => {
+        const writingScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "writing"
+        );
+        const listeningScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "listening"
+        );
+        const readingScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "reading"
+        );
+        const translationScore = getSectionScore(
+          record.attemptId,
+          record.type,
+          "translation"
+        );
 
-    records.forEach((record) => {
-      const type = record.type.toLowerCase();
-      if (type.includes("writing")) subjectScores.writing.push(record.score);
-      if (type.includes("listening"))
-        subjectScores.listening.push(record.score);
-      if (type.includes("reading")) subjectScores.reading.push(record.score);
-      if (type.includes("translation"))
-        subjectScores.translation.push(record.score);
-    });
+        if (writingScore) acc.writing.push(writingScore);
+        if (listeningScore) acc.listening.push(listeningScore);
+        if (readingScore) acc.reading.push(readingScore);
+        if (translationScore) acc.translation.push(translationScore);
+
+        return acc;
+      },
+      {
+        writing: [] as number[],
+        listening: [] as number[],
+        reading: [] as number[],
+        translation: [] as number[],
+      }
+    );
 
     const getAverage = (scores: number[]) =>
       scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
@@ -52,16 +98,47 @@ export default function SubjectScoreDistribution() {
             backgroundColor: "rgba(59, 130, 246, 0.2)",
             borderColor: "rgb(59, 130, 246)",
             borderWidth: 2,
+            fill: true,
           },
         ],
       },
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           r: {
             min: 0,
-            max: 15,
+            max: 250,
             ticks: {
-              stepSize: 3,
+              stepSize: 50,
+            },
+            grid: {
+              color: "rgba(0, 0, 0, 0.1)",
+            },
+            pointLabels: {
+              font: {
+                size: 14,
+              },
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            position: "top",
+          },
+          tooltip: {
+            callbacks: {
+              label: (context) => {
+                const sections: SectionName[] = [
+                  "writing",
+                  "listening",
+                  "reading",
+                  "translation",
+                ];
+                const sectionName = sections[context.dataIndex];
+                const maxScore = SECTION_MAX_SCORES[sectionName];
+                return `${context.dataset.label}: ${context.formattedValue}/${maxScore}分`;
+              },
             },
           },
         },
@@ -75,5 +152,9 @@ export default function SubjectScoreDistribution() {
     };
   }, [records]);
 
-  return <canvas ref={chartRef} />;
+  return (
+    <div className="w-full h-[300px]">
+      <canvas ref={chartRef} />
+    </div>
+  );
 }
