@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import { useState, useEffect, useCallback } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import Writing from "./Writing/Writing";
 import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
 import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
@@ -45,6 +45,7 @@ const INITIAL_SCROLL_POSITIONS = {
 
 const YearAndSelectorContent = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const searchParams = useSearchParams();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
@@ -82,21 +83,49 @@ const YearAndSelectorContent = () => {
     },
   });
 
-  const { data: writingData, isLoading: writingLoading } = useExamData<
-    Pick<ExamPaper, "writing">
-  >("writing", selectedYear, selectedMonth, selectedSet);
+  const {
+    data: writingData,
+    isLoading: writingLoading,
+    error: writingError,
+  } = useExamData<Pick<ExamPaper, "writing">>(
+    "writing",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
 
-  const { data: listeningData, isLoading: listeningLoading } = useExamData<
-    Pick<ExamPaper, "listeningComprehension">
-  >("listeningComprehension", selectedYear, selectedMonth, selectedSet);
+  const {
+    data: listeningData,
+    isLoading: listeningLoading,
+    error: listeningError,
+  } = useExamData<Pick<ExamPaper, "listeningComprehension">>(
+    "listeningComprehension",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
 
-  const { data: readingData, isLoading: readingLoading } = useExamData<
-    Pick<ExamPaper, "readingComprehension">
-  >("readingComprehension", selectedYear, selectedMonth, selectedSet);
+  const {
+    data: readingData,
+    isLoading: readingLoading,
+    error: readingError,
+  } = useExamData<Pick<ExamPaper, "readingComprehension">>(
+    "readingComprehension",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
 
-  const { data: translationData, isLoading: translationLoading } = useExamData<
-    Pick<ExamPaper, "translation">
-  >("translation", selectedYear, selectedMonth, selectedSet);
+  const {
+    data: translationData,
+    isLoading: translationLoading,
+    error: translationError,
+  } = useExamData<Pick<ExamPaper, "translation">>(
+    "translation",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
 
   const fetchPaperInfo = useCallback(async () => {
     try {
@@ -351,6 +380,30 @@ const YearAndSelectorContent = () => {
         return null;
     }
   };
+
+  if (writingError || listeningError || readingError || translationError) {
+    examStorage.clearExamData();
+
+    return (
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+          <h3 className="text-red-800 font-medium">获取试卷失败</h3>
+          <p className="text-red-600 mt-1">
+            {writingError || listeningError || readingError || translationError}
+          </p>
+          <button
+            onClick={() => {
+              resetExam(true);
+              router.push("/");
+            }}
+            className="mt-4 px-4 py-2 bg-red-100 text-red-700 rounded hover:bg-red-200"
+          >
+            返回首页
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="font-[sans-serif] mt-5">

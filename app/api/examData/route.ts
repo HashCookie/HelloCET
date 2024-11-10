@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { MongoClient } from "mongodb";
+import { ApiError, handleApiError } from "@/app/utils/errorHandler";
 
 if (!process.env.MONGODB_URI) {
   throw new Error("请在 .env.local 文件中设置 MONGODB_URI");
@@ -29,15 +30,15 @@ export async function GET(request: Request) {
       { projection: { [field]: 1, _id: 0 } }
     );
 
-    await client.close();
-
     if (!result) {
-      return NextResponse.json({ error: "未找到相关试卷" }, { status: 404 });
+      throw new ApiError(404, `未找到${year}年${month}月第${set}套试卷`);
     }
+
+    await client.close();
 
     return NextResponse.json({ [field]: result[field] });
   } catch (err) {
-    console.error("数据获取失败:", err);
-    return NextResponse.json({ error: "数据获取失败" }, { status: 500 });
+    const { error, statusCode } = handleApiError(err);
+    return NextResponse.json({ error }, { status: statusCode });
   }
 }
