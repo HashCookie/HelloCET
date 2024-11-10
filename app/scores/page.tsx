@@ -101,15 +101,13 @@ export default function ScoresPage() {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-        <div className="p-6">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">
-            详细练习记录
-          </h3>
-          <Suspense fallback={<LoadingSpinner />}>
-            <ScoresHistory />
-          </Suspense>
-        </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <h3 className="text-lg font-semibold text-gray-800 mb-4">
+          详细练习记录
+        </h3>
+        <Suspense fallback={<LoadingSpinner />}>
+          <ScoresHistory />
+        </Suspense>
       </div>
     </div>
   );
