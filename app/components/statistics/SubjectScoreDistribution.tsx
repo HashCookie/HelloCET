@@ -36,7 +36,6 @@ export default function SubjectScoreDistribution() {
   useEffect(() => {
     if (!chartRef.current || !records.length) return;
 
-    // 获取每个科目的所有分数
     const subjectScores = records.reduce(
       (acc, record) => {
         const writingScore = getSectionScore(
@@ -111,14 +110,22 @@ export default function SubjectScoreDistribution() {
             max: 250,
             ticks: {
               stepSize: 50,
+              display: false,
+              maxTicksLimit: 5,
             },
             grid: {
               color: "rgba(0, 0, 0, 0.1)",
+              circular: true,
             },
             pointLabels: {
               font: {
                 size: 14,
               },
+              padding: 20,
+            },
+            angleLines: {
+              display: true,
+              color: "rgba(0, 0, 0, 0.1)",
             },
           },
         },
@@ -153,7 +160,7 @@ export default function SubjectScoreDistribution() {
   }, [records]);
 
   return (
-    <div className="w-full h-[300px]">
+    <div className="w-full h-[400px]">
       <canvas ref={chartRef} />
     </div>
   );
