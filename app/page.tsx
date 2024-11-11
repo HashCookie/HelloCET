@@ -6,7 +6,7 @@ import QuickStart from "./components/QuickStart";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex min-h-screen flex-col bg-white">
       <Header />
       <main className="flex-grow">
         <HeroSection />
@@ -14,7 +14,7 @@ export default function Home() {
         <Statistics />
         <QuickStart />
       </main>
-      <footer className="bg-gray-50 py-8 text-center text-gray-500 text-sm">
+      <footer className="bg-gray-50 py-8 text-center text-sm text-gray-500">
         <p>© 2024 HelloCET. All rights reserved.</p>
       </footer>
     </div>

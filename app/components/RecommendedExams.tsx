@@ -112,27 +112,27 @@ export default function RecommendedExams() {
           [...Array(5)].map((_, index) => (
             <div
               key={index}
-              className="border-l-4 border-gray-200 pl-4 p-4 rounded animate-pulse"
+              className="animate-pulse rounded border-l-4 border-gray-200 p-4 pl-4"
             >
-              <div className="flex items-center justify-between mb-2">
-                <div className="h-5 bg-gray-200 rounded w-2/3"></div>
-                <div className="h-4 bg-gray-200 rounded w-16"></div>
+              <div className="mb-2 flex items-center justify-between">
+                <div className="h-5 w-2/3 rounded bg-gray-200"></div>
+                <div className="h-4 w-16 rounded bg-gray-200"></div>
               </div>
-              <div className="h-4 bg-gray-200 rounded w-24"></div>
+              <div className="h-4 w-24 rounded bg-gray-200"></div>
             </div>
           ))
         : recommendedPapers.map((paper, index) => (
             <div
               key={index}
               onClick={() => handlePaperClick(paper)}
-              className={`border-l-4 ${paper.borderColor} pl-4 p-4 ${paper.hoverBg} transition-colors cursor-pointer rounded`}
+              className={`border-l-4 ${paper.borderColor} p-4 pl-4 ${paper.hoverBg} cursor-pointer rounded transition-colors`}
             >
-              <div className="flex items-center justify-between mb-2">
+              <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-medium text-gray-900">
                   {paper.year}年{paper.month}月大学英语{examType.toUpperCase()}
                   真题（卷{paper.set}）
                 </h3>
-                <span className="text-sm text-blue-600 font-medium">
+                <span className="text-sm font-medium text-blue-600">
                   {paper.tag}
                 </span>
               </div>

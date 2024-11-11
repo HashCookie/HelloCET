@@ -93,10 +93,10 @@ export default function PracticeReading() {
       <div className="mb-4">
         <button
           onClick={handleBack}
-          className="text-gray-600 hover:text-gray-800 flex items-center"
+          className="flex items-center text-gray-600 hover:text-gray-800"
         >
           <svg
-            className="w-5 h-5 mr-1"
+            className="mr-1 h-5 w-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -111,8 +111,8 @@ export default function PracticeReading() {
         </button>
       </div>
       {data?.readingComprehension && (
-        <div className="prose max-w-none mb-6">
-          <div className="text-sm text-gray-500 mb-6">
+        <div className="prose mb-6 max-w-none">
+          <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
             {examType} {data.year}年{data.month}月第{data.set}套
           </div>
@@ -128,14 +128,14 @@ export default function PracticeReading() {
             <button
               onClick={handleSubmit}
               disabled={isSubmitting}
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50"
+              className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:opacity-50"
             >
               {isSubmitting ? "评分中..." : "提交评分"}
             </button>
           </div>
           {score !== null && (
-            <div className="mt-4 p-4 bg-gray-50 rounded-md">
-              <h3 className="text-lg font-semibold mb-2">评分结果</h3>
+            <div className="mt-4 rounded-md bg-gray-50 p-4">
+              <h3 className="mb-2 text-lg font-semibold">评分结果</h3>
               <p className="text-gray-700">得分: {score}</p>
             </div>
           )}

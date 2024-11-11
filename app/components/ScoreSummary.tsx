@@ -99,30 +99,30 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg relative">
-      <h1 className="text-2xl font-bold text-center mb-2">
+    <div className="relative mx-auto my-8 max-w-4xl rounded-lg bg-white p-6 shadow-lg">
+      <h1 className="mb-2 text-center text-2xl font-bold">
         {examType}考试成绩统计
       </h1>
 
-      <div className="text-center mb-8">
-        <div className="text-4xl font-bold text-blue-600 mb-2">
+      <div className="mb-8 text-center">
+        <div className="mb-2 text-4xl font-bold text-blue-600">
           {totalScore.toFixed(1)}
         </div>
         <div className="text-gray-500">总分</div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
         {sections.map((section) => {
           const result = resultMap.get(section);
           return (
-            <div key={section} className="p-4 border rounded-lg">
-              <h3 className="text-lg font-semibold mb-4">{section}</h3>
+            <div key={section} className="rounded-lg border p-4">
+              <h3 className="mb-4 text-lg font-semibold">{section}</h3>
               {result?.data ? (
-                <div className="text-2xl font-bold text-blue-600 mb-2">
+                <div className="mb-2 text-2xl font-bold text-blue-600">
                   {result.data.score.toFixed(1)}分
                 </div>
               ) : (
-                <div className="text-lg text-gray-400 mb-2">未作答</div>
+                <div className="mb-2 text-lg text-gray-400">未作答</div>
               )}
               {result?.error && (
                 <div className="text-sm text-red-500">{result.error}</div>
@@ -132,20 +132,20 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
         })}
       </div>
 
-      <div className="text-center text-gray-600 mb-8">
+      <div className="mb-8 text-center text-gray-600">
         考试用时：{formatDurationFromSeconds(duration)}
       </div>
 
       <div className="flex justify-center space-x-4">
         <button
           onClick={() => router.push(defaultPath)}
-          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
+          className="rounded-md bg-blue-600 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-700"
         >
           返回试卷列表
         </button>
         <button
           onClick={handleViewAnswers}
-          className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors text-sm"
+          className="rounded-md bg-green-600 px-4 py-2 text-sm text-white transition-colors hover:bg-green-700"
         >
           查看答案
         </button>

@@ -97,7 +97,7 @@ export default function ScoresHistory() {
 
   if (records.length === 0) {
     return (
-      <div className="text-center py-12 text-gray-500">
+      <div className="py-12 text-center text-gray-500">
         <p>暂无成绩记录</p>
       </div>
     );
@@ -108,48 +108,48 @@ export default function ScoresHistory() {
       <div className="pr-[17px]">
         <div className="overflow-x-auto">
           <div className="h-[600px] overflow-y-auto">
-            <table className="min-w-full divide-y divide-gray-200 table-fixed">
-              <thead className="bg-gray-50 sticky top-0 z-10">
+            <table className="min-w-full table-fixed divide-y divide-gray-200">
+              <thead className="sticky top-0 z-10 bg-gray-50">
                 <tr>
-                  <th className="w-[200px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                  <th className="w-[200px] bg-gray-50 px-6 py-3 text-center text-sm font-medium tracking-wider text-gray-500">
                     日期
                   </th>
-                  <th className="w-[360px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                  <th className="w-[360px] bg-gray-50 px-6 py-3 text-center text-sm font-medium tracking-wider text-gray-500">
                     卷子
                   </th>
-                  <th className="w-[100px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                  <th className="w-[100px] bg-gray-50 px-6 py-3 text-center text-sm font-medium tracking-wider text-gray-500">
                     分数
                   </th>
-                  <th className="w-[100px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                  <th className="w-[100px] bg-gray-50 px-6 py-3 text-center text-sm font-medium tracking-wider text-gray-500">
                     已完成
                   </th>
-                  <th className="w-[140px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                  <th className="w-[140px] bg-gray-50 px-6 py-3 text-center text-sm font-medium tracking-wider text-gray-500">
                     耗时
                   </th>
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200 bg-white">
                 {getCurrentPageData().map((record, index) => (
                   <tr
                     key={index}
                     onClick={() => handleRecordClick(record)}
-                    className="hover:bg-gray-50 transition-colors cursor-pointer"
+                    className="cursor-pointer transition-colors hover:bg-gray-50"
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                    <td className="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-500">
                       {formatDateToBeijingTime(record.date)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
+                    <td className="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-900">
                       {record.type}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
-                      <span className="text-blue-600 font-medium">
+                    <td className="whitespace-nowrap px-6 py-4 text-center text-sm">
+                      <span className="font-medium text-blue-600">
                         {record.score}分
                       </span>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                    <td className="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-500">
                       {formatCompletedQuestions(record)}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                    <td className="whitespace-nowrap px-6 py-4 text-center text-sm text-gray-500">
                       {record.duration}
                     </td>
                   </tr>
@@ -160,13 +160,13 @@ export default function ScoresHistory() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-4 mb-8">
+      <div className="mb-8 mt-4 flex items-center justify-between">
         <div className="text-sm text-gray-500">共 {records.length} 条记录</div>
         <div className="flex gap-2">
           <button
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
             disabled={currentPage === 1}
-            className="px-3 py-1 rounded border border-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+            className="rounded border border-gray-300 px-3 py-1 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
           >
             上一页
           </button>
@@ -176,7 +176,7 @@ export default function ScoresHistory() {
           <button
             onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
             disabled={currentPage === totalPages}
-            className="px-3 py-1 rounded border border-gray-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+            className="rounded border border-gray-300 px-3 py-1 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
           >
             下一页
           </button>
@@ -186,7 +186,7 @@ export default function ScoresHistory() {
       <div className="text-center">
         <button
           onClick={clearRecords}
-          className="px-6 py-2.5 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200 shadow-sm"
+          className="rounded-lg bg-red-600 px-6 py-2.5 text-white shadow-sm transition-colors duration-200 hover:bg-red-700"
         >
           清除数据
         </button>

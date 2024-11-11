@@ -38,13 +38,13 @@ const QuestionGroup = ({
 
   return (
     <div className="mb-8">
-      <p className="text-sm text-gray-600 not-italic mb-4 text-left">
+      <p className="mb-4 text-left text-sm not-italic text-gray-600">
         {description}
       </p>
       <div className="space-y-8">
         {questions.map((question) => (
           <div key={question.number} className="border-b pb-6">
-            <h3 className="font-semibold mb-4 text-left">{question.number}.</h3>
+            <h3 className="mb-4 text-left font-semibold">{question.number}.</h3>
             <div className="flex flex-col space-y-3">
               {Object.entries(question.options).map(([key, value]) => {
                 const status = getAnswerStatus(question.number, key);
@@ -53,7 +53,7 @@ const QuestionGroup = ({
                 return (
                   <label
                     key={key}
-                    className={`flex items-start space-x-4 text-left cursor-pointer ${
+                    className={`flex cursor-pointer items-start space-x-4 text-left ${
                       readOnly ? "cursor-not-allowed" : ""
                     }`}
                     onClick={(e) => {
@@ -63,7 +63,7 @@ const QuestionGroup = ({
                       }
                     }}
                   >
-                    <div className="flex items-center h-6 min-w-[24px]">
+                    <div className="flex h-6 min-w-[24px] items-center">
                       <input
                         type="radio"
                         name={`question-${question.number}`}

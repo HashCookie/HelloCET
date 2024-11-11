@@ -12,9 +12,9 @@ const ExamSection = ({ title, isLoading, children }: ExamSectionProps) => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+    <div className="mx-auto max-w-4xl p-6">
+      <div className="rounded-lg bg-white p-6 shadow-md">
+        <h2 className="mb-4 text-2xl font-bold">{title}</h2>
         {children}
       </div>
     </div>

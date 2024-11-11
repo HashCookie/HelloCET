@@ -61,7 +61,7 @@ const renderInput = (
         type="text"
         value={displayValue}
         onChange={(e) => onChange(number, e.target.value.toUpperCase())}
-        className={`w-12 text-center border-b-2 ${
+        className={`w-12 border-b-2 text-center ${
           readOnly
             ? status === "correct"
               ? "border-green-500 text-green-600"
@@ -69,7 +69,7 @@ const renderInput = (
                 ? "border-red-500 text-red-600"
                 : "border-gray-300"
             : "border-gray-300"
-        } focus:border-blue-500 focus:outline-none bg-transparent uppercase ${
+        } bg-transparent uppercase focus:border-blue-500 focus:outline-none ${
           readOnly ? "cursor-not-allowed" : ""
         }`}
         maxLength={
@@ -78,7 +78,7 @@ const renderInput = (
         readOnly={readOnly}
       />
       {readOnly && referenceAnswer?.explanation && (
-        <p className="text-gray-600 mt-1 text-sm">
+        <p className="mt-1 text-sm text-gray-600">
           解析: {referenceAnswer.explanation}
         </p>
       )}
@@ -97,8 +97,8 @@ const SectionB = ({
 }: SectionBProps) => {
   return (
     <div className="mb-8">
-      <h3 className="text-lg font-semibold mb-4">Section B</h3>
-      <h3 className="text-sm text-gray-600 mb-4 text-left">
+      <h3 className="mb-4 text-lg font-semibold">Section B</h3>
+      <h3 className="mb-4 text-left text-sm text-gray-600">
         In this section, you are going to read a passage with ten statements
         attached to it. Each statement contains information given in one of the
         paragraphs. Identify the paragraph from which the information is
@@ -106,10 +106,10 @@ const SectionB = ({
         marked with a letter. Answer the questions by marking the corresponding
         letter on Answer Sheet 2.
       </h3>
-      <h4 className="text-md font-medium mb-4 text-center">{passageTitle}</h4>
-      <div className="space-y-4 mb-6 text-left">
+      <h4 className="text-md mb-4 text-center font-medium">{passageTitle}</h4>
+      <div className="mb-6 space-y-4 text-left">
         {passages.map((passage, index) => (
-          <p key={index} className="text-gray-700 leading-relaxed">
+          <p key={index} className="leading-relaxed text-gray-700">
             {passage}
           </p>
         ))}
@@ -117,7 +117,7 @@ const SectionB = ({
       <div className="space-y-6 text-left">
         {questions.map((question) => (
           <div key={question.number} className="border-b pb-4">
-            <p className="font-medium mb-3">
+            <p className="mb-3 font-medium">
               {question.number}. {question.statement}
             </p>
             {renderInput(

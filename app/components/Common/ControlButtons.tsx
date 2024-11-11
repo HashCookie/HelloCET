@@ -281,9 +281,9 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
         unfinishedSections={getUnfinishedSections()}
       />
       <button
-        className={`px-6 py-2 text-white rounded-md transition-colors ${
+        className={`rounded-md px-6 py-2 text-white transition-colors ${
           isSubmitting
-            ? "bg-gray-400 cursor-not-allowed"
+            ? "cursor-not-allowed bg-gray-400"
             : "bg-green-600 hover:bg-green-700"
         }`}
         onClick={handleSubmitClick}

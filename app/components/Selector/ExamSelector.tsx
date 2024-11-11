@@ -28,7 +28,7 @@ const ExamSelector = ({
   const router = useRouter();
 
   return (
-    <div className="flex flex-wrap justify-center items-center gap-4">
+    <div className="flex flex-wrap items-center justify-center gap-4">
       <select
         className="blue-select"
         value={selectedYear}
@@ -80,7 +80,7 @@ const ExamSelector = ({
 
       <button
         onClick={() => router.push("/")}
-        className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors border border-gray-300 rounded-md hover:bg-gray-50"
+        className="rounded-md border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-800"
       >
         返回首页
       </button>

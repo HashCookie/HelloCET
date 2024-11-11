@@ -92,17 +92,17 @@ const ExamHeader = ({
   }, [readOnly, year, month, set, examType]);
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+    <div className="fixed left-0 right-0 top-0 z-50 bg-white shadow-sm">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-4">
             {showBackButton && (
               <button
                 onClick={onBack}
-                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                className="rounded-full p-2 transition-colors hover:bg-gray-100"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

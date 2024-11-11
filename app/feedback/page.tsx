@@ -1,13 +1,13 @@
 export default function ContactForm() {
   return (
-    <div className="px-6 md:px-10 my-12 md:my-24 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
+    <div className="mx-auto my-12 max-w-4xl bg-white px-6 font-[sans-serif] text-[#333] md:my-24 md:px-10">
       <div className="relative mb-8">
         <a
           href="/"
-          className="inline-flex items-center p-2 hover:bg-gray-100 rounded-full transition-colors mb-4"
+          className="mb-4 inline-flex items-center rounded-full p-2 transition-colors hover:bg-gray-100"
         >
           <svg
-            className="w-5 h-5"
+            className="h-5 w-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -20,26 +20,26 @@ export default function ContactForm() {
             />
           </svg>
         </a>
-        <h1 className="text-2xl md:text-3xl font-extrabold">联系我</h1>
+        <h1 className="text-2xl font-extrabold md:text-3xl">联系我</h1>
       </div>
-      <div className="grid md:grid-cols-2 gap-8 md:gap-16">
+      <div className="grid gap-8 md:grid-cols-2 md:gap-16">
         <div>
-          <p className="text-sm text-gray-500 mb-6">
+          <p className="mb-6 text-sm text-gray-500">
             感谢对项目的关注。目前平台上的所有资料均为我个人上传。虽然我努力确保内容的准确与格式的规范，但可能仍有不足之处。若你发现任何错误或格式问题，可以在
             GitHub 中提起 issue。你的意见对我至关重要，有助于我不断改进。
           </p>
-          <p className="text-sm text-gray-500 mb-12">
+          <p className="mb-12 text-sm text-gray-500">
             另外，如果你热衷于开源并愿意贡献力量，欢迎fork本项目。众人拾柴火焰高。
           </p>
         </div>
         <div className="space-y-12">
           <div>
-            <h2 className="text-xl font-bold mb-6">Email</h2>
+            <h2 className="mb-6 text-xl font-bold">Email</h2>
             <a
               href="mailto:HashCookie404@gmail.com"
               className="inline-flex items-center gap-3 text-blue-600 hover:text-blue-700"
             >
-              <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#e6e6e6cf]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -54,9 +54,9 @@ export default function ContactForm() {
             </a>
           </div>
           <div>
-            <h2 className="text-xl font-bold mb-6">Socials</h2>
+            <h2 className="mb-6 text-xl font-bold">Socials</h2>
             <div className="flex gap-4">
-              <li className="h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full">
                 <a href="https://github.com/HashCookie/HelloCET">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function ContactForm() {
                   </svg>
                 </a>
               </li>
-              <li className="h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full">
                 <a href="https://twitter.com/Hashcookie404">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

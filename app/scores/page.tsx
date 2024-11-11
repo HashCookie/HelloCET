@@ -10,14 +10,14 @@ import RecentProgress from "../components/statistics/RecentProgress";
 
 export default function ScoresPage() {
   return (
-    <div className="max-w-6xl mx-auto my-10 p-5">
+    <div className="mx-auto my-10 max-w-6xl p-5">
       <div className="relative mb-6">
         <a
           href="/"
-          className="inline-flex items-center p-2 hover:bg-gray-100 rounded-full transition-colors"
+          className="inline-flex items-center rounded-full p-2 transition-colors hover:bg-gray-100"
         >
           <svg
-            className="w-5 h-5"
+            className="h-5 w-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -32,16 +32,16 @@ export default function ScoresPage() {
         </a>
       </div>
 
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+      <div className="mb-10 text-center">
+        <h1 className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-3xl font-bold text-transparent">
           成绩统计
         </h1>
         <p className="mt-2 text-gray-600">查看你的练习记录和进步轨迹</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100">
-          <div className="text-blue-600 text-sm font-medium mb-2">
+      <div className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-indigo-50 p-6">
+          <div className="mb-2 text-sm font-medium text-blue-600">
             总练习次数
           </div>
           <div className="text-2xl font-bold text-gray-800">
@@ -51,8 +51,8 @@ export default function ScoresPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-100">
-          <div className="text-purple-600 text-sm font-medium mb-2">平均分</div>
+        <div className="rounded-xl border border-purple-100 bg-gradient-to-br from-purple-50 to-pink-50 p-6">
+          <div className="mb-2 text-sm font-medium text-purple-600">平均分</div>
           <div className="text-2xl font-bold text-gray-800">
             <Suspense fallback={<LoadingSpinner />}>
               <AverageScore />
@@ -60,8 +60,8 @@ export default function ScoresPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-100">
-          <div className="text-green-600 text-sm font-medium mb-2">最高分</div>
+        <div className="rounded-xl border border-green-100 bg-gradient-to-br from-green-50 to-emerald-50 p-6">
+          <div className="mb-2 text-sm font-medium text-green-600">最高分</div>
           <div className="text-2xl font-bold text-gray-800">
             <Suspense fallback={<LoadingSpinner />}>
               <HighestScore />
@@ -69,8 +69,8 @@ export default function ScoresPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-xl border border-orange-100">
-          <div className="text-orange-600 text-sm font-medium mb-2">
+        <div className="rounded-xl border border-orange-100 bg-gradient-to-br from-orange-50 to-amber-50 p-6">
+          <div className="mb-2 text-sm font-medium text-orange-600">
             总练习时长
           </div>
           <div className="text-2xl font-bold text-gray-800">
@@ -81,9 +81,9 @@ export default function ScoresPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">
+      <div className="mb-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <h3 className="mb-4 text-lg font-semibold text-gray-800">
             各科目得分分布
           </h3>
           <Suspense fallback={<LoadingSpinner />}>
@@ -91,8 +91,8 @@ export default function ScoresPage() {
           </Suspense>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">
+        <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <h3 className="mb-4 text-lg font-semibold text-gray-800">
             近期进步趋势
           </h3>
           <Suspense fallback={<LoadingSpinner />}>
@@ -101,8 +101,8 @@ export default function ScoresPage() {
         </div>
       </div>
 
-      <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">
+      <div className="overflow-hidden rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+        <h3 className="mb-4 text-lg font-semibold text-gray-800">
           详细练习记录
         </h3>
         <Suspense fallback={<LoadingSpinner />}>

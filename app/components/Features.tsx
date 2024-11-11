@@ -27,11 +27,11 @@ export default function Features() {
   ];
 
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative overflow-hidden py-32">
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/80 to-white" />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          <h2 className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-3xl font-bold text-transparent">
             特色功能
           </h2>
           <p className="mt-4 text-xl text-gray-600">
@@ -42,14 +42,14 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group relative p-8 bg-white/80 backdrop-blur-sm rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="group relative rounded-xl border border-gray-100 bg-white/80 p-8 backdrop-blur-sm transition-all duration-300 hover:shadow-xl"
             >
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300`}
+                className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-5`}
               />
               <div className="relative">
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <div className="mb-4 text-4xl">{feature.icon}</div>
+                <h3 className="mb-2 text-xl font-semibold text-gray-900">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600">{feature.description}</p>

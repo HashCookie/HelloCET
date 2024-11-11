@@ -124,10 +124,10 @@ const SectionC = ({
     <div className="space-y-6 text-left">
       {questions.map((question) => (
         <div key={question.number} className="border-b pb-4">
-          <p className="font-medium mb-3">
+          <p className="mb-3 font-medium">
             {question.number}. {question.statement}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {(Object.keys(question.options) as Array<keyof Option>).map((key) =>
               renderOption(
                 question,
@@ -142,7 +142,7 @@ const SectionC = ({
           {readOnly &&
             referenceAnswersSection?.find((a) => a.number === question.number)
               ?.explanation && (
-              <p className="text-gray-600 mt-2 text-sm">
+              <p className="mt-2 text-sm text-gray-600">
                 解析:{" "}
                 {
                   referenceAnswersSection.find(
@@ -158,8 +158,8 @@ const SectionC = ({
 
   return (
     <div className="mb-8">
-      <h3 className="text-lg font-semibold mb-4">Section C</h3>
-      <h3 className="text-sm text-gray-600 mb-4 text-left">
+      <h3 className="mb-4 text-lg font-semibold">Section C</h3>
+      <h3 className="mb-4 text-left text-sm text-gray-600">
         There are 2 passages in this section. Each passage is followed by some
         questions or unfinished statements. For each of them, there are four
         choices marked A), B), C), and D). You should decide on the best choice
@@ -168,14 +168,14 @@ const SectionC = ({
       </h3>
 
       {/* Passage One */}
-      <h3 className="text-md font-medium mb-4 text-center">Passage One</h3>
-      <h3 className="text-sm text-gray-600 mb-4 text-left">
+      <h3 className="text-md mb-4 text-center font-medium">Passage One</h3>
+      <h3 className="mb-4 text-left text-sm text-gray-600">
         Questions 46 to 50 are based on the following passage.
       </h3>
       <div className="mb-8">
-        <div className="space-y-4 mb-6 text-left">
+        <div className="mb-6 space-y-4 text-left">
           {passagesOne.map((passage, index) => (
-            <p key={index} className="text-gray-700 leading-relaxed">
+            <p key={index} className="leading-relaxed text-gray-700">
               {passage}
             </p>
           ))}
@@ -184,14 +184,14 @@ const SectionC = ({
       </div>
 
       {/* Passage Two */}
-      <h3 className="text-md font-medium mb-4 text-center">Passage Two</h3>
-      <h3 className="text-sm text-gray-600 mb-4 text-left">
+      <h3 className="text-md mb-4 text-center font-medium">Passage Two</h3>
+      <h3 className="mb-4 text-left text-sm text-gray-600">
         Questions 51 to 55 are based on the following passage.
       </h3>
       <div className="mb-8">
-        <div className="space-y-4 mb-6 text-left">
+        <div className="mb-6 space-y-4 text-left">
           {passagesTwo.map((passage, index) => (
-            <p key={index} className="text-gray-700 leading-relaxed">
+            <p key={index} className="leading-relaxed text-gray-700">
               {passage}
             </p>
           ))}

@@ -240,7 +240,7 @@ export default function SubjectScoreDistribution() {
   }, [records]);
 
   return (
-    <div className="w-full h-[400px]">
+    <div className="h-[400px] w-full">
       <canvas ref={chartRef} />
     </div>
   );

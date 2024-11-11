@@ -51,8 +51,8 @@ const Section = ({
 }: SectionProps) => {
   return (
     <div className="mb-8">
-      <h2 className="text-lg font-bold mb-6">{title}</h2>
-      <h3 className="text-sm text-gray-500 mb-6 text-left">{directions}</h3>
+      <h2 className="mb-6 text-lg font-bold">{title}</h2>
+      <h3 className="mb-6 text-left text-sm text-gray-500">{directions}</h3>
 
       {groups.map((group, index) => (
         <QuestionGroup

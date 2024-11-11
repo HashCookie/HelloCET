@@ -48,13 +48,13 @@ const renderInput = (
       : value;
 
   return (
-    <span className="inline-block mx-1">
+    <span className="mx-1 inline-block">
       <span className="text-gray-500">{number}.</span>
       <input
         type="text"
         value={displayValue}
         onChange={(e) => onChange(number, e.target.value.toUpperCase())}
-        className={`w-16 text-center border-b-2 ${
+        className={`w-16 border-b-2 text-center ${
           readOnly
             ? status === "correct"
               ? "border-green-500 text-green-600"
@@ -62,7 +62,7 @@ const renderInput = (
                 ? "border-red-500 text-red-600"
                 : "border-gray-300"
             : "border-gray-300"
-        } focus:outline-none bg-transparent uppercase ${
+        } bg-transparent uppercase focus:outline-none ${
           readOnly ? "cursor-not-allowed" : ""
         }`}
         maxLength={
@@ -104,8 +104,8 @@ const SectionA = ({
 
   return (
     <div className="mb-8">
-      <h3 className="text-lg font-semibold mb-4">Section A</h3>
-      <h3 className="text-sm text-gray-600 mb-4 text-left">
+      <h3 className="mb-4 text-lg font-semibold">Section A</h3>
+      <h3 className="mb-4 text-left text-sm text-gray-600">
         In this section, there is a passage with ten blanks. You are required to
         select one word for each blank from a list of choices given in a word
         bank following the passage. Read the passage through carefully before
@@ -114,17 +114,17 @@ const SectionA = ({
         with a single line through the centre. You may not use any of the words
         in the bank more than once.
       </h3>
-      <h3 className="text-sm text-gray-600 mb-4 text-left">
+      <h3 className="mb-4 text-left text-sm text-gray-600">
         Questions 26 to 35 are based on the following passage.
       </h3>
-      <div className="space-y-4 mb-6 text-left">
+      <div className="mb-6 space-y-4 text-left">
         {passages.map((passage, index) => (
-          <p key={index} className="text-gray-700 leading-relaxed">
+          <p key={index} className="leading-relaxed text-gray-700">
             {renderPassageWithBlanks(passage)}
           </p>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {Object.entries(options).map(([key, value]) => (
           <div key={key} className="flex items-start space-x-2">
             <span className="font-semibold">{key}.</span>

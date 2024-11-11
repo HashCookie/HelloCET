@@ -140,7 +140,7 @@ export default function RecentPractice() {
   };
 
   if (records.length === 0) {
-    return <div className="text-center text-gray-500 py-8">暂无练习记录</div>;
+    return <div className="py-8 text-center text-gray-500">暂无练习记录</div>;
   }
 
   return (
@@ -172,15 +172,15 @@ export default function RecentPractice() {
           <div
             key={index}
             onClick={() => handleRecordClick(record)}
-            className="p-4 bg-gray-50 rounded hover:bg-gray-100 transition-colors cursor-pointer"
+            className="cursor-pointer rounded bg-gray-50 p-4 transition-colors hover:bg-gray-100"
           >
-            <div className="flex items-center justify-between mb-2">
+            <div className="mb-2 flex items-center justify-between">
               <h4 className="font-medium text-gray-900">{record.type}</h4>
-              <span className="text-blue-600 font-medium">
+              <span className="font-medium text-blue-600">
                 {record.score.toFixed(1)}分
               </span>
             </div>
-            <div className="text-sm text-gray-600 mb-2 flex flex-wrap gap-2">
+            <div className="mb-2 flex flex-wrap gap-2 text-sm text-gray-600">
               <span>写作: {writingScore.toFixed(1)}</span>
               <span>听力: {listeningScore.toFixed(1)}</span>
               <span>阅读: {readingScore.toFixed(1)}</span>

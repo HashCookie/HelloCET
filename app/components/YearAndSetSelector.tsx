@@ -385,10 +385,10 @@ const YearAndSelectorContent = () => {
     examStorage.clearExamData();
 
     return (
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-          <h3 className="text-red-800 font-medium">获取试卷失败</h3>
-          <p className="text-red-600 mt-1">
+      <div className="mx-auto max-w-6xl px-4 py-8">
+        <div className="rounded-lg border border-red-200 bg-red-50 p-4">
+          <h3 className="font-medium text-red-800">获取试卷失败</h3>
+          <p className="mt-1 text-red-600">
             {writingError || listeningError || readingError || translationError}
           </p>
           <button
@@ -396,7 +396,7 @@ const YearAndSelectorContent = () => {
               resetExam(true);
               router.push("/");
             }}
-            className="mt-4 px-4 py-2 bg-red-100 text-red-700 rounded hover:bg-red-200"
+            className="mt-4 rounded bg-red-100 px-4 py-2 text-red-700 hover:bg-red-200"
           >
             返回首页
           </button>
@@ -406,7 +406,7 @@ const YearAndSelectorContent = () => {
   }
 
   return (
-    <div className="font-[sans-serif] mt-5">
+    <div className="mt-5 font-[sans-serif]">
       {isLoading ? (
         <LoadingSpinner />
       ) : showControls ? (
@@ -424,14 +424,14 @@ const YearAndSelectorContent = () => {
             readOnly={isReadOnly}
             examType={examType}
           />
-          <div className="pt-28 max-w-6xl mx-auto px-4">
-            <div className="bg-white rounded-lg shadow-sm">
+          <div className="mx-auto max-w-6xl px-4 pt-28">
+            <div className="rounded-lg bg-white shadow-sm">
               {renderExamContent()}
             </div>
           </div>
         </div>
       ) : (
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="mx-auto max-w-6xl px-4">
           <ExamSelector
             years={years}
             months={months}
@@ -445,14 +445,14 @@ const YearAndSelectorContent = () => {
             onSubmit={handleSubmit}
           />
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h2 className="text-xl font-semibold mb-4">推荐试卷</h2>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h2 className="mb-4 text-xl font-semibold">推荐试卷</h2>
               <RecommendedExams />
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h2 className="text-xl font-semibold mb-4">最近练习</h2>
+            <div className="rounded-lg bg-white p-6 shadow-sm">
+              <h2 className="mb-4 text-xl font-semibold">最近练习</h2>
               <RecentPractice />
             </div>
           </div>
