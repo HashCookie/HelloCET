@@ -58,6 +58,7 @@ const Section = ({
         <QuestionGroup
           key={index}
           description={group.description}
+          audioUrl={`/audio/${title.toLowerCase()}-group-${index + 1}.mp3`}
           questions={questions.slice(group.startIndex, group.endIndex)}
           answers={answers}
           onAnswerChange={onAnswerChange}

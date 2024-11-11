@@ -1,7 +1,9 @@
 import { ListeningQuestion } from "@/app/types/exam";
+import AudioPlayer from "./AudioPlayer";
 
 interface QuestionGroupProps {
   description: string;
+  audioUrl: string;
   questions: ListeningQuestion[];
   answers: Record<number, string>;
   onAnswerChange: (questionNumber: number, answer: string) => void;
@@ -14,6 +16,7 @@ interface QuestionGroupProps {
 
 const QuestionGroup = ({
   description,
+  audioUrl,
   questions,
   answers,
   onAnswerChange,
@@ -38,10 +41,8 @@ const QuestionGroup = ({
 
   return (
     <div className="mb-8">
-      <p className="mb-4 text-left text-sm not-italic text-gray-600">
-        {description}
-      </p>
-      <div className="space-y-8">
+      <AudioPlayer audioUrl={audioUrl} title={description} />
+      <div className="mt-6 space-y-8">
         {questions.map((question) => (
           <div key={question.number} className="border-b pb-6">
             <h3 className="mb-4 text-left font-semibold">{question.number}.</h3>
