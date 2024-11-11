@@ -105,56 +105,58 @@ export default function ScoresHistory() {
 
   return (
     <>
-      <div className="overflow-x-auto">
-        <div className="max-h-[600px] overflow-y-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50 sticky top-0 z-10">
-              <tr>
-                <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
-                  日期
-                </th>
-                <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
-                  卷子
-                </th>
-                <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
-                  分数
-                </th>
-                <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
-                  已完成
-                </th>
-                <th className="px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
-                  耗时
-                </th>
-              </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              {getCurrentPageData().map((record, index) => (
-                <tr
-                  key={index}
-                  onClick={() => handleRecordClick(record)}
-                  className="hover:bg-gray-50 transition-colors cursor-pointer"
-                >
-                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                    {formatDateToBeijingTime(record.date)}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
-                    {record.type}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
-                    <span className="text-blue-600 font-medium">
-                      {record.score}分
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                    {formatCompletedQuestions(record)}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
-                    {record.duration}
-                  </td>
+      <div className="pr-[17px]">
+        <div className="overflow-x-auto">
+          <div className="h-[600px] overflow-y-auto">
+            <table className="min-w-full divide-y divide-gray-200 table-fixed">
+              <thead className="bg-gray-50 sticky top-0 z-10">
+                <tr>
+                  <th className="w-[200px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                    日期
+                  </th>
+                  <th className="w-[360px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                    卷子
+                  </th>
+                  <th className="w-[100px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                    分数
+                  </th>
+                  <th className="w-[100px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                    已完成
+                  </th>
+                  <th className="w-[140px] px-6 py-3 text-center text-sm font-medium text-gray-500 tracking-wider bg-gray-50">
+                    耗时
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {getCurrentPageData().map((record, index) => (
+                  <tr
+                    key={index}
+                    onClick={() => handleRecordClick(record)}
+                    className="hover:bg-gray-50 transition-colors cursor-pointer"
+                  >
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                      {formatDateToBeijingTime(record.date)}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900">
+                      {record.type}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
+                      <span className="text-blue-600 font-medium">
+                        {record.score}分
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                      {formatCompletedQuestions(record)}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-500">
+                      {record.duration}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
