@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HelloCET
 
-## Getting Started
+## 项目介绍
 
-First, run the development server:
+这是一个在线的四六级练习平台。提供广泛的练习题库，涵盖听力、阅读、写作和翻译等各个考试部分，旨在帮助学生有效提升英语水平和考试技能。项目采用 Next.js 14 和 Tailwind CSS。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 功能介绍
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **题库练习**：提供大量历年四六级考试题目，包括单项选择、完形填空、翻译等。
+- **专项训练**：针对听说读写译各项技能提供专门练习
+- **AI 智能评分**：基于 AI 的写作和翻译评分系统。
+- **成绩分析**：详细的答题分析和进步追踪
+- **进度追踪**：可视化展示学习进度和成绩变化
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 贡献指南
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+如果你想为本项目贡献代码或内容，请遵循以下步骤：
+1. Fork 本仓库。
+2. 创建一个新的分支 (`git checkout -b feature/YourFeature`)。
+3. 提交你的更改 (`git commit -m 'Add some feature'`)。
+4. 推送到分支 (`git push origin feature/YourFeature`)。
+5. 创建一个新的 Pull Request。
