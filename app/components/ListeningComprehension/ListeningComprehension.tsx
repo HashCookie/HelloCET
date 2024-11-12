@@ -19,6 +19,12 @@ interface ListeningProps {
     number: number;
     answer: string;
   }[];
+  examInfo: {
+    year: string;
+    month: string;
+    set: string;
+    type: string;
+  };
 }
 
 interface SectionProps {
@@ -37,6 +43,12 @@ interface SectionProps {
     number: number;
     answer: string;
   }[];
+  examInfo: {
+    year: string;
+    month: string;
+    set: string;
+    type: string;
+  };
 }
 
 const Section = ({
@@ -48,24 +60,33 @@ const Section = ({
   onAnswerChange,
   readOnly,
   referenceAnswers,
+  examInfo,
 }: SectionProps) => {
   return (
     <div className="mb-8">
       <h2 className="mb-6 text-lg font-bold">{title}</h2>
       <h3 className="mb-6 text-left text-sm text-gray-500">{directions}</h3>
 
-      {groups.map((group, index) => (
-        <QuestionGroup
-          key={index}
-          description={group.description}
-          audioUrl={`/audio/${title.toLowerCase()}-group-${index + 1}.mp3`}
-          questions={questions.slice(group.startIndex, group.endIndex)}
-          answers={answers}
-          onAnswerChange={onAnswerChange}
-          readOnly={readOnly}
-          referenceAnswers={referenceAnswers}
-        />
-      ))}
+      {groups.map((group, index) => {
+        const startNum = String(group.startIndex + 1).padStart(2, "0");
+        const endNum = String(group.endIndex).padStart(2, "0");
+        const audioRange = `${startNum}${endNum}`;
+
+        const audioUrl = `/api/audio/${audioRange}.mp3?year=${examInfo.year}&month=${examInfo.month}&set=${examInfo.set}&type=${examInfo.type}&range=${audioRange}`;
+
+        return (
+          <QuestionGroup
+            key={index}
+            description={group.description}
+            audioUrl={audioUrl}
+            questions={questions.slice(group.startIndex, group.endIndex)}
+            answers={answers}
+            onAnswerChange={onAnswerChange}
+            readOnly={readOnly}
+            referenceAnswers={referenceAnswers}
+          />
+        );
+      })}
     </div>
   );
 };
@@ -77,6 +98,7 @@ const ListeningComprehension = ({
   onAnswerChange,
   readOnly,
   referenceAnswers,
+  examInfo,
 }: ListeningProps) => {
   const handleAnswerChange = (questionNumber: number, answer: string) => {
     if (readOnly) return;
@@ -93,14 +115,13 @@ const ListeningComprehension = ({
           {SECTION_CONFIG.map((section) => (
             <Section
               key={section.title}
-              title={section.title}
-              directions={section.directions}
-              groups={section.groups}
+              {...section}
               questions={data.listeningComprehension}
               answers={answers}
               onAnswerChange={handleAnswerChange}
               readOnly={readOnly}
               referenceAnswers={referenceAnswers}
+              examInfo={examInfo}
             />
           ))}
         </div>

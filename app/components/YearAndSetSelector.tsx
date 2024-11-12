@@ -352,6 +352,12 @@ const YearAndSelectorContent = () => {
             onAnswerChange={(value) => handleAnswerChange("listening", value)}
             readOnly={isReadOnly}
             referenceAnswers={referenceAnswers.listening}
+            examInfo={{
+              year: selectedYear,
+              month: selectedMonth,
+              set: selectedSet,
+              type: examType,
+            }}
           />
         );
       case "reading":
