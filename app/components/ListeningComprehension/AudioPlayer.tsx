@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 interface AudioPlayerProps {
   audioUrl: string;
@@ -11,21 +11,45 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
   const [showVolumeControl, setShowVolumeControl] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  useEffect(() => {
+  const handleLoadedMetadata = useCallback(() => {
     if (audioRef.current) {
-      audioRef.current.addEventListener("loadedmetadata", () => {
-        setDuration(audioRef.current?.duration || 0);
-      });
+      setDuration(audioRef.current.duration);
+      setIsLoading(false);
     }
-  }, [audioUrl]);
+  }, []);
 
-  const formatTime = (time: number) => {
+  const handleTimeUpdate = useCallback(() => {
+    if (audioRef.current) {
+      setCurrentTime(audioRef.current.currentTime);
+    }
+  }, []);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.preload = "metadata";
+
+    audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+    audio.addEventListener("timeupdate", handleTimeUpdate);
+
+    return () => {
+      audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.pause();
+      setIsPlaying(false);
+    };
+  }, [audioUrl, handleLoadedMetadata, handleTimeUpdate]);
+
+  const formatTime = useCallback((time: number) => {
+    if (!isFinite(time) || isNaN(time)) return "0:00";
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
     return `${minutes}:${seconds.toString().padStart(2, "0")}`;
-  };
+  }, []);
 
   const handlePlayPause = () => {
     if (audioRef.current) {
@@ -35,12 +59,6 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
         audioRef.current.play();
       }
       setIsPlaying(!isPlaying);
-    }
-  };
-
-  const handleTimeUpdate = () => {
-    if (audioRef.current) {
-      setCurrentTime(audioRef.current.currentTime);
     }
   };
 
@@ -61,13 +79,13 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
   };
 
   return (
-    <div className="mb-8 rounded-xl border border-gray-100 bg-white/80 p-6 backdrop-blur-sm transition-all duration-300">
+    <div className="mb-8 rounded-xl border border-gray-100 bg-white/80 p-6 backdrop-blur-sm">
       <h4 className="mb-4 text-lg font-semibold text-gray-900">{title}</h4>
 
       <audio
         ref={audioRef}
         src={audioUrl}
-        onTimeUpdate={handleTimeUpdate}
+        preload="metadata"
         className="hidden"
       />
 
@@ -108,8 +126,8 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
             }}
           />
           <div className="mt-1 flex justify-between text-sm text-gray-500">
-            <span>{formatTime(currentTime)}</span>
-            <span>{formatTime(duration)}</span>
+            <span>{isLoading ? "0:00" : formatTime(currentTime)}</span>
+            <span>{isLoading ? "0:00" : formatTime(duration)}</span>
           </div>
         </div>
 
