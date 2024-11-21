@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import { examStorage } from "@/app/utils/storage";
 import type { Answers } from "@/app/types/answers";
 import { useSearchParams } from "next/navigation";
+import { useTabControl } from "@/app/hooks/exam/useTabControl";
 
 interface PaperData {
   years: number[];
@@ -20,13 +21,6 @@ const INITIAL_ANSWERS = {
   listening: {},
   reading: {},
   translation: "",
-} as const;
-
-const INITIAL_SCROLL_POSITIONS = {
-  writing: 0,
-  listening: 0,
-  reading: 0,
-  translation: 0,
 } as const;
 
 const INITIAL_REFERENCE_ANSWERS = {
@@ -56,14 +50,16 @@ export function useExamState(examType: string) {
   const [selectedYear, setSelectedYear] = useState<string>("");
   const [selectedMonth, setSelectedMonth] = useState<string>("");
   const [selectedSet, setSelectedSet] = useState<string>("");
-  const [activeTab, setActiveTab] = useState("writing");
   const [answers, setAnswers] = useState<Answers>(INITIAL_ANSWERS);
-  const [scrollPositions, setScrollPositions] = useState(
-    INITIAL_SCROLL_POSITIONS
-  );
   const [isReadOnly, setIsReadOnly] = useState(false);
   const [referenceAnswers, setReferenceAnswers] = useState(
     INITIAL_REFERENCE_ANSWERS
+  );
+
+  const { activeTab, setActiveTab, handleTabChange } = useTabControl(
+    selectedYear,
+    selectedMonth,
+    selectedSet
   );
 
   const fetchPaperInfo = useCallback(async () => {
@@ -154,8 +150,6 @@ export function useExamState(examType: string) {
     setSelectedMonth("");
     setSelectedSet("");
     setActiveTab("writing");
-    setScrollPositions(INITIAL_SCROLL_POSITIONS);
-    setAnswers(INITIAL_ANSWERS);
     examStorage.clearExamData();
   };
 
@@ -174,32 +168,6 @@ export function useExamState(examType: string) {
       return updatedAnswers;
     });
   };
-
-  const handleTabChange = useCallback(
-    (tab: string) => {
-      setScrollPositions((prev) => ({
-        ...prev,
-        [activeTab]: window.scrollY,
-      }));
-
-      setActiveTab(tab);
-      examStorage.saveState({
-        year: selectedYear,
-        month: selectedMonth,
-        set: selectedSet,
-        showControls: true,
-        activeTab: tab,
-      });
-
-      requestAnimationFrame(() => {
-        window.scrollTo(
-          0,
-          scrollPositions[tab as keyof typeof scrollPositions]
-        );
-      });
-    },
-    [activeTab, selectedYear, selectedMonth, selectedSet, scrollPositions]
-  );
 
   const fetchReferenceAnswers = useCallback(async () => {
     if (isReadOnly && selectedYear && selectedMonth && selectedSet) {
@@ -249,7 +217,7 @@ export function useExamState(examType: string) {
     };
 
     loadSavedData();
-  }, [searchParams]);
+  }, [searchParams, setActiveTab]);
 
   useEffect(() => {
     const year = searchParams.get("year");
