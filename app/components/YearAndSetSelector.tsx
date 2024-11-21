@@ -186,6 +186,7 @@ const YearAndSelectorContent = () => {
             answers={answers}
             readOnly={isReadOnly}
             examType={examType}
+            attemptId={answers.attemptId}
           />
           <div className="mx-auto max-w-6xl px-4 pt-28">
             <div className="rounded-lg bg-white shadow-sm">

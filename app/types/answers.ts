@@ -3,4 +3,5 @@ export interface Answers {
   listening: Record<number, string>;
   reading: Record<number, string>;
   translation: string;
+  attemptId?: string;
 }

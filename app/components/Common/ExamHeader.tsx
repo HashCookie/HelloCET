@@ -15,6 +15,7 @@ interface ExamHeaderProps {
   answers: Answers;
   readOnly?: boolean;
   examType: string;
+  attemptId?: string;
 }
 
 interface ScoreData {
@@ -39,6 +40,7 @@ const ExamHeader = ({
   answers,
   readOnly,
   examType,
+  attemptId,
 }: ExamHeaderProps) => {
   const [scores, setScores] = useState<{ [key: string]: number }>({
     writing: 0,
@@ -78,7 +80,9 @@ const ExamHeader = ({
 
       const paperTitle = `${year}年${month}月大学英语${examType}真题（卷${set}）`;
       const findScore = (scores: ScoreData[]) => {
-        const record = scores.find((s) => s.type === paperTitle);
+        const record = scores.find((s) =>
+          attemptId ? s.attemptId === attemptId : s.type === paperTitle
+        );
         return record?.score || 0;
       };
 
@@ -89,7 +93,7 @@ const ExamHeader = ({
         translation: findScore(allScores.translation),
       });
     }
-  }, [readOnly, year, month, set, examType]);
+  }, [readOnly, year, month, set, examType, attemptId]);
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 bg-white shadow-sm">

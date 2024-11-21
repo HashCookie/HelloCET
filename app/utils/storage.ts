@@ -1,3 +1,5 @@
+import type { Answers } from "@/app/types/answers";
+
 interface ExamState {
   year: string;
   month: string;
@@ -5,13 +7,6 @@ interface ExamState {
   showControls: boolean;
   activeTab: string;
   readOnly?: boolean;
-}
-
-interface ExamAnswers {
-  writing: string;
-  listening: Record<number, string>;
-  reading: Record<number, string>;
-  translation: string;
 }
 
 export const STORAGE_KEY = {
@@ -25,7 +20,7 @@ export const examStorage = {
     localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify(state));
   },
 
-  saveAnswers: (answers: ExamAnswers) => {
+  saveAnswers: (answers: Answers) => {
     localStorage.setItem(STORAGE_KEY.EXAM_ANSWERS, JSON.stringify(answers));
   },
 
@@ -39,7 +34,7 @@ export const examStorage = {
     return state ? JSON.parse(state) : null;
   },
 
-  getAnswers: (): ExamAnswers | null => {
+  getAnswers: (): Answers | null => {
     const answers = localStorage.getItem(STORAGE_KEY.EXAM_ANSWERS);
     return answers ? JSON.parse(answers) : null;
   },

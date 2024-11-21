@@ -84,6 +84,7 @@ export default function RecentPractice() {
       listening: listeningRecord?.answers || {},
       reading: readingRecord?.answers || {},
       translation: translationRecord?.answer || "",
+      attemptId: record.attemptId,
     };
 
     if (

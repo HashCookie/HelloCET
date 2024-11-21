@@ -14,13 +14,14 @@ interface PaperData {
   }[];
 }
 
-type AnswerValue = Answers[keyof Answers];
+type AnswerValue = Answers[keyof Omit<Answers, "attemptId">];
 
-const INITIAL_ANSWERS = {
+const INITIAL_ANSWERS: Answers = {
   writing: "",
   listening: {},
   reading: {},
   translation: "",
+  attemptId: undefined,
 } as const;
 
 const INITIAL_REFERENCE_ANSWERS = {
@@ -150,13 +151,14 @@ export function useExamState(examType: string) {
     setSelectedMonth("");
     setSelectedSet("");
     setActiveTab("writing");
+    setAnswers(INITIAL_ANSWERS);
     examStorage.clearExamData();
   };
 
   const handleBack = () => resetExam(true);
 
   const handleAnswerChange = (
-    section: keyof Answers,
+    section: keyof Omit<Answers, "attemptId">,
     newAnswer: AnswerValue
   ) => {
     setAnswers((prev) => {
@@ -167,6 +169,13 @@ export function useExamState(examType: string) {
       examStorage.saveAnswers(updatedAnswers);
       return updatedAnswers;
     });
+  };
+
+  const setAttemptId = (id: string) => {
+    setAnswers((prev) => ({
+      ...prev,
+      attemptId: id,
+    }));
   };
 
   const fetchReferenceAnswers = useCallback(async () => {
@@ -262,5 +271,6 @@ export function useExamState(examType: string) {
     handleAnswerChange,
     handleTabChange,
     resetExam,
+    setAttemptId,
   };
 }
