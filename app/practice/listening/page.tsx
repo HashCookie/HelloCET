@@ -123,6 +123,12 @@ export default function PracticeListening() {
             isLoading={isLoading}
             answers={answers}
             onAnswerChange={setAnswers}
+            examInfo={{
+              year: data.year.toString(),
+              month: data.month.toString(),
+              set: data.set.toString(),
+              type: examType,
+            }}
           />
           <div className="mt-4 flex justify-end">
             <button
