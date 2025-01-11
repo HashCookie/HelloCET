@@ -1,5 +1,5 @@
-import ExamTabs from "./ExamTabs";
-import ControlButtons from "./ControlButtons";
+import ExamTabs from "@/app/components/Common/ExamTabs";
+import ControlButtons from "@/app/components/Common/ControlButtons";
 import { useState, useEffect } from "react";
 import type { Answers } from "@/app/types/answers";
 

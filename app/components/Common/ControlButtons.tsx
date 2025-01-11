@@ -6,10 +6,10 @@ import {
   handleListeningSubmit,
   handleReadingSubmit,
   handleTranslationSubmit,
-} from "@/app/utils/submitHandlers";
-import { formatDurationFromSeconds } from "@/utils/dateConversion";
-import ConfirmSubmitModal from "./ConfirmSubmitModal";
-import { examStorage } from "@/app/utils/storage";
+} from "@/app/utils/api/submitHandlers";
+import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
+import ConfirmSubmitModal from "@/app/components/Common/ConfirmSubmitModal";
+import { examStorage } from "@/app/utils/common/storage";
 import type { Answers } from "@/app/types/answers";
 
 interface ControlButtonsProps {

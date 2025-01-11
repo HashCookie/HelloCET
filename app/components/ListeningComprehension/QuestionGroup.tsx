@@ -1,5 +1,5 @@
-import { ListeningQuestion } from "@/app/types/exam";
-import AudioPlayer from "./AudioPlayer";
+import type { ListeningQuestion } from "@/app/types/exam";
+import AudioPlayer from "@/app/components/ListeningComprehension/AudioPlayer";
 
 interface QuestionGroupProps {
   description: string;

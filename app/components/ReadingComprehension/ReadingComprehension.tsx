@@ -1,10 +1,10 @@
 "use client";
 
-import ExamSection from "../Common/ExamSection";
+import ExamSection from "@/app/components/Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
-import SectionA from "./SectionA";
-import SectionB from "./SectionB";
-import SectionC from "./SectionC";
+import SectionA from "@/app/components/ReadingComprehension/SectionA";
+import SectionB from "@/app/components/ReadingComprehension/SectionB";
+import SectionC from "@/app/components/ReadingComprehension/SectionC";
 
 type ReadingData = Pick<ExamPaper, "readingComprehension">;
 

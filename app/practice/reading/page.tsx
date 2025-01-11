@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import ReadingComprehension from "@/app/components/ReadingComprehension/ReadingComprehension";
 import type { ExamPaper } from "@/app/types/exam";
-import { handleReadingSubmit } from "@/app/utils/submitHandlers";
+import { handleReadingSubmit } from "@/app/utils/api/submitHandlers";
 
 interface ExamData {
   readingComprehension: ExamPaper["readingComprehension"];

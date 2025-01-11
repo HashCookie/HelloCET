@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { GridFSBucket } from "mongodb";
 import { Readable } from "stream";
-import clientPromise from "@/utils/mongodb";
+import clientPromise from "@/app/utils/api/mongodb";
 
 // 定义请求参数的接口
 interface RequestParams {

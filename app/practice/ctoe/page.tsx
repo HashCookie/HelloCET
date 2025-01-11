@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Translation from "@/app/components/CTOE/Translation";
 import type { ExamPaper } from "@/app/types/exam";
-import { handleTranslationSubmit } from "@/app/utils/submitHandlers";
+import { handleTranslationSubmit } from "@/app/utils/api/submitHandlers";
 
 interface ExamData {
   translation: ExamPaper["translation"];

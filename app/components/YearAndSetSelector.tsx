@@ -2,18 +2,18 @@
 
 import { Suspense } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import Writing from "./Writing/Writing";
-import ListeningComprehension from "./ListeningComprehension/ListeningComprehension";
-import ReadingComprehension from "./ReadingComprehension/ReadingComprehension";
-import Translation from "./CTOE/Translation";
-import ExamSelector from "./Selector/ExamSelector";
-import LoadingSpinner from "./Common/LoadingSpinner";
+import Writing from "@/app/components/Writing/Writing";
+import ListeningComprehension from "@/app/components/ListeningComprehension/ListeningComprehension";
+import ReadingComprehension from "@/app/components/ReadingComprehension/ReadingComprehension";
+import Translation from "@/app/components/CTOE/Translation";
+import ExamSelector from "@/app/components/Selector/ExamSelector";
+import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import { useExamData } from "@/app/hooks/useExamData";
 import type { ExamPaper } from "@/app/types/exam";
-import ExamHeader from "./Common/ExamHeader";
-import { examStorage } from "@/app/utils/storage";
-import RecommendedExams from "./RecommendedExams";
-import RecentPractice from "./RecentPractice";
+import ExamHeader from "@/app/components/Common/ExamHeader";
+import { examStorage } from "@/app/utils/common/storage";
+import RecommendedExams from "@/app/components/RecommendedExams";
+import RecentPractice from "@/app/components/RecentPractice";
 import { useExamState } from "@/app/hooks/useExamState";
 
 const YearAndSelectorContent = () => {

@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
-import { examStorage } from "@/app/utils/storage";
+import { examStorage } from "@/app/utils/common/storage";
 import type { Answers } from "@/app/types/answers";
 import { useSearchParams } from "next/navigation";
 import { useTabControl } from "@/app/hooks/exam/useTabControl";

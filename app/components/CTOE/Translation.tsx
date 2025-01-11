@@ -1,6 +1,6 @@
 "use client";
 
-import ExamSection from "../Common/ExamSection";
+import ExamSection from "@/app/components/Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
 
 type TranslationData = Pick<ExamPaper, "translation">;

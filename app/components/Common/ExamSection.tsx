@@ -1,4 +1,4 @@
-import LoadingSpinner from "./LoadingSpinner";
+import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 
 interface ExamSectionProps {
   title: string;

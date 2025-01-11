@@ -1,12 +1,12 @@
-import ScoresHistory from "../components/ScoresHistory";
+import ScoresHistory from "@/app/components/ScoresHistory";
 import { Suspense } from "react";
-import LoadingSpinner from "../components/Common/LoadingSpinner";
-import TotalPracticeCount from "../components/statistics/TotalPracticeCount";
-import AverageScore from "../components/statistics/AverageScore";
-import HighestScore from "../components/statistics/HighestScore";
-import TotalPracticeTime from "../components/statistics/TotalPracticeTime";
-import SubjectScoreDistribution from "../components/statistics/SubjectScoreDistribution";
-import RecentProgress from "../components/statistics/RecentProgress";
+import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
+import TotalPracticeCount from "@/app/components/statistics/TotalPracticeCount";
+import AverageScore from "@/app/components/statistics/AverageScore";
+import HighestScore from "@/app/components/statistics/HighestScore";
+import TotalPracticeTime from "@/app/components/statistics/TotalPracticeTime";
+import SubjectScoreDistribution from "@/app/components/statistics/SubjectScoreDistribution";
+import RecentProgress from "@/app/components/statistics/RecentProgress";
 
 export default function ScoresPage() {
   return (

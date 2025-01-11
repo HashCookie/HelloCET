@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { formatDateToBeijingTime } from "../../utils/dateConversion";
-import { useScoreRecords, type ScoreRecord } from "../hooks/useScoreRecords";
-import { examStorage } from "@/app/utils/storage";
+import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
+import { useScoreRecords, type ScoreRecord } from "@/app/hooks/useScoreRecords";
+import { examStorage } from "@/app/utils/common/storage";
 import { useState } from "react";
 
 const ITEMS_PER_PAGE = 10;

@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter, usePathname } from "next/navigation";
-import { formatDateToBeijingTime } from "../../utils/dateConversion";
-import { useScoreRecords } from "../hooks/useScoreRecords";
-import { examStorage } from "@/app/utils/storage";
+import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
+import { useScoreRecords } from "@/app/hooks/useScoreRecords";
+import { examStorage } from "@/app/utils/common/storage";
 
 interface ExamRecord {
   attemptId: string;

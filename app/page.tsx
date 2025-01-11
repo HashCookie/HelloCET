@@ -1,8 +1,8 @@
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import Features from "./components/Features";
-import Statistics from "./components/Statistics";
-import QuickStart from "./components/QuickStart";
+import Header from "@/app/components/Header";
+import HeroSection from "@/app/components/HeroSection";
+import Features from "@/app/components/Features";
+import Statistics from "@/app/components/Statistics";
+import QuickStart from "@/app/components/QuickStart";
 
 export default function Home() {
   return (

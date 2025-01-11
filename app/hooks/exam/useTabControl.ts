@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { examStorage } from "@/app/utils/storage";
+import { examStorage } from "@/app/utils/common/storage";
 
 const INITIAL_SCROLL_POSITIONS = {
   writing: 0,

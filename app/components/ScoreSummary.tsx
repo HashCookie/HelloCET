@@ -1,6 +1,6 @@
-import { formatDurationFromSeconds } from "@/utils/dateConversion";
+import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import { useRouter } from "next/navigation";
-import { examStorage } from "@/app/utils/storage";
+import { examStorage } from "@/app/utils/common/storage";
 
 interface SectionResult {
   section: string;
