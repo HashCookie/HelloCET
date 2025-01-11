@@ -1,31 +1,7 @@
 import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import { useRouter } from "next/navigation";
 import { examStorage } from "@/app/utils/common/storage";
-
-interface SectionResult {
-  section: string;
-  data?: {
-    score: number;
-  };
-  error?: string;
-}
-
-interface ScoreSummaryProps {
-  results: SectionResult[];
-  duration: number;
-  examType: string;
-}
-
-interface ScoreRecord {
-  attemptId: string;
-  type: string;
-  answer?: string;
-  answers?: Record<number, string>;
-  score: number;
-  date: string;
-  duration: string;
-  completedQuestions: number;
-}
+import type { ScoreSummaryProps, ScoreRecord } from "@/app/types/practice";
 
 const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
   const router = useRouter();

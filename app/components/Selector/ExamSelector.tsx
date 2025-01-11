@@ -4,12 +4,12 @@ interface ExamSelectorProps {
   years: number[];
   months: number[];
   setCount: number;
-  selectedYear: string;
-  selectedMonth: string;
-  selectedSet: string;
-  onYearChange: (year: string) => void;
-  onMonthChange: (month: string) => void;
-  onSetChange: (set: string) => void;
+  selectedYear: number;
+  selectedMonth: number;
+  selectedSet: number;
+  onYearChange: (year: number) => void;
+  onMonthChange: (month: number) => void;
+  onSetChange: (set: number) => void;
   onSubmit: () => void;
 }
 
@@ -32,7 +32,7 @@ const ExamSelector = ({
       <select
         className="blue-select"
         value={selectedYear}
-        onChange={(e) => onYearChange(e.target.value)}
+        onChange={(e) => onYearChange(Number(e.target.value))}
       >
         <option value="">选择年份</option>
         {years.map((year) => (
@@ -45,7 +45,7 @@ const ExamSelector = ({
       <select
         className="blue-select"
         value={selectedMonth}
-        onChange={(e) => onMonthChange(e.target.value)}
+        onChange={(e) => onMonthChange(Number(e.target.value))}
         disabled={!selectedYear}
       >
         <option value="">选择月份</option>
@@ -59,7 +59,7 @@ const ExamSelector = ({
       <select
         className="blue-select"
         value={selectedSet}
-        onChange={(e) => onSetChange(e.target.value)}
+        onChange={(e) => onSetChange(Number(e.target.value))}
         disabled={!selectedMonth}
       >
         <option value="">选择套数</option>

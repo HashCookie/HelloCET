@@ -9,9 +9,9 @@ const INITIAL_SCROLL_POSITIONS = {
 } as const;
 
 export function useTabControl(
-  selectedYear: string,
-  selectedMonth: string,
-  selectedSet: string
+  selectedYear: number,
+  selectedMonth: number,
+  selectedSet: number
 ) {
   const [activeTab, setActiveTab] = useState("writing");
   const [scrollPositions, setScrollPositions] = useState(

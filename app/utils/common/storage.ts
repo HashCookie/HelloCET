@@ -1,9 +1,9 @@
 import type { Answers } from "@/app/types/answers";
 
 interface ExamState {
-  year: string;
-  month: string;
-  set: string;
+  year: number;
+  month: number;
+  set: number;
   showControls: boolean;
   activeTab: string;
   readOnly?: boolean;

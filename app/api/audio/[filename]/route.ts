@@ -3,12 +3,10 @@ import { GridFSBucket } from "mongodb";
 import { Readable } from "stream";
 import clientPromise from "@/app/utils/api/mongodb";
 
-// 定义请求参数的接口
 interface RequestParams {
   filename: string;
 }
 
-// 定义音频文件的接口
 interface AudioFile {
   title: string;
   fileId: string;

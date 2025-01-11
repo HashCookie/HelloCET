@@ -1,26 +1,25 @@
-interface Option {
+export interface Option {
   A: string;
   B: string;
   C: string;
   D: string;
 }
 
-// 听力题目接口
-interface ListeningQuestion {
+export interface ListeningQuestion {
   number: number;
   options: Option;
 }
 
-// Section A 接口
-interface SectionA {
+// Section A
+export interface SectionA {
   passages: string[];
   options: {
     [key: string]: string;
   };
 }
 
-// Section B 接口
-interface SectionB {
+// Section B
+export interface SectionB {
   passageTitle: string;
   passages: string[];
   questions: {
@@ -29,8 +28,8 @@ interface SectionB {
   }[];
 }
 
-// Section C 接口
-interface SectionC {
+// Section C
+export interface SectionC {
   passagesOne: string[];
   questionsOne: {
     number: number;
@@ -45,43 +44,36 @@ interface SectionC {
   }[];
 }
 
-// 阅读理解完整接口
-interface ReadingComprehension {
+// 阅读理解
+export interface ReadingComprehension {
   sectionA: SectionA;
   sectionB: SectionB;
   sectionC: SectionC;
 }
 
-// 完整试卷数据接口
-interface ExamPaper {
-  _id: string; // MongoDB ObjectId
+// 试卷基础信息
+export interface ExamPaperBase {
   year: number;
   month: number;
-  set: number;
+  setCount: number;
+}
 
-  // 写作部分
+// 试卷
+export interface ExamPaper extends ExamPaperBase {
+  _id: string;
+  // 写作
   writing: {
     Directions: string;
   };
 
-  // 听力部分
+  // 听力
   listeningComprehension: ListeningQuestion[];
 
-  // 阅读理解部分
+  // 阅读理解
   readingComprehension: ReadingComprehension;
 
-  // 翻译部分
+  // 翻译
   translation: {
     ChinesePassage: string;
   };
 }
-
-export type {
-  Option,
-  ListeningQuestion,
-  SectionA,
-  SectionB,
-  SectionC,
-  ReadingComprehension,
-  ExamPaper,
-};

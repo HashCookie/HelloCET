@@ -1,17 +1,12 @@
 import { NextResponse } from "next/server";
 import { MongoClient } from "mongodb";
-
-interface PaperInfo {
-  year: number;
-  month: number;
-  setCount: number;
-}
+import { ExamPaperBase } from "@/app/types/exam";
 
 interface AggregateResult {
   _id: null;
   years: number[];
   months: number[];
-  papers: PaperInfo[];
+  papers: ExamPaperBase[];
 }
 
 if (!process.env.MONGODB_URI) {

@@ -4,9 +4,9 @@ import { examStorage } from "@/app/utils/common/storage";
 
 export function useExamData<T>(
   field: string,
-  year: string,
-  month: string,
-  set: string
+  year: number,
+  month: number,
+  set: number
 ) {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";

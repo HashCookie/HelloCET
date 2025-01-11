@@ -48,9 +48,9 @@ export function useExamState(examType: string) {
   const [isLoading, setIsLoading] = useState(false);
   const [paperData, setPaperData] = useState<PaperData | null>(null);
 
-  const [selectedYear, setSelectedYear] = useState<string>("");
-  const [selectedMonth, setSelectedMonth] = useState<string>("");
-  const [selectedSet, setSelectedSet] = useState<string>("");
+  const [selectedYear, setSelectedYear] = useState<number>(0);
+  const [selectedMonth, setSelectedMonth] = useState<number>(0);
+  const [selectedSet, setSelectedSet] = useState<number>(1);
   const [answers, setAnswers] = useState<Answers>(INITIAL_ANSWERS);
   const [isReadOnly, setIsReadOnly] = useState(false);
   const [referenceAnswers, setReferenceAnswers] = useState(
@@ -84,47 +84,45 @@ export function useExamState(examType: string) {
     if (!paperData || !selectedYear) return;
 
     const availableMonths = paperData.papers
-      .filter((p) => p.year === parseInt(selectedYear))
+      .filter((p) => p.year === selectedYear)
       .map((p) => p.month);
 
     setMonths(Array.from(new Set(availableMonths)).sort((a, b) => a - b));
 
     if (selectedMonth) {
       const sets = paperData.papers.find(
-        (p) =>
-          p.year === parseInt(selectedYear) &&
-          p.month === parseInt(selectedMonth)
+        (p) => p.year === selectedYear && p.month === selectedMonth
       );
       setSetCount(sets?.setCount || 0);
     }
   }, [paperData, selectedYear, selectedMonth]);
 
-  const handleYearChange = (year: string) => {
+  const handleYearChange = (year: number) => {
     setSelectedYear(year);
-    setSelectedMonth("");
-    setSelectedSet("");
+    setSelectedMonth(0);
+    setSelectedSet(1);
     setActiveTab("writing");
     setAnswers(INITIAL_ANSWERS);
     if (year && paperData) {
       const availableMonths = paperData.papers
-        .filter((p) => p.year === parseInt(year))
+        .filter((p) => p.year === year)
         .map((p) => p.month);
       setMonths(Array.from(new Set(availableMonths)).sort((a, b) => a - b));
     }
   };
 
-  const handleMonthChange = (month: string) => {
+  const handleMonthChange = (month: number) => {
     setSelectedMonth(month);
-    setSelectedSet("");
+    setSelectedSet(1);
     if (selectedYear && month && paperData) {
       const sets = paperData.papers.filter(
-        (p) => p.year === parseInt(selectedYear) && p.month === parseInt(month)
+        (p) => p.year === selectedYear && p.month === month
       );
       setSetCount(sets[0]?.setCount || 0);
     }
   };
 
-  const handleSetChange = (set: string) => {
+  const handleSetChange = (set: number) => {
     setSelectedSet(set);
   };
 
@@ -147,9 +145,9 @@ export function useExamState(examType: string) {
 
     setShowControls(false);
     if (clearReadOnly) setIsReadOnly(false);
-    setSelectedYear("");
-    setSelectedMonth("");
-    setSelectedSet("");
+    setSelectedYear(0);
+    setSelectedMonth(0);
+    setSelectedSet(1);
     setActiveTab("writing");
     setAnswers(INITIAL_ANSWERS);
     examStorage.clearExamData();
@@ -234,9 +232,9 @@ export function useExamState(examType: string) {
     const set = searchParams.get("set");
 
     if (year && month && set) {
-      setSelectedYear(year);
-      setSelectedMonth(month);
-      setSelectedSet(set);
+      setSelectedYear(Number(year));
+      setSelectedMonth(Number(month));
+      setSelectedSet(Number(set));
       handleSubmit();
     }
   }, [searchParams, handleSubmit]);

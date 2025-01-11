@@ -41,9 +41,9 @@ export default function ScoresHistory() {
     const setMatch = record.type.match(/卷(\d+)/);
     const examTypeMatch = record.type.match(/(CET4|CET6)/i);
 
-    const year = yearMatch ? yearMatch[1] : "";
-    const month = monthMatch ? monthMatch[1] : "";
-    const set = setMatch ? setMatch[1] : "1";
+    const year = yearMatch ? Number(yearMatch[1]) : 0;
+    const month = monthMatch ? Number(monthMatch[1]) : 0;
+    const set = setMatch ? Number(setMatch[1]) : 1;
     const examType = examTypeMatch ? examTypeMatch[1].toLowerCase() : "";
 
     if (!year || !month || !examType) {

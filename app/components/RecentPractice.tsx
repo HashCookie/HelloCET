@@ -4,37 +4,12 @@ import { useRouter, usePathname } from "next/navigation";
 import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
 import { useScoreRecords } from "@/app/hooks/useScoreRecords";
 import { examStorage } from "@/app/utils/common/storage";
-
-interface ExamRecord {
-  attemptId: string;
-  duration: string;
-  seconds: number;
-  date: string;
-  type: string;
-}
-
-interface PracticeRecord {
-  type: string;
-  score: number;
-  date: string;
-  duration: string;
-  year?: string;
-  month?: string;
-  set?: string;
-  attemptId: string;
-}
-
-interface ScoreRecord {
-  attemptId: string;
-  answer?: string;
-  answers?: Record<number, string>;
-  date: string;
-  type: string;
-  score: number;
-  completedQuestions: number;
-  duration: string;
-  seconds: number;
-}
+import type {
+  ExamRecord,
+  PracticeRecord,
+  ScoresMap,
+} from "@/app/types/practice";
+import type { StoredScore } from "@/app/types/score";
 
 export default function RecentPractice() {
   const router = useRouter();
@@ -47,9 +22,9 @@ export default function RecentPractice() {
     const monthMatch = record.type.match(/(\d{1,2})月/);
     const setMatch = record.type.match(/卷(\d+)/);
 
-    const year = yearMatch ? yearMatch[1] : "";
-    const month = monthMatch ? monthMatch[1] : "";
-    const set = setMatch ? setMatch[1] : "1";
+    const year = yearMatch ? Number(yearMatch[1]) : 0;
+    const month = monthMatch ? Number(monthMatch[1]) : 0;
+    const set = setMatch ? Number(setMatch[1]) : 1;
 
     if (!year || !month) {
       console.warn("无法从试卷标题解析出年份或月份");
@@ -57,7 +32,7 @@ export default function RecentPractice() {
     }
 
     // 获取所有分数记录
-    const allScores = {
+    const allScores: ScoresMap = {
       writing: JSON.parse(localStorage.getItem("writingScores") || "[]"),
       listening: JSON.parse(localStorage.getItem("listeningScores") || "[]"),
       reading: JSON.parse(localStorage.getItem("readingScores") || "[]"),
@@ -67,10 +42,9 @@ export default function RecentPractice() {
     };
 
     // 根据试卷信息和attemptId找到对应的答案记录
-    const matchRecord = (scores: ScoreRecord[]) => {
+    const matchRecord = (scores: StoredScore[]) => {
       return scores.find(
-        (s: ScoreRecord) =>
-          s.attemptId === record.attemptId && s.type === record.type
+        (s) => s.attemptId === record.attemptId && s.type === record.type
       );
     };
 
@@ -121,9 +95,7 @@ export default function RecentPractice() {
     const examRecords = JSON.parse(
       localStorage.getItem("examRecords") || "[]"
     ) as ExamRecord[];
-    return examRecords.find(
-      (record: ExamRecord) => record.attemptId === attemptId
-    );
+    return examRecords.find((record) => record.attemptId === attemptId);
   };
 
   const getSectionScore = (
@@ -133,7 +105,7 @@ export default function RecentPractice() {
   ): number => {
     const scores = JSON.parse(
       localStorage.getItem(`${section}Scores`) || "[]"
-    ) as ScoreRecord[];
+    ) as StoredScore[];
     const record = scores.find(
       (s) => s.attemptId === attemptId && s.type === type
     );

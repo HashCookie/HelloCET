@@ -10,21 +10,14 @@ import {
 import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import ConfirmSubmitModal from "@/app/components/Common/ConfirmSubmitModal";
 import { examStorage } from "@/app/utils/common/storage";
+import type { ScoreData, ScoreRecord } from "@/app/types/score";
 import type { Answers } from "@/app/types/answers";
 
 interface ControlButtonsProps {
-  year?: string;
-  month?: string;
-  set?: string;
+  year: number;
+  month: number;
+  set: number;
   answers: Answers;
-}
-
-interface ScoreData {
-  score: number;
-  totalQuestions?: number;
-  accuracy?: number;
-  totalScore?: number;
-  details?: unknown;
 }
 
 const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
@@ -66,18 +59,13 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
       existingRecords.push(examRecord);
       localStorage.setItem(storageKey, JSON.stringify(existingRecords));
 
-      interface ExamRecord {
-        duration: string;
-        seconds: number;
-        date: string;
-        type: string;
-        attemptId: string;
-      }
-
       const saveScoreToLocalStorage = (
         section: string,
         data: ScoreData,
-        examRecord: ExamRecord
+        examRecord: Omit<
+          ScoreRecord,
+          "score" | "completedQuestions" | "answer" | "answers"
+        >
       ) => {
         const storageKey = `${section}Scores`;
         const existingScores = localStorage.getItem(storageKey);
@@ -136,9 +124,9 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
           const result = await handleListeningSubmit(
             answers.listening,
             examType,
-            parseInt(year),
-            parseInt(month),
-            parseInt(set)
+            year,
+            month,
+            set
           );
 
           if (result.success && result.data) {
@@ -158,9 +146,9 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
           const result = await handleReadingSubmit(
             answers.reading,
             examType,
-            parseInt(year),
-            parseInt(month),
-            parseInt(set)
+            year,
+            month,
+            set
           );
 
           if (result.success && result.data) {

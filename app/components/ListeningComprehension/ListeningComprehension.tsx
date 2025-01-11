@@ -20,9 +20,9 @@ interface ListeningProps {
     answer: string;
   }[];
   examInfo: {
-    year: string;
-    month: string;
-    set: string;
+    year: number;
+    month: number;
+    set: number;
     type: string;
   };
 }
@@ -44,9 +44,9 @@ interface SectionProps {
     answer: string;
   }[];
   examInfo: {
-    year: string;
-    month: string;
-    set: string;
+    year: number;
+    month: number;
+    set: number;
     type: string;
   };
 }

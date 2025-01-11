@@ -3,21 +3,16 @@
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import type { ExamPaperBase } from "@/app/types/exam";
 
 interface Paper {
-  year: string;
-  month: string;
-  set: string;
+  year: number;
+  month: number;
+  set: number;
   tag: string;
   practiceCount: string;
   borderColor: string;
   hoverBg: string;
-}
-
-interface PaperInfo {
-  year: number;
-  month: number;
-  setCount: number;
 }
 
 export default function RecommendedExams() {
@@ -36,9 +31,9 @@ export default function RecommendedExams() {
         if (data && data[0]?.papers) {
           const selectedPapers = getRandomPapers(data[0].papers, 5);
           const formattedPapers = selectedPapers.map((paper, index) => ({
-            year: paper.year.toString(),
-            month: paper.month.toString(),
-            set: "1",
+            year: paper.year,
+            month: paper.month,
+            set: 1,
             tag: getTag(index),
             practiceCount: generatePracticeCount(),
             borderColor: getBorderColor(index),
@@ -57,7 +52,7 @@ export default function RecommendedExams() {
   }, [examType]);
 
   // 随机选择指定数量的试卷
-  const getRandomPapers = (papers: PaperInfo[], count: number) => {
+  const getRandomPapers = (papers: ExamPaperBase[], count: number) => {
     const shuffled = [...papers].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   };

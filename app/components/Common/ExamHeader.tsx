@@ -2,6 +2,7 @@ import ExamTabs from "@/app/components/Common/ExamTabs";
 import ControlButtons from "@/app/components/Common/ControlButtons";
 import { useState, useEffect } from "react";
 import type { Answers } from "@/app/types/answers";
+import type { StoredScore } from "@/app/types/score";
 
 interface ExamHeaderProps {
   title: string;
@@ -9,23 +10,13 @@ interface ExamHeaderProps {
   onTabChange: (tab: string) => void;
   onBack?: () => void;
   showBackButton?: boolean;
-  year: string;
-  month: string;
-  set: string;
+  year: number;
+  month: number;
+  set: number;
   answers: Answers;
   readOnly?: boolean;
   examType: string;
   attemptId?: string;
-}
-
-interface ScoreData {
-  type: string;
-  score: number;
-  answer?: string;
-  answers?: Record<number, string>;
-  attemptId?: string;
-  completedQuestions?: number;
-  date?: string;
 }
 
 const ExamHeader = ({
@@ -66,20 +57,20 @@ const ExamHeader = ({
       const allScores = {
         writing: JSON.parse(
           localStorage.getItem("writingScores") || "[]"
-        ) as ScoreData[],
+        ) as StoredScore[],
         listening: JSON.parse(
           localStorage.getItem("listeningScores") || "[]"
-        ) as ScoreData[],
+        ) as StoredScore[],
         reading: JSON.parse(
           localStorage.getItem("readingScores") || "[]"
-        ) as ScoreData[],
+        ) as StoredScore[],
         translation: JSON.parse(
           localStorage.getItem("translationScores") || "[]"
-        ) as ScoreData[],
+        ) as StoredScore[],
       };
 
       const paperTitle = `${year}年${month}月大学英语${examType}真题（卷${set}）`;
-      const findScore = (scores: ScoreData[]) => {
+      const findScore = (scores: StoredScore[]) => {
         const record = scores.find((s) =>
           attemptId ? s.attemptId === attemptId : s.type === paperTitle
         );
