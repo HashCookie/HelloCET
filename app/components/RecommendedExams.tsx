@@ -5,10 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { ExamPaperBase } from "@/app/types/exam";
 
-interface Paper {
-  year: number;
-  month: number;
-  set: number;
+interface Paper extends ExamPaperBase {
   tag: string;
   practiceCount: string;
   borderColor: string;
@@ -33,7 +30,7 @@ export default function RecommendedExams() {
           const formattedPapers = selectedPapers.map((paper, index) => ({
             year: paper.year,
             month: paper.month,
-            set: Math.floor(Math.random() * 3) + 1,
+            setCount: Math.floor(Math.random() * 3) + 1,
             tag: getTag(index),
             practiceCount: generatePracticeCount(),
             borderColor: getBorderColor(index),
@@ -96,15 +93,14 @@ export default function RecommendedExams() {
   const handlePaperClick = (paper: Paper) => {
     const lowerCaseExamType = examType.toLowerCase();
     router.push(
-      `/${lowerCaseExamType}?year=${paper.year}&month=${paper.month}&set=${paper.set}`
+      `/${lowerCaseExamType}?year=${paper.year}&month=${paper.month}&set=${paper.setCount}`
     );
   };
 
   return (
     <div className="space-y-4">
       {loading
-        ? // Skeleton UI
-          [...Array(5)].map((_, index) => (
+        ? [...Array(5)].map((_, index) => (
             <div
               key={index}
               className="animate-pulse rounded border-l-4 border-gray-200 p-4 pl-4"
@@ -125,7 +121,7 @@ export default function RecommendedExams() {
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-medium text-gray-900">
                   {paper.year}年{paper.month}月大学英语{examType.toUpperCase()}
-                  真题（卷{paper.set}）
+                  真题（卷{paper.setCount}）
                 </h3>
                 <span className="text-sm font-medium text-blue-600">
                   {paper.tag}
