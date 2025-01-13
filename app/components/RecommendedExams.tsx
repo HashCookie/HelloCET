@@ -33,7 +33,7 @@ export default function RecommendedExams() {
           const formattedPapers = selectedPapers.map((paper, index) => ({
             year: paper.year,
             month: paper.month,
-            set: 1,
+            set: Math.floor(Math.random() * 3) + 1,
             tag: getTag(index),
             practiceCount: generatePracticeCount(),
             borderColor: getBorderColor(index),
