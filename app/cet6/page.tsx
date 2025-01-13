@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import YearAndSetSelector from "@/app/components/YearAndSetSelector";
+import YearAndSetSelector from "@/app/components/ExamDashboard";
 import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 
 export default function CET6() {

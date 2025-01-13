@@ -16,7 +16,50 @@ import RecommendedExams from "@/app/components/RecommendedExams";
 import RecentPractice from "@/app/components/RecentPractice";
 import { useExamState } from "@/app/hooks/useExamState";
 
-const YearAndSelectorContent = () => {
+const useExamSections = (
+  selectedYear: number,
+  selectedMonth: number,
+  selectedSet: number
+) => {
+  const writing = useExamData<Pick<ExamPaper, "writing">>(
+    "writing",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  const listening = useExamData<Pick<ExamPaper, "listeningComprehension">>(
+    "listeningComprehension",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  const reading = useExamData<Pick<ExamPaper, "readingComprehension">>(
+    "readingComprehension",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  const translation = useExamData<Pick<ExamPaper, "translation">>(
+    "translation",
+    selectedYear,
+    selectedMonth,
+    selectedSet
+  );
+
+  return {
+    writing,
+    listening,
+    reading,
+    translation,
+    hasError:
+      writing.error || listening.error || reading.error || translation.error,
+  };
+};
+
+const ExamDashboard = () => {
   const pathname = usePathname();
   const router = useRouter();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
@@ -44,57 +87,16 @@ const YearAndSelectorContent = () => {
     resetExam,
   } = useExamState(examType);
 
-  const {
-    data: writingData,
-    isLoading: writingLoading,
-    error: writingError,
-  } = useExamData<Pick<ExamPaper, "writing">>(
-    "writing",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
-
-  const {
-    data: listeningData,
-    isLoading: listeningLoading,
-    error: listeningError,
-  } = useExamData<Pick<ExamPaper, "listeningComprehension">>(
-    "listeningComprehension",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
-
-  const {
-    data: readingData,
-    isLoading: readingLoading,
-    error: readingError,
-  } = useExamData<Pick<ExamPaper, "readingComprehension">>(
-    "readingComprehension",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
-
-  const {
-    data: translationData,
-    isLoading: translationLoading,
-    error: translationError,
-  } = useExamData<Pick<ExamPaper, "translation">>(
-    "translation",
-    selectedYear,
-    selectedMonth,
-    selectedSet
-  );
+  const { writing, listening, reading, translation, hasError } =
+    useExamSections(selectedYear, selectedMonth, selectedSet);
 
   const renderExamContent = () => {
     switch (activeTab) {
       case "writing":
         return (
           <Writing
-            data={writingData}
-            isLoading={writingLoading}
+            data={writing.data}
+            isLoading={writing.isLoading}
             answer={answers.writing}
             onAnswerChange={(value) => handleAnswerChange("writing", value)}
             readOnly={isReadOnly}
@@ -104,8 +106,8 @@ const YearAndSelectorContent = () => {
       case "listening":
         return (
           <ListeningComprehension
-            data={listeningData}
-            isLoading={listeningLoading}
+            data={listening.data}
+            isLoading={listening.isLoading}
             answers={answers.listening}
             onAnswerChange={(value) => handleAnswerChange("listening", value)}
             readOnly={isReadOnly}
@@ -121,8 +123,8 @@ const YearAndSelectorContent = () => {
       case "reading":
         return (
           <ReadingComprehension
-            data={readingData}
-            isLoading={readingLoading}
+            data={reading.data}
+            isLoading={reading.isLoading}
             answers={answers.reading}
             onAnswerChange={(value) => handleAnswerChange("reading", value)}
             readOnly={isReadOnly}
@@ -132,8 +134,8 @@ const YearAndSelectorContent = () => {
       case "translation":
         return (
           <Translation
-            data={translationData}
-            isLoading={translationLoading}
+            data={translation.data}
+            isLoading={translation.isLoading}
             answer={answers.translation}
             onAnswerChange={(value) => handleAnswerChange("translation", value)}
             readOnly={isReadOnly}
@@ -145,15 +147,13 @@ const YearAndSelectorContent = () => {
     }
   };
 
-  if (writingError || listeningError || readingError || translationError) {
+  if (hasError) {
     examStorage.clearExamData();
     return (
       <div className="mx-auto max-w-6xl px-4 py-8">
         <div className="rounded-lg border border-red-200 bg-red-50 p-4">
           <h3 className="font-medium text-red-800">获取试卷失败</h3>
-          <p className="mt-1 text-red-600">
-            {writingError || listeningError || readingError || translationError}
-          </p>
+          <p className="mt-1 text-red-600">{hasError}</p>
           <button
             onClick={() => {
               resetExam(true);
@@ -227,7 +227,7 @@ const YearAndSelectorContent = () => {
 const YearAndSetSelector = () => {
   return (
     <Suspense fallback={<LoadingSpinner />}>
-      <YearAndSelectorContent />
+      <ExamDashboard />
     </Suspense>
   );
 };
