@@ -2,9 +2,9 @@
 
 import ExamSection from "@/app/components/Common/ExamSection";
 import type { ExamPaper } from "@/app/types/exam";
-import SectionA from "@/app/components/ReadingComprehension/SectionA";
-import SectionB from "@/app/components/ReadingComprehension/SectionB";
-import SectionC from "@/app/components/ReadingComprehension/SectionC";
+import SectionA from "@/app/components/Exam/ReadingComprehension/SectionA";
+import SectionB from "@/app/components/Exam/ReadingComprehension/SectionB";
+import SectionC from "@/app/components/Exam/ReadingComprehension/SectionC";
 
 type ReadingData = Pick<ExamPaper, "readingComprehension">;
 

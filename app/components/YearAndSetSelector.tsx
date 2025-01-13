@@ -2,10 +2,10 @@
 
 import { Suspense } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import Writing from "@/app/components/Writing/Writing";
-import ListeningComprehension from "@/app/components/ListeningComprehension/ListeningComprehension";
-import ReadingComprehension from "@/app/components/ReadingComprehension/ReadingComprehension";
-import Translation from "@/app/components/CTOE/Translation";
+import Writing from "@/app/components/Exam/Writing/Writing";
+import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
+import ReadingComprehension from "@/app/components/Exam/ReadingComprehension/ReadingComprehension";
+import Translation from "@/app/components/Exam/CTOE/Translation";
 import ExamSelector from "@/app/components/Selector/ExamSelector";
 import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import { useExamData } from "@/app/hooks/useExamData";

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import ListeningComprehension from "@/app/components/ListeningComprehension/ListeningComprehension";
+import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
 import type { ListeningQuestion } from "@/app/types/exam";
 import { handleListeningSubmit } from "@/app/utils/api/submitHandlers";
 
