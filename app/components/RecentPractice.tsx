@@ -1,6 +1,4 @@
-"use client";
-
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
 import { useScoreRecords } from "@/app/hooks/useScoreRecords";
 import { examStorage } from "@/app/utils/common/storage";
@@ -10,106 +8,144 @@ import type {
   ScoresMap,
 } from "@/app/types/practice";
 import type { StoredScore } from "@/app/types/score";
+import type { Answers } from "@/app/types/answers";
+import Link from "next/link";
+
+interface SectionScores {
+  writing: number;
+  listening: number;
+  reading: number;
+  translation: number;
+}
+
+interface PracticeRecordCardProps {
+  record: PracticeRecord;
+  examRecord?: ExamRecord;
+  scores: SectionScores;
+}
+
+const parseExamInfo = (type: string) => {
+  const yearMatch = type.match(/(\d{4})年/);
+  const monthMatch = type.match(/(\d{1,2})月/);
+  const setMatch = type.match(/卷(\d+)/);
+
+  return {
+    year: yearMatch ? Number(yearMatch[1]) : 0,
+    month: monthMatch ? Number(monthMatch[1]) : 0,
+    set: setMatch ? Number(setMatch[1]) : 1,
+  };
+};
+
+const getScoreFromStorage = (
+  attemptId: string,
+  type: string,
+  section: string
+): number => {
+  const scores = JSON.parse(
+    localStorage.getItem(`${section}Scores`) || "[]"
+  ) as StoredScore[];
+  return (
+    scores.find((s) => s.attemptId === attemptId && s.type === type)?.score || 0
+  );
+};
+
+const matchScoreRecord = (
+  scores: StoredScore[],
+  attemptId: string,
+  type: string
+) => {
+  return scores.find((s) => s.attemptId === attemptId && s.type === type);
+};
+
+const getExamAnswers = (
+  record: PracticeRecord
+): {
+  answers: Answers;
+  hasAnswers: boolean;
+} => {
+  const allScores: ScoresMap = {
+    writing: JSON.parse(localStorage.getItem("writingScores") || "[]"),
+    listening: JSON.parse(localStorage.getItem("listeningScores") || "[]"),
+    reading: JSON.parse(localStorage.getItem("readingScores") || "[]"),
+    translation: JSON.parse(localStorage.getItem("translationScores") || "[]"),
+  };
+
+  const writingRecord = matchScoreRecord(
+    allScores.writing,
+    record.attemptId,
+    record.type
+  );
+  const listeningRecord = matchScoreRecord(
+    allScores.listening,
+    record.attemptId,
+    record.type
+  );
+  const readingRecord = matchScoreRecord(
+    allScores.reading,
+    record.attemptId,
+    record.type
+  );
+  const translationRecord = matchScoreRecord(
+    allScores.translation,
+    record.attemptId,
+    record.type
+  );
+
+  const answers: Answers = {
+    writing: writingRecord?.answer || "",
+    listening: listeningRecord?.answers || {},
+    reading: readingRecord?.answers || {},
+    translation: translationRecord?.answer || "",
+    attemptId: record.attemptId,
+  };
+
+  const hasAnswers = !!(
+    answers.writing ||
+    Object.keys(answers.listening).length > 0 ||
+    Object.keys(answers.reading).length > 0 ||
+    answers.translation
+  );
+
+  return { answers, hasAnswers };
+};
+
+const PracticeRecordCard = ({
+  record,
+  examRecord,
+  scores,
+}: PracticeRecordCardProps) => (
+  <div className="cursor-pointer rounded bg-gray-50 p-4 transition-colors hover:bg-gray-100">
+    <div className="mb-2 flex items-center justify-between">
+      <h4 className="font-medium text-gray-900">{record.type}</h4>
+      <span className="font-medium text-blue-600">
+        {record.score.toFixed(1)}分
+      </span>
+    </div>
+    <div className="mb-2 flex flex-wrap gap-2 text-sm text-gray-600">
+      <span>写作: {scores.writing.toFixed(1)}</span>
+      <span>听力: {scores.listening.toFixed(1)}</span>
+      <span>阅读: {scores.reading.toFixed(1)}</span>
+      <span>翻译: {scores.translation.toFixed(1)}</span>
+    </div>
+    <div className="text-sm text-gray-500">
+      {formatDateToBeijingTime(record.date)} | 用时:{" "}
+      {examRecord?.duration || record.duration}
+    </div>
+  </div>
+);
 
 export default function RecentPractice() {
-  const router = useRouter();
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const { records } = useScoreRecords(5, examType);
 
-  const handleRecordClick = async (record: PracticeRecord) => {
-    const yearMatch = record.type.match(/(\d{4})年/);
-    const monthMatch = record.type.match(/(\d{1,2})月/);
-    const setMatch = record.type.match(/卷(\d+)/);
-
-    const year = yearMatch ? Number(yearMatch[1]) : 0;
-    const month = monthMatch ? Number(monthMatch[1]) : 0;
-    const set = setMatch ? Number(setMatch[1]) : 1;
-
+  const getExamLink = (record: PracticeRecord) => {
+    const { year, month, set } = parseExamInfo(record.type);
     if (!year || !month) {
       console.warn("无法从试卷标题解析出年份或月份");
-      return;
+      return "";
     }
-
-    // 获取所有分数记录
-    const allScores: ScoresMap = {
-      writing: JSON.parse(localStorage.getItem("writingScores") || "[]"),
-      listening: JSON.parse(localStorage.getItem("listeningScores") || "[]"),
-      reading: JSON.parse(localStorage.getItem("readingScores") || "[]"),
-      translation: JSON.parse(
-        localStorage.getItem("translationScores") || "[]"
-      ),
-    };
-
-    // 根据试卷信息和attemptId找到对应的答案记录
-    const matchRecord = (scores: StoredScore[]) => {
-      return scores.find(
-        (s) => s.attemptId === record.attemptId && s.type === record.type
-      );
-    };
-
-    const writingRecord = matchRecord(allScores.writing);
-    const listeningRecord = matchRecord(allScores.listening);
-    const readingRecord = matchRecord(allScores.reading);
-    const translationRecord = matchRecord(allScores.translation);
-
-    const answers = {
-      writing: writingRecord?.answer || "",
-      listening: listeningRecord?.answers || {},
-      reading: readingRecord?.answers || {},
-      translation: translationRecord?.answer || "",
-      attemptId: record.attemptId,
-    };
-
-    if (
-      !answers.writing &&
-      Object.keys(answers.listening).length === 0 &&
-      Object.keys(answers.reading).length === 0 &&
-      !answers.translation
-    ) {
-      console.warn("未找到任何答案记录");
-      return;
-    }
-
-    // 保存试卷状态
-    await examStorage.saveState({
-      year,
-      month,
-      set,
-      showControls: true,
-      activeTab: "writing",
-      readOnly: true,
-    });
-
-    // 保存答案到 examStorage
-    await examStorage.saveAnswers(answers);
-
-    // 跳转到对应试卷页面
-    const lowerCaseExamType = examType.toLowerCase();
-    router.push(
-      `/${lowerCaseExamType}?year=${year}&month=${month}&set=${set}&readOnly=true`
-    );
-  };
-
-  const getExamRecord = (attemptId: string): ExamRecord | undefined => {
-    const examRecords = JSON.parse(
-      localStorage.getItem("examRecords") || "[]"
-    ) as ExamRecord[];
-    return examRecords.find((record) => record.attemptId === attemptId);
-  };
-
-  const getSectionScore = (
-    attemptId: string,
-    type: string,
-    section: string
-  ): number => {
-    const scores = JSON.parse(
-      localStorage.getItem(`${section}Scores`) || "[]"
-    ) as StoredScore[];
-    const record = scores.find(
-      (s) => s.attemptId === attemptId && s.type === type
-    );
-    return record?.score || 0;
+    return `/${examType.toLowerCase()}?year=${year}&month=${month}&set=${set}&readOnly=true`;
   };
 
   if (records.length === 0) {
@@ -119,51 +155,68 @@ export default function RecentPractice() {
   return (
     <div className="space-y-4">
       {records.map((record, index) => {
-        const examRecord = getExamRecord(record.attemptId);
-        const writingScore = getSectionScore(
-          record.attemptId,
-          record.type,
-          "writing"
-        );
-        const listeningScore = getSectionScore(
-          record.attemptId,
-          record.type,
-          "listening"
-        );
-        const readingScore = getSectionScore(
-          record.attemptId,
-          record.type,
-          "reading"
-        );
-        const translationScore = getSectionScore(
-          record.attemptId,
-          record.type,
-          "translation"
-        );
+        const examRecord = JSON.parse(
+          localStorage.getItem("examRecords") || "[]"
+        ).find((r: ExamRecord) => r.attemptId === record.attemptId);
+
+        const scores = {
+          writing: getScoreFromStorage(
+            record.attemptId,
+            record.type,
+            "writing"
+          ),
+          listening: getScoreFromStorage(
+            record.attemptId,
+            record.type,
+            "listening"
+          ),
+          reading: getScoreFromStorage(
+            record.attemptId,
+            record.type,
+            "reading"
+          ),
+          translation: getScoreFromStorage(
+            record.attemptId,
+            record.type,
+            "translation"
+          ),
+        };
 
         return (
-          <div
+          <Link
             key={index}
-            onClick={() => handleRecordClick(record)}
-            className="cursor-pointer rounded bg-gray-50 p-4 transition-colors hover:bg-gray-100"
+            href={getExamLink(record)}
+            onClick={async (e) => {
+              const { year, month, set } = parseExamInfo(record.type);
+              if (!year || !month) {
+                e.preventDefault();
+                return;
+              }
+
+              const { answers, hasAnswers } = getExamAnswers(record);
+              if (!hasAnswers) {
+                console.warn("未找到任何答案记录");
+                return;
+              }
+
+              await examStorage.saveState({
+                year,
+                month,
+                set,
+                showControls: true,
+                activeTab: "writing",
+                readOnly: true,
+              });
+
+              await examStorage.saveAnswers(answers);
+            }}
           >
-            <div className="mb-2 flex items-center justify-between">
-              <h4 className="font-medium text-gray-900">{record.type}</h4>
-              <span className="font-medium text-blue-600">
-                {record.score.toFixed(1)}分
-              </span>
-            </div>
-            <div className="mb-2 flex flex-wrap gap-2 text-sm text-gray-600">
-              <span>写作: {writingScore.toFixed(1)}</span>
-              <span>听力: {listeningScore.toFixed(1)}</span>
-              <span>阅读: {readingScore.toFixed(1)}</span>
-              <span>翻译: {translationScore.toFixed(1)}</span>
-            </div>
-            <div className="text-sm text-gray-500">
-              {formatDateToBeijingTime(record.date)} | 用时:{" "}
-              {examRecord?.duration || record.duration}
-            </div>
-          </div>
+            <PracticeRecordCard
+              record={record}
+              examRecord={examRecord}
+              scores={scores}
+            />
+          </Link>
         );
       })}
     </div>
