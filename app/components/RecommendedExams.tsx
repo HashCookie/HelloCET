@@ -19,12 +19,10 @@ export default function RecommendedExams() {
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const [recommendedPapers, setRecommendedPapers] = useState<Paper[]>([]);
 
-  const { paperData, loading, fetchPaperData } = usePaperStore();
+  const { paperData, loading } = usePaperStore();
 
   useEffect(() => {
-    if (!paperData) {
-      fetchPaperData(examType);
-    } else if (paperData.papers) {
+    if (paperData?.papers) {
       const selectedPapers = getRandomPapers(paperData.papers, 5);
       const formattedPapers = selectedPapers.map((paper, index) => ({
         ...paper,
@@ -36,7 +34,7 @@ export default function RecommendedExams() {
       }));
       setRecommendedPapers(formattedPapers);
     }
-  }, [examType, paperData, fetchPaperData]);
+  }, [paperData]);
 
   // 随机选择指定数量的试卷
   const getRandomPapers = (papers: ExamPaperBase[], count: number) => {
