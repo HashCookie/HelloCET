@@ -124,9 +124,9 @@ export default function PracticeListening() {
             answers={answers}
             onAnswerChange={setAnswers}
             examInfo={{
-              year: data.year.toString(),
-              month: data.month.toString(),
-              set: data.set.toString(),
+              year: data.year,
+              month: data.month,
+              set: data.set,
               type: examType,
             }}
           />

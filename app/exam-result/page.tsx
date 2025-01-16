@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import ScoreSummary from "@/app/components/ScoreSummary";
-import type { ExamResultData } from "@/app/types/score";
+import type { ExamResult } from "@/app/types/score";
 
 export default function ExamResultPage() {
-  const [examData, setExamData] = useState<ExamResultData | null>(null);
+  const [examData, setExamData] = useState<ExamResult | null>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function ExamResultPage() {
       return;
     }
 
-    const data = JSON.parse(savedResults) as ExamResultData;
+    const data = JSON.parse(savedResults) as ExamResult;
     setExamData(data);
   }, [router]);
 
