@@ -1,9 +1,9 @@
-import { useState, useCallback, useEffect } from "react";
-import { examStorage } from "@/app/utils/common/storage";
-import type { Answers } from "@/app/types/answers";
 import { useSearchParams } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
 import { useTabControl } from "@/app/hooks/exam/useTabControl";
 import { usePaperStore } from "@/app/hooks/usePaperData";
+import { examStorage } from "@/app/utils/common/storage";
+import type { Answers } from "@/app/types/answers";
 
 type AnswerValue = Answers[keyof Omit<Answers, "attemptId">];
 

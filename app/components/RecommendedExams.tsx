@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import type { ExamPaperBase } from "@/app/types/exam";
 import { usePaperStore } from "@/app/hooks/usePaperData";
-import Link from "next/link";
+import type { ExamPaperBase } from "@/app/types/exam";
 
 interface Paper extends ExamPaperBase {
   tag: string;

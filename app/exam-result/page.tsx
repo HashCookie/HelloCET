@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import ScoreSummary from "@/app/components/ScoreSummary";
 import type { ExamResult } from "@/app/types/score";
 

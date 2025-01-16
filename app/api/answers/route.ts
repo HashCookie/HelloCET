@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
 import { MongoClient } from "mongodb";
+import { NextResponse } from "next/server";
 
 if (!process.env.MONGODB_URI) {
   throw new Error("请在 .env.local 文件中设置 MONGODB_URI");

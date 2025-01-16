@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write \"app/**/*.{js,jsx,ts,tsx,css,md}\""
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "fix": "yarn format && yarn lint"
   },
   "dependencies": {
     "chart.js": "^4.4.6",
@@ -20,6 +21,7 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

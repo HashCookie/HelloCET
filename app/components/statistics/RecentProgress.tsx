@@ -1,9 +1,8 @@
 "use client";
 
-import { useScoreRecords } from "@/app/hooks/useScoreRecords";
-import { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
-import { ScoreRecord } from "@/app/hooks/useScoreRecords";
+import { useEffect, useRef } from "react";
+import { ScoreRecord, useScoreRecords } from "@/app/hooks/useScoreRecords";
 
 interface SectionScore extends ScoreRecord {
   score: number;

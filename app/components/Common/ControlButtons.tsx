@@ -2,16 +2,16 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import ConfirmSubmitModal from "@/app/components/Common/ConfirmSubmitModal";
 import {
   handleListeningSubmit,
   handleReadingSubmit,
   handleTranslationSubmit,
 } from "@/app/utils/api/submitHandlers";
 import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
-import ConfirmSubmitModal from "@/app/components/Common/ConfirmSubmitModal";
 import { examStorage } from "@/app/utils/common/storage";
-import type { ScoreData, ScoreRecord } from "@/app/types/score";
 import type { Answers } from "@/app/types/answers";
+import type { ScoreData, ScoreRecord } from "@/app/types/score";
 
 interface ControlButtonsProps {
   year: number;

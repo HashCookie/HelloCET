@@ -1,7 +1,7 @@
-import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import { useRouter } from "next/navigation";
+import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import { examStorage } from "@/app/utils/common/storage";
-import type { ScoreSummaryProps, ScoreRecord } from "@/app/types/practice";
+import type { ScoreRecord, ScoreSummaryProps } from "@/app/types/practice";
 
 const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
   const router = useRouter();

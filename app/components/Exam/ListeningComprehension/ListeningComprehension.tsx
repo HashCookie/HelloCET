@@ -1,9 +1,9 @@
 "use client";
 
 import ExamSection from "@/app/components/Common/ExamSection";
-import type { ListeningQuestion } from "@/app/types/exam";
-import QuestionGroup from "@/app/components/Exam/ListeningComprehension/QuestionGroup";
 import { SECTION_CONFIG } from "@/app/components/Exam/ListeningComprehension/constants";
+import QuestionGroup from "@/app/components/Exam/ListeningComprehension/QuestionGroup";
+import type { ListeningQuestion } from "@/app/types/exam";
 
 interface ListeningData {
   listeningComprehension: ListeningQuestion[];

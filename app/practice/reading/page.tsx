@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import ReadingComprehension from "@/app/components/Exam/ReadingComprehension/ReadingComprehension";
-import type { ExamPaper } from "@/app/types/exam";
 import { handleReadingSubmit } from "@/app/utils/api/submitHandlers";
+import type { ExamPaper } from "@/app/types/exam";
 
 interface ExamData {
   readingComprehension: ExamPaper["readingComprehension"];

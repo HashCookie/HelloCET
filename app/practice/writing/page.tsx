@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import ExamSection from "@/app/components/Common/ExamSection";
 
 interface WritingData {

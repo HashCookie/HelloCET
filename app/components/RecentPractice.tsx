@@ -1,15 +1,15 @@
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
 import { useScoreRecords } from "@/app/hooks/useScoreRecords";
+import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
 import { examStorage } from "@/app/utils/common/storage";
+import type { Answers } from "@/app/types/answers";
 import type {
   ExamRecord,
   PracticeRecord,
   ScoresMap,
 } from "@/app/types/practice";
 import type { StoredScore } from "@/app/types/score";
-import type { Answers } from "@/app/types/answers";
-import Link from "next/link";
 
 interface SectionScores {
   writing: number;

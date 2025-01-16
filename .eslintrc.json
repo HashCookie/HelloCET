@@ -1,7 +1,20 @@
 {
   "rules": {
     "eol-last": ["warn", "always"],
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          ["parent", "sibling", "index"],
+          "type"
+        ],
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ]
   },
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["import"]
 }

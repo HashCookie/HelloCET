@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import ExamDashboardWrapper from "@/app/components/ExamDashboard";
 import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
+import ExamDashboardWrapper from "@/app/components/ExamDashboard";
 
 export default function CET6() {
   return (

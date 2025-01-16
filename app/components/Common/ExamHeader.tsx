@@ -1,6 +1,6 @@
-import ExamTabs from "@/app/components/Common/ExamTabs";
+import { useEffect, useState } from "react";
 import ControlButtons from "@/app/components/Common/ControlButtons";
-import { useState, useEffect } from "react";
+import ExamTabs from "@/app/components/Common/ExamTabs";
 import type { Answers } from "@/app/types/answers";
 import type { StoredScore } from "@/app/types/score";
 

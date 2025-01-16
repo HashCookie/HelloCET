@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
-import type { ListeningQuestion } from "@/app/types/exam";
 import { handleListeningSubmit } from "@/app/utils/api/submitHandlers";
+import type { ListeningQuestion } from "@/app/types/exam";
 
 interface ExamData {
   listeningComprehension: ListeningQuestion[];
