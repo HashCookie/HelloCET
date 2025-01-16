@@ -1,30 +1,5 @@
 import { useEffect, useState } from "react";
-
-interface BaseRecord {
-  attemptId: string;
-  type: string;
-  date: string;
-}
-
-interface ExamRecord extends BaseRecord {
-  duration: string;
-  seconds: number;
-}
-
-interface SectionRecord extends BaseRecord {
-  score: number;
-  completedQuestions: number;
-  answer?: string;
-  answers?: Record<number, string>;
-  duration?: string;
-  seconds?: number;
-}
-
-export interface ScoreRecord
-  extends Omit<SectionRecord, "duration" | "seconds"> {
-  duration: string;
-  seconds: number;
-}
+import type { ExamRecord, ScoreRecord } from "@/app/types/practice";
 
 export function useScoreRecords(limit?: number, examType?: string) {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
@@ -44,7 +19,7 @@ export function useScoreRecords(limit?: number, examType?: string) {
       const key = `${section}Scores`;
       const sectionRecords = JSON.parse(
         localStorage.getItem(key) || "[]"
-      ) as SectionRecord[];
+      ) as ScoreRecord[];
 
       sectionRecords.forEach((record) => {
         const examRecord = examRecordsMap.get(record.attemptId);
