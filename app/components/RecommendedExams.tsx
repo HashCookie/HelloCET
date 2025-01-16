@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { ExamPaperBase } from "@/app/types/exam";
+import { usePaperStore } from "@/app/hooks/usePaperData";
 
 interface Paper extends ExamPaperBase {
   tag: string;
@@ -17,36 +18,25 @@ export default function RecommendedExams() {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const [recommendedPapers, setRecommendedPapers] = useState<Paper[]>([]);
-  const [loading, setLoading] = useState(true);
+
+  const { paperData, loading, fetchPaperData } = usePaperStore();
 
   useEffect(() => {
-    const fetchPaperInfo = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch(`/api/papers?type=${examType}`);
-        const data = await response.json();
-        if (data && data[0]?.papers) {
-          const selectedPapers = getRandomPapers(data[0].papers, 5);
-          const formattedPapers = selectedPapers.map((paper, index) => ({
-            year: paper.year,
-            month: paper.month,
-            setCount: Math.floor(Math.random() * 3) + 1,
-            tag: getTag(index),
-            practiceCount: generatePracticeCount(),
-            borderColor: getBorderColor(index),
-            hoverBg: getHoverBg(index),
-          }));
-          setRecommendedPapers(formattedPapers);
-        }
-      } catch (error) {
-        console.error("获取推荐试卷失败:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPaperInfo();
-  }, [examType]);
+    if (!paperData) {
+      fetchPaperData(examType);
+    } else if (paperData.papers) {
+      const selectedPapers = getRandomPapers(paperData.papers, 5);
+      const formattedPapers = selectedPapers.map((paper, index) => ({
+        ...paper,
+        setCount: Math.floor(Math.random() * 3) + 1,
+        tag: getTag(index),
+        practiceCount: generatePracticeCount(),
+        borderColor: getBorderColor(index),
+        hoverBg: getHoverBg(index),
+      }));
+      setRecommendedPapers(formattedPapers);
+    }
+  }, [examType, paperData, fetchPaperData]);
 
   // 随机选择指定数量的试卷
   const getRandomPapers = (papers: ExamPaperBase[], count: number) => {

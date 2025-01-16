@@ -3,16 +3,7 @@ import { examStorage } from "@/app/utils/common/storage";
 import type { Answers } from "@/app/types/answers";
 import { useSearchParams } from "next/navigation";
 import { useTabControl } from "@/app/hooks/exam/useTabControl";
-
-interface PaperData {
-  years: number[];
-  months: number[];
-  papers: {
-    year: number;
-    month: number;
-    setCount: number;
-  }[];
-}
+import { usePaperStore } from "@/app/hooks/usePaperData";
 
 type AnswerValue = Answers[keyof Omit<Answers, "attemptId">];
 
@@ -40,14 +31,12 @@ const INITIAL_REFERENCE_ANSWERS = {
 
 export function useExamState(examType: string) {
   const searchParams = useSearchParams();
+  const { paperData, loading, fetchPaperData } = usePaperStore();
 
   const [showControls, setShowControls] = useState(false);
   const [years, setYears] = useState<number[]>([]);
   const [months, setMonths] = useState<number[]>([]);
   const [setCount, setSetCount] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
-  const [paperData, setPaperData] = useState<PaperData | null>(null);
-
   const [selectedYear, setSelectedYear] = useState<number>(0);
   const [selectedMonth, setSelectedMonth] = useState<number>(0);
   const [selectedSet, setSelectedSet] = useState<number>(1);
@@ -62,23 +51,6 @@ export function useExamState(examType: string) {
     selectedMonth,
     selectedSet
   );
-
-  const fetchPaperInfo = useCallback(async () => {
-    try {
-      setIsLoading(true);
-      const response = await fetch(`/api/papers?type=${examType}`);
-      const data = await response.json();
-      const sortedYears =
-        data[0]?.years.sort((a: number, b: number) => a - b) || [];
-
-      setPaperData(data[0]);
-      setYears(sortedYears);
-    } catch (error) {
-      console.error("获取试卷信息失败:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  }, [examType]);
 
   const updateMonthsAndSets = useCallback(() => {
     if (!paperData || !selectedYear) return;
@@ -97,10 +69,20 @@ export function useExamState(examType: string) {
     }
   }, [paperData, selectedYear, selectedMonth]);
 
+  useEffect(() => {
+    if (!paperData) {
+      fetchPaperData(examType);
+    } else {
+      const sortedYears = paperData.years.sort((a, b) => a - b);
+      setYears(sortedYears);
+      updateMonthsAndSets();
+    }
+  }, [examType, paperData, fetchPaperData, updateMonthsAndSets]);
+
   const handleYearChange = (year: number) => {
     setSelectedYear(year);
     setSelectedMonth(0);
-    setSelectedSet(1);
+    setSelectedSet(0);
     setActiveTab("writing");
     setAnswers(INITIAL_ANSWERS);
     if (year && paperData) {
@@ -113,7 +95,7 @@ export function useExamState(examType: string) {
 
   const handleMonthChange = (month: number) => {
     setSelectedMonth(month);
-    setSelectedSet(1);
+    setSelectedSet(0);
     if (selectedYear && month && paperData) {
       const sets = paperData.papers.filter(
         (p) => p.year === selectedYear && p.month === month
@@ -197,12 +179,10 @@ export function useExamState(examType: string) {
 
   // Effects
   useEffect(() => {
-    fetchPaperInfo();
-  }, [fetchPaperInfo]);
-
-  useEffect(() => {
-    updateMonthsAndSets();
-  }, [updateMonthsAndSets]);
+    if (showControls) {
+      fetchReferenceAnswers();
+    }
+  }, [showControls, fetchReferenceAnswers]);
 
   useEffect(() => {
     const loadSavedData = async () => {
@@ -239,14 +219,7 @@ export function useExamState(examType: string) {
     }
   }, [searchParams, handleSubmit]);
 
-  useEffect(() => {
-    if (showControls) {
-      fetchReferenceAnswers();
-    }
-  }, [showControls, fetchReferenceAnswers]);
-
   return {
-    // 状态
     showControls,
     years,
     months,
@@ -257,10 +230,8 @@ export function useExamState(examType: string) {
     activeTab,
     answers,
     isReadOnly,
-    isLoading,
+    isLoading: loading,
     referenceAnswers,
-
-    // 处理函数
     handleYearChange,
     handleMonthChange,
     handleSetChange,
