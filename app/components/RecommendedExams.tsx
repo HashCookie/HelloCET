@@ -1,10 +1,10 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { ExamPaperBase } from "@/app/types/exam";
 import { usePaperStore } from "@/app/hooks/usePaperData";
+import Link from "next/link";
 
 interface Paper extends ExamPaperBase {
   tag: string;
@@ -14,7 +14,6 @@ interface Paper extends ExamPaperBase {
 }
 
 export default function RecommendedExams() {
-  const router = useRouter();
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const [recommendedPapers, setRecommendedPapers] = useState<Paper[]>([]);
@@ -78,13 +77,6 @@ export default function RecommendedExams() {
     return colors[index];
   };
 
-  const handlePaperClick = (paper: Paper) => {
-    const lowerCaseExamType = examType.toLowerCase();
-    router.push(
-      `/${lowerCaseExamType}?year=${paper.year}&month=${paper.month}&set=${paper.setCount}`
-    );
-  };
-
   return (
     <div className="space-y-4">
       {loading
@@ -101,10 +93,10 @@ export default function RecommendedExams() {
             </div>
           ))
         : recommendedPapers.map((paper, index) => (
-            <div
+            <Link
               key={index}
-              onClick={() => handlePaperClick(paper)}
-              className={`border-l-4 ${paper.borderColor} p-4 pl-4 ${paper.hoverBg} cursor-pointer rounded transition-colors`}
+              href={`/${examType.toLowerCase()}?year=${paper.year}&month=${paper.month}&set=${paper.setCount}`}
+              className={`border-l-4 ${paper.borderColor} p-4 pl-4 ${paper.hoverBg} block cursor-pointer rounded transition-colors`}
             >
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-medium text-gray-900">
@@ -118,7 +110,7 @@ export default function RecommendedExams() {
               <p className="text-sm text-gray-500">
                 {paper.practiceCount}人已练习
               </p>
-            </div>
+            </Link>
           ))}
     </div>
   );
