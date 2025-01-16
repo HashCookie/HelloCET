@@ -224,7 +224,7 @@ const ExamDashboard = () => {
   );
 };
 
-const YearAndSetSelector = () => {
+const ExamDashboardWrapper = () => {
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <ExamDashboard />
@@ -232,4 +232,4 @@ const YearAndSetSelector = () => {
   );
 };
 
-export default YearAndSetSelector;
+export default ExamDashboardWrapper;
