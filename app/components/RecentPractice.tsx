@@ -2,14 +2,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useScoreRecords } from "@/app/hooks/useScoreRecords";
 import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
+import { examRecordStorage } from "@/app/utils/common/examRecordStorage";
 import { examStorage } from "@/app/utils/common/storage";
 import type { Answers } from "@/app/types/answers";
-import type {
-  ExamRecord,
-  PracticeRecord,
-  ScoresMap,
-} from "@/app/types/practice";
-import type { StoredScore } from "@/app/types/score";
+import type { ExamRecord, PracticeRecord } from "@/app/types/practice";
 
 interface SectionScores {
   writing: number;
@@ -36,56 +32,25 @@ const parseExamInfo = (type: string) => {
   };
 };
 
-const getScoreFromStorage = (
-  attemptId: string,
-  type: string,
-  section: string
-): number => {
-  const scores = JSON.parse(
-    localStorage.getItem(`${section}Scores`) || "[]"
-  ) as StoredScore[];
-  return (
-    scores.find((s) => s.attemptId === attemptId && s.type === type)?.score || 0
-  );
-};
+const getExamAnswers = (record: PracticeRecord) => {
+  const allScores = examRecordStorage.getAllSectionScores();
 
-const matchScoreRecord = (
-  scores: StoredScore[],
-  attemptId: string,
-  type: string
-) => {
-  return scores.find((s) => s.attemptId === attemptId && s.type === type);
-};
-
-const getExamAnswers = (
-  record: PracticeRecord
-): {
-  answers: Answers;
-  hasAnswers: boolean;
-} => {
-  const allScores: ScoresMap = {
-    writing: JSON.parse(localStorage.getItem("writingScores") || "[]"),
-    listening: JSON.parse(localStorage.getItem("listeningScores") || "[]"),
-    reading: JSON.parse(localStorage.getItem("readingScores") || "[]"),
-    translation: JSON.parse(localStorage.getItem("translationScores") || "[]"),
-  };
-
-  const writingRecord = matchScoreRecord(
+  const writingRecord = examRecordStorage.findScoreRecord(
     allScores.writing,
     record.attemptId,
     record.type
   );
-  const listeningRecord = matchScoreRecord(
+  const listeningRecord = examRecordStorage.findScoreRecord(
     allScores.listening,
     record.attemptId,
     record.type
   );
-  const readingRecord = matchScoreRecord(
+  const readingRecord = examRecordStorage.findScoreRecord(
     allScores.reading,
     record.attemptId,
     record.type
   );
-  const translationRecord = matchScoreRecord(
+  const translationRecord = examRecordStorage.findScoreRecord(
     allScores.translation,
     record.attemptId,
     record.type
@@ -155,27 +120,27 @@ export default function RecentPractice() {
   return (
     <div className="space-y-4">
       {records.map((record, index) => {
-        const examRecord = JSON.parse(
-          localStorage.getItem("examRecords") || "[]"
-        ).find((r: ExamRecord) => r.attemptId === record.attemptId);
+        const examRecord = examRecordStorage
+          .getExamRecords()
+          .find((r: ExamRecord) => r.attemptId === record.attemptId);
 
         const scores = {
-          writing: getScoreFromStorage(
+          writing: examRecordStorage.getScoreByAttemptId(
             record.attemptId,
             record.type,
             "writing"
           ),
-          listening: getScoreFromStorage(
+          listening: examRecordStorage.getScoreByAttemptId(
             record.attemptId,
             record.type,
             "listening"
           ),
-          reading: getScoreFromStorage(
+          reading: examRecordStorage.getScoreByAttemptId(
             record.attemptId,
             record.type,
             "reading"
           ),
-          translation: getScoreFromStorage(
+          translation: examRecordStorage.getScoreByAttemptId(
             record.attemptId,
             record.type,
             "translation"

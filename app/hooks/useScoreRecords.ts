@@ -1,28 +1,25 @@
 import { useEffect, useState } from "react";
-import type { ExamRecord, ScoreRecord } from "@/app/types/practice";
+import { examRecordStorage } from "@/app/utils/common/examRecordStorage";
+import type { ScoreRecord } from "@/app/types/practice";
+
+const SECTIONS = ["writing", "listening", "reading", "translation"] as const;
 
 export function useScoreRecords(limit?: number, examType?: string) {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
 
   useEffect(() => {
-    const examRecords = JSON.parse(
-      localStorage.getItem("examRecords") || "[]"
-    ) as ExamRecord[];
+    const examRecords = examRecordStorage.getExamRecords();
     const examRecordsMap = new Map(
       examRecords.map((record) => [record.attemptId, record])
     );
 
-    const sections = ["writing", "listening", "reading", "translation"];
     const recordsMap = new Map<string, ScoreRecord>();
 
-    sections.forEach((section) => {
-      const key = `${section}Scores`;
-      const sectionRecords = JSON.parse(
-        localStorage.getItem(key) || "[]"
-      ) as ScoreRecord[];
+    SECTIONS.forEach((section) => {
+      const sectionRecords = examRecordStorage.getSectionScores(section);
 
       sectionRecords.forEach((record) => {
-        const examRecord = examRecordsMap.get(record.attemptId);
+        const examRecord = examRecordsMap.get(record.attemptId!);
         if (!examRecord) {
           console.warn(
             `Missing exam record for attemptId: ${record.attemptId}`
@@ -30,16 +27,16 @@ export function useScoreRecords(limit?: number, examType?: string) {
           return;
         }
 
-        const existingRecord = recordsMap.get(record.attemptId);
+        const existingRecord = recordsMap.get(record.attemptId!);
         if (existingRecord) {
-          recordsMap.set(record.attemptId, {
+          recordsMap.set(record.attemptId!, {
             ...existingRecord,
             score: existingRecord.score + record.score,
             completedQuestions:
-              existingRecord.completedQuestions + record.completedQuestions,
+              existingRecord.completedQuestions + record.completedQuestions!,
           });
         } else {
-          recordsMap.set(record.attemptId, {
+          recordsMap.set(record.attemptId!, {
             ...record,
             duration: examRecord.duration,
             seconds: examRecord.seconds,
@@ -68,11 +65,7 @@ export function useScoreRecords(limit?: number, examType?: string) {
   }, [limit, examType]);
 
   const clearRecords = () => {
-    const sections = ["writing", "listening", "reading", "translation"];
-    sections.forEach((section) => {
-      localStorage.removeItem(`${section}Scores`);
-    });
-    localStorage.removeItem("examRecords");
+    examRecordStorage.clearAllRecords();
     setRecords([]);
   };
 
