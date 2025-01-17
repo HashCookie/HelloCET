@@ -117,9 +117,10 @@ export function useExamState(examType: string) {
         set: selectedSet,
         showControls: true,
         activeTab,
+        readOnly: isReadOnly,
       });
     }
-  }, [selectedYear, selectedMonth, selectedSet, activeTab]);
+  }, [selectedYear, selectedMonth, selectedSet, activeTab, isReadOnly]);
 
   const resetExam = (clearReadOnly = false) => {
     const baseUrl = window.location.pathname;
@@ -177,12 +178,17 @@ export function useExamState(examType: string) {
     }
   }, [isReadOnly, selectedYear, selectedMonth, selectedSet, examType]);
 
-  // Effects
   useEffect(() => {
-    if (showControls) {
+    if (isReadOnly && selectedYear && selectedMonth && selectedSet) {
       fetchReferenceAnswers();
     }
-  }, [showControls, fetchReferenceAnswers]);
+  }, [
+    isReadOnly,
+    selectedYear,
+    selectedMonth,
+    selectedSet,
+    fetchReferenceAnswers,
+  ]);
 
   useEffect(() => {
     const loadSavedData = async () => {
@@ -210,11 +216,13 @@ export function useExamState(examType: string) {
     const year = searchParams.get("year");
     const month = searchParams.get("month");
     const set = searchParams.get("set");
+    const readOnly = searchParams.get("readOnly");
 
     if (year && month && set) {
       setSelectedYear(Number(year));
       setSelectedMonth(Number(month));
       setSelectedSet(Number(set));
+      setIsReadOnly(readOnly === "true");
       handleSubmit();
     }
   }, [searchParams, handleSubmit]);
