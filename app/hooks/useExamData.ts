@@ -6,7 +6,7 @@ export function useExamData<T>(
   field: string,
   year: number,
   month: number,
-  set: number
+  setCount: number
 ) {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
@@ -16,7 +16,7 @@ export function useExamData<T>(
 
   useEffect(() => {
     async function fetchData() {
-      if (!year || !month || !set) {
+      if (!year || !month || !setCount) {
         setData(null);
         setError(null);
         setIsLoading(false);
@@ -28,14 +28,14 @@ export function useExamData<T>(
         if (
           storedState?.year !== year ||
           storedState?.month !== month ||
-          storedState?.set !== set
+          storedState?.setCount !== setCount
         ) {
           await examStorage.clearExamData();
         }
 
         setIsLoading(true);
         const response = await fetch(
-          `/api/examData?type=${examType}&field=${field}&year=${year}&month=${month}&set=${set}`
+          `/api/examData?type=${examType}&field=${field}&year=${year}&month=${month}&set=${setCount}`
         );
 
         if (!response.ok) {
@@ -54,7 +54,7 @@ export function useExamData<T>(
     }
 
     fetchData();
-  }, [field, year, month, set, examType]);
+  }, [field, year, month, setCount, examType]);
 
   return { data, isLoading, error };
 }

@@ -23,12 +23,12 @@ interface PracticeRecordCardProps {
 const parseExamInfo = (type: string) => {
   const yearMatch = type.match(/(\d{4})年/);
   const monthMatch = type.match(/(\d{1,2})月/);
-  const setMatch = type.match(/卷(\d+)/);
+  const setCountMatch = type.match(/卷(\d+)/);
 
   return {
     year: yearMatch ? Number(yearMatch[1]) : 0,
     month: monthMatch ? Number(monthMatch[1]) : 0,
-    set: setMatch ? Number(setMatch[1]) : 1,
+    setCount: setCountMatch ? Number(setCountMatch[1]) : 1,
   };
 };
 
@@ -105,12 +105,12 @@ export default function RecentPractice() {
   const { records } = useScoreRecords(5, examType);
 
   const getExamLink = (record: PracticeRecord) => {
-    const { year, month, set } = parseExamInfo(record.type);
+    const { year, month, setCount } = parseExamInfo(record.type);
     if (!year || !month) {
       console.warn("无法从试卷标题解析出年份或月份");
       return "";
     }
-    return `/${examType.toLowerCase()}?year=${year}&month=${month}&set=${set}&readOnly=true`;
+    return `/${examType.toLowerCase()}?year=${year}&month=${month}&set=${setCount}&readOnly=true`;
   };
 
   if (records.length === 0) {
@@ -152,7 +152,7 @@ export default function RecentPractice() {
             key={index}
             href={getExamLink(record)}
             onClick={async (e) => {
-              const { year, month, set } = parseExamInfo(record.type);
+              const { year, month, setCount } = parseExamInfo(record.type);
               if (!year || !month) {
                 e.preventDefault();
                 return;
@@ -167,7 +167,7 @@ export default function RecentPractice() {
               await examStorage.saveState({
                 year,
                 month,
-                set,
+                setCount,
                 showControls: true,
                 activeTab: "writing",
                 readOnly: true,

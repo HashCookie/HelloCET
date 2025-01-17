@@ -114,7 +114,7 @@ export function useExamState(examType: string) {
       examStorage.saveState({
         year: selectedYear,
         month: selectedMonth,
-        set: selectedSet,
+        setCount: selectedSet,
         showControls: true,
         activeTab,
         readOnly: isReadOnly,
@@ -198,7 +198,7 @@ export function useExamState(examType: string) {
       if (savedState) {
         setSelectedYear(savedState.year);
         setSelectedMonth(savedState.month);
-        setSelectedSet(savedState.set);
+        setSelectedSet(savedState.setCount);
         setShowControls(savedState.showControls);
         setActiveTab(savedState.activeTab);
         setIsReadOnly(savedState.readOnly || false);

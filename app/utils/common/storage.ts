@@ -1,9 +1,7 @@
 import type { Answers } from "@/app/types/answers";
+import type { ExamPaperBase } from "@/app/types/exam";
 
-interface ExamState {
-  year: number;
-  month: number;
-  set: number;
+interface ExamState extends ExamPaperBase {
   showControls: boolean;
   activeTab: string;
   readOnly?: boolean;
