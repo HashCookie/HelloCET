@@ -13,9 +13,20 @@ export const STORAGE_KEY = {
   NEVER_SHOW_CONFIRM: "neverShowSubmitConfirm",
 } as const;
 
+const EXAM_EXPIRY_TIME = 24 * 60 * 60 * 1000;
+
+interface StorageData<T> {
+  data: T;
+  timestamp: number;
+}
+
 export const examStorage = {
   saveState: (state: ExamState) => {
-    localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify(state));
+    const storageData: StorageData<ExamState> = {
+      data: state,
+      timestamp: Date.now(),
+    };
+    localStorage.setItem(STORAGE_KEY.EXAM_STATE, JSON.stringify(storageData));
   },
 
   saveAnswers: (answers: Answers) => {
@@ -28,8 +39,20 @@ export const examStorage = {
   },
 
   getState: (): ExamState | null => {
-    const state = localStorage.getItem(STORAGE_KEY.EXAM_STATE);
-    return state ? JSON.parse(state) : null;
+    const storageData = localStorage.getItem(STORAGE_KEY.EXAM_STATE);
+    if (!storageData) return null;
+
+    const { data, timestamp } = JSON.parse(
+      storageData
+    ) as StorageData<ExamState>;
+    const now = Date.now();
+
+    if (now - timestamp > EXAM_EXPIRY_TIME) {
+      localStorage.removeItem(STORAGE_KEY.EXAM_STATE);
+      return null;
+    }
+
+    return data;
   },
 
   getAnswers: (): Answers | null => {
