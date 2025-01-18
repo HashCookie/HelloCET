@@ -1,8 +1,9 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Translation from "@/app/components/Exam/CTOE/Translation";
+import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleTranslationSubmit } from "@/app/utils/api/submitHandlers";
 import type { ExamPaper } from "@/app/types/exam";
 
@@ -17,42 +18,10 @@ export default function PracticeTranslation() {
   const [answer, setAnswer] = useState("");
   const [score, setScore] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [data, setData] = useState<ExamData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
-  useEffect(() => {
-    const fetchRandomPaper = async () => {
-      setIsLoading(true);
-      try {
-        const response = await fetch(`/api/papers?type=${examType}`);
-        const result = await response.json();
-        if (result && result[0]?.papers) {
-          const papers = result[0].papers;
-          const randomPaper = papers[Math.floor(Math.random() * papers.length)];
-          const setCount = randomPaper.setCount || 1;
-
-          const translationResponse = await fetch(
-            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&setCount=${setCount}&field=translation`
-          );
-          const translationData = await translationResponse.json();
-          setData({
-            translation: translationData.translation,
-            year: randomPaper.year,
-            month: randomPaper.month,
-            setCount: setCount,
-          });
-        }
-      } catch (error) {
-        console.error("获取翻译题目失败:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchRandomPaper();
-  }, [examType]);
+  const { data, isLoading } = useRandomExamData<ExamData>("translation");
 
   const handleSubmit = async () => {
     if (!answer.trim()) {
