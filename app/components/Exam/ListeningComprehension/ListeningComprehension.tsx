@@ -22,7 +22,7 @@ interface ListeningProps {
   examInfo: {
     year: number;
     month: number;
-    set: number;
+    setCount: number;
     type: string;
   };
 }
@@ -46,7 +46,7 @@ interface SectionProps {
   examInfo: {
     year: number;
     month: number;
-    set: number;
+    setCount: number;
     type: string;
   };
 }
@@ -72,7 +72,7 @@ const Section = ({
         const endNum = String(group.endIndex).padStart(2, "0");
         const audioRange = `${startNum}${endNum}`;
 
-        const audioUrl = `/api/audio/${audioRange}.mp3?year=${examInfo.year}&month=${examInfo.month}&set=${examInfo.set}&type=${examInfo.type}&range=${audioRange}`;
+        const audioUrl = `/api/audio/${audioRange}.mp3?year=${examInfo.year}&month=${examInfo.month}&setCount=${examInfo.setCount}&type=${examInfo.type}&range=${audioRange}`;
 
         return (
           <QuestionGroup

@@ -104,8 +104,8 @@ export function useExamState(examType: string) {
     }
   };
 
-  const handleSetChange = (set: number) => {
-    setSelectedSet(set);
+  const handleSetChange = (setCount: number) => {
+    setSelectedSet(setCount);
   };
 
   const handleSubmit = useCallback(() => {
@@ -163,7 +163,7 @@ export function useExamState(examType: string) {
     if (isReadOnly && selectedYear && selectedMonth && selectedSet) {
       try {
         const response = await fetch(
-          `/api/answers?type=${examType}&year=${selectedYear}&month=${selectedMonth}&set=${selectedSet}`
+          `/api/answers?type=${examType}&year=${selectedYear}&month=${selectedMonth}&setCount=${selectedSet}`
         );
         const data = await response.json();
         setReferenceAnswers({
@@ -215,13 +215,13 @@ export function useExamState(examType: string) {
   useEffect(() => {
     const year = searchParams.get("year");
     const month = searchParams.get("month");
-    const set = searchParams.get("set");
+    const setCount = searchParams.get("setCount");
     const readOnly = searchParams.get("readOnly");
 
-    if (year && month && set) {
+    if (year && month && setCount) {
       setSelectedYear(Number(year));
       setSelectedMonth(Number(month));
-      setSelectedSet(Number(set));
+      setSelectedSet(Number(setCount));
       setIsReadOnly(readOnly === "true");
       handleSubmit();
     }

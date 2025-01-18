@@ -12,7 +12,7 @@ interface ExamHeaderProps {
   showBackButton?: boolean;
   year: number;
   month: number;
-  set: number;
+  setCount: number;
   answers: Answers;
   readOnly?: boolean;
   examType: string;
@@ -27,7 +27,7 @@ const ExamHeader = ({
   showBackButton = false,
   year,
   month,
-  set,
+  setCount,
   answers,
   readOnly,
   examType,
@@ -69,7 +69,7 @@ const ExamHeader = ({
         ) as StoredScore[],
       };
 
-      const paperTitle = `${year}年${month}月大学英语${examType}真题（卷${set}）`;
+      const paperTitle = `${year}年${month}月大学英语${examType}真题（卷${setCount}）`;
       const findScore = (scores: StoredScore[]) => {
         const record = scores.find((s) =>
           attemptId ? s.attemptId === attemptId : s.type === paperTitle
@@ -84,7 +84,7 @@ const ExamHeader = ({
         translation: findScore(allScores.translation),
       });
     }
-  }, [readOnly, year, month, set, examType, attemptId]);
+  }, [readOnly, year, month, setCount, examType, attemptId]);
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 bg-white shadow-sm">
@@ -139,7 +139,7 @@ const ExamHeader = ({
             <ControlButtons
               year={year}
               month={month}
-              set={set}
+              setCount={setCount}
               answers={answers}
             />
           )}

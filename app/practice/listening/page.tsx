@@ -10,7 +10,7 @@ interface ExamData {
   listeningComprehension: ListeningQuestion[];
   year: number;
   month: number;
-  set: number;
+  setCount: number;
 }
 
 export default function PracticeListening() {
@@ -32,17 +32,17 @@ export default function PracticeListening() {
         if (result && result[0]?.papers) {
           const papers = result[0].papers;
           const randomPaper = papers[Math.floor(Math.random() * papers.length)];
-          const set = randomPaper.set || 1;
+          const setCount = randomPaper.setCount || 1;
 
           const listeningResponse = await fetch(
-            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&set=${set}&field=listeningComprehension`
+            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&setCount=${setCount}&field=listeningComprehension`
           );
           const listeningData = await listeningResponse.json();
           setData({
             listeningComprehension: listeningData.listeningComprehension,
             year: randomPaper.year,
             month: randomPaper.month,
-            set: set,
+            setCount: setCount,
           });
         }
       } catch (error) {
@@ -68,7 +68,7 @@ export default function PracticeListening() {
         examType,
         data?.year || 0,
         data?.month || 0,
-        data?.set || 1
+        data?.setCount || 1
       );
 
       if (result.success && result.data?.score !== undefined) {
@@ -114,7 +114,7 @@ export default function PracticeListening() {
         <div className="prose mb-6 max-w-none">
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
-            {examType} {data.year}年{data.month}月第{data.set}套
+            {examType} {data.year}年{data.month}月第{data.setCount}套
           </div>
           <ListeningComprehension
             data={{
@@ -126,7 +126,7 @@ export default function PracticeListening() {
             examInfo={{
               year: data.year,
               month: data.month,
-              set: data.set,
+              setCount: data.setCount,
               type: examType,
             }}
           />

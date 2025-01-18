@@ -16,11 +16,16 @@ import type { ScoreData, ScoreRecord } from "@/app/types/score";
 interface ControlButtonsProps {
   year: number;
   month: number;
-  set: number;
+  setCount: number;
   answers: Answers;
 }
 
-const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
+const ControlButtons = ({
+  year,
+  month,
+  setCount,
+  answers,
+}: ControlButtonsProps) => {
   const pathname = usePathname();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [startTime] = useState(Date.now());
@@ -48,7 +53,7 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
         duration: formatDurationFromSeconds(duration),
         seconds: duration,
         date: new Date().toISOString(),
-        type: `${year}年${month}月大学英语${examType}真题（卷${set}）`,
+        type: `${year}年${month}月大学英语${examType}真题（卷${setCount}）`,
         attemptId,
       };
 
@@ -119,14 +124,19 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
       }
 
       // 检查并提交听力部分
-      if (Object.keys(answers.listening).length > 0 && year && month && set) {
+      if (
+        Object.keys(answers.listening).length > 0 &&
+        year &&
+        month &&
+        setCount
+      ) {
         try {
           const result = await handleListeningSubmit(
             answers.listening,
             examType,
             year,
             month,
-            set
+            setCount
           );
 
           if (result.success && result.data) {
@@ -141,14 +151,19 @@ const ControlButtons = ({ year, month, set, answers }: ControlButtonsProps) => {
       }
 
       // 检查并提交阅读部分
-      if (Object.keys(answers.reading).length > 0 && year && month && set) {
+      if (
+        Object.keys(answers.reading).length > 0 &&
+        year &&
+        month &&
+        setCount
+      ) {
         try {
           const result = await handleReadingSubmit(
             answers.reading,
             examType,
             year,
             month,
-            set
+            setCount
           );
 
           if (result.success && result.data) {

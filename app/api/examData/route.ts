@@ -13,7 +13,7 @@ export async function GET(request: Request) {
   const examType = searchParams.get("type");
   const year = parseInt(searchParams.get("year") || "0");
   const month = parseInt(searchParams.get("month") || "0");
-  const set = parseInt(searchParams.get("set") || "0");
+  const setCount = parseInt(searchParams.get("setCount") || "0");
   const field = searchParams.get("field");
 
   if (!field) {
@@ -26,12 +26,12 @@ export async function GET(request: Request) {
     const collection = db.collection(`${examType || "CET4"}_Papers`);
 
     const result = await collection.findOne(
-      { year, month, set },
+      { year, month, setCount },
       { projection: { [field]: 1, _id: 0 } }
     );
 
     if (!result) {
-      throw new ApiError(404, `未找到${year}年${month}月第${set}套试卷`);
+      throw new ApiError(404, `未找到${year}年${month}月第${setCount}套试卷`);
     }
 
     await client.close();

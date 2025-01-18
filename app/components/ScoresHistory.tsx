@@ -43,7 +43,7 @@ export default function ScoresHistory() {
 
     const year = yearMatch ? Number(yearMatch[1]) : 0;
     const month = monthMatch ? Number(monthMatch[1]) : 0;
-    const set = setMatch ? Number(setMatch[1]) : 1;
+    const setCount = setMatch ? Number(setMatch[1]) : 1;
     const examType = examTypeMatch ? examTypeMatch[1].toLowerCase() : "";
 
     if (!year || !month || !examType) {
@@ -82,7 +82,7 @@ export default function ScoresHistory() {
     await examStorage.saveState({
       year,
       month,
-      set,
+      setCount,
       showControls: true,
       activeTab: "writing",
       readOnly: true,
@@ -91,7 +91,7 @@ export default function ScoresHistory() {
     await examStorage.saveAnswers(answers);
 
     router.push(
-      `/${examType}?year=${year}&month=${month}&set=${set}&readOnly=true`
+      `/${examType}?year=${year}&month=${month}&setCount=${setCount}&readOnly=true`
     );
   };
 

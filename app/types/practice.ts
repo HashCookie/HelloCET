@@ -17,7 +17,7 @@ export interface PracticeRecord {
   duration: string;
   year?: number;
   month?: number;
-  set?: number;
+  setCount?: number;
   attemptId: string;
 }
 

@@ -9,7 +9,7 @@ interface ExamSelectorProps {
   selectedSet: number;
   onYearChange: (year: number) => void;
   onMonthChange: (month: number) => void;
-  onSetChange: (set: number) => void;
+  onSetChange: (setCount: number) => void;
   onSubmit: () => void;
 }
 
@@ -63,9 +63,9 @@ const ExamSelector = ({
         disabled={!selectedMonth}
       >
         <option value="">选择套数</option>
-        {Array.from({ length: setCount }, (_, i) => i + 1).map((set) => (
-          <option key={set} value={set}>
-            第{set}套
+        {Array.from({ length: setCount }, (_, i) => i + 1).map((setCount) => (
+          <option key={setCount} value={setCount}>
+            第{setCount}套
           </option>
         ))}
       </select>

@@ -35,7 +35,7 @@ export function useExamData<T>(
 
         setIsLoading(true);
         const response = await fetch(
-          `/api/examData?type=${examType}&field=${field}&year=${year}&month=${month}&set=${setCount}`
+          `/api/examData?type=${examType}&field=${field}&year=${year}&month=${month}&setCount=${setCount}`
         );
 
         if (!response.ok) {

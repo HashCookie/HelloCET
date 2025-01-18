@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   const examType = searchParams.get("type");
   const year = parseInt(searchParams.get("year") || "0");
   const month = parseInt(searchParams.get("month") || "0");
-  const set = parseInt(searchParams.get("set") || "0");
+  const setCount = parseInt(searchParams.get("setCount") || "0");
   const field = searchParams.get("field");
 
   try {
@@ -23,7 +23,7 @@ export async function GET(request: Request) {
     const projection = field ? { [field]: 1, _id: 0 } : { _id: 0 };
 
     const result = await collection.findOne(
-      { year, month, set },
+      { year, month, setCount },
       { projection }
     );
 

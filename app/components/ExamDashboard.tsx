@@ -115,7 +115,7 @@ const ExamDashboard = () => {
             examInfo={{
               year: selectedYear,
               month: selectedMonth,
-              set: selectedSet,
+              setCount: selectedSet,
               type: examType,
             }}
           />
@@ -182,7 +182,7 @@ const ExamDashboard = () => {
             showBackButton={true}
             year={selectedYear}
             month={selectedMonth}
-            set={selectedSet}
+            setCount={selectedSet}
             answers={answers}
             readOnly={isReadOnly}
             examType={examType}

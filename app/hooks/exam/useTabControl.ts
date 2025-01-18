@@ -29,7 +29,7 @@ export function useTabControl(
       examStorage.saveState({
         year: selectedYear,
         month: selectedMonth,
-        set: selectedSet,
+        setCount: selectedSet,
         showControls: true,
         activeTab: tab,
       });

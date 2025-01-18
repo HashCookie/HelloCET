@@ -110,7 +110,7 @@ export default function RecentPractice() {
       console.warn("无法从试卷标题解析出年份或月份");
       return "";
     }
-    return `/${examType.toLowerCase()}?year=${year}&month=${month}&set=${setCount}&readOnly=true`;
+    return `/${examType.toLowerCase()}?year=${year}&month=${month}&setCount=${setCount}&readOnly=true`;
   };
 
   if (records.length === 0) {

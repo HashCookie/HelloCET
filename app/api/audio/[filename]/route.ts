@@ -37,7 +37,7 @@ export async function GET(
     const url = new URL(request.url);
     const year = url.searchParams.get("year");
     const month = url.searchParams.get("month");
-    const set = url.searchParams.get("set");
+    const setCount = url.searchParams.get("setCount");
     const examType = url.searchParams.get("type");
     const questionRange = url.searchParams.get("range");
 
@@ -46,7 +46,7 @@ export async function GET(
       return new NextResponse("文件名不匹配", { status: 400 });
     }
 
-    if (!year || !month || !set || !examType || !questionRange) {
+    if (!year || !month || !setCount || !examType || !questionRange) {
       return new NextResponse("缺少必要参数", { status: 400 });
     }
 
@@ -57,7 +57,7 @@ export async function GET(
     const exam = await collection.findOne({
       year: parseInt(year),
       month: parseInt(month),
-      set: parseInt(set),
+      setCount: parseInt(setCount),
     });
 
     if (!exam) {

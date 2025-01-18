@@ -95,7 +95,7 @@ export default function RecommendedExams() {
         : recommendedPapers.map((paper, index) => (
             <Link
               key={index}
-              href={`/${examType.toLowerCase()}?year=${paper.year}&month=${paper.month}&set=${paper.setCount}`}
+              href={`/${examType.toLowerCase()}?year=${paper.year}&month=${paper.month}&setCount=${paper.setCount}`}
               className={`border-l-4 ${paper.borderColor} p-4 pl-4 ${paper.hoverBg} block cursor-pointer rounded transition-colors`}
             >
               <div className="mb-2 flex items-center justify-between">

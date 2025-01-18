@@ -10,7 +10,7 @@ interface ExamData {
   translation: ExamPaper["translation"];
   year: number;
   month: number;
-  set: number;
+  setCount: number;
 }
 
 export default function PracticeTranslation() {
@@ -32,17 +32,17 @@ export default function PracticeTranslation() {
         if (result && result[0]?.papers) {
           const papers = result[0].papers;
           const randomPaper = papers[Math.floor(Math.random() * papers.length)];
-          const set = randomPaper.set || 1;
+          const setCount = randomPaper.setCount || 1;
 
           const translationResponse = await fetch(
-            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&set=${set}&field=translation`
+            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&setCount=${setCount}&field=translation`
           );
           const translationData = await translationResponse.json();
           setData({
             translation: translationData.translation,
             year: randomPaper.year,
             month: randomPaper.month,
-            set: set,
+            setCount: setCount,
           });
         }
       } catch (error) {
@@ -113,7 +113,7 @@ export default function PracticeTranslation() {
         <div className="prose mb-6 max-w-none">
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
-            {examType} {data.year}年{data.month}月第{data.set}套
+            {examType} {data.year}年{data.month}月第{data.setCount}套
           </div>
           <Translation
             data={{

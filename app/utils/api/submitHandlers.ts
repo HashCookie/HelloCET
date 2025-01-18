@@ -22,11 +22,11 @@ export async function handleListeningSubmit(
   examType: string,
   year: number,
   month: number,
-  set: number
+  setCount: number
 ) {
   try {
     const response = await fetch(
-      `/api/answers?type=${examType}&year=${year}&month=${month}&set=${set}&field=listeningAnswers`
+      `/api/answers?type=${examType}&year=${year}&month=${month}&setCount=${setCount}&field=listeningAnswers`
     );
 
     const data = await response.json();
@@ -83,11 +83,11 @@ export async function handleReadingSubmit(
   examType: string,
   year: number,
   month: number,
-  set: number
+  setCount: number
 ) {
   try {
     const response = await fetch(
-      `/api/answers?type=${examType}&year=${year}&month=${month}&set=${set}&field=readingAnswers`
+      `/api/answers?type=${examType}&year=${year}&month=${month}&setCount=${setCount}&field=readingAnswers`
     );
 
     const data = await response.json();

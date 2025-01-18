@@ -35,7 +35,7 @@ export default function PracticeWriting() {
           const randomPaper = papers[Math.floor(Math.random() * papers.length)];
 
           const writingResponse = await fetch(
-            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&set=1&field=writing`
+            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&setCount=1&field=writing`
           );
           const writingData = await writingResponse.json();
           setData({

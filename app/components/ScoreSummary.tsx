@@ -28,7 +28,7 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
 
     const year = yearMatch ? yearMatch[1] : "";
     const month = monthMatch ? monthMatch[1] : "";
-    const set = setMatch ? setMatch[1] : "1";
+    const setCount = setMatch ? setMatch[1] : "1";
 
     if (!year || !month) {
       console.warn("无法从试卷标题解析出年份或月份");
@@ -56,7 +56,7 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
     await examStorage.saveState({
       year,
       month,
-      set,
+      setCount,
       showControls: true,
       activeTab: "writing",
       readOnly: true,
@@ -70,7 +70,7 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
     });
 
     router.push(
-      `/${examType.toLowerCase()}?year=${year}&month=${month}&set=${set}&readOnly=true`
+      `/${examType.toLowerCase()}?year=${year}&month=${month}&setCount=${setCount}&readOnly=true`
     );
   };
 
