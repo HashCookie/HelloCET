@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import ExamSection from "@/app/components/Common/ExamSection";
+import Writing from "@/app/components/Exam/Writing/Writing";
 
 interface WritingData {
   Directions: string;
@@ -94,7 +94,7 @@ export default function PracticeWriting() {
   };
 
   return (
-    <ExamSection title="写作练习" isLoading={isLoading}>
+    <div className="container mx-auto px-4 py-8">
       <div className="mb-4">
         <button
           onClick={handleBack}
@@ -115,42 +115,38 @@ export default function PracticeWriting() {
           </svg>
         </button>
       </div>
-      {data?.writing ? (
-        <div className="prose mb-6 max-w-none text-left">
-          <div className="mb-6 text-sm text-gray-500">
-            <span className="font-semibold">试卷来源：</span>
-            {examType} {data.writing.year}年{data.writing.month}月第1套
-          </div>
-          <p className="whitespace-pre-wrap leading-relaxed text-gray-700">
-            {data.writing.Directions}
-          </p>
-          <div className="mt-8">
-            <textarea
-              id="practice-writing"
-              rows={12}
-              value={essay}
-              onChange={(e) => setEssay(e.target.value)}
-              className="w-full rounded-md border border-gray-300 p-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-              placeholder="在此输入你的作文..."
-            />
-          </div>
-          <div className="mt-4 flex justify-end">
-            <button
-              onClick={handleSubmit}
-              disabled={isSubmitting}
-              className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:opacity-50"
-            >
-              {isSubmitting ? "评分中..." : "提交评分"}
-            </button>
-          </div>
-          {score !== null && (
-            <div className="mt-4 rounded-md bg-gray-50 p-4">
-              <h3 className="mb-2 text-lg font-semibold">评分结果</h3>
-              <p className="text-gray-700">得分: {score}</p>
+      <div className="prose mb-6 max-w-none">
+        {data?.writing && (
+          <>
+            <div className="mb-6 text-sm text-gray-500">
+              <span className="font-semibold">试卷来源：</span>
+              {examType} {data.writing.year}年{data.writing.month}月第1套
             </div>
-          )}
-        </div>
-      ) : null}
-    </ExamSection>
+            <Writing
+              data={{ writing: data.writing }}
+              isLoading={isLoading}
+              answer={essay}
+              onAnswerChange={setEssay}
+              referenceAnswer=""
+            />
+            <div className="mt-4 flex justify-end">
+              <button
+                onClick={handleSubmit}
+                disabled={isSubmitting}
+                className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:opacity-50"
+              >
+                {isSubmitting ? "评分中..." : "提交评分"}
+              </button>
+            </div>
+            {score !== null && (
+              <div className="mt-4 rounded-md bg-gray-50 p-4">
+                <h3 className="mb-2 text-lg font-semibold">评分结果</h3>
+                <p className="text-gray-700">得分: {score}</p>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    </div>
   );
 }
