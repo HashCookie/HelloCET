@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Writing from "@/app/components/Exam/Writing/Writing";
 
@@ -12,6 +12,9 @@ interface WritingData {
 
 interface ExamData {
   writing: WritingData;
+  year: number;
+  month: number;
+  setCount: number;
 }
 
 export default function PracticeWriting() {
@@ -22,7 +25,6 @@ export default function PracticeWriting() {
   const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
-  const router = useRouter();
 
   useEffect(() => {
     const fetchRandomPaper = async () => {
@@ -33,17 +35,17 @@ export default function PracticeWriting() {
         if (result && result[0]?.papers) {
           const papers = result[0].papers;
           const randomPaper = papers[Math.floor(Math.random() * papers.length)];
+          const setCount = randomPaper.setCount || 1;
 
           const writingResponse = await fetch(
-            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&setCount=1&field=writing`
+            `/api/examData?type=${examType}&year=${randomPaper.year}&month=${randomPaper.month}&setCount=${setCount}&field=writing`
           );
           const writingData = await writingResponse.json();
           setData({
-            writing: {
-              ...writingData.writing,
-              year: randomPaper.year,
-              month: randomPaper.month,
-            },
+            writing: writingData.writing,
+            year: randomPaper.year,
+            month: randomPaper.month,
+            setCount: setCount,
           });
         }
       } catch (error) {
@@ -89,64 +91,38 @@ export default function PracticeWriting() {
     }
   };
 
-  const handleBack = () => {
-    router.push("/");
-  };
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-4">
-        <button
-          onClick={handleBack}
-          className="flex items-center text-gray-600 hover:text-gray-800"
-        >
-          <svg
-            className="mr-1 h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-        </button>
-      </div>
-      <div className="prose mb-6 max-w-none">
-        {data?.writing && (
-          <>
-            <div className="mb-6 text-sm text-gray-500">
-              <span className="font-semibold">试卷来源：</span>
-              {examType} {data.writing.year}年{data.writing.month}月第1套
+    <>
+      {data?.writing && (
+        <>
+          <div className="mb-6 text-sm text-gray-500">
+            <span className="font-semibold">试卷来源：</span>
+            {examType} {data.year}年{data.month}月第{data.setCount}套
+          </div>
+          <Writing
+            data={{ writing: data.writing }}
+            isLoading={isLoading}
+            answer={essay}
+            onAnswerChange={setEssay}
+            referenceAnswer=""
+          />
+          <div className="mt-4 flex justify-end">
+            <button
+              onClick={handleSubmit}
+              disabled={isSubmitting}
+              className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:opacity-50"
+            >
+              {isSubmitting ? "评分中..." : "提交评分"}
+            </button>
+          </div>
+          {score !== null && (
+            <div className="mt-4 rounded-md bg-gray-50 p-4">
+              <h3 className="mb-2 text-lg font-semibold">评分结果</h3>
+              <p className="text-gray-700">得分: {score}</p>
             </div>
-            <Writing
-              data={{ writing: data.writing }}
-              isLoading={isLoading}
-              answer={essay}
-              onAnswerChange={setEssay}
-              referenceAnswer=""
-            />
-            <div className="mt-4 flex justify-end">
-              <button
-                onClick={handleSubmit}
-                disabled={isSubmitting}
-                className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:opacity-50"
-              >
-                {isSubmitting ? "评分中..." : "提交评分"}
-              </button>
-            </div>
-            {score !== null && (
-              <div className="mt-4 rounded-md bg-gray-50 p-4">
-                <h3 className="mb-2 text-lg font-semibold">评分结果</h3>
-                <p className="text-gray-700">得分: {score}</p>
-              </div>
-            )}
-          </>
-        )}
-      </div>
-    </div>
+          )}
+        </>
+      )}
+    </>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
 import { handleListeningSubmit } from "@/app/utils/api/submitHandlers";
@@ -21,7 +21,6 @@ export default function PracticeListening() {
   const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
-  const router = useRouter();
 
   useEffect(() => {
     const fetchRandomPaper = async () => {
@@ -84,34 +83,10 @@ export default function PracticeListening() {
     }
   };
 
-  const handleBack = () => {
-    router.push("/");
-  };
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-4">
-        <button
-          onClick={handleBack}
-          className="flex items-center text-gray-600 hover:text-gray-800"
-        >
-          <svg
-            className="mr-1 h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-        </button>
-      </div>
+    <>
       {data?.listeningComprehension && (
-        <div className="prose mb-6 max-w-none">
+        <>
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
             {examType} {data.year}年{data.month}月第{data.setCount}套
@@ -145,8 +120,8 @@ export default function PracticeListening() {
               <p className="text-gray-700">得分: {score}</p>
             </div>
           )}
-        </div>
+        </>
       )}
-    </div>
+    </>
   );
 }
