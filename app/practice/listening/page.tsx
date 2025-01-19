@@ -5,13 +5,10 @@ import { useState } from "react";
 import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleListeningSubmit } from "@/app/utils/api/submitHandlers";
-import type { ListeningQuestion } from "@/app/types/exam";
+import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
 
-interface ExamData {
-  listeningComprehension: ListeningQuestion[];
-  year: number;
-  month: number;
-  setCount: number;
+interface ExamData extends ExamPaperBase {
+  listeningComprehension: ExamPaper["listeningComprehension"];
 }
 
 export default function PracticeListening() {

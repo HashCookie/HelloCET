@@ -4,18 +4,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Writing from "@/app/components/Exam/Writing/Writing";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
+import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
 
-interface WritingData {
-  Directions: string;
-  year: number;
-  month: number;
-}
-
-interface ExamData {
-  writing: WritingData;
-  year: number;
-  month: number;
-  setCount: number;
+interface ExamData extends ExamPaperBase {
+  writing: ExamPaper["writing"];
 }
 
 export default function PracticeWriting() {

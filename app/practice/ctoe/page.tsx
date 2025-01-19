@@ -5,13 +5,10 @@ import { useState } from "react";
 import Translation from "@/app/components/Exam/CTOE/Translation";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleTranslationSubmit } from "@/app/utils/api/submitHandlers";
-import type { ExamPaper } from "@/app/types/exam";
+import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
 
-interface ExamData {
+interface ExamData extends ExamPaperBase {
   translation: ExamPaper["translation"];
-  year: number;
-  month: number;
-  setCount: number;
 }
 
 export default function PracticeTranslation() {

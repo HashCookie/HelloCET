@@ -5,13 +5,10 @@ import { useState } from "react";
 import ReadingComprehension from "@/app/components/Exam/ReadingComprehension/ReadingComprehension";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleReadingSubmit } from "@/app/utils/api/submitHandlers";
-import type { ExamPaper } from "@/app/types/exam";
+import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
 
-interface ExamData {
+interface ExamData extends ExamPaperBase {
   readingComprehension: ExamPaper["readingComprehension"];
-  year: number;
-  month: number;
-  setCount: number;
 }
 
 export default function PracticeReading() {
