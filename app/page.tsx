@@ -6,15 +6,13 @@ import Statistics from "@/app/components/Statistics";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="flex flex-col">
       <Header />
-      <main className="flex-grow">
-        <HeroSection />
-        <Features />
-        <Statistics />
-        <QuickStart />
-      </main>
-      <footer className="bg-gray-50 py-8 text-center text-sm text-gray-500">
+      <HeroSection />
+      <Features />
+      <Statistics />
+      <QuickStart />
+      <footer className="bg-gray-50 text-center text-sm text-gray-500">
         <p>© 2024 HelloCET. All rights reserved.</p>
       </footer>
     </div>
