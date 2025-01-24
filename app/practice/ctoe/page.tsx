@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import Translation from "@/app/components/Exam/CTOE/Translation";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleTranslationSubmit } from "@/app/utils/api/submitHandlers";
@@ -47,6 +48,10 @@ export default function PracticeTranslation() {
       setIsSubmitting(false);
     }
   };
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <>

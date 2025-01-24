@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleListeningSubmit } from "@/app/utils/api/submitHandlers";
@@ -21,6 +22,10 @@ export default function PracticeListening() {
   const { data, isLoading } = useRandomExamData<ExamData>(
     "listeningComprehension"
   );
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
 
   const handleSubmit = async () => {
     if (Object.keys(answers).length === 0) {

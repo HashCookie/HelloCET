@@ -2,10 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import Writing from "@/app/components/Exam/Writing/Writing";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
-
 interface ExamData extends ExamPaperBase {
   writing: ExamPaper["writing"];
 }
@@ -18,6 +18,10 @@ export default function PracticeWriting() {
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
   const { data, isLoading } = useRandomExamData<ExamData>("writing");
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
 
   const handleSubmit = async () => {
     if (!essay.trim()) {
