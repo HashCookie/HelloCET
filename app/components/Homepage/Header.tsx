@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPracticeMenuOpen, setIsPracticeMenuOpen] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout>();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,8 +60,17 @@ const Header = () => {
               {/* 专项练习下拉菜单 */}
               <div
                 className="relative"
-                onMouseEnter={() => setIsPracticeMenuOpen(true)}
-                onMouseLeave={() => setIsPracticeMenuOpen(false)}
+                onMouseEnter={() => {
+                  if (timeoutRef.current) {
+                    clearTimeout(timeoutRef.current);
+                  }
+                  setIsPracticeMenuOpen(true);
+                }}
+                onMouseLeave={() => {
+                  timeoutRef.current = setTimeout(() => {
+                    setIsPracticeMenuOpen(false);
+                  }, 200);
+                }}
               >
                 <button className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600">
                   专项练习
