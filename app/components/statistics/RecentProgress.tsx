@@ -2,13 +2,8 @@
 
 import Chart from "chart.js/auto";
 import { useEffect, useRef } from "react";
-import { ScoreRecord, useScoreRecords } from "@/app/hooks/useScoreRecords";
-
-interface SectionScore extends ScoreRecord {
-  score: number;
-  attemptId: string;
-  type: string;
-}
+import { useScoreRecords } from "@/app/hooks/useScoreRecords";
+import type { ScoreRecord } from "@/app/types/practice";
 
 const getSectionScore = (
   attemptId: string,
@@ -17,10 +12,10 @@ const getSectionScore = (
 ): number => {
   const scores = JSON.parse(
     localStorage.getItem(`${section}Scores`) || "[]"
-  ) as SectionScore[];
+  ) as ScoreRecord[];
 
   const record = scores.find(
-    (s: SectionScore) => s.attemptId === attemptId && s.type === type
+    (s: ScoreRecord) => s.attemptId === attemptId && s.type === type
   );
   return record?.score || 0;
 };
