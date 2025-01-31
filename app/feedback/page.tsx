@@ -1,10 +1,10 @@
 export default function ContactForm() {
   return (
     <div className="mx-auto my-12 max-w-4xl bg-white px-6 font-[sans-serif] text-[#333] md:my-24 md:px-10">
-      <div className="relative mb-8">
+      <div className="relative mb-6">
         <a
           href="/"
-          className="mb-4 inline-flex items-center rounded-full p-2 transition-colors hover:bg-gray-100"
+          className="inline-flex items-center rounded-full p-2 transition-colors hover:bg-gray-100"
         >
           <svg
             className="h-5 w-5"
@@ -20,6 +20,8 @@ export default function ContactForm() {
             />
           </svg>
         </a>
+      </div>
+      <div className="mb-8 text-center">
         <h1 className="text-2xl font-extrabold md:text-3xl">联系我</h1>
       </div>
       <div className="grid gap-8 md:grid-cols-2 md:gap-16">

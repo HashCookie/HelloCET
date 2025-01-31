@@ -4,8 +4,6 @@ import type { ScoreRecord } from "@/app/types/practice";
 
 const SECTIONS = ["writing", "listening", "reading", "translation"] as const;
 
-export type { ScoreRecord };
-
 export function useScoreRecords(limit?: number, examType?: string) {
   const [records, setRecords] = useState<ScoreRecord[]>([]);
 
