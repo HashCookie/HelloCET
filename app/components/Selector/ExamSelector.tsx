@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 interface ExamSelectorProps {
   years: number[];
   months: number[];
-  setCount: number;
+  setCount: number[];
   selectedYear: number;
   selectedMonth: number;
   selectedSet: number;
@@ -63,7 +63,7 @@ const ExamSelector = ({
         disabled={!selectedMonth}
       >
         <option value="">选择套数</option>
-        {Array.from({ length: setCount }, (_, i) => i + 1).map((setCount) => (
+        {setCount.map((setCount) => (
           <option key={setCount} value={setCount}>
             第{setCount}套
           </option>

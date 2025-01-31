@@ -12,7 +12,6 @@ const INITIAL_ANSWERS: Answers = {
   listening: {},
   reading: {},
   translation: "",
-  attemptId: undefined,
 } as const;
 
 const INITIAL_REFERENCE_ANSWERS = {
@@ -36,7 +35,7 @@ export function useExamState(examType: string) {
   const [showControls, setShowControls] = useState(false);
   const [years, setYears] = useState<number[]>([]);
   const [months, setMonths] = useState<number[]>([]);
-  const [setCount, setSetCount] = useState(0);
+  const [setCount, setSetCount] = useState<number[]>([]);
   const [selectedYear, setSelectedYear] = useState<number>(0);
   const [selectedMonth, setSelectedMonth] = useState<number>(0);
   const [selectedSet, setSelectedSet] = useState<number>(1);
@@ -65,7 +64,8 @@ export function useExamState(examType: string) {
       const sets = paperData.papers.find(
         (p) => p.year === selectedYear && p.month === selectedMonth
       );
-      setSetCount(sets?.setCount || 0);
+      const count = sets?.setCount || 0;
+      setSetCount(Array.from({ length: count }, (_, i) => i + 1));
     }
   }, [paperData, selectedYear, selectedMonth]);
 
@@ -85,6 +85,7 @@ export function useExamState(examType: string) {
     setSelectedSet(0);
     setActiveTab("writing");
     setAnswers(INITIAL_ANSWERS);
+    setSetCount([]);
     if (year && paperData) {
       const availableMonths = paperData.papers
         .filter((p) => p.year === year)
@@ -97,10 +98,11 @@ export function useExamState(examType: string) {
     setSelectedMonth(month);
     setSelectedSet(0);
     if (selectedYear && month && paperData) {
-      const sets = paperData.papers.filter(
+      const sets = paperData.papers.find(
         (p) => p.year === selectedYear && p.month === month
       );
-      setSetCount(sets[0]?.setCount || 0);
+      const count = sets?.setCount || 0;
+      setSetCount(Array.from({ length: count }, (_, i) => i + 1));
     }
   };
 
@@ -131,6 +133,7 @@ export function useExamState(examType: string) {
     setSelectedYear(0);
     setSelectedMonth(0);
     setSelectedSet(1);
+    setSetCount([]);
     setActiveTab("writing");
     setAnswers(INITIAL_ANSWERS);
     examStorage.clearExamData();
