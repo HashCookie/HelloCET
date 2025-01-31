@@ -28,6 +28,9 @@ const INITIAL_REFERENCE_ANSWERS = {
   },
 };
 
+const generateSetNumbers = (count: number) =>
+  Array.from({ length: count }, (_, i) => i + 1);
+
 export function useExamState(examType: string) {
   const searchParams = useSearchParams();
   const { paperData, loading, fetchPaperData } = usePaperStore();
@@ -65,19 +68,9 @@ export function useExamState(examType: string) {
         (p) => p.year === selectedYear && p.month === selectedMonth
       );
       const count = sets?.setCount || 0;
-      setSetCount(Array.from({ length: count }, (_, i) => i + 1));
+      setSetCount(generateSetNumbers(count));
     }
   }, [paperData, selectedYear, selectedMonth]);
-
-  useEffect(() => {
-    if (!paperData) {
-      fetchPaperData(examType);
-    } else {
-      const sortedYears = paperData.years.sort((a, b) => a - b);
-      setYears(sortedYears);
-      updateMonthsAndSets();
-    }
-  }, [examType, paperData, fetchPaperData, updateMonthsAndSets]);
 
   const handleYearChange = (year: number) => {
     setSelectedYear(year);
@@ -102,7 +95,7 @@ export function useExamState(examType: string) {
         (p) => p.year === selectedYear && p.month === month
       );
       const count = sets?.setCount || 0;
-      setSetCount(Array.from({ length: count }, (_, i) => i + 1));
+      setSetCount(generateSetNumbers(count));
     }
   };
 
@@ -180,6 +173,16 @@ export function useExamState(examType: string) {
       }
     }
   }, [isReadOnly, selectedYear, selectedMonth, selectedSet, examType]);
+
+  useEffect(() => {
+    if (!paperData) {
+      fetchPaperData(examType);
+    } else {
+      const sortedYears = paperData.years.sort((a, b) => a - b);
+      setYears(sortedYears);
+      updateMonthsAndSets();
+    }
+  }, [examType, paperData, fetchPaperData, updateMonthsAndSets]);
 
   useEffect(() => {
     if (isReadOnly && selectedYear && selectedMonth && selectedSet) {

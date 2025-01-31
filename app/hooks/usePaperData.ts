@@ -1,14 +1,9 @@
 import { create } from "zustand";
-
-interface Paper {
-  year: number;
-  month: number;
-  setCount: number;
-}
+import type { ExamPaperBase } from "@/app/types/exam";
 
 export interface PaperData {
   years: number[];
-  papers: Paper[];
+  papers: ExamPaperBase[];
 }
 
 interface PaperStore {

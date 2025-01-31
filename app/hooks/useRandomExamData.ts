@@ -1,14 +1,9 @@
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { usePaperStore } from "./usePaperData";
+import type { ExamPaperBase } from "@/app/types/exam";
 
-interface BaseExamData {
-  year: number;
-  month: number;
-  setCount: number;
-}
-
-export function useRandomExamData<T extends BaseExamData>(field: string) {
+export function useRandomExamData<T extends ExamPaperBase>(field: string) {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
   const [data, setData] = useState<T | null>(null);
