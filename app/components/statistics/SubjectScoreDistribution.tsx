@@ -2,7 +2,8 @@
 
 import Chart from "chart.js/auto";
 import { useEffect, useRef } from "react";
-import { ScoreRecord, useScoreRecords } from "@/app/hooks/useScoreRecords";
+import { useScoreRecords } from "@/app/hooks/useScoreRecords";
+import type { ScoreRecord } from "@/app/types/practice";
 
 type SectionName = "writing" | "listening" | "reading" | "translation";
 
