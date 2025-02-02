@@ -5,9 +5,7 @@ import { SECTION_CONFIG } from "@/app/components/Exam/ListeningComprehension/con
 import QuestionGroup from "@/app/components/Exam/ListeningComprehension/QuestionGroup";
 import type { ListeningQuestion } from "@/app/types/exam";
 
-interface ListeningData {
-  listeningComprehension: ListeningQuestion[];
-}
+type ListeningData = ListeningQuestion[];
 
 interface ListeningProps {
   data: ListeningData | null;
@@ -116,7 +114,7 @@ const ListeningComprehension = ({
             <Section
               key={section.title}
               {...section}
-              questions={data.listeningComprehension}
+              questions={data}
               answers={answers}
               onAnswerChange={handleAnswerChange}
               readOnly={readOnly}

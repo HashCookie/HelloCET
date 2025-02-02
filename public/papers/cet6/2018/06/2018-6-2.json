@@ -1,0 +1,448 @@
+{
+  "_id": "66c3004e3420b0dd9f456ece",
+  "year": 2018,
+  "month": 6,
+  "set": 2,
+  "writing": {
+    "Directions": "Suppose you are asked to give advice on whether to major in science or humanities at college, write an essay to state your opinion. You are required to write at least 150 words but no more than 200 words."
+  },
+  "listeningComprehension": [
+    {
+      "number": 1,
+      "options": {
+        "A": "It is a typical salad.",
+        "B": "It is a Spanish soup.",
+        "C": "It is a weird vegetable.",
+        "D": "It is a kind of spicy food."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "To make it thicker.",
+        "B": "To make it more nutritious.",
+        "C": "To add to its appeal.",
+        "D": "To replace an ingredient."
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "It contains very little fat.",
+        "B": "It uses olive oil in cooking.",
+        "C": "It uses no artificial additives.",
+        "D": "It is mainly made of vegetables"
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "It does not go stale for two years.",
+        "B": "It takes no special skill to prepare.",
+        "C": "It comes from a special kind of pig.",
+        "D": "It is a delicacy blended with bread."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "They come in a great variety.",
+        "B": "They do not make decent gifts.",
+        "C": "They do not vary much in price.",
+        "D": "They go well with Italian food."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "$30-$40.",
+        "B": "$40-$50.",
+        "C": "$50-$60.",
+        "D": "Around $150."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "They are a healthy choice for elderly people.",
+        "B": "They are especially popular among Italians.",
+        "C": "They symbolize good health and longevity.",
+        "D": "They go well with different kinds of food."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "It is a wine imported from California.",
+        "B": "It is less spicy than all other red wines.",
+        "C": "It is far more expensive than he expected.",
+        "D": "It is Italy’s most famous type of red wine."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "Learning others’ secrets.",
+        "B": "Searching for information.",
+        "C": "Decoding secret messages.",
+        "D": "Spreading sensational news."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "They helped the U.S. army in World War Two.",
+        "B": "They would write down spoken codes promptly.",
+        "C": "They were assigned to decode enemy messages.",
+        "D": "They were good at breaking enemy secret codes."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Important battles fought in the Pacific War.",
+        "B": "Decoding of secret messages in war times.",
+        "C": "A military code that was never broken.",
+        "D": "Navajo Indian’s contribution to code breaking."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "All services will be personalized.",
+        "B": "A lot of knowledge-intensive jobs will be replaced.",
+        "C": "Technology will revolutionize all sectors of industry.",
+        "D": "More information will be available."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "In the robotics industry.",
+        "B": "In the information service.",
+        "C": "In the personal care sector.",
+        "D": "In high-end manufacturing."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "They charge high prices.",
+        "B": "They need lots of training.",
+        "C": "They cater to the needs of young people.",
+        "D": "They focus on customers’ specific needs."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "The rising demand in education and healthcare in the next 20 years.",
+        "B": "The disruption caused by technology in traditionally well-paid jobs.",
+        "C": "The tremendous changes new technology will bring to people’s lives.",
+        "D": "The amazing amount of personal attention people would like to have."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "It was the longest road in ancient Egypt.",
+        "B": "It was constructed some 500 years ago.",
+        "C": "It lay 8 miles from the monument sites.",
+        "D": "It linked a stone pit to some waterways."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "Saws used for cutting stone.",
+        "B": "Traces left by early explorers.",
+        "C": "An ancient geographical map.",
+        "D": "Some stone tool segments."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "To transport stones to block floods.",
+        "B": "To provide services for the stone pit.",
+        "C": "To link the various monument sites.",
+        "D": "To connect the villages along the Nile."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "Dr. Gong didn’t give him any conventional tests.",
+        "B": "Dr. Gong marked his office with a hand-painted sign.",
+        "C": "Dr. Gong didn’t ask him any questions about his pain.",
+        "D": "Dr. Gong slipped in needles where he felt no pain."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "He had heard of the wonders acupuncture could work.",
+        "B": "Dr. Gong was very famous in New York’s Chinatown.",
+        "C": "Previous medical treatments failed to relieve his pain.",
+        "D": "He found the expensive medical tests unaffordable."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "More and more patients ask for the treatment.",
+        "B": "Acupuncture techniques have been perfected.",
+        "C": "It doesn’t need the conventional medical tests.",
+        "D": "It does not have any negative side effects."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "They were on the verge of breaking up.",
+        "B": "They were compatible despite differences.",
+        "C": "They quarreled a lot and never resolved their arguments.",
+        "D": "They argued persistently about whether to have children."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "Neither of them has any brothers or sisters.",
+        "B": "Neither of them won their parents’ favor.",
+        "C": "They weren’t spoiled in their childhood.",
+        "D": "They didn’t like to be the apple of their parents’ eyes."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "They are usually good at making friends.",
+        "B": "They tend to be adventurous and creative.",
+        "C": "They are often content with what they have.",
+        "D": "They tend to be self-assured and responsible."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "They enjoy making friends.",
+        "B": "They tend to be well adjusted.",
+        "C": "They are least likely to take initiative.",
+        "D": "They usually have successful marriages."
+      }
+    }
+  ],
+  "readingComprehension": {
+    "sectionA": {
+      "passages": [
+        "Scientists scanning and mapping the Giza pyramids say they’ve discovered that the Great Pyramid of Giza is not exactly even. But really not by much. This pyramid is the oldest of the world’s Seven Wonders. The pyramid’s exact size has 26 experts for centuries, as the “more than 21 acres of hard, white casing stones” that originally covered it were 27 long ago. Reporting in the most recent issue of the newsletter “AERAGRAM,” which 28 the work of the Ancient Egypt Research Associates, engineer Glen Dash says his team used a new measuring approach that involved finding any surviving 29 of the casing in order to determine where the original edge was. They found the east side of the pyramid to be a 30 of 5.5 inches shorter than the west side.",
+        "The question that most 31 him, however, isn’t how the Egyptians who designed and built the pyramid got it wrong 4,500 years ago, but how they got it so close to 32 . “We can only speculate as to how the Egyptians could have laid out these lines with such 33 using only the tools they had,” Dash writes. He says his 34 is that the Egyptians laid out their design on a grid, noting that the great pyramid is oriented only 35 away from the cardinal directions (its north-south axis runs 3 minutes 54 seconds west of due north, while its east-west axis runs 3 minutes 51 seconds north of due east)—an amount that’s “tiny, but similar,” archeologist Atlas Obscura points out."
+      ],
+      "options": {
+        "A": "chronicles",
+        "B": "complete",
+        "C": "established",
+        "D": "fascinates",
+        "E": "hypothesis",
+        "F": "maximum",
+        "G": "momentum",
+        "H": "mysteriously",
+        "I": "perfect",
+        "J": "precision",
+        "K": "puzzled",
+        "L": "remnants",
+        "M": "removed",
+        "N": "revelations",
+        "O": "slightly"
+      }
+    },
+    "sectionB": {
+      "passageTitle": "Peer Pressure Has a Positive Side",
+      "passages": [
+        "A) Parents of teenagers often view their children’s friends with something like suspicion. They worry that the adolescent peer group has the power to push its members into behavior that is foolish and even dangerous. Such wariness is well founded: statistics show, for example, that a teenage driver with a same-age passenger in the car is at higher risk of a fatal crash than an adolescent driving alone or with an adult.",
+        "B) In a 2005 study, psychologist Laurence Steinberg of Temple University and his co-author, psychologist Margo Gardner, then at Temple, divided 306 people into three age groups: young adolescents, with a mean age of 14; older adolescents, with a mean age of 19; and adults, aged 24 and older. Subjects played a computerized driving game in which the player must avoid crashing into a wall that materializes, without warning, on the roadway. Steinberg and Gardner randomly assigned some participants to play alone or with two same-age peers looking on.",
+        "C) Older adolescents scored about 50 percent higher on an index of risky driving when their peers were in the room—and the driving of early adolescents was fully twice as reckless when other young teens were around. In contrast, adults behaved in similar ways regardless of whether they were on their own or observed by others. “The presence of peers makes adolescents and youth, but not adults, more likely to take risks,” Steinberg and Gardner concluded.",
+        "D) Yet in the years following the publication of this study, Steinberg began to believe that this interpretation did not capture the whole picture. As he and other researchers examined the question of why teens were more apt to take risks in the company of other teenagers, they came to suspect that a crowd’s influence need not always be negative. Now some experts are proposing that we should take advantage of the teen brain’s keen sensitivity to the presence of friends and leverage it to improve education.",
+        "E) In a 2011 study, Steinberg and his colleagues turned to functional MRI（磁共振）to investigate how the presence of peers affects the activity in the adolescent brain. They scanned the brains of 40 teens and adults who were playing a virtual driving game designed to test whether players would brake at a yellow light or speed on through the crossroad.",
+        "F) The brains of teenagers, but not adults, showed greater activity in two regions associated with rewards when they were being observed by same-age peers than when alone. In other words, rewards are more intense for teens when they are with peers, which motivates them to pursue higher-risk experiences that might bring a big payoff (such as the thrill of just making the light before it turns red). But Steinberg suspected this tendency could also have its advantages. In his latest experiment, published online in August, Steinberg and his colleagues used a computerized version of a card game called the Iowa Gambling Task to investigate how the presence of peers affects the way young people gather and apply information.",
+        "G) The results: Teens who played the Iowa Gambling Task under the eyes of fellow adolescents engaged in more exploratory behavior, learned faster from both positive and negative outcomes, and achieved better performance on the task than those who played in solitude. “What our study suggests is that teenagers learn more quickly and more effectively when their peers are present than when they’re on their own,” Steinberg says. And this finding could have important implications for how we think about educating adolescents.",
+        "H) Matthew D. Lieberman, a social cognitive neuroscientist at the University of California, Los Angeles, and author of the 2013 book Social: Why Our Brains Are Wired to Connect, suspects that the human brain is especially skillful at learning socially significant information. He points to a classic 2004 study in which psychologists at Dartmouth College and Harvard University used functional MRI to track brain activity in 17 young men as they listened to descriptions of people while concentrating on either socially relevant cues (for example, trying to form an impression of a person based on the description) or more socially neutral information (such as noting the order of details in the description). The descriptions were the same in each condition, but people could better remember these statements when given a social motivation.",
+        "I) The study also found that when subjects thought about and later recalled descriptions in terms of their informational content, regions associated with factual memory, such as the medial temporal lobe, became active. But thinking about or remembering descriptions in terms of their social meaning activated the dorsomedial prefrontal cortex—part of the brain’s social network—even as traditional memory regions registered low levels of activity. More recently, as he reported in a 2012 review, Lieberman has discovered that this region may be part of a distinct network involved in socially motivated learning and memory. Such findings, he says, suggest that “this network can be called on to process and store the kind of information taught in school—potentially giving students access to a range of untapped mental powers.”",
+        "J) If humans are generally geared to recall details about one another, this pattern is probably even more powerful among teenagers who are very attentive to social details: who is in, who is out, who likes whom, who is mad at whom. Their desire for social drama is not—or not only—a way of distracting themselves from their schoolwork or of driving adults crazy. It is actually a neurological（神经的）sensitivity, initiated by hormonal changes. Evolutionarily speaking, people in this age group are at a stage in which they can prepare to find a mate and start their own family while separating from parents and striking out on their own. To do this successfully, their brain prompts them to think and even obsess about others.",
+        "K) Yet our schools focus primarily on students as individual entities. What would happen if educators instead took advantage of the fact that teens are powerfully compelled to think in social terms? In Social, Lieberman lays out a number of ways to do so. History and English could be presented through the lens of the psychological drives of the people involved. One could therefore present Napoleon in terms of his desire to impress or Churchill in terms of his lonely gloom. Less inherently interpersonal subjects, such as math, could acquire a social aspect through team problem solving and peer tutoring. Research shows that when we absorb information in order to teach it to someone else, we learn it more accurately and deeply, perhaps in part because we are engaging our social cognition.",
+        "L) And although anxious parents may not welcome the notion, educators could turn adolescent recklessness to academic ends. “Risk taking in an educational context is a vital skill that enables progress and creativity,” wrote Sarah-Jayne Blakemore, a cognitive neuroscientist at University College London, in a review published last year. Yet, she noted, many young people are especially unwilling to take risks at school—afraid that one low test score or poor grade could cost them a spot at a selective university. We should assure such students that risk, and even peer pressure, can be a good thing—as long as it happens in the classroom and not in the car."
+      ],
+      "questions": [
+        {
+          "number": 36,
+          "statement": "It is thought probable that the human brain is particularly good at picking up socially important information."
+        },
+        {
+          "number": 37,
+          "statement": "It can be concluded from experiments that the presence of peers increases risk-taking by adolescents and youth."
+        },
+        {
+          "number": 38,
+          "statement": "Students should be told that risk-taking in the classroom can be something positive."
+        },
+        {
+          "number": 39,
+          "statement": "The urge of finding a mate and getting married accounts for adolescents’ greater attention to social interactions."
+        },
+        {
+          "number": 40,
+          "statement": "According to Steinberg, the presence of peers increases the speed and effectiveness of teenagers’ learning."
+        },
+        {
+          "number": 41,
+          "statement": "Teenagers’ parents are often concerned about negative peer influence."
+        },
+        {
+          "number": 42,
+          "statement": "Activating the brain’s social network involved in socially motivated learning and memory may allow students to tap unused mental powers."
+        },
+        {
+          "number": 43,
+          "statement": "The presence of peers intensifies the feeling of rewards in teens’ brains."
+        },
+        {
+          "number": 44,
+          "statement": "When we absorb information for the purpose of imparting it to others, we do so with greater accuracy and depth."
+        },
+        {
+          "number": 45,
+          "statement": "Some experts are suggesting that we turn peer influence to good use in education."
+        }
+      ]
+    },
+    "sectionC": {
+      "passagesOne": [
+        "The Ebro Delta, in Spain, famous as a battleground during the Spanish Civil War, is now the setting for a different contest, one that is pitting rice farmers against two enemies: the rice-eating giant apple snail, and rising sea levels. What happens here will have a bearing on the future of European rice production and the overall health of southern European wetlands.",
+        "Located on the Mediterranean just two hours south of Barcelona, the Ebro Delta produces 120 million kilograms of rice a year, making it one of the continent’s most important rice-growing areas. As the sea creeps into these fresh-water marshes, however, rising salinity（盐分）is hampering rice production. At the same time, this sea-water also kills off the greedy giant apple snail, an introduced pest that feeds on young rice plants. The most promising strategy has become to harness one foe against the other.",
+        "The battle is currently being waged on land, in greenhouses at the University of Barcelona. Scientists working under the banner “Project Neurice” are seeking varieties of rice that can with-stand the increasing salinity without losing the absorbency that makes European rice ideal for traditional Spanish and Italian dishes.",
+        "“The project has two sides,” says Xavier Serrat, Neurice project manager and researcher at the University of Barcelona, “the short-term fight against the snail, and a mid- to long-term fight against climate change. But the snail have given the project greater urgency.”",
+        "Originally from South America, the snails were accidentally introduced into the Ebro Delta by Global Aquatic Technologies, a company that raised the snails for fresh-water aquariums（水族馆）, but failed to prevent their escape. For now, the giant apple snail’s presence in Europe is limited to the Ebro Delta. But the snail continues its march to new territory, says Serrat. “The question is not whether it will reach other rice-growing areas of Europe, but when.”",
+        "Over the next year and a half investigators will test the various strains of salt-tolerant rice they’ve bred. In 2018, farmers will plant the varieties with the most promise in the Ebro Delta and Europe’s other two main rice-growing regions—along the Po in Italy, and France’s Rhône. A season in the field will help determine which, if any, of the varieties are ready for commercialization.",
+        "As an EU-funded effort, the search for salt-tolerant varieties of rice is taking place in all three countries. Each team is crossbreeding a local European short-grain rice with a long-grain Asian variety that carries the salt-resistant gene. The scientists are breeding successive generations to arrive at varieties that incorporate salt tolerance but retain about 97 percent of the European rice genome（基因组）."
+      ],
+      "questionsOne": [
+        {
+          "number": 46,
+          "statement": "Why does the author mention the Spanish Civil War at the beginning of the passage?",
+          "options": {
+            "A": "It had great impact on the life of Spanish rice farmers.",
+            "B": "It is of great significance in the records of Spanish history.",
+            "C": "Rice farmers in the Ebro Delta are waging a battle of similar importance.",
+            "D": "Rice farmers in the Ebro Delta are experiencing as hard a time as in the war."
+          }
+        },
+        {
+          "number": 47,
+          "statement": "What may be the most effective strategy for rice farmers to employ in fighting their enemies?",
+          "options": {
+            "A": "Striking the weaker enemy first.",
+            "B": "Killing two birds with one stone.",
+            "C": "Eliminating the enemy one by one.",
+            "D": "Using one evil to combat the other."
+          }
+        },
+        {
+          "number": 48,
+          "statement": "What do we learn about “Project Neurice”?",
+          "options": {
+            "A": "Its goals will have to be realized at a cost.",
+            "B": "It aims to increase the yield of Spanish rice.",
+            "C": "Its immediate priority is to bring the pest under control.",
+            "D": "It tries to kill the snails with the help of climate change."
+          }
+        },
+        {
+          "number": 49,
+          "statement": "What does Neurice project manager say about the giant apple snail?",
+          "options": {
+            "A": "It can survive only on southern European wetlands.",
+            "B": "It will invade other rice-growing regions of Europe.",
+            "C": "It multiplies at a speed beyond human imagination.",
+            "D": "It was introduced into the rice fields on purpose."
+          }
+        },
+        {
+          "number": 50,
+          "statement": "What is the ultimate goal of the EU-funded program?",
+          "options": {
+            "A": "Cultivating ideal salt-resistant rice varieties.",
+            "B": "Increasing the absorbency of the Spanish rice.",
+            "C": "Introducing Spanish rice to the rest of Europe.",
+            "D": "Popularizing the rice crossbreeding technology."
+          }
+        }
+      ],
+      "passagesTwo": [
+        "Photography was once an expensive, laborious ordeal reserved for life’s greatest milestones. Now, the only apparent cost to taking infinite photos of something as common as a meal is the space on your hard drive and your dining companion’s patience.",
+        "But is there another cost, a deeper cost, to documenting a life experience instead of simply enjoying it? “You hear that you shouldn’t take all these photos and interrupt the experience, and it’s bad for you, and we’re not living in the present moment,” says Kristin Diehl, associate professor of marketing at the University of Southern California Marshall School of Business.",
+        "Diehl and her fellow researchers wanted to find out if that was true, so they embarked on a series of nine experiments in the lab and in the field testing people’s enjoyment in the presence or absence of a camera. The results, published in the Journal of Personality and Social Psychology, surprised them. Taking photos actually makes people enjoy what they’re doing more, not less.",
+        "“What we find is you actually look at the world slightly differently, because you’re looking for things you want to capture, that you may want to hang onto,” Diehl explains. “That gets people more engaged in the experience, and they tend to enjoy it more.”",
+        "Take sightseeing. In one experiment, nearly 200 participants boarded a double-decker bus for a tour of Philadelphia. Both bus tours forbade the use of cell phones but one tour provided digital cameras and encouraged people to take photos. The people who took photos enjoyed the experience significantly more, and said they were more engaged, than those who didn’t.",
+        "Snapping a photo directs attention, which heightens the pleasure you get from whatever you’re looking at, Diehl says. It works for things as boring as archaeological（考古的）museums, where people were given eye-tracking glasses and instructed either to take photos or not. “People look longer at things they want to photograph,” Diehl says. They report liking the exhibits more, too.",
+        "To the relief of Instagrammers (Instagram 用户) everywhere, it can even make meals more enjoyable. When people were encouraged to take at least three photos while they ate lunch, they were more immersed in their meals than those who weren’t told to take photos.",
+        "Was it the satisfying click of the camera? The physical act of the snap? No, they found; just the act of planning to take a photo—and not actually taking it—had the same joy-boosting effect. “If you want to take mental photos, that works the same way,” Diehl says. “Thinking about what you would want to photograph also gets you more engaged.”"
+      ],
+      "questionsTwo": [
+        {
+          "number": 51,
+          "statement": "What does the author say about photo-taking in the past?",
+          "options": {
+            "A": "It was a painstaking effort for recording life’s major events.",
+            "B": "It was a luxury that only a few wealthy people could enjoy.",
+            "C": "It was a good way to preserve one’s precious images.",
+            "D": "It was a skill that required lots of practice to master."
+          }
+        },
+        {
+          "number": 52,
+          "statement": "Kristin Diehl conducted a series of experiments on photo-taking to find out ______.",
+          "options": {
+            "A": "what kind of pleasure it would actually bring to photo-takers",
+            "B": "whether people enjoyed it when they did sightseeing",
+            "C": "how it could help to enrich people’s life experiences",
+            "D": "whether it prevented people enjoying what they were doing"
+          }
+        },
+        {
+          "number": 53,
+          "statement": "What do the results of Diehl’s experiments show about people taking pictures?",
+          "options": {
+            "A": "They are distracted from what they are doing.",
+            "B": "They can better remember what they see or do.",
+            "C": "They are more absorbed in what catches their eye.",
+            "D": "They can have a better understanding of the world."
+          }
+        },
+        {
+          "number": 54,
+          "statement": "What is found about museum visitors with the aid of eye-tracking glasses?",
+          "options": {
+            "A": "They come out with better photographs of the exhibits.",
+            "B": "They focus more on the exhibits when taking pictures.",
+            "C": "They have a better view of what are on display.",
+            "D": "They follow the historical events more easily."
+          }
+        },
+        {
+          "number": 55,
+          "statement": "What do we learn from the last paragraph?",
+          "options": {
+            "A": "It is better to make plans before taking photos.",
+            "B": "Mental photos can be as beautiful as snapshots.",
+            "C": "Photographers can derive great joy from the click of the camera.",
+            "D": "Even the very thought of taking a photo can have a positive effect."
+          }
+        }
+      ]
+    }
+  },
+  "translation": {
+    "ChinesePassage": "自行车曾经是中国城乡最主要的交通工具，中国一度被称为“自行车王国”。如今，随着城市交通拥堵和空气污染日益严重，骑自行车又开始流行起来。近来，中国企业家将移动互联网技术与传统自行车结合在一起，发明了一种称为共享单车(hared bikes)的商业模式。共享单车的出现使骑车出行更加方便，人们仅需一部手机就可以随时使用共享单车。为了鼓励人们骑车出行，很多城市修建了自行车道。现在，越来越多的中国人也喜欢通过骑车健身。"
+  }
+}

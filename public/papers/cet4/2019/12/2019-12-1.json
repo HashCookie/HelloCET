@@ -1,0 +1,442 @@
+{
+  "_id": "66c300493420b0dd9f456ea8",
+  "year": 2019,
+  "month": 12,
+  "set": 1,
+  "writing": {
+    "Directions": "For this part, you are allowed 30 minutes to write a letter to a foreign friend who wants to teach English in China. Please recommend a city to him. You should write at least 120 words but no more than 180 words."
+  },
+  "listeningComprehension": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Many facilities were destroyed by a wandering cow.",
+        "B": "A wandering cow knocked down one of its fences.",
+        "C": "Some tourists were injured by a wandering cow.",
+        "D": "A wandering cow was captured by the police."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "It was shot to death by a police officer.",
+        "B": "It found its way back to the park's zoo.",
+        "C": "It became a great attraction for tourists.",
+        "D": "It was sent to the animal control department."
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "It is the largest of its kind.",
+        "B": "It is going to be expanded.",
+        "C": "It is displaying more fossil specimens.",
+        "D": "It is starting an online exhibition."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "A collection of bird fossils from Australia.",
+        "B": "Photographs of certain rare fossil exhibits.",
+        "C": "Some ancient wall paintings from Australia.",
+        "D": "Pictures by winners of a wildlife photo contest."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "Pick up trash.",
+        "B": "Amuse visitors.",
+        "C": "Deliver messages.",
+        "D": "Play with children."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "They are especially intelligent.",
+        "B": "They are children's favorite.",
+        "C": "They are quite easy to tame.",
+        "D": "They are clean and pretty."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "Children may be harmed by the rooks.",
+        "B": "Children may be tempted to drop litter.",
+        "C": "Children may contract bird diseases.",
+        "D": "Children may overfeed the rooks."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "It will be produced at Harvard University.",
+        "B": "It will be hosted by famous professors.",
+        "C": "It will cover different areas of science.",
+        "D": "It will focus on recent scientific discoveries."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "It will be more futuristic.",
+        "B": "It will be more systematic.",
+        "C": "It will be more entertaining.",
+        "D": "It will be easier to understand."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "People interested in science.",
+        "B": "Youngsters eager to explore.",
+        "C": "Children in their early teens.",
+        "D": "Students majoring in science."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Offer professional advice.",
+        "B": "Provide financial support.",
+        "C": "Help promote it on the Internet.",
+        "D": "Make episodes for its first season."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "Unsure.",
+        "B": "Helpless.",
+        "C": "Concerned.",
+        "D": "Dissatisfied."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "He is too concerned with being perfect.",
+        "B": "He loses heart when faced with setbacks.",
+        "C": "He is too ambitious in achieving goals.",
+        "D": "He takes on projects beyond his ability."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "Embarrassed.",
+        "B": "Unconcerned.",
+        "C": "Miserable.",
+        "D": "Resentful."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "Try to be optimistic whatever happens.",
+        "B": "Compare his present with his past only.",
+        "C": "Always learn from others' achievements.",
+        "D": "Treat others the way he would be treated."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "They have a stronger sense of social responsibility.",
+        "B": "They are more likely to succeed in the humanities.",
+        "C": "They are more likely to become engineers.",
+        "D": "They have greater potential to be leaders."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "Praise girls who like to speak up frequently.",
+        "B": "Encourage girls to solve problems on their own.",
+        "C": "Insist that boys and girls work together more.",
+        "D": "Respond more positively to boys' comments."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "Offer personalized teaching materials.",
+        "B": "Provide a variety of optional courses.",
+        "C": "Place great emphasis on test scores.",
+        "D": "Pay extra attention to top students."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "It often rains cats and dogs.",
+        "B": "It seldom rains in summer time.",
+        "C": "It does not rain as much as people think.",
+        "D": "It is one of the most rainy cities in the U.S."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "They drive most of the time.",
+        "B": "The rain is usually very light.",
+        "C": "They have got used to the rain.",
+        "D": "The rain comes mostly at night."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "It has a lot of places for entertainment.",
+        "B": "It has never seen thunder and lighting.",
+        "C": "It has fewer cloudy days than any other coastal city.",
+        "D": "It has mild weather both in summer and in winter."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "It occurs when people are doing a repetitive activity.",
+        "B": "It results from exerting one's muscles continuously.",
+        "C": "It happens when people engage in an uncommon activity.",
+        "D": "It comes from straining one's muscles in an unusual way."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "Blood flow and body heat increase in the affected area.",
+        "B": "Body movements in the affected area become difficult.",
+        "C": "They begin to make repairs immediately.",
+        "D": "They gradually become fragmented."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "About one week.",
+        "B": "About two days.",
+        "C": "About ten days.",
+        "D": "About four weeks."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "Apply muscle creams.",
+        "B": "Drink plenty of water.",
+        "C": "Have a hot shower.",
+        "D": "Take pain-killers."
+      }
+    }
+  ],
+  "readingComprehension": {
+    "sectionA": {
+      "passages": [
+        "When travelling overseas, do you buy water in plastic bottles or take your chances with tap water? Imagine you are wandering about on a Thai island or 26 the ruins of Angkor. It's hot so you grab a bottle of water from a local vendor. It's the safe thing to do, right? The bottle is 27 , and the label says “pure water”. But maybe what's inside is not so 28 . Would you still be drinking it if you knew that more than 90 percent of all bottled water sold around the world 29 microplastics?",
+        "That's the conclusion of a recently 30 study, which analysed 259 bottles from 11 brands sold in nine countries, 31 an average of 325 plastic particles per litre of water. These microplastics included a 32 commonly known as PET and widely used in the manufacture of clothing and food and 33 containers. The study was conducted at the State University of New York on behalf of Orb Media, a journalism organisation. About a million bottles are bought every minute, not only by thirsty tourists but also by many of the 2.1 billion worldwide who live with unsafe drinking water.",
+        "Confronted with this 34 , several bottled-water manufacturers including Nestle and Coca-Cola undertook their own studies using the same methodology. These studies showed that their water did contain microplastics, but far less than the Orb study suggested. Regardless, the World Health Organisation has launched a review into the 35 health risks of drinking water from plastic bottles."
+      ],
+      "options": {
+        "A": "adequate",
+        "B": "admiring",
+        "C": "contains",
+        "D": "defending",
+        "E": "evidence",
+        "F": "instant",
+        "G": "liquid",
+        "H": "modified",
+        "I": "natural",
+        "J": "potential",
+        "K": "released",
+        "L": "revealing",
+        "M": "sealed",
+        "N": "solves",
+        "O": "substance"
+      }
+    },
+    "sectionB": {
+      "passageTitle": "The quiet heroism of mail delivery",
+      "passages": [
+        "A) On Wednesday, a polar wind brought bitter cold to the Midwest. Overnight, Chicago reached a low of 21 degrees Fahrenheit below zero, making it slightly colder than Antarctica (南极洲), Alaska, and the North Pole. Wind chills were 64 degrees below zero in Park Rapids, Minnesota, and 45 degrees below zero in Buffalo, North Dakota, according to the National Weather Service. Schools, restaurants, and businesses closed, and more than 1,000 flights were canceled.",
+        "B) Even the United States Postal Service (USPS) suspended mail delivery. “Due to this arctic outbreak and concerns for the safety of USPS employees,” USPS announced Wednesday morning, “the Postal Service is suspending delivery Jan. 30 in some 3-digit ZIP Code locations.” Twelve regions were listed as unsafe on Wednesday; on Thursday, eight remained.",
+        "C) As global surface temperatures increase, so does the likelihood of extreme weather. In 2018 alone, wildfires, volcanic eruptions, hurricanes, mudslides, and other natural disasters cost at least $49 billion in the United States. As my colleague Vann Newkirk reported, Puerto Rico is still confronting economic and structural destruction and resource scarcity from 2017's Hurricane Maria. Natural disasters can wreck a community's infrastructure, disrupting systems for months or years. Some services, however, remind us that life will eventually return, in some form, to normal.",
+        "D) Days after the deadly 2017 wildfires in Santa Rosa, California, a drone (无人机) caught footage (连续镜头) of a USPS worker, Trevor Smith, driving through burned homes in that familiar white van, collecting mail in an affected area. The video is striking: The operation is familiar, but the scene looks like the end of the world. According to Rae Ann Haight, the program manager for the national-preparedness office at USPS, Smith was fulfilling a request made by some of the home owners to pick up any mail that was left untouched. For Smith, this was just another day on the job. “I followed my route like I normally do,” Smith told a reporter. “As I came across a box that was up but with no house, I checked, and there was mail—outgoing mail—in it. And so we picked those up and carried on.”",
+        "E) USPS has sophisticated emergency plans for natural disasters. Across the country, 285 emergency-management teams are devoted to crisis control. These teams are trained annually using a framework known as the three Ps: people, property, product. After mail service stops due to weather, the agency's top priority is ensuring that employees are safe. Then it evaluates the health of infrastructure, such as the roads that mail carriers drive on. Finally, it decides when and how to re-open operations. If the destruction is extreme, mail addressed to the area will get sent elsewhere. In response to Hurricane Katrina in 2005, USPS redirected incoming New Orleans mail to existing mail facilities in Houston. Mail that was already processed in New Orleans facilities was moved to an upper floor so it would be protected from water damage.",
+        "F) As soon as it's safe enough to be outside, couriers (邮递员) start distributing accumulated mail on the still-accessible routes. USPS urges those without standing addresses to file change-of-address forms with their new location. After Hurricane Katrina hit in 2005, mail facilities were set up in dozens of locations across the country in the two weeks that USPS was unable to provide street delivery.",
+        "G) Every day, USPS processes, on average, 493.4 million pieces of mail—anything from postcards to Social Security checks to medicine. Spokespeople from both USPS and UPS told me all mail is important. But some mail can be extremely sensitive and timely. According to data released in January 2017, 56 percent of bills are paid online, which means that just under half of payments still rely on delivery services to be completed.",
+        "H) It can be hard to identify which parcels are carrying crucial items such as Social Security checks, but USPS and UPS try their best to prioritize sensitive material. They will coordinate with the Social Security Administration to make sure that Social Security checks reach the right people in a timely fashion. After Hurricane Florence and Hurricane Michael last fall, USPS worked with state and local election boards to make sure that absentee ballots were available and received on time.",
+        "I) Mail companies are logistics (物流) companies, which puts them in a special position to help when disaster strikes. In a 2011 USPS case study, the agency emphasized its massive infrastructure as a “unique federal asset” to be called upon in a disaster or terrorist attack. “I think we're unique as a federal agency,” USPS official Mike Swigart told me, “because we're in literally every community in this country… We're obligated to deliver to that point on a daily basis.”",
+        "J) Private courier companies, which have more dollars to spend, use their expertise in logistics to help revitalize damaged areas after a disaster. For more than a decade, FedEx has supported the American Red Cross in its effort to get emergency supplies to areas affected by disasters, both domestically and internationally. In 2012, the company distributed more than 1,200 MedPacks to Medical Reserve Corps groups in California. They also donated space for 3.1 million pounds of charitable shipping globally. Last October, the company pledged $1 million in cash and transportation support for Hurricanes Florence and Michael. UPS's charitable arm, the UPS Foundation, uses the company's logistics to help disaster-struck areas rebuild. “We realize that as a company with people, trucks, warehouses, we needed to play a larger role,” said Eduardo Martinez, the president of the UPS Foundation. The company employs its trucks and planes to deliver food, medicine, and water. The day before I spoke to Martinez in November, he had been touring the damage from Hurricane Michael in Florida with the American Red Cross. “We have an obligation to make sure our communities are thriving,” he said.",
+        "K) Rebuilding can take a long time, and even then, impressions of the disaster may still remain. Returning to a normal life can be difficult, but some small routines—mail delivery being one of them—may help residents remember that their communities are still their communities. “When they see that carrier back out on the street,” Swigart said, “that's the first sign to them that life is starting to return to normal.”"
+      ],
+      "questions": [
+        {
+          "number": 36,
+          "statement": "The United States Postal Service has a system to ensure its employees' safety."
+        },
+        {
+          "number": 37,
+          "statement": "One official says USPS is unique in that it has more direct reach to communities compared with other federal agencies."
+        },
+        {
+          "number": 38,
+          "statement": "Natural disasters can have a long-lasting impact on community life."
+        },
+        {
+          "number": 39,
+          "statement": "Mail delivery service is still responsible for the completion of almost half of payments."
+        },
+        {
+          "number": 40,
+          "statement": "The sight of a mailman on the street is a reassuring sign of life becoming normal again."
+        },
+        {
+          "number": 41,
+          "statement": "After Hurricane Katrina interrupted routine delivery, temporary mail service points were set up."
+        },
+        {
+          "number": 42,
+          "statement": "Postal service in some regions in the U.S. was suspended due to extreme cold weather."
+        },
+        {
+          "number": 43,
+          "statement": "Private postal companies also support disaster relief efforts by distributing urgent supplies."
+        },
+        {
+          "number": 44,
+          "statement": "A dedicated USPS employee was on the job carrying out duties in spite of extreme conditions."
+        },
+        {
+          "number": 45,
+          "statement": "Postal services work hard to identify items that require priority treatment."
+        }
+      ]
+    },
+    "sectionC": {
+      "passagesOne": [
+        "Professor Ashok Goel of Georgia Tech developed an artificially intelligent teaching assistant to help handle the enormous number of student questions in the online class, Knowledge-Based Artificial Intelligence. This online course is a core requirement of Georgia Tech's online Master of Science in Computer Science program. Professor Goel already had eight teaching assistants, but that wasn't enough to deal with the overwhelming number of daily questions from students.",
+        "Many students drop out of online courses because of the lack of teaching support. When students feel isolated or confused and reach out with questions that go unanswered, their motivation to continue begins to fade. Professor Goel decided to do something to remedy this situation and his solution was to create a virtual assistant named Jill Watson, which is based on the IBM Watson platform.",
+        "Goel and his team developed several versions of Jill Watson before releasing her to the online forums. At first, the virtual assistant wasn't too great. But Goel and his team sourced the online discussion forum to find all the 40,000 questions that had ever been asked since the class was launched. Then they began to feed Jill with the questions and answers. After some adjustment and sufficient time, Jill was able to answer the students' questions correctly 97% of the time. The virtual assistant became so advanced and realistic that the students didn't know she was a computer. The students, who were studying artificial intelligence, were interacting with the virtual assistant and couldn't tell it apart from a real human being. Goel didn't inform them about Jill's true identity until April 26. The students were actually very positive about the experience.",
+        "The goal of Professor Goel's virtual assistant next year is to take over answering 40% of all the questions posed by students on the online forum. The name Jill Watson will, of course, change to something else next semester. Professor Goel has a much rosier outlook on the future of artificial intelligence than, say, Elon Musk, Stephen Hawking, Bill Gates or Steve Wozniak."
+      ],
+      "questionsOne": [
+        {
+          "number": 46,
+          "statement": "What do we learn about Knowledge-Based Artificial Intelligence?",
+          "options": {
+            "A": "It is a robot that can answer students' questions.",
+            "B": "It is a course designed for students to learn online.",
+            "C": "It is a high-tech device that revolutionizes teaching.",
+            "D": "It is a computer program that aids student learning."
+          }
+        },
+        {
+          "number": 47,
+          "statement": "What problem did Professor Goel meet with?",
+          "options": {
+            "A": "His students were unsatisfied with the assistants.",
+            "B": "His course was too difficult for the students.",
+            "C": "Students' questions were too many to handle.",
+            "D": "Too many students dropped out of his course."
+          }
+        },
+        {
+          "number": 48,
+          "statement": "What do we learn about Jill Watson?",
+          "options": {
+            "A": "She turned out to be a great success.",
+            "B": "She got along pretty well with students.",
+            "C": "She was unwelcome to students at first.",
+            "D": "She was released online as an experiment."
+          }
+        },
+        {
+          "number": 49,
+          "statement": "How did the students feel about Jill Watson?",
+          "options": {
+            "A": "They thought she was a bit too artificial.",
+            "B": "They found her not as capable as expected.",
+            "C": "They could not but admire her knowledge.",
+            "D": "They could not tell her from a real person."
+          }
+        },
+        {
+          "number": 50,
+          "statement": "What does Professor Goel plan to do next with Jill Watson?",
+          "options": {
+            "A": "Launch different versions of her online.",
+            "B": "Feed her with new questions and answers.",
+            "C": "Assign her to answer more of students' questions.",
+            "D": "Encourage students to interact with her more freely."
+          }
+        }
+      ],
+      "passagesTwo": [
+        "Thinking small, being engaging, and having a sense of humor don't hurt. Those are a few of the traits of successful science crowdfunding efforts that emerge from a recent study that examined nearly 400 campaigns. But having a large network and some promotional skills may be more crucial.",
+        "Crowdfunding, raising money for a project through online appeals, has taken off in recent years for everything from making movies to producing water-saving gadgets. Scientists have tried to tap Internet donors, too, with mixed success. Some raised more than twice their goals, but others have fallen short of reaching even modest targets.",
+        "To determine what separates science crowdfunding triumphs from failures, a team led by science communications scholar Mike Schäfer of the University of Zurich examined the content of the webpages for 371 recent campaigns.",
+        "Four traits stood out for those that achieved their goals, the researchers report in Public Understanding of Science. For one, they use a crowdfunding platform that specializes in raising money for science, and not just any kind of project. Although sites like Kickstarter take all comers, platforms such as Experiment.com and Petridish.org only present scientific projects. For another, they present the project with a funny video because good visuals and a sense of humor improved success. Most of them engage with potential donors, since projects that answered questions from interested donors fared better. And they target a small amount of money. The projects included in the study raised $4000 on average, with 30% receiving less than $1000. The more money a project sought, the lower the chance it reached its goal, the researchers found.",
+        "Other factors may also significantly influence a project's success, most notably, the size of a scientist's personal and professional networks, and how much a researcher promotes a project on their own. Those two factors are by far more critical than the content on the page. Crowdfunding can be part of researchers' efforts to reach the public, and people give because “they feel a connection to the person” who is doing the fundraising—not necessarily to the science."
+      ],
+      "questionsTwo": [
+        {
+          "number": 51,
+          "statement": "What do we learn about the scientists trying to raise money online for their projects?",
+          "options": {
+            "A": "They did not raise much due to modest targets.",
+            "B": "They made use of mixed fundraising strategies.",
+            "C": "Not all of them achieved their anticipated goals.",
+            "D": "Most of them put movies online for the purpose."
+          }
+        },
+        {
+          "number": 52,
+          "statement": "What is the purpose of Mike Schäfer's research of recent crowdfunding campaigns?",
+          "options": {
+            "A": "To create attractive content for science websites.",
+            "B": "To identify reasons for their different outcomes.",
+            "C": "To help scientists to launch innovative projects.",
+            "D": "To separate science projects from general ones."
+          }
+        },
+        {
+          "number": 53,
+          "statement": "What trait contributes to the success of a crowd-funding campaign?",
+          "options": {
+            "A": "The potential benefit to future generations.",
+            "B": "Its interaction with prospective donors.",
+            "C": "Its originality in addressing financial issues.",
+            "D": "The value of the proposed project."
+          }
+        },
+        {
+          "number": 54,
+          "statement": "What did the researchers think of the financial targets of crowdfunding projects?",
+          "options": {
+            "A": "They should be small to be successful.",
+            "B": "They should be based on actual needs.",
+            "C": "They should be assessed with great care.",
+            "D": "They should be ambitious to gain notice."
+          }
+        },
+        {
+          "number": 55,
+          "statement": "What motivates people to donate in a crowdfunding campaign?",
+          "options": {
+            "A": "The ease of access to the content of the webpage.",
+            "B": "Their desire to contribute to the cause of science.",
+            "C": "The significance and influence of the project itself.",
+            "D": "Their feeling of connection to the scientists themselves."
+          }
+        }
+      ]
+    }
+  },
+  "translation": {
+    "ChinesePassage": "中国家庭十分重视孩子的教育。许多父母认为应该努力工作，确保孩子受到良好教育。他们不仅非常情愿为孩子的教育投资，而且花很多时间督促他们学习。多数家长希望孩子能上名牌大学。由于改革开放，越来越多的家长能送孩子到国外学习或参与国际交流项目，以拓宽其视野。通过这些努力，他们期望孩子健康成长，为国家的发展和繁荣作出贡献。"
+  }
+}

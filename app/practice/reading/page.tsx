@@ -6,10 +6,41 @@ import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import ReadingComprehension from "@/app/components/Exam/ReadingComprehension/ReadingComprehension";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleReadingSubmit } from "@/app/utils/api/submitHandlers";
-import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
+import type { Option } from "@/app/types/exam";
 
-interface ExamData extends ExamPaperBase {
-  readingComprehension: ExamPaper["readingComprehension"];
+interface ReadingData {
+  readingComprehension: {
+    sectionA: {
+      passages: string[];
+      options: Record<string, string>;
+    };
+    sectionB: {
+      passageTitle: string;
+      passages: string[];
+      questions: Array<{
+        number: number;
+        statement: string;
+        options: Option;
+      }>;
+    };
+    sectionC: {
+      passagesOne: string[];
+      questionsOne: Array<{
+        number: number;
+        statement: string;
+        options: Option;
+      }>;
+      passagesTwo: string[];
+      questionsTwo: Array<{
+        number: number;
+        statement: string;
+        options: Option;
+      }>;
+    };
+  };
+  year: number;
+  month: number;
+  setCount: number;
 }
 
 export default function PracticeReading() {
@@ -19,7 +50,7 @@ export default function PracticeReading() {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
-  const { data, isLoading } = useRandomExamData<ExamData>(
+  const { data: examData, isLoading } = useRandomExamData<ReadingData>(
     "readingComprehension"
   );
 
@@ -38,9 +69,9 @@ export default function PracticeReading() {
       const result = await handleReadingSubmit(
         answers,
         examType,
-        data?.year || 0,
-        data?.month || 0,
-        data?.setCount || 1
+        examData?.year || 0,
+        examData?.month || 0,
+        examData?.setCount || 1
       );
 
       if (result.success && result.data?.score !== undefined) {
@@ -58,16 +89,15 @@ export default function PracticeReading() {
 
   return (
     <>
-      {data?.readingComprehension && (
+      {examData?.readingComprehension && (
         <>
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
-            {examType} {data.year}年{data.month}月第{data.setCount}套
+            {examType} {examData.year}年{examData.month}月第{examData.setCount}
+            套
           </div>
           <ReadingComprehension
-            data={{
-              readingComprehension: data.readingComprehension,
-            }}
+            data={examData.readingComprehension}
             isLoading={isLoading}
             answers={answers}
             onAnswerChange={setAnswers}

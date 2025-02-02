@@ -1,0 +1,442 @@
+{
+  "_id": "66c300493420b0dd9f456ea9",
+  "year": 2019,
+  "month": 12,
+  "set": 2,
+  "writing": {
+    "Directions": "For this part, you are allowed 30 minutes to write a letter to a foreign friend who wants to learn Chinese. Please recommend a place to him. You should write at least 120 words but no more than 180 words."
+  },
+  "listeningComprehension": [
+    {
+      "number": 1,
+      "options": {
+        "A": "The number of male nurses has gone down.",
+        "B": "There is discrimination against male nurses.",
+        "C": "There is a growing shortage of medical personnel.",
+        "D": "The number of nurses has dropped to a record low."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "Working conditions.",
+        "B": "Educational system.",
+        "C": "Inadequate pay.",
+        "D": "Cultural bias."
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "He fell out of a lifeboat.",
+        "B": "He was almost drowned.",
+        "C": "He lost his way on a beach.",
+        "D": "He enjoyed swimming in the sea."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "The lifeboats patrol the area round the clock.",
+        "B": "The beach is a good place to watch the tide.",
+        "C": "The emergency services are efficient.",
+        "D": "The beach is a popular tourist resort."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "It climbed 25 storeys at one go.",
+        "B": "It broke into an office room.",
+        "C": "It escaped from a local zoo.",
+        "D": "It became an online star."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "Release it into the wild.",
+        "B": "Return it to its owner.",
+        "C": "Send it back to the zoo.",
+        "D": "Give it a physical checkup."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "A raccoon can perform acts no human can.",
+        "B": "A raccoon can climb much higher than a cat.",
+        "C": "The raccoon did something no politician could.",
+        "D": "The raccoon became as famous as some politicians."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "She received a bonus unexpectedly.",
+        "B": "She got a well-paying job in a bank.",
+        "C": "She received her first monthly salary.",
+        "D": "She got a pay raise for her performance."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "Two decades ago.",
+        "B": "Several years ago.",
+        "C": "Just last month.",
+        "D": "Right after graduation."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "He sent a small check to his parents.",
+        "B": "He treated his parents to a nice meal.",
+        "C": "He took a few of his friends to a gym.",
+        "D": "He immediately deposited it in a bank."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Join her colleagues for gym exercise.",
+        "B": "Visit her former university campus.",
+        "C": "Buy some professional clothes.",
+        "D": "Budget her salary carefully."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "He has just too many things to attend to.",
+        "B": "He has been overworked recently.",
+        "C": "He has a difficult decision to make.",
+        "D": "He has just quarreled with his girlfriend."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "Turn to his girlfriend for assistance.",
+        "B": "Give priority to things more urgent.",
+        "C": "Think twice before making the decision.",
+        "D": "Seek advice from his family and advisor."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "His girlfriend does not support his decision.",
+        "B": "He is not particularly keen on the job offered.",
+        "C": "He lacks the money for his doctoral program.",
+        "D": "His parents and advisor have different opinions."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "They need time to make preparations.",
+        "B": "They haven't started their careers yet.",
+        "C": "They need to save enough money for it.",
+        "D": "They haven't won their parents' approval."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "Expressing ideas and opinions freely.",
+        "B": "Enriching social and intellectual lives.",
+        "C": "Acquiring information and professional knowledge.",
+        "D": "Using information to understand and solve problems."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "Traveling to different places in the world.",
+        "B": "Playing games that challenge one's mind.",
+        "C": "Improving mind-reading strategies.",
+        "D": "Reading classic scientific literature."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "Participate in debates or discussions.",
+        "B": "Expose themselves to different cultures.",
+        "C": "Discard personal biases and prejudices.",
+        "D": "Give others freedom to express themselves."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "Why dogs can be faithful friends of humans.",
+        "B": "The nature of relationships between dogs.",
+        "C": "The reason a great many people love dogs.",
+        "D": "How dogs feel about their bonds with humans."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "They behave like other animals in many ways.",
+        "B": "They have an unusual sense of responsibility.",
+        "C": "They can respond to humans' questions.",
+        "D": "They can fall in love just like humans."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "They stay with one partner for life.",
+        "B": "They have their own joys and sorrows.",
+        "C": "They experience true romantic love.",
+        "D": "They help humans in various ways."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "A rare animal.",
+        "B": "A historical site.",
+        "C": "A cow bone.",
+        "D": "A precious stone."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "Dating it.",
+        "B": "Preserving it.",
+        "C": "Measuring it.",
+        "D": "Identifying it."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "The channel needs to interview the boy.",
+        "B": "The boy should have called an expert.",
+        "C": "The boy's family had acted correctly.",
+        "D": "The site should have been protected."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "Conduct a more detailed search.",
+        "B": "Ask the university to reward Jude.",
+        "C": "Search for similar fossils elsewhere.",
+        "D": "Seek additional funds for the search."
+      }
+    }
+  ],
+  "readingComprehension": {
+    "sectionA": {
+      "passages": [
+        "Finally, some good news about airplane travel. If you are on a plane with a sick passenger, you are unlikely to get sick. That is the 26 of a new study that looked at how respiratory (呼吸道) viruses 27 on airplanes. Researchers found that only people who were seated in the same row as a passenger with the flu, for example—or one row in front of or behind that individual—had a high risk of catching the illness. All other passengers had only a very 28 chance of getting sick, according to the findings. Media reports have not necessarily presented 29 information about the risk of getting infected on an airplane in the past. Therefore, these new findings should help airplane passengers to feel less 30 to catching respiratory infections while traveling by air.",
+        "Prior to the new study, little was known about the risks of getting 31 infected by common respiratory viruses, such as the flu or common cold, on an airplane, the researchers said. So, to 32 the risks of infection, the study team flew on 10 different 33 in the U.S. during the flu season. The researchers found that passengers sitting within two seats on 34 side of a person infected with the flu, as well as those sitting one row in front of or behind this individual, had about an 80 percent chance of getting sick. But other passengers were 35 safe from infection. They had a less than 3 percent chance of catching the flu."
+      ],
+      "options": {
+        "A": "accurate",
+        "B": "conclusion",
+        "C": "directly",
+        "D": "either",
+        "E": "evaluate",
+        "F": "explorations",
+        "G": "flights",
+        "H": "largely",
+        "I": "nearby",
+        "J": "respond",
+        "K": "slim",
+        "L": "spread",
+        "M": "summit",
+        "N": "vividly",
+        "O": "vulnerable"
+      }
+    },
+    "sectionB": {
+      "passageTitle": "Is Breakfast Really the Most Important Meal of the Day?",
+      "passages": [
+        "A) Along with old classics like “carrots give you night vision” and “Santa doesn't bring toys to misbehaving children”, one of the most well-worn phrases of tired parents everywhere is that breakfast is the most important meal of the day. Many of us grow up believing that skipping breakfast is a serious mistake, even if only two thirds of adults in the UK eat breakfast regularly, according to the British Dietetic Association, and around three-quarters of Americans.",
+        "B) “The body uses a lot of energy stores for growth and repair through the night,” explains diet specialist Sarah Elder. “Eating a balanced breakfast helps to up our energy, as well as make up for protein and calcium used throughout the night.” But there's widespread disagreement over whether breakfast should keep its top spot in the hierarchy (等级) of meals. There have been concerns around the sugar content of cereal and the food industry's involvement in pro-breakfast research—and even one claim from an academic that breakfast is “dangerous”.",
+        "C) What's the reality? Is breakfast a necessary start to the day or a marketing tactic by cereal companies? The most researched aspect of breakfast (and breakfast-skipping) has been its links to obesity. Scientists have different theories as to why there's a relationship between the two. In one US study that analysed the health data of 50,000 people over seven years, researchers found that those who made breakfast the largest meal of the day were more likely to have a lower body mass index (BMI) than those who ate a large lunch or dinner. The researchers argued that breakfast helps reduce daily calorie intake and improve the quality of our diet— since breakfast foods are often higher in fibre and nutrients.",
+        "D) But as with any study of this kind, it was unclear if that was the cause—or if breakfast-skippers were just more likely to be overweight to begin with. To find out, researchers designed a study in which 52 obese women took part in a 12-week weight loss programme. All had the same number of calories over the day, but half had breakfast, while the other half did not. What they found was that it wasn't breakfast itself that caused the participants to lose weight: it was changing their normal routine.",
+        "E) If breakfast alone isn't a guarantee of weight loss, why is there a link between obesity and breakfast-skipping? Alexandra Johnstone, professor of appetite research at the University of Aberdeen, argues that it may simply be because breakfast-skippers have been found to be less knowledgeable about nutrition and health. “There are a lot of studies on the relationship between breakfast eating and possible health outcomes, but this may be because those who eat breakfast choose to habitually have health-enhancing behaviours such as regular exercise and not smoking,” she says.",
+        "F) A 2016 review of 10 studies looking into the relationship between breakfast and weight management concluded there is “limited evidence” supporting or refuting (反驳) the argument that breakfast influences weight or food intake, and more evidence is required before breakfast recommendations can be used to help prevent obesity.",
+        "G) Researchers from the University of Surrey and University of Aberdeen are halfway through research looking into the mechanisms behind how the time we eat influences body weight. Early findings suggest that a bigger breakfast is beneficial to weight control. Breakfast has been found to affect more than just weight. Skipping breakfast has been associated with a 27% increased risk of heart disease, a 21% higher risk of type 2 diabetes in men, and a 20% higher risk of type 2 diabetes in women. One reason may be breakfast's nutritional value—partly because cereal is fortified (增加营养价值) with vitamins. In one study on the breakfast habits of 1,600 young people in the UK, researchers found that the fibre and micronutrient intake was better in those who had breakfast regularly. There have been similar findings in Australia, Brazil, Canada and the US.",
+        "H) Breakfast is also associated with improved brain function, including concentration and language use. A review of 54 studies found that eating breakfast can improve memory, though the effects on other brain functions were inconclusive. However, one of the review's researchers, Mary Beth Spitznagel, says there is “reasonable” evidence breakfast does improve concentration—there just needs to be more research. “Looking at studies that tested concentration, the number of studies showing a benefit was exactly the same as the number that found no benefit,” she says. “And no studies found that eating breakfast was bad for concentration.”",
+        "I) What's most important, some argue, is what we eat for breakfast. High-protein breakfasts have been found particularly effective in reducing the longing for food and consumption later in the day, according to research by the Australian Commonwealth Scientific and Industrial Research Organisation. While cereal remains a firm favorite among breakfast consumers in the UK and US, a recent investigation into the sugar content of ‘adult’ breakfast cereals found that some cereals contain more than three-quarters of the recommended daily amount of free sugars in each portion, and sugar was the second or third highest ingredient in cereals.",
+        "J) But some research suggests if we're going to eat sugary foods, it's best to do it early. One study recruited 200 obese adults to take part in a 16-week-long diet, where half added dessert to their breakfast, and half didn't. Those who added dessert lost an average of 40 pounds more—however, the study was unable to show the long-term effects. A review of 54 studies found that there is no consensus yet on what type of breakfast is healthier, and concluded that the type of breakfast doesn't matter as much as simply eating something.",
+        "K) While there's no conclusive evidence on exactly what we should be eating and when, the consensus is that we should listen to our own bodies and eat when we're hungry. “Breakfast is most important for people who are hungry when they wake up,” Johnstone says. “Each body starts the day differently—and those individual differences need to be researched more closely,” Spitznagel says. “A balanced breakfast is really helpful, but getting regular meals throughout the day is more important to leave blood sugar stable through the day, which helps control weight and hunger levels,” says Elder. “Breakfast isn't the only meal we should be getting right.”"
+      ],
+      "questions": [
+        {
+          "number": 36,
+          "statement": "According to one professor, obesity is related to a lack of basic awareness of nutrition and health."
+        },
+        {
+          "number": 37,
+          "statement": "Some scientists claim that people should consume the right kind of food at breakfast."
+        },
+        {
+          "number": 38,
+          "statement": "Opinions differ as to whether breakfast is the most important meal of the day."
+        },
+        {
+          "number": 39,
+          "statement": "It has been found that not eating breakfast is related to the incidence of certain diseases in some countries."
+        },
+        {
+          "number": 40,
+          "statement": "Researchers found it was a change in eating habits rather than breakfast itself that induced weight loss."
+        },
+        {
+          "number": 41,
+          "statement": "To keep oneself healthy, eating breakfast is more important than choosing what to eat."
+        },
+        {
+          "number": 42,
+          "statement": "It is widely considered wrong not to eat breakfast."
+        },
+        {
+          "number": 43,
+          "statement": "More research is needed to prove that breakfast is related to weight loss or food intake."
+        },
+        {
+          "number": 44,
+          "statement": "People who prioritise breakfasts tend to have lower calorie but higher nutritional intake."
+        },
+        {
+          "number": 45,
+          "statement": "Many studies reveal that eating breakfast helps people memorise and concentrate."
+        }
+      ]
+    },
+    "sectionC": {
+      "passagesOne": [
+        "Textbooks represent an 11 billion dollar industry, up from $8 billion in 2014. Textbook publisher Pearson is the largest publisher—of any kind—in the world.",
+        "It costs about $1 million to create a new textbook. A freshman textbook will have dozens of contributors, from subject-matter experts through graphic and layout artists to expert reviewers and classroom testers. Textbook publishers connect professors, instructors and students in ways that alternatives, such as open e-textbooks and open educational resources, simply do not. This connection happens not only by means of collaborative development, review and testing, but also at conferences where faculty regularly decide on their textbooks and curricula for the coming year.",
+        "It is true that textbook publishers have recently reported losses, largely due to students renting or buying used print textbooks. But this can be chalked up to the excessively high cost of their books—which has increased over 1,000 percent since 1977. A restructuring of the textbook industry may well be in order. But this does not mean the end of the textbook itself.",
+        "While they may not be as dynamic as an iPad, textbooks are not passive or lifeless. For example, over the centuries, they have simulated (模拟) dialogues in a number of ways. From 1800 to the present day, textbooks have done this by posing questions for students to answer inductively (归纳性地). That means students are asked to use their individual experience to come up with answers to general questions. Today's psychology texts, for example, ask: “How much of your personality do you think you inherited?” while ones in physics say: “How can you predict where the ball you tossed will land?”",
+        "Experts observe that “textbooks come in layers, something like an onion.” For an active learner, engaging with a textbook can be an interactive experience. Readers proceed at their own pace. They “customize” their books by engaging with different layers and linkages. Highlighting, Post-It notes, dog-ears and other techniques allow for further customization that students value in print books over digital forms of books."
+      ],
+      "questionsOne": [
+        {
+          "number": 46,
+          "statement": "What does the passage say about open educational resources?",
+          "options": {
+            "A": "They contribute to teaching as much as to learning.",
+            "B": "They don't profit as much as traditional textbooks do.",
+            "C": "They can't connect professors and students as textbooks do.",
+            "D": "They compete fiercely for customers with textbook producers."
+          }
+        },
+        {
+          "number": 47,
+          "statement": "What is the main cause of the publishers' losses?",
+          "options": {
+            "A": "Failure to meet student need.",
+            "B": "Industry restructuring.",
+            "C": "Emergence of e-books.",
+            "D": "Falling sales."
+          }
+        },
+        {
+          "number": 48,
+          "statement": "What does the textbook industry need to do?",
+          "options": {
+            "A": "Reform its structures.",
+            "B": "Cut its retail prices.",
+            "C": "Find replacements for printed textbooks.",
+            "D": "Change its business strategy periodically."
+          }
+        },
+        {
+          "number": 49,
+          "statement": "What are students expected to do in the learning process?",
+          "options": {
+            "A": "Think carefully before answering each question.",
+            "B": "Ask questions based on their own understanding.",
+            "C": "Answer questions using their personal experience.",
+            "D": "Give answers showing their respective personality."
+          }
+        },
+        {
+          "number": 50,
+          "statement": "What do experts say about students using textbooks?",
+          "options": {
+            "A": "They can digitalize the prints easily.",
+            "B": "They can learn in an interactive way.",
+            "C": "They can purchase customized versions.",
+            "D": "They can adapt the material themselves."
+          }
+        }
+      ],
+      "passagesTwo": [
+        "When we think of animals and plants, we have a pretty good way of dividing them into two distinct groups: one converts sunlight into energy and the other has to eat food to make its energy. Well, those dividing lines come crashing down with the discovery of a sea slug (海蛞蝓) that's truly half animal and half plant. It's pretty incredible how it has managed to hijack the genes of the algae (藻类) on which it feeds.",
+        "The slugs can manufacture chlorophyll, the green pigment (色素) in plants that captures energy from sunlight, and hold these genes within their body. The term kleptoplasty is used to describe the practice of using hijacked genes to create nutrients from sunlight. And so far, this green sea slug is the only known animal that can be truly considered solar-powered, although some animals do exhibit some plant-like behaviors. Many scientists have studied the green sea slugs to confirm that they are actually able to create energy from sunlight.",
+        "In fact, the slugs use the genetic material so well that they pass it on to their future generations. Their babies retain the ability to produce their own chlorophyll, though they can't generate energy from sunlight until they've eaten enough algae to steal the necessary genes, which they can't yet produce on their own.",
+        "“There's no way on earth that genes from an alga should work inside an animal cell,” says Sidney Pierce from the University of South Florida. “And yet here, they do. They allow the animal to rely on sunshine for its nutrition. So if something happens to their food source, they have a way of not starving to death until they find more algae to eat.”",
+        "The sea slugs are so good at gathering energy from the sun that they can live up to nine months without having to eat any food. They get all their nutritional needs met by the genes that they've hijacked from the algae."
+      ],
+      "questionsTwo": [
+        {
+          "number": 51,
+          "statement": "What is the distinctive feature of a sea slug?",
+          "options": {
+            "A": "It looks like both a plant and an animal.",
+            "B": "It converts some sea animals into plants.",
+            "C": "It lives half on animals and half on plants.",
+            "D": "It gets energy from both food and sunlight."
+          }
+        },
+        {
+          "number": 52,
+          "statement": "What enables the sea slug to live like a plant?",
+          "options": {
+            "A": "The genes it captures from the sea plant algae.",
+            "B": "The mechanism by which it conserves energy.",
+            "C": "The nutrients it hijacks from other species.",
+            "D": "The green pigment it inherits from its ancestors."
+          }
+        },
+        {
+          "number": 53,
+          "statement": "What does the author say about baby sea slugs?",
+          "options": {
+            "A": "They can live without sunlight for a long time.",
+            "B": "They can absorb sunlight right after their birth.",
+            "C": "They can survive without algae for quite some time.",
+            "D": "They can produce chlorophyll on their own."
+          }
+        },
+        {
+          "number": 54,
+          "statement": "What does Sidney Pierce say about genes from an alga?",
+          "options": {
+            "A": "They are stolen from animals like the sea slug.",
+            "B": "They can't function unless exposed to sunlight.",
+            "C": "They don't usually function inside animal cells.",
+            "D": "They can readily be converted to sea slug genes."
+          }
+        },
+        {
+          "number": 55,
+          "statement": "What do we learn about sea slugs from the passage?",
+          "options": {
+            "A": "They behave the way most plant species do.",
+            "B": "They can survive for months without eating.",
+            "C": "They will turn into plants when they mature.",
+            "D": "They will starve to death without sunlight."
+          }
+        }
+      ]
+    }
+  },
+  "translation": {
+    "ChinesePassage": "中国的家庭观念与其文化传统有关。和睦的大家庭曾非常令人羡慕。过去四代同堂并不少见。由于这个传统，许多年轻人婚后继续与父母同住。今天，这个传统正在改变。随着住房条件的改善，越来越多年轻夫妇选择与父母分开住。但他们之间的联系仍然很密切。许多老年人仍然帮着照看孙辈。年轻夫妇也抽时间探望父母，特别是在春节和中秋节等重要节日。"
+  }
+}

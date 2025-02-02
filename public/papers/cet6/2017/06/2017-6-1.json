@@ -1,0 +1,450 @@
+{
+  "_id": "66c3004d3420b0dd9f456ec7",
+  "year": 2017,
+  "month": 6,
+  "set": 1,
+  "writing": {
+    "Directions": "For this part, you are allowed 30 minutes to write an advertisement on your campus website to sell some of the course books you used at college.Your advertisement may include a brief description of their content, their condition and price and your contact information.You should write at least 120 words but no more than 180 words."
+  },
+  "listeningComprehension": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Doing enjoyable work.",
+        "B": "Having friendly colleagues.",
+        "C": "Earning a competitive salary.",
+        "D": "Working for supportive bosses."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "20%",
+        "B": "25%",
+        "C": "31%",
+        "D": "73%"
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "Those full of skilled workers.",
+        "B": "Those run by women.",
+        "C": "Those that are well managed.",
+        "D": "Those of a small size."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "They can win recognition of their work.",
+        "B": "They can better balance their work and life.",
+        "C": "They can hop from job to job easily.",
+        "D": "They can take on more than one job."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "It was a collection of photos.",
+        "B": "It is an introduction to music.",
+        "C": "It is about the city of Bruges.",
+        "D": "It is a book of European history."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "When writing about Belgium's coastal regions.",
+        "B": "When taking pictures for a concert catalogue.",
+        "C": "When vacationing in an Italian coastal city.",
+        "D": "When painting the concert hall of Bruges."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "The rich heritage of Europe will be lost completely.",
+        "B": "The seawater of Europe will be seriously polluted.",
+        "C": "The entire European coastline will be submerged.",
+        "D": "The major European scenic spots will disappear."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "Tourists use wooden paths to reach their hotels in the morning.",
+        "B": "It attracts large numbers of tourists from home and abroad.",
+        "C": "People cannot get around without using boats.",
+        "D": "Its waterways are being increasingly polluted."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "They try hard to avoid getting off on the wrong foot.",
+        "B": "They spend too much time anticipating their defeat.",
+        "C": "They take too many irrelevant factors into account.",
+        "D": "They make careful preparations beforehand."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "Mental images often interfere with athletes' performance.",
+        "B": "Golfers usually have positive mental images of themselves.",
+        "C": "Thinking has the same effect on the nervous system as doing.",
+        "D": "A person's nervous system is more complicated than imagined."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "Anticipate possible problems.",
+        "B": "Make a list of do's and don'ts.",
+        "C": "Try to appear more professional.",
+        "D": "Picture themselves succeeding."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "She won her first jury trial.",
+        "B": "She won a designer dress.",
+        "C": "She presented moving pictures.",
+        "D": "She did not speak loud enough."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "It enables patients with diabetes to recover sooner.",
+        "B": "Its health benefits have been overestimated.",
+        "C": "Its long-term effects are yet to be proved.",
+        "D": "It helps people to avoid developing breast cancer."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "It tracked their eating habits since their adolescence.",
+        "B": "It focused on their difference from men in fiber intake.",
+        "C": "It tracked their change in food preferences for 20 years.",
+        "D": "It focused on their ways of life during young adulthood."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "Fiber may bring more benefits to women than men.",
+        "B": "Fiber may improve the function of heart muscles.",
+        "C": "Fiber may make blood circulation more smooth.",
+        "D": "Fiber may help to reduce hormones in the body."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "Investigating the impact of media on government.",
+        "B": "Studying the hazards of young people drinking.",
+        "C": "Conducting research on consumer behaviour.",
+        "D": "Observing the changes in marketing."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "It is a chief concern of parents.",
+        "B": "It is an act of socialising.",
+        "C": "It is the cause of many street riots.",
+        "D": "It is getting worse year by year."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "They researched the impact of mobile phones on young people.",
+        "B": "They spent a week studying their own purchasing behaviour.",
+        "C": "They conducted a thorough research on advertising.",
+        "D": "They analysed their family budgets over the years."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "It is likely to give up paper money in the near future.",
+        "B": "It is the first country to use credit cards in the world.",
+        "C": "It is trying hard to do away with dirty money.",
+        "D": "It is helping its banks to improve efficiency."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "Whether it is possible to travel without carrying any physical currency.",
+        "B": "Whether it is possible to predict how much money one is going to spend.",
+        "C": "Whether the absence of physical currency is going to affect everyday life.",
+        "D": "Whether the absence of physical currency causes a person to spend more."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "The cash in her handbag was missing.",
+        "B": "The service on the train was not good.",
+        "C": "The restaurant car accepted cash only.",
+        "D": "There was no food service on the train."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "By drawing money week by week.",
+        "B": "By putting money into envelopes.",
+        "C": "By limiting their day-to-day spending.",
+        "D": "By refusing to buy anything on credit."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "Population explosion.",
+        "B": "Extinction of rare species.",
+        "C": "Chronic hunger.",
+        "D": "Environmental deterioration."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "About half of them are unintended.",
+        "B": "They contribute to overpopulation.",
+        "C": "They have been brought under control.",
+        "D": "The majority of them tend to end halfway."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "It is beginning to attract postgraduates' attention.",
+        "B": "It is neglected in many of the developing countries.",
+        "C": "It is becoming a subject of interdisciplinary research.",
+        "D": "It is essential to the wellbeing of all species on earth."
+      }
+    }
+  ],
+  "readingComprehension": {
+    "sectionA": {
+      "passages": [
+        "Let's all stop judging people who talk to themselves. New research says that those who can't seem to keep their inner monologues（独白）in are actually more likely to stay on task, remain 26 better and show improved perception capabilities. Not bad, really, for some extra muttering.",
+        "According to a series of experiments published in the Quarterly Journal of Experimental Psychology by professors Gary Lupyan and Daniel Swignley, the act of using verbal clues to 27 mental pictures helps people function quicker.",
+        "In one experiment, they showed pictures of various objects to twenty 28 and asked them to find just one of those, a banana. Half were 29 to repeat out loud what they were looking for and the other half kept their lips 30 . Those who talked to themselves found the banana slightly faster than those who didn't, the researchers say. In other experiments, Lupyan and Swignley found that 31 the name of a common product when on the hunt for it helped quicken someone's pace, but talking about uncommon items showed no advantage and slowed you down.",
+        "Common research has long held that talking themselves through a task helps children learn, although doing so when you've 32 matured is not a great sign of 33 . The two professors hope to refute that idea, 34 that just as when kids walk themselves through a process, adults can benefit from using language not just to communicate, but also to help “augment thinking”.",
+        "Of course, you are still encouraged to keep the talking at library tones and, whatever you do, keep the information you share simple, like a grocery list. At any 35 , there's still such a thing as too much information."
+      ],
+      "options": {
+        "A": "apparently",
+        "B": "arrogance",
+        "C": "brilliance",
+        "D": "claiming",
+        "E": "dedicated",
+        "F": "focused",
+        "G": "incur",
+        "H": "instructed",
+        "I": "obscurely",
+        "J": "sealed",
+        "K": "spectators",
+        "L": "trigger",
+        "M": "uttering",
+        "N": "volume",
+        "O": "volunteers"
+      }
+    },
+    "sectionB": {
+      "passageTitle": "The Price of Oil and the Price of Carbon",
+      "passages": [
+        "A) Fossil fuel prices are likely to stay “low for long.”Notwithstanding important recent progress in developing renewable fuel sources, low fossil fuel prices could discourage further innovation in, and adoption of, cleaner energy technologies. The result would be higher emissions of carbon dioxide and other greenhouse gases.",
+        "B) Policymakers should not allow low energy prices to derail the clean energy transition. Action to restore appropriate price incentives, notably through corrective carbon pricing, is urgently needed to lower the risk of irreversible and potentially devastating effects of climate change. That approach also offers fiscal benefits.",
+        "C) Oil prices have dropped by over 60% since June 2014. A commonly held view in the oil industry is that “the best cure for low oil prices is low oil prices.”The reasoning behind this saying is that low oil prices discourage investment in new production capacity, eventually shifting the oil supply curve backward and bringing prices back up as existing oil fields—which can be tapped at relatively low marginal cost—are depleted. In fact, in line with past experience, capital expenditure in the oil sector has dropped sharply in many producing countries, including the United States. The dynamic adjustment to low oil prices may, however, be different this time around.",
+        "D) Oil prices are expected to remain lower for longer. The advent of new technologies has added about 4.2 million barrels per day to the crude oil market, contributing to a global over-supply. In addition, other factors are putting downward pressure on oil prices: change in the strategic behavior of the Organization of Petroleum Exporting Countries, the projected increase in Iranian exports, the scaling-down of global demand（especially from emerging markets）, the long-term drop in petroleum consumption in the United States, and some displacement of oil by substitutes. These likely persistent forces, like the growth of shale（页岩）oil, point to a “low for long”scenario. Futures markets, which show only a modest recovery of prices to around $60 a barrel by 2019, support this view.",
+        "E) Natural gas and coal—also fossil fuels—have similarly seen price declines that look to be long-lived. Coal and natural gas are mainly used for electricity generation, whereas oil is used mostly to power transportation, yet the prices of all these energy sources are linked. The North American shale gas boom has resulted in record low prices there. The recent discovery of the giant Zohr gas field off the Egyptian coast will eventually have impact on pricing in the Mediterranean region and Europe, and there is significant development potential in many other places, notably Argentina. Coal prices also are low, owing to over-supply and the scaling-down of demand, especially from China, which burns half of the world's coal.",
+        "F) Technological innovations have unleashed the power of renewables such as wind, hydro, solar, and geothermal（地热）. Even Africa and the Middle East, home to economies that are heavily dependent on fossil fuel exports, have enormous potential to develop renewables. For example, the United Arab Emirates has endorsed an ambitious target to draw 24% of its primary energy consumption from renewable sources by 2021.",
+        "G) Progress in the development of renewables could be fragile, however, if fossil fuel prices remain low for long. Renewables account for only a small share of global primary energy consumption, which is still dominated by fossil fuels—30% each for coal and oil, 25% for natural gas. But renewable energy will have to displace fossil fuels to a much greater extent in the future to avoid unacceptable climate risks.",
+        "H) Unfortunately, the current low prices for oil, gas, and coal may provide little incentive for research to find even cheaper substitutes for those fuels. There is strong evidence that both innovation and adoption of cleaner technology are strongly encouraged by higher fossil fuel prices. The same is true for new technologies for alleviating fossil fuel emissions.",
+        "I) The current low fossil fuel price environment will thus certainly delay the energy transition from fossil fuel to clean energy sources. Unless renewables become cheap enough that substantial carbon deposits are left underground for a very long time, if not forever, the planet will likely be exposed to potentially catastrophic climate risks.",
+        "J) Some climate impacts may already be discernible. For example, the United Nations Children's Fund estimates that some 11 million children in Africa face hunger, disease, and water shortages as a result of the strongest El Niño（厄尔尼诺）weather phenomenon in decades. Many scientists believe that El Ni-o events, caused by warming in the Pacific, are becoming more intense as a result of climate change.",
+        "K) Nations from around the world have gathered in Paris for the United Nations Climate Change Conference, COP 21, with the goal of a universal and potentially legally-binding agreement on reducing greenhouse gas emissions. We need very broad participation to fully address the global tragedy that results when countries fail to take into account the negative impact of their carbon emissions on the rest of the world. Moreover, non-participation by nations, if sufficiently widespread, can undermine the political will of participating countries to act.",
+        "L) The nations participating at COP 21 are focusing on quantitative emissions-reduction commitments. Economic reasoning shows that the least expensive way for each country is to put a price on carbon emissions. The reason is that when carbon is priced, those emissions reductions that are least costly to implement will happen first. The International Monetary Fund calculates that countries can generate substantial fiscal revenues by eliminating fossil fuel subsidies and levying carbon charges that capture the domestic damage caused by emissions. A tax on upstream carbon sources is one easy way to put a price on carbon emissions, although some countries may wish to use other methods, such as emissions trading schemes. In order to maximize global welfare, every country's carbon pricing should reflect not only the purely domestic damage from emissions, but also the damage to foreign countries.",
+        "M) Setting the right carbon price will therefore efficiently align the costs paid by carbon users with the true social opportunity cost of using carbon. By raising relative demand for clean energy sources, a carbon price would also help align the market return to clean-energy innovation with its social return, spurring the refinement of existing technologies and the development of new ones. And it would raise the demand for technologies such as carbon capture and storage, spurring their further development. If not corrected by the appropriate carbon price, low fossil fuel prices are not accurately signaling to markets the true social profitability of clean energy. While alternative estimates of the damage from carbon emissions differ, and it's especially hard to reckon the likely costs of possible catastrophic climate events, most estimates suggest substantial negative effects.",
+        "N) Direct subsidies to research and development have been adopted by some governments but are a poor substitute for a carbon price: they do only part of the job, leaving in place market incentives to over-use fossil fuels and thereby add to the stock of atmospheric greenhouse gases without regard to the collateral（附带的）costs.",
+        "O) The hope is that the success of COP 21 opens the door to future international agreement on carbon prices. Agreement on an international carbon-price floor would be a good starting point in that process. Failure to address comprehensively the problem of greenhouse gas emissions, however, exposes all generations, present and future, to incalculable risks."
+      ],
+      "questions": [
+        {
+          "number": 36,
+          "statement": "A number of factors are driving down the global oil prices not just for now but in the foreseeable future."
+        },
+        {
+          "number": 37,
+          "statement": "Pricing carbon proves the most economical way to reduce greenhouse gas emissions."
+        },
+        {
+          "number": 38,
+          "statement": "It is estimated that extreme weather conditions have endangered the lives of millions of African children."
+        },
+        {
+          "number": 39,
+          "statement": "The prices of coal are low as a result of over-supply and decreasing demand."
+        },
+        {
+          "number": 40,
+          "statement": "Higher fossil fuel prices prove to be conducive to innovation and application of cleaner technology."
+        },
+        {
+          "number": 41,
+          "statement": "If fossil fuel prices remain low for a long time, it may lead to higher emissions of greenhouse gases."
+        },
+        {
+          "number": 42,
+          "statement": "Fossil fuels remain the major source of primary energy consumption in today's world."
+        },
+        {
+          "number": 43,
+          "statement": "Even major fossil fuel exporting countries have great potential to develop renewable energies."
+        },
+        {
+          "number": 44,
+          "statement": "Greenhouse gas emissions, if not properly dealt with, will pose endless risks for mankind."
+        },
+        {
+          "number": 45,
+          "statement": "It is urgent for governments to increase the cost of using fossil fuels to an appropriate level to lessen the catastrophic effects of climate change."
+        }
+      ]
+    },
+    "sectionC": {
+      "passagesOne": [
+        "Tennessee's technical and community colleges will not outsource (外包) management of their facilities to a private company, a decision one leader said was bolstered by an analysis of spending at each campus.",
+        "In an email sent Monday to college presidents in the Tennessee Board of Regents system, outgoing Chancellor John Morgan said an internal analysis showed that each campus' spending on facilities management fell well below the industry standards identified by the state. Morgan said those findings—which included data from the system's 13 community colleges, 27 technical colleges and six universities—were part of the decision not to move forward with Governor Bill Haslam's proposal to privatize management of state buildings in an effort to save money.",
+        "“While these numbers are still being validated by the state, we feel any adjustments they might suggest will be immaterial,“ Morgan wrote to the presidents. “System institutions are operating very efficiently based on this analysis, raising the question of the value of pursuing a broad scale outsourcing initiative.“",
+        "Worker's advocates have criticized Haslam's plan, saying it would mean some campus workers would lose their jobs or benefits. Haslam has said colleges would be free to opt in or out of the out souring plan, which has not been finalized.",
+        "Morgan notified the Haslam administration of his decision to opt out in a letter sent last week. That letter, which includes several concerns Morgan has with the plan, was originally obtained by The Commercial Appeal in Memphis.",
+        "In an email statement from the state's Office of Customer Focused Government, which is examining the possibility of outsourcing, spokeswoman Michelle R. Martin said officials were still working to analyze the data from the Board of Regents. Data on management expenses at the college system and in other state departments will be part of a “business justification“ the state will use as officials deliberate the specifics of an outsourcing plan.",
+        "“The state's facilities management project team is still in the process of developing its business justification and expects to have that completed and available to the public at the end of February,“ Martin said. “At this time there is nothing to take action on since the analysis has yet to be completed.“",
+        "Morgan's comments on outsourcing mark the second time this month that he has come out against one of Haslam's plans for higher education in Tennessee. Morgan said last week that he would retire at the end of January because of the governor's proposal to split off six universities of the Board of Regents system and create separate governing boards for each of them. In his resignation letter, Morgan called the reorganization “unworkable“."
+      ],
+      "questionsOne": [
+        {
+          "number": 46,
+          "statement": "What do we learn about the decision of technical and community colleges in Tennessee?",
+          "options": {
+            "A": "It is backed by a campus spending analysis.",
+            "B": "It has been flatly rejected by the governor.",
+            "C": "It has neglected their faculty's demands.",
+            "D": "It will improve their financial situation."
+          }
+        },
+        {
+          "number": 47,
+          "statement": "What does the campus spending analysis reveal?",
+          "options": {
+            "A": "Private companies play a big role in campus management.",
+            "B": "Facilities management by colleges is more cost-effective.",
+            "C": "Facilities management has greatly improved in recent years.",
+            "D": "Colleges exercise full control over their own financial affairs."
+          }
+        },
+        {
+          "number": 48,
+          "statement": "Workers' supporters argue that Bill Haslam's proposal would ______.",
+          "options": {
+            "A": "deprive colleges of the right to manage their facilities",
+            "B": "make workers less motivated in performing duties",
+            "C": "render a number of campus workers jobless",
+            "D": "lead to the privatization of campus facilities"
+          }
+        },
+        {
+          "number": 49,
+          "statement": "What do we learn from the state spokeswoman's response to John Morgan's decision?",
+          "options": {
+            "A": "The outsourcing plan is not yet finalized.",
+            "B": "The outsourcing plan will be implemented.",
+            "C": "The state officials are confident about the outsourcing plan.",
+            "D": "The college spending analysis justifies the outsourcing plan."
+          }
+        },
+        {
+          "number": 50,
+          "statement": "Why did John Morgan decide to resign?",
+          "options": {
+            "A": "He had lost confidence in the Tennessee state government.",
+            "B": "He disagreed with the governor on higher education policies.",
+            "C": "He thought the state's outsourcing proposal was simply unworkable.",
+            "D": "He opposed the governor's plan to reconstruct the college board system."
+          }
+        }
+      ],
+      "passagesTwo": [
+        "Beginning in the late sixteenth century, it became fashionable for young aristocrats to visit Paris, Venice, Florence, and above all, Rome, as the culmination (终极) of their classical education. Thus was born the idea of the Grand Tour, a practice which introduced Englishmen, Germans, Scandinavians, and also Americans to the art and culture of France and Italy for the next 300 years. Travel was arduous and costly throughout the period, possible only for a privileged class—the same that produced gentlemen scientists, authors, antique experts, and patrons of the arts.",
+        "The Grand Tourist was typically a young man with a thorough grounding in Greek and Latin literature as well as some leisure time, some means, and some interest in art. The German traveler Johann Winckelmann pioneered the field of art history with his comprehensive study of Greek and Roman sculpture; he was portrayed by his friend Anton Raphael Mengs at the beginning of his long residence in Rome. Most Grand Tourists, however, stayed for briefer periods and set out with less scholarly intentions, accompanied by a teacher or guardian, and expected to return home with souvenirs of their travels as well as an understanding of art and architecture formed by exposure to great masterpieces.",
+        "London was a frequent starting point for Grand Tourists, and Paris a compulsory destination; many traveled to the Netherlands, some to Switzerland and Germany, and a very few adventurers to Spain, Greece, or Turkey. The essential place to visit, however, was Italy. The British traveler Charles Thompson spoke for many Grand Tourists when in 1744 he described himself as “being impatiently desirous of viewing a country so famous in history, a country which once gave laws to the world, and which is at present the greatest school of music and painting, contains the noblest productions of sculpture and architecture, and is filled with cabinets of rarities, and collections of all kinds of historical relics“. Within Italy, the great focus was Rome, whose ancient ruins and more recent achievements were shown to every Grand Tourist. Panini's Ancient Rome and Modem Rome represent the sights most prized, including celebrated Greco-Roman statues and views of famous ruins, fountains, and churches. Since there were few museums anywhere in Europe before the close of the eighteenth century, Grand Tourists often saw paintings and sculptures by gaining admission to private collections, and many were eager to acquire examples of Greco-Roman and Italian art for their own collections. In England, where architecture was increasingly seen as an aristocratic pursuit, noblemen often applied what they learned from the villas of Palladio in the Veneto and the evocative (唤起回忆的) ruins of Rome to their own country houses and gardens."
+      ],
+      "questionsTwo": [
+        {
+          "number": 51,
+          "statement": "What is said about the Grand Tour?",
+          "options": {
+            "A": "It was fashionable among young people of the time.",
+            "B": "It was unaffordable for ordinary people.",
+            "C": "It produced some famous European artists.",
+            "D": "It made a compulsory part of college education."
+          }
+        },
+        {
+          "number": 52,
+          "statement": "What did Grand Tourists have in common?",
+          "options": {
+            "A": "They had much geographic knowledge.",
+            "B": "They were courageous and venturesome.",
+            "C": "They were versed in literature and interested in art.",
+            "D": "They had enough travel and outdoor-life experience."
+          }
+        },
+        {
+          "number": 53,
+          "statement": "How did Grand Tourists benefit from their travel?",
+          "options": {
+            "A": "They found inspiration in the world's greatest masterpieces.",
+            "B": "They got a better understanding of early human civilization.",
+            "C": "They developed an interest in the origin of modern art forms.",
+            "D": "They gained some knowledge of classical art and architecture."
+          }
+        },
+        {
+          "number": 54,
+          "statement": "Why did many Grand Tourists visit the private collections?",
+          "options": {
+            "A": "They could buy unique souvenirs there to take back home.",
+            "B": "Europe hardly had any museums before the 19th century.",
+            "C": "They found the antiques there more valuable.",
+            "D": "Private collections were of greater variety."
+          }
+        },
+        {
+          "number": 55,
+          "statement": "How did the Grand Tour influence the architecture in England?",
+          "options": {
+            "A": "There appeared more and more Roman-style buildings.",
+            "B": "Many aristocrats began to move into Roman-style villas.",
+            "C": "Aristocrats' country houses all had Roman-style gardens.",
+            "D": "Italian architects were hired to design houses and gardens."
+          }
+        }
+      ]
+    }
+  },
+  "translation": {
+    "ChinesePassage": "珠江是华南一大河系，流经广州市，是中国第三长的河流，仅次于长江和黄河。珠江三角洲（deltA）是中国最发达的地区之一，面积约11,000平方公里。它在面积和人口方面也是世界上最大的城市聚集区。珠江三角洲九个最大城市共有5,700多万人口。上世纪70年代末中国改革开放以来，珠江三角洲已成为中国和世界主要经济区域和制造中心之一。"
+  }
+}

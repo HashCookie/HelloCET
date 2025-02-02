@@ -1,58 +1,66 @@
-import { MongoClient } from "mongodb";
+import { promises as fs } from "fs";
 import { NextResponse } from "next/server";
-import { ExamPaperBase } from "@/app/types/exam";
+import path from "path";
 
-interface AggregateResult {
-  _id: null;
-  years: number[];
-  months: number[];
-  papers: ExamPaperBase[];
+async function getYearsAndPapers(examType: string) {
+  try {
+    const basePath = path.join(
+      process.cwd(),
+      "public",
+      "papers",
+      examType.toLowerCase()
+    );
+
+    const years = await fs.readdir(basePath);
+    const papers = [];
+    const monthSet = new Set<number>();
+
+    for (const year of years) {
+      if (year.startsWith(".")) continue;
+
+      const yearPath = path.join(basePath, year);
+      const months = await fs.readdir(yearPath);
+
+      for (const month of months) {
+        if (month.startsWith(".")) continue;
+
+        const monthPath = path.join(yearPath, month);
+        const files = await fs.readdir(monthPath);
+
+        const jsonFiles = files.filter((f) => f.endsWith(".json"));
+        monthSet.add(parseInt(month));
+        papers.push({
+          year: parseInt(year),
+          month: parseInt(month),
+          setCount: jsonFiles.length,
+        });
+      }
+    }
+
+    return [
+      {
+        _id: null,
+        years: years.filter((y) => !y.startsWith(".")).map((y) => parseInt(y)),
+        months: Array.from(monthSet),
+        papers,
+      },
+    ];
+  } catch (error) {
+    throw error;
+  }
 }
-
-if (!process.env.MONGODB_URI) {
-  throw new Error("请在 .env.local 文件中设置 MONGODB_URI");
-}
-
-const uri = process.env.MONGODB_URI;
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const examType = searchParams.get("type"); // CET4 or CET6
+  const examType = searchParams.get("type") || "CET4";
 
   try {
-    const client = await MongoClient.connect(uri);
-    const db = client.db("EnglishExams");
-    const collection = db.collection(`${examType || "CET4"}_Papers`);
-
-    const result = await collection
-      .aggregate<AggregateResult>([
-        {
-          $group: {
-            _id: { year: "$year", month: "$month" },
-            setCount: { $count: {} },
-          },
-        },
-        {
-          $group: {
-            _id: null,
-            years: { $addToSet: "$_id.year" },
-            months: { $addToSet: "$_id.month" },
-            papers: {
-              $push: {
-                year: "$_id.year",
-                month: "$_id.month",
-                setCount: "$setCount",
-              },
-            },
-          },
-        },
-      ])
-      .toArray();
-
-    await client.close();
+    const result = await getYearsAndPapers(examType);
     return NextResponse.json(result);
   } catch (err) {
-    console.error("数据获取失败:", err);
-    return NextResponse.json({ error: "数据获取失败" }, { status: 500 });
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "未知错误" },
+      { status: 500 }
+    );
   }
 }

@@ -6,10 +6,13 @@ import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import Translation from "@/app/components/Exam/CTOE/Translation";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleTranslationSubmit } from "@/app/utils/api/submitHandlers";
-import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
+import type {
+  Translation as TranslationType,
+  ExamPaperBase,
+} from "@/app/types/exam";
 
-interface ExamData extends ExamPaperBase {
-  translation: ExamPaper["translation"];
+interface TranslationData extends ExamPaperBase {
+  translation: TranslationType;
 }
 
 export default function PracticeTranslation() {
@@ -19,7 +22,8 @@ export default function PracticeTranslation() {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
-  const { data, isLoading } = useRandomExamData<ExamData>("translation");
+  const { data: examData, isLoading } =
+    useRandomExamData<TranslationData>("translation");
 
   const handleSubmit = async () => {
     if (!answer.trim()) {
@@ -29,7 +33,7 @@ export default function PracticeTranslation() {
 
     setIsSubmitting(true);
     try {
-      const originalText = data?.translation?.ChinesePassage;
+      const originalText = examData?.translation?.ChinesePassage;
       if (!originalText) {
         throw new Error("获取原文失败");
       }
@@ -55,16 +59,15 @@ export default function PracticeTranslation() {
 
   return (
     <>
-      {data?.translation && (
+      {examData?.translation && (
         <>
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
-            {examType} {data.year}年{data.month}月第{data.setCount}套
+            {examType} {examData.year}年{examData.month}月第{examData.setCount}
+            套
           </div>
           <Translation
-            data={{
-              translation: data.translation,
-            }}
+            data={examData.translation}
             isLoading={isLoading}
             answer={answer}
             onAnswerChange={setAnswer}

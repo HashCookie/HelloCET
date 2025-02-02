@@ -5,9 +5,14 @@ import { useState } from "react";
 import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import Writing from "@/app/components/Exam/Writing/Writing";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
-import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
-interface ExamData extends ExamPaperBase {
-  writing: ExamPaper["writing"];
+
+interface WritingData {
+  writing: {
+    Directions: string;
+  };
+  year: number;
+  month: number;
+  setCount: number;
 }
 
 export default function PracticeWriting() {
@@ -17,7 +22,8 @@ export default function PracticeWriting() {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
-  const { data, isLoading } = useRandomExamData<ExamData>("writing");
+  const { data: examData, isLoading } =
+    useRandomExamData<WritingData>("writing");
 
   if (isLoading) {
     return <LoadingSpinner />;
@@ -58,14 +64,15 @@ export default function PracticeWriting() {
 
   return (
     <>
-      {data?.writing && (
+      {examData && (
         <>
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
-            {examType} {data.year}年{data.month}月第{data.setCount}套
+            {examType} {examData.year}年{examData.month}月第{examData.setCount}
+            套
           </div>
           <Writing
-            data={{ writing: data.writing }}
+            data={examData.writing}
             isLoading={isLoading}
             answer={essay}
             onAnswerChange={setEssay}

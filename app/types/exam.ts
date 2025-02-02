@@ -58,13 +58,21 @@ export interface ExamPaperBase {
   setCount: number;
 }
 
+// 写作
+export interface Writing {
+  Directions: string;
+}
+
+// 翻译
+export interface Translation {
+  ChinesePassage: string;
+}
+
 // 试卷
 export interface ExamPaper extends ExamPaperBase {
   _id: string;
   // 写作
-  writing: {
-    Directions: string;
-  };
+  writing: Writing;
 
   // 听力
   listeningComprehension: ListeningQuestion[];
@@ -73,7 +81,5 @@ export interface ExamPaper extends ExamPaperBase {
   readingComprehension: ReadingComprehension;
 
   // 翻译
-  translation: {
-    ChinesePassage: string;
-  };
+  translation: Translation;
 }

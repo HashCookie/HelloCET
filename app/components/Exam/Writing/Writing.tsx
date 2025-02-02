@@ -1,12 +1,10 @@
 "use client";
 
 import ExamSection from "@/app/components/Common/ExamSection";
-import type { ExamPaper } from "@/app/types/exam";
-
-type WritingData = Pick<ExamPaper, "writing">;
+import type { Writing } from "@/app/types/exam";
 
 interface WritingProps {
-  data: WritingData | null;
+  data: Writing | null;
   isLoading: boolean;
   answer: string;
   onAnswerChange: (value: string) => void;
@@ -28,7 +26,7 @@ const Writing = ({
         <>
           <div className="prose mb-6 max-w-none text-left">
             <p className="whitespace-pre-wrap leading-relaxed text-gray-700">
-              {data.writing.Directions}
+              {data.Directions}
             </p>
           </div>
           <div className="mt-8">

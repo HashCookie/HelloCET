@@ -4,12 +4,10 @@ import ExamSection from "@/app/components/Common/ExamSection";
 import SectionA from "@/app/components/Exam/ReadingComprehension/SectionA";
 import SectionB from "@/app/components/Exam/ReadingComprehension/SectionB";
 import SectionC from "@/app/components/Exam/ReadingComprehension/SectionC";
-import type { ExamPaper } from "@/app/types/exam";
-
-type ReadingData = Pick<ExamPaper, "readingComprehension">;
+import type { ReadingComprehension } from "@/app/types/exam";
 
 interface ReadingProps {
-  data: ReadingData | null;
+  data: ReadingComprehension | null;
   isLoading: boolean;
   answers: Record<number, string>;
   onAnswerChange: (answers: Record<number, string>) => void;
@@ -50,30 +48,30 @@ const ReadingComprehension = ({
 
   return (
     <ExamSection title="Part III Reading Comprehension" isLoading={isLoading}>
-      {data?.readingComprehension && (
+      {data && (
         <>
           <SectionA
-            passages={data.readingComprehension.sectionA.passages}
-            options={data.readingComprehension.sectionA.options}
+            passages={data.sectionA.passages}
+            options={data.sectionA.options}
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
             referenceAnswers={referenceAnswers?.sectionA}
           />
           <SectionB
-            passageTitle={data.readingComprehension.sectionB.passageTitle}
-            passages={data.readingComprehension.sectionB.passages}
-            questions={data.readingComprehension.sectionB.questions}
+            passageTitle={data.sectionB.passageTitle}
+            passages={data.sectionB.passages}
+            questions={data.sectionB.questions}
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}
             referenceAnswers={referenceAnswers?.sectionB}
           />
           <SectionC
-            passagesOne={data.readingComprehension.sectionC.passagesOne}
-            questionsOne={data.readingComprehension.sectionC.questionsOne}
-            passagesTwo={data.readingComprehension.sectionC.passagesTwo}
-            questionsTwo={data.readingComprehension.sectionC.questionsTwo}
+            passagesOne={data.sectionC.passagesOne}
+            questionsOne={data.sectionC.questionsOne}
+            passagesTwo={data.sectionC.passagesTwo}
+            questionsTwo={data.sectionC.questionsTwo}
             answers={answers}
             onAnswerChange={handleAnswerChange}
             readOnly={readOnly}

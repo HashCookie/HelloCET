@@ -15,35 +15,39 @@ export function useExamData<T>(
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    async function fetchData() {
-      if (!year || !month || !setCount) {
-        setData(null);
-        setError(null);
-        setIsLoading(false);
-        return;
-      }
+    if (!year || !month || !setCount) {
+      setData(null);
+      setError(null);
+      setIsLoading(false);
+      return;
+    }
 
+    const fetchData = async () => {
       try {
         const storedState = await examStorage.getState();
-        if (
+        const isNewExam =
           storedState?.year !== year ||
           storedState?.month !== month ||
-          storedState?.setCount !== setCount
-        ) {
+          storedState?.setCount !== setCount;
+
+        if (isNewExam) {
           await examStorage.clearExamData();
         }
 
-        setIsLoading(true);
         const response = await fetch(
           `/api/examData?type=${examType}&field=${field}&year=${year}&month=${month}&setCount=${setCount}`
         );
 
         if (!response.ok) {
-          throw new Error("获取数据失败");
+          throw new Error(
+            response.status === 404
+              ? `未找到${year}年${month}月第${setCount}套试卷`
+              : "获取数据失败"
+          );
         }
 
         const result = await response.json();
-        setData(result);
+        setData(result[field]);
         setError(null);
       } catch (err) {
         setError(err instanceof Error ? err.message : "未知错误");
@@ -51,7 +55,7 @@ export function useExamData<T>(
       } finally {
         setIsLoading(false);
       }
-    }
+    };
 
     fetchData();
   }, [field, year, month, setCount, examType]);

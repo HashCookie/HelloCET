@@ -1,12 +1,10 @@
 "use client";
 
 import ExamSection from "@/app/components/Common/ExamSection";
-import type { ExamPaper } from "@/app/types/exam";
-
-type TranslationData = Pick<ExamPaper, "translation">;
+import type { Translation } from "@/app/types/exam";
 
 interface TranslationProps {
-  data: TranslationData | null;
+  data: Translation | null;
   isLoading: boolean;
   answer: string;
   onAnswerChange: (value: string) => void;
@@ -34,7 +32,7 @@ const Translation = ({
                 Answer Sheet 2.
               </h3>
               <p className="whitespace-pre-wrap leading-relaxed text-gray-700">
-                {data.translation.ChinesePassage}
+                {data.ChinesePassage}
               </p>
             </div>
           </div>

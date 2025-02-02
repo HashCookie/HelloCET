@@ -1,0 +1,447 @@
+{
+  "_id": "66c3004a3420b0dd9f456eb1",
+  "year": 2020,
+  "month": 6,
+  "set": 1,
+  "writing": {
+    "Directions": "IFor this part, you are allowed 30 minutes to write on the topic Changes in the Way of Education. You should write at least 120 words but no more than 180 words."
+  },
+  "listeningComprehension": [
+    {
+      "number": 1,
+      "options": {
+        "A": "Ship traffic in the Atlantic.",
+        "B": "Warm currents in the ocean.",
+        "C": "Exhaust from cars in Europe.",
+        "D": "Particles emitted by power plants."
+      }
+    },
+    {
+      "number": 2,
+      "options": {
+        "A": "They need to be taken seriously.",
+        "B": "They have a huge effect on fishery.",
+        "C": "They might be causing trouble to air flights.",
+        "D": "They may be affecting the world's climate."
+      }
+    },
+    {
+      "number": 3,
+      "options": {
+        "A": "To appeal for higher wages.",
+        "B": "To demand better health care.",
+        "C": "To call for a permanent security guard.",
+        "D": "To dismiss the bad-tempered supervisor."
+      }
+    },
+    {
+      "number": 4,
+      "options": {
+        "A": "It had already taken strong action.",
+        "B": "It would put customers' needs first.",
+        "C": "It would take their appeal seriously.",
+        "D": "It was seeking help from the police."
+      }
+    },
+    {
+      "number": 5,
+      "options": {
+        "A": "The road was flooded.",
+        "B": "The road was blocked.",
+        "C": "The road was frozen with snow.",
+        "D": "The road was covered with spilled gas."
+      }
+    },
+    {
+      "number": 6,
+      "options": {
+        "A": "A truck plunged into a pool of liquid chocolate.",
+        "B": "The heavy snow made driving very difficult.",
+        "C": "The truck driver dozed off while driving.",
+        "D": "A truck hit a barrier and overturned."
+      }
+    },
+    {
+      "number": 7,
+      "options": {
+        "A": "It was a long time before the cleanup was finished.",
+        "B": "It was a hard task to remove the spilled substance.",
+        "C": "It was fortunate that no passenger got injured.",
+        "D": "It was difficult to contact the manufacturer."
+      }
+    },
+    {
+      "number": 8,
+      "options": {
+        "A": "She wanted to save for a new phone.",
+        "B": "She found it much safer to use cash.",
+        "C": "She could enjoy discounts with cash.",
+        "D": "She had been cheated using phone apps."
+      }
+    },
+    {
+      "number": 9,
+      "options": {
+        "A": "They can save a lot more time and trouble.",
+        "B": "They find it less difficult to make purchases.",
+        "C": "They derive greater pleasure from buying things.",
+        "D": "They are less aware of the value of their money."
+      }
+    },
+    {
+      "number": 10,
+      "options": {
+        "A": "More valuable items.",
+        "B": "More non-essential things.",
+        "C": "Everyday necessities.",
+        "D": "Electronic devices."
+      }
+    },
+    {
+      "number": 11,
+      "options": {
+        "A": "It can improve shopping efficiency.",
+        "B": "It is altering the way of shopping.",
+        "C": "It may lead to excessive spending.",
+        "D": "It appeals more to younger people."
+      }
+    },
+    {
+      "number": 12,
+      "options": {
+        "A": "He wanted to order some wooden furniture.",
+        "B": "He had to change the furniture delivery time.",
+        "C": "He had a problem with the furniture delivered.",
+        "D": "He wanted the furniture store to give him a refund."
+      }
+    },
+    {
+      "number": 13,
+      "options": {
+        "A": "Send the furniture back to the store.",
+        "B": "Describe the furniture he received.",
+        "C": "Collect the furniture he ordered.",
+        "D": "Buy another brand of furniture."
+      }
+    },
+    {
+      "number": 14,
+      "options": {
+        "A": "Correct their mistake.",
+        "B": "Improve their service.",
+        "C": "Apologize to his wife.",
+        "D": "Give the money back."
+      }
+    },
+    {
+      "number": 15,
+      "options": {
+        "A": "She recommended a new style.",
+        "B": "She offered some gift to the man.",
+        "C": "She apologized to the man once more.",
+        "D": "She checked all the items with the man."
+      }
+    },
+    {
+      "number": 16,
+      "options": {
+        "A": "Reading books of wisdom.",
+        "B": "Tidying up one's home.",
+        "C": "Sharing with others.",
+        "D": "Donating to charity."
+      }
+    },
+    {
+      "number": 17,
+      "options": {
+        "A": "Things that make one happy.",
+        "B": "Things that are becoming rare.",
+        "C": "Things that occupy little space.",
+        "D": "Things that cost a lot of money."
+      }
+    },
+    {
+      "number": 18,
+      "options": {
+        "A": "It joined the city's clean-up campaign.",
+        "B": "It sold as many as fifty boxes of books.",
+        "C": "It received an incredibly large number of donated books.",
+        "D": "It did little business because of the unusual cold weather."
+      }
+    },
+    {
+      "number": 19,
+      "options": {
+        "A": "Give free meals to the homeless.",
+        "B": "Provide shelter for the homeless.",
+        "C": "Help the vulnerable to cook lunches.",
+        "D": "Call for change in the local government."
+      }
+    },
+    {
+      "number": 20,
+      "options": {
+        "A": "Strengthen co-operation.",
+        "B": "Promote understanding.",
+        "C": "Win national support.",
+        "D": "Follow his example."
+      }
+    },
+    {
+      "number": 21,
+      "options": {
+        "A": "Spreading news of his deeds.",
+        "B": "Writing him thank-you notes.",
+        "C": "Following the example he sets.",
+        "D": "Sending him hand-made bags."
+      }
+    },
+    {
+      "number": 22,
+      "options": {
+        "A": "To solve word search puzzles.",
+        "B": "To send smartphone messages.",
+        "C": "To test their eyesight using a phone app.",
+        "D": "To install some audio equipment in a lab."
+      }
+    },
+    {
+      "number": 23,
+      "options": {
+        "A": "They could not go on until the ringing stopped.",
+        "B": "They could no longer concentrate on their task.",
+        "C": "They grabbed the phone and called back right away.",
+        "D": "They asked their experimenter to hang up the phone."
+      }
+    },
+    {
+      "number": 24,
+      "options": {
+        "A": "A rise in emotional problems.",
+        "B": "A decline in sports activities.",
+        "C": "A reduction in the amount of sleep.",
+        "D": "A decline in academic performance."
+      }
+    },
+    {
+      "number": 25,
+      "options": {
+        "A": "Protect the eyesight of the younger generation.",
+        "B": "Take effective measures to raise productivity.",
+        "C": "Realize the disruptive effects of technology.",
+        "D": "Ensure they have sufficient sleep every day."
+      }
+    }
+  ],
+  "readingComprehension": {
+    "sectionA": {
+      "passages": [
+        "It can be seen from the cheapest budget airlines to the world's largest carriers: Airlines across the globe 26 various shades of blue in their cabin seats, and it is no 27 . There does appear to be some psychology behind it. Blue is 28 with the positive qualities of trust, efficiency, quietness, coolness, reflection and calm.",
+        "Nigel Goode is a leading aviation designer who works at a company which has been delivering aircraft interiors for airlines for 30 years. “Our job as designers is to reinforce the airline's brand and make it more 29 ,” he says. “But our primary concern is to deliver an interior that 30 comfort to create a pleasant environment.”",
+        "“It's all about making the traveling experience less 31 and blue is said to induce a feeling of calm. While some of the budget airlines might use brighter, bolder shades, most others go with softened tones. The 32 aim is to create a home-like relaxing feel, so airlines tend to use soft colors that feel domestic, 33 and earthy for that reason.”",
+        "It's also a trend that emerged decades ago and has 34 stuck. “Blue became the color of choice because it's a conservative, agreeable, corporate shade that 35 being trustworthy and safe. That's why you see it used in all of the older airlines like British Airways,” Nigel Goode added."
+      ],
+      "options": {
+        "A": "associated",
+        "B": "coincidence",
+        "C": "determined",
+        "D": "drastically",
+        "E": "enormous",
+        "F": "imitate",
+        "G": "indication",
+        "H": "integrate",
+        "I": "maximizes",
+        "J": "natural",
+        "K": "principal",
+        "L": "recognizable",
+        "M": "simply",
+        "N": "stressful",
+        "O": "symbolizes"
+      }
+    },
+    "sectionB": {
+      "passageTitle": "Why Are Asian Americans Missing from Our Textbooks?",
+      "passages": [
+        "A) I still remember my fourth-grade social studies project. Our class was studying the Gold Rush, something all California fourth-graders learned. I was excited because I had asked to research Chinese immigrants during that era. Growing up in the San Francisco Bay Area, I had always known that “San Francisco” translated to “Gold Mountain” in Chinese. The name had stuck ever since Chinese immigrants arrived on the shores of Northern California in the1850s, eager to try their luck in the gold mines. Now I'd have the chance to learn about them.",
+        "B) My excitement was short-lived. I remember heading to the library with my class and asking for help. I remember the librarian's hesitation. She finally led me past row after row of books, to a corner of the library where she pulled an oversized book off the shelf. She checked the index and turned over to a page about early Chinese immigrants in California. That was all there was in my entire school library in San Francisco, home of the nation's first Chinatown. That was it.",
+        "C) I finally had the opportunity to learn about Asian Americans like myself, and how we became part of the fabric of the United States when I took an introductory class on Asian-American history in college. The class was a revelation. I realized how much had been missing in my textbooks as I grew up. My identity had been shaped by years of never reading, seeing, hearing, or learning about people who had a similar background as me. Why, I wondered, weren't the stories, histories, and contributions of Asian Americans taught in K-12 schools, especially in the elementary schools? Why are they still not taught?",
+        "D) Our students—Asian, Latino, African American, Native American, and, yes, white—stand to gain from a multicultural curriculum. Students of color are more engaged and earn better grades when they see themselves in their studies. Research has also found that white students benefit by being challenged and exposed to new perspectives.",
+        "E) For decades, activists have called for schools to offer anti-racism or multicultural curricula. Yet a traditional American K-12 curriculum continues to be taught from a Eurocentric point of view. Being multicultural often falls back on weaving children of color into photographs, or creating a few supporting characters that happen to be ethnic—an improvement, but superficial nonetheless. Elementary school classrooms celebrate cultural holidays—Lunar New Year! Red envelopes! Lion dancers!—but they're quick to gloss over (掩饰) the challenges and injustices that Asian Americans have faced. Most students don't, for example, learn about the laws that for years excluded Asians from immigrating to the U.S. They don't hear the narratives of how and why Southeast Asian refugees (难民) had to rebuild their lives here.",
+        "F) Research into what students learn in school has found just how much is missing in their studies. In an analysis, Christine Sleeter, a professor in the College of Professional Studies at California State University, Monterey Bay, reviewed California's history and social studies framework, the curriculum determined by state educators that influences what is taught in K-12 classrooms. Of the nearly 100 Americans recommended to be studied, 77% were white, 18% African American, 4% Native American, and 1% Latino. None were Asian American.",
+        "G) Worse, when Asian Americans do make an appearance in lesson books, it is often laced with problems. “There hasn't been much progress,” says Nicholas Hartlep, an assistant professor at Metropolitan State University. His 2016 study of K-12 social studies textbooks and teacher manuals found that Asian Americans were poorly represented at best, and subject to racist caricatures (拙劣的模仿) at worst. The wide diversity of Asian Americans was overlooked; there was very little mention of South Asians or Pacific Islanders, for example. And chances were, in the images, Asian Americans appeared in stereotypical (模式化的) roles, such as engineers.",
+        "H) Teachers with a multicultural background or training could perhaps overcome such curriculum challenges, but they're few and far between. In California, 65% of K-12 teachers are white, compared with a student population that is 75% students of color. Nationwide, the gap is even greater. It isn't a requirement that teachers share the same racial or ethnic background as their students, but the imbalance poses challenges, from the potential for unconscious bias to a lack of knowledge or comfort in discussing race and culture.",
+        "I) How race and ethnicity is taught is crucial, says Allyson Tintiangco-Cubales, an Asian-American studies professor at San Francisco State University. She added that it's not so much about the teacher's background, but about training. “You can have a great curriculum but if you don't have teachers dedicated (专注于) to teaching it well,” she says, “it won't work as well as you want it to.”",
+        "J) Some teachers are finding ways to expose students to Asian-American issues—if not during school hours, then outside of them. This summer, Wilson Wong will lead a class of rising fifth-graders at a day camp dedicated to Chinese culture and the Chinese-American community in Oakland, California. His students, for instance, will learn about how Chinese immigrants built the railroads in California, and even have a chance to “experience” it themselves: They will race each other to build a railroad model on the playground, with some students being forced to “work” longer and faster and at cheaper wages. Wong, a middle school teacher during the school year, hopes he's exposing the students to how Chinese Americans contributed to the U.S., something that he didn't get as a student growing up in the San Francisco Bay Area. “I planted the seeds early,” he says. “That's what I'm hoping for.”",
+        "K) And, despite setbacks, the tide may finally be turning. California legislators passed a bill last year that will bring ethnic studies to all its public high schools. Some school districts, including San Francisco and Los Angeles, already offer ethnic studies at its high schools. High schools in Portland, Chicago, and elsewhere have either implemented or will soon introduce ethnic studies classes. And, as more high schools begin teaching it, the door could crack open for middle schools, and, perhaps inevitably, elementary schools, to incorporate a truly more multicultural curriculum. Doing so will send an important message to the nation's youngest citizens: Whatever your race or ethnicity, you matter. Your history matters. Your story matters."
+      ],
+      "questions": [
+        {
+          "number": 36,
+          "statement": "While cultural holidays are celebrated, the injustices experienced by Asian Americans are not exposed in elementary school classrooms."
+        },
+        {
+          "number": 37,
+          "statement": "Little information can be found about Chinese immigrants in the author's school library."
+        },
+        {
+          "number": 38,
+          "statement": "A middle school teacher is making a great effort to help students learn about the contributions made by Chinese immigrants to America."
+        },
+        {
+          "number": 39,
+          "statement": "No Asian Americans were included in the list of historical figures recommended for study in K-12 classrooms."
+        },
+        {
+          "number": 40,
+          "statement": "There is an obvious lack of teachers with a multicultural perspective to meet the curriculum challenges in America."
+        },
+        {
+          "number": 41,
+          "statement": "Students of ethnic backgrounds learn better from a multicultural curriculum."
+        },
+        {
+          "number": 42,
+          "statement": "Now more and more high schools in America are including ethnic studies in their curriculums."
+        },
+        {
+          "number": 43,
+          "statement": "A study of some K-12 textbooks and teacher manuals showed that Asian Americans were inadequately and improperly represented in them."
+        },
+        {
+          "number": 44,
+          "statement": "When taking a class in college, the author realized that a lot of information about Asian Americans was left out of the textbooks he studied."
+        },
+        {
+          "number": 45,
+          "statement": "An Asian-American studies professor placed greater emphasis on teacher training than on teachers' background."
+        }
+      ]
+    },
+    "sectionC": {
+      "passagesOne": [
+        "Americans spend billions of dollars each year trying to change their weight with diets, gym memberships and plastic surgery.",
+        "Trying to live up to the images of “perfect” models and movie heroes has a dark side: anxiety, depression, as well as unhealthy strategies for weight loss or muscle gain. It also has a financial cost. Having an eating disorder boosts annual health care costs by nearly US$2,000 per person.",
+        "Why is there both external and internal pressure to look “perfect”? One reason is that society rewards people who are thin and healthy-looking. Researchers have shown that body mass index is related to wages and income. Especially for women, there is a clear penalty at work for being overweight or obese. Some studies have also found an impact for men, though a less noticeable one.",
+        "While the research literature is clear that labor market success is partly based on how employers and customers perceive your body image, no one had explored the other side of the question. Does a person's own perception of body image matter to earnings and other indicators of success in the workplace?",
+        "Our recently published study answered this question by tracking a large national random sample of Americans over a critical time period when bodies change from teenage shape into adult form and when people build their identities.",
+        "As in other research, women in our sample tend to over-perceive their weight—they think they're heavier than they are—while men tend to under-perceive theirs.",
+        "We found no relationship between the average person's self-perception of weight and labor market outcomes, although self-perceived weight can influence self-esteem (自尊心), mental health and health behaviors.",
+        "While the continued gender penalty in the labor market is frustrating, our finding that misperceived weight does not harm workers is more heartening.",
+        "Since employers' perception of weight is what matters in the labor market, changing discrimination laws to include body type as a category would help. Michigan is the only state that prohibits discrimination on the basis of weight and height. We believe expanding such protections would make the labor market more fair and efficient."
+      ],
+      "questionsOne": [
+        {
+          "number": 46,
+          "statement": "What does the author say may have an adverse impact on people?",
+          "options": {
+            "A": "Undergoing plastic surgeries in pursuit of beauty.",
+            "B": "Imitating the lifestyles of heroes and role models.",
+            "C": "Striving to achieve perfection regardless of financial cost.",
+            "D": "Attempting to meet society's expectation of appearance."
+          }
+        },
+        {
+          "number": 47,
+          "statement": "What have researchers found out about people's earn-ings?",
+          "options": {
+            "A": "They are closely related to people's social status.",
+            "B": "They have to do with people's body weight and shape.",
+            "C": "They seem to matter much less to men than to women.",
+            "D": "They may not be equal to people's contributions."
+          }
+        },
+        {
+          "number": 48,
+          "statement": "What does the author's recent study focus on?",
+          "options": {
+            "A": "Previous literature on indicators of competitiveness in the workplace.",
+            "B": "Traits that matter most in one's pursuit of success in the labor market.",
+            "C": "Whether self-perception of body image impacts one's workplace success.",
+            "D": "How bosses' perception of body image impacts employees' advancement."
+          }
+        },
+        {
+          "number": 49,
+          "statement": "What is the finding of the author's recent research?",
+          "options": {
+            "A": "Being overweight actually does not do much harm to the overall well-being of employees.",
+            "B": "People are not adversely affected in the workplace by false self-perception of body weight.",
+            "C": "Self-esteem helps to combat gender inequality in the workplace.",
+            "D": "Gender inequality continues to frustrate a lot of female employees."
+          }
+        },
+        {
+          "number": 50,
+          "statement": "What does the author think would help improve the situation in the labor market?",
+          "options": {
+            "A": "Banning discrimination on the basis of employees' body image.",
+            "B": "Expanding protection of women against gender discrimination.",
+            "C": "Helping employees change their own perception of beauty.",
+            "D": "Excluding body shape as a category in the labor contract."
+          }
+        }
+      ],
+      "passagesTwo": [
+        "The work-life balance is dead. By this, I'm not advocating that you should give up your pursuit of having a fulfilling career and a thriving personal life, and I'm definitely not saying that you have to give up one to have the other. I also acknowledge that we have a work-life problem, but I'm arguing that the concept of balance has never been helpful, because it's too limiting. You see, our language makes a difference, and how we refer to things matters because it affects our thinking and therefore our actions.",
+        "At the minimum, most of us work because we want to be able to support ourselves, our families, and the people around us. In the ideal world, we're all doing work that we're proud of and that provides meaning and purpose to us. But even if your job doesn't give you shivers of joy each new day, working is a part of what each of us does and the contribution we make to society. When you separate work and life, it's a little bit harder to make that connection. But when you think of work as part of a full life and a complete experience, it becomes easier to see that success in one aspect often supports another.",
+        "Losing your balance and falling isn't pleasant. A goal to balance suggests that things could quickly get off balance, and that causes terrible outcomes. It's more constructive to think of solutions that continue to evolve over shifts in life and work. Rather than falling or failing, you may have good days or better days or not-so-good days. These variations are normal, and it's more useful to think of life as something that is ever evolving and changing, rather than a high-risk enterprise where things could go wrong with one misstep.",
+        "How we talk to ourselves matters, and how we talk about issues makes a difference. Let's bury “work-life balance” and think bigger and better about work-life fulfillment to do a little less balancing and a lot more living."
+      ],
+      "questionsTwo": [
+        {
+          "number": 51,
+          "statement": "What does the author suggest by saying “The work-life balance is dead”?",
+          "options": {
+            "A": "The hope of achieving a thriving life is impossible to realize.",
+            "B": "The pursuit of a fulfilling career involves personal sacrifice.",
+            "C": "The imbalance between work and life simply doesn't exist anymore.",
+            "D": "The concept of work-life balance contributes little to a fulfilling life."
+          }
+        },
+        {
+          "number": 52,
+          "statement": "What does the author say about our use of language?",
+          "options": {
+            "A": "It impacts how we think and behave.",
+            "B": "It changes with the passage of time.",
+            "C": "It reflects how we communicate.",
+            "D": "It differs from person to person."
+          }
+        },
+        {
+          "number": 53,
+          "statement": "What does the author say we do in an ideal world?",
+          "options": {
+            "A": "We do work that betters the lives of our families and friends.",
+            "B": "We do work that gives us bursts of joy each new day.",
+            "C": "We do meaningful work that contributes to society.",
+            "D": "We do demanding work that brings our capacity into full play."
+          }
+        },
+        {
+          "number": 54,
+          "statement": "What does the author say about life?",
+          "options": {
+            "A": "It is cyclical.",
+            "B": "It is dynamic.",
+            "C": "It is fulfilling.",
+            "D": "It is risky."
+          }
+        },
+        {
+          "number": 55,
+          "statement": "What does the author advise us to do?",
+          "options": {
+            "A": "Make life as simple as possible.",
+            "B": "Talk about balance in simpler terms.",
+            "C": "Balance life and work in a new way.",
+            "D": "Strive for a more fulfilling life."
+          }
+        }
+      ]
+    }
+  },
+  "translation": {
+    "ChinesePassage": "你如果到北京旅游，必须做两件事：一件是登长城，另一件是吃北京烤鸭。闻名遐迩的北京烤鸭曾仅限于宫廷，而现在北京数百家餐厅均有供应。北京烤鸭源于600年前的明代。来自全国各地的厨师被挑选出来到京城为皇帝做饭。人们认为在皇宫做饭是一种莫大的荣誉，只有厨艺出众者才能获得这份工作。事实上，正是这些宫廷厨师使北京烤鸭的烹饪艺术日臻完善。"
+  }
+}

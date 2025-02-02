@@ -6,11 +6,7 @@ import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import ListeningComprehension from "@/app/components/Exam/ListeningComprehension/ListeningComprehension";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
 import { handleListeningSubmit } from "@/app/utils/api/submitHandlers";
-import type { ExamPaper, ExamPaperBase } from "@/app/types/exam";
-
-interface ExamData extends ExamPaperBase {
-  listeningComprehension: ExamPaper["listeningComprehension"];
-}
+import type { ListeningQuestion } from "@/app/types/exam";
 
 export default function PracticeListening() {
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -19,9 +15,12 @@ export default function PracticeListening() {
   const pathname = usePathname();
   const examType = pathname.includes("cet4") ? "CET4" : "CET6";
 
-  const { data, isLoading } = useRandomExamData<ExamData>(
-    "listeningComprehension"
-  );
+  const { data: examData, isLoading } = useRandomExamData<{
+    listeningComprehension: ListeningQuestion[];
+    year: number;
+    month: number;
+    setCount: number;
+  }>("listeningComprehension");
 
   if (isLoading) {
     return <LoadingSpinner />;
@@ -38,9 +37,9 @@ export default function PracticeListening() {
       const result = await handleListeningSubmit(
         answers,
         examType,
-        data?.year || 0,
-        data?.month || 0,
-        data?.setCount || 1
+        examData?.year || 0,
+        examData?.month || 0,
+        examData?.setCount || 1
       );
 
       if (result.success && result.data?.score !== undefined) {
@@ -58,23 +57,22 @@ export default function PracticeListening() {
 
   return (
     <>
-      {data?.listeningComprehension && (
+      {examData && (
         <>
           <div className="mb-6 text-sm text-gray-500">
             <span className="font-semibold">试卷来源：</span>
-            {examType} {data.year}年{data.month}月第{data.setCount}套
+            {examType} {examData.year}年{examData.month}月第{examData.setCount}
+            套
           </div>
           <ListeningComprehension
-            data={{
-              listeningComprehension: data.listeningComprehension,
-            }}
+            data={examData.listeningComprehension}
             isLoading={isLoading}
             answers={answers}
             onAnswerChange={setAnswers}
             examInfo={{
-              year: data.year,
-              month: data.month,
-              setCount: data.setCount,
+              year: examData.year,
+              month: examData.month,
+              setCount: examData.setCount,
               type: examType,
             }}
           />
