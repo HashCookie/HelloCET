@@ -1,0 +1,266 @@
+{
+  "_id": "672337619be2635c70cfc520",
+  "year": 2017,
+  "month": 12,
+  "setCount": 3,
+  "writingAnswer": {
+    "referenceEssay": "**The Importance of Mutual Respect in Teacher-Student Relationships**\n\nThe relationship between teachers and students is the cornerstone of effective education. To foster a conducive learning environment, mutual respect is paramount. Teachers should treat students as individuals with unique perspectives, encouraging open dialogue and active participation. This approach not only enhances understanding but also builds trust, which is essential for students to feel comfortable expressing their thoughts and asking questions.\n\nOn the other hand, students must respect their teachers' expertise and experience. This respect should manifest in attentive listening, timely completion of assignments, and a willingness to learn from constructive criticism. By valuing the guidance provided, students can maximize their educational journey.\n\nIn conclusion, a harmonious teacher-student relationship hinges on mutual respect. When both parties acknowledge and honor each other's roles, the educational experience becomes more enriching and fulfilling for everyone involved."
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "C"
+    },
+    {
+      "number": 2,
+      "answer": "D"
+    },
+    {
+      "number": 3,
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "answer": "C"
+    },
+    {
+      "number": 5,
+      "answer": "C"
+    },
+    {
+      "number": 6,
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "answer": "D"
+    },
+    {
+      "number": 8,
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "answer": "C"
+    },
+    {
+      "number": 10,
+      "answer": "A"
+    },
+    {
+      "number": 11,
+      "answer": "A"
+    },
+    {
+      "number": 12,
+      "answer": "D"
+    },
+    {
+      "number": 13,
+      "answer": "A"
+    },
+    {
+      "number": 14,
+      "answer": "A"
+    },
+    {
+      "number": 15,
+      "answer": "C"
+    },
+    {
+      "number": 16,
+      "answer": "A"
+    },
+    {
+      "number": 17,
+      "answer": "D"
+    },
+    {
+      "number": 18,
+      "answer": "A"
+    },
+    {
+      "number": 19,
+      "answer": "A"
+    },
+    {
+      "number": 20,
+      "answer": "D"
+    },
+    {
+      "number": 21,
+      "answer": "B"
+    },
+    {
+      "number": 22,
+      "answer": "D"
+    },
+    {
+      "number": 23,
+      "answer": "B"
+    },
+    {
+      "number": 24,
+      "answer": "C"
+    },
+    {
+      "number": 25,
+      "answer": "A"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "I"
+      },
+      {
+        "number": 27,
+        "answer": "G"
+      },
+      {
+        "number": 28,
+        "answer": "D"
+      },
+      {
+        "number": 29,
+        "answer": "M"
+      },
+      {
+        "number": 30,
+        "answer": "A"
+      },
+      {
+        "number": 31,
+        "answer": "A"
+      },
+      {
+        "number": 32,
+        "answer": "G"
+      },
+      {
+        "number": 33,
+        "answer": "A"
+      },
+      {
+        "number": 34,
+        "answer": "H"
+      },
+      {
+        "number": 35,
+        "answer": "I"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "B",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "A",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "B",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "D",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "D",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "A",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "C",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "C",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "C",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "B",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "D",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "A",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "A",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "B",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "D",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "B",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "A",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "C",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "A",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "D",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "Mount Huashan is located in Huayin City, 120 kilometers from Xi'an. As part of the Qinling Mountains, Huashan not only divides southern Shaanxi from northern Shaanxi but also separates South China from North China. Unlike Mount Tai, which was frequently visited for worship in the past, Huashan was rarely frequented due to the extremely perilous paths leading up the mountain. However, those hoping for longevity often ascended the mountain, as it was abundant in medicinal herbs, particularly some rare ones. Since the installation of the cable car in the 1990s, the number of visitors has significantly increased."
+  }
+}

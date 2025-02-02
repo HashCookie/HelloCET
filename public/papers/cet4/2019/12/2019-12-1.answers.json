@@ -1,0 +1,266 @@
+{
+  "_id": "672337639be2635c70cfc52a",
+  "year": 2019,
+  "month": 12,
+  "setCount": 1,
+  "writingAnswer": {
+    "referenceEssay": "Dear [Friend's Name],\n\nI hope this letter finds you well. I am delighted to hear about your interest in teaching English in China. Given your passion for culture and education, I would highly recommend you consider the city of Chengdu.\n\nChengdu, the capital of Sichuan Province, is a vibrant city that offers a unique blend of modernity and tradition. Known for its laid-back lifestyle and famous for the Giant Panda Breeding Research Base, Chengdu provides a rich cultural experience. The city is also home to numerous prestigious universities and language schools, making it an ideal place for teaching English.\n\nMoreover, the local cuisine, particularly the spicy Sichuan dishes, is a gastronomic delight that you will thoroughly enjoy. The cost of living is relatively low compared to other major cities, allowing you to live comfortably while saving money.\n\nIn conclusion, I believe Chengdu offers an excellent balance of professional opportunities and a fulfilling lifestyle. I am confident you will find it to be a rewarding experience.\n\nBest regards,\n\n[Your Name]"
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "D"
+    },
+    {
+      "number": 2,
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "answer": "C"
+    },
+    {
+      "number": 5,
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "answer": "C"
+    },
+    {
+      "number": 7,
+      "answer": "D"
+    },
+    {
+      "number": 8,
+      "answer": "B"
+    },
+    {
+      "number": 9,
+      "answer": "B"
+    },
+    {
+      "number": 10,
+      "answer": "A"
+    },
+    {
+      "number": 11,
+      "answer": "C"
+    },
+    {
+      "number": 12,
+      "answer": "B"
+    },
+    {
+      "number": 13,
+      "answer": "D"
+    },
+    {
+      "number": 14,
+      "answer": "A"
+    },
+    {
+      "number": 15,
+      "answer": "C"
+    },
+    {
+      "number": 16,
+      "answer": "B"
+    },
+    {
+      "number": 17,
+      "answer": "A"
+    },
+    {
+      "number": 18,
+      "answer": "C"
+    },
+    {
+      "number": 19,
+      "answer": "D"
+    },
+    {
+      "number": 20,
+      "answer": "C"
+    },
+    {
+      "number": 21,
+      "answer": "C"
+    },
+    {
+      "number": 22,
+      "answer": "A"
+    },
+    {
+      "number": 23,
+      "answer": "A"
+    },
+    {
+      "number": 24,
+      "answer": "B"
+    },
+    {
+      "number": 25,
+      "answer": "C"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "G"
+      },
+      {
+        "number": 27,
+        "answer": "F"
+      },
+      {
+        "number": 28,
+        "answer": "J"
+      },
+      {
+        "number": 29,
+        "answer": "I"
+      },
+      {
+        "number": 30,
+        "answer": "D"
+      },
+      {
+        "number": 31,
+        "answer": "N"
+      },
+      {
+        "number": 32,
+        "answer": "G"
+      },
+      {
+        "number": 33,
+        "answer": "K"
+      },
+      {
+        "number": 34,
+        "answer": "F"
+      },
+      {
+        "number": 35,
+        "answer": "K"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "B",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "B",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "B",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "D",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "B",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "A",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "A",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "A",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "B",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "C",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "C",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "B",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "C",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "B",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "A",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "C",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "B",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "D",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "B",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "C",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "Chinese families place a high value on their children's education. Many parents believe that hard work is essential to ensure their children receive a quality education. They are not only willing to invest heavily in their children's education but also spend considerable time supervising their studies. Most parents aspire for their children to attend prestigious universities. Due to the reform and opening-up policies, an increasing number of parents are able to send their children abroad for studies or participate in international exchange programs to broaden their horizons. Through these efforts, they hope to foster the healthy growth of their children and contribute to the nation's development and prosperity."
+  }
+}

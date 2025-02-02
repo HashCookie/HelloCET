@@ -1,0 +1,266 @@
+{
+  "_id": "672337699be2635c70cfc549",
+  "year": 2017,
+  "month": 6,
+  "setCount": 1,
+  "writingAnswer": {
+    "referenceEssay": "**Ad: Sell Used College Course Books**\n\nAre you looking for affordable and reliable course books for your upcoming semester? Look no further! I am selling a collection of carefully used textbooks that have served me well during my time at the university. These books cover a variety of subjects, including advanced calculus, organic chemistry, and modern literature.\n\n**Books Available:**\n1. **Advanced Calculus** by James Stewart - Excellent condition, minimal highlighting, $25\n2. **Organic Chemistry** by John McMurry - Good condition, some notes in margins, $30\n3. **Modern Literature: An Introduction** by David Damrosch - Like new, no markings, $20\n\nAll books are in good to excellent condition, with only minor signs of use. Prices are negotiable, and I am open to reasonable offers. If you are interested, please contact me via email at [Your Email Address] or call me at [Your Phone Number]. Don’t miss this opportunity to get high-quality course materials at a fraction of the new price!\n\nThank you for your interest.\n\nBest regards,  \n[Your Name]"
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "answer": "D"
+    },
+    {
+      "number": 4,
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "answer": "D"
+    },
+    {
+      "number": 7,
+      "answer": "A"
+    },
+    {
+      "number": 8,
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "answer": "A"
+    },
+    {
+      "number": 10,
+      "answer": "B"
+    },
+    {
+      "number": 11,
+      "answer": "D"
+    },
+    {
+      "number": 12,
+      "answer": "D"
+    },
+    {
+      "number": 13,
+      "answer": "B"
+    },
+    {
+      "number": 14,
+      "answer": "A"
+    },
+    {
+      "number": 15,
+      "answer": "C"
+    },
+    {
+      "number": 16,
+      "answer": "D"
+    },
+    {
+      "number": 17,
+      "answer": "B"
+    },
+    {
+      "number": 18,
+      "answer": "C"
+    },
+    {
+      "number": 19,
+      "answer": "D"
+    },
+    {
+      "number": 20,
+      "answer": "C"
+    },
+    {
+      "number": 21,
+      "answer": "D"
+    },
+    {
+      "number": 22,
+      "answer": "B"
+    },
+    {
+      "number": 23,
+      "answer": "C"
+    },
+    {
+      "number": 24,
+      "answer": "B"
+    },
+    {
+      "number": 25,
+      "answer": "C"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "I"
+      },
+      {
+        "number": 27,
+        "answer": "H"
+      },
+      {
+        "number": 28,
+        "answer": "N"
+      },
+      {
+        "number": 29,
+        "answer": "C"
+      },
+      {
+        "number": 30,
+        "answer": "N"
+      },
+      {
+        "number": 31,
+        "answer": "E"
+      },
+      {
+        "number": 32,
+        "answer": "B"
+      },
+      {
+        "number": 33,
+        "answer": "L"
+      },
+      {
+        "number": 34,
+        "answer": "C"
+      },
+      {
+        "number": 35,
+        "answer": "D"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "A",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "A",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "A",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "C",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "A",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "A",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "A",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "D",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "C",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "A",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "B",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "D",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "C",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "B",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "A",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "C",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "D",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "B",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "B",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "C",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "The Pearl River is a major river system in South China, flowing through Guangzhou, and is the third longest river in China, after the Yangtze River and the Yellow River. The Pearl River Delta (Delta) is one of the most developed regions in China, covering an area of approximately 11,000 square kilometers. It is also one of the largest urban agglomerations in the world in terms of both area and population. The nine largest cities in the Pearl River Delta collectively have a population of over 57 million. Since China's reform and opening-up in the late 1970s, the Pearl River Delta has become one of the major economic regions and manufacturing hubs in China and the world."
+  }
+}

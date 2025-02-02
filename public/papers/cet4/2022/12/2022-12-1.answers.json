@@ -1,0 +1,266 @@
+{
+  "_id": "672337669be2635c70cfc53c",
+  "year": 2022,
+  "month": 12,
+  "setCount": 1,
+  "writingAnswer": {
+    "referenceEssay": "**The Importance of Physical Exercise in College Success**\n\nPhysical exercise plays a crucial role in achieving success at college. Firstly, regular physical activity helps to reduce stress, which is a common issue among students due to academic pressures and social demands. Engaging in exercises such as jogging, yoga, or team sports can significantly lower stress levels, leading to better mental health and improved concentration in studies.\n\nSecondly, physical exercise boosts energy levels and enhances cognitive function. When students are physically active, their bodies release endorphins, which are natural mood elevators. This not only keeps them energized throughout the day but also improves their ability to think clearly and retain information, which are essential for academic success.\n\nLastly, participating in physical activities fosters teamwork and social skills. Many college exercises, such as joining a sports team or attending group fitness classes, require collaboration and communication. These experiences help students develop important interpersonal skills that are valuable both in academic settings and future careers.\n\nIn conclusion, incorporating physical exercise into a college routine is not just about maintaining physical health; it is also a key factor in achieving academic success and personal growth."
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "answer": "C"
+    },
+    {
+      "number": 3,
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "answer": "D"
+    },
+    {
+      "number": 6,
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "answer": "C"
+    },
+    {
+      "number": 8,
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "answer": "D"
+    },
+    {
+      "number": 10,
+      "answer": "A"
+    },
+    {
+      "number": 11,
+      "answer": "C"
+    },
+    {
+      "number": 12,
+      "answer": "B"
+    },
+    {
+      "number": 13,
+      "answer": "C"
+    },
+    {
+      "number": 14,
+      "answer": "B"
+    },
+    {
+      "number": 15,
+      "answer": "D"
+    },
+    {
+      "number": 16,
+      "answer": "D"
+    },
+    {
+      "number": 17,
+      "answer": "B"
+    },
+    {
+      "number": 18,
+      "answer": "D"
+    },
+    {
+      "number": 19,
+      "answer": "B"
+    },
+    {
+      "number": 20,
+      "answer": "C"
+    },
+    {
+      "number": 21,
+      "answer": "B"
+    },
+    {
+      "number": 22,
+      "answer": "B"
+    },
+    {
+      "number": 23,
+      "answer": "D"
+    },
+    {
+      "number": 24,
+      "answer": "C"
+    },
+    {
+      "number": 25,
+      "answer": "C"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "K"
+      },
+      {
+        "number": 27,
+        "answer": "N"
+      },
+      {
+        "number": 28,
+        "answer": "B"
+      },
+      {
+        "number": 29,
+        "answer": "E"
+      },
+      {
+        "number": 30,
+        "answer": "O"
+      },
+      {
+        "number": 31,
+        "answer": "M"
+      },
+      {
+        "number": 32,
+        "answer": "K"
+      },
+      {
+        "number": 33,
+        "answer": "A"
+      },
+      {
+        "number": 34,
+        "answer": "O"
+      },
+      {
+        "number": 35,
+        "answer": "E"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "A",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "C",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "A",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "A",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "B",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "A",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "C",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "D",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "C",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "B",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "C",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "D",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "B",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "B",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "D",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "A",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "C",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "A",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "D",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "A",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "In the Chinese lunar calendar, the Start of Autumn (Lìqiū) signifies the end of summer and the beginning of autumn. The most immediate change brought by Lìqiū is the shift in weather, with temperatures gradually decreasing. When people observe leaves beginning to turn yellow and fall, they recognize that autumn has arrived, a phenomenon known as \"knowing autumn from a single falling leaf.\" However, the intense heat of summer does not completely dissipate at this time; high temperatures often persist for a while longer, a period referred to as the \"autumn tiger.\" Lìqiū holds significant importance for farmers, as it marks the rapid growth and maturation of various autumn crops, heralding the imminent harvest season."
+  }
+}

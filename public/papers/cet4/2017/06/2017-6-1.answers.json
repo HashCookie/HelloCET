@@ -1,0 +1,266 @@
+{
+  "_id": "672337629be2635c70cfc521",
+  "year": 2017,
+  "month": 6,
+  "setCount": 1,
+  "writingAnswer": {
+    "referenceEssay": "**Ad: Sell Used College Course Books**\n\nAre you a student looking for affordable, high-quality course books? Look no further! I am selling a selection of my used college textbooks, all in excellent condition. These books have been well-maintained and are perfect for anyone studying the following subjects:\n\n1. **Introduction to Psychology** by David G. Myers - This comprehensive guide covers all the fundamental concepts of psychology, including cognitive processes, social behavior, and developmental stages. **Price: $20**\n\n2. **Principles of Microeconomics** by N. Gregory Mankiw - Ideal for economics students, this book provides a clear and concise introduction to microeconomic theory, with numerous real-world examples. **Price: $25**\n\n3. **Calculus: Early Transcendentals** by James Stewart - A must-have for math enthusiasts, this book offers a thorough exploration of calculus, from basic derivatives to advanced integration techniques. **Price: $30**\n\nAll books are in excellent condition, with minimal wear and tear. Prices are negotiable, and I am open to reasonable offers. If you are interested, please contact me via email at [Your Email Address] or call me at [Your Phone Number]. Don’t miss this opportunity to get essential course materials at a fraction of the new book price!\n\nThank you for your interest.\n\nBest regards,\n[Your Name]"
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "D"
+    },
+    {
+      "number": 2,
+      "answer": "D"
+    },
+    {
+      "number": 3,
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "answer": "D"
+    },
+    {
+      "number": 6,
+      "answer": "D"
+    },
+    {
+      "number": 7,
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "answer": "B"
+    },
+    {
+      "number": 9,
+      "answer": "A"
+    },
+    {
+      "number": 10,
+      "answer": "B"
+    },
+    {
+      "number": 11,
+      "answer": "B"
+    },
+    {
+      "number": 12,
+      "answer": "B"
+    },
+    {
+      "number": 13,
+      "answer": "C"
+    },
+    {
+      "number": 14,
+      "answer": "B"
+    },
+    {
+      "number": 15,
+      "answer": "C"
+    },
+    {
+      "number": 16,
+      "answer": "D"
+    },
+    {
+      "number": 17,
+      "answer": "A"
+    },
+    {
+      "number": 18,
+      "answer": "A"
+    },
+    {
+      "number": 19,
+      "answer": "D"
+    },
+    {
+      "number": 20,
+      "answer": "A"
+    },
+    {
+      "number": 21,
+      "answer": "D"
+    },
+    {
+      "number": 22,
+      "answer": "B"
+    },
+    {
+      "number": 23,
+      "answer": "C"
+    },
+    {
+      "number": 24,
+      "answer": "D"
+    },
+    {
+      "number": 25,
+      "answer": "D"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "L"
+      },
+      {
+        "number": 27,
+        "answer": "N"
+      },
+      {
+        "number": 28,
+        "answer": "D"
+      },
+      {
+        "number": 29,
+        "answer": "C"
+      },
+      {
+        "number": 30,
+        "answer": "F"
+      },
+      {
+        "number": 31,
+        "answer": "J"
+      },
+      {
+        "number": 32,
+        "answer": "J"
+      },
+      {
+        "number": 33,
+        "answer": "M"
+      },
+      {
+        "number": 34,
+        "answer": "C"
+      },
+      {
+        "number": 35,
+        "answer": "C"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "A",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "B",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "D",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "D",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "A",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "D",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "C",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "A",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "B",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "D",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "C",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "D",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "A",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "C",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "A",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "A",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "B",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "C",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "B",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "D",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "The Pearl River is a major river system in South China, flowing through Guangzhou, and is the third longest river in China, ranking only after the Yangtze River and the Yellow River. The Pearl River Delta (Delta) is one of the most developed regions in China, with an area of approximately 11,000 square kilometers. It is also one of the largest urban agglomerations in the world in terms of both area and population. The nine largest cities in the Pearl River Delta collectively house over 57 million people. Since China's reform and opening-up in the late 1970s, the Pearl River Delta has emerged as one of the major economic regions and manufacturing hubs in both China and the world."
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "_id": "672337679be2635c70cfc544",
+  "year": 2022,
+  "month": 9,
+  "setCount": 3,
+  "writingAnswer": {
+    "referenceEssay": "Dear [Former Graduate's Name],\n\nI hope this letter finds you well. My name is [Your Name], and I am writing to you on behalf of our class at [School Name]. We are currently organizing an event aimed at providing our students with valuable insights into the professional world, and we would be honored to have you as a guest speaker.\n\nThe event, scheduled for [Date] at [Time] in the [Location], will focus on sharing job experiences and career advice. We believe that your unique journey and achievements will inspire and guide our students as they prepare for their own careers. Your firsthand accounts of navigating the job market, overcoming challenges, and achieving success will be invaluable to our audience.\n\nWe would be delighted if you could join us and share your experiences. Your presence would not only benefit our students but also strengthen the connection between our school and its alumni. Please let us know your availability at your earliest convenience.\n\nThank you for considering our invitation. We look forward to the possibility of your participation.\n\nWarm regards,\n\n[Your Name]  \nClass Organizer  \n[School Name]"
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "answer": "C"
+    },
+    {
+      "number": 3,
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "answer": "C"
+    },
+    {
+      "number": 6,
+      "answer": "A"
+    },
+    {
+      "number": 7,
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "answer": "D"
+    },
+    {
+      "number": 10,
+      "answer": "B"
+    },
+    {
+      "number": 11,
+      "answer": "A"
+    },
+    {
+      "number": 12,
+      "answer": "B"
+    },
+    {
+      "number": 13,
+      "answer": "D"
+    },
+    {
+      "number": 14,
+      "answer": "C"
+    },
+    {
+      "number": 15,
+      "answer": "A"
+    },
+    {
+      "number": 16,
+      "answer": "D"
+    },
+    {
+      "number": 17,
+      "answer": "C"
+    },
+    {
+      "number": 18,
+      "answer": "B"
+    },
+    {
+      "number": 19,
+      "answer": "A"
+    },
+    {
+      "number": 20,
+      "answer": "B"
+    },
+    {
+      "number": 21,
+      "answer": "A"
+    },
+    {
+      "number": 22,
+      "answer": "A"
+    },
+    {
+      "number": 23,
+      "answer": "C"
+    },
+    {
+      "number": 24,
+      "answer": "C"
+    },
+    {
+      "number": 25,
+      "answer": "C"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "F"
+      },
+      {
+        "number": 27,
+        "answer": "J"
+      },
+      {
+        "number": 28,
+        "answer": "M"
+      },
+      {
+        "number": 29,
+        "answer": "K"
+      },
+      {
+        "number": 30,
+        "answer": "C"
+      },
+      {
+        "number": 31,
+        "answer": "C"
+      },
+      {
+        "number": 32,
+        "answer": "B"
+      },
+      {
+        "number": 33,
+        "answer": "D"
+      },
+      {
+        "number": 34,
+        "answer": "M"
+      },
+      {
+        "number": 35,
+        "answer": "E"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "C",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "B",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "D",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "A",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "A",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "C",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "D",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "C",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "A",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "C",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "B",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "D",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "C",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "C",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "D",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "C",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "C",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "A",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "D",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "D",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "Chinese opera is a traditional art form in China, with its origins tracing back to the Tang Dynasty. One of the distinctive features that captivates audiences is its unique style of development and innovation. Nowadays, an increasing number of foreign audiences are also drawn to Chinese opera."
+  }
+}

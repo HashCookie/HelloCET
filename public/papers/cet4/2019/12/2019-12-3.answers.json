@@ -1,0 +1,266 @@
+{
+  "_id": "672337639be2635c70cfc52c",
+  "year": 2019,
+  "month": 12,
+  "setCount": 3,
+  "writingAnswer": {
+    "referenceEssay": "Dear [Friend's Name],\n\nI hope this letter finds you well. I am delighted to hear about your interest in studying in China. Given your passion for engineering and your desire to immerse yourself in a vibrant academic environment, I would highly recommend Tsinghua University.\n\nTsinghua University, located in Beijing, is one of the most prestigious institutions in China. It is renowned for its strong engineering programs, particularly in areas like civil engineering and computer science. The university boasts state-of-the-art facilities, a diverse student body, and a faculty composed of leading experts in their fields. Additionally, its location in Beijing offers you the opportunity to experience China's rich cultural heritage and participate in a dynamic urban lifestyle.\n\nThe university also provides extensive support for international students, including language courses and cultural orientation programs, which will help you adapt to life in China. Furthermore, Tsinghua's strong connections with global industries and research institutions will provide you with invaluable networking opportunities.\n\nI believe that Tsinghua University will not only meet but exceed your academic expectations. I am confident that your time there will be both enriching and rewarding.\n\nWishing you the best in your academic pursuits.\n\nWarm regards,  \n[Your Name]"
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "A"
+    },
+    {
+      "number": 2,
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "answer": "D"
+    },
+    {
+      "number": 8,
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "answer": "B"
+    },
+    {
+      "number": 10,
+      "answer": "A"
+    },
+    {
+      "number": 11,
+      "answer": "D"
+    },
+    {
+      "number": 12,
+      "answer": "B"
+    },
+    {
+      "number": 13,
+      "answer": "C"
+    },
+    {
+      "number": 14,
+      "answer": "D"
+    },
+    {
+      "number": 15,
+      "answer": "C"
+    },
+    {
+      "number": 16,
+      "answer": "C"
+    },
+    {
+      "number": 17,
+      "answer": "D"
+    },
+    {
+      "number": 18,
+      "answer": "B"
+    },
+    {
+      "number": 19,
+      "answer": "B"
+    },
+    {
+      "number": 20,
+      "answer": "D"
+    },
+    {
+      "number": 21,
+      "answer": "C"
+    },
+    {
+      "number": 22,
+      "answer": "A"
+    },
+    {
+      "number": 23,
+      "answer": "A"
+    },
+    {
+      "number": 24,
+      "answer": "B"
+    },
+    {
+      "number": 25,
+      "answer": "C"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "E"
+      },
+      {
+        "number": 27,
+        "answer": "F"
+      },
+      {
+        "number": 28,
+        "answer": "M"
+      },
+      {
+        "number": 29,
+        "answer": "K"
+      },
+      {
+        "number": 30,
+        "answer": "K"
+      },
+      {
+        "number": 31,
+        "answer": "J"
+      },
+      {
+        "number": 32,
+        "answer": "K"
+      },
+      {
+        "number": 33,
+        "answer": "E"
+      },
+      {
+        "number": 34,
+        "answer": "H"
+      },
+      {
+        "number": 35,
+        "answer": "O"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "D",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "A",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "D",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "D",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "A",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "B",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "B",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "B",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "B",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "D",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "B",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "D",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "D",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "C",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "D",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "B",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "C",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "C",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "D",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "B",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "The full name of a Han Chinese person consists of a surname and a given name. The distinguishing feature of Chinese names is that the surname always precedes the given name. For millennia, the paternal surname has been passed down through generations. However, it is no longer uncommon today for a child to take the mother's surname. Generally, the given name comprises one or two characters, often embodying the parents' aspirations for their child. From a child's name, one can infer the kind of person the parents hope the child will become or the life they wish for them. Parents place great importance on naming their child, as the name often accompanies the child throughout their life."
+  }
+}

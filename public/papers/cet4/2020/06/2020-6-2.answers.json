@@ -1,0 +1,266 @@
+{
+  "_id": "672337659be2635c70cfc534",
+  "year": 2020,
+  "month": 6,
+  "setCount": 2,
+  "writingAnswer": {
+    "referenceEssay": "Online libraries are becoming increasingly popular in today's digital age. These virtual repositories offer a plethora of benefits that traditional libraries cannot match. Firstly, online libraries provide access to a vast array of resources, including e-books, journals, and research papers, which can be accessed from anywhere with an internet connection. This convenience is particularly advantageous for students and professionals who require immediate access to information.\n\nSecondly, online libraries often offer advanced search functionalities, allowing users to quickly locate specific materials. This efficiency saves time and enhances productivity. Additionally, many online libraries are available 24/7, eliminating the constraints of operating hours that physical libraries impose.\n\nHowever, the transition to online libraries also presents challenges. For instance, not all users are tech-savvy, and the digital divide can limit access for those without reliable internet or devices. Moreover, the authenticity and copyright issues of digital content remain concerns.\n\nIn conclusion, while online libraries offer numerous advantages, it is essential to address the associated challenges to ensure equitable access and maintain the integrity of information."
+  },
+  "listeningAnswers": [
+    {
+      "number": 1,
+      "answer": "D"
+    },
+    {
+      "number": 2,
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "answer": "A"
+    },
+    {
+      "number": 4,
+      "answer": "C"
+    },
+    {
+      "number": 5,
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "answer": "C"
+    },
+    {
+      "number": 7,
+      "answer": "D"
+    },
+    {
+      "number": 8,
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "answer": "C"
+    },
+    {
+      "number": 10,
+      "answer": "A"
+    },
+    {
+      "number": 11,
+      "answer": "B"
+    },
+    {
+      "number": 12,
+      "answer": "D"
+    },
+    {
+      "number": 13,
+      "answer": "D"
+    },
+    {
+      "number": 14,
+      "answer": "D"
+    },
+    {
+      "number": 15,
+      "answer": "D"
+    },
+    {
+      "number": 16,
+      "answer": "D"
+    },
+    {
+      "number": 17,
+      "answer": "B"
+    },
+    {
+      "number": 18,
+      "answer": "A"
+    },
+    {
+      "number": 19,
+      "answer": "A"
+    },
+    {
+      "number": 20,
+      "answer": "A"
+    },
+    {
+      "number": 21,
+      "answer": "D"
+    },
+    {
+      "number": 22,
+      "answer": "D"
+    },
+    {
+      "number": 23,
+      "answer": "B"
+    },
+    {
+      "number": 24,
+      "answer": "C"
+    },
+    {
+      "number": 25,
+      "answer": "A"
+    }
+  ],
+  "readingAnswers": {
+    "sectionA": [
+      {
+        "number": 26,
+        "answer": "K"
+      },
+      {
+        "number": 27,
+        "answer": "M"
+      },
+      {
+        "number": 28,
+        "answer": "N"
+      },
+      {
+        "number": 29,
+        "answer": "C"
+      },
+      {
+        "number": 30,
+        "answer": "M"
+      },
+      {
+        "number": 31,
+        "answer": "B"
+      },
+      {
+        "number": 32,
+        "answer": "K"
+      },
+      {
+        "number": 33,
+        "answer": "J"
+      },
+      {
+        "number": 34,
+        "answer": "K"
+      },
+      {
+        "number": 35,
+        "answer": "H"
+      }
+    ],
+    "sectionB": [
+      {
+        "number": 36,
+        "answer": "B",
+        "explanation": "这里是第36题的解析..."
+      },
+      {
+        "number": 37,
+        "answer": "C",
+        "explanation": "这里是第37题的解析..."
+      },
+      {
+        "number": 38,
+        "answer": "A",
+        "explanation": "这里是第38题的解析..."
+      },
+      {
+        "number": 39,
+        "answer": "C",
+        "explanation": "这里是第39题的解析..."
+      },
+      {
+        "number": 40,
+        "answer": "B",
+        "explanation": "这里是第40题的解析..."
+      },
+      {
+        "number": 41,
+        "answer": "D",
+        "explanation": "这里是第41题的解析..."
+      },
+      {
+        "number": 42,
+        "answer": "D",
+        "explanation": "这里是第42题的解析..."
+      },
+      {
+        "number": 43,
+        "answer": "D",
+        "explanation": "这里是第43题的解析..."
+      },
+      {
+        "number": 44,
+        "answer": "C",
+        "explanation": "这里是第44题的解析..."
+      },
+      {
+        "number": 45,
+        "answer": "D",
+        "explanation": "这里是第45题的解析..."
+      }
+    ],
+    "sectionC": {
+      "passageOne": [
+        {
+          "number": 46,
+          "answer": "B",
+          "explanation": "这里是第46题的解析..."
+        },
+        {
+          "number": 47,
+          "answer": "A",
+          "explanation": "这里是第47题的解析..."
+        },
+        {
+          "number": 48,
+          "answer": "C",
+          "explanation": "这里是第48题的解析..."
+        },
+        {
+          "number": 49,
+          "answer": "A",
+          "explanation": "这里是第49题的解析..."
+        },
+        {
+          "number": 50,
+          "answer": "B",
+          "explanation": "这里是第50题的解析..."
+        }
+      ],
+      "passageTwo": [
+        {
+          "number": 51,
+          "answer": "B",
+          "explanation": "这里是第51题的解析..."
+        },
+        {
+          "number": 52,
+          "answer": "D",
+          "explanation": "这里是第52题的解析..."
+        },
+        {
+          "number": 53,
+          "answer": "A",
+          "explanation": "这里是第53题的解析..."
+        },
+        {
+          "number": 54,
+          "answer": "A",
+          "explanation": "这里是第54题的解析..."
+        },
+        {
+          "number": 55,
+          "answer": "B",
+          "explanation": "这里是第55题的解析..."
+        }
+      ]
+    }
+  },
+  "translationAnswer": {
+    "referenceTranslation": "Tea boasts a history of 5,000 years. Legend has it that when Shen Nong was boiling water, several wild tree leaves fell into the pot, instantly releasing a pleasant aroma. After tasting a few sips, he found it invigorating. Thus, tea was discovered. From then on, tea gained popularity in China. Tea plantations spread across the nation, and tea merchants grew wealthy. Expensive and elegant tea sets became symbols of status. Today, tea is not only a healthy beverage but also an integral part of Chinese culture. Increasing numbers of international tourists are immersing themselves in Chinese culture while savoring tea."
+  }
+}
