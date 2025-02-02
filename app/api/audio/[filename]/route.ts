@@ -1,31 +1,9 @@
-import { GridFSBucket } from "mongodb";
+import fs from "fs/promises";
 import { NextResponse } from "next/server";
-import { Readable } from "stream";
-import clientPromise from "@/app/utils/api/mongodb";
+import path from "path";
 
 interface RequestParams {
   filename: string;
-}
-
-interface AudioFile {
-  title: string;
-  fileId: string;
-}
-
-function nodeStreamToWebStream(nodeStream: Readable) {
-  return new ReadableStream({
-    start(controller) {
-      nodeStream.on("data", (chunk) => {
-        controller.enqueue(chunk);
-      });
-      nodeStream.on("end", () => {
-        controller.close();
-      });
-      nodeStream.on("error", (err) => {
-        controller.error(err);
-      });
-    },
-  });
 }
 
 export async function GET(
@@ -33,7 +11,6 @@ export async function GET(
   { params }: { params: RequestParams }
 ) {
   try {
-    const client = await clientPromise;
     const url = new URL(request.url);
     const year = url.searchParams.get("year");
     const month = url.searchParams.get("month");
@@ -41,7 +18,6 @@ export async function GET(
     const examType = url.searchParams.get("type");
     const questionRange = url.searchParams.get("range");
 
-    // 使用 params.filename 进行验证
     if (params.filename !== `${questionRange}.mp3`) {
       return new NextResponse("文件名不匹配", { status: 400 });
     }
@@ -50,38 +26,33 @@ export async function GET(
       return new NextResponse("缺少必要参数", { status: 400 });
     }
 
-    const db = client.db("EnglishExams");
-    const bucket = new GridFSBucket(db);
-    const collection = db.collection(`${examType}_Listening`);
-
-    const exam = await collection.findOne({
-      year: parseInt(year),
-      month: parseInt(month),
-      setCount: parseInt(setCount),
-    });
-
-    if (!exam) {
-      return new NextResponse("未找到试卷", { status: 404 });
-    }
-
-    const audioFile = exam.files.find(
-      (file: AudioFile) => file.title === `${questionRange}.mp3`
+    const audioPath = path.join(
+      process.cwd(),
+      "public",
+      "audio",
+      examType,
+      year,
+      month.padStart(2, "0"),
+      `set${setCount}`,
+      `${questionRange}.mp3`
     );
 
-    if (!audioFile) {
-      return new NextResponse("未找到音频文件", { status: 404 });
+    try {
+      const file = await fs.readFile(audioPath);
+      const stats = await fs.stat(audioPath);
+
+      return new Response(file, {
+        headers: {
+          "Content-Type": "audio/mpeg",
+          "Content-Length": stats.size.toString(),
+          "Accept-Ranges": "bytes",
+          "Cache-Control": "public, max-age=31536000",
+        },
+      });
+    } catch (error) {
+      console.error("音频文件读取失败:", error);
+      return new NextResponse("音频文件不存在", { status: 404 });
     }
-
-    const downloadStream = bucket.openDownloadStream(audioFile.fileId);
-    const webStream = nodeStreamToWebStream(downloadStream);
-
-    return new Response(webStream, {
-      headers: {
-        "Content-Type": "audio/mpeg",
-        "Cache-Control": "public, max-age=31536000",
-        ETag: `"${audioFile.fileId}"`,
-      },
-    });
   } catch (error) {
     console.error("获取音频失败:", error);
     return new NextResponse("服务器内部错误", { status: 500 });

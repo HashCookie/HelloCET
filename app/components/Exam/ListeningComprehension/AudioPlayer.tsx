@@ -12,13 +12,21 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
   const [volume, setVolume] = useState(1);
   const [showVolumeControl, setShowVolumeControl] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const handleLoadedMetadata = useCallback(() => {
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
       setIsLoading(false);
+      setHasError(false);
     }
+  }, []);
+
+  const handleError = useCallback(() => {
+    setIsLoading(false);
+    setHasError(true);
+    setDuration(0);
   }, []);
 
   const handleTimeUpdate = useCallback(() => {
@@ -35,14 +43,16 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
 
     audio.addEventListener("loadedmetadata", handleLoadedMetadata);
     audio.addEventListener("timeupdate", handleTimeUpdate);
+    audio.addEventListener("error", handleError);
 
     return () => {
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
       audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.removeEventListener("error", handleError);
       audio.pause();
       setIsPlaying(false);
     };
-  }, [audioUrl, handleLoadedMetadata, handleTimeUpdate]);
+  }, [audioUrl, handleLoadedMetadata, handleTimeUpdate, handleError]);
 
   const formatTime = useCallback((time: number) => {
     if (!isFinite(time) || isNaN(time)) return "0:00";
@@ -77,6 +87,15 @@ export default function AudioPlayer({ audioUrl, title }: AudioPlayerProps) {
       audioRef.current.volume = value;
     }
   };
+
+  if (hasError) {
+    return (
+      <div className="mb-8 rounded-xl border border-gray-100 bg-white/80 p-6 backdrop-blur-sm">
+        <h4 className="mb-4 text-lg font-semibold text-gray-900">{title}</h4>
+        <div className="text-sm text-gray-500">音频资源暂不可用</div>
+      </div>
+    );
+  }
 
   return (
     <div className="mb-8 rounded-xl border border-gray-100 bg-white/80 p-6 backdrop-blur-sm">
