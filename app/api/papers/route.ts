@@ -27,12 +27,16 @@ async function getYearsAndPapers(examType: string) {
         const monthPath = path.join(yearPath, month);
         const files = await fs.readdir(monthPath);
 
-        const jsonFiles = files.filter((f) => f.endsWith(".json"));
+        // 只统计试卷文件，排除 .answers.json 文件
+        const examFiles = files.filter(
+          (f) => f.endsWith(".json") && !f.includes(".answers.")
+        );
+
         monthSet.add(parseInt(month));
         papers.push({
           year: parseInt(year),
           month: parseInt(month),
-          setCount: jsonFiles.length,
+          setCount: examFiles.length,
         });
       }
     }

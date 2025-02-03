@@ -25,7 +25,6 @@ export default function RecommendedExams() {
       const selectedPapers = getRandomPapers(paperData.papers, 5);
       const formattedPapers = selectedPapers.map((paper, index) => ({
         ...paper,
-        setCount: Math.floor(Math.random() * 3) + 1,
         tag: getTag(index),
         practiceCount: generatePracticeCount(),
         borderColor: getBorderColor(index),
@@ -35,9 +34,15 @@ export default function RecommendedExams() {
     }
   }, [paperData]);
 
-  // 随机选择指定数量的试卷
   const getRandomPapers = (papers: ExamPaperBase[], count: number) => {
-    const shuffled = [...papers].sort(() => 0.5 - Math.random());
+    // 为每份试卷生成一个随机套数（在其实际拥有的套数范围内）
+    const papersWithRandomSet = papers.map((paper) => ({
+      ...paper,
+      setCount: Math.floor(Math.random() * paper.setCount) + 1, // 1 到 actual setCount 之间的随机数
+    }));
+
+    // 随机打乱并选择指定数量的试卷
+    const shuffled = [...papersWithRandomSet].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   };
 
