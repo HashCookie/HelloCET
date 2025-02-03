@@ -2,9 +2,10 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { useScoreRecords, type ScoreRecord } from "@/app/hooks/useScoreRecords";
+import { useScoreRecords } from "@/app/hooks/useScoreRecords";
 import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
 import { examStorage } from "@/app/utils/common/storage";
+import type { ScoreRecord } from "@/app/types/practice";
 
 const ITEMS_PER_PAGE = 10;
 
