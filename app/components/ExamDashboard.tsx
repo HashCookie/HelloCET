@@ -11,51 +11,45 @@ import Writing from "@/app/components/Exam/Writing/Writing";
 import RecentPractice from "@/app/components/RecentPractice";
 import RecommendedExams from "@/app/components/RecommendedExams";
 import ExamSelector from "@/app/components/Selector/ExamSelector";
-import { useExamData } from "@/app/hooks/useExamData";
+import { useExamSection } from "@/app/hooks/useExamSection";
 import { useExamState } from "@/app/hooks/useExamState";
 import { examStorage } from "@/app/utils/common/storage";
-import type { ExamPaper } from "@/app/types/exam";
 
 const useExamSections = (
   selectedYear: number,
   selectedMonth: number,
   selectedSet: number
 ) => {
-  const writing = useExamData<Pick<ExamPaper, "writing">>(
+  const writing = useExamSection(
     "writing",
     selectedYear,
     selectedMonth,
     selectedSet
   );
-
-  const listening = useExamData<Pick<ExamPaper, "listeningComprehension">>(
+  const listening = useExamSection(
     "listeningComprehension",
     selectedYear,
     selectedMonth,
     selectedSet
   );
-
-  const reading = useExamData<Pick<ExamPaper, "readingComprehension">>(
+  const reading = useExamSection(
     "readingComprehension",
     selectedYear,
     selectedMonth,
     selectedSet
   );
-
-  const translation = useExamData<Pick<ExamPaper, "translation">>(
+  const translation = useExamSection(
     "translation",
     selectedYear,
     selectedMonth,
     selectedSet
   );
 
+  const sections = { writing, listening, reading, translation };
+
   return {
-    writing,
-    listening,
-    reading,
-    translation,
-    hasError:
-      writing.error || listening.error || reading.error || translation.error,
+    ...sections,
+    hasError: Object.values(sections).some((section) => section.error),
   };
 };
 
