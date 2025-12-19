@@ -40,7 +40,8 @@ const getAnswerStatus = (
 
   if (optionKey === referenceAnswer?.answer) {
     return "correct";
-  } else if (userAnswer && userAnswer === optionKey) {
+  }
+  if (userAnswer && userAnswer === optionKey) {
     return "wrong";
   }
   return null;
@@ -68,19 +69,18 @@ const renderOption = (
   const isSelected = answers[question.number] === optionKey;
 
   return (
-    <div key={optionKey} className="flex items-start space-x-2">
+    <div className="flex items-start space-x-2" key={optionKey}>
       <input
-        type="radio"
-        name={`question-${question.number}`}
-        id={`question-${question.number}-${optionKey}`}
-        value={optionKey}
         checked={isSelected}
-        onChange={() => onAnswerChange(question.number, optionKey)}
         className={`mt-1 ${readOnly ? "cursor-not-allowed" : ""}`}
         disabled={readOnly}
+        id={`question-${question.number}-${optionKey}`}
+        name={`question-${question.number}`}
+        onChange={() => onAnswerChange(question.number, optionKey)}
+        type="radio"
+        value={optionKey}
       />
       <label
-        htmlFor={`question-${question.number}-${optionKey}`}
         className={`${readOnly ? "cursor-not-allowed" : ""} ${
           status === "correct"
             ? "text-gray-700"
@@ -88,6 +88,7 @@ const renderOption = (
               ? "text-red-600"
               : "text-gray-700"
         }`}
+        htmlFor={`question-${question.number}-${optionKey}`}
       >
         {optionKey}. {question.options[optionKey]}
         {status === "correct" && <span className="ml-2 text-green-600">✓</span>}
@@ -123,7 +124,7 @@ const SectionC = ({
   ) => (
     <div className="space-y-6 text-left">
       {questions.map((question) => (
-        <div key={question.number} className="border-b pb-4">
+        <div className="border-b pb-4" key={question.number}>
           <p className="mb-3 font-medium">
             {question.number}. {question.statement}
           </p>
@@ -142,7 +143,7 @@ const SectionC = ({
           {readOnly &&
             referenceAnswersSection?.find((a) => a.number === question.number)
               ?.explanation && (
-              <p className="mt-2 text-sm text-gray-600">
+              <p className="mt-2 text-gray-600 text-sm">
                 解析:{" "}
                 {
                   referenceAnswersSection.find(
@@ -158,8 +159,8 @@ const SectionC = ({
 
   return (
     <div className="mb-8">
-      <h3 className="mb-4 text-lg font-semibold">Section C</h3>
-      <h3 className="mb-4 text-left text-sm text-gray-600">
+      <h3 className="mb-4 font-semibold text-lg">Section C</h3>
+      <h3 className="mb-4 text-left text-gray-600 text-sm">
         There are 2 passages in this section. Each passage is followed by some
         questions or unfinished statements. For each of them, there are four
         choices marked A), B), C), and D). You should decide on the best choice
@@ -168,14 +169,14 @@ const SectionC = ({
       </h3>
 
       {/* Passage One */}
-      <h3 className="text-md mb-4 text-center font-medium">Passage One</h3>
-      <h3 className="mb-4 text-left text-sm text-gray-600">
+      <h3 className="mb-4 text-center font-medium text-md">Passage One</h3>
+      <h3 className="mb-4 text-left text-gray-600 text-sm">
         Questions 46 to 50 are based on the following passage.
       </h3>
       <div className="mb-8">
         <div className="mb-6 space-y-4 text-left">
           {passagesOne.map((passage, index) => (
-            <p key={index} className="leading-relaxed text-gray-700">
+            <p className="text-gray-700 leading-relaxed" key={index}>
               {passage}
             </p>
           ))}
@@ -184,14 +185,14 @@ const SectionC = ({
       </div>
 
       {/* Passage Two */}
-      <h3 className="text-md mb-4 text-center font-medium">Passage Two</h3>
-      <h3 className="mb-4 text-left text-sm text-gray-600">
+      <h3 className="mb-4 text-center font-medium text-md">Passage Two</h3>
+      <h3 className="mb-4 text-left text-gray-600 text-sm">
         Questions 51 to 55 are based on the following passage.
       </h3>
       <div className="mb-8">
         <div className="mb-6 space-y-4 text-left">
           {passagesTwo.map((passage, index) => (
-            <p key={index} className="leading-relaxed text-gray-700">
+            <p className="text-gray-700 leading-relaxed" key={index}>
               {passage}
             </p>
           ))}

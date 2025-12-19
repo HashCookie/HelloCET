@@ -36,17 +36,16 @@ export async function POST(request: Request) {
     const data = await response.json();
 
     if (data.choices && data.choices.length > 0) {
-      const score = parseInt(data.choices[0].message.content.trim());
+      const score = Number.parseInt(data.choices[0].message.content.trim());
       return NextResponse.json({
         score,
         totalScore: 106.5,
       });
-    } else {
-      return NextResponse.json(
-        { error: "无法从API获取有效分数" },
-        { status: 400 }
-      );
     }
+    return NextResponse.json(
+      { error: "无法从API获取有效分数" },
+      { status: 400 }
+    );
   } catch (error) {
     console.error("写作评分失败:", error);
     return NextResponse.json({ error: "写作评分失败" }, { status: 500 });

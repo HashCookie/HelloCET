@@ -17,8 +17,8 @@ export default function PracticeLayout({ children }: PracticeLayoutProps) {
     <div className="container mx-auto px-4 py-8">
       <div className="mb-4">
         <button
-          onClick={handleBack}
           className="flex items-center text-gray-600 hover:text-gray-800"
+          onClick={handleBack}
         >
           <svg
             className="mr-1 h-5 w-5"
@@ -27,10 +27,10 @@ export default function PracticeLayout({ children }: PracticeLayoutProps) {
             viewBox="0 0 24 24"
           >
             <path
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
             />
           </svg>
           返回

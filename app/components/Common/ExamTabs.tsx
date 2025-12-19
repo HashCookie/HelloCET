@@ -6,12 +6,12 @@ interface TabProps {
 
 const Tab = ({ title, isActive, onClick }: TabProps) => (
   <button
-    onClick={onClick}
     className={`rounded-t-lg px-4 py-2 font-medium transition-colors ${
       isActive
-        ? "border-x border-t border-gray-200 bg-white text-blue-600"
+        ? "border-gray-200 border-x border-t bg-white text-blue-600"
         : "text-gray-500 hover:bg-gray-50 hover:text-gray-700"
     }`}
+    onClick={onClick}
   >
     {title}
   </button>
@@ -31,14 +31,14 @@ const ExamTabs = ({ activeTab, onTabChange }: ExamTabsProps) => {
   ];
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-gray-200 border-b">
       <nav className="flex justify-center space-x-2">
         {tabs.map((tab) => (
           <Tab
-            key={tab.id}
-            title={tab.title}
             isActive={activeTab === tab.id}
+            key={tab.id}
             onClick={() => onTabChange(tab.id)}
+            title={tab.title}
           />
         ))}
       </nav>

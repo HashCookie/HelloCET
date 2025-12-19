@@ -8,8 +8,9 @@ interface RequestParams {
 
 export async function GET(
   request: Request,
-  { params }: { params: RequestParams }
+  props: { params: Promise<RequestParams> }
 ) {
+  const params = await props.params;
   try {
     const url = new URL(request.url);
     const year = url.searchParams.get("year");
@@ -22,7 +23,7 @@ export async function GET(
       return new NextResponse("文件名不匹配", { status: 400 });
     }
 
-    if (!year || !month || !setCount || !examType || !questionRange) {
+    if (!(year && month && setCount && examType && questionRange)) {
       return new NextResponse("缺少必要参数", { status: 400 });
     }
 

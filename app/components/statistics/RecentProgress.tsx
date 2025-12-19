@@ -42,16 +42,16 @@ export default function RecentProgress() {
         const date = new Date(record.date).toLocaleDateString("zh-CN");
         const totalScore = calculateTotalScore(record.attemptId, record.type);
 
-        if (!acc[date]) {
-          acc[date] = {
-            max: totalScore,
-            scores: [totalScore],
-          };
-        } else {
+        if (acc[date]) {
           acc[date].scores.push(totalScore);
           if (totalScore > acc[date].max) {
             acc[date].max = totalScore;
           }
+        } else {
+          acc[date] = {
+            max: totalScore,
+            scores: [totalScore],
+          };
         }
         return acc;
       },
@@ -118,15 +118,14 @@ export default function RecentProgress() {
             callbacks: {
               label: (context) => {
                 const label = context.dataset.label;
-                const value = context.parsed.y;
+                const value = context.parsed.y || 0;
                 const date = recentDates[context.dataIndex];
                 const scores = dailyScores[date].scores;
 
                 if (label === "最高分") {
                   return `最高分: ${value.toFixed(1)}`;
-                } else {
-                  return `平均分: ${value.toFixed(1)} (${scores.length}次练习)`;
                 }
+                return `平均分: ${value.toFixed(1)} (${scores.length}次练习)`;
               },
             },
           },

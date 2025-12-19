@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
+import type { ScoreRecord, ScoreSummaryProps } from "@/app/types/practice";
 import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import { examStorage } from "@/app/utils/common/storage";
-import type { ScoreRecord, ScoreSummaryProps } from "@/app/types/practice";
 
 const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
   const router = useRouter();
@@ -30,7 +30,7 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
     const month = monthMatch ? monthMatch[1] : "";
     const setCount = setMatch ? setMatch[1] : "1";
 
-    if (!year || !month) {
+    if (!(year && month)) {
       console.warn("无法从试卷标题解析出年份或月份");
       return;
     }
@@ -44,9 +44,8 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
       ),
     };
 
-    const matchRecord = (scores: ScoreRecord[]) => {
-      return scores.find((s) => s.attemptId === latestRecord.attemptId);
-    };
+    const matchRecord = (scores: ScoreRecord[]) =>
+      scores.find((s) => s.attemptId === latestRecord.attemptId);
 
     const writingRecord = matchRecord(allScores.writing);
     const listeningRecord = matchRecord(allScores.listening);
@@ -76,12 +75,12 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
 
   return (
     <div className="relative mx-auto my-8 max-w-4xl rounded-lg bg-white p-6 shadow-lg">
-      <h1 className="mb-2 text-center text-2xl font-bold">
+      <h1 className="mb-2 text-center font-bold text-2xl">
         {examType}考试成绩统计
       </h1>
 
       <div className="mb-8 text-center">
-        <div className="mb-2 text-4xl font-bold text-blue-600">
+        <div className="mb-2 font-bold text-4xl text-blue-600">
           {totalScore.toFixed(1)}
         </div>
         <div className="text-gray-500">总分</div>
@@ -91,17 +90,17 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
         {sections.map((section) => {
           const result = resultMap.get(section);
           return (
-            <div key={section} className="rounded-lg border p-4">
-              <h3 className="mb-4 text-lg font-semibold">{section}</h3>
+            <div className="rounded-lg border p-4" key={section}>
+              <h3 className="mb-4 font-semibold text-lg">{section}</h3>
               {result?.data ? (
-                <div className="mb-2 text-2xl font-bold text-blue-600">
+                <div className="mb-2 font-bold text-2xl text-blue-600">
                   {result.data.score.toFixed(1)}分
                 </div>
               ) : (
-                <div className="mb-2 text-lg text-gray-400">未作答</div>
+                <div className="mb-2 text-gray-400 text-lg">未作答</div>
               )}
               {result?.error && (
-                <div className="text-sm text-red-500">{result.error}</div>
+                <div className="text-red-500 text-sm">{result.error}</div>
               )}
             </div>
           );
@@ -114,14 +113,14 @@ const ScoreSummary = ({ results, duration, examType }: ScoreSummaryProps) => {
 
       <div className="flex justify-center space-x-4">
         <button
-          onClick={() => router.push(defaultPath)}
           className="rounded-md bg-blue-600 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-700"
+          onClick={() => router.push(defaultPath)}
         >
           返回试卷列表
         </button>
         <button
-          onClick={handleViewAnswers}
           className="rounded-md bg-green-600 px-4 py-2 text-sm text-white transition-colors hover:bg-green-700"
+          onClick={handleViewAnswers}
         >
           查看答案
         </button>

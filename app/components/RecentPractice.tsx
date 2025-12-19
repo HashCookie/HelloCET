@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useScoreRecords } from "@/app/hooks/useScoreRecords";
+import type { Answers } from "@/app/types/answers";
+import type { ExamRecord, PracticeRecord } from "@/app/types/practice";
 import { formatDateToBeijingTime } from "@/app/utils/common/dateConversion";
 import { examRecordStorage } from "@/app/utils/common/examRecordStorage";
 import { examStorage } from "@/app/utils/common/storage";
-import type { Answers } from "@/app/types/answers";
-import type { ExamRecord, PracticeRecord } from "@/app/types/practice";
 
 interface SectionScores {
   writing: number;
@@ -86,13 +86,13 @@ const PracticeRecordCard = ({
         {record.score.toFixed(1)}分
       </span>
     </div>
-    <div className="mb-2 flex flex-wrap gap-2 text-sm text-gray-600">
+    <div className="mb-2 flex flex-wrap gap-2 text-gray-600 text-sm">
       <span>写作: {scores.writing.toFixed(1)}</span>
       <span>听力: {scores.listening.toFixed(1)}</span>
       <span>阅读: {scores.reading.toFixed(1)}</span>
       <span>翻译: {scores.translation.toFixed(1)}</span>
     </div>
-    <div className="text-sm text-gray-500">
+    <div className="text-gray-500 text-sm">
       {formatDateToBeijingTime(record.date)} | 用时:{" "}
       {examRecord?.duration || record.duration}
     </div>
@@ -106,7 +106,7 @@ export default function RecentPractice() {
 
   const getExamLink = (record: PracticeRecord) => {
     const { year, month, setCount } = parseExamInfo(record.type);
-    if (!year || !month) {
+    if (!(year && month)) {
       console.warn("无法从试卷标题解析出年份或月份");
       return "";
     }
@@ -149,11 +149,11 @@ export default function RecentPractice() {
 
         return (
           <Link
-            key={index}
             href={getExamLink(record)}
+            key={index}
             onClick={async (e) => {
               const { year, month, setCount } = parseExamInfo(record.type);
-              if (!year || !month) {
+              if (!(year && month)) {
                 e.preventDefault();
                 return;
               }
@@ -177,8 +177,8 @@ export default function RecentPractice() {
             }}
           >
             <PracticeRecordCard
-              record={record}
               examRecord={examRecord}
+              record={record}
               scores={scores}
             />
           </Link>

@@ -15,7 +15,7 @@ export function useExamData<T>(
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!year || !month || !setCount) {
+    if (!(year && month && setCount)) {
       setData(null);
       setError(null);
       setIsLoading(false);

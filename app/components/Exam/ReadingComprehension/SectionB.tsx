@@ -58,9 +58,6 @@ const renderInput = (
   return (
     <>
       <input
-        type="text"
-        value={displayValue}
-        onChange={(e) => onChange(number, e.target.value.toUpperCase())}
         className={`w-12 border-b-2 text-center ${
           readOnly
             ? status === "correct"
@@ -75,10 +72,13 @@ const renderInput = (
         maxLength={
           readOnly && status === "wrong" ? 3 : status === "correct" ? 2 : 1
         }
+        onChange={(e) => onChange(number, e.target.value.toUpperCase())}
         readOnly={readOnly}
+        type="text"
+        value={displayValue}
       />
       {readOnly && referenceAnswer?.explanation && (
-        <p className="mt-1 text-sm text-gray-600">
+        <p className="mt-1 text-gray-600 text-sm">
           解析: {referenceAnswer.explanation}
         </p>
       )}
@@ -94,44 +94,42 @@ const SectionB = ({
   onAnswerChange,
   readOnly,
   referenceAnswers,
-}: SectionBProps) => {
-  return (
-    <div className="mb-8">
-      <h3 className="mb-4 text-lg font-semibold">Section B</h3>
-      <h3 className="mb-4 text-left text-sm text-gray-600">
-        In this section, you are going to read a passage with ten statements
-        attached to it. Each statement contains information given in one of the
-        paragraphs. Identify the paragraph from which the information is
-        derived. You may choose a paragraph more than once. Each paragraph is
-        marked with a letter. Answer the questions by marking the corresponding
-        letter on Answer Sheet 2.
-      </h3>
-      <h4 className="text-md mb-4 text-center font-medium">{passageTitle}</h4>
-      <div className="mb-6 space-y-4 text-left">
-        {passages.map((passage, index) => (
-          <p key={index} className="leading-relaxed text-gray-700">
-            {passage}
-          </p>
-        ))}
-      </div>
-      <div className="space-y-6 text-left">
-        {questions.map((question) => (
-          <div key={question.number} className="border-b pb-4">
-            <p className="mb-3 font-medium">
-              {question.number}. {question.statement}
-            </p>
-            {renderInput(
-              question.number,
-              answers[question.number] || "",
-              onAnswerChange,
-              readOnly,
-              referenceAnswers
-            )}
-          </div>
-        ))}
-      </div>
+}: SectionBProps) => (
+  <div className="mb-8">
+    <h3 className="mb-4 font-semibold text-lg">Section B</h3>
+    <h3 className="mb-4 text-left text-gray-600 text-sm">
+      In this section, you are going to read a passage with ten statements
+      attached to it. Each statement contains information given in one of the
+      paragraphs. Identify the paragraph from which the information is derived.
+      You may choose a paragraph more than once. Each paragraph is marked with a
+      letter. Answer the questions by marking the corresponding letter on Answer
+      Sheet 2.
+    </h3>
+    <h4 className="mb-4 text-center font-medium text-md">{passageTitle}</h4>
+    <div className="mb-6 space-y-4 text-left">
+      {passages.map((passage, index) => (
+        <p className="text-gray-700 leading-relaxed" key={index}>
+          {passage}
+        </p>
+      ))}
     </div>
-  );
-};
+    <div className="space-y-6 text-left">
+      {questions.map((question) => (
+        <div className="border-b pb-4" key={question.number}>
+          <p className="mb-3 font-medium">
+            {question.number}. {question.statement}
+          </p>
+          {renderInput(
+            question.number,
+            answers[question.number] || "",
+            onAnswerChange,
+            readOnly,
+            referenceAnswers
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 export default SectionB;

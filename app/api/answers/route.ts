@@ -5,9 +5,9 @@ import path from "path";
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const examType = searchParams.get("type");
-  const year = parseInt(searchParams.get("year") || "0");
-  const month = parseInt(searchParams.get("month") || "0");
-  const setCount = parseInt(searchParams.get("setCount") || "0");
+  const year = Number.parseInt(searchParams.get("year") || "0");
+  const month = Number.parseInt(searchParams.get("month") || "0");
+  const setCount = Number.parseInt(searchParams.get("setCount") || "0");
   const field = searchParams.get("field");
 
   try {

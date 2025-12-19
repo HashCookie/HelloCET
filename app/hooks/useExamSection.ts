@@ -1,9 +1,9 @@
 import { useExamData } from "@/app/hooks/useExamData";
 import type {
   ListeningQuestion,
-  Writing,
   ReadingComprehension,
   Translation,
+  Writing,
 } from "@/app/types/exam";
 
 type ExamSectionType = {

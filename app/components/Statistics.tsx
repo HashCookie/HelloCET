@@ -6,7 +6,7 @@ export default function Statistics() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
           <div className="group text-center">
             <div className="inline-block rounded-2xl border border-gray-100 bg-white/80 p-8 backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
-              <div className="mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-5xl font-bold text-transparent">
+              <div className="mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text font-bold text-5xl text-transparent">
                 30+
               </div>
               <div className="font-medium text-gray-600">历年真题</div>
@@ -14,7 +14,7 @@ export default function Statistics() {
           </div>
           <div className="group text-center">
             <div className="inline-block rounded-2xl border border-gray-100 bg-white/80 p-8 backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
-              <div className="mb-3 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-5xl font-bold text-transparent">
+              <div className="mb-3 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text font-bold text-5xl text-transparent">
                 AI
               </div>
               <div className="font-medium text-gray-600">智能评分</div>
@@ -22,7 +22,7 @@ export default function Statistics() {
           </div>
           <div className="group text-center">
             <div className="inline-block rounded-2xl border border-gray-100 bg-white/80 p-8 backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
-              <div className="mb-3 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-5xl font-bold text-transparent">
+              <div className="mb-3 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text font-bold text-5xl text-transparent">
                 4
               </div>
               <div className="font-medium text-gray-600">题型练习</div>

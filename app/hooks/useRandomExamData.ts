@@ -1,7 +1,7 @@
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-import { usePaperStore } from "./usePaperData";
+import { useEffect, useState } from "react";
 import type { ExamPaperBase } from "@/app/types/exam";
+import { usePaperStore } from "./usePaperData";
 
 export function useRandomExamData<T extends ExamPaperBase>(field: string) {
   const pathname = usePathname();
@@ -32,7 +32,7 @@ export function useRandomExamData<T extends ExamPaperBase>(field: string) {
             ...fieldData,
             year: randomPaper.year,
             month: randomPaper.month,
-            setCount: setCount,
+            setCount,
           } as T);
         }
       } catch (error) {

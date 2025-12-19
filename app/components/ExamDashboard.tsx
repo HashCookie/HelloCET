@@ -89,9 +89,9 @@ const ExamDashboard = () => {
       case "writing":
         return (
           <Writing
+            answer={answers.writing}
             data={writing.data}
             isLoading={writing.isLoading}
-            answer={answers.writing}
             onAnswerChange={(value) => handleAnswerChange("writing", value)}
             readOnly={isReadOnly}
             referenceAnswer={referenceAnswers.writing}
@@ -100,26 +100,26 @@ const ExamDashboard = () => {
       case "listening":
         return (
           <ListeningComprehension
-            data={listening.data}
-            isLoading={listening.isLoading}
             answers={answers.listening}
-            onAnswerChange={(value) => handleAnswerChange("listening", value)}
-            readOnly={isReadOnly}
-            referenceAnswers={referenceAnswers.listening}
+            data={listening.data}
             examInfo={{
               year: selectedYear,
               month: selectedMonth,
               setCount: selectedSet,
               type: examType,
             }}
+            isLoading={listening.isLoading}
+            onAnswerChange={(value) => handleAnswerChange("listening", value)}
+            readOnly={isReadOnly}
+            referenceAnswers={referenceAnswers.listening}
           />
         );
       case "reading":
         return (
           <ReadingComprehension
+            answers={answers.reading}
             data={reading.data}
             isLoading={reading.isLoading}
-            answers={answers.reading}
             onAnswerChange={(value) => handleAnswerChange("reading", value)}
             readOnly={isReadOnly}
             referenceAnswers={referenceAnswers.reading}
@@ -128,9 +128,9 @@ const ExamDashboard = () => {
       case "translation":
         return (
           <Translation
+            answer={answers.translation}
             data={translation.data}
             isLoading={translation.isLoading}
-            answer={answers.translation}
             onAnswerChange={(value) => handleAnswerChange("translation", value)}
             readOnly={isReadOnly}
             referenceAnswer={referenceAnswers.translation}
@@ -149,11 +149,11 @@ const ExamDashboard = () => {
           <h3 className="font-medium text-red-800">获取试卷失败</h3>
           <p className="mt-1 text-red-600">{hasError}</p>
           <button
+            className="mt-4 rounded bg-red-100 px-4 py-2 text-red-700 hover:bg-red-200"
             onClick={() => {
               resetExam(true);
               router.push("/");
             }}
-            className="mt-4 rounded bg-red-100 px-4 py-2 text-red-700 hover:bg-red-200"
           >
             返回首页
           </button>
@@ -169,18 +169,18 @@ const ExamDashboard = () => {
       ) : showControls ? (
         <div>
           <ExamHeader
-            title={`${selectedYear}年${selectedMonth}月大学英语${examType}真题（卷${selectedSet}）`}
             activeTab={activeTab}
-            onTabChange={handleTabChange}
-            onBack={handleBack}
-            showBackButton={true}
-            year={selectedYear}
-            month={selectedMonth}
-            setCount={selectedSet}
             answers={answers}
-            readOnly={isReadOnly}
-            examType={examType}
             attemptId={answers.attemptId}
+            examType={examType}
+            month={selectedMonth}
+            onBack={handleBack}
+            onTabChange={handleTabChange}
+            readOnly={isReadOnly}
+            setCount={selectedSet}
+            showBackButton={true}
+            title={`${selectedYear}年${selectedMonth}月大学英语${examType}真题（卷${selectedSet}）`}
+            year={selectedYear}
           />
           <div className="mx-auto max-w-6xl px-4 pt-28">
             <div className="rounded-lg bg-white shadow-sm">
@@ -191,24 +191,24 @@ const ExamDashboard = () => {
       ) : (
         <div className="mx-auto max-w-6xl px-4">
           <ExamSelector
-            years={years}
             months={months}
-            setCount={setCount}
-            selectedYear={selectedYear}
-            selectedMonth={selectedMonth}
-            selectedSet={selectedSet}
-            onYearChange={handleYearChange}
             onMonthChange={handleMonthChange}
             onSetChange={handleSetChange}
             onSubmit={handleSubmit}
+            onYearChange={handleYearChange}
+            selectedMonth={selectedMonth}
+            selectedSet={selectedSet}
+            selectedYear={selectedYear}
+            setCount={setCount}
+            years={years}
           />
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h2 className="mb-4 text-xl font-semibold">推荐试卷</h2>
+              <h2 className="mb-4 font-semibold text-xl">推荐试卷</h2>
               <RecommendedExams />
             </div>
             <div className="rounded-lg bg-white p-6 shadow-sm">
-              <h2 className="mb-4 text-xl font-semibold">最近练习</h2>
+              <h2 className="mb-4 font-semibold text-xl">最近练习</h2>
               <RecentPractice />
             </div>
           </div>
@@ -218,12 +218,10 @@ const ExamDashboard = () => {
   );
 };
 
-const ExamDashboardWrapper = () => {
-  return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <ExamDashboard />
-    </Suspense>
-  );
-};
+const ExamDashboardWrapper = () => (
+  <Suspense fallback={<LoadingSpinner />}>
+    <ExamDashboard />
+  </Suspense>
+);
 
 export default ExamDashboardWrapper;

@@ -87,14 +87,14 @@ const ExamHeader = ({
   }, [readOnly, year, month, setCount, examType, attemptId]);
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-50 bg-white shadow-sm">
+    <div className="fixed top-0 right-0 left-0 z-50 bg-white shadow-sm">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-4">
             {showBackButton && (
               <button
-                onClick={onBack}
                 className="rounded-full p-2 transition-colors hover:bg-gray-100"
+                onClick={onBack}
               >
                 <svg
                   className="h-5 w-5"
@@ -103,19 +103,19 @@ const ExamHeader = ({
                   viewBox="0 0 24 24"
                 >
                   <path
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
                   />
                 </svg>
               </button>
             )}
-            <h1 className="text-2xl font-bold">{title}</h1>
+            <h1 className="font-bold text-2xl">{title}</h1>
             {readOnly && (
-              <div className="ml-auto text-sm text-gray-500">
+              <div className="ml-auto text-gray-500 text-sm">
                 {sections.map((section) => (
-                  <span key={section} className="mr-4">
+                  <span className="mr-4" key={section}>
                     {sectionNames[section]}:
                     <span
                       className={`font-medium ${scores[section] > 0 ? "text-blue-600" : "text-gray-400"}`}
@@ -137,10 +137,10 @@ const ExamHeader = ({
           </div>
           {!readOnly && (
             <ControlButtons
-              year={year}
+              answers={answers}
               month={month}
               setCount={setCount}
-              answers={answers}
+              year={year}
             />
           )}
         </div>

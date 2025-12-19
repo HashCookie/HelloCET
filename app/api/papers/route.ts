@@ -32,10 +32,10 @@ async function getYearsAndPapers(examType: string) {
           (f) => f.endsWith(".json") && !f.includes(".answers.")
         );
 
-        monthSet.add(parseInt(month));
+        monthSet.add(Number.parseInt(month));
         papers.push({
-          year: parseInt(year),
-          month: parseInt(month),
+          year: Number.parseInt(year),
+          month: Number.parseInt(month),
           setCount: examFiles.length,
         });
       }
@@ -44,7 +44,9 @@ async function getYearsAndPapers(examType: string) {
     return [
       {
         _id: null,
-        years: years.filter((y) => !y.startsWith(".")).map((y) => parseInt(y)),
+        years: years
+          .filter((y) => !y.startsWith("."))
+          .map((y) => Number.parseInt(y)),
         months: Array.from(monthSet),
         papers,
       },

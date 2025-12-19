@@ -185,9 +185,8 @@ export async function handleTranslationSubmit(
           accuracy: (data.score / data.totalScore) * 100,
         },
       };
-    } else {
-      throw new Error(data.error || "提交失败");
     }
+    throw new Error(data.error || "提交失败");
   } catch (error) {
     return {
       success: false,

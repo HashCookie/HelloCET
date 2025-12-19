@@ -87,32 +87,32 @@ export default function RecommendedExams() {
       {loading
         ? [...Array(5)].map((_, index) => (
             <div
+              className="animate-pulse rounded border-gray-200 border-l-4 p-4 pl-4"
               key={index}
-              className="animate-pulse rounded border-l-4 border-gray-200 p-4 pl-4"
             >
               <div className="mb-2 flex items-center justify-between">
-                <div className="h-5 w-2/3 rounded bg-gray-200"></div>
-                <div className="h-4 w-16 rounded bg-gray-200"></div>
+                <div className="h-5 w-2/3 rounded bg-gray-200" />
+                <div className="h-4 w-16 rounded bg-gray-200" />
               </div>
-              <div className="h-4 w-24 rounded bg-gray-200"></div>
+              <div className="h-4 w-24 rounded bg-gray-200" />
             </div>
           ))
         : recommendedPapers.map((paper, index) => (
             <Link
-              key={index}
-              href={`/${examType.toLowerCase()}?year=${paper.year}&month=${paper.month}&setCount=${paper.setCount}`}
               className={`border-l-4 ${paper.borderColor} p-4 pl-4 ${paper.hoverBg} block cursor-pointer rounded transition-colors`}
+              href={`/${examType.toLowerCase()}?year=${paper.year}&month=${paper.month}&setCount=${paper.setCount}`}
+              key={index}
             >
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-medium text-gray-900">
                   {paper.year}年{paper.month}月大学英语{examType.toUpperCase()}
                   真题（卷{paper.setCount}）
                 </h3>
-                <span className="text-sm font-medium text-blue-600">
+                <span className="font-medium text-blue-600 text-sm">
                   {paper.tag}
                 </span>
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="text-gray-500 text-sm">
                 {paper.practiceCount}人已练习
               </p>
             </Link>

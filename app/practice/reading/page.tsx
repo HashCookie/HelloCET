@@ -5,8 +5,8 @@ import { useState } from "react";
 import LoadingSpinner from "@/app/components/Common/LoadingSpinner";
 import ReadingComprehension from "@/app/components/Exam/ReadingComprehension/ReadingComprehension";
 import { useRandomExamData } from "@/app/hooks/useRandomExamData";
-import { handleReadingSubmit } from "@/app/utils/api/submitHandlers";
 import type { Option } from "@/app/types/exam";
+import { handleReadingSubmit } from "@/app/utils/api/submitHandlers";
 
 interface ReadingData {
   readingComprehension: {
@@ -91,29 +91,29 @@ export default function PracticeReading() {
     <>
       {examData?.readingComprehension && (
         <>
-          <div className="mb-6 text-sm text-gray-500">
+          <div className="mb-6 text-gray-500 text-sm">
             <span className="font-semibold">试卷来源：</span>
             {examType} {examData.year}年{examData.month}月第{examData.setCount}
             套
           </div>
           <ReadingComprehension
+            answers={answers}
             data={examData.readingComprehension}
             isLoading={isLoading}
-            answers={answers}
             onAnswerChange={setAnswers}
           />
           <div className="mt-4 flex justify-end">
             <button
-              onClick={handleSubmit}
-              disabled={isSubmitting}
               className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 disabled:opacity-50"
+              disabled={isSubmitting}
+              onClick={handleSubmit}
             >
               {isSubmitting ? "评分中..." : "提交评分"}
             </button>
           </div>
           {score !== null && (
             <div className="mt-4 rounded-md bg-gray-50 p-4">
-              <h3 className="mb-2 text-lg font-semibold">评分结果</h3>
+              <h3 className="mb-2 font-semibold text-lg">评分结果</h3>
               <p className="text-gray-700">得分: {score}</p>
             </div>
           )}

@@ -2,8 +2,8 @@ import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { useTabControl } from "@/app/hooks/exam/useTabControl";
 import { usePaperStore } from "@/app/hooks/usePaperData";
-import { examStorage } from "@/app/utils/common/storage";
 import type { Answers } from "@/app/types/answers";
+import { examStorage } from "@/app/utils/common/storage";
 
 type AnswerValue = Answers[keyof Omit<Answers, "attemptId">];
 
@@ -55,7 +55,7 @@ export function useExamState(examType: string) {
   );
 
   const updateMonthsAndSets = useCallback(() => {
-    if (!paperData || !selectedYear) return;
+    if (!(paperData && selectedYear)) return;
 
     const availableMonths = paperData.papers
       .filter((p) => p.year === selectedYear)
@@ -175,12 +175,12 @@ export function useExamState(examType: string) {
   }, [isReadOnly, selectedYear, selectedMonth, selectedSet, examType]);
 
   useEffect(() => {
-    if (!paperData) {
-      fetchPaperData(examType);
-    } else {
+    if (paperData) {
       const sortedYears = paperData.years.sort((a, b) => a - b);
       setYears(sortedYears);
       updateMonthsAndSets();
+    } else {
+      fetchPaperData(examType);
     }
   }, [examType, paperData, fetchPaperData, updateMonthsAndSets]);
 
@@ -207,7 +207,7 @@ export function useExamState(examType: string) {
         setSelectedSet(savedState.setCount);
         setShowControls(savedState.showControls);
         setActiveTab(savedState.activeTab);
-        setIsReadOnly(savedState.readOnly || false);
+        setIsReadOnly(savedState.readOnly);
       }
 
       if (savedAnswers) {

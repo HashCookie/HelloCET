@@ -2,18 +2,18 @@
 export const formatDurationFromSeconds = (seconds: number): string => {
   if (seconds < 60) {
     return `${seconds}秒`;
-  } else if (seconds < 3600) {
+  }
+  if (seconds < 3600) {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
     return `${minutes}分钟${remainingSeconds.toString().padStart(2, "0")}秒`;
-  } else {
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const remainingSeconds = seconds % 60;
-    return `${hours}小时${minutes
-      .toString()
-      .padStart(2, "0")}分钟${remainingSeconds.toString().padStart(2, "0")}秒`;
   }
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const remainingSeconds = seconds % 60;
+  return `${hours}小时${minutes
+    .toString()
+    .padStart(2, "0")}分钟${remainingSeconds.toString().padStart(2, "0")}秒`;
 };
 
 // 将给定的日期字符串转换为北京时间

@@ -24,7 +24,7 @@ const QuestionGroup = ({
   referenceAnswers,
 }: QuestionGroupProps) => {
   const getAnswerStatus = (questionNumber: number, optionKey: string) => {
-    if (!readOnly || !referenceAnswers) return null;
+    if (!(readOnly && referenceAnswers)) return null;
 
     const referenceAnswer = referenceAnswers.find(
       (a) => a.number === questionNumber
@@ -33,7 +33,8 @@ const QuestionGroup = ({
 
     if (optionKey === referenceAnswer?.answer) {
       return "correct";
-    } else if (userAnswer && userAnswer === optionKey) {
+    }
+    if (userAnswer && userAnswer === optionKey) {
       return "wrong";
     }
     return null;
@@ -44,7 +45,7 @@ const QuestionGroup = ({
       <AudioPlayer audioUrl={audioUrl} title={description} />
       <div className="mt-6 space-y-8">
         {questions.map((question) => (
-          <div key={question.number} className="border-b pb-6">
+          <div className="border-b pb-6" key={question.number}>
             <h3 className="mb-4 text-left font-semibold">{question.number}.</h3>
             <div className="flex flex-col space-y-3">
               {Object.entries(question.options).map(([key, value]) => {
@@ -53,10 +54,10 @@ const QuestionGroup = ({
 
                 return (
                   <label
-                    key={key}
                     className={`flex cursor-pointer items-start space-x-4 text-left ${
                       readOnly ? "cursor-not-allowed" : ""
                     }`}
+                    key={key}
                     onClick={(e) => {
                       if (!readOnly) {
                         e.preventDefault();
@@ -66,17 +67,17 @@ const QuestionGroup = ({
                   >
                     <div className="flex h-6 min-w-[24px] items-center">
                       <input
-                        type="radio"
-                        name={`question-${question.number}`}
-                        value={key}
                         checked={isSelected}
-                        onChange={() => onAnswerChange(question.number, key)}
-                        disabled={readOnly}
                         className={readOnly ? "cursor-not-allowed" : ""}
+                        disabled={readOnly}
+                        name={`question-${question.number}`}
+                        onChange={() => onAnswerChange(question.number, key)}
+                        type="radio"
+                        value={key}
                       />
                     </div>
                     <div
-                      className={`flex-1 text-sm font-medium ${
+                      className={`flex-1 font-medium text-sm ${
                         status === "correct"
                           ? "text-gray-700"
                           : status === "wrong"

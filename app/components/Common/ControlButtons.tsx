@@ -3,6 +3,8 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import ConfirmSubmitModal from "@/app/components/Common/ConfirmSubmitModal";
+import type { Answers } from "@/app/types/answers";
+import type { ScoreData, ScoreRecord } from "@/app/types/score";
 import {
   handleListeningSubmit,
   handleReadingSubmit,
@@ -10,8 +12,6 @@ import {
 } from "@/app/utils/api/submitHandlers";
 import { formatDurationFromSeconds } from "@/app/utils/common/dateConversion";
 import { examStorage } from "@/app/utils/common/storage";
-import type { Answers } from "@/app/types/answers";
-import type { ScoreData, ScoreRecord } from "@/app/types/score";
 
 interface ControlButtonsProps {
   year: number;
@@ -289,8 +289,8 @@ const ControlButtons = ({
             ? "cursor-not-allowed bg-gray-400"
             : "bg-green-600 hover:bg-green-700"
         }`}
-        onClick={handleSubmitClick}
         disabled={isSubmitting}
+        onClick={handleSubmitClick}
       >
         {isSubmitting ? "提交中..." : "提交试卷"}
       </button>

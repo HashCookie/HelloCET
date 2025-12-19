@@ -59,35 +59,33 @@ const Section = ({
   readOnly,
   referenceAnswers,
   examInfo,
-}: SectionProps) => {
-  return (
-    <div className="mb-8">
-      <h2 className="mb-6 text-lg font-bold">{title}</h2>
-      <h3 className="mb-6 text-left text-sm text-gray-500">{directions}</h3>
+}: SectionProps) => (
+  <div className="mb-8">
+    <h2 className="mb-6 font-bold text-lg">{title}</h2>
+    <h3 className="mb-6 text-left text-gray-500 text-sm">{directions}</h3>
 
-      {groups.map((group, index) => {
-        const startNum = String(group.startIndex + 1).padStart(2, "0");
-        const endNum = String(group.endIndex).padStart(2, "0");
-        const audioRange = `${startNum}${endNum}`;
+    {groups.map((group, index) => {
+      const startNum = String(group.startIndex + 1).padStart(2, "0");
+      const endNum = String(group.endIndex).padStart(2, "0");
+      const audioRange = `${startNum}${endNum}`;
 
-        const audioUrl = `/api/audio/${audioRange}.mp3?year=${examInfo.year}&month=${examInfo.month}&setCount=${examInfo.setCount}&type=${examInfo.type}&range=${audioRange}`;
+      const audioUrl = `/api/audio/${audioRange}.mp3?year=${examInfo.year}&month=${examInfo.month}&setCount=${examInfo.setCount}&type=${examInfo.type}&range=${audioRange}`;
 
-        return (
-          <QuestionGroup
-            key={index}
-            description={group.description}
-            audioUrl={audioUrl}
-            questions={questions.slice(group.startIndex, group.endIndex)}
-            answers={answers}
-            onAnswerChange={onAnswerChange}
-            readOnly={readOnly}
-            referenceAnswers={referenceAnswers}
-          />
-        );
-      })}
-    </div>
-  );
-};
+      return (
+        <QuestionGroup
+          answers={answers}
+          audioUrl={audioUrl}
+          description={group.description}
+          key={index}
+          onAnswerChange={onAnswerChange}
+          questions={questions.slice(group.startIndex, group.endIndex)}
+          readOnly={readOnly}
+          referenceAnswers={referenceAnswers}
+        />
+      );
+    })}
+  </div>
+);
 
 const ListeningComprehension = ({
   data,
@@ -107,19 +105,19 @@ const ListeningComprehension = ({
   };
 
   return (
-    <ExamSection title="Part II Listening Comprehension" isLoading={isLoading}>
+    <ExamSection isLoading={isLoading} title="Part II Listening Comprehension">
       {data && (
         <div className="space-y-8">
           {SECTION_CONFIG.map((section) => (
             <Section
               key={section.title}
               {...section}
-              questions={data}
               answers={answers}
+              examInfo={examInfo}
               onAnswerChange={handleAnswerChange}
+              questions={data}
               readOnly={readOnly}
               referenceAnswers={referenceAnswers}
-              examInfo={examInfo}
             />
           ))}
         </div>

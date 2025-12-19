@@ -28,17 +28,14 @@ const getSectionScore = (
   return record?.score || 0;
 };
 
-const getPercentageScore = (score: number, section: SectionName): number => {
-  return (score / SECTION_MAX_SCORES[section]) * 100;
-};
+const getPercentageScore = (score: number, section: SectionName): number =>
+  (score / SECTION_MAX_SCORES[section]) * 100;
 
-const getAverage = (scores: number[]): number => {
-  return scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
-};
+const getAverage = (scores: number[]): number =>
+  scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
 
-const getMax = (scores: number[]): number => {
-  return scores.length ? Math.max(...scores) : 0;
-};
+const getMax = (scores: number[]): number =>
+  scores.length ? Math.max(...scores) : 0;
 
 const getAveragePercentage = (
   scores: number[],
@@ -58,7 +55,7 @@ const getLatest = (
   records: ScoreRecord[],
   section: SectionName
 ): number => {
-  if (!scores.length || !records.length) return 0;
+  if (!(scores.length && records.length)) return 0;
   const latestRecord = [...records].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   )[0];
@@ -85,7 +82,7 @@ export default function SubjectScoreDistribution() {
   const chartInstance = useRef<Chart | null>(null);
 
   useEffect(() => {
-    if (!chartRef.current || !records.length) return;
+    if (!(chartRef.current && records.length)) return;
 
     const subjectScores = records.reduce(
       (acc, record) => {
@@ -223,8 +220,8 @@ export default function SubjectScoreDistribution() {
                 const sectionName = sections[context.dataIndex];
                 const maxScore = SECTION_MAX_SCORES[sectionName];
                 const actualScore =
-                  (parseFloat(context.formattedValue) * maxScore) / 100;
-                return `${context.dataset.label}: ${actualScore.toFixed(1)}/${maxScore}分 (${parseFloat(context.formattedValue).toFixed(1)}%)`;
+                  (Number.parseFloat(context.formattedValue) * maxScore) / 100;
+                return `${context.dataset.label}: ${actualScore.toFixed(1)}/${maxScore}分 (${Number.parseFloat(context.formattedValue).toFixed(1)}%)`;
               },
             },
           },

@@ -12,7 +12,7 @@ export default function Home() {
       <Features />
       <Statistics />
       <QuickStart />
-      <footer className="bg-gray-50 text-center text-sm text-gray-500">
+      <footer className="bg-gray-50 text-center text-gray-500 text-sm">
         <p>© 2024 HelloCET. All rights reserved.</p>
       </footer>
     </div>

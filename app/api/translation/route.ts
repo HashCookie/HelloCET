@@ -22,7 +22,8 @@ export async function POST(request: Request) {
         messages: [
           {
             role: "system",
-            content: `你是一个专业的大学生四六级考试翻译评分助手。你的任务是根据用户提供的翻译内容打分。请根据翻译的准确性、流畅性和用词得体性进行评分，满分为106.5。如果用户的输入是中文，请将其视为原文，并给出0分。请只返回一个整数分数，不需要任何解释。`,
+            content:
+              "你是一个专业的大学生四六级考试翻译评分助手。你的任务是根据用户提供的翻译内容打分。请根据翻译的准确性、流畅性和用词得体性进行评分，满分为106.5。如果用户的输入是中文，请将其视为原文，并给出0分。请只返回一个整数分数，不需要任何解释。",
           },
           {
             role: "user",
@@ -36,17 +37,16 @@ export async function POST(request: Request) {
     const data = await response.json();
 
     if (data.choices && data.choices.length > 0) {
-      const score = parseInt(data.choices[0].message.content.trim());
+      const score = Number.parseInt(data.choices[0].message.content.trim());
       return NextResponse.json({
         score,
         totalScore: 106.5,
       });
-    } else {
-      return NextResponse.json(
-        { error: "无法从API获取有效分数" },
-        { status: 400 }
-      );
     }
+    return NextResponse.json(
+      { error: "无法从API获取有效分数" },
+      { status: 400 }
+    );
   } catch (error) {
     console.error("翻译评分失败:", error);
     return NextResponse.json({ error: "翻译评分失败" }, { status: 500 });

@@ -40,9 +40,9 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const params: PaperQueryParams = {
     examType: searchParams.get("type") || "CET4",
-    year: parseInt(searchParams.get("year") || "0"),
-    month: parseInt(searchParams.get("month") || "0"),
-    setCount: parseInt(searchParams.get("setCount") || "0"),
+    year: Number.parseInt(searchParams.get("year") || "0"),
+    month: Number.parseInt(searchParams.get("month") || "0"),
+    setCount: Number.parseInt(searchParams.get("setCount") || "0"),
     field: searchParams.get("field") || "",
   };
 

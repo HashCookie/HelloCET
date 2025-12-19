@@ -47,33 +47,33 @@ const ReadingComprehension = ({
   };
 
   return (
-    <ExamSection title="Part III Reading Comprehension" isLoading={isLoading}>
+    <ExamSection isLoading={isLoading} title="Part III Reading Comprehension">
       {data && (
         <>
           <SectionA
-            passages={data.sectionA.passages}
-            options={data.sectionA.options}
             answers={answers}
             onAnswerChange={handleAnswerChange}
+            options={data.sectionA.options}
+            passages={data.sectionA.passages}
             readOnly={readOnly}
             referenceAnswers={referenceAnswers?.sectionA}
           />
           <SectionB
-            passageTitle={data.sectionB.passageTitle}
-            passages={data.sectionB.passages}
-            questions={data.sectionB.questions}
             answers={answers}
             onAnswerChange={handleAnswerChange}
+            passages={data.sectionB.passages}
+            passageTitle={data.sectionB.passageTitle}
+            questions={data.sectionB.questions}
             readOnly={readOnly}
             referenceAnswers={referenceAnswers?.sectionB}
           />
           <SectionC
-            passagesOne={data.sectionC.passagesOne}
-            questionsOne={data.sectionC.questionsOne}
-            passagesTwo={data.sectionC.passagesTwo}
-            questionsTwo={data.sectionC.questionsTwo}
             answers={answers}
             onAnswerChange={handleAnswerChange}
+            passagesOne={data.sectionC.passagesOne}
+            passagesTwo={data.sectionC.passagesTwo}
+            questionsOne={data.sectionC.questionsOne}
+            questionsTwo={data.sectionC.questionsTwo}
             readOnly={readOnly}
             referenceAnswers={referenceAnswers?.sectionC}
           />

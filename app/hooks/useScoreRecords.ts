@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { examRecordStorage } from "@/app/utils/common/examRecordStorage";
 import type { ScoreRecord } from "@/app/types/practice";
+import { examRecordStorage } from "@/app/utils/common/examRecordStorage";
 
 const SECTIONS = ["writing", "listening", "reading", "translation"] as const;
 

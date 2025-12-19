@@ -21,9 +21,8 @@ const getAnswerStatus = (
 
   if (currentAnswer === referenceAnswer.answer) {
     return "correct";
-  } else {
-    return "wrong";
   }
+  return "wrong";
 };
 
 const renderInput = (
@@ -51,9 +50,6 @@ const renderInput = (
     <span className="mx-1 inline-block">
       <span className="text-gray-500">{number}.</span>
       <input
-        type="text"
-        value={displayValue}
-        onChange={(e) => onChange(number, e.target.value.toUpperCase())}
         className={`w-16 border-b-2 text-center ${
           readOnly
             ? status === "correct"
@@ -68,7 +64,10 @@ const renderInput = (
         maxLength={
           readOnly && status === "wrong" ? 3 : status === "correct" ? 2 : 1
         }
+        onChange={(e) => onChange(number, e.target.value.toUpperCase())}
         readOnly={readOnly}
+        type="text"
+        value={displayValue}
       />
     </span>
   );
@@ -89,7 +88,7 @@ const SectionA = ({
       const numberMatch = part.trim().match(/^(?:2[6-9]|3[0-5])$/);
 
       if (numberMatch) {
-        const number = parseInt(numberMatch[0]);
+        const number = Number.parseInt(numberMatch[0]);
         return renderInput(
           number,
           answers[number] || "",
@@ -104,8 +103,8 @@ const SectionA = ({
 
   return (
     <div className="mb-8">
-      <h3 className="mb-4 text-lg font-semibold">Section A</h3>
-      <h3 className="mb-4 text-left text-sm text-gray-600">
+      <h3 className="mb-4 font-semibold text-lg">Section A</h3>
+      <h3 className="mb-4 text-left text-gray-600 text-sm">
         In this section, there is a passage with ten blanks. You are required to
         select one word for each blank from a list of choices given in a word
         bank following the passage. Read the passage through carefully before
@@ -114,19 +113,19 @@ const SectionA = ({
         with a single line through the centre. You may not use any of the words
         in the bank more than once.
       </h3>
-      <h3 className="mb-4 text-left text-sm text-gray-600">
+      <h3 className="mb-4 text-left text-gray-600 text-sm">
         Questions 26 to 35 are based on the following passage.
       </h3>
       <div className="mb-6 space-y-4 text-left">
         {passages.map((passage, index) => (
-          <p key={index} className="leading-relaxed text-gray-700">
+          <p className="text-gray-700 leading-relaxed" key={index}>
             {renderPassageWithBlanks(passage)}
           </p>
         ))}
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {Object.entries(options).map(([key, value]) => (
-          <div key={key} className="flex items-start space-x-2">
+          <div className="flex items-start space-x-2" key={key}>
             <span className="font-semibold">{key}.</span>
             <span>{value}</span>
           </div>

@@ -26,9 +26,9 @@ export default function ExamResultPage() {
 
   return (
     <ScoreSummary
-      results={examData.results}
       duration={examData.duration}
       examType={examData.examType}
+      results={examData.results}
     />
   );
 }
